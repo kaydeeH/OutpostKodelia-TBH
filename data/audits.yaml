@@ -1,15 +1,16 @@
 events:
-  game_ended: 1
-  game_started: 17
+  game_ended: 2
+  game_started: 18
 player:
   score:
     average: 0.0
     top:
     - 0
-    total: 1
+    - 0
+    total: 2
 switches:
-  s_drain: 5
-  s_dummy: 4
+  s_drain: 9
+  s_dummy: 6
   s_ir_scoop_detect: 1
   s_jet_lower_center: 0
   s_jet_upper_left: 3
