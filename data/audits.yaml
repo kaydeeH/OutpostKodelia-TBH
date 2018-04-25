@@ -1,0 +1,21 @@
+events:
+  game_ended: 1
+  game_started: 17
+player:
+  score:
+    average: 0.0
+    top:
+    - 0
+    total: 1
+switches:
+  s_drain: 5
+  s_dummy: 4
+  s_ir_scoop_detect: 1
+  s_jet_lower_center: 0
+  s_jet_upper_left: 3
+  s_jet_upper_right: 0
+  s_left_flipper: 5
+  s_right_flipper: 5
+  s_slingshot_left: 3
+  s_slingshot_right: 0
+  s_start: 0

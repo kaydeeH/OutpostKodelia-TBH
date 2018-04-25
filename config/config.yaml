@@ -1,0 +1,220 @@
+#config_version=5
+
+hardware:
+  platform: p3_roc
+  driverboards: pdb
+
+p3_roc:
+  use_watchdog: true
+  watchdog_time: 1s
+
+displays:
+  lcd:
+    width: 1366
+    height: 768
+    default: true
+
+window:
+  width: 1366
+  height: 768
+  title: The Black Hole
+  resizable: false
+  fullscreen: false
+  borderless: false
+  exit_on_escape: true
+  source_display: lcd
+
+slides:
+  welcome_slide:
+    widgets:
+      - type: text
+        text: PINBALL!
+        font_size: 50
+        color: red
+      - type: rectangle
+        width: 240
+        height: 60
+
+slide_player:
+  init_done: welcome_slide
+
+switches:
+  s_left_flipper:
+    number: 0/0/0
+    tags: left_flipper
+  s_right_flipper:
+    number: 0/1/1
+    tags: right_flipper
+  s_drain:
+    number: 0/0/1
+  s_start:
+    number: 0/0/2
+    tags: start
+  s_ir_scoop_detect:
+    number: 0/1/6
+  s_slingshot_left:
+    number: 0/0/3
+    tags: playfield_active
+  s_slingshot_right:
+    number: 0/0/4
+    tags: playfield_active
+  s_jet_upper_left:
+    number: 0/0/5
+    tags: playfield_active
+  s_jet_upper_right:
+    number: 0/0/6
+    tags: playfield_active
+  s_jet_lower_center:
+    number: 0/0/7
+    tags: playfield_active
+  s_dummy:
+    number: 0/1/7
+    tags: playfield_active
+
+coils:
+  c_flipper_left_main:
+    number: A1-B0-0
+    default_pulse_ms: 10
+    allow_enable: true
+#    default_pulse_power: .6
+#    default_hold_power: .6
+#  c_flipper_left_hold:
+#    number: A1-B0-1
+#    default_pulse_ms: 10
+#    allow_enable: true
+  c_flipper_right_main:
+    number: A1-B1-0
+    default_pulse_ms: 10
+    allow_enable: true
+#  c_flipper_right_hold:
+#    number: A1-B1-1
+#    default_pulse_ms: 20
+#    allow_enable: true
+  c_drain_eject:
+    number: A1-B0-1
+    default_pulse_ms: 20
+  c_scoop_eject:
+    number: A1-B1-1
+    default_pulse_ms: 20
+  c_slingshot_left:
+    number: A1-B0-2
+    default_pulse_ms: 20
+  c_slingshot_right:
+    number: A1-B1-2
+    default_pulse_ms: 20
+  c_jet_upper_left:
+    number: A1-B0-3
+    default_pulse_ms: 20
+  c_jet_upper_right:
+    number: A1-B1-3
+    default_pulse_ms: 20
+  c_jet_lower_center:
+    number: A1-B0-4
+    default_pulse_ms: 20
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_drain
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    #hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+    enable_events: machine_reset_phase_3
+  right_flipper:
+    main_coil: c_flipper_right_main
+    #hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+
+ball_devices:
+  bd_drain:
+    ball_switches: s_drain
+    eject_coil: c_drain_eject
+    tags: drain, home, trough
+    debug: true
+  bd_scoop:
+    ball_switches: s_ir_scoop_detect
+    eject_coil: c_scoop_eject
+    eject_timeouts: 3s
+    debug: true
+
+autofire_coils:
+  slingshot_left:
+    coil: c_slingshot_left
+    switch: s_slingshot_left
+  slingshot_right:
+    coil: c_slingshot_right
+    switch: s_slingshot_right
+  jet_upper_left:
+    coil: c_jet_upper_left
+    switch: s_jet_upper_left
+  jet_upper_right:
+    coil: c_jet_upper_right
+    switch: s_jet_upper_right
+  jet_lower_center:
+    coil: c_jet_lower_center
+    switch: s_jet_lower_center
+
+lights:
+  l_mode0:
+    number: 0-15-16-17
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_mode1:
+    number: 0-12-13-14
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_mode2:
+    number: 0-18-19-20
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_mode3:
+    number: 0-3-4-5
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_mode4:
+    number: 0-0-1-2
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_mode5:
+    number: 0-9-10-11
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_mode6:
+    number: 0-6-7-8
+    subtype: led
+    platform_settings:
+      polarity: true
+
+modes:
+  - base
+
+keyboard:
+  z:
+    switch: s_left_flipper
+  "/":
+    switch: s_right_flipper
+  s:
+    switch: s_start
+  q:
+    switch: s_dummy
+  d:
+    switch: s_drain
+  p:
+    switch: s_ir_scoop_detect
+  j:
+    switch: s_jet_upper_left
+  l:
+    switch: s_slingshot_left
+
+virtual_platform_start_active_switches:
+  s_drain

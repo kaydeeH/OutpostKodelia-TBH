@@ -1,0 +1,110 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 1
+  lights:
+    l_mode0: ff0000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 00ff00
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 0000ff
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: ffff00
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: ff00ff
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 00ffff
+    l_mode6: 000000
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: ffffff
+- duration: 1
+  lights:
+    l_mode0: ffffff
+    l_mode1: ffffff
+    l_mode2: ffffff
+    l_mode3: ffffff
+    l_mode4: ffffff
+    l_mode5: ffffff
+    l_mode6: ffffff
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 1
+  lights:
+    l_mode0: ffffff
+    l_mode1: ffffff
+    l_mode2: ffffff
+    l_mode3: ffffff
+    l_mode4: ffffff
+    l_mode5: ffffff
+    l_mode6: ffffff
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
