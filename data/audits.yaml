@@ -1,20 +1,35 @@
 events:
-  game_ended: 2
-  game_started: 18
+  game_ended: 4
+  game_started: 29
 player:
   score:
-    average: 0.0
+    average: 2750.0
     top:
+    - 11000
     - 0
     - 0
-    total: 2
+    - 0
+    total: 4
+shots:
+  shot_lane0: 5
+  shot_lane1: 6
+  shot_lane2: 5
+  shot_lane3: 6
+  shot_lane4: 6
 switches:
-  s_drain: 9
+  s_drain: 20
   s_dummy: 6
+  s_flipper_left: 0
+  s_flipper_right: 0
   s_ir_scoop_detect: 1
   s_jet_lower_center: 0
   s_jet_upper_left: 3
   s_jet_upper_right: 0
+  s_lane0: 5
+  s_lane1: 6
+  s_lane2: 5
+  s_lane3: 6
+  s_lane4: 6
   s_left_flipper: 5
   s_right_flipper: 5
   s_slingshot_left: 3

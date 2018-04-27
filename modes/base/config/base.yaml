@@ -30,6 +30,54 @@ slide_player:
         text: "POTATO VALUE: (potato)"
         y: 40%
 
+shots:
+  shotLane0:
+    switch: s_lane0
+    show_tokens:
+      light: l_lane0
+    profile: shotProfileToplanes
+  shotLane1:
+    switch: s_lane1
+    show_tokens:
+      light: l_lane1
+    profile: shotProfileToplanes
+  shotLane2:
+    switch: s_lane2
+    show_tokens:
+      light: l_lane2
+    profile: shotProfileToplanes
+  shotLane3:
+    switch: s_lane3
+    show_tokens:
+      light: l_lane3
+    profile: shotProfileToplanes
+  shotLane4:
+    switch: s_lane4
+    show_tokens:
+      light: l_lane4
+    profile: shotProfileToplanes
+
+shot_profiles:
+  shotProfileToplanes:
+    states:
+      - name: unlit
+        show: off
+      - name: flashing
+        show: dk_blu_flash
+        speed: 5
+      - name: lit
+        show: dk_blu_on
+    loop: false
+
+shot_groups:
+   shotGroupToplanes:
+       shots: shotLane0, shotLane1, shotLane2, shotLane3, shotLane4
+       rotate_left_events: s_flipper_left_active
+       rotate_right_events: s_flipper_right_active
+       reset_events: shotGroupToplanes_lit_complete
+       enable_events: ball_started
+       disable_events: ball_ending
+
 variable_player:
   s_jet_upper_left_active:
     score: 1000
@@ -37,3 +85,35 @@ variable_player:
   s_slingshot_left_active:
     score: 500
     potato: -2
+  shotLane0_shotProfileToplanes_unlit_hit:
+    score: 100
+  shotLane0_shotProfileToplanes_flashing_hit:
+    score: 500
+  shotLane0_shotProfileToplanes_lit_hit:
+    score: 1000
+  shotLane1_shotProfileToplanes_unlit_hit:
+    score: 100
+  shotLane1_shotProfileToplanes_flashing_hit:
+    score: 500
+  shotLane1_shotProfileToplanes_lit_hit:
+    score: 1000
+  shotLane2_shotProfileToplanes_unlit_hit:
+    score: 100
+  shotLane2_shotProfileToplanes_flashing_hit:
+    score: 500
+  shotLane2_shotProfileToplanes_lit_hit:
+    score: 1000
+  shotLane3_shotProfileToplanes_unlit_hit:
+    score: 100
+  shotLane3_shotProfileToplanes_flashing_hit:
+    score: 500
+  shotLane3_shotProfileToplanes_lit_hit:
+    score: 1000
+  shotLane4_shotProfileToplanes_unlit_hit:
+    score: 100
+  shotLane4_shotProfileToplanes_flashing_hit:
+    score: 500
+  shotLane4_shotProfileToplanes_lit_hit:
+    score: 1000
+  shotGroupToplanes_lit_complete:
+    score: 10000

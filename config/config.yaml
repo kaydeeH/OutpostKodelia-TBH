@@ -3,19 +3,19 @@
 config:
   - hardware.yaml
 
-slides:
-  welcome_slide:
-    widgets:
-      - type: text
-        text: PINBALL!
-        font_size: 50
-        color: red
-      - type: rectangle
-        width: 240
-        height: 60
-
-slide_player:
-  init_done: welcome_slide
+#slides:
+#  welcome_slide:
+#    widgets:
+#      - type: text
+#        text: PINBALL!
+#        font_size: 50
+#        color: red
+#      - type: rectangle
+#        width: 240
+#        height: 60
+#
+#slide_player:
+#  init_done: welcome_slide
 
 modes:
   - base
@@ -27,8 +27,6 @@ keyboard:
     switch: s_right_flipper
   s:
     switch: s_start
-  q:
-    switch: s_dummy
   d:
     switch: s_drain
   p:
@@ -37,3 +35,13 @@ keyboard:
     switch: s_jet_upper_left
   l:
     switch: s_slingshot_left
+  0:
+    switch: s_lane0
+  1:
+    switch: s_lane1
+  2:
+    switch: s_lane2
+  3:
+    switch: s_lane3
+  4:
+    switch: s_lane4
