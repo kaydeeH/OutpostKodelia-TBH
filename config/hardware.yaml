@@ -87,16 +87,16 @@ switches:
   s_sTargetDropR:
     number: 1/0/3
     tags: playfield_active
-  s_dTargetL0:
+  s_dTargetR0:
     number: 1/0/4
     tags: playfield_active
-  s_dTargetL1:
+  s_dTargetR1:
     number: 1/0/5
     tags: playfield_active
-  s_dTargetL2:
+  s_dTargetR2:
     number: 1/0/6
     tags: playfield_active
-  s_dTargetL3:
+  s_dTargetR3:
     number: 1/0/7
     tags: playfield_active
   s_roOutLaneRight:
@@ -378,7 +378,7 @@ lights:
     number: 0-72-73-74
     subtype: led
     platform_settings:
-    polarity: true
+      polarity: true
   l_3x:
     number: 0-75-76-77
     subtype: led
@@ -511,12 +511,12 @@ lights:
     platform_settings:
       polarity: true
   l_GISlingRight0:
-    number: 2-54-55-56
+    number: 3-54-55-56
     subtype: led
     platform_settings:
       polarity: true
   l_GISlingRight1:
-    number: 2-57-58-59
+    number: 3-57-58-59
     subtype: led
     platform_settings:
       polarity: true
@@ -551,12 +551,12 @@ lights:
     platform_settings:
       polarity: true
   l_GIDropCenterLeft:
-    number: 2-72-73-74
+    number: 3-60-61-62
     subtype: led
     platform_settings:
       polarity: true
   l_GIDropCenterRight:
-    number: 2-75-76-77
+    number: 3-63-64-65
     subtype: led
     platform_settings:
       polarity: true
