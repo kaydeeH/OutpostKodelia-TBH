@@ -359,11 +359,6 @@ lights:
     subtype: led
     platform_settings:
       polarity: true
-  l_bonus9:
-    number: 0-63-64-65
-    subtype: led
-    platform_settings:
-      polarity: true
   l_bonusBig0:
     number: 0-66-67-68
     subtype: led

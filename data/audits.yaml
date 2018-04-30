@@ -1,6 +1,6 @@
 events:
   game_ended: 4
-  game_started: 29
+  game_started: 31
 player:
   score:
     average: 2750.0
@@ -17,6 +17,17 @@ shots:
   shot_lane3: 6
   shot_lane4: 6
 switches:
+  s_credit: 0
+  s_dTargetCL: 0
+  s_dTargetCR: 0
+  s_dTargetL0: 0
+  s_dTargetL1: 0
+  s_dTargetL2: 0
+  s_dTargetL3: 0
+  s_dTargetR0: 0
+  s_dTargetR1: 0
+  s_dTargetR2: 0
+  s_dTargetR3: 0
   s_drain: 20
   s_dummy: 6
   s_flipper_left: 0
@@ -32,6 +43,19 @@ switches:
   s_lane4: 6
   s_left_flipper: 5
   s_right_flipper: 5
+  s_roInLaneLeft: 0
+  s_roInLaneRight: 0
+  s_roOutLaneLeft: 0
+  s_roOutLaneRight: 0
+  s_sTargetDropL: 0
+  s_sTargetDropR: 0
+  s_sTargetLowL: 0
+  s_sTargetLowR: 0
+  s_sTargetUpperL: 0
+  s_sTargetUpperR: 0
+  s_sTargetYellowL: 0
+  s_sTargetYellowR: 0
   s_slingshot_left: 3
   s_slingshot_right: 0
+  s_spinner: 0
   s_start: 0
