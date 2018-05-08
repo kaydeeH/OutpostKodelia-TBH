@@ -5,3 +5,9 @@ show_player:
   mode_attract_started.1:
     attract_light_show:
       speed: 10
+    giWhite:
+      speed: 1
+    attractDrops:
+      speed: 10
+    attractBonusX:
+      speed: 5

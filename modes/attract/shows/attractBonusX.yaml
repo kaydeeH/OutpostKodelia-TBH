@@ -1,0 +1,135 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 111111
+    l_3x: 111111
+    l_4x: 111111
+    l_5x: 111111
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 222222
+    l_3x: 222222
+    l_4x: 222222
+    l_5x: 222222
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 333333
+    l_3x: 333333
+    l_4x: 333333
+    l_5x: 333333
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 444444
+    l_3x: 444444
+    l_4x: 444444
+    l_5x: 444444
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 555555
+    l_3x: 555555
+    l_4x: 555555
+    l_5x: 555555
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 666666
+    l_3x: 666666
+    l_4x: 666666
+    l_5x: 666666
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 888888
+    l_3x: 888888
+    l_4x: 888888
+    l_5x: 888888
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: aaaaaa
+    l_3x: aaaaaa
+    l_4x: aaaaaa
+    l_5x: aaaaaa
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: dddddd
+    l_3x: dddddd
+    l_4x: dddddd
+    l_5x: dddddd
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: ffffff
+    l_3x: ffffff
+    l_4x: ffffff
+    l_5x: ffffff
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
+    l_shootAgain: 0000ff
+- duration: 1
+  lights:
+    l_2x: 0000ff
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 0000ff
+    l_shootAgain: ffffff
+- duration: 1
+  lights:
+    l_2x: 000000
+    l_3x: 0000ff
+    l_4x: 0000ff
+    l_5x: 000000
+    l_shootAgain: 000000
+- duration: 1
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
+    l_shootAgain: ffffff
+- duration: 1
+  lights:
+    l_2x: 0000ff
+    l_3x: 0000ff
+    l_4x: 0000ff
+    l_5x: 0000ff
+    l_shootAgain: 0000ff
+- duration: 1
+  lights:
+    l_2x: 000000
+    l_3x: 0000ff
+    l_4x: 0000ff
+    l_5x: 000000
+    l_shootAgain: 0000ff
+- duration: 1
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
+    l_shootAgain: ffffff
+- duration: 4
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
+    l_shootAgain: 000000

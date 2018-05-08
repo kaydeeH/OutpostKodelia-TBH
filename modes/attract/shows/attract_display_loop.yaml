@@ -17,6 +17,167 @@
   slides:
     playIntro:
       widgets:
+      - type: Text
+        text: THE PINBALL ADVENTURE
+        font_name: ocr-a-tribute-bold
+        font_size: 48
+        color: ff330f
+        y: 340
+        x: 675
+        anchor_y: center
+        anchor_x: center
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: 0s
+            - property: opacity
+              value: 0
+              duration: 17s
+            - property: opacity
+              value: 1
+              duration: 4.6s
+            - property: opacity
+              value: 0
+              duration: 0.1s
+      - type: Text
+        text: 5TH - MAX 1,000,000,000
+        font_name: ocr-a-tribute-bold
+        font_size: 36
+        color: ff330f
+        y: 160
+        x: 695
+        anchor_y: top
+        anchor_x: left
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: 0s
+            - property: opacity
+              value: 0
+              duration: 22.4s
+            - property: opacity
+              value: 1
+              duration: 3.9s
+            - property: opacity
+              value: 0
+              duration: 0.1s
+      - type: Text
+        text: 4TH - ATP 1,100,000,000
+        font_name: ocr-a-tribute-bold
+        font_size: 36
+        color: ff330f
+        y: 160
+        x: 733
+        anchor_y: top
+        anchor_x: left
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: 0s
+            - property: opacity
+              value: 0
+              duration: 25.8s
+            - property: opacity
+              value: 1
+              duration: 4.25s
+            - property: opacity
+              value: 0
+              duration: 0.1s
+      - type: Text
+        text: 3RD - BOB 1,300,000,000
+        font_name: ocr-a-tribute-bold
+        font_size: 36
+        color: ff330f
+        y: 160
+        x: 725
+        anchor_y: top
+        anchor_x: left
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: 0s
+            - property: opacity
+              value: 0
+              duration: 29.4s
+            - property: opacity
+              value: 1
+              duration: 4.25s
+            - property: opacity
+              value: 0
+              duration: 0.1s
+      - type: Text
+        text: 2ND - JOE 1,500,000,000
+        font_name: ocr-a-tribute-bold
+        font_size: 36
+        color: ff330f
+        y: 160
+        x: 715
+        anchor_y: top
+        anchor_x: left
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: 0s
+            - property: opacity
+              value: 0
+              duration: 33s
+            - property: opacity
+              value: 1
+              duration: 4.2s
+            - property: opacity
+              value: 0
+              duration: 0.1s
+      - type: Text
+        text: 1ST - KAT 2,500,000,000
+        font_name: ocr-a-tribute-bold
+        font_size: 36
+        color: ff330f
+        y: 160
+        x: 555
+        anchor_y: top
+        anchor_x: left
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: 0s
+            - property: opacity
+              value: 0
+              duration: 36.7s
+            - property: opacity
+              value: 1
+              duration: 5.55s
+            - property: opacity
+              value: 0
+              duration: 0.1s
+      - type: Text
+        text: GRAND CHAMPION - KAYDEN 42,170,000,000
+        font_name: ocr-a-tribute-bold
+        font_size: 36
+        color: ff330f
+        y: 160
+        x: 540
+        anchor_y: top
+        anchor_x: left
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: 0s
+            - property: opacity
+              value: 0
+              duration: 41.9s
+            - property: opacity
+              value: 1
+              duration: 5.7s
+            - property: opacity
+              value: 0
+              duration: 0.1s
       - type: video
         video: Intro
         width: 1366
