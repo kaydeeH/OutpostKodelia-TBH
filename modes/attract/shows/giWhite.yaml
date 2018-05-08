@@ -1,0 +1,11 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
