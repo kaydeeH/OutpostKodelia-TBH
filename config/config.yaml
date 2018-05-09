@@ -19,6 +19,7 @@ config:
 
 modes:
   - base
+  - high_score
 
 keyboard:
   z:
@@ -45,3 +46,26 @@ keyboard:
     switch: s_lane3
   4:
     switch: s_lane4
+  q:
+    switch: s_dTargetL0
+  w:
+    switch: s_dTargetL1
+  e:
+    switch: s_dTargetL2
+  r:
+    switch: s_dTargetL3
+  t:
+    switch: s_dTargetCL
+  y:
+    switch: s_dTargetCR
+  u:
+    switch: s_dTargetR3
+  i:
+    switch: s_dTargetR2
+  o:
+    switch: s_dTargetR1
+  p:
+    switch: s_dTargetR0
+
+
+

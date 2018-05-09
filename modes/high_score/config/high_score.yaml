@@ -1,0 +1,56 @@
+#config_version=5
+
+high_score:
+  _overwrite: True
+  categories: !!omap
+  - score:
+      - GRAND CHAMPION
+      - 1ST
+      - 2ND
+      - 3RD
+      - 4TH
+      - 5TH
+  - meteors:
+      - METEOR CHAMP
+  - beyond:
+      - EXPLORER OF THE BEYOND
+  defaults:
+     score:
+       - KAYDEN: 600
+       - KAT: 500
+       - JOE: 400
+       - BOB: 300
+       - ATP: 200
+       - MAX: 10
+     meteors:
+       - OLH: 75
+     beyond:
+       - KAH: 152
+
+
+
+slides:
+  high_score_enter_initials:
+  - type: text
+    text: TEXT HIGH SCORE ENTRY
+    color: red
+    y: top-5
+    anchor_y: top
+  - type: text_input
+    initial_char: A
+    key: key1
+    font_size: 50
+    animations:
+      show_slide:
+      - property: opacity
+        value: 1
+        duration: .25s
+      - property: opacity
+        value: 0
+        duration: .25s
+        repeat: yes
+  - type: text
+    text: ""
+    key: key1
+    font_size: 50
+

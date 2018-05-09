@@ -1,0 +1,27 @@
+beyond:
+- !!python/tuple
+  - KAH
+  - 152
+meteors:
+- !!python/tuple
+  - OLH
+  - 75
+score:
+- !!python/tuple
+  - HGG
+  - 15600
+- !!python/tuple
+  - BBB
+  - 12600
+- !!python/tuple
+  - AXX
+  - 10600
+- !!python/tuple
+  - SRR
+  - 10200
+- !!python/tuple
+  - XNN
+  - 8200
+- !!python/tuple
+  - KAYDEN
+  - 600
