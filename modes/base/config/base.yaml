@@ -30,6 +30,119 @@ slide_player:
         text: "POTATO VALUE: (potato)"
         y: 40%
 
+counters:
+  ctDropL0:
+      count_events: shotTargetL0_flashing_hit
+      starting_count: 0
+
+timers:
+  targetRotator:
+    start_running: true
+    tick_interval: 5s
+  targetRotatorB:
+    start_running: true
+    tick_interval: 5s
+
+state_machines:
+  lt0:
+     states:
+       start:
+         label: start state
+         events_when_started: lt0_flash_start
+       lightsflash:
+         label: flashing
+         events_when_started: lt0_off_start
+       lighton:
+         label: lit
+         events_when_started: lt0_lit_start
+     transitions:
+       - source: start
+         target: lightsflash
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: start
+         events: timer_targetRotator_tick
+       - source: start
+         target: lighton
+         events: shotTargetL0_flashing_hit
+       - source: lighton
+         target: start
+         events: shotGroupLeftTargets_lit_complete
+  lt1:
+     states:
+       start:
+         label: start state
+         events_when_started: lt1_off_start
+       lightsflash:
+         label: flashing
+         events_when_started: lt1_flash_start
+       lighton:
+         label: lit
+         events_when_started: lt1_lit_start
+     transitions:
+       - source: start
+         target: lightsflash
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: start
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: lighton
+         events: shotTargetL1_flashing_hit
+       - source: lighton
+         target: start
+         events: shotGroupLeftTargets_lit_complete
+
+  lt2:
+     states:
+       start:
+         label: start state
+         events_when_started: lt2_flash_start
+       lightsflash:
+         label: flashing
+         events_when_started: lt2_off_start
+       lighton:
+         label: lit
+         events_when_started: lt2_lit_start
+     transitions:
+       - source: start
+         target: lightsflash
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: start
+         events: timer_targetRotator_tick
+       - source: start
+         target: lighton
+         events: shotTargetL2_flashing_hit
+       - source: lighton
+         target: start
+         events: shotGroupLeftTargets_lit_complete
+
+  lt3:
+     states:
+       start:
+         label: start state
+         events_when_started: lt3_off_start
+       lightsflash:
+         label: flashing
+         events_when_started: lt3_flash_start
+       lighton:
+         label: lit
+         events_when_started: lt3_lit_start
+     transitions:
+       - source: start
+         target: lightsflash
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: start
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: lighton
+         events: shotTargetL3_flashing_hit
+       - source: lighton
+         target: start
+         events: shotGroupLeftTargets_lit_complete
+
 shots:
   shotLane0:
     switch: s_lane0
@@ -56,6 +169,35 @@ shots:
     show_tokens:
       light: l_lane4
     profile: shotProfileToplanes
+  shotTargetL0:
+    switch: s_dTargetL0
+    show_tokens:
+      light: l_dropLeft0
+    profile: shotProfileToplanes
+    advance_events: lt0_flash_start
+    reset_events: lt0_off_start, shotTargetL0_unlit_hit
+  shotTargetL1:
+    switch: s_dTargetL1
+    show_tokens:
+      light: l_dropLeft1
+    profile: shotProfileToplanes
+    advance_events: lt1_flash_start
+    reset_events: lt1_off_start, shotTargetL1_unlit_hit
+  shotTargetL2:
+    switch: s_dTargetL2
+    show_tokens:
+      light: l_dropLeft2
+    profile: shotProfileToplanes
+    advance_events: lt2_flash_start
+    reset_events: lt2_off_start, shotTargetL2_unlit_hit
+  shotTargetL3:
+    switch: s_dTargetL3
+    show_tokens:
+      light: l_dropLeft3
+    profile: shotProfileToplanes
+    advance_events: lt3_flash_start
+    reset_events: lt3_off_start, shotTargetL3_unlit_hit
+
 
 shot_profiles:
   shotProfileToplanes:
@@ -69,6 +211,7 @@ shot_profiles:
         show: dk_blu_on
     loop: false
 
+
 shot_groups:
    shotGroupToplanes:
        shots: shotLane0, shotLane1, shotLane2, shotLane3, shotLane4
@@ -77,14 +220,90 @@ shot_groups:
        reset_events: shotGroupToplanes_lit_complete
        enable_events: ball_started
        disable_events: ball_ending
+   shotGroupLeftTargets:
+       shots: shotTargetL0, shotTargetL1, shotTargetL2, shotTargetL3
+       reset_events: shotGroupLeftTargets_lit_complete
+       enable_events: ball_started
+       disable_events: ball_ending
 
 variable_player:
   s_jet_upper_left_active:
     score: 1000
     potato: 10
+  s_jet_upper_right_active:
+    score: 1000
+    potato: 10
+  s_jet_lower_center_active:
+    score: 1000
+    potato: 10
   s_slingshot_left_active:
     score: 500
     potato: -2
+  s_slingshot_right_active:
+    score: 500
+    potato: -2
+  shotTargetL0_unlit_hit:
+    score: 100
+  shotTargetL1_unlit_hit:
+    score: 100
+  shotTargetL2_unlit_hit:
+    score: 100
+  shotTargetL3_unlit_hit:
+    score: 100
+  shotTargetL0_flashing_hit:
+    score: 10000
+  shotTargetL1_flashing_hit:
+    score: 10000
+  shotTargetL2_flashing_hit:
+    score: 10000
+  shotTargetL3_flashing_hit:
+    score: 10000
+  shotTargetL0_lit_hit:
+    score: 400
+  shotTargetL1_lit_hit:
+    score: 400
+  shotTargetL2_lit_hit:
+    score: 400
+  shotTargetL3_lit_hit:
+    score: 400
+  s_dTargetR0_active:
+    score: 100
+  s_dTargetR1_active:
+    score: 100
+  s_dTargetR2_active:
+    score: 100
+  s_dTargetR3_active:
+    score: 100
+  s_dTargetCL_active:
+    score: 200
+  s_dTargetCR_active:
+    score: 200
+  s_roInLaneLeft_active:
+    score: 50
+  s_roInLaneRight_active:
+    score: 50
+  s_roOutLaneLeft_active:
+    score: 150
+  s_roOutLaneRight_active:
+    score: 150
+  s_sTargetDropL_active:
+    score: 1
+  s_sTargetDropR_active:
+    score: 1
+  s_sTargetLowL_active:
+    score: 1
+  s_sTargetLowR_active:
+    score: 1
+  s_sTargetUpperL_active:
+    score: 1
+  s_sTargetUpperR_active:
+    score: 1
+  s_sTargetYellowL_active:
+    score: 10000
+  s_sTargetYellowR_active:
+    score: 10000
+  s_spinner_active:
+    score: 100
   shotLane0_shotProfileToplanes_unlit_hit:
     score: 100
   shotLane0_shotProfileToplanes_flashing_hit:
@@ -117,3 +336,5 @@ variable_player:
     score: 1000
   shotGroupToplanes_lit_complete:
     score: 10000
+  shotGroupLeftTargets_lit_complete:
+    score: 50000

@@ -44,7 +44,7 @@
         text: (machine|score6_label) - (machine|score6_name) (machine|score6_value)
         font_name: ocr-a-tribute-bold
         font_size: 36
-        color: ff330f
+        color: dd330f
         y: 160
         x: 695
         anchor_y: top
