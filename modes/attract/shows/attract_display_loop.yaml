@@ -148,7 +148,7 @@
               duration: 0s
             - property: opacity
               value: 0
-              duration: 36.7s
+              duration: 36.2s
             - property: opacity
               value: 1
               duration: 5.55s
@@ -174,7 +174,7 @@
               duration: 41.9s
             - property: opacity
               value: 1
-              duration: 5.7s
+              duration: 5.5s
             - property: opacity
               value: 0
               duration: 0.1s

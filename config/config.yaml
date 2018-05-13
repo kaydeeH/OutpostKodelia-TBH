@@ -49,7 +49,7 @@ keyboard:
     switch: s_drain
   z:
     switch: s_flipper_left
-  "/":
+  a:
     switch: s_flipper_right
   s:
     switch: s_start

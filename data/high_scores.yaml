@@ -8,20 +8,20 @@ meteors:
   - 75
 score:
 - !!python/tuple
-  - HGG
-  - 15600
+  - YYY
+  - 245300
 - !!python/tuple
-  - BBB
-  - 12600
+  - MMM
+  - 118100
 - !!python/tuple
-  - AXX
-  - 10600
+  - ASS
+  - 117800
 - !!python/tuple
-  - SRR
-  - 10200
+  - UUU
+  - 117700
 - !!python/tuple
-  - XNN
-  - 8200
+  - WWW
+  - 107901
 - !!python/tuple
-  - KAYDEN
-  - 600
+  - YYY
+  - 9400
