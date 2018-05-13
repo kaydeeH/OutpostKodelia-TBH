@@ -148,62 +148,52 @@ switches:
     tags: playfield_active
 
 coils:
-  c_flipper_left_main:
+  c_flipper_right_main:
     number: A0-B0-0
     default_pulse_ms: 10
     allow_enable: true
-#    default_pulse_power: .6
-#    default_hold_power: .6
-#  c_flipper_left_hold:
-#    number: A0-B0-1
-#    default_pulse_ms: 10
-#    allow_enable: true
-  c_flipper_right_main:
+  c_flipper_left_main:
     number: A0-B1-0
     default_pulse_ms: 10
     allow_enable: true
-#  c_flipper_right_hold:
-#    number: A0-B1-1
-#    default_pulse_ms: 20
-#    allow_enable: true
-  c_drain_eject:
+  c_slingshot_right:
     number: A0-B0-1
     default_pulse_ms: 20
-  c_scoop_eject:
-    number: A0-B1-1
-    default_pulse_ms: 20
-  c_slingshot_left:
+  c_dropRight0:
     number: A0-B0-2
     default_pulse_ms: 20
-  c_slingshot_right:
-    number: A0-B1-2
-    default_pulse_ms: 20
-  c_jet_upper_left:
+  c_dropRight1:
     number: A0-B0-3
     default_pulse_ms: 20
-  c_jet_upper_right:
-    number: A0-B1-3
-    default_pulse_ms: 20
-  c_jet_lower_center:
+  c_dropCenterR:
     number: A0-B0-4
     default_pulse_ms: 20
-  c_dropLeft0:
-    number: A0-B1-4
-    default_pulse_ms: 20
-  c_dropLeft1:
+  c_jet_upper_right:
     number: A0-B0-5
     default_pulse_ms: 20
-  c_dropRight0:
-    number: A0-B1-5
-    default_pulse_ms: 20
-  c_dropRight1:
+  c_drain_eject:
     number: A0-B0-6
     default_pulse_ms: 20
+  c_slingshot_left:
+    number: A0-B1-1
+    default_pulse_ms: 20
+  c_dropLeft0:
+    number: A0-B1-2
+    default_pulse_ms: 20
+  c_dropLeft1:
+    number: A0-B1-3
+    default_pulse_ms: 20
   c_dropCenterL:
+    number: A0-B1-4
+    default_pulse_ms: 20
+  c_jet_lower_center:
+    number: A0-B1-5
+    default_pulse_ms: 20
+  c_jet_upper_left:
     number: A0-B1-6
     default_pulse_ms: 20
-  c_dropCenterR:
-    number: A0-B0-7
+  c_scoop_eject:
+    number: A0-B1-7
     default_pulse_ms: 20
 
 playfields:
@@ -251,6 +241,56 @@ autofire_coils:
   jet_lower_center:
     coil: c_jet_lower_center
     switch: s_jet_lower_center
+
+drop_targets:
+     L0:
+         switch: s_dTargetL0
+         reset_coil: c_dropLeft0
+     L1:
+         switch: s_dTargetL1
+         reset_coil: c_dropLeft0
+     L2:
+         switch: s_dTargetL2
+         reset_coil: c_dropLeft1
+     L3:
+         switch: s_dTargetL3
+         reset_coil: c_dropLeft1
+     R0:
+         switch: s_dTargetR0
+         reset_coil: c_dropRight0
+     R1:
+         switch: s_dTargetR1
+         reset_coil: c_dropRight0
+     R2:
+         switch: s_dTargetR2
+         reset_coil: c_dropRight1
+     R3:
+         switch: s_dTargetR3
+         reset_coil: c_dropRight1
+     LC:
+         switch: s_dTargetCL
+         reset_coil: c_dropCenterL
+     RC:
+         switch: s_dTargetCR
+         reset_coil: c_dropCenterR
+
+drop_target_banks:
+     leftFull:
+         drop_targets: L0, L1, L2, L3
+         reset_coils: c_dropLeft0, c_dropLeft1
+         reset_on_complete: 1s
+     rightFull:
+         drop_targets: R0, R1, R2, R3
+         reset_coils: c_dropRight0, c_dropRight1
+         reset_on_complete: 1s
+     leftCenter:
+         drop_targets: LC
+         reset_coils: c_dropCenterL
+         reset_on_complete: 1s
+     rightCenter:
+         drop_targets: RC
+         reset_coils: c_dropCenterR
+         reset_on_complete: 1s
 
 lights:
   #Inserts
