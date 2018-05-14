@@ -30,6 +30,7 @@ slide_player:
         text: "POTATO VALUE: (potato)"
         y: 40%
 
+
 counters:
   ctDropL0:
       count_events: shotTargetL0_flashing_hit
