@@ -339,3 +339,18 @@ variable_player:
     score: 10000
   shotGroupLeftTargets_lit_complete:
     score: 50000
+
+#coil_player:
+#  ball_starting:
+#    c_dropLeft0:
+#      action: pulse
+#    c_dropLeft1:
+#      action: pulse
+#    c_dropRight0:
+#      action: pulse
+#    c_dropRight1:
+#      action: pulse
+#    c_dropCenterL:
+#      action: pulse
+#    c_dropCenterR:
+#      action: pulse

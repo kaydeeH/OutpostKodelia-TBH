@@ -1,9 +1,9 @@
 events:
-  game_ended: 25
-  game_started: 85
+  game_ended: 42
+  game_started: 168
 player:
   score:
-    average: 65110.34482758621
+    average: 48520.69565217391
     top:
     - 779107
     - 636100
@@ -15,17 +15,17 @@ player:
     - 117800
     - 117700
     - 115100
-    total: 29
+    total: 46
 shots:
   shotLane0: 1
   shotLane1: 19
   shotLane2: 29
   shotLane3: 28
   shotLane4: 121
-  shotTargetL0: 291
-  shotTargetL1: 309
-  shotTargetL2: 330
-  shotTargetL3: 288
+  shotTargetL0: 325
+  shotTargetL1: 348
+  shotTargetL2: 369
+  shotTargetL3: 312
   shot_lane0: 5
   shot_lane1: 6
   shot_lane2: 5
@@ -35,17 +35,17 @@ switches:
   s_credit: 0
   s_dTargetCL: 57
   s_dTargetCR: 1
-  s_dTargetL0: 291
-  s_dTargetL1: 309
-  s_dTargetL2: 330
-  s_dTargetL3: 288
+  s_dTargetL0: 325
+  s_dTargetL1: 348
+  s_dTargetL2: 369
+  s_dTargetL3: 312
   s_dTargetR0: 0
   s_dTargetR1: 0
   s_dTargetR2: 0
   s_dTargetR3: 0
-  s_drain: 134
+  s_drain: 231
   s_dummy: 6
-  s_flipper_left: 233
+  s_flipper_left: 557
   s_flipper_right: 163
   s_ir_scoop_detect: 1
   s_jet_lower_center: 14
@@ -58,19 +58,19 @@ switches:
   s_lane4: 127
   s_left_flipper: 5
   s_right_flipper: 5
-  s_roInLaneLeft: 0
+  s_roInLaneLeft: 12
   s_roInLaneRight: 0
-  s_roOutLaneLeft: 14
+  s_roOutLaneLeft: 18
   s_roOutLaneRight: 0
-  s_sTargetDropL: 6
+  s_sTargetDropL: 7
   s_sTargetDropR: 2
-  s_sTargetLowL: 0
+  s_sTargetLowL: 6
   s_sTargetLowR: 0
-  s_sTargetUpperL: 0
+  s_sTargetUpperL: 4
   s_sTargetUpperR: 0
-  s_sTargetYellowL: 1
+  s_sTargetYellowL: 4
   s_sTargetYellowR: 0
-  s_slingshot_left: 36
+  s_slingshot_left: 108
   s_slingshot_right: 12
   s_spinner: 0
-  s_start: 63
+  s_start: 66
