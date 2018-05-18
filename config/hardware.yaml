@@ -117,34 +117,34 @@ switches:
 
   #Upper and center switches
   s_jet_upper_left:
-    number: 3/0/0
+    number: 2/0/0
     tags: playfield_active
   s_jet_upper_right:
-    number: 3/1/0
+    number: 2/1/0
     tags: playfield_active
   s_jet_lower_center:
-    number: 3/0/1
+    number: 2/0/1
     tags: playfield_active
   s_lane0:
-    number: 3/0/2
+    number: 2/0/2
     tags: playfield_active
   s_lane1:
-    number: 3/0/3
+    number: 2/0/3
     tags: playfield_active
   s_lane2:
-    number: 3/0/4
+    number: 2/0/4
     tags: playfield_active
   s_lane3:
-    number: 3/0/5
+    number: 2/0/5
     tags: playfield_active
   s_lane4:
-    number: 3/0/6
+    number: 2/0/6
     tags: playfield_active
   s_dTargetCL:
-    number: 3/1/1
+    number: 2/1/1
     tags: playfield_active
   s_dTargetCR:
-    number: 3/1/2
+    number: 2/1/2
     tags: playfield_active
 
 coils:
