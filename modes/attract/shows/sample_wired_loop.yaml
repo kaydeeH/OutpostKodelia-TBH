@@ -30,6 +30,43 @@
     l_GILowLeft: FFFFFF
     l_GIDropLeft0: FFFFFF
     l_GIDropLeft1: FFFFFF
+    l_bonus4: FFFFFF
+    l_bonus5: FFFFFF
+    l_bonus6: FFFFFF
+    l_bonusBig0: FFFFFF
+    l_bonusBig1: FFFFFF
+    l_bonus7: FFFFFF
+    l_bonus8: FFFFFF
+    l_dropCenterRight: FFFFFF
+    l_dropRight0: FFFFFF
+    l_dropRight1: FFFFFF
+    l_dropRight2: FFFFFF
+    l_dropRight3: FFFFFF
+    l_mode4: FFFFFF
+    l_mode5: FFFFFF
+    l_mode6: FFFFFF
+    l_dropCenterLeft: FFFFFF
+    l_dropLeft0: FFFFFF
+    l_dropLeft1: FFFFFF
+    l_dropLeft2: FFFFFF
+    l_dropLeft3: FFFFFF
+    l_GIUpperR: FFFFFF
+    l_GILane5: FFFFFF
+    l_GIAboveSpinnerUpper: FFFFFF
+    l_GIUpperCR: FFFFFF
+    l_GIUpperR: FFFFFF
+    l_lane1: FFFFFF
+    l_lane2: FFFFFF
+    l_lane3: FFFFFF
+    l_lane4: FFFFFF
+    l_GILane1: FFFFFF
+    l_GILane2: FFFFFF
+    l_GILane3: FFFFFF
+    l_GILane4: FFFFFF
+    l_GIAboveScoopUpper: FFFFFF
+    l_GIUpperL: FFFFFF
+    l_lane0: FFFFFF
+    l_GIUpperCL: FFFFFF
 - duration: 1
   lights:
     l_GISlingRight0: 00FFFF
@@ -60,6 +97,43 @@
     l_GILowLeft: 00FFFF
     l_GIDropLeft0: 00FFFF
     l_GIDropLeft1: 00FFFF
+    l_bonus4: 00FFFF
+    l_bonus5: 00FFFF
+    l_bonus6: 00FFFF
+    l_bonusBig0: 00FFFF
+    l_bonusBig1: 00FFFF
+    l_bonus7: 00FFFF
+    l_bonus8: 00FFFF
+    l_dropCenterRight: 00FFFF
+    l_dropRight0: 00FFFF
+    l_dropRight1: 00FFFF
+    l_dropRight2: 00FFFF
+    l_dropRight3: 00FFFF
+    l_mode4: 00FFFF
+    l_mode5: 00FFFF
+    l_mode6: 00FFFF
+    l_dropCenterLeft: 00FFFF
+    l_dropLeft0: 00FFFF
+    l_dropLeft1: 00FFFF
+    l_dropLeft2: 00FFFF
+    l_dropLeft3: 00FFFF
+    l_GIUpperR: 00FFFF
+    l_GILane5: 00FFFF
+    l_GIAboveSpinnerUpper: 00FFFF
+    l_GIUpperCR: 00FFFF
+    l_GIUpperR: 00FFFF
+    l_lane1: 00FFFF
+    l_lane2: 00FFFF
+    l_lane3: 00FFFF
+    l_lane4: 00FFFF
+    l_GILane1: 00FFFF
+    l_GILane2: 00FFFF
+    l_GILane3: 00FFFF
+    l_GILane4: 00FFFF
+    l_GIAboveScoopUpper: 00FFFF
+    l_GIUpperL: 00FFFF
+    l_lane0: 00FFFF
+    l_GIUpperCL: 00FFFF
 - duration: 1
   lights:
     l_GISlingRight0: 0000FF
@@ -90,6 +164,43 @@
     l_GILowLeft: 0000FF
     l_GIDropLeft0: 0000FF
     l_GIDropLeft1: 0000FF
+    l_bonus4: 0000FF
+    l_bonus5: 0000FF
+    l_bonus6: 0000FF
+    l_bonusBig0: 0000FF
+    l_bonusBig1: 0000FF
+    l_bonus7: 0000FF
+    l_bonus8: 0000FF
+    l_dropCenterRight: 0000FF
+    l_dropRight0: 0000FF
+    l_dropRight1: 0000FF
+    l_dropRight2: 0000FF
+    l_dropRight3: 0000FF
+    l_mode4: 0000FF
+    l_mode5: 0000FF
+    l_mode6: 0000FF
+    l_dropCenterLeft: 0000FF
+    l_dropLeft0: 0000FF
+    l_dropLeft1: 0000FF
+    l_dropLeft2: 0000FF
+    l_dropLeft3: 0000FF
+    l_GIUpperR: 0000FF
+    l_GILane5: 0000FF
+    l_GIAboveSpinnerUpper: 0000FF
+    l_GIUpperCR: 0000FF
+    l_GIUpperR: 0000FF
+    l_lane1: 0000FF
+    l_lane2: 0000FF
+    l_lane3: 0000FF
+    l_lane4: 0000FF
+    l_GILane1: 0000FF
+    l_GILane2: 0000FF
+    l_GILane3: 0000FF
+    l_GILane4: 0000FF
+    l_GIAboveScoopUpper: 0000FF
+    l_GIUpperL: 0000FF
+    l_lane0: 0000FF
+    l_GIUpperCL: 0000FF
 - duration: 1
   lights:
     l_GISlingRight0: 000000
@@ -120,6 +231,43 @@
     l_GILowLeft: 000000
     l_GIDropLeft0: 000000
     l_GIDropLeft1: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonusBig0: 000000
+    l_bonusBig1: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+    l_dropCenterRight: 000000
+    l_dropRight0: 000000
+    l_dropRight1: 000000
+    l_dropRight2: 000000
+    l_dropRight3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+    l_dropCenterLeft: 000000
+    l_dropLeft0: 000000
+    l_dropLeft1: 000000
+    l_dropLeft2: 000000
+    l_dropLeft3: 000000
+    l_GIUpperR: 000000
+    l_GILane5: 000000
+    l_GIAboveSpinnerUpper: 000000
+    l_GIUpperCR: 000000
+    l_GIUpperR: 000000
+    l_lane1: 000000
+    l_lane2: 000000
+    l_lane3: 000000
+    l_lane4: 000000
+    l_GILane1: 000000
+    l_GILane2: 000000
+    l_GILane3: 000000
+    l_GILane4: 000000
+    l_GIAboveScoopUpper: 000000
+    l_GIUpperL: 000000
+    l_lane0: 000000
+    l_GIUpperCL: 000000
 - duration: 1
   lights:
     l_GISlingRight0: FF0000
@@ -150,6 +298,43 @@
     l_GILowLeft: FF0000
     l_GIDropLeft0: FF0000
     l_GIDropLeft1: FF0000
+    l_bonus4: FF0000
+    l_bonus5: FF0000
+    l_bonus6: FF0000
+    l_bonusBig0: FF0000
+    l_bonusBig1: FF0000
+    l_bonus7: FF0000
+    l_bonus8: FF0000
+    l_dropCenterRight: FF0000
+    l_dropRight0: FF0000
+    l_dropRight1: FF0000
+    l_dropRight2: FF0000
+    l_dropRight3: FF0000
+    l_mode4: FF0000
+    l_mode5: FF0000
+    l_mode6: FF0000
+    l_dropCenterLeft: FF0000
+    l_dropLeft0: FF0000
+    l_dropLeft1: FF0000
+    l_dropLeft2: FF0000
+    l_dropLeft3: FF0000
+    l_GIUpperR: FF0000
+    l_GILane5: FF0000
+    l_GIAboveSpinnerUpper: FF0000
+    l_GIUpperCR: FF0000
+    l_GIUpperR: FF0000
+    l_lane1: FF0000
+    l_lane2: FF0000
+    l_lane3: FF0000
+    l_lane4: FF0000
+    l_GILane1: FF0000
+    l_GILane2: FF0000
+    l_GILane3: FF0000
+    l_GILane4: FF0000
+    l_GIAboveScoopUpper: FF0000
+    l_GIUpperL: FF0000
+    l_lane0: FF0000
+    l_GIUpperCL: FF0000
 - duration: 1
   lights:
     l_GISlingRight0: 00FF00
@@ -180,6 +365,43 @@
     l_GILowLeft: 00FF00
     l_GIDropLeft0: 00FF00
     l_GIDropLeft1: 00FF00
+    l_bonus4: 00FF00
+    l_bonus5: 00FF00
+    l_bonus6: 00FF00
+    l_bonusBig0: 00FF00
+    l_bonusBig1: 00FF00
+    l_bonus7: 00FF00
+    l_bonus8: 00FF00
+    l_dropCenterRight: 00FF00
+    l_dropRight0: 00FF00
+    l_dropRight1: 00FF00
+    l_dropRight2: 00FF00
+    l_dropRight3: 00FF00
+    l_mode4: 00FF00
+    l_mode5: 00FF00
+    l_mode6: 00FF00
+    l_dropCenterLeft: 00FF00
+    l_dropLeft0: 00FF00
+    l_dropLeft1: 00FF00
+    l_dropLeft2: 00FF00
+    l_dropLeft3: 00FF00
+    l_GIUpperR: 00FF00
+    l_GILane5: 00FF00
+    l_GIAboveSpinnerUpper: 00FF00
+    l_GIUpperCR: 00FF00
+    l_GIUpperR: 00FF00
+    l_lane1: 00FF00
+    l_lane2: 00FF00
+    l_lane3: 00FF00
+    l_lane4: 00FF00
+    l_GILane1: 00FF00
+    l_GILane2: 00FF00
+    l_GILane3: 00FF00
+    l_GILane4: 00FF00
+    l_GIAboveScoopUpper: 00FF00
+    l_GIUpperL: 00FF00
+    l_lane0: 00FF00
+    l_GIUpperCL: 00FF00
 - duration: 1
   lights:
     l_GISlingRight0: FFFF00
@@ -210,3 +432,40 @@
     l_GILowLeft: FFFF00
     l_GIDropLeft0: FFFF00
     l_GIDropLeft1: FFFF00
+    l_bonus4: FFFF00
+    l_bonus5: FFFF00
+    l_bonus6: FFFF00
+    l_bonusBig0: FFFF00
+    l_bonusBig1: FFFF00
+    l_bonus7: FFFF00
+    l_bonus8: FFFF00
+    l_dropCenterRight: FFFF00
+    l_dropRight0: FFFF00
+    l_dropRight1: FFFF00
+    l_dropRight2: FFFF00
+    l_dropRight3: FFFF00
+    l_mode4: FFFF00
+    l_mode5: FFFF00
+    l_mode6: FFFF00
+    l_dropCenterLeft: FFFF00
+    l_dropLeft0: FFFF00
+    l_dropLeft1: FFFF00
+    l_dropLeft2: FFFF00
+    l_dropLeft3: FFFF00
+    l_GIUpperR: FFFF00
+    l_GILane5: FFFF00
+    l_GIAboveSpinnerUpper: FFFF00
+    l_GIUpperCR: FFFF00
+    l_GIUpperR: FFFF00
+    l_lane1: FFFF00
+    l_lane2: FFFF00
+    l_lane3: FFFF00
+    l_lane4: FFFF00
+    l_GILane1: FFFF00
+    l_GILane2: FFFF00
+    l_GILane3: FFFF00
+    l_GILane4: FFFF00
+    l_GIAboveScoopUpper: FFFF00
+    l_GIUpperL: FFFF00
+    l_lane0: FFFF00
+    l_GIUpperCL: FFFF00

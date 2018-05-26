@@ -299,155 +299,13 @@ drop_target_banks:
 
 lights:
 #  #Inserts
-#  l_mode4:
-#    number: 1-0-1-2
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_mode5:
-#    number: 1-9-10-11
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_mode6:
-#    number: 1-6-7-8
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_lane0:
-#    number: 1-21-22-23
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_lane1:
-#    number: 1-24-25-26
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_lane2:
-#    number: 1-27-28-29
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_lane3:
-#    number: 1-30-31-32
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_lane4:
-#    number: 1-33-34-35
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus0:
-#    number: 1-36-37-38
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus1:
-#    number: 1-39-40-41
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus2:
-#    number: 1-42-43-44
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus3:
-#    number: 1-45-46-47
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus4:
-#    number: 1-48-49-50
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus5:
-#    number: 1-51-52-53
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus6:
-#    number: 1-54-55-56
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus7:
-#    number: 1-57-58-59
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonus8:
-#    number: 1-60-61-62
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonusBig0:
-#    number: 1-66-67-68
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_bonusBig1:
-#    number: 1-69-70-71
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#
-#
-#
-#
-#  l_dropLeft0:
-#    number: 2-6-7-8
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropLeft1:
-#    number: 2-9-10-11
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropLeft2:
-#    number: 2-12-13-14
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropLeft3:
-#    number: 2-15-16-17
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropCenterLeft:
-#    number: 2-18-19-20
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropCenterRight:
-#    number: 2-21-22-23
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropRight0:
-#    number: 2-24-25-26
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropRight1:
-#    number: 2-27-28-29
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropRight2:
-#    number: 2-30-31-32
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_dropRight3:
-#    number: 2-33-34-35
-#    subtype: led
-#    platform_settings:
-#      polarity: true
+
+
+
+
+
+
+
 #  l_scoop:
 #    number: 2-36-37-38
 #    subtype: led
@@ -526,69 +384,117 @@ lights:
 #    subtype: led
 #    platform_settings:
 #      polarity: true
-#  l_GIAboveScoopUpper:
-#    number: 3-9-10-11
-#    subtype: led
-#    platform_settings:
-#      polarity: true
+
 #
-#  l_GIAboveSpinnerUpper:
-#    number: 3-15-16-17
-#    subtype: led
-#    platform_settings:
-#      polarity: true
+
 #  l_GILane0:
 #    number: 3-18-19-20
 #    subtype: led
 #    platform_settings:
 #      polarity: true
-#  l_GILane1:
-#    number: 3-21-22-23
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GILane2:
-#    number: 3-24-25-26
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GILane3:
-#    number: 3-27-28-29
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GILane4:
-#    number: 3-30-31-32
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GILane5:
-#    number: 3-33-34-35
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIUpperL:
-#    number: 3-36-37-38
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIUpperCL:
-#    number: 3-39-40-41
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIUpperCR:
-#    number: 3-42-43-44
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIUpperR:
-#    number: 3-45-46-47
-#    subtype: led
-#    platform_settings:
-#      polarity: true
 
+
+
+
+
+
+#-----------------------------------------------------------------------
 #LED BOARD 1
+#-----------------------------------------------------------------------
+#J5   0..11
+
+#J9  12..23
+
+#J6  24..35
+  l_GILane1:
+    number: 1-24-25-26
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GILane2:
+    number: 1-27-28-29
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GILane3:
+    number: 1-30-31-32
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GILane4:
+    number: 1-33-34-35
+    subtype: led
+    platform_settings:
+      polarity: true
+
+#J10 36..47
+  l_GIAboveScoopUpper:
+    number: 1-36-37-38
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIUpperL:
+    number: 3-36-37-38
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_lane0:
+    number: 1-21-22-23
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIUpperCL:
+    number: 3-39-40-41
+    subtype: led
+    platform_settings:
+      polarity: true
+
+#J7  48..59
+  l_lane1:
+    number: 1-48-49-50
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_lane2:
+    number: 1-51-52-53
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_lane3:
+    number: 1-54-55-56
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_lane4:
+    number: 1-57-58-59
+    subtype: led
+    platform_settings:
+      polarity: true
+
+#J11 60..71
+  l_GILane5:
+    number: 1-60-61-62
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIAboveSpinnerUpper:
+    number: 1-63-65-65
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIUpperCR:
+    number: 1-66-67-68
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIUpperR:
+    number: 1-69-70-71
+    subtype: led
+    platform_settings:
+      polarity: true
+
+
+#J8  72..83
   l_GIAboveSpinnerLower:
     number: 1-72-73-74
     subtype: led
@@ -610,7 +516,126 @@ lights:
     platform_settings:
       polarity: true
 
+#-----------------------------------------------------------------------
+#LED BOARD 2
+#-----------------------------------------------------------------------
+#J5   0..11
+
+#J9  12..23
+  l_dropRight3:
+    number: 2-12-13-14
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_dropRight2:
+    number: 2-15-16-17
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_dropRight1:
+    number: 2-18-19-20
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_dropRight0:
+    number: 2-21-22-23
+    subtype: led
+    platform_settings:
+      polarity: true
+
+#J6  24..35
+  l_bonusBig1:
+    number: 2-24-25-26
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_bonus7:
+    number: 2-27-28-29
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_bonus8:
+    number: 2-30-31-32
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_dropCenterRight:
+    number: 2-33-34-35
+    subtype: led
+    platform_settings:
+      polarity: true
+
+#J10 36..47
+  l_bonus4:
+    number: 2-36-37-38
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_bonus5:
+    number: 2-39-40-41
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_bonus6:
+    number: 2-42-43-44
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_bonusBig0:
+    number: 2-45-46-47
+    subtype: led
+    platform_settings:
+      polarity: true
+
+#J7  48..59
+  l_dropLeft0:
+    number: 2-48-49-50
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_dropLeft1:
+    number: 2-51-52-53
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_dropLeft2:
+    number: 2-54-55-56
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_dropLeft3:
+    number: 2-57-58-59
+    subtype: led
+    platform_settings:
+      polarity: true
+
+#J11 60..71
+  l_mode4:
+    number: 2-60-61-62
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_mode5:
+    number: 2-63-64-65
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_mode6:
+    number: 2-66-67-68
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_dropCenterLeft:
+    number: 2-69-70-371
+    subtype: led
+    platform_settings:
+      polarity: true
+
+#J8  72..83
+
+#-----------------------------------------------------------------------
 #LED BOARD 3
+#-----------------------------------------------------------------------
 #J5 0..11
   l_GISlingLeft1:
     number: 3-0-1-2
@@ -632,6 +657,7 @@ lights:
     subtype: led
     platform_settings:
       polarity: true
+
 #J9 12..23
   l_mode0:
     number: 3-12-13-14
@@ -675,6 +701,8 @@ lights:
     subtype: led
     platform_settings:
       polarity: true
+
+#J10 36..47 -- Flipper Lane GI Planned Here
 
 #J7 48..59
   l_specialRight:
