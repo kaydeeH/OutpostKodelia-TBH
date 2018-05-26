@@ -434,17 +434,17 @@ lights:
     platform_settings:
       polarity: true
   l_GIUpperL:
-    number: 3-36-37-38
+    number: 1-39-40-41
     subtype: led
     platform_settings:
       polarity: true
   l_lane0:
-    number: 1-21-22-23
+    number: 1-42-43-44
     subtype: led
     platform_settings:
       polarity: true
   l_GIUpperCL:
-    number: 3-39-40-41
+    number: 1-45-46-47
     subtype: led
     platform_settings:
       polarity: true
@@ -478,7 +478,7 @@ lights:
     platform_settings:
       polarity: true
   l_GIAboveSpinnerUpper:
-    number: 1-63-65-65
+    number: 1-63-64-65
     subtype: led
     platform_settings:
       polarity: true
@@ -626,7 +626,7 @@ lights:
     platform_settings:
       polarity: true
   l_dropCenterLeft:
-    number: 2-69-70-371
+    number: 2-69-70-71
     subtype: led
     platform_settings:
       polarity: true

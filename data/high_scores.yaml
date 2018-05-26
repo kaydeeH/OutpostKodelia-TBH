@@ -8,6 +8,9 @@ meteors:
   - 75
 score:
 - !!python/tuple
+  - AAA
+  - 285000
+- !!python/tuple
   - YYY
   - 245300
 - !!python/tuple
@@ -22,6 +25,3 @@ score:
 - !!python/tuple
   - DDD
   - 142611
-- !!python/tuple
-  - AAA
-  - 130408
