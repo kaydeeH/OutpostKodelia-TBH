@@ -298,19 +298,7 @@ drop_target_banks:
            ball_starting: 300ms
 
 lights:
-#  #Inserts
 
-
-
-
-
-
-
-#  l_scoop:
-#    number: 2-36-37-38
-#    subtype: led
-#    platform_settings:
-#      polarity: true
 #
 #  l_jetUpperLeft:
 #    number: 6-42-43-44
@@ -337,35 +325,8 @@ lights:
 #    subtype: led
 #    platform_settings:
 #      polarity: true
-#  #GI
-#
-#
-
-#
-
-#
-#  l_GIDropCenterLeft:
-#    number: 3-60-61-62
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIDropCenterRight:
-#    number: 3-63-64-65
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIScoopLL:
-#    number: 5-78-79-80
-#    subtype: led
-#    platform_settings:
-#      polarity: true
 #  l_GIScoopLR: #needs to be drilled
 #    number: 4-81-82-83
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIScoopML:
-#    number: 4-84-85-86
 #    subtype: led
 #    platform_settings:
 #      polarity: true
@@ -374,29 +335,6 @@ lights:
 #    subtype: led
 #    platform_settings:
 #      polarity: true
-#  l_GIScoopUC:
-#    number: 3-3-4-5
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIAboveScoopLower:
-#    number: 3-6-7-8
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-
-#
-
-#  l_GILane0:
-#    number: 3-18-19-20
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-
-
-
-
-
 
 #-----------------------------------------------------------------------
 #LED BOARD 1
@@ -404,6 +342,21 @@ lights:
 #J5   0..11
 
 #J9  12..23
+  l_GIAboveScoopLower:
+    number: 1-12-13-14
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GILane0:
+    number: 1-15-16-17
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIScoopUC:
+    number: 1-18-19-20
+    subtype: led
+    platform_settings:
+      polarity: true
 
 #J6  24..35
   l_GILane1:
@@ -520,6 +473,16 @@ lights:
 #LED BOARD 2
 #-----------------------------------------------------------------------
 #J5   0..11
+  l_GIDropCenterLeft:
+    number: 2-0-1-2
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIDropCenterRight:
+    number: 2-3-4-5
+    subtype: led
+    platform_settings:
+      polarity: true
 
 #J9  12..23
   l_dropRight3:
@@ -632,6 +595,21 @@ lights:
       polarity: true
 
 #J8  72..83
+  l_scoop:
+    number: 2-72-73-74
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIScoopLL:
+    number: 2-75-76-77
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIScoopML:
+    number: 2-78-79-80
+    subtype: led
+    platform_settings:
+      polarity: true
 
 #-----------------------------------------------------------------------
 #LED BOARD 3

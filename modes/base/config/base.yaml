@@ -27,8 +27,12 @@ slide_player:
         anchor_y: bottom
         font_size: 50
       - type: text
-        text: "POTATO VALUE: (potato)"
+        text: "POPS: (pops)"
         y: 40%
+      - type: text
+        text: "DROPS: (drops)"
+        y: 30%
+
 
 
 counters:
@@ -230,55 +234,71 @@ shot_groups:
 variable_player:
   s_jet_upper_left_active:
     score: 1000
-    potato: 10
+    pops: 1
   s_jet_upper_right_active:
     score: 1000
-    potato: 10
+    pops: 1
   s_jet_lower_center_active:
     score: 1000
-    potato: 10
+    pops: 1
   s_slingshot_left_active:
     score: 500
-    potato: -2
   s_slingshot_right_active:
     score: 500
-    potato: -2
   shotTargetL0_unlit_hit:
     score: 100
+    drops: 1
   shotTargetL1_unlit_hit:
     score: 100
+    drops: 1
   shotTargetL2_unlit_hit:
     score: 100
+    drops: 1
   shotTargetL3_unlit_hit:
     score: 100
+    drops: 1
   shotTargetL0_flashing_hit:
     score: 10000
+    drops: 1
   shotTargetL1_flashing_hit:
     score: 10000
+    drops: 1
   shotTargetL2_flashing_hit:
     score: 10000
+    drops: 1
   shotTargetL3_flashing_hit:
     score: 10000
+    drops: 1
   shotTargetL0_lit_hit:
     score: 400
+    drops: 1
   shotTargetL1_lit_hit:
     score: 400
+    drops: 1
   shotTargetL2_lit_hit:
     score: 400
+    drops: 1
   shotTargetL3_lit_hit:
     score: 400
+    drops: 1
   s_dTargetR0_active:
     score: 100
+    drops: 1
   s_dTargetR1_active:
     score: 100
+    drops: 1
   s_dTargetR2_active:
     score: 100
+    drops: 1
   s_dTargetR3_active:
     score: 100
+    drops: 1
   s_dTargetCL_active:
     score: 200
+    drops: 1
   s_dTargetCR_active:
     score: 200
+    drops: 1
   s_roInLaneLeft_active:
     score: 50
   s_roInLaneRight_active:
@@ -305,6 +325,8 @@ variable_player:
     score: 10000
   s_spinner_active:
     score: 100
+  s_ir_scoop_detect_active:
+    score: 1000000
   shotLane0_shotProfileToplanes_unlit_hit:
     score: 100
   shotLane0_shotProfileToplanes_flashing_hit:
@@ -339,6 +361,39 @@ variable_player:
     score: 10000
   shotGroupLeftTargets_lit_complete:
     score: 50000
+
+queue_relay_player:
+  balldevice_bd_scoop_ball_eject_attempt:
+      post: start_mode_scoop_show
+      wait_for: mode_scoop_show_ended
+
+show_player:
+  start_mode_scoop_show:
+      scoop_show:
+          loops: 0
+          events_when_completed: mode_scoop_show_ended
+
+shows:
+  scoop_show:
+     - time: 0
+       lights:
+         l_2x: red
+         l_3x: red
+         l_4x: red
+         l_5x: red
+     - time: +1
+       lights:
+         l_2x: blue
+         l_3x: blue
+         l_4x: blue
+         l_5x: blue
+     - time: +1
+       lights:
+         l_2x: green
+         l_3x: green
+         l_4x: green
+         l_5x: green
+
 
 #coil_player:
 #  ball_starting:
