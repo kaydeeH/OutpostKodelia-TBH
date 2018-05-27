@@ -257,6 +257,14 @@ shot_groups:
 sound_player:
     s_slingshot_left_active: testFX1
     s_slingshot_right_active: testFX1
+    s_jet_lower_center_active: testFX3
+    s_jet_upper_right_active: testFX3
+    s_jet_upper_left_active: testFX3
+    mode_base_started:
+      overture:
+          action: play
+          loops: -1
+          mode_end_action: stop
 
 variable_player:
   s_jet_upper_left_active:
