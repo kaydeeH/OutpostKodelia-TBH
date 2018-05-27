@@ -244,9 +244,6 @@ autofire_coils:
   jet_lower_center:
     coil: c_jet_lower_center
     switch: s_jet_lower_center
-  scoop:
-    coil: c_scoop_eject
-    switch: s_ir_scoop_detect
 
 drop_targets:
      L0:
@@ -310,11 +307,7 @@ lights:
 #    subtype: led
 #    platform_settings:
 #      polarity: true
-#  l_jetLowerCenter:
-#    number: 6-48-49-50
-#    subtype: led
-#    platform_settings:
-#      polarity: true
+
 #  l_yellowTargetLeft: #needs to be drilled
 #    number: 7-48-49-50
 #    subtype: led
@@ -480,6 +473,11 @@ lights:
       polarity: true
   l_GIDropCenterRight:
     number: 2-3-4-5
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_jetLowerCenter:
+    number: 2-6-7-8
     subtype: led
     platform_settings:
       polarity: true

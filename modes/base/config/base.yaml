@@ -149,6 +149,11 @@ state_machines:
          events: shotGroupLeftTargets_lit_complete
 
 shots:
+  shotCenterPop:
+    switch: s_jet_lower_center
+    show_tokens:
+      light: l_jetLowerCenter
+    profile: shotProfilePops
   shotLane0:
     switch: s_lane0
     show_tokens:
@@ -215,7 +220,13 @@ shot_profiles:
       - name: lit
         show: dk_blu_on
     loop: false
-
+  shotProfilePops:
+    states:
+      - name: popBumpRed
+        show: popred
+      - name: popBumpBlue
+        show: popblue
+    loop: true
 
 shot_groups:
    shotGroupToplanes:
