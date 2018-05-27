@@ -745,5 +745,8 @@ lights:
     platform_settings:
       polarity: true
 
+
+
+
 virtual_platform_start_active_switches:
   s_drain

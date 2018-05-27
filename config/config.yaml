@@ -1,6 +1,8 @@
 #config_version=5
 config:
   - hardware.yaml
+  - sound.yaml
+  - assets.yaml
 
 #slides:
 #  welcome_slide:
