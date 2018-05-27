@@ -254,6 +254,10 @@ shot_groups:
        enable_events: ball_started
        disable_events: ball_ending
 
+sound_player:
+    s_slingshot_left_active: testFX1
+    s_slingshot_right_active: testFX1
+
 variable_player:
   s_jet_upper_left_active:
     score: 1000
@@ -416,6 +420,7 @@ shows:
          l_3x: green
          l_4x: green
          l_5x: green
+
 
 
 #coil_player:

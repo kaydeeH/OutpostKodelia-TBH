@@ -22,20 +22,14 @@ sound_system:
 
 sounds:
     testFX1:
-        file: 18382__inferno__hvylas.wav
+        file: 18382infernohvylas.wav
     testFX2:
         file: 151022__bubaproducer__laser-shot-silenced.wav
     testFX3:
         file: 191594__fins__laser.wav
     testFX4:
         file: 234083__211redman112__lasgun-fire.ogg
-    testFX5:
-        file: 268343__julien-matthey__jm-noiz-laser-02.wav
     testFX6:
         file: 321102__nsstudios__laser1.wav
     testFX7:
         file: 344276__nsstudios__laser3.wav
-    testFX8:
-        file: 351429__kinoton__gun-laser-single-shot-sci-fi.wav
-    testFX9:
-        file: 361471__sunnyflower__laser-gun.wav
