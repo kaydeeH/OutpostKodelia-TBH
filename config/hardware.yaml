@@ -296,18 +296,6 @@ drop_target_banks:
 
 lights:
 
-#
-#  l_jetUpperLeft:
-#    number: 6-42-43-44
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_jetUpperRight:
-#    number: 6-45-46-47
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-
 #  l_yellowTargetLeft: #needs to be drilled
 #    number: 7-48-49-50
 #    subtype: led
@@ -333,6 +321,16 @@ lights:
 #LED BOARD 1
 #-----------------------------------------------------------------------
 #J5   0..11
+  l_jetUpperRight:
+    number: 1-0-1-2
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_jetUpperLeft:
+    number: 1-3-4-5
+    subtype: led
+    platform_settings:
+      polarity: true
 
 #J9  12..23
   l_GIAboveScoopLower:

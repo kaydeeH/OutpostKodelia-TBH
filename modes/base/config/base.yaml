@@ -154,6 +154,16 @@ shots:
     show_tokens:
       light: l_jetLowerCenter
     profile: shotProfilePops
+  shotUpperLeftPop:
+    switch: s_jet_upper_left
+    show_tokens:
+      light: l_jetUpperLeft
+    profile: shotProfilePops
+  shotUpperRightPop:
+    switch: s_jet_upper_right
+    show_tokens:
+      light: l_jetUpperRight
+    profile: shotProfilePops
   shotLane0:
     switch: s_lane0
     show_tokens:
@@ -226,6 +236,8 @@ shot_profiles:
         show: popred
       - name: popBumpBlue
         show: popblue
+      - name: popBumpGreen
+        show: popgreen
     loop: true
 
 shot_groups:
