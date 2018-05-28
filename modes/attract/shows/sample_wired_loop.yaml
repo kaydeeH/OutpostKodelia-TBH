@@ -77,6 +77,8 @@
     l_jetLowerCenter: FFFFFF
     l_jetUpperRight: FFFFFF
     l_jetUpperLeft: FFFFFF
+    l_GIScoopLR: FFFFFF
+    l_GIScoopMR: FFFFFF
 - duration: 1
   lights:
     l_GISlingRight0: 00FFFF
@@ -154,6 +156,8 @@
     l_jetLowerCenter: 00FFFF
     l_jetUpperRight: 00FFFF
     l_jetUpperLeft: 00FFFF
+    l_GIScoopLR: 00FFFF
+    l_GIScoopMR: 00FFFF
 - duration: 1
   lights:
     l_GISlingRight0: 0000FF
@@ -231,6 +235,8 @@
     l_jetLowerCenter: 0000FF
     l_jetUpperRight: 0000FF
     l_jetUpperLeft: 0000FF
+    l_GIScoopLR: 0000FF
+    l_GIScoopMR: 0000FF
 #- duration: 1
 #  lights:
 #    l_GISlingRight0: 000000
@@ -308,6 +314,8 @@
 #    l_jetLowerCenter: 000000
 #    l_jetUpperRight: 000000
 #    l_jetUpperLeft: 000000
+#    l_GIScoopLR: 000000
+#    l_GIScoopMR: 000000
 - duration: 1
   lights:
     l_GISlingRight0: FF0000
@@ -385,6 +393,8 @@
     l_jetLowerCenter: FF0000
     l_jetUpperRight: FF0000
     l_jetUpperLeft: FF0000
+    l_GIScoopLR: FF0000
+    l_GIScoopMR: FF0000
 - duration: 1
   lights:
     l_GISlingRight0: 00FF00
@@ -462,6 +472,8 @@
     l_jetLowerCenter: 00FF00
     l_jetUpperRight: 00FF00
     l_jetUpperLeft: 00FF00
+    l_GIScoopLR: 00FF00
+    l_GIScoopMR: 00FF00
 - duration: 1
   lights:
     l_GISlingRight0: FFFF00
@@ -539,6 +551,8 @@
     l_jetLowerCenter: FFFF00
     l_jetUpperRight: FFFF00
     l_jetUpperLeft: FFFF00
+    l_GIScoopLR: FFFF00
+    l_GIScoopMR: FFFF00
 - duration: 1
   lights:
     l_GISlingRight0: FFFFFF
@@ -616,3 +630,5 @@
     l_jetLowerCenter: FF0000
     l_jetUpperRight: FF0000
     l_jetUpperLeft: FF0000
+    l_GIScoopLR: FFFFFF
+    l_GIScoopMR: FFFFFF

@@ -13,18 +13,7 @@ lights:
     default_fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_GIScoopLR: #needs to be drilled
-    number: 4-81-82-83
-    subtype: led
-    default_fade_ms: 50ms
-    platform_settings:
-      polarity: true
-  l_GIScoopMR: #needs to be drilled
-    number: 4-0-1-2
-    subtype: led
-    default_fade_ms: 50ms
-    platform_settings:
-      polarity: true
+
 
 #-----------------------------------------------------------------------
 #LED BOARD 1
@@ -38,6 +27,18 @@ lights:
       polarity: true
   l_jetUpperLeft:
     number: 1-3-4-5
+    subtype: led
+    default_fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_GIScoopLR: #needs to be drilled
+    number: 1-6-7-8
+    subtype: led
+    default_fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_GIScoopMR: #needs to be drilled
+    number: 1-9-10-11
     subtype: led
     default_fade_ms: 50ms
     platform_settings:
