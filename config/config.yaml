@@ -4,6 +4,7 @@ config:
   - sound.yaml
   - assets.yaml
   - widgets.yaml
+  - lights.yaml
 
 #slides:
 #  welcome_slide:
