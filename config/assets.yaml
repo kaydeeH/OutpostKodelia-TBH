@@ -10,3 +10,14 @@ assets:
             track: sfx
         voice:
             track: voice
+    images:
+        default:
+            load: preload
+        preload:
+            load: preload
+        on_demand:
+            load: on_demand
+
+images:
+    logo:
+       file: BlackholeLogo.gif

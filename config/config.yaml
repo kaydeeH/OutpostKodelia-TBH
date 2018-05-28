@@ -3,6 +3,7 @@ config:
   - hardware.yaml
   - sound.yaml
   - assets.yaml
+  - widgets.yaml
 
 #slides:
 #  welcome_slide:

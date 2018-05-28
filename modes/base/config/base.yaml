@@ -5,18 +5,35 @@ mode:
   priority: 100
 
 slide_player:
-  mode_base_started:
+  mode_base_started: scoring_slide
+#  scoop_slide: s_ir_scoop_detect_active
+
+widget_player:
+   s_jet_upper_left_active:
+      sample_quick_vid:
+         slide: scoring_slide
+         widget_settings:
+           expire: 2s
+
+slides:
+   scoring_slide:
     widgets:
+      - type: image
+        image: logo
+        x: 150
+        y: 650
       - type: text
         text: (score)
         number_grouping: true
         min_digits: 2
         font_size: 100
+        font_name: ocr-a-tribute-bold
       - type: text
         text: PLAYER (number)
         y: 10
         x: 10
         font_size: 50
+        font_name: ocr-a-tribute-bold
         anchor_x: left
         anchor_y: bottom
       - type: text
@@ -26,12 +43,21 @@ slide_player:
         anchor_x: right
         anchor_y: bottom
         font_size: 50
+        font_name: ocr-a-tribute-bold
       - type: text
         text: "POPS: (pops)"
         y: 40%
       - type: text
         text: "DROPS: (drops)"
         y: 30%
+   scoop_slide:
+    widgets:
+      - type: text
+        text: SCOOP MADNESS
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+    expire: 3s
 
 
 
@@ -418,6 +444,7 @@ show_player:
 shows:
   scoop_show:
      - time: 0
+       slides: scoop_slide
        lights:
          l_2x: red
          l_3x: red

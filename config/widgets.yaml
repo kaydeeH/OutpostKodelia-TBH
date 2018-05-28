@@ -1,0 +1,12 @@
+#config_version=5
+
+widgets:
+  sample_quick_vid:
+      - type: video
+        video: test
+        x: 1040
+        y: 600
+        width: 640
+        height: 480
+        auto_play: true
+        end_behavior: stop
