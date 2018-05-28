@@ -1,0 +1,42 @@
+#config_version=5
+
+mode_settings:
+  keep_multiplier: True
+  display_delay_ms: 1s
+  hurry_up_delay_ms: 0
+  bonus_entries:
+      - event: bonus_pops
+        score: 10 * current_player.pops
+        skip_if_zero: false
+      - event: bonus_drops
+        score: 100 * current_player.drops
+        skip_if_zero: false
+
+slide_player:
+  bonus_start: slide_6
+  bonus_pops: slide_7
+  bonus_drops: slide_8
+  bonus_subtotal: slide_9
+  bonus_multiplier: slide_10
+  bonus_total: slide_11
+slides:
+  slide_6:
+  - type: text
+    text: END OF BALL BONUS
+  slide_7:
+  - type: text
+    text: 'POPS: (score)'
+  slide_8:
+  - type: text
+    text: 'DROPS: (score)'
+  slide_9:
+  - type: text
+    text: 'BONUS SCORE: (score)'
+    number_grouping: true
+  slide_10:
+  - type: text
+    text: (bonusmulti)X
+  slide_11:
+  - type: text
+    text: 'TOTAL BONUS: (score)'
+    number_grouping: true

@@ -21,6 +21,15 @@ config:
 modes:
   - base
   - high_score
+  - bonus
+
+player_vars:
+  pops:
+     initial_value: 0
+  drops:
+     initial_value: 0
+  bonusmulti:
+     initial_value: 1
 
 
 keyboard:

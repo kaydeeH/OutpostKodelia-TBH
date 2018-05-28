@@ -259,6 +259,13 @@ sound_player:
     s_slingshot_right_active: testFX1
 
 variable_player:
+  mode_base_started:
+    pops:
+       int: 0
+       action: set
+    drops:
+       int: 0
+       action: set
   s_jet_upper_left_active:
     score: 1000
     pops: 1
