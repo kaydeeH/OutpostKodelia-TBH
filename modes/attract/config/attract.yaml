@@ -3,10 +3,10 @@
 show_player:
   mode_attract_started: attract_display_loop
   mode_attract_started.1:
-#     sample_wired_loop:
-#       speed: 1
      pinwheel:
        speed: 20
+       loops: 3
+       events_when_completed: attract_next_01
 #    attract_light_show:
 #      speed: 10
 #    giWhite:
@@ -15,3 +15,13 @@ show_player:
 #      speed: 10
 #    attractBonusX:
 #      speed: 5
+  attract_next_01:
+     sample_wired_loop:
+       speed: 5
+       loops: 3
+       events_when_completed: attract_next_02
+  attract_next_02:
+     pinwheel:
+       speed: 20
+       loops: 3
+       events_when_completed: attract_next_01
