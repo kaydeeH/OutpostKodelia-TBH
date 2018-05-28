@@ -302,26 +302,26 @@ drop_target_banks:
 
 lights:
 
-#  l_yellowTargetLeft: #needs to be drilled
-#    number: 7-48-49-50
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_yellowTargetRight: #needs to be drilled
-#    number: 7-51-52-53
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIScoopLR: #needs to be drilled
-#    number: 4-81-82-83
-#    subtype: led
-#    platform_settings:
-#      polarity: true
-#  l_GIScoopMR: #needs to be drilled
-#    number: 3-0-1-2
-#    subtype: led
-#    platform_settings:
-#      polarity: true
+  l_yellowTargetLeft: #needs to be drilled
+    number: 4-48-49-50
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_yellowTargetRight: #needs to be drilled
+    number: 4-51-52-53
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIScoopLR: #needs to be drilled
+    number: 4-81-82-83
+    subtype: led
+    platform_settings:
+      polarity: true
+  l_GIScoopMR: #needs to be drilled
+    number: 4-0-1-2
+    subtype: led
+    platform_settings:
+      polarity: true
 
 #-----------------------------------------------------------------------
 #LED BOARD 1
