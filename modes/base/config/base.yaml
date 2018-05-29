@@ -388,9 +388,9 @@ variable_player:
   s_sTargetUpperR_active:
     score: 1
   s_sTargetYellowL_active:
-    score: 10000
+    score: 100
   s_sTargetYellowR_active:
-    score: 10000
+    score: 100
   s_spinner_active:
     score: 100
   s_ir_scoop_detect_active:
@@ -439,7 +439,7 @@ show_player:
   start_mode_scoop_show:
       scoop_show:
           loops: 0
-          events_when_completed: mode_scoop_show_ended
+          events_when_completed: mode_scoop_show_ended, yt_hurry_up_started
 
 shows:
   scoop_show:
