@@ -22,8 +22,8 @@ show_player:
        events_when_completed: attract_next_02
   attract_next_02:
      swirl:
-       speed: 10
-       loops: 5
+       speed: 15
+       loops: 6
        events_when_completed: attract_next_03
   attract_next_03:
      pinwheel:
