@@ -1,641 +1,1735 @@
 #show_version=5
 - time: 0
   lights:
-      l_2x: '180243'
-      l_3x: '180243'
-      l_GILane3: '000000'
-      l_GILowRight: '000000'
-      l_GIScoopLR: '180243'
-      l_GIScoopML: '180243'
-      l_dropCenterRight: '140236'
-      l_dropLeft0: '000000'
-      l_dropLeft1: '000000'
-      l_dropRight0: '000000'
-      l_lane3: '000000'
-      l_mode0: '180243'
-      l_mode1: '10022B'
-      l_mode6: '000000'
-      l_shootAgain: '180243'
-      l_spinner: '180243'
+      l_2x:
+        color: '180243'
+        fade: 100ms
+      l_3x:
+        color: '180243'
+        fade: 100ms
+      l_GILane3:
+        color: '000000'
+        fade: 100ms
+      l_GILowRight:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopLR:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopML:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '140236'
+        fade: 100ms
+      l_dropLeft0:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft1:
+        color: '000000'
+        fade: 100ms
+      l_dropRight0:
+        color: '000000'
+        fade: 100ms
+      l_lane3:
+        color: '000000'
+        fade: 100ms
+      l_mode0:
+        color: '180243'
+        fade: 100ms
+      l_mode1:
+        color: '10022B'
+        fade: 100ms
+      l_mode6:
+        color: '000000'
+        fade: 100ms
+      l_shootAgain:
+        color: '180243'
+        fade: 100ms
+      l_spinner:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopLower: '0A0119'
-      l_GIDropLeft0: '000000'
-      l_GILane4: '000000'
-      l_GIScoopMR: '180243'
-      l_GIScoopUC: '180243'
-      l_GISlingLeft0: '060110'
-      l_GIUpperCR: '000000'
-      l_bonus8: '000000'
-      l_bonusBig1: '000000'
-      l_dropCenterRight: '000000'
-      l_dropLeft2: '000000'
-      l_jetUpperRight: '000000'
-      l_lane4: '000000'
-      l_mode1: '180243'
-      l_mode2: '180243'
-      l_mode3: '010101'
+      l_GIAboveScoopLower:
+        color: '0A0119'
+        fade: 100ms
+      l_GIDropLeft0:
+        color: '000000'
+        fade: 100ms
+      l_GILane4:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopMR:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopUC:
+        color: '180243'
+        fade: 100ms
+      l_GISlingLeft0:
+        color: '060110'
+        fade: 100ms
+      l_GIUpperCR:
+        color: '000000'
+        fade: 100ms
+      l_bonus8:
+        color: '000000'
+        fade: 100ms
+      l_bonusBig1:
+        color: '000000'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft2:
+        color: '000000'
+        fade: 100ms
+      l_jetUpperRight:
+        color: '000000'
+        fade: 100ms
+      l_lane4:
+        color: '000000'
+        fade: 100ms
+      l_mode1:
+        color: '180243'
+        fade: 100ms
+      l_mode2:
+        color: '180243'
+        fade: 100ms
+      l_mode3:
+        color: '010101'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopLower: '180243'
-      l_GIAboveScoopUpper: '180243'
-      l_GIAboveSpinnerUpper: '000000'
-      l_GIDropCenterRight: '130234'
-      l_GIDropLeft1: '000000'
-      l_GIDropRight1: '180243'
-      l_GILane0: '180243'
-      l_GILane5: '000000'
-      l_GISlingLeft0: '180243'
-      l_GISlingLeft1: '180243'
-      l_GISlingRight1: '010001'
-      l_GIUpperL: '180243'
-      l_GIUpperR: '000000'
-      l_bonus6: '000000'
-      l_bonus7: '000000'
-      l_bonusBig0: '000000'
-      l_dropLeft3: '000000'
-      l_dropRight3: '180243'
-      l_jetUpperLeft: '0D0122'
-      l_mode3: '180243'
-      l_mode4: '180243'
-      l_specialLeft: '180243'
-      l_specialRight: '000000'
-      l_yellowTargetLeft: '180243'
-      l_yellowTargetRight: '000000'
+      l_GIAboveScoopLower:
+        color: '180243'
+        fade: 100ms
+      l_GIAboveScoopUpper:
+        color: '180243'
+        fade: 100ms
+      l_GIAboveSpinnerUpper:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '130234'
+        fade: 100ms
+      l_GIDropLeft1:
+        color: '000000'
+        fade: 100ms
+      l_GIDropRight1:
+        color: '180243'
+        fade: 100ms
+      l_GILane0:
+        color: '180243'
+        fade: 100ms
+      l_GILane5:
+        color: '000000'
+        fade: 100ms
+      l_GISlingLeft0:
+        color: '180243'
+        fade: 100ms
+      l_GISlingLeft1:
+        color: '180243'
+        fade: 100ms
+      l_GISlingRight1:
+        color: '010001'
+        fade: 100ms
+      l_GIUpperL:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperR:
+        color: '000000'
+        fade: 100ms
+      l_bonus6:
+        color: '000000'
+        fade: 100ms
+      l_bonus7:
+        color: '000000'
+        fade: 100ms
+      l_bonusBig0:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft3:
+        color: '000000'
+        fade: 100ms
+      l_dropRight3:
+        color: '180243'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '0D0122'
+        fade: 100ms
+      l_mode3:
+        color: '180243'
+        fade: 100ms
+      l_mode4:
+        color: '180243'
+        fade: 100ms
+      l_specialLeft:
+        color: '180243'
+        fade: 100ms
+      l_specialRight:
+        color: '000000'
+        fade: 100ms
+      l_yellowTargetLeft:
+        color: '180243'
+        fade: 100ms
+      l_yellowTargetRight:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveSpinnerLower: '000000'
-      l_GIDropCenterLeft: '10022A'
-      l_GIDropCenterRight: '010001'
-      l_GIDropRight0: '180243'
-      l_GILane1: '180243'
-      l_GIScoopLL: '000000'
-      l_GISlingRight0: '000000'
-      l_GISlingRight1: '000000'
-      l_GIUpperCL: '180243'
-      l_bonus4: '000000'
-      l_bonus5: '000000'
-      l_dropCenterLeft: '040108'
-      l_dropRight2: '180243'
-      l_jetLowerCenter: '090118'
-      l_jetUpperLeft: '180243'
-      l_lane0: '180243'
-      l_mode5: '180243'
+      l_GIAboveSpinnerLower:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '10022A'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '010001'
+        fade: 100ms
+      l_GIDropRight0:
+        color: '180243'
+        fade: 100ms
+      l_GILane1:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopLL:
+        color: '000000'
+        fade: 100ms
+      l_GISlingRight0:
+        color: '000000'
+        fade: 100ms
+      l_GISlingRight1:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperCL:
+        color: '180243'
+        fade: 100ms
+      l_bonus4:
+        color: '000000'
+        fade: 100ms
+      l_bonus5:
+        color: '000000'
+        fade: 100ms
+      l_dropCenterLeft:
+        color: '040108'
+        fade: 100ms
+      l_dropRight2:
+        color: '180243'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '090118'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '180243'
+        fade: 100ms
+      l_lane0:
+        color: '180243'
+        fade: 100ms
+      l_mode5:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_4x: '180242'
-      l_5x: '000000'
-      l_GIDropCenterLeft: '180243'
-      l_GIDropCenterRight: '000000'
-      l_GILane2: '180243'
-      l_GILowLeft: '180243'
-      l_bonus0: '000000'
-      l_bonus1: '000000'
-      l_bonus2: '000000'
-      l_bonus3: '000000'
-      l_dropCenterLeft: '180243'
-      l_dropLeft0: '010101'
-      l_dropRight1: '180243'
-      l_jetLowerCenter: '180243'
-      l_lane1: '180243'
-      l_lane2: '010001'
-      l_scoop: '000000'
+      l_4x:
+        color: '180242'
+        fade: 100ms
+      l_5x:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '000000'
+        fade: 100ms
+      l_GILane2:
+        color: '180243'
+        fade: 100ms
+      l_GILowLeft:
+        color: '180243'
+        fade: 100ms
+      l_bonus0:
+        color: '000000'
+        fade: 100ms
+      l_bonus1:
+        color: '000000'
+        fade: 100ms
+      l_bonus2:
+        color: '000000'
+        fade: 100ms
+      l_bonus3:
+        color: '000000'
+        fade: 100ms
+      l_dropCenterLeft:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft0:
+        color: '010101'
+        fade: 100ms
+      l_dropRight1:
+        color: '180243'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '180243'
+        fade: 100ms
+      l_lane1:
+        color: '180243'
+        fade: 100ms
+      l_lane2:
+        color: '010001'
+        fade: 100ms
+      l_scoop:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_3x: '000000'
-      l_4x: '000000'
-      l_GILane3: '180243'
-      l_GIScoopLR: '000000'
-      l_GIScoopML: '000000'
-      l_dropLeft0: '180243'
-      l_dropLeft1: '180243'
-      l_dropRight0: '180243'
-      l_lane2: '180243'
-      l_lane3: '180243'
-      l_mode0: '000000'
-      l_mode6: '180243'
-      l_shootAgain: '000000'
-      l_spinner: '000000'
+      l_3x:
+        color: '000000'
+        fade: 100ms
+      l_4x:
+        color: '000000'
+        fade: 100ms
+      l_GILane3:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopLR:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopML:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft0:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft1:
+        color: '180243'
+        fade: 100ms
+      l_dropRight0:
+        color: '180243'
+        fade: 100ms
+      l_lane2:
+        color: '180243'
+        fade: 100ms
+      l_lane3:
+        color: '180243'
+        fade: 100ms
+      l_mode0:
+        color: '000000'
+        fade: 100ms
+      l_mode6:
+        color: '180243'
+        fade: 100ms
+      l_shootAgain:
+        color: '000000'
+        fade: 100ms
+      l_spinner:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_2x: '000000'
-      l_GIDropLeft0: '180243'
-      l_GILane4: '180243'
-      l_GILowRight: '180243'
-      l_GIScoopMR: '000000'
-      l_GIScoopUC: '000000'
-      l_GIUpperCR: '180243'
-      l_bonus8: '180243'
-      l_dropCenterRight: '180243'
-      l_dropLeft2: '180243'
-      l_jetUpperRight: '180243'
-      l_lane4: '180243'
-      l_mode1: '000000'
-      l_mode2: '000000'
+      l_2x:
+        color: '000000'
+        fade: 100ms
+      l_GIDropLeft0:
+        color: '180243'
+        fade: 100ms
+      l_GILane4:
+        color: '180243'
+        fade: 100ms
+      l_GILowRight:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopMR:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopUC:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperCR:
+        color: '180243'
+        fade: 100ms
+      l_bonus8:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft2:
+        color: '180243'
+        fade: 100ms
+      l_jetUpperRight:
+        color: '180243'
+        fade: 100ms
+      l_lane4:
+        color: '180243'
+        fade: 100ms
+      l_mode1:
+        color: '000000'
+        fade: 100ms
+      l_mode2:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopLower: '000000'
-      l_GIAboveScoopUpper: '000000'
-      l_GIAboveSpinnerUpper: '180243'
-      l_GIDropLeft1: '180243'
-      l_GIDropRight1: '000000'
-      l_GILane0: '000000'
-      l_GILane5: '180243'
-      l_GISlingLeft0: '000000'
-      l_GISlingLeft1: '000000'
-      l_GIUpperL: '000000'
-      l_GIUpperR: '0E0126'
-      l_bonus7: '180243'
-      l_bonusBig0: '0B011B'
-      l_bonusBig1: '180243'
-      l_dropLeft3: '180243'
-      l_dropRight3: '0B011D'
-      l_jetUpperLeft: '090118'
-      l_mode3: '000000'
-      l_mode4: '06010E'
-      l_specialLeft: '000000'
-      l_yellowTargetLeft: '000000'
-      l_yellowTargetRight: '180243'
+      l_GIAboveScoopLower:
+        color: '000000'
+        fade: 100ms
+      l_GIAboveScoopUpper:
+        color: '000000'
+        fade: 100ms
+      l_GIAboveSpinnerUpper:
+        color: '180243'
+        fade: 100ms
+      l_GIDropLeft1:
+        color: '180243'
+        fade: 100ms
+      l_GIDropRight1:
+        color: '000000'
+        fade: 100ms
+      l_GILane0:
+        color: '000000'
+        fade: 100ms
+      l_GILane5:
+        color: '180243'
+        fade: 100ms
+      l_GISlingLeft0:
+        color: '000000'
+        fade: 100ms
+      l_GISlingLeft1:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperL:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperR:
+        color: '0E0126'
+        fade: 100ms
+      l_bonus7:
+        color: '180243'
+        fade: 100ms
+      l_bonusBig0:
+        color: '0B011B'
+        fade: 100ms
+      l_bonusBig1:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft3:
+        color: '180243'
+        fade: 100ms
+      l_dropRight3:
+        color: '0B011D'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '090118'
+        fade: 100ms
+      l_mode3:
+        color: '000000'
+        fade: 100ms
+      l_mode4:
+        color: '06010E'
+        fade: 100ms
+      l_specialLeft:
+        color: '000000'
+        fade: 100ms
+      l_yellowTargetLeft:
+        color: '000000'
+        fade: 100ms
+      l_yellowTargetRight:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveSpinnerLower: '180243'
-      l_GIDropCenterLeft: '06010F'
-      l_GIDropCenterRight: '010101'
-      l_GIDropRight0: '05010B'
-      l_GILane1: '000000'
-      l_GIScoopLL: '180243'
-      l_GISlingRight0: '180243'
-      l_GISlingRight1: '180243'
-      l_GIUpperCL: '000000'
-      l_GIUpperR: '180243'
-      l_bonus4: '010001'
-      l_bonus5: '180243'
-      l_bonus6: '180243'
-      l_bonusBig0: '180243'
-      l_dropRight3: '000000'
-      l_jetLowerCenter: '010101'
-      l_jetUpperLeft: '000000'
-      l_lane0: '000000'
-      l_mode4: '000000'
-      l_mode5: '010001'
-      l_specialRight: '180243'
+      l_GIAboveSpinnerLower:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '06010F'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '010101'
+        fade: 100ms
+      l_GIDropRight0:
+        color: '05010B'
+        fade: 100ms
+      l_GILane1:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopLL:
+        color: '180243'
+        fade: 100ms
+      l_GISlingRight0:
+        color: '180243'
+        fade: 100ms
+      l_GISlingRight1:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperCL:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperR:
+        color: '180243'
+        fade: 100ms
+      l_bonus4:
+        color: '010001'
+        fade: 100ms
+      l_bonus5:
+        color: '180243'
+        fade: 100ms
+      l_bonus6:
+        color: '180243'
+        fade: 100ms
+      l_bonusBig0:
+        color: '180243'
+        fade: 100ms
+      l_dropRight3:
+        color: '000000'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '010101'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '000000'
+        fade: 100ms
+      l_lane0:
+        color: '000000'
+        fade: 100ms
+      l_mode4:
+        color: '000000'
+        fade: 100ms
+      l_mode5:
+        color: '010001'
+        fade: 100ms
+      l_specialRight:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_5x: '180243'
-      l_GIDropCenterLeft: '000000'
-      l_GIDropCenterRight: '10022B'
-      l_GIDropRight0: '000000'
-      l_GILane2: '000000'
-      l_GILowLeft: '000000'
-      l_bonus1: '180243'
-      l_bonus2: '180243'
-      l_bonus3: '180243'
-      l_bonus4: '180243'
-      l_dropCenterLeft: '000000'
-      l_dropRight1: '11022E'
-      l_dropRight2: '000000'
-      l_jetLowerCenter: '000000'
-      l_lane1: '000000'
-      l_mode5: '000000'
-      l_scoop: '180243'
+      l_5x:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '10022B'
+        fade: 100ms
+      l_GIDropRight0:
+        color: '000000'
+        fade: 100ms
+      l_GILane2:
+        color: '000000'
+        fade: 100ms
+      l_GILowLeft:
+        color: '000000'
+        fade: 100ms
+      l_bonus1:
+        color: '180243'
+        fade: 100ms
+      l_bonus2:
+        color: '180243'
+        fade: 100ms
+      l_bonus3:
+        color: '180243'
+        fade: 100ms
+      l_bonus4:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterLeft:
+        color: '000000'
+        fade: 100ms
+      l_dropRight1:
+        color: '11022E'
+        fade: 100ms
+      l_dropRight2:
+        color: '000000'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '000000'
+        fade: 100ms
+      l_lane1:
+        color: '000000'
+        fade: 100ms
+      l_mode5:
+        color: '000000'
+        fade: 100ms
+      l_scoop:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_3x: '180243'
-      l_4x: '180243'
-      l_GIDropCenterRight: '180243'
-      l_GILane3: '000000'
-      l_GIScoopLR: '180243'
-      l_GIScoopML: '180243'
-      l_bonus0: '180243'
-      l_dropLeft0: '000000'
-      l_dropLeft1: '000000'
-      l_dropRight0: '000000'
-      l_dropRight1: '000000'
-      l_lane2: '000000'
-      l_lane3: '130235'
-      l_mode6: '000000'
-      l_shootAgain: '180243'
-      l_spinner: '180243'
+      l_3x:
+        color: '180243'
+        fade: 100ms
+      l_4x:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '180243'
+        fade: 100ms
+      l_GILane3:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopLR:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopML:
+        color: '180243'
+        fade: 100ms
+      l_bonus0:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft0:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft1:
+        color: '000000'
+        fade: 100ms
+      l_dropRight0:
+        color: '000000'
+        fade: 100ms
+      l_dropRight1:
+        color: '000000'
+        fade: 100ms
+      l_lane2:
+        color: '000000'
+        fade: 100ms
+      l_lane3:
+        color: '130235'
+        fade: 100ms
+      l_mode6:
+        color: '000000'
+        fade: 100ms
+      l_shootAgain:
+        color: '180243'
+        fade: 100ms
+      l_spinner:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_2x: '180243'
-      l_GIDropLeft0: '000000'
-      l_GILane4: '000000'
-      l_GILowRight: '000000'
-      l_GIScoopMR: '180243'
-      l_GIScoopUC: '180243'
-      l_GIUpperCR: '020103'
-      l_dropCenterRight: '180242'
-      l_dropLeft2: '000000'
-      l_jetUpperRight: '000000'
-      l_lane3: '000000'
-      l_lane4: '000000'
-      l_mode0: '180243'
-      l_mode1: '180243'
-      l_mode2: '180243'
+      l_2x:
+        color: '180243'
+        fade: 100ms
+      l_GIDropLeft0:
+        color: '000000'
+        fade: 100ms
+      l_GILane4:
+        color: '000000'
+        fade: 100ms
+      l_GILowRight:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopMR:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopUC:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperCR:
+        color: '020103'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '180242'
+        fade: 100ms
+      l_dropLeft2:
+        color: '000000'
+        fade: 100ms
+      l_jetUpperRight:
+        color: '000000'
+        fade: 100ms
+      l_lane3:
+        color: '000000'
+        fade: 100ms
+      l_lane4:
+        color: '000000'
+        fade: 100ms
+      l_mode0:
+        color: '180243'
+        fade: 100ms
+      l_mode1:
+        color: '180243'
+        fade: 100ms
+      l_mode2:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopLower: '180243'
-      l_GIAboveScoopUpper: '180243'
-      l_GIAboveSpinnerUpper: '0B011D'
-      l_GIDropLeft1: '000000'
-      l_GIDropRight1: '010001'
-      l_GILane0: '180243'
-      l_GILane5: '000000'
-      l_GISlingLeft0: '180243'
-      l_GISlingLeft1: '180243'
-      l_GIUpperCR: '000000'
-      l_GIUpperL: '180243'
-      l_bonus7: '000000'
-      l_bonus8: '000000'
-      l_bonusBig1: '000000'
-      l_dropCenterRight: '000000'
-      l_dropLeft3: '000000'
-      l_jetLowerCenter: '010101'
-      l_jetUpperLeft: '0A011B'
-      l_mode3: '180243'
-      l_specialLeft: '180243'
-      l_yellowTargetLeft: '180243'
-      l_yellowTargetRight: '000000'
+      l_GIAboveScoopLower:
+        color: '180243'
+        fade: 100ms
+      l_GIAboveScoopUpper:
+        color: '180243'
+        fade: 100ms
+      l_GIAboveSpinnerUpper:
+        color: '0B011D'
+        fade: 100ms
+      l_GIDropLeft1:
+        color: '000000'
+        fade: 100ms
+      l_GIDropRight1:
+        color: '010001'
+        fade: 100ms
+      l_GILane0:
+        color: '180243'
+        fade: 100ms
+      l_GILane5:
+        color: '000000'
+        fade: 100ms
+      l_GISlingLeft0:
+        color: '180243'
+        fade: 100ms
+      l_GISlingLeft1:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperCR:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperL:
+        color: '180243'
+        fade: 100ms
+      l_bonus7:
+        color: '000000'
+        fade: 100ms
+      l_bonus8:
+        color: '000000'
+        fade: 100ms
+      l_bonusBig1:
+        color: '000000'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft3:
+        color: '000000'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '010101'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '0A011B'
+        fade: 100ms
+      l_mode3:
+        color: '180243'
+        fade: 100ms
+      l_specialLeft:
+        color: '180243'
+        fade: 100ms
+      l_yellowTargetLeft:
+        color: '180243'
+        fade: 100ms
+      l_yellowTargetRight:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveSpinnerLower: '000000'
-      l_GIAboveSpinnerUpper: '000000'
-      l_GIDropRight1: '180243'
-      l_GILane1: '180243'
-      l_GIScoopLL: '010001'
-      l_GISlingRight0: '000000'
-      l_GISlingRight1: '000000'
-      l_GIUpperCL: '010101'
-      l_GIUpperR: '000000'
-      l_bonus5: '010101'
-      l_bonus6: '000000'
-      l_bonusBig0: '000000'
-      l_dropRight3: '180243'
-      l_jetLowerCenter: '180243'
-      l_jetUpperLeft: '180243'
-      l_lane0: '180243'
-      l_mode4: '180243'
-      l_specialRight: '000000'
+      l_GIAboveSpinnerLower:
+        color: '000000'
+        fade: 100ms
+      l_GIAboveSpinnerUpper:
+        color: '000000'
+        fade: 100ms
+      l_GIDropRight1:
+        color: '180243'
+        fade: 100ms
+      l_GILane1:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopLL:
+        color: '010001'
+        fade: 100ms
+      l_GISlingRight0:
+        color: '000000'
+        fade: 100ms
+      l_GISlingRight1:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperCL:
+        color: '010101'
+        fade: 100ms
+      l_GIUpperR:
+        color: '000000'
+        fade: 100ms
+      l_bonus5:
+        color: '010101'
+        fade: 100ms
+      l_bonus6:
+        color: '000000'
+        fade: 100ms
+      l_bonusBig0:
+        color: '000000'
+        fade: 100ms
+      l_dropRight3:
+        color: '180243'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '180243'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '180243'
+        fade: 100ms
+      l_lane0:
+        color: '180243'
+        fade: 100ms
+      l_mode4:
+        color: '180243'
+        fade: 100ms
+      l_specialRight:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_5x: '010101'
-      l_GIDropCenterLeft: '140238'
-      l_GIDropRight0: '180243'
-      l_GILane2: '180243'
-      l_GILowLeft: '180243'
-      l_GIScoopLL: '000000'
-      l_GIUpperCL: '180243'
-      l_bonus2: '010001'
-      l_bonus3: '000000'
-      l_bonus4: '000000'
-      l_bonus5: '000000'
-      l_dropCenterLeft: '180243'
-      l_dropRight2: '180243'
-      l_lane1: '180243'
-      l_mode5: '180243'
-      l_scoop: '000000'
+      l_5x:
+        color: '010101'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '140238'
+        fade: 100ms
+      l_GIDropRight0:
+        color: '180243'
+        fade: 100ms
+      l_GILane2:
+        color: '180243'
+        fade: 100ms
+      l_GILowLeft:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopLL:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperCL:
+        color: '180243'
+        fade: 100ms
+      l_bonus2:
+        color: '010001'
+        fade: 100ms
+      l_bonus3:
+        color: '000000'
+        fade: 100ms
+      l_bonus4:
+        color: '000000'
+        fade: 100ms
+      l_bonus5:
+        color: '000000'
+        fade: 100ms
+      l_dropCenterLeft:
+        color: '180243'
+        fade: 100ms
+      l_dropRight2:
+        color: '180243'
+        fade: 100ms
+      l_lane1:
+        color: '180243'
+        fade: 100ms
+      l_mode5:
+        color: '180243'
+        fade: 100ms
+      l_scoop:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_4x: '000000'
-      l_5x: '000000'
-      l_GIDropCenterLeft: '180243'
-      l_GIDropCenterRight: '0A011B'
-      l_GILane3: '180243'
-      l_GIScoopLR: '000000'
-      l_GIScoopML: '000000'
-      l_bonus0: '000000'
-      l_bonus1: '000000'
-      l_bonus2: '000000'
-      l_dropLeft0: '180243'
-      l_dropRight0: '11022E'
-      l_dropRight1: '180243'
-      l_lane2: '180243'
-      l_mode6: '180243'
-      l_shootAgain: '000000'
-      l_spinner: '010001'
+      l_4x:
+        color: '000000'
+        fade: 100ms
+      l_5x:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '0A011B'
+        fade: 100ms
+      l_GILane3:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopLR:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopML:
+        color: '000000'
+        fade: 100ms
+      l_bonus0:
+        color: '000000'
+        fade: 100ms
+      l_bonus1:
+        color: '000000'
+        fade: 100ms
+      l_bonus2:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft0:
+        color: '180243'
+        fade: 100ms
+      l_dropRight0:
+        color: '11022E'
+        fade: 100ms
+      l_dropRight1:
+        color: '180243'
+        fade: 100ms
+      l_lane2:
+        color: '180243'
+        fade: 100ms
+      l_mode6:
+        color: '180243'
+        fade: 100ms
+      l_shootAgain:
+        color: '000000'
+        fade: 100ms
+      l_spinner:
+        color: '010001'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_2x: '000000'
-      l_3x: '000000'
-      l_GIDropCenterRight: '000000'
-      l_GIDropLeft0: '180243'
-      l_GILane4: '180243'
-      l_GILowRight: '180243'
-      l_GIScoopMR: '000000'
-      l_GIScoopUC: '000000'
-      l_dropLeft1: '180243'
-      l_dropLeft2: '180243'
-      l_dropRight0: '180243'
-      l_jetUpperRight: '180243'
-      l_lane3: '180243'
-      l_lane4: '180243'
-      l_mode0: '000000'
-      l_mode1: '000000'
-      l_spinner: '000000'
+      l_2x:
+        color: '000000'
+        fade: 100ms
+      l_3x:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '000000'
+        fade: 100ms
+      l_GIDropLeft0:
+        color: '180243'
+        fade: 100ms
+      l_GILane4:
+        color: '180243'
+        fade: 100ms
+      l_GILowRight:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopMR:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopUC:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft1:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft2:
+        color: '180243'
+        fade: 100ms
+      l_dropRight0:
+        color: '180243'
+        fade: 100ms
+      l_jetUpperRight:
+        color: '180243'
+        fade: 100ms
+      l_lane3:
+        color: '180243'
+        fade: 100ms
+      l_lane4:
+        color: '180243'
+        fade: 100ms
+      l_mode0:
+        color: '000000'
+        fade: 100ms
+      l_mode1:
+        color: '000000'
+        fade: 100ms
+      l_spinner:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopLower: '000000'
-      l_GIAboveScoopUpper: '000000'
-      l_GIDropLeft1: '180243'
-      l_GILane0: '020105'
-      l_GILane5: '180243'
-      l_GISlingLeft0: '000000'
-      l_GIUpperCR: '180243'
-      l_bonus7: '0C011F'
-      l_bonus8: '180243'
-      l_bonusBig1: '180243'
-      l_dropCenterRight: '180243'
-      l_dropLeft3: '180243'
-      l_jetLowerCenter: '11022F'
-      l_mode2: '000000'
-      l_mode3: '000000'
-      l_yellowTargetLeft: '000000'
-      l_yellowTargetRight: '180243'
+      l_GIAboveScoopLower:
+        color: '000000'
+        fade: 100ms
+      l_GIAboveScoopUpper:
+        color: '000000'
+        fade: 100ms
+      l_GIDropLeft1:
+        color: '180243'
+        fade: 100ms
+      l_GILane0:
+        color: '020105'
+        fade: 100ms
+      l_GILane5:
+        color: '180243'
+        fade: 100ms
+      l_GISlingLeft0:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperCR:
+        color: '180243'
+        fade: 100ms
+      l_bonus7:
+        color: '0C011F'
+        fade: 100ms
+      l_bonus8:
+        color: '180243'
+        fade: 100ms
+      l_bonusBig1:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft3:
+        color: '180243'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '11022F'
+        fade: 100ms
+      l_mode2:
+        color: '000000'
+        fade: 100ms
+      l_mode3:
+        color: '000000'
+        fade: 100ms
+      l_yellowTargetLeft:
+        color: '000000'
+        fade: 100ms
+      l_yellowTargetRight:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveSpinnerLower: '180243'
-      l_GIAboveSpinnerUpper: '180243'
-      l_GIDropRight1: '000000'
-      l_GILane0: '000000'
-      l_GILane1: '000000'
-      l_GISlingLeft1: '000000'
-      l_GISlingRight1: '180243'
-      l_GIUpperL: '000000'
-      l_GIUpperR: '180243'
-      l_bonus6: '180243'
-      l_bonus7: '180243'
-      l_bonusBig0: '180243'
-      l_dropRight3: '000000'
-      l_jetLowerCenter: '000000'
-      l_jetUpperLeft: '000000'
-      l_lane0: '000000'
-      l_mode4: '000000'
-      l_specialLeft: '000000'
-      l_specialRight: '180243'
+      l_GIAboveSpinnerLower:
+        color: '180243'
+        fade: 100ms
+      l_GIAboveSpinnerUpper:
+        color: '180243'
+        fade: 100ms
+      l_GIDropRight1:
+        color: '000000'
+        fade: 100ms
+      l_GILane0:
+        color: '000000'
+        fade: 100ms
+      l_GILane1:
+        color: '000000'
+        fade: 100ms
+      l_GISlingLeft1:
+        color: '000000'
+        fade: 100ms
+      l_GISlingRight1:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperL:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperR:
+        color: '180243'
+        fade: 100ms
+      l_bonus6:
+        color: '180243'
+        fade: 100ms
+      l_bonus7:
+        color: '180243'
+        fade: 100ms
+      l_bonusBig0:
+        color: '180243'
+        fade: 100ms
+      l_dropRight3:
+        color: '000000'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '000000'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '000000'
+        fade: 100ms
+      l_lane0:
+        color: '000000'
+        fade: 100ms
+      l_mode4:
+        color: '000000'
+        fade: 100ms
+      l_specialLeft:
+        color: '000000'
+        fade: 100ms
+      l_specialRight:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIDropRight0: '000000'
-      l_GILane2: '000000'
-      l_GIScoopLL: '180243'
-      l_GISlingRight0: '180243'
-      l_GIUpperCL: '000000'
-      l_bonus3: '180243'
-      l_bonus4: '180243'
-      l_bonus5: '180243'
-      l_dropCenterLeft: '130234'
-      l_dropRight2: '000000'
-      l_lane1: '000000'
-      l_mode5: '000000'
-      l_scoop: '180243'
+      l_GIDropRight0:
+        color: '000000'
+        fade: 100ms
+      l_GILane2:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopLL:
+        color: '180243'
+        fade: 100ms
+      l_GISlingRight0:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperCL:
+        color: '000000'
+        fade: 100ms
+      l_bonus3:
+        color: '180243'
+        fade: 100ms
+      l_bonus4:
+        color: '180243'
+        fade: 100ms
+      l_bonus5:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterLeft:
+        color: '130234'
+        fade: 100ms
+      l_dropRight2:
+        color: '000000'
+        fade: 100ms
+      l_lane1:
+        color: '000000'
+        fade: 100ms
+      l_mode5:
+        color: '000000'
+        fade: 100ms
+      l_scoop:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_4x: '180243'
-      l_5x: '180243'
-      l_GIDropCenterLeft: '010101'
-      l_GIDropCenterRight: '020102'
-      l_GILane3: '000000'
-      l_GILowLeft: '000000'
-      l_GIScoopML: '180243'
-      l_bonus0: '180243'
-      l_bonus1: '180243'
-      l_bonus2: '180243'
-      l_dropCenterLeft: '000000'
-      l_dropLeft0: '000000'
-      l_dropRight0: '0D0122'
-      l_dropRight1: '000000'
-      l_lane2: '000000'
-      l_mode6: '0C0120'
-      l_shootAgain: '180243'
-      l_spinner: '180243'
+      l_4x:
+        color: '180243'
+        fade: 100ms
+      l_5x:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '010101'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '020102'
+        fade: 100ms
+      l_GILane3:
+        color: '000000'
+        fade: 100ms
+      l_GILowLeft:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopML:
+        color: '180243'
+        fade: 100ms
+      l_bonus0:
+        color: '180243'
+        fade: 100ms
+      l_bonus1:
+        color: '180243'
+        fade: 100ms
+      l_bonus2:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterLeft:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft0:
+        color: '000000'
+        fade: 100ms
+      l_dropRight0:
+        color: '0D0122'
+        fade: 100ms
+      l_dropRight1:
+        color: '000000'
+        fade: 100ms
+      l_lane2:
+        color: '000000'
+        fade: 100ms
+      l_mode6:
+        color: '0C0120'
+        fade: 100ms
+      l_shootAgain:
+        color: '180243'
+        fade: 100ms
+      l_spinner:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_2x: '180243'
-      l_3x: '180243'
-      l_GIDropCenterLeft: '000000'
-      l_GIDropCenterRight: '180243'
-      l_GILane4: '000000'
-      l_GILowRight: '000000'
-      l_GIScoopLR: '180243'
-      l_GIScoopMR: '180243'
-      l_dropCenterRight: '180242'
-      l_dropLeft1: '000000'
-      l_dropRight0: '000000'
-      l_jetUpperRight: '010001'
-      l_lane3: '000000'
-      l_mode0: '180243'
-      l_mode1: '180243'
-      l_mode6: '000000'
+      l_2x:
+        color: '180243'
+        fade: 100ms
+      l_3x:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '180243'
+        fade: 100ms
+      l_GILane4:
+        color: '000000'
+        fade: 100ms
+      l_GILowRight:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopLR:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopMR:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '180242'
+        fade: 100ms
+      l_dropLeft1:
+        color: '000000'
+        fade: 100ms
+      l_dropRight0:
+        color: '000000'
+        fade: 100ms
+      l_jetUpperRight:
+        color: '010001'
+        fade: 100ms
+      l_lane3:
+        color: '000000'
+        fade: 100ms
+      l_mode0:
+        color: '180243'
+        fade: 100ms
+      l_mode1:
+        color: '180243'
+        fade: 100ms
+      l_mode6:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopLower: '180243'
-      l_GIAboveScoopUpper: '010001'
-      l_GIDropLeft0: '000000'
-      l_GILane5: '000000'
-      l_GIScoopUC: '180243'
-      l_GISlingLeft0: '180243'
-      l_GIUpperCR: '000000'
-      l_bonus7: '0D0122'
-      l_bonus8: '000000'
-      l_bonusBig1: '000000'
-      l_dropCenterRight: '000000'
-      l_dropLeft2: '000000'
-      l_jetUpperRight: '000000'
-      l_lane4: '000000'
-      l_mode2: '180243'
-      l_mode3: '170240'
-      l_yellowTargetLeft: '10022A'
-      l_yellowTargetRight: '180242'
+      l_GIAboveScoopLower:
+        color: '180243'
+        fade: 100ms
+      l_GIAboveScoopUpper:
+        color: '010001'
+        fade: 100ms
+      l_GIDropLeft0:
+        color: '000000'
+        fade: 100ms
+      l_GILane5:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopUC:
+        color: '180243'
+        fade: 100ms
+      l_GISlingLeft0:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperCR:
+        color: '000000'
+        fade: 100ms
+      l_bonus7:
+        color: '0D0122'
+        fade: 100ms
+      l_bonus8:
+        color: '000000'
+        fade: 100ms
+      l_bonusBig1:
+        color: '000000'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft2:
+        color: '000000'
+        fade: 100ms
+      l_jetUpperRight:
+        color: '000000'
+        fade: 100ms
+      l_lane4:
+        color: '000000'
+        fade: 100ms
+      l_mode2:
+        color: '180243'
+        fade: 100ms
+      l_mode3:
+        color: '170240'
+        fade: 100ms
+      l_yellowTargetLeft:
+        color: '10022A'
+        fade: 100ms
+      l_yellowTargetRight:
+        color: '180242'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopUpper: '180243'
-      l_GIAboveSpinnerLower: '000000'
-      l_GIAboveSpinnerUpper: '000000'
-      l_GIDropLeft1: '000000'
-      l_GIDropRight1: '180243'
-      l_GILane0: '180243'
-      l_GISlingLeft1: '180243'
-      l_GISlingRight1: '000000'
-      l_GIUpperL: '180243'
-      l_GIUpperR: '000000'
-      l_bonus6: '000000'
-      l_bonus7: '000000'
-      l_bonusBig0: '000000'
-      l_dropLeft3: '000000'
-      l_dropRight3: '180243'
-      l_jetLowerCenter: '0C0120'
-      l_jetUpperLeft: '180243'
-      l_lane0: '010002'
-      l_mode3: '180243'
-      l_mode4: '180243'
-      l_specialLeft: '180243'
-      l_specialRight: '000000'
-      l_yellowTargetLeft: '180243'
-      l_yellowTargetRight: '000000'
+      l_GIAboveScoopUpper:
+        color: '180243'
+        fade: 100ms
+      l_GIAboveSpinnerLower:
+        color: '000000'
+        fade: 100ms
+      l_GIAboveSpinnerUpper:
+        color: '000000'
+        fade: 100ms
+      l_GIDropLeft1:
+        color: '000000'
+        fade: 100ms
+      l_GIDropRight1:
+        color: '180243'
+        fade: 100ms
+      l_GILane0:
+        color: '180243'
+        fade: 100ms
+      l_GISlingLeft1:
+        color: '180243'
+        fade: 100ms
+      l_GISlingRight1:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperL:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperR:
+        color: '000000'
+        fade: 100ms
+      l_bonus6:
+        color: '000000'
+        fade: 100ms
+      l_bonus7:
+        color: '000000'
+        fade: 100ms
+      l_bonusBig0:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft3:
+        color: '000000'
+        fade: 100ms
+      l_dropRight3:
+        color: '180243'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '0C0120'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '180243'
+        fade: 100ms
+      l_lane0:
+        color: '010002'
+        fade: 100ms
+      l_mode3:
+        color: '180243'
+        fade: 100ms
+      l_mode4:
+        color: '180243'
+        fade: 100ms
+      l_specialLeft:
+        color: '180243'
+        fade: 100ms
+      l_specialRight:
+        color: '000000'
+        fade: 100ms
+      l_yellowTargetLeft:
+        color: '180243'
+        fade: 100ms
+      l_yellowTargetRight:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIDropCenterRight: '11022F'
-      l_GIDropRight0: '180243'
-      l_GILane1: '180243'
-      l_GIScoopLL: '000000'
-      l_GISlingRight0: '000000'
-      l_GIUpperCL: '180243'
-      l_bonus3: '010001'
-      l_bonus4: '000000'
-      l_bonus5: '000000'
-      l_dropRight2: '180243'
-      l_jetLowerCenter: '180243'
-      l_lane0: '180243'
-      l_lane1: '180243'
-      l_mode5: '180243'
-      l_scoop: '05010C'
+      l_GIDropCenterRight:
+        color: '11022F'
+        fade: 100ms
+      l_GIDropRight0:
+        color: '180243'
+        fade: 100ms
+      l_GILane1:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopLL:
+        color: '000000'
+        fade: 100ms
+      l_GISlingRight0:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperCL:
+        color: '180243'
+        fade: 100ms
+      l_bonus3:
+        color: '010001'
+        fade: 100ms
+      l_bonus4:
+        color: '000000'
+        fade: 100ms
+      l_bonus5:
+        color: '000000'
+        fade: 100ms
+      l_dropRight2:
+        color: '180243'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '180243'
+        fade: 100ms
+      l_lane0:
+        color: '180243'
+        fade: 100ms
+      l_lane1:
+        color: '180243'
+        fade: 100ms
+      l_mode5:
+        color: '180243'
+        fade: 100ms
+      l_scoop:
+        color: '05010C'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_4x: '000000'
-      l_5x: '000000'
-      l_GIDropCenterLeft: '080115'
-      l_GIDropCenterRight: '010001'
-      l_GILane2: '180243'
-      l_GILowLeft: '180243'
-      l_GIScoopML: '0C011F'
-      l_bonus0: '000000'
-      l_bonus1: '000000'
-      l_bonus2: '000000'
-      l_bonus3: '000000'
-      l_dropCenterLeft: '180243'
-      l_dropLeft0: '16023D'
-      l_dropRight0: '030105'
-      l_dropRight1: '180243'
-      l_lane2: '180243'
-      l_scoop: '000000'
-      l_shootAgain: '17023F'
-      l_spinner: '10022C'
+      l_4x:
+        color: '000000'
+        fade: 100ms
+      l_5x:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '080115'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '010001'
+        fade: 100ms
+      l_GILane2:
+        color: '180243'
+        fade: 100ms
+      l_GILowLeft:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopML:
+        color: '0C011F'
+        fade: 100ms
+      l_bonus0:
+        color: '000000'
+        fade: 100ms
+      l_bonus1:
+        color: '000000'
+        fade: 100ms
+      l_bonus2:
+        color: '000000'
+        fade: 100ms
+      l_bonus3:
+        color: '000000'
+        fade: 100ms
+      l_dropCenterLeft:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft0:
+        color: '16023D'
+        fade: 100ms
+      l_dropRight0:
+        color: '030105'
+        fade: 100ms
+      l_dropRight1:
+        color: '180243'
+        fade: 100ms
+      l_lane2:
+        color: '180243'
+        fade: 100ms
+      l_scoop:
+        color: '000000'
+        fade: 100ms
+      l_shootAgain:
+        color: '17023F'
+        fade: 100ms
+      l_spinner:
+        color: '10022C'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_2x: '000000'
-      l_3x: '000000'
-      l_GIDropCenterLeft: '180243'
-      l_GIDropCenterRight: '000000'
-      l_GILane3: '180243'
-      l_GILowRight: '180243'
-      l_GIScoopLR: '000000'
-      l_GIScoopML: '000000'
-      l_dropCenterRight: '070110'
-      l_dropLeft0: '180243'
-      l_dropLeft1: '180243'
-      l_dropRight0: '180243'
-      l_lane3: '180243'
-      l_mode0: '000000'
-      l_mode1: '000000'
-      l_mode6: '180243'
-      l_shootAgain: '000000'
-      l_spinner: '000000'
+      l_2x:
+        color: '000000'
+        fade: 100ms
+      l_3x:
+        color: '000000'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '000000'
+        fade: 100ms
+      l_GILane3:
+        color: '180243'
+        fade: 100ms
+      l_GILowRight:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopLR:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopML:
+        color: '000000'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '070110'
+        fade: 100ms
+      l_dropLeft0:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft1:
+        color: '180243'
+        fade: 100ms
+      l_dropRight0:
+        color: '180243'
+        fade: 100ms
+      l_lane3:
+        color: '180243'
+        fade: 100ms
+      l_mode0:
+        color: '000000'
+        fade: 100ms
+      l_mode1:
+        color: '000000'
+        fade: 100ms
+      l_mode6:
+        color: '180243'
+        fade: 100ms
+      l_shootAgain:
+        color: '000000'
+        fade: 100ms
+      l_spinner:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopLower: '000000'
-      l_GIDropLeft0: '180243'
-      l_GILane4: '180243'
-      l_GIScoopMR: '000000'
-      l_GIScoopUC: '000000'
-      l_GISlingLeft0: '000000'
-      l_GIUpperCR: '180243'
-      l_bonus7: '080115'
-      l_bonus8: '180243'
-      l_bonusBig1: '180243'
-      l_dropCenterRight: '180243'
-      l_dropLeft2: '180243'
-      l_jetUpperRight: '180243'
-      l_lane4: '180243'
-      l_mode2: '000000'
-      l_mode3: '0A0119'
+      l_GIAboveScoopLower:
+        color: '000000'
+        fade: 100ms
+      l_GIDropLeft0:
+        color: '180243'
+        fade: 100ms
+      l_GILane4:
+        color: '180243'
+        fade: 100ms
+      l_GIScoopMR:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopUC:
+        color: '000000'
+        fade: 100ms
+      l_GISlingLeft0:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperCR:
+        color: '180243'
+        fade: 100ms
+      l_bonus7:
+        color: '080115'
+        fade: 100ms
+      l_bonus8:
+        color: '180243'
+        fade: 100ms
+      l_bonusBig1:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterRight:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft2:
+        color: '180243'
+        fade: 100ms
+      l_jetUpperRight:
+        color: '180243'
+        fade: 100ms
+      l_lane4:
+        color: '180243'
+        fade: 100ms
+      l_mode2:
+        color: '000000'
+        fade: 100ms
+      l_mode3:
+        color: '0A0119'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveScoopUpper: '000000'
-      l_GIAboveSpinnerUpper: '180243'
-      l_GIDropCenterRight: '010101'
-      l_GIDropLeft1: '180243'
-      l_GIDropRight1: '000000'
-      l_GILane0: '000000'
-      l_GILane5: '180243'
-      l_GISlingLeft1: '000000'
-      l_GISlingRight1: '180243'
-      l_GIUpperL: '000000'
-      l_GIUpperR: '180243'
-      l_bonus6: '180243'
-      l_bonus7: '180243'
-      l_bonusBig0: '180243'
-      l_dropLeft3: '180243'
-      l_dropRight3: '000000'
-      l_jetUpperLeft: '000000'
-      l_mode3: '000000'
-      l_mode4: '000000'
-      l_specialLeft: '000000'
-      l_specialRight: '180243'
-      l_yellowTargetLeft: '000000'
-      l_yellowTargetRight: '180243'
+      l_GIAboveScoopUpper:
+        color: '000000'
+        fade: 100ms
+      l_GIAboveSpinnerUpper:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '010101'
+        fade: 100ms
+      l_GIDropLeft1:
+        color: '180243'
+        fade: 100ms
+      l_GIDropRight1:
+        color: '000000'
+        fade: 100ms
+      l_GILane0:
+        color: '000000'
+        fade: 100ms
+      l_GILane5:
+        color: '180243'
+        fade: 100ms
+      l_GISlingLeft1:
+        color: '000000'
+        fade: 100ms
+      l_GISlingRight1:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperL:
+        color: '000000'
+        fade: 100ms
+      l_GIUpperR:
+        color: '180243'
+        fade: 100ms
+      l_bonus6:
+        color: '180243'
+        fade: 100ms
+      l_bonus7:
+        color: '180243'
+        fade: 100ms
+      l_bonusBig0:
+        color: '180243'
+        fade: 100ms
+      l_dropLeft3:
+        color: '180243'
+        fade: 100ms
+      l_dropRight3:
+        color: '000000'
+        fade: 100ms
+      l_jetUpperLeft:
+        color: '000000'
+        fade: 100ms
+      l_mode3:
+        color: '000000'
+        fade: 100ms
+      l_mode4:
+        color: '000000'
+        fade: 100ms
+      l_specialLeft:
+        color: '000000'
+        fade: 100ms
+      l_specialRight:
+        color: '180243'
+        fade: 100ms
+      l_yellowTargetLeft:
+        color: '000000'
+        fade: 100ms
+      l_yellowTargetRight:
+        color: '180243'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_GIAboveSpinnerLower: '180243'
-      l_GIDropCenterLeft: '170240'
-      l_GIDropCenterRight: '180243'
-      l_GIDropRight0: '000000'
-      l_GILane1: '000000'
-      l_GIScoopLL: '180243'
-      l_GISlingRight0: '180243'
-      l_GIUpperCL: '000000'
-      l_bonus3: '0E0124'
-      l_bonus4: '180243'
-      l_bonus5: '180243'
-      l_dropRight2: '000000'
-      l_jetLowerCenter: '010101'
-      l_lane0: '000000'
-      l_mode5: '000000'
+      l_GIAboveSpinnerLower:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '170240'
+        fade: 100ms
+      l_GIDropCenterRight:
+        color: '180243'
+        fade: 100ms
+      l_GIDropRight0:
+        color: '000000'
+        fade: 100ms
+      l_GILane1:
+        color: '000000'
+        fade: 100ms
+      l_GIScoopLL:
+        color: '180243'
+        fade: 100ms
+      l_GISlingRight0:
+        color: '180243'
+        fade: 100ms
+      l_GIUpperCL:
+        color: '000000'
+        fade: 100ms
+      l_bonus3:
+        color: '0E0124'
+        fade: 100ms
+      l_bonus4:
+        color: '180243'
+        fade: 100ms
+      l_bonus5:
+        color: '180243'
+        fade: 100ms
+      l_dropRight2:
+        color: '000000'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '010101'
+        fade: 100ms
+      l_lane0:
+        color: '000000'
+        fade: 100ms
+      l_mode5:
+        color: '000000'
+        fade: 100ms
 
 - time: '+1'
   lights:
-      l_4x: '180243'
-      l_5x: '180243'
-      l_GIDropCenterLeft: '000000'
-      l_GILane2: '000000'
-      l_GILowLeft: '000000'
-      l_bonus0: '180243'
-      l_bonus1: '180243'
-      l_bonus2: '180243'
-      l_bonus3: '180243'
-      l_dropCenterLeft: '000000'
-      l_dropLeft0: '0E0124'
-      l_dropRight1: '000000'
-      l_jetLowerCenter: '000000'
-      l_lane1: '000000'
-      l_lane2: '000000'
-      l_scoop: '180243'
+      l_4x:
+        color: '180243'
+        fade: 100ms
+      l_5x:
+        color: '180243'
+        fade: 100ms
+      l_GIDropCenterLeft:
+        color: '000000'
+        fade: 100ms
+      l_GILane2:
+        color: '000000'
+        fade: 100ms
+      l_GILowLeft:
+        color: '000000'
+        fade: 100ms
+      l_bonus0:
+        color: '180243'
+        fade: 100ms
+      l_bonus1:
+        color: '180243'
+        fade: 100ms
+      l_bonus2:
+        color: '180243'
+        fade: 100ms
+      l_bonus3:
+        color: '180243'
+        fade: 100ms
+      l_dropCenterLeft:
+        color: '000000'
+        fade: 100ms
+      l_dropLeft0:
+        color: '0E0124'
+        fade: 100ms
+      l_dropRight1:
+        color: '000000'
+        fade: 100ms
+      l_jetLowerCenter:
+        color: '000000'
+        fade: 100ms
+      l_lane1:
+        color: '000000'
+        fade: 100ms
+      l_lane2:
+        color: '000000'
+        fade: 100ms
+      l_scoop:
+        color: '180243'
+        fade: 100ms
 
