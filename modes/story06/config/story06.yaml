@@ -1,0 +1,41 @@
+#config_version=5
+
+mode:
+   start_events: selector_untitled_mode_6_selected
+   stop_events: timer_yttimer06_complete
+   priority: 400
+
+variable_player:
+   mode_story06_started:
+     temp_ythurryup_value:
+       action: set
+       int: 100000
+   timer_yttimer06_tick:
+     temp_ythurryup_value: -300
+   s_sTargetYellowL_active:
+     score: current_player.temp_ythurryup_value|block
+   s_sTargetYellowR_active:
+     score: current_player.temp_ythurryup_value|block
+
+timers:
+   yttimer06:
+     start_value: 300
+     end_value: 0
+     tick_interval: .1s
+     direction: down
+     start_running: yes
+
+widget_player:
+   mode_story06_started:
+      yt_remain_widget_06:
+         slide: scoring_slide
+   story06_ended:
+      yt_remain_widget_06:
+         action: remove
+
+widgets:
+   yt_remain_widget_06:
+     - type: text
+       text: "Story 06 Hurry Up: (temp_ythurryup_value)"
+       y: 80%
+

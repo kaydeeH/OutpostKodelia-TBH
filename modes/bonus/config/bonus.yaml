@@ -2,20 +2,16 @@
 
 mode_settings:
   keep_multiplier: True
-  display_delay_ms: 1s
+  display_delay_ms: 3s
   hurry_up_delay_ms: 0
   bonus_entries:
-      - event: bonus_pops
-        score: 10 * current_player.pops
-        skip_if_zero: false
-      - event: bonus_drops
-        score: 100 * current_player.drops
+      - event: bonus_product
+        score: (current_player.pops + 1) * (current_player.drops + 1) * current_player.bonuscount
         skip_if_zero: false
 
 slide_player:
   bonus_start: slide_6
-  bonus_pops: slide_7
-  bonus_drops: slide_8
+  bonus_product: slide_7
   bonus_subtotal: slide_9
   bonus_multiplier: slide_10
   bonus_total: slide_11
@@ -25,17 +21,21 @@ slides:
     text: END OF BALL BONUS
   slide_7:
   - type: text
-    text: 'POPS: (score)'
-  slide_8:
+    text: 'POPS: (pops)  X'
+    y: 50%
   - type: text
-    text: 'DROPS: (score)'
+    text: 'DROPS: (drops)  X'
+    y: 40%
+  - type: text
+    text: 'BONUS COUNT: (bonuscount)  ='
+    y: 30%
   slide_9:
   - type: text
     text: 'BONUS SCORE: (score)'
     number_grouping: true
   slide_10:
   - type: text
-    text: (bonusmulti)X
+    text: (bonus_multiplier)X
   slide_11:
   - type: text
     text: 'TOTAL BONUS: (score)'

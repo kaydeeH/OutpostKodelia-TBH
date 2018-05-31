@@ -1,0 +1,88 @@
+#config_version=5
+mode:
+  start_events: select_mode_start
+  stop_events: selector_item_selected
+  priority: 200
+#  code: mpf.modes.carousel.code.carousel.Carousel
+  code: selector.selector
+  file_log: full
+
+mode_settings:
+  selectable_items: dummy
+  select_item_events: s_flipper_left_active
+  next_item_events: s_flipper_right_active
+#  previous_item_events: s_flipper_left_active
+
+slide_player:
+  selector_untitled_mode_1_highlighted: select_01
+  selector_untitled_mode_2_highlighted: select_02
+  selector_untitled_mode_3_highlighted: select_03
+  selector_untitled_mode_4_highlighted: select_04
+  selector_untitled_mode_5_highlighted: select_05
+  selector_untitled_mode_6_highlighted: select_06
+  selector_untitled_mode_7_highlighted: select_07
+
+slides:
+  select_01:
+    widgets:
+      - type: text
+        text: MODE 01
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_02:
+    widgets:
+      - type: text
+        text: MODE 02
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_03:
+    widgets:
+      - type: text
+        text: MODE 03
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_04:
+    widgets:
+      - type: text
+        text: MODE 04
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_05:
+    widgets:
+      - type: text
+        text: MODE 05
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_06:
+    widgets:
+      - type: text
+        text: MODE 06
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right
+  select_07:
+    widgets:
+      - type: text
+        text: MODE 07
+        font_size: 100
+        color: yellow
+    transition:
+      type: move_in
+      direction: right

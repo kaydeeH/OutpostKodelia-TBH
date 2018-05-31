@@ -280,7 +280,6 @@ drop_target_banks:
          reset_on_complete: 500ms
          reset_events:
            ball_starting: 300ms
-         debug: true
      rightFull:
          drop_targets: R0, R1, R2, R3
          reset_coils: c_dropRight0, c_dropRight1

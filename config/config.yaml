@@ -23,16 +23,53 @@ config:
 modes:
   - base
   - yt_hurry_up
+  - selector
   - high_score
   - bonus
+  - story01
+  - story02
+  - story03
+  - story04
+  - story05
+  - story06
+  - story07
 
 player_vars:
   pops:
      initial_value: 0
   drops:
      initial_value: 0
-  bonusmulti:
+  spins:
+     initial_value: 0
+  bonuscount:
+     initial_value: 0
+  bonus_multiplier:
      initial_value: 1
+  bonustype1:
+     initial_value: 0
+  bonustype2:
+     initial_value: 0
+  bonustype3:
+     initial_value: 0
+  bonustype4:
+     initial_value: 0
+  bonusTypeMax:
+     initial_value: 1
+  status_untitled_mode_1:
+     initial_value: 0
+  status_untitled_mode_2:
+     initial_value: 0
+  status_untitled_mode_3:
+     initial_value: 0
+  status_untitled_mode_4:
+     initial_value: 0
+  status_untitled_mode_5:
+     initial_value: 0
+  status_untitled_mode_6:
+     initial_value: 0
+  status_untitled_mode_7:
+     initial_value: 2
+
 
 
 keyboard:

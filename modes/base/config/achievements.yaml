@@ -1,0 +1,24 @@
+#config_version=5
+
+achievements:
+ untitled_mode_1:
+   show_tokens:
+     lights: l_mode0
+ untitled_mode_2:
+   show_tokens:
+     lights: l_mode1
+ untitled_mode_3:
+   show_tokens:
+     lights: l_mode2
+ untitled_mode_4:
+   show_tokens:
+     lights: l_mode3
+ untitled_mode_5:
+   show_tokens:
+     lights: l_mode4
+ untitled_mode_6:
+   show_tokens:
+     lights: l_mode5
+ untitled_mode_7:
+   show_tokens:
+     lights: l_mode6

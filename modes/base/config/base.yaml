@@ -1,4 +1,7 @@
 #config_version=5
+config:
+  - achievements.yaml
+  - scoring.yaml
 
 mode:
   start_events: ball_starting
@@ -28,6 +31,7 @@ slides:
         min_digits: 2
         font_size: 100
         font_name: ocr-a-tribute-bold
+        y: 40%
       - type: text
         text: PLAYER (number)
         y: 10
@@ -46,10 +50,18 @@ slides:
         font_name: ocr-a-tribute-bold
       - type: text
         text: "POPS: (pops)"
-        y: 40%
+        y: 30%
       - type: text
         text: "DROPS: (drops)"
-        y: 30%
+        y: 25%
+      - type: text
+        text: "SPINS: (spins)"
+        y: 20%
+      - type: text
+        text: "BONUS: (bonuscount)"
+        y: 15%
+      - type: text
+        text: "BONUS X: (bonus_multiplier)"
    scoop_slide:
     widgets:
       - type: text
@@ -250,9 +262,6 @@ shot_profiles:
     states:
       - name: unlit
         show: off
-      - name: flashing
-        show: dk_blu_flash
-        speed: 5
       - name: lit
         show: dk_blu_on
     loop: false
@@ -292,154 +301,16 @@ sound_player:
           loops: -1
           mode_end_action: stop
 
-variable_player:
-  mode_base_started:
-    pops:
-       int: 0
-       action: set
-    drops:
-       int: 0
-       action: set
-  s_jet_upper_left_active:
-    score: 1000
-    pops: 1
-  s_jet_upper_right_active:
-    score: 1000
-    pops: 1
-  s_jet_lower_center_active:
-    score: 1000
-    pops: 1
-  s_slingshot_left_active:
-    score: 500
-  s_slingshot_right_active:
-    score: 500
-  shotTargetL0_unlit_hit:
-    score: 100
-    drops: 1
-  shotTargetL1_unlit_hit:
-    score: 100
-    drops: 1
-  shotTargetL2_unlit_hit:
-    score: 100
-    drops: 1
-  shotTargetL3_unlit_hit:
-    score: 100
-    drops: 1
-  shotTargetL0_flashing_hit:
-    score: 10000
-    drops: 1
-  shotTargetL1_flashing_hit:
-    score: 10000
-    drops: 1
-  shotTargetL2_flashing_hit:
-    score: 10000
-    drops: 1
-  shotTargetL3_flashing_hit:
-    score: 10000
-    drops: 1
-  shotTargetL0_lit_hit:
-    score: 400
-    drops: 1
-  shotTargetL1_lit_hit:
-    score: 400
-    drops: 1
-  shotTargetL2_lit_hit:
-    score: 400
-    drops: 1
-  shotTargetL3_lit_hit:
-    score: 400
-    drops: 1
-  s_dTargetR0_active:
-    score: 100
-    drops: 1
-  s_dTargetR1_active:
-    score: 100
-    drops: 1
-  s_dTargetR2_active:
-    score: 100
-    drops: 1
-  s_dTargetR3_active:
-    score: 100
-    drops: 1
-  s_dTargetCL_active:
-    score: 200
-    drops: 1
-  s_dTargetCR_active:
-    score: 200
-    drops: 1
-  s_roInLaneLeft_active:
-    score: 50
-  s_roInLaneRight_active:
-    score: 50
-  s_roOutLaneLeft_active:
-    score: 150
-  s_roOutLaneRight_active:
-    score: 150
-  s_sTargetDropL_active:
-    score: 1
-  s_sTargetDropR_active:
-    score: 1
-  s_sTargetLowL_active:
-    score: 1
-  s_sTargetLowR_active:
-    score: 1
-  s_sTargetUpperL_active:
-    score: 1
-  s_sTargetUpperR_active:
-    score: 1
-  s_sTargetYellowL_active:
-    score: 100
-  s_sTargetYellowR_active:
-    score: 100
-  s_spinner_active:
-    score: 100
-  s_ir_scoop_detect_active:
-    score: 1000000
-  shotLane0_shotProfileToplanes_unlit_hit:
-    score: 100
-  shotLane0_shotProfileToplanes_flashing_hit:
-    score: 500
-  shotLane0_shotProfileToplanes_lit_hit:
-    score: 1000
-  shotLane1_shotProfileToplanes_unlit_hit:
-    score: 100
-  shotLane1_shotProfileToplanes_flashing_hit:
-    score: 500
-  shotLane1_shotProfileToplanes_lit_hit:
-    score: 1000
-  shotLane2_shotProfileToplanes_unlit_hit:
-    score: 100
-  shotLane2_shotProfileToplanes_flashing_hit:
-    score: 500
-  shotLane2_shotProfileToplanes_lit_hit:
-    score: 1000
-  shotLane3_shotProfileToplanes_unlit_hit:
-    score: 100
-  shotLane3_shotProfileToplanes_flashing_hit:
-    score: 500
-  shotLane3_shotProfileToplanes_lit_hit:
-    score: 1000
-  shotLane4_shotProfileToplanes_unlit_hit:
-    score: 100
-  shotLane4_shotProfileToplanes_flashing_hit:
-    score: 500
-  shotLane4_shotProfileToplanes_lit_hit:
-    score: 1000
-  shotGroupToplanes_lit_complete:
-    score: 10000
-  shotGroupLeftTargets_lit_complete:
-    score: 50000
-
 queue_relay_player:
   balldevice_bd_scoop_ball_eject_attempt:
-      post: start_mode_scoop_show
-      wait_for: mode_scoop_show_ended
+      post: select_mode_start
+      wait_for: selector_item_selected
 
 show_player:
   start_mode_scoop_show:
       scoop_show:
           loops: 0
-          events_when_completed: mode_scoop_show_ended, yt_hurry_up_started
+          events_when_completed: mode_scoop_show_ended, select_mode_start #yt_hurry_up_started
 
 shows:
   scoop_show:
@@ -462,20 +333,3 @@ shows:
          l_3x: green
          l_4x: green
          l_5x: green
-
-
-
-#coil_player:
-#  ball_starting:
-#    c_dropLeft0:
-#      action: pulse
-#    c_dropLeft1:
-#      action: pulse
-#    c_dropRight0:
-#      action: pulse
-#    c_dropRight1:
-#      action: pulse
-#    c_dropCenterL:
-#      action: pulse
-#    c_dropCenterR:
-#      action: pulse
