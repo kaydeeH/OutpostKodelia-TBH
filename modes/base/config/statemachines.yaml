@@ -1,0 +1,218 @@
+#config_version=5
+
+extra_balls:
+  sideTargets:
+     award_events: extra_ball_is_earned
+
+state_machines:
+  extra_ball:
+     states:
+       start:
+         label: start state
+       extra_is_lit:
+         label: extra_is_lit
+         events_when_started: extra_ball_is_lit
+       extra_ball:
+         label: extra ball earned
+         events_when_started: extra_ball_is_earned, reset_both_lane_lit_groups
+     transitions:
+       - source: start
+         target: extra_is_lit
+         events: shotGroupLeftTargets_lit_complete, shotGroupRightTargets_lit_complete
+       - source: extra_is_lit
+         target: extra_ball
+         events: shotGroupLeftTargets_lit_complete, shotGroupRightTargets_lit_complete
+
+  lt0:
+     states:
+       start:
+         label: start state
+         events_when_started: lt0_flash_start
+       lightsOff:
+         label: off
+         events_when_started: lt0_off_start
+       lighton:
+         label: lit
+         events_when_started: lt0_lit_start
+     transitions:
+       - source: start
+         target: lightsOff
+         events: timer_targetRotator_tick
+       - source: start
+         target: lighton
+         events: shotTargetL0_flashing_hit
+       - source: lightsOff
+         target: start
+         events: timer_targetRotator_tick
+       - source: lighton
+         target: start
+         events: reset_both_lane_lit_groups
+  lt1:
+     states:
+       start:
+         label: start state
+         events_when_started: lt1_off_start
+       lightsflash:
+         label: flashing
+         events_when_started: lt1_flash_start
+       lighton:
+         label: lit
+         events_when_started: lt1_lit_start
+     transitions:
+       - source: start
+         target: lightsflash
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: lighton
+         events: shotTargetL1_flashing_hit
+       - source: lightsflash
+         target: start
+         events: timer_targetRotator_tick
+       - source: lighton
+         target: start
+         events: reset_both_lane_lit_groups
+  lt2:
+     states:
+       start:
+         label: start state
+         events_when_started: lt2_flash_start
+       lightsOff:
+         label: off
+         events_when_started: lt2_off_start
+       lighton:
+         label: lit
+         events_when_started: lt2_lit_start
+     transitions:
+       - source: start
+         target: lightsOff
+         events: timer_targetRotator_tick
+       - source: start
+         target: lighton
+         events: shotTargetL2_flashing_hit
+       - source: lightsOff
+         target: start
+         events: timer_targetRotator_tick
+       - source: lighton
+         target: start
+         events: reset_both_lane_lit_groups
+  lt3:
+     states:
+       start:
+         label: start state
+         events_when_started: lt3_off_start
+       lightsflash:
+         label: flashing
+         events_when_started: lt3_flash_start
+       lighton:
+         label: lit
+         events_when_started: lt3_lit_start
+     transitions:
+       - source: start
+         target: lightsflash
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: lighton
+         events: shotTargetL3_flashing_hit
+       - source: lightsflash
+         target: start
+         events: timer_targetRotator_tick
+       - source: lighton
+         target: start
+         events: reset_both_lane_lit_groups
+
+  rt0:
+     states:
+       start:
+         label: start state
+         events_when_started: rt0_flash_start
+       lightsOff:
+         label: off
+         events_when_started: rt0_off_start
+       lighton:
+         label: lit
+         events_when_started: rt0_lit_start
+     transitions:
+       - source: start
+         target: lightsOff
+         events: timer_targetRotator_tick
+       - source: start
+         target: lighton
+         events: shotTargetR0_flashing_hit
+       - source: lightsOff
+         target: start
+         events: timer_targetRotator_tick
+       - source: lighton
+         target: start
+         events: reset_both_lane_lit_groups
+  rt1:
+     states:
+       start:
+         label: start state
+         events_when_started: rt1_off_start
+       lightsflash:
+         label: flashing
+         events_when_started: rt1_flash_start
+       lighton:
+         label: lit
+         events_when_started: rt1_lit_start
+     transitions:
+       - source: start
+         target: lightsflash
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: lighton
+         events: shotTargetR1_flashing_hit
+       - source: lightsflash
+         target: start
+         events: timer_targetRotator_tick
+       - source: lighton
+         target: start
+         events: reset_both_lane_lit_groups
+  rt2:
+     states:
+       start:
+         label: start state
+         events_when_started: rt2_flash_start
+       lightsOff:
+         label: off
+         events_when_started: rt2_off_start
+       lighton:
+         label: lit
+         events_when_started: rt2_lit_start
+     transitions:
+       - source: start
+         target: lightsOff
+         events: timer_targetRotator_tick
+       - source: start
+         target: lighton
+         events: shotTargetR2_flashing_hit
+       - source: lightsOff
+         target: start
+         events: timer_targetRotator_tick
+       - source: lighton
+         target: start
+         events: reset_both_lane_lit_groups
+  rt3:
+     states:
+       start:
+         label: start state
+         events_when_started: rt3_off_start
+       lightsflash:
+         label: flashing
+         events_when_started: rt3_flash_start
+       lighton:
+         label: lit
+         events_when_started: rt3_lit_start
+     transitions:
+       - source: start
+         target: lightsflash
+         events: timer_targetRotator_tick
+       - source: lightsflash
+         target: lighton
+         events: shotTargetR3_flashing_hit
+       - source: lightsflash
+         target: start
+         events: timer_targetRotator_tick
+       - source: lighton
+         target: start
+         events: reset_both_lane_lit_groups

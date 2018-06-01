@@ -3,22 +3,85 @@
 achievements:
  untitled_mode_1:
    show_tokens:
-     lights: l_mode0
+     light: l_mode0
+   enable_events: selector_untitled_mode_1_highlighted
+   select_events: selector_untitled_mode_1_highlighted
+   disable_events: selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
+   start_events: mode_story01_started
+   complete_events: mode_story01_stopped
+   show_when_selected: popred
+   show_when_started: popgreen
+   show_when_completed: popblue
+   show_when_disabled: off
  untitled_mode_2:
    show_tokens:
-     lights: l_mode1
+     light: l_mode1
+   enable_events: selector_untitled_mode_2_highlighted
+   select_events: selector_untitled_mode_2_highlighted
+   start_events: mode_story02_started
+   disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
+   complete_events: mode_story02_stopped
+   show_when_selected: popred
+   show_when_started: popgreen
+   show_when_completed: popblue
+   show_when_stopped: off
  untitled_mode_3:
    show_tokens:
-     lights: l_mode2
+     light: l_mode2
+   enable_events: selector_untitled_mode_3_highlighted
+   select_events: selector_untitled_mode_3_highlighted
+   start_events: mode_story03_started
+   disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
+   complete_events: mode_story03_stopped
+   show_when_selected: popred
+   show_when_started: popgreen
+   show_when_completed: popblue
+   show_when_stopped: off
  untitled_mode_4:
    show_tokens:
-     lights: l_mode3
+     light: l_mode3
+   enable_events: selector_untitled_mode_4_highlighted
+   select_events: selector_untitled_mode_4_highlighted
+   start_events: mode_story04_started
+   disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
+   complete_events: mode_story04_stopped
+   show_when_selected: popred
+   show_when_started: popgreen
+   show_when_completed: popblue
+   show_when_stopped: off
  untitled_mode_5:
    show_tokens:
-     lights: l_mode4
+     light: l_mode4
+   enable_events: selector_untitled_mode_5_highlighted
+   select_events: selector_untitled_mode_5_highlighted
+   start_events: mode_story05_started
+   disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
+   complete_events: mode_story05_stopped
+   show_when_selected: popred
+   show_when_started: popgreen
+   show_when_completed: popblue
+   show_when_stopped: off
  untitled_mode_6:
    show_tokens:
-     lights: l_mode5
+     light: l_mode5
+   enable_events: selector_untitled_mode_6_highlighted
+   select_events: selector_untitled_mode_6_highlighted
+   start_events: mode_story06_started
+   disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_7_highlighted
+   complete_events: mode_story06_stopped
+   show_when_selected: popred
+   show_when_started: popgreen
+   show_when_completed: popblue
+   show_when_stopped: off
  untitled_mode_7:
    show_tokens:
-     lights: l_mode6
+     light: l_mode6
+   enable_events: selector_untitled_mode_7_highlighted
+   select_events: selector_untitled_mode_7_highlighted
+   start_events: mode_story06_started
+   disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted
+   complete_events: mode_story07_stopped
+   show_when_selected: popred
+   show_when_started: popgreen
+   show_when_completed: popblue
+   show_when_stopped: off

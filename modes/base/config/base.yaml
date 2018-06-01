@@ -2,6 +2,7 @@
 config:
   - achievements.yaml
   - scoring.yaml
+  - statemachines.yaml
 
 mode:
   start_events: ball_starting
@@ -62,6 +63,9 @@ slides:
         y: 15%
       - type: text
         text: "BONUS X: (bonus_multiplier)"
+      - type: text
+        text: (machine.device_manager.collections["shots"]["shotTargetL0"].state) machine.device_manager.collections["shots"]["shotTargetL0"].state
+        y: 10%
    scoop_slide:
     widgets:
       - type: text
@@ -71,120 +75,30 @@ slides:
         font_name: ocr-a-tribute-bold
     expire: 3s
 
-
-
-counters:
-  ctDropL0:
-      count_events: shotTargetL0_flashing_hit
-      starting_count: 0
-
 timers:
   targetRotator:
-    start_running: true
-    tick_interval: 5s
-  targetRotatorB:
-    start_running: true
-    tick_interval: 5s
+   start_value: 0
+   tick_interval: 2s
+   control_events:
+     - event: mode_base_started
+       action: start
 
-state_machines:
-  lt0:
-     states:
-       start:
-         label: start state
-         events_when_started: lt0_flash_start
-       lightsflash:
-         label: flashing
-         events_when_started: lt0_off_start
-       lighton:
-         label: lit
-         events_when_started: lt0_lit_start
-     transitions:
-       - source: start
-         target: lightsflash
-         events: timer_targetRotator_tick
-       - source: lightsflash
-         target: start
-         events: timer_targetRotator_tick
-       - source: start
-         target: lighton
-         events: shotTargetL0_flashing_hit
-       - source: lighton
-         target: start
-         events: shotGroupLeftTargets_lit_complete
-  lt1:
-     states:
-       start:
-         label: start state
-         events_when_started: lt1_off_start
-       lightsflash:
-         label: flashing
-         events_when_started: lt1_flash_start
-       lighton:
-         label: lit
-         events_when_started: lt1_lit_start
-     transitions:
-       - source: start
-         target: lightsflash
-         events: timer_targetRotator_tick
-       - source: lightsflash
-         target: start
-         events: timer_targetRotator_tick
-       - source: lightsflash
-         target: lighton
-         events: shotTargetL1_flashing_hit
-       - source: lighton
-         target: start
-         events: shotGroupLeftTargets_lit_complete
-
-  lt2:
-     states:
-       start:
-         label: start state
-         events_when_started: lt2_flash_start
-       lightsflash:
-         label: flashing
-         events_when_started: lt2_off_start
-       lighton:
-         label: lit
-         events_when_started: lt2_lit_start
-     transitions:
-       - source: start
-         target: lightsflash
-         events: timer_targetRotator_tick
-       - source: lightsflash
-         target: start
-         events: timer_targetRotator_tick
-       - source: start
-         target: lighton
-         events: shotTargetL2_flashing_hit
-       - source: lighton
-         target: start
-         events: shotGroupLeftTargets_lit_complete
-
-  lt3:
-     states:
-       start:
-         label: start state
-         events_when_started: lt3_off_start
-       lightsflash:
-         label: flashing
-         events_when_started: lt3_flash_start
-       lighton:
-         label: lit
-         events_when_started: lt3_lit_start
-     transitions:
-       - source: start
-         target: lightsflash
-         events: timer_targetRotator_tick
-       - source: lightsflash
-         target: start
-         events: timer_targetRotator_tick
-       - source: lightsflash
-         target: lighton
-         events: shotTargetL3_flashing_hit
-       - source: lighton
-         target: start
-         events: shotGroupLeftTargets_lit_complete
+  dropTimerA:
+   start_value: 0
+   end_value: 1
+   tick_interval: 2s
+   control_events:
+     - event: mode_base_started
+       action: start
+     - event: timer_dropTimerB_stopped
+       action: restart
+  dropTimerB:
+   start_value: 0
+   end_value: 1
+   tick_interval: 2s
+   control_events:
+     - event: timer_dropTimerA_Stopped
+       action: restart
 
 shots:
   shotCenterPop:
@@ -231,33 +145,85 @@ shots:
     switch: s_dTargetL0
     show_tokens:
       light: l_dropLeft0
-    profile: shotProfileToplanes
-    advance_events: lt0_flash_start
+    profile: shotProfileLeftTargets
+    advance_events: lt0_flash_start, lt0_lit_start
     reset_events: lt0_off_start, shotTargetL0_unlit_hit
   shotTargetL1:
     switch: s_dTargetL1
     show_tokens:
       light: l_dropLeft1
-    profile: shotProfileToplanes
-    advance_events: lt1_flash_start
+    profile: shotProfileLeftTargets
+    advance_events: lt1_flash_start, lt1_lit_start
     reset_events: lt1_off_start, shotTargetL1_unlit_hit
   shotTargetL2:
     switch: s_dTargetL2
     show_tokens:
       light: l_dropLeft2
-    profile: shotProfileToplanes
-    advance_events: lt2_flash_start
+    profile: shotProfileLeftTargets
+    advance_events: lt2_flash_start, lt2_lit_start
     reset_events: lt2_off_start, shotTargetL2_unlit_hit
   shotTargetL3:
     switch: s_dTargetL3
     show_tokens:
       light: l_dropLeft3
-    profile: shotProfileToplanes
-    advance_events: lt3_flash_start
+    profile: shotProfileLeftTargets
+    advance_events: lt3_flash_start, lt3_lit_start
     reset_events: lt3_off_start, shotTargetL3_unlit_hit
-
+  shotTargetR0:
+    switch: s_dTargetR0
+    show_tokens:
+      light: l_dropRight0
+    profile: shotProfileRightTargets
+    advance_events: rt0_flash_start, rt0_lit_start
+    reset_events: rt0_off_start, shotTargetR0_unlit_hit
+  shotTargetR1:
+    switch: s_dTargetR1
+    show_tokens:
+      light: l_dropRight1
+    profile: shotProfileRightTargets
+    advance_events: rt1_flash_start, rt1_lit_start
+    reset_events: rt1_off_start, shotTargetR1_unlit_hit
+  shotTargetR2:
+    switch: s_dTargetR2
+    show_tokens:
+      light: l_dropRight2
+    profile: shotProfileRightTargets
+    advance_events: rt2_flash_start, rt2_lit_start
+    reset_events: rt2_off_start, shotTargetR2_unlit_hit
+  shotTargetR3:
+    switch: s_dTargetR3
+    show_tokens:
+      light: l_dropRight3
+    profile: shotProfileRightTargets
+    advance_events: rt3_flash_start, rt3_lit_start
+    reset_events: rt3_off_start, shotTargetR3_unlit_hit
+  shotScoop:
+    switch: s_ir_scoop_detect
+    show_tokens:
+      light: l_scoop
+    profile: shotProfileScoop
+    advance_events: selector_item_selected, mode_story01_stopped, mode_story02_stopped, mode_story03_stopped, mode_story04_stopped, mode_story05_stopped, mode_story06_stopped, mode_story07_stopped,
+    reset_events: shotGroupToplanes_lit_complete, drop_target_bank_leftfull_down, drop_target_bank_rightfull_down, gravityAssistBonus
 
 shot_profiles:
+  shotProfileLeftTargets:
+    show_when_disabled: true
+    states:
+      - name: unlit
+        show: off
+      - name: flashing
+        show: dk_blu_flash
+      - name: lit
+        show: dk_blu_on
+  shotProfileRightTargets:
+    show_when_disabled: true
+    states:
+      - name: unlit
+        show: off
+      - name: flashing
+        show: dk_blu_flash
+      - name: lit
+        show: dk_blu_on
   shotProfileToplanes:
     states:
       - name: unlit
@@ -274,6 +240,15 @@ shot_profiles:
       - name: popBumpGreen
         show: popgreen
     loop: true
+  shotProfileScoop:
+    advance_on_hit: false
+    states:
+      - name: scoopReady
+        show: popred
+      - name: scoopActive
+        show: popgreen
+      - name: scoopNotReady
+        show: off
 
 shot_groups:
    shotGroupToplanes:
@@ -285,7 +260,12 @@ shot_groups:
        disable_events: ball_ending
    shotGroupLeftTargets:
        shots: shotTargetL0, shotTargetL1, shotTargetL2, shotTargetL3
-       reset_events: shotGroupLeftTargets_lit_complete
+       reset_events: reset_both_lane_lit_groups
+       enable_events: ball_started
+       disable_events: ball_ending
+   shotGroupRightTargets:
+       shots: shotTargetR0, shotTargetR1, shotTargetR2, shotTargetR3
+       reset_events: reset_both_lane_lit_groups
        enable_events: ball_started
        disable_events: ball_ending
 
@@ -301,16 +281,27 @@ sound_player:
           loops: -1
           mode_end_action: stop
 
-queue_relay_player:
-  balldevice_bd_scoop_ball_eject_attempt:
-      post: select_mode_start
-      wait_for: selector_item_selected
-
 show_player:
-  start_mode_scoop_show:
+  shotScoop_scoopReady_hit:
       scoop_show:
           loops: 0
-          events_when_completed: mode_scoop_show_ended, select_mode_start #yt_hurry_up_started
+          events_when_completed: select_mode_start #, select_mode_start #yt_hurry_up_started
+  shotScoop_scoopActive_hit:
+      scoop_show_ip:
+          loops: 0
+          events_when_completed: scoop_eject
+  shotScoop_scoopNotReady_hit:
+      scoop_show_nr:
+          loops: 0
+          events_when_completed: scoop_eject
+  extra_ball_is_lit:
+      extra_lit:
+          loops: -1
+  extra_ball_is_earned:
+      extra_lit:
+          action: stop
+      extra_earned:
+          loops: -1
 
 shows:
   scoop_show:
@@ -333,3 +324,28 @@ shows:
          l_3x: green
          l_4x: green
          l_5x: green
+  scoop_show_ip:
+     - time: 0
+       lights:
+         l_2x: green
+         l_3x: green
+         l_4x: green
+         l_5x: green
+  scoop_show_nr:
+     - time: 0
+       lights:
+         l_2x: red
+         l_3x: red
+         l_4x: red
+         l_5x: red
+  extra_lit:
+     - time: 0
+       lights:
+         l_shootAgain: red
+     - time: +1
+       lights:
+         l_shootAgain: off
+  extra_earned:
+     - time: 0
+       lights:
+         l_shootAgain: green

@@ -225,8 +225,14 @@ ball_devices:
   bd_scoop:
     ball_switches: s_ir_scoop_detect
     eject_coil: c_scoop_eject
-    eject_timeouts: 3s
+    #eject_events: selector_item_selected, scoop_eject
     debug: true
+
+ball_holds:
+   scoop:
+     balls_to_hold: 1
+     hold_devices: bd_scoop
+     release_one_events: selector_item_selected, scoop_eject
 
 autofire_coils:
   slingshot_left:
