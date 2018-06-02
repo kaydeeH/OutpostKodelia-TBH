@@ -34,6 +34,9 @@ modes:
   - story06
   - story07
   - storyScoopOverride
+  - pop_blue
+#  - pop_red
+#  - pop_green
 
 player_vars:
   pops:
