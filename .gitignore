@@ -101,3 +101,6 @@ ENV/
 .mypy_cache/
 .idea
 /data/audits.yaml
+/data/high_scores.yaml
+/data/machine_vars.yaml
+/showcreator/output*.yaml

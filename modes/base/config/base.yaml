@@ -185,8 +185,6 @@ shots:
     reset_events: scoop_reset
 
 event_player:
-#    player_add_request(score>0):
-#      - player_add_request
     shotGroupToplanes_lit_complete:
       - scoop_reset
     drop_target_bank_leftfull_down:
@@ -346,6 +344,65 @@ show_player:
           show_tokens:
             light0: l_GIDropRight0
             light1: l_GIDropRight1
+  s_dtargetcr_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GIDropCenterRight
+  s_dtargetcl_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GIDropCenterLeft
+  s_sTargetDropR_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GIDropRight0
+            light1: l_GIDropRight1
+  s_sTargetDropL_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GIDropLeft0
+            light1: l_GIDropLeft1
+  s_sTargetLowR_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GILowRight
+  s_sTargetLowL_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GILowLeft
+  s_sTargetUpperR_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GIAboveSpinnerUpper
+  s_sTargetUpperL_active:
+      redHitShow:
+          priority: 102
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GIScoopMR
+            light1: l_GIScoopLR
   shotScoop_scoopReady_hit:
       scoop_show:
           loops: 0
