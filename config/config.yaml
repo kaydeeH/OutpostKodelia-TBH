@@ -33,6 +33,7 @@ modes:
   - story05
   - story06
   - story07
+  - storyScoopOverride
 
 player_vars:
   pops:

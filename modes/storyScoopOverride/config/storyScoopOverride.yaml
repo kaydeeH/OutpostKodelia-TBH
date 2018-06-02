@@ -1,0 +1,22 @@
+#config_version=5
+
+mode:
+   start_events: selector_untitled_mode_1_selected, selector_untitled_mode_2_selected, selector_untitled_mode_3_selected, selector_untitled_mode_4_selected, selector_untitled_mode_5_selected, selector_untitled_mode_6_selected, selector_untitled_mode_7_selected
+   stop_events: mode_story01_stopped, mode_story02_stopped, mode_story03_stopped, mode_story04_stopped, mode_story05_stopped, mode_story06_stopped, mode_story07_stopped
+   priority: 1000
+
+shots:
+  shotScoopOverride:
+    switch: s_ir_scoop_detect
+    show_tokens:
+      light: l_scoop
+    profile: shotProfileScoopOverride
+
+shot_profiles:
+  shotProfileScoopOverride:
+    show_when_disabled: true
+    advance_on_hit: false
+    block: true
+    states:
+      - name: scoopActive
+        show: popgreen

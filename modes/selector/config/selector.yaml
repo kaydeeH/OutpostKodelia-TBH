@@ -13,76 +13,341 @@ mode_settings:
   next_item_events: s_flipper_right_active
 #  previous_item_events: s_flipper_left_active
 
+#event_player:
+#  select_mode_start{device.achievements.untitled_mode_1==completed}:
+#    - check_ach1
+
+#widget_player:
+#   s_jet_upper_left_active:
+#      sample_quick_vid:
+#         slide: scoring_slide
+#         widget_settings:
+#           expire: 2s
+
+widget_player:
+  mode_selector_started:
+    select_01_off:
+       key: select01
+       action: add
+       slide: selector_slide
+    select_02_off:
+       key: select02
+       action: add
+       slide: selector_slide
+    select_03_off:
+       key: select03
+       action: add
+       slide: selector_slide
+    select_04_off:
+       key: select04
+       action: add
+       slide: selector_slide
+    select_05_off:
+       key: select05
+       action: add
+       slide: selector_slide
+    select_06_off:
+       key: select06
+       action: add
+       slide: selector_slide
+  untitled_mode_1_omitted:
+    select_01_off:
+       key: select01
+       action: update
+       widget_settings:
+         text: ""
+    select_01_completed:
+       key: complete01
+       action: add
+       slide: selector_slide
+  untitled_mode_2_omitted:
+    select_02_off:
+       key: select02
+       action: update
+       widget_settings:
+         text: ""
+    select_02_completed:
+       key: complete02
+       action: add
+       slide: selector_slide
+  untitled_mode_3_omitted:
+    select_03_off:
+       key: select03
+       action: update
+       widget_settings:
+         text: ""
+    select_03_completed:
+       key: complete03
+       action: add
+       slide: selector_slide
+  untitled_mode_4_omitted:
+    select_04_off:
+       key: select04
+       action: update
+       widget_settings:
+         text: ""
+    select_04_completed:
+       key: complete04
+       action: add
+       slide: selector_slide
+  untitled_mode_5_omitted:
+    select_05_off:
+       key: select05
+       action: update
+       widget_settings:
+         text: ""
+    select_05_completed:
+       key: complete05
+       action: add
+       slide: selector_slide
+  untitled_mode_6_omitted:
+    select_06_off:
+       key: select06
+       action: update
+       widget_settings:
+         text: ""
+    select_06_completed:
+       key: complete06
+       action: add
+       slide: selector_slide
+  selector_untitled_mode_1_highlighted:
+    select_01_off:
+       action: update
+       key: select01
+       widget_settings:
+         color: red
+    select_02_off:
+       action: update
+       key: select02
+       widget_settings:
+         color: white
+    select_03_off:
+       action: update
+       key: select03
+       widget_settings:
+         color: white
+    select_04_off:
+       action: update
+       key: select04
+       widget_settings:
+         color: white
+    select_05_off:
+       action: update
+       key: select05
+       widget_settings:
+         color: white
+    select_06_off:
+       action: update
+       key: select06
+       widget_settings:
+         color: white
+  selector_untitled_mode_2_highlighted:
+    select_01_off:
+       action: update
+       key: select01
+       widget_settings:
+         color: white
+    select_02_off:
+       action: update
+       key: select02
+       widget_settings:
+         color: red
+    select_03_off:
+       action: update
+       key: select03
+       widget_settings:
+         color: white
+    select_04_off:
+       action: update
+       key: select04
+       widget_settings:
+         color: white
+    select_05_off:
+       action: update
+       key: select05
+       widget_settings:
+         color: white
+    select_06_off:
+       action: update
+       key: select06
+       widget_settings:
+         color: white
+  selector_untitled_mode_3_highlighted:
+    select_01_off:
+       action: update
+       key: select01
+       widget_settings:
+         color: white
+    select_02_off:
+       action: update
+       key: select02
+       widget_settings:
+         color: white
+    select_03_off:
+       action: update
+       key: select03
+       widget_settings:
+         color: red
+    select_04_off:
+       action: update
+       key: select04
+       widget_settings:
+         color: white
+    select_05_off:
+       action: update
+       key: select05
+       widget_settings:
+         color: white
+    select_06_off:
+       action: update
+       key: select06
+       widget_settings:
+         color: white
+  selector_untitled_mode_4_highlighted:
+    select_01_off:
+       action: update
+       key: select01
+       widget_settings:
+         color: white
+    select_02_off:
+       action: update
+       key: select02
+       widget_settings:
+         color: white
+    select_03_off:
+       action: update
+       key: select03
+       widget_settings:
+         color: white
+    select_04_off:
+       action: update
+       key: select04
+       widget_settings:
+         color: red
+    select_05_off:
+       action: update
+       key: select05
+       widget_settings:
+         color: white
+    select_06_off:
+       action: update
+       key: select06
+       widget_settings:
+         color: white
+  selector_untitled_mode_5_highlighted:
+    select_01_off:
+       action: update
+       key: select01
+       widget_settings:
+         color: white
+    select_02_off:
+       action: update
+       key: select02
+       widget_settings:
+         color: white
+    select_03_off:
+       action: update
+       key: select03
+       widget_settings:
+         color: white
+    select_04_off:
+       action: update
+       key: select04
+       widget_settings:
+         color: white
+    select_05_off:
+       action: update
+       key: select05
+       widget_settings:
+         color: red
+    select_06_off:
+       action: update
+       key: select06
+       widget_settings:
+         color: white
+  selector_untitled_mode_6_highlighted:
+    select_01_off:
+       action: update
+       key: select01
+       widget_settings:
+         color: white
+    select_02_off:
+       action: update
+       key: select02
+       widget_settings:
+         color: white
+    select_03_off:
+       action: update
+       key: select03
+       widget_settings:
+         color: white
+    select_04_off:
+       action: update
+       key: select04
+       widget_settings:
+         color: white
+    select_05_off:
+       action: update
+       key: select05
+       widget_settings:
+         color: white
+    select_06_off:
+       action: update
+       key: select06
+       widget_settings:
+         color: red
+
 slide_player:
-  selector_untitled_mode_1_highlighted: select_01
-  selector_untitled_mode_2_highlighted: select_02
-  selector_untitled_mode_3_highlighted: select_03
-  selector_untitled_mode_4_highlighted: select_04
-  selector_untitled_mode_5_highlighted: select_05
-  selector_untitled_mode_6_highlighted: select_06
-  selector_untitled_mode_7_highlighted: select_07
+  mode_selector_started: selector_slide
+#  selector_untitled_mode_1_highlighted: select_01
+#  selector_untitled_mode_2_highlighted: select_02
+#  selector_untitled_mode_3_highlighted: select_03
+#  selector_untitled_mode_4_highlighted: select_04
+#  selector_untitled_mode_5_highlighted: select_05
+#  selector_untitled_mode_6_highlighted: select_06
+#  selector_untitled_mode_7_highlighted: select_07
 
 slides:
+  selector_slide: []
   select_01:
     widgets:
       - type: text
         text: MODE 01
         font_size: 100
         color: yellow
-    transition:
-      type: move_in
-      direction: right
   select_02:
     widgets:
       - type: text
         text: MODE 02
         font_size: 100
         color: yellow
-    transition:
-      type: move_in
-      direction: right
   select_03:
     widgets:
       - type: text
         text: MODE 03
         font_size: 100
         color: yellow
-    transition:
-      type: move_in
-      direction: right
   select_04:
     widgets:
       - type: text
         text: MODE 04
         font_size: 100
         color: yellow
-    transition:
-      type: move_in
-      direction: right
   select_05:
     widgets:
       - type: text
         text: MODE 05
         font_size: 100
         color: yellow
-    transition:
-      type: move_in
-      direction: right
   select_06:
     widgets:
       - type: text
         text: MODE 06
         font_size: 100
         color: yellow
-    transition:
-      type: move_in
-      direction: right
   select_07:
     widgets:
       - type: text
         text: MODE 07
         font_size: 100
         color: yellow
-    transition:
-      type: move_in
-      direction: right

@@ -83,23 +83,6 @@ timers:
      - event: mode_base_started
        action: start
 
-  dropTimerA:
-   start_value: 0
-   end_value: 1
-   tick_interval: 2s
-   control_events:
-     - event: mode_base_started
-       action: start
-     - event: timer_dropTimerB_stopped
-       action: restart
-  dropTimerB:
-   start_value: 0
-   end_value: 1
-   tick_interval: 2s
-   control_events:
-     - event: timer_dropTimerA_Stopped
-       action: restart
-
 shots:
   shotCenterPop:
     switch: s_jet_lower_center
@@ -202,8 +185,48 @@ shots:
     show_tokens:
       light: l_scoop
     profile: shotProfileScoop
-    advance_events: selector_item_selected, mode_story01_stopped, mode_story02_stopped, mode_story03_stopped, mode_story04_stopped, mode_story05_stopped, mode_story06_stopped, mode_story07_stopped,
-    reset_events: shotGroupToplanes_lit_complete, drop_target_bank_leftfull_down, drop_target_bank_rightfull_down, gravityAssistBonus
+    advance_events: selector_item_selected, ach_completed, story_mode_completed
+    enable_events: mode_base_started, scoop_reset
+    disable_events: selector_item_selected
+    reset_events: scoop_reset
+
+event_player:
+    shotGroupToplanes_lit_complete:
+      - scoop_reset
+    drop_target_bank_leftfull_down:
+      - scoop_reset
+    drop_target_bank_rightfull_down:
+      - scoop_reset
+    gravityAssistBonus:
+      - scoop_reset
+    mode_story01_stopped:
+      - story_mode_completed
+    achievement_untitled_mode_1_state_completed:
+      - ach_completed
+    mode_story02_stopped:
+      - story_mode_completed
+    achievement_untitled_mode_2_state_completed:
+      - ach_completed
+    mode_story03_stopped:
+      - story_mode_completed
+    achievement_untitled_mode_3_state_completed:
+      - ach_completed
+    mode_story04_stopped:
+      - story_mode_completed
+    achievement_untitled_mode_4_state_completed:
+      - ach_completed
+    mode_story05_stopped:
+      - story_mode_completed
+    achievement_untitled_mode_5_state_completed:
+      - ach_completed
+    mode_story06_stopped:
+      - story_mode_completed
+    achievement_untitled_mode_6_state_completed:
+      - ach_completed
+    mode_story07_stopped:
+      - story_mode_completed
+    achievement_untitled_mode_7_state_completed:
+      - ach_completed
 
 shot_profiles:
   shotProfileLeftTargets:

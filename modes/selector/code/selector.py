@@ -39,6 +39,8 @@ class selector(Carousel):
       if (status == 0):
         items.append(ourMode)
         thelastmode = ourMode
+      else:
+        self.machine.events.post("{}_omitted".format(ourMode), selector=ourMode)
 
     items.remove("intro")
 

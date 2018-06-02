@@ -38,4 +38,3 @@ widgets:
      - type: text
        text: "Story 01 Hurry Up: (temp_ythurryup_value)"
        y: 80%
-
