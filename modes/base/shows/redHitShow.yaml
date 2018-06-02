@@ -1,0 +1,6 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    (light0): FF0000
+    (light1): FF0000

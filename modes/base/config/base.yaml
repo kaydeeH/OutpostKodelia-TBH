@@ -236,6 +236,7 @@ shot_profiles:
         show: off
       - name: flashing
         show: dk_blu_flash
+        speed: 4
       - name: lit
         show: dk_blu_on
   shotProfileRightTargets:
@@ -245,6 +246,7 @@ shot_profiles:
         show: off
       - name: flashing
         show: dk_blu_flash
+        speed: 4
       - name: lit
         show: dk_blu_on
   shotProfileToplanes:
@@ -267,7 +269,9 @@ shot_profiles:
     advance_on_hit: false
     states:
       - name: scoopReady
-        show: popred
+        show: scoopReadyShow
+        speed: 2
+        priority: 101
       - name: scoopActive
         show: popgreen
       - name: scoopNotReady
@@ -308,6 +312,38 @@ show_player:
   mode_base_started:
       giWhite:
           loops: -1
+  s_slingshot_left_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GISlingLeft0
+            light1: l_GISlingLeft1
+  s_slingshot_right_active:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GISlingRight0
+            light1: l_GISlingRight1
+  shotgrouplefttargets_hit:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GIDropLeft0
+            light1: l_GIDropLeft1
+  shotgrouprighttargets_hit:
+      redHitShow:
+          priority: 101
+          loops: 0
+          speed: 10
+          show_tokens:
+            light0: l_GIDropRight0
+            light1: l_GIDropRight1
   shotScoop_scoopReady_hit:
       scoop_show:
           loops: 0

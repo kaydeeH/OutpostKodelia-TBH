@@ -1,0 +1,82 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_GIScoopUC:
+      color: 19002A #330045
+      fade: 500ms
+    l_GIScoopMR:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopML:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopLR:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopLL:
+      color: 19002A
+      fade: 500ms
+    l_scoop:
+      color: FF0000
+      fade: 500ms
+- duration: 1
+  lights:
+    l_GIScoopUC:
+      color: 19002A #6600AA
+      fade: 500ms
+    l_GIScoopMR:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopML:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopLR:
+      color: 9900FF
+      fade: 500ms
+    l_GIScoopLL:
+      color: 9900FF
+      fade: 500ms
+    l_scoop:
+      color: 2A0000
+      fade: 500ms
+- duration: 1
+  lights:
+    l_GIScoopUC:
+      color: 19002A #9900FF
+      fade: 500ms
+    l_GIScoopMR:
+      color: 9900FF
+      fade: 500ms
+    l_GIScoopML:
+      color: 9900FF
+      fade: 500ms
+    l_GIScoopLR:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopLL:
+      color: 19002A
+      fade: 500ms
+    l_scoop:
+      color: FF0000
+      fade: 500ms
+- duration: 1
+  lights:
+    l_GIScoopUC:
+      color: 9900FF
+      fade: 500ms
+    l_GIScoopMR:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopML:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopLR:
+      color: 19002A
+      fade: 500ms
+    l_GIScoopLL:
+      color: 19002A
+      fade: 500ms
+    l_scoop:
+      color: 2A0000
+      fade: 500ms
