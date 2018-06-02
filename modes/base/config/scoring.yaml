@@ -131,33 +131,46 @@ variable_player:
     drops: 1
   s_roInLaneLeft_active:
     score: 50
+    bonuscount: 1
   s_roInLaneRight_active:
     score: 50
+    bonuscount: 1
   s_roOutLaneLeft_active:
     score: 150
+    bonuscount: 3
   s_roOutLaneRight_active:
     score: 150
+    bonuscount: 3
   s_sTargetDropL_active:
     score: 1
+    bonuscount: 1
   s_sTargetDropR_active:
     score: 1
+    bonuscount: 1
   s_sTargetLowL_active:
     score: 1
+    bonuscount: 1
   s_sTargetLowR_active:
     score: 1
+    bonuscount: 1
   s_sTargetUpperL_active:
     score: 1
+    bonuscount: 1
   s_sTargetUpperR_active:
     score: 1
+    bonuscount: 1
   s_sTargetYellowL_active:
     score: 100
+    bonuscount: 1
   s_sTargetYellowR_active:
     score: 100
+    bonuscount: 1
   s_spinner_active:
     score: 100
     spins: 1
   s_ir_scoop_detect_active:
     score: 10000
+    bonuscount: 1
 
   shotLane0_shotProfileToplanes_unlit_hit:
     score: 100
