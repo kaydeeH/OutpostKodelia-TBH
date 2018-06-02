@@ -165,13 +165,13 @@ coils:
     default_pulse_ms: 12
   c_dropRight0:
     number: A0-B0-2
-    default_pulse_ms: 40
+    default_pulse_ms: 25
   c_dropRight1:
     number: A0-B0-3
-    default_pulse_ms: 40
+    default_pulse_ms: 25
   c_dropCenterR:
     number: A0-B0-4
-    default_pulse_ms: 40
+    default_pulse_ms: 25
   c_jet_upper_right:
     number: A0-B0-5
     default_pulse_ms: 20
@@ -184,16 +184,16 @@ coils:
   c_dropLeft0:
     debug: true
     number: A0-B1-2
-    default_pulse_ms: 40
+    default_pulse_ms: 25
   c_dropLeft1:
     number: A0-B1-3
-    default_pulse_ms: 40
+    default_pulse_ms: 25
   c_dropCenterL:
     number: A0-B1-4
-    default_pulse_ms: 40
+    default_pulse_ms: 25
   c_jet_lower_center:
     number: A0-B1-5
-    default_pulse_ms: 20
+    default_pulse_ms: 30
   c_jet_upper_left:
     number: A0-B1-6
     default_pulse_ms: 20
@@ -284,31 +284,30 @@ drop_target_banks:
          drop_targets: L0, L1, L2, L3
          reset_coils: c_dropLeft0, c_dropLeft1
          reset_on_complete: 500ms
-         ignore_switch_ms: 100ms
+         ignore_switch_ms: 200ms
          reset_events:
-           ball_starting: 300ms
+           player_turn_will_start
      rightFull:
          drop_targets: R0, R1, R2, R3
          reset_coils: c_dropRight0, c_dropRight1
          reset_on_complete: 500ms
-         ignore_switch_ms: 100ms
+         ignore_switch_ms: 200ms
          reset_events:
-           ball_starting: 300ms
+           player_turn_will_start
      leftCenter:
          drop_targets: LC
          reset_coils: c_dropCenterL
          reset_on_complete: 500ms
-         ignore_switch_ms: 100ms
+         ignore_switch_ms: 200ms
          reset_events:
-           ball_starting: 300ms
+           player_turn_will_start
      rightCenter:
          drop_targets: RC
          reset_coils: c_dropCenterR
          reset_on_complete: 500ms
-         ignore_switch_ms: 100ms
+         ignore_switch_ms: 200ms
          reset_events:
-           ball_starting: 300ms
-
+           player_turn_will_start
 
 virtual_platform_start_active_switches:
   s_drain

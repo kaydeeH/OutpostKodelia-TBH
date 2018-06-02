@@ -5,6 +5,7 @@ config:
   - assets.yaml
   - widgets.yaml
   - lights.yaml
+  - scriptlets.yaml
 
 #slides:
 #  welcome_slide:
