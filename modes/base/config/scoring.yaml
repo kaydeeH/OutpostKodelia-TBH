@@ -41,7 +41,7 @@ variable_player:
        int: 1
        action: set
     spins:
-       int: 1
+       int: 0
        action: set
     pds:
        int: 1
@@ -60,6 +60,9 @@ variable_player:
        action: set
     bonuscount:
        int: 1
+       action: set
+    bonuscountdisplay:
+       int: 0
        action: set
     bonus_multiplier:
        int: 1

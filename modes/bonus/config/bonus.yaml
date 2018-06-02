@@ -2,13 +2,12 @@
 
 mode_settings:
   keep_multiplier: True
-  display_delay_ms: 1500ms
+  display_delay_ms: 2000ms
   hurry_up_delay_ms: 0
   bonus_entries:
       - event: bonus_product
         score: (current_player.pds) * (current_player.bonuscount)
         skip_if_zero: false
-
 slide_player:
   bonus_start: slide_6
 slides:
@@ -29,6 +28,7 @@ widget_player:
     bonus_count:
        action: add
        slide: slide_6
+  bonus_subtotal_display:
     bonus_sub:
        action: add
        slide: slide_6
@@ -59,7 +59,7 @@ widgets:
     y: 60%
   bonus_count:
   - type: text
-    text: 'Bonus Count: (bonuscount)  ='
+    text: 'Bonus Count: (bonuscountdisplay)  ='
     font_size: 40
     y: 50%
   bonus_sub:
