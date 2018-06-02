@@ -1,17 +1,35 @@
 from mpf.core.scriptlet import Scriptlet
+from mpf.devices.light import Light
+from mpf.core.device_manager import DeviceCollectionType
+
+lights = None  # type: DeviceCollectionType[str, Light]
 
 
 class BonusLightController(Scriptlet):
+
     def on_load(self):
         self.debug_log("Bonus Light Controller scriptlet loaded!")
-
+        BonusLightController.lights = self.machine.lights.items_tagged('bonus_light')
+        self.debug_log("{} bonus lights being managed.".format(BonusLightController.lights.__len__()))
         self.machine.events.add_handler('player_bonuscount', self._handle_bonus_change)
 
     def _handle_bonus_change(self, **kwargs):
         intvalue = kwargs.get("value")
         if intvalue > 511:
             intvalue = 511
+
         binary = '{0:09b}'.format(intvalue)
+
         for x in range(9):
-            event_name = 'bonus_light_{light}_{lit}'.format(light=str(x), lit='on' if binary[8-x] == '1' else 'off')
-            self.machine.events.post(event_name)
+            if binary[8-x] == '1':
+                self._get_bonus_light_by_number(x).on(priority=1000)
+            else:
+                self._get_bonus_light_by_number(x).off(priority=1000)
+
+    @staticmethod
+    def _get_bonus_light_by_number(num: int):
+        for light in BonusLightController.lights:
+            if light.tags.__contains__('bonus{}'.format(num)):
+                return light
+
+

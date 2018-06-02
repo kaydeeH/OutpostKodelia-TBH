@@ -249,18 +249,24 @@ lights:
     number: 2-24-25-26
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus_big0
     platform_settings:
       polarity: true
   l_bonus7:
     number: 2-27-28-29
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus7
     platform_settings:
       polarity: true
   l_bonus8:
     number: 2-30-31-32
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus8
     platform_settings:
       polarity: true
   l_dropCenterRight:
@@ -275,24 +281,32 @@ lights:
     number: 2-36-37-38
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus4
     platform_settings:
       polarity: true
   l_bonus5:
     number: 2-39-40-41
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus5
     platform_settings:
       polarity: true
   l_bonus6:
     number: 2-42-43-44
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus6
     platform_settings:
       polarity: true
   l_bonusBig0:
     number: 2-45-46-47
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus_big0
     platform_settings:
       polarity: true
 
@@ -428,24 +442,32 @@ lights:
     number: 3-24-25-26
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus3
     platform_settings:
       polarity: true
   l_bonus2:
     number: 3-27-28-29
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus2
     platform_settings:
       polarity: true
   l_bonus1:
     number: 3-30-31-32
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus1
     platform_settings:
       polarity: true
   l_bonus0:
     number: 3-33-34-35
     subtype: led
     default_fade_ms: 50ms
+    default_on_color: 87CEEB
+    tags: bonus_light, bonus0
     platform_settings:
       polarity: true
 
