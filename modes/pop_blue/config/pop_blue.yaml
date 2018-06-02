@@ -1,0 +1,58 @@
+#config_version=5
+
+mode:
+   start_events: shotGroupPopBumpers_popBumpBlue_complete
+   stop_events: timer_popBlue_complete, ball_ending
+   priority: 300
+
+variable_player:
+   mode_pop_blue_started:
+     blue_spin_value:
+       action: set
+       int: 15000
+   timer_popBlue_tick:
+     blue_spin_value: -100
+   s_spinner_active:
+     score: current_player.blue_spin_value|block
+     spins: 1|block
+
+timers:
+   popBlue:
+     start_value: 150
+     end_value: 0
+     tick_interval: .1s
+     direction: down
+     start_running: yes
+
+widget_player:
+   mode_pop_blue_started:
+     blue_remain_widget_01:
+        slide: scoring_slide
+   pop_blue_ended:
+      blue_remain_widget_01:
+        action: remove
+
+widgets:
+   blue_remain_widget_01:
+     - type: text
+       font_size: 40
+       text: "Blue Spinner Hurry Up: (blue_spin_value)"
+       y: 55%
+
+show_player:
+   mode_pop_blue_started:
+     blueFlash:
+       speed: 20
+       loops: -1
+   mode_pop_blue_ended:
+     blueFlash:
+       action: stop
+
+shows:
+   blueFlash:
+    - time: 0
+      lights:
+        l_spinner: blue
+    - time: +1
+      lights:
+        l_spinner: off

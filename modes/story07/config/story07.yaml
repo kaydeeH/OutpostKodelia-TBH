@@ -2,7 +2,7 @@
 
 mode:
    start_events: selector_untitled_mode_7_selected
-   stop_events: timer_yttimer07_complete
+   stop_events: timer_yttimer07_complete, ball_ending
    priority: 400
 
 variable_player:

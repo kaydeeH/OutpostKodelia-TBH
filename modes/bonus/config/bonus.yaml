@@ -2,41 +2,80 @@
 
 mode_settings:
   keep_multiplier: True
-  display_delay_ms: 3s
+  display_delay_ms: 1500ms
   hurry_up_delay_ms: 0
   bonus_entries:
       - event: bonus_product
-        score: (current_player.pops + 1) * (current_player.drops + 1) * current_player.bonuscount
+        score: (current_player.pops + 1) * (current_player.drops + 1) * (current_player.bonuscount + 1)
         skip_if_zero: false
 
 slide_player:
   bonus_start: slide_6
-  bonus_product: slide_7
-  bonus_subtotal: slide_9
-  bonus_multiplier: slide_10
-  bonus_total: slide_11
 slides:
   slide_6:
   - type: text
     text: END OF BALL BONUS
-  slide_7:
+    y: 85%
+    font_size: 100
+
+widget_player:
+  bonus_product:
+    bonus_pops:
+       action: add
+       slide: slide_6
+    bonus_drops:
+       action: add
+       slide: slide_6
+    bonus_count:
+       action: add
+       slide: slide_6
+  bonus_subtotal:
+    bonus_sub:
+       action: add
+       slide: slide_6
+  bonus_multiplier:
+    bonus_multi:
+       action: add
+       slide: slide_6
+  bonus_total:
+    bonus_final:
+       action: add
+       slide: slide_6
+
+widgets:
+  bonus_title:
+  - type: text
+    text: END OF BALL BONUS
+    y: 85%
+    font_size: 100
+  bonus_pops:
   - type: text
     text: 'POPS: (pops)  X'
-    y: 50%
+    font_size: 40
+    y: 70%
+  bonus_drops:
   - type: text
     text: 'DROPS: (drops)  X'
-    y: 40%
+    font_size: 40
+    y: 60%
+  bonus_count:
   - type: text
     text: 'BONUS COUNT: (bonuscount)  ='
-    y: 30%
-  slide_9:
+    font_size: 40
+    y: 50%
+  bonus_sub:
   - type: text
-    text: 'BONUS SCORE: (score)'
-    number_grouping: true
-  slide_10:
+    text: 'SUBTOTAL: (score)'
+    font_size: 40
+    y: 40%
+  bonus_multi:
   - type: text
     text: (bonus_multiplier)X
-  slide_11:
+    font_size: 70
+    y: 25%
+  bonus_final:
   - type: text
     text: 'TOTAL BONUS: (score)'
     number_grouping: true
+    font_size: 70
+    y: 10%

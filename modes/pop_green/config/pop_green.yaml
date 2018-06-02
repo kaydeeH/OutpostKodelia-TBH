@@ -1,0 +1,58 @@
+#config_version=5
+
+mode:
+   start_events: shotGroupPopBumpers_popBumpGreen_complete
+   stop_events: timer_popGreen_complete, ball_ending
+   priority: 290
+
+variable_player:
+   mode_pop_green_started:
+     green_spin_value:
+       action: set
+       int: 15000
+   timer_popGreen_tick:
+     green_spin_value: -100
+   s_spinner_active:
+     score: current_player.green_spin_value|block
+     spins: 1|block
+
+timers:
+   popGreen:
+     start_value: 150
+     end_value: 0
+     tick_interval: .1s
+     direction: down
+     start_running: yes
+
+widget_player:
+   mode_pop_green_started:
+     green_remain_widget_01:
+        slide: scoring_slide
+   pop_green_ended:
+      green_remain_widget_01:
+        action: remove
+
+widgets:
+   green_remain_widget_01:
+     - type: text
+       font_size: 40
+       text: "Green Spinner Hurry Up: (green_spin_value)"
+       y: 55%
+
+show_player:
+   mode_pop_green_started:
+     greenFlash:
+       speed: 20
+       loops: -1
+   mode_pop_green_ended:
+     greenFlash:
+       action: stop
+
+shows:
+   greenFlash:
+    - time: 0
+      lights:
+        l_spinner: green
+    - time: +1
+      lights:
+        l_spinner: off

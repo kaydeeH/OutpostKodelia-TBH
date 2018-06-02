@@ -1,0 +1,58 @@
+#config_version=5
+
+mode:
+   start_events: shotGroupPopBumpers_popBumpRed_complete
+   stop_events: timer_popRed_complete, ball_ending
+   priority: 290
+
+variable_player:
+   mode_pop_red_started:
+     red_spin_value:
+       action: set
+       int: 15000
+   timer_popRed_tick:
+     red_spin_value: -100
+   s_spinner_active:
+     score: current_player.red_spin_value|block
+     spins: 1|block
+
+timers:
+   popRed:
+     start_value: 150
+     end_value: 0
+     tick_interval: .1s
+     direction: down
+     start_running: yes
+
+widget_player:
+   mode_pop_red_started:
+     red_remain_widget_01:
+        slide: scoring_slide
+   pop_red_ended:
+      red_remain_widget_01:
+        action: remove
+
+widgets:
+   red_remain_widget_01:
+     - type: text
+       font_size: 40
+       text: "Red Spinner Hurry Up: (red_spin_value)"
+       y: 55%
+
+show_player:
+   mode_pop_red_started:
+     redFlash:
+       speed: 20
+       loops: -1
+   mode_pop_red_ended:
+     redFlash:
+       action: stop
+
+shows:
+   redFlash:
+    - time: 0
+      lights:
+        l_spinner: red
+    - time: +1
+      lights:
+        l_spinner: off

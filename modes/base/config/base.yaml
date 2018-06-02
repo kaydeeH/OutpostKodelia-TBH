@@ -50,22 +50,15 @@ slides:
         font_size: 50
         font_name: ocr-a-tribute-bold
       - type: text
-        text: "POPS: (pops)"
+        text: "POPS: (pops) DROPS: (drops) SPINS: (spins)"
         y: 30%
       - type: text
-        text: "DROPS: (drops)"
+        text: "BONUS: (bonuscount)"
         y: 25%
       - type: text
-        text: "SPINS: (spins)"
-        y: 20%
-      - type: text
-        text: "BONUS: (bonuscount)"
-        y: 15%
-      - type: text
         text: "BONUS X: (bonus_multiplier)"
-      - type: text
-        text: (machine.device_manager.collections["shots"]["shotTargetL0"].state) machine.device_manager.collections["shots"]["shotTargetL0"].state
-        y: 10%
+        font_size: 30
+        y: 20%
    scoop_slide:
     widgets:
       - type: text
@@ -228,6 +221,10 @@ event_player:
     achievement_untitled_mode_7_state_completed:
       - ach_completed
 
+# shotGroupPopBumpers_popBumpBlue_complete
+# shotGroupPopBumpers_popBumpGreen_complete
+# shotGroupPopBumpers_popBumpRed_complete
+
 shot_profiles:
   shotProfileLeftTargets:
     show_when_disabled: true
@@ -278,6 +275,8 @@ shot_profiles:
         show: off
 
 shot_groups:
+   shotGroupPopBumpers:
+       shots: shotCenterPop, shotUpperLeftPop, shotUpperRightPop
    shotGroupToplanes:
        shots: shotLane0, shotLane1, shotLane2, shotLane3, shotLane4
        rotate_left_events: s_flipper_left_active
@@ -347,7 +346,7 @@ show_player:
   shotScoop_scoopReady_hit:
       scoop_show:
           loops: 0
-          events_when_completed: select_mode_start #, select_mode_start #yt_hurry_up_started
+          events_when_completed: select_mode_start
   shotScoop_scoopActive_hit:
       scoop_show_ip:
           loops: 0
