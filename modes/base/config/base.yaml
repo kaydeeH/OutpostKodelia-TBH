@@ -305,6 +305,9 @@ sound_player:
           mode_end_action: stop
 
 show_player:
+  mode_base_started:
+      giWhite:
+          loops: -1
   shotScoop_scoopReady_hit:
       scoop_show:
           loops: 0
