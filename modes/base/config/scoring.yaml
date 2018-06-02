@@ -43,6 +43,9 @@ variable_player:
     spins:
        int: 1
        action: set
+    pds:
+       int: 1
+       action: set
     bonustype1:
        int: 0
        action: set
@@ -61,7 +64,18 @@ variable_player:
     bonus_multiplier:
        int: 1
        action: set
-
+    bonus_l2:
+       int: 0
+       action: set
+    bonus_l3:
+       int: 0
+       action: set
+    bonus_l4:
+       int: 0
+       action: set
+    bonus_l5:
+       int: 0
+       action: set
   s_jet_upper_left_active:
     score: 1000
     pops: 1
@@ -77,52 +91,36 @@ variable_player:
     score: 500
   shotTargetL0_unlit_hit:
     score: 100
-    drops: 1
   shotTargetL1_unlit_hit:
     score: 100
-    drops: 1
   shotTargetL2_unlit_hit:
     score: 100
-    drops: 1
   shotTargetL3_unlit_hit:
     score: 100
-    drops: 1
   shotTargetL0_flashing_hit:
     score: 10000
-    drops: 1
   shotTargetL1_flashing_hit:
     score: 10000
-    drops: 1
   shotTargetL2_flashing_hit:
     score: 10000
-    drops: 1
   shotTargetL3_flashing_hit:
     score: 10000
-    drops: 1
   shotTargetL0_lit_hit:
     score: 400
-    drops: 1
   shotTargetL1_lit_hit:
     score: 400
-    drops: 1
   shotTargetL2_lit_hit:
     score: 400
-    drops: 1
   shotTargetL3_lit_hit:
     score: 400
-    drops: 1
   s_dTargetR0_active:
     score: 100
-    drops: 1
   s_dTargetR1_active:
     score: 100
-    drops: 1
   s_dTargetR2_active:
     score: 100
-    drops: 1
   s_dTargetR3_active:
     score: 100
-    drops: 1
   s_dTargetCL_active:
     score: 200
     drops: 1
@@ -174,13 +172,13 @@ variable_player:
 
   shotLane0_shotProfileToplanes_unlit_hit:
     score: 100
-    bounscount: 1
+    bonuscount: 1
   shotLane0_shotProfileToplanes_lit_hit:
     score: 100
-    bounscount: 3
+    bonuscount: 3
   shotLane1_shotProfileToplanes_unlit_hit:
     score: 100
-    bounscount: 1
+    bonuscount: 1
   shotLane1_shotProfileToplanes_lit_hit:
     score: 100
     bonuscount: 3
@@ -223,6 +221,8 @@ variable_player:
   player_bonustype1{value==1}:
      bonus_multiplier:
         int: 1
+     bonus_l2:
+        int: 1
   player_bonustype1{value>1}:
      score:
         int: 5000
@@ -230,6 +230,8 @@ variable_player:
         int: 10
   player_bonustype2{value==1}:
      bonus_multiplier:
+        int: 1
+     bonus_l3:
         int: 1
   player_bonustype2{value>1}:
      score:
@@ -239,6 +241,8 @@ variable_player:
   player_bonustype3{value==1}:
      bonus_multiplier:
         int: 1
+     bonus_l4:
+        int: 1
   player_bonustype3{value>1}:
      score:
         int: 5000
@@ -246,6 +250,8 @@ variable_player:
         int: 10
   player_bonustype4{value==1}:
      bonus_multiplier:
+        int: 1
+     bonus_l5:
         int: 1
   player_bonustype4{value>1}:
      score:
@@ -286,3 +292,16 @@ variable_player:
      status_untitled_mode_7:
        int: 0
        action: set
+  player_pops:
+     pds: 
+        int: (current_player.drops * (current_player.pops + current_player.spins))
+        action: set
+  player_drops:
+     pds: 
+        int: (current_player.drops * (current_player.pops + current_player.spins))
+        action: set
+  player_spins:
+     pds: 
+        int: (current_player.drops * (current_player.pops + current_player.spins))
+        action: set
+     

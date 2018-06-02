@@ -51,10 +51,10 @@ slides:
         font_size: 50
         font_name: ocr-a-tribute-bold
       - type: text
-        text: "POPS: (pops) DROPS: (drops) SPINS: (spins)"
+        text: "Bonus Value (pds)"
         y: 30%
       - type: text
-        text: "BONUS: (bonuscount)"
+        text: "Bonus Count: (bonuscount)"
         y: 25%
       - type: text
         text: "BONUS X: (bonus_multiplier)"
@@ -424,6 +424,173 @@ show_player:
       extra_earned:
           loops: -1
 
+  bonus_light_0_on:
+      bonusCt0:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_0_off:
+      bonusCt0:
+        show_tokens:
+          color: 000000
+
+  bonus_light_1_on:
+      bonusCt1:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_1_off:
+      bonusCt1:
+        show_tokens:
+          color: 000000
+
+  bonus_light_2_on:
+      bonusCt2:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_2_off:
+      bonusCt2:
+        show_tokens:
+          color: 000000
+
+  bonus_light_3_on:
+      bonusCt3:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_3_off:
+      bonusCt3:
+        show_tokens:
+          color: 000000
+
+  bonus_light_4_on:
+      bonusCt4:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_4_off:
+      bonusCt4:
+        show_tokens:
+          color: 000000
+
+  bonus_light_5_on:
+      bonusCt5:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_5_off:
+      bonusCt5:
+        show_tokens:
+          color: 000000
+
+  bonus_light_6_on:
+      bonusCt6:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_6_off:
+      bonusCt6:
+        show_tokens:
+          color: 000000
+
+  bonus_light_7_on:
+      bonusCt7:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_7_off:
+      bonusCt7:
+        show_tokens:
+          color: 000000
+
+  bonus_light_8_on:
+      bonusCt8:
+        show_tokens:
+          color: FFFFFF
+  bonus_light_8_off:
+      bonusCt8:
+        show_tokens:
+          color: 000000
+
+
+  player_bonus_l2{value==0}:
+      bonusL2:
+        loops: -1
+        show_tokens:
+          color: 000000
+  player_bonus_l2{value==1}:
+      bonusL2:
+        loops: -1
+        show_tokens:
+          color: CC0000
+  player_bonus_l2{value==2}:
+      bonusL2:
+        loops: -1
+        show_tokens:
+          color: 00CC00
+  player_bonus_l2{value==3}:
+      bonusL2:
+        loops: -1
+        show_tokens:
+          color: 0000CC
+
+  player_bonus_l3{value==0}:
+      bonusL3:
+        loops: -1
+        show_tokens:
+          color: 000000
+  player_bonus_l3{value==1}:
+      bonusL3:
+        loops: -1
+        show_tokens:
+          color: CC0000
+  player_bonus_l3{value==2}:
+      bonusL3:
+        loops: -1
+        show_tokens:
+          color: 00CC00
+  player_bonus_l3{value==3}:
+      bonusL3:
+        loops: -1
+        show_tokens:
+          color: 0000CC
+
+  player_bonus_l4{value==0}:
+      bonusL4:
+        loops: -1
+        show_tokens:
+          color: 000000
+  player_bonus_l4{value==1}:
+      bonusL4:
+        loops: -1
+        show_tokens:
+          color: CC0000
+  player_bonus_l4{value==2}:
+      bonusL4:
+        loops: -1
+        show_tokens:
+          color: 00CC00
+  player_bonus_l4{value==3}:
+      bonusL4:
+        loops: -1
+        show_tokens:
+          color: 0000CC
+
+  player_bonus_l5{value==0}:
+      bonusL5:
+        loops: -1
+        show_tokens:
+          color: 000000
+  player_bonus_l5{value==1}:
+      bonusL5:
+        loops: -1
+        show_tokens:
+          color: CC0000
+  player_bonus_l5{value==2}:
+      bonusL5:
+        loops: -1
+        show_tokens:
+          color: 00CC00
+  player_bonus_l5{value==3}:
+      bonusL5:
+        loops: -1
+        show_tokens:
+          color: 0000CC
+
+
 shows:
   scoop_show:
      - time: 0
@@ -470,3 +637,55 @@ shows:
      - time: 0
        lights:
          l_shootAgain: green
+  bonusL2:
+     - time: 0
+       lights:
+         l_2x: (color)
+  bonusL3:
+     - time: 0
+       lights:
+         l_3x: (color)
+  bonusL4:
+     - time: 0
+       lights:
+         l_4x: (color)
+  bonusL5:
+     - time: 0
+       lights:
+         l_5x: (color)
+  bonusCt0:
+     - time: 0
+       lights:
+         l_bonus0: (color)
+  bonusCt1:
+     - time: 0
+       lights:
+         l_bonus1: (color)
+  bonusCt2:
+     - time: 0
+       lights:
+         l_bonus2: (color)
+  bonusCt3:
+     - time: 0
+       lights:
+         l_bonus3: (color)
+  bonusCt4:
+     - time: 0
+       lights:
+         l_bonus4: (color)
+  bonusCt5:
+     - time: 0
+       lights:
+         l_bonus5: (color)
+  bonusCt6:
+     - time: 0
+       lights:
+         l_bonus6: (color)
+  bonusCt7:
+     - time: 0
+       lights:
+         l_bonus7: (color)
+  bonusCt8:
+     - time: 0
+       lights:
+         l_bonus8: (color)
