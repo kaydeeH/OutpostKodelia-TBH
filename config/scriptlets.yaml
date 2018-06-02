@@ -1,3 +1,5 @@
 #config_version=5
 
-scriptlets: start_interruptor_scriptlet.StartInterruptor
+scriptlets:
+  - start_interruptor_scriptlet.StartInterruptor
+  - bonus_light_controller_scriptlet.BonusLightController
