@@ -35,13 +35,13 @@ counters:
 variable_player:
   mode_base_started:
     pops:
-       int: 0
+       int: 1
        action: set
     drops:
-       int: 0
+       int: 1
        action: set
     spins:
-       int: 0
+       int: 1
        action: set
     bonustype1:
        int: 0
@@ -56,7 +56,7 @@ variable_player:
        int: 0
        action: set
     bonuscount:
-       int: 0
+       int: 1
        action: set
     bonus_multiplier:
        int: 1

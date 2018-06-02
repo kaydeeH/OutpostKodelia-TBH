@@ -50,22 +50,15 @@ slides:
         font_size: 50
         font_name: ocr-a-tribute-bold
       - type: text
-        text: "POPS: (pops)"
+        text: "POPS: (pops) DROPS: (drops) SPINS: (spins)"
         y: 30%
       - type: text
-        text: "DROPS: (drops)"
+        text: "BONUS: (bonuscount)"
         y: 25%
       - type: text
-        text: "SPINS: (spins)"
-        y: 20%
-      - type: text
-        text: "BONUS: (bonuscount)"
-        y: 15%
-      - type: text
         text: "BONUS X: (bonus_multiplier)"
-      - type: text
-        text: (machine.device_manager.collections["shots"]["shotTargetL0"].state) machine.device_manager.collections["shots"]["shotTargetL0"].state
-        y: 10%
+        font_size: 30
+        y: 20%
    scoop_slide:
     widgets:
       - type: text
