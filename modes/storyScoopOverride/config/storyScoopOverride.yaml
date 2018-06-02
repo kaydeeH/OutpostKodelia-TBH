@@ -2,7 +2,7 @@
 
 mode:
    start_events: selector_untitled_mode_1_selected, selector_untitled_mode_2_selected, selector_untitled_mode_3_selected, selector_untitled_mode_4_selected, selector_untitled_mode_5_selected, selector_untitled_mode_6_selected, selector_untitled_mode_7_selected
-   stop_events: mode_story01_stopped, mode_story02_stopped, mode_story03_stopped, mode_story04_stopped, mode_story05_stopped, mode_story06_stopped, mode_story07_stopped
+   stop_events: ball_ending, mode_story01_stopped, mode_story02_stopped, mode_story03_stopped, mode_story04_stopped, mode_story05_stopped, mode_story06_stopped, mode_story07_stopped
    priority: 1000
 
 variable_player:

@@ -6,7 +6,7 @@ mode_settings:
   hurry_up_delay_ms: 0
   bonus_entries:
       - event: bonus_product
-        score: (current_player.pops + 1) * (current_player.drops + 1) * (current_player.bonuscount + 1)
+        score: (current_player.pops) * (current_player.drops) * (current_player.bonuscount)
         skip_if_zero: false
 
 slide_player:
@@ -29,7 +29,6 @@ widget_player:
     bonus_count:
        action: add
        slide: slide_6
-  bonus_subtotal:
     bonus_sub:
        action: add
        slide: slide_6
