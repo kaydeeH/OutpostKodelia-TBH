@@ -6,7 +6,7 @@
  CLS
  ECHO.
  ECHO =============================
- ECHO Running Admin shell
+ ECHO Running MPF Updates
  ECHO =============================
 
 :init
