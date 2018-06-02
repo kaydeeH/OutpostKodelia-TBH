@@ -1,0 +1,48 @@
+#config_version=5
+
+mode:
+  priority: 1000
+  game_mode: false
+  start_events: game_will_end
+  stop_events: slide_goslide_removed
+
+queue_relay_player:
+    game_ending:
+      post: show_game_over_slide
+      wait_for: slide_goslide_removed
+#      pass_args: true
+
+slide_player:
+    show_game_over_slide:
+      goslide:
+        expire: 5s
+
+slides:
+  goslide:
+    widgets:
+#      - type: image
+#        image: logo
+#        x: 150
+#        y: 650
+#      - type: text
+#        text: (score)
+#        number_grouping: true
+#        min_digits: 2
+#        font_size: 100
+#        font_name: ocr-a-tribute-bold
+#        y: 40%
+#      - type: text
+#        text: PLAYER (number)
+#        y: 10
+#        x: 10
+#        font_size: 50
+#        font_name: ocr-a-tribute-bold
+#        anchor_x: left
+#        anchor_y: bottom
+      - type: text
+        font_size: 100
+        y: 25%
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: GAME OVER
+

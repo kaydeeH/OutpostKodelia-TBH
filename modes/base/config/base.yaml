@@ -184,6 +184,8 @@ shots:
     reset_events: scoop_reset
 
 event_player:
+#    player_add_request(score>0):
+#      - player_add_request
     shotGroupToplanes_lit_complete:
       - scoop_reset
     drop_target_bank_leftfull_down:
