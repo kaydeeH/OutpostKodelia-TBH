@@ -20,3 +20,10 @@ shot_profiles:
     states:
       - name: scoopActive
         show: popgreen
+
+show_player:
+  shotScoopOverride_hit:
+     pinwheel:
+       speed: 20
+       loops: 3
+       events_when_completed: eject_scoop
