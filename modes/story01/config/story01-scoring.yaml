@@ -1,0 +1,38 @@
+#config_version=5
+variable_player:
+  shotLane0Story01_shotProfileToplanesStory01_unlit_hit:
+    score: 5000
+    bonuscount: 3
+  shotLane0Story01_shotProfileToplanesStory01_lit_hit:
+    score: 10000
+    bonuscount: 3
+  shotLane1Story01_shotProfileToplanesStory01_unlit_hit:
+    score: 5000
+    bonuscount: 3
+  shotLane1Story01_shotProfileToplanesStory01_lit_hit:
+    score: 10000
+    bonuscount: 3
+  shotLane2Story01_shotProfileToplanesStory01_unlit_hit:
+    score: 5000
+    bonuscount: 3
+  shotLane2Story01_shotProfileToplanesStory01_lit_hit:
+    score: 10000
+    bonuscount: 3
+  shotLane3Story01_shotProfileToplanesStory01_unlit_hit:
+    score: 5000
+    bonuscount: 3
+  shotLane3Story01_shotProfileToplanesStory01_lit_hit:
+    score: 10000
+    bonuscount: 3
+  shotLane4Story01_shotProfileToplanesStory01_unlit_hit:
+    score: 5000
+    bonuscount: 3
+  shotLane4Story01_shotProfileToplanesStory01_lit_hit:
+    score: 10000
+    bonuscount: 3
+  cygnus_located:
+    score: 25000
+    bonuscount: 3
+  cygnus_found:
+    score: 50000
+    bonuscount: 3

@@ -1,5 +1,10 @@
 #config_version=5
 
+# Locate the Cygnus (s01) -
+# Lock in coordinates with the lanes and scoop out.
+
+config:
+  - story01-scoring.yaml
 
 mode:
    start_events: selector_untitled_mode_1_selected
@@ -24,7 +29,7 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
-   timer_yttimer01_complete:
+   cygnus_found:
      - story_is_about_to_end
    story_outro_complete:
      - story_is_completed_successful
@@ -35,9 +40,27 @@ event_player:
      - story_is_completed_unsuccessful
      - acheivement_story01_unsuccessful
    story_is_completed_successful:
-    - story_is_completed
+     - story_is_completed
    story_is_completed_unsuccessful:
-    - story_is_completed
+     - story_is_completed
+# Mode Specific Event Handlers
+   shotGroupToplanesStory01_lit_complete:
+     - cygnus_located
+   shotScoopStory01_ShotProfileScoopStory01_scoopActive_hit:
+     - cygnus_found
+
+# Do we want to do something for each lane found?
+   shotLane0Story01_unlit_hit:
+     - cygnus_lane_0_event
+   shotLane1Story01_unlit_hit:
+     - cygnus_lane_1_event
+   shotLane2Story01_unlit_hit:
+     - cygnus_lane_2_event
+   shotLane3Story01_unlit_hit:
+     - cygnus_lane_3_event
+   shotLane4Story01_unlit_hit:
+     - cygnus_lane_4_event
+
 
 #  Base intro / outro shows
 show_player:
@@ -68,54 +91,140 @@ slides:
    story_01_intro_slide:
     widgets:
       - type: text
-        text: STORY 01 BEGIN SHOW
+        text: LOCATE THE CYGNUS
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: Lock in coordinates by lighting all top lanes then scoop out
+        y: 40%
+        color: red
+        font_size: 50
    story_01_outro_slide:
     widgets:
       - type: text
-        text: STORY 01 END SHOW
+        text: "CYGNUS LOCATED"
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: "Time Taken: (cygnus_seconds) seconds"
+        y: 40%
+        color: red
+        font_size: 50
 
 # The below is mode specific data
 
+# SHOT PROFILES --
+# 1.  Complete all of the lanes to activate the scoop
+# 2.  Hit the scoop to complete the mode
+
+shot_profiles:
+  shotProfileToplanesStory01:
+    block: true
+    states:
+      - name: unlit
+        show: off
+      - name: lit
+        show: popred
+    loop: false
+  shotProfileScoopStory01:
+    advance_on_hit: false
+    block: true
+    states:
+      - name: scoopInactive
+        show: off
+      - name: scoopActive
+        show: popgreen
+shots:
+  shotScoopStory01:
+    switch: s_ir_scoop_detect
+    advance_events: cygnus_located
+    show_tokens:
+      light: l_scoop
+    profile: shotProfileScoopStory01
+  shotLane0Story01:
+    switch: s_lane0, s_dTargetCL
+    show_tokens:
+      light: l_lane0
+    profile: shotProfileToplanesStory01
+  shotLane1Story01:
+    switch: s_lane1, s_roInLaneLeft
+    show_tokens:
+      light: l_lane1
+    profile: shotProfileToplanesStory01
+  shotLane2Story01:
+    switch: s_lane2, s_sTargetYellowL, s_sTargetYellowR
+    show_tokens:
+      light: l_lane2
+    profile: shotProfileToplanesStory01
+  shotLane3Story01:
+    switch: s_lane3, s_roInLaneRight
+    show_tokens:
+      light: l_lane3
+    profile: shotProfileToplanesStory01
+  shotLane4Story01:
+    switch: s_lane4, s_dTargetCR
+    show_tokens:
+      light: l_lane4
+    profile: shotProfileToplanesStory01
+
+shot_groups:
+   shotGroupToplanesStory01:
+       shots: shotLane0Story01, shotLane1Story01, shotLane2Story01, shotLane3Story01, shotLane4Story01
+       reset_events: story_is_completed_unsuccessful
+#       rotate_left_events: s_flipper_left_active
+#       rotate_right_events: s_flipper_right_active
+#       enable_events: ball_started
+#       disable_events: ball_ending
+
+
+
 variable_player:
    story_intro_complete:
-     temp_ythurryup_value:
+     cygnus_timer_ticks:
        action: set
-       int: 100000
-   timer_yttimer01_tick:
-     temp_ythurryup_value: -300
-   s_sTargetYellowL_active:
-     score: current_player.temp_ythurryup_value|block
-   s_sTargetYellowR_active:
-     score: current_player.temp_ythurryup_value|block
+       int: 0
+   timer_cygnusTimer_tick:
+     cygnus_timer_ticks: 1
+   cygnus_found:
+     cygnus_seconds:
+       float: current_player.cygnus_timer_ticks / 10
+       action: set
 
 timers:
-   yttimer01:
-#     start_value: 300
-     start_value: 100
-     end_value: 0
+   cygnusTimer:
+     start_value: 0
      tick_interval: .1s
-     direction: down
+     direction: up
      start_running: no
      control_events:
      - event: story_intro_complete
        action: start
+     - event: cygnus_found
+       action: stop
 
 widget_player:
    story_intro_complete:
-      yt_remain_widget_01:
+      cygnus_searching:
+         slide: scoring_slide
+   cygnus_located:
+      cygnus_searching:
+         action: remove
+      cygnus_found:
          slide: scoring_slide
    story_is_about_to_end:
-      yt_remain_widget_01:
+      cygnus_searching:
+         action: remove
+      cygnus_found:
          action: remove
 
 widgets:
-   yt_remain_widget_01:
+   cygnus_searching:
      - type: text
-       text: "Story 01 Hurry Up: (temp_ythurryup_value)"
+       text: "Locate The Cygnus by Lighting Top Lanes"
+       y: 80%
+   cygnus_found:
+     - type: text
+       text: "Dock with the Cygnus by Scooping Out"
        y: 80%

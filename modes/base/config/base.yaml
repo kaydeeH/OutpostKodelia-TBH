@@ -76,6 +76,10 @@ timers:
    control_events:
      - event: mode_base_started
        action: start
+     - event: mode_using_targets_started
+       action: stop
+     - event: mode_using_targets_ended
+       action: restart
 
 shots:
   shotCenterPop:
@@ -180,8 +184,8 @@ shots:
       light: l_scoop
     profile: shotProfileScoop
     advance_events: selector_item_selected, ach_completed
-    enable_events: mode_base_started, scoop_reset
-    disable_events: selector_item_selected
+    enable_events: story_is_completed, mode_base_started, scoop_reset
+    disable_events: story_is_about_to_begin
     reset_events: scoop_reset
 
 event_player:
@@ -193,6 +197,8 @@ event_player:
       - scoop_reset
     gravityAssistBonus:
       - scoop_reset
+    story_is_completed_unsuccessful:
+      - ach_completed
     achievement_untitled_mode_1_state_completed:
       - ach_completed
     achievement_untitled_mode_2_state_completed:
@@ -251,6 +257,7 @@ shot_profiles:
     loop: true
   shotProfileScoop:
     advance_on_hit: false
+    show_when_disabled: false
     states:
       - name: scoopReady
         show: scoopReadyShow
@@ -274,13 +281,13 @@ shot_groups:
    shotGroupLeftTargets:
        shots: shotTargetL0, shotTargetL1, shotTargetL2, shotTargetL3
        reset_events: reset_both_lane_lit_groups
-       enable_events: ball_started
-       disable_events: ball_ending
+       enable_events: ball_started, mode_using_targets_ended
+       disable_events: ball_ending, mode_using_targets_started
    shotGroupRightTargets:
        shots: shotTargetR0, shotTargetR1, shotTargetR2, shotTargetR3
        reset_events: reset_both_lane_lit_groups
-       enable_events: ball_started
-       disable_events: ball_ending
+       enable_events: ball_started, mode_using_targets_ended
+       disable_events: ball_ending, mode_using_targets_started
 
 sound_player:
     s_slingshot_left_active: testFX1
