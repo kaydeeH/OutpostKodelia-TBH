@@ -101,7 +101,7 @@ shows:
        duration: 3
    story_05_outro_fail:
      - time: 0
-       slides: story_05_outro_slide
+       slides: story_05_outro_slide_fail
        duration: 3
 
 slides:
@@ -124,6 +124,24 @@ slides:
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: "Remaining Time (corridor_seconds)s"
+        y: 30%
+        font_size: 50
+      - type: text
+        text: "Bonus for remaining time: (corridor_bonus)"
+        y: 20%
+        font_size: 50
+   story_05_outro_slide_fail:
+      - type: text
+        text: CORRIDOR BATTLE ENDED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: "You suck.  No bonus.  You are bad and should feel bad."
+        y: 30%
+        font_size: 50
 
 # The below is mode specific data
 
@@ -175,7 +193,7 @@ shots:
    corRC:
      switch: s_dTargetCR
      show_tokens:
-       light: l_dropCenterLeft
+       light: l_dropCenterRight
      profile: shotProfileStory05Drops
    corR3:
      switch: s_dTargetR0
@@ -218,7 +236,9 @@ variable_player:
       corridor_seconds:
        action: set
        float: current_player.corridor_timer_ticks / 10
-
+   shotGroupCorridorTargets_complete_complete:
+      corridor_bonus: current_player.corridor_timer_ticks * 2500
+      score: current_player.corridor_timer_ticks * 2500
 timers:
    corridor_timer:
      start_value: 300
