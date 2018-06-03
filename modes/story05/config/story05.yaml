@@ -1,5 +1,8 @@
 #config_version=5
 
+config:
+  - story05-scoring.yaml
+
 mode:
    start_events: selector_untitled_mode_5_selected
    stop_events: story_is_completed
@@ -21,14 +24,22 @@ mode:
 event_player:
    mode_story05_started:
      - story_is_about_to_begin
+     - mode_using_targets_started # always add this if your mode makes use of the drop targets
    story_intro_complete:
      - scoop_eject
-   timer_yttimer05_complete:
+   shotGroupCorridorTargets_complete_complete:
      - story_is_about_to_end
+   timer_corridor_timer_complete:
+     - story_is_about_to_fail
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story05_successful
+     - mode_using_targets_ended # always add this if your mode makes use of the drop targets
 #    Only used when scoop hits end the mode
+   story_outro_failed_complete:
+     - story_is_completed_unsuccessful
+     - acheivement_story05_unsuccessful
+     - mode_using_targets_ended # always add this if your mode makes use of the drop targets
 #    - scoop_eject
    ball_ending:
      - story_is_completed_unsuccessful
@@ -37,6 +48,26 @@ event_player:
     - story_is_completed
    story_is_completed_unsuccessful:
     - story_is_completed
+   corL0_active_hit:
+    - corridor_target_hit
+   corL1_active_hit:
+    - corridor_target_hit
+   corL2_active_hit:
+    - corridor_target_hit
+   corL3_active_hit:
+    - corridor_target_hit
+   corLC_active_hit:
+    - corridor_target_hit
+   corRC_active_hit:
+    - corridor_target_hit
+   corR0_active_hit:
+    - corridor_target_hit
+   corR1_active_hit:
+    - corridor_target_hit
+   corR2_active_hit:
+    - corridor_target_hit
+   corR3_active_hit:
+    - corridor_target_hit
 
 #  Base intro / outro shows
 show_player:
@@ -45,6 +76,12 @@ show_player:
          events_when_advanced: story_intro_complete
          events_when_completed: story_intro_complete
          events_when_stopped: story_intro_complete
+         loops: 0
+   story_is_about_to_fail:
+      story_05_outro_fail:
+         events_when_advanced: story_outro_failed_complete
+         events_when_completed: story_outro_failed_complete
+         events_when_stopped: story_outro_failed_complete
          loops: 0
    story_is_about_to_end:
       story_05_outro:
@@ -62,59 +99,177 @@ shows:
      - time: 0
        slides: story_05_outro_slide
        duration: 3
+   story_05_outro_fail:
+     - time: 0
+       slides: story_05_outro_slide_fail
+       duration: 3
 
 slides:
    story_05_intro_slide:
     widgets:
       - type: text
-        text: STORY 05 BEGIN SHOW
+        text: CORRIDOR BATTLE
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: Hit all lit targets in 30 seconds
+        y: 40%
+        color: red
+        font_size: 50
    story_05_outro_slide:
     widgets:
       - type: text
-        text: STORY 05 END SHOW
+        text: CORRIDOR BATTLE ENDED
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: "Remaining Time (corridor_seconds)s"
+        y: 30%
+        font_size: 50
+      - type: text
+        text: "Bonus for remaining time: (corridor_bonus)"
+        y: 20%
+        font_size: 50
+   story_05_outro_slide_fail:
+      - type: text
+        text: CORRIDOR BATTLE ENDED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: "You suck.  No bonus.  You are bad and should feel bad."
+        y: 30%
+        font_size: 50
 
 # The below is mode specific data
 
 # ALL STORY MODES ARE RESPONSIBLE FOR ISSUING THE scoop_eject EVENT TO START THE MODE
 # TEMP UNTIL REAL MODE PUT INTO PLACE
 
-variable_player:
-   mode_story05_started:
-     temp_ythurryup_value:
-       action: set
-       int: 100000
-   timer_yttimer05_tick:
-     temp_ythurryup_value: -300
-   s_sTargetYellowL_active:
-     score: current_player.temp_ythurryup_value|block
-   s_sTargetYellowR_active:
-     score: current_player.temp_ythurryup_value|block
+shot_groups:
+ shotGroupCorridorTargets:
+   shots: corL0, corL1, corL2, corL3, corLC, corRC, corR3, corR2, corR1, corR0
+   enable_events: story_intro_complete
+   disable_events: story_is_about_to_end
 
+shot_profiles:
+   shotProfileStory05Drops:
+      block: true
+      states:
+        - name: active
+          show: dk_blu_flash
+          speed: 20
+        - name: complete
+          show: off
+
+shots:
+   corL0:
+     switch: s_dTargetL0
+     show_tokens:
+       light: l_dropLeft0
+     profile: shotProfileStory05Drops
+   corL1:
+     switch: s_dTargetL1
+     show_tokens:
+       light: l_dropLeft1
+     profile: shotProfileStory05Drops
+   corL2:
+     switch: s_dTargetL2
+     show_tokens:
+       light: l_dropLeft2
+     profile: shotProfileStory05Drops
+   corL3:
+     switch: s_dTargetL3
+     show_tokens:
+       light: l_dropLeft3
+     profile: shotProfileStory05Drops
+   corLC:
+     switch: s_dTargetCL
+     show_tokens:
+       light: l_dropCenterLeft
+     profile: shotProfileStory05Drops
+   corRC:
+     switch: s_dTargetCR
+     show_tokens:
+       light: l_dropCenterRight
+     profile: shotProfileStory05Drops
+   corR3:
+     switch: s_dTargetR0
+     show_tokens:
+       light: l_dropRight0
+     profile: shotProfileStory05Drops
+   corR2:
+     switch: s_dTargetR1
+     show_tokens:
+       light: l_dropRight1
+     profile: shotProfileStory05Drops
+   corR1:
+     switch: s_dTargetR2
+     show_tokens:
+       light: l_dropRight2
+     profile: shotProfileStory05Drops
+   corR0:
+     switch: s_dTargetR3
+     show_tokens:
+       light: l_dropRight3
+     profile: shotProfileStory05Drops
+
+
+variable_player:
+   story_intro_complete:
+     corridor_seconds:
+       action: set
+       float: 30.0
+     corridor_targets_hit:
+       action: set
+       int: 0
+     corridor_timer_ticks:
+       action: set
+       int: 300
+   corridor_target_hit:
+      corridor_timer_ticks: 30
+      corridor_targets_hit: 1
+   timer_corridor_timer_tick:
+      corridor_timer_ticks: -1
+      corridor_seconds:
+       action: set
+       float: current_player.corridor_timer_ticks / 10
+   shotGroupCorridorTargets_complete_complete:
+      corridor_bonus: current_player.corridor_timer_ticks * 2500
+      score: current_player.corridor_timer_ticks * 2500
 timers:
-   yttimer05:
-     start_value: 100
+   corridor_timer:
+     start_value: 300
      end_value: 0
      tick_interval: .1s
      direction: down
-     start_running: yes
+     start_running: no
+     control_events:
+       - event: corridor_target_hit
+         action: add
+         value: 30
+       - event: story_intro_complete
+         action: start
+       - event: shotGroupCorridorTargets_complete_complete
+         action: pause
+         value: 0
 
 widget_player:
-   mode_story05_started:
+   story_intro_complete:
       yt_remain_widget_05:
          slide: scoring_slide
-   story05_ended:
+   story_is_about_to_end:
       yt_remain_widget_05:
          action: remove
 
 widgets:
    yt_remain_widget_05:
      - type: text
-       text: "Story 05 Hurry Up: (temp_ythurryup_value)"
+       text: "Corridor Battle : (corridor_seconds)s"
        y: 80%
+     - type: text
+       text: "Targets Hit: (corridor_targets_hit)"
+       y: 70%
 

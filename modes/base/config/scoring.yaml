@@ -12,12 +12,12 @@ accruals:
     disable_on_complete: false
   enableWizard:
     events:
-      - mode_story01_stopped
-      - mode_story02_stopped
-      - mode_story03_stopped
-      - mode_story04_stopped
-      - mode_story05_stopped
-      - mode_story06_stopped
+      - acheivement_story01_successful
+      - acheivement_story02_successful
+      - acheivement_story03_successful
+      - acheivement_story04_successful
+      - acheivement_story05_successful
+      - acheivement_story06_successful
     events_when_complete: enableWizardMode
 
 counters:
@@ -279,17 +279,17 @@ variable_player:
   shotGroupLeftTargets_lit_complete:
      score: 5000
 
-  mode_story01_stopped:
+  acheivement_story01_successful:
      status_untitled_mode_1: 1
-  mode_story02_stopped:
+  acheivement_story02_successful:
      status_untitled_mode_2: 1
-  mode_story03_stopped:
+  acheivement_story03_successful:
      status_untitled_mode_3: 1
-  mode_story04_stopped:
+  acheivement_story04_successful:
      status_untitled_mode_4: 1
-  mode_story05_stopped:
+  acheivement_story05_successful:
      status_untitled_mode_5: 1
-  mode_story06_stopped:
+  acheivement_story06_successful:
      status_untitled_mode_6: 1
   enableWizardMode:
      status_untitled_mode_7:

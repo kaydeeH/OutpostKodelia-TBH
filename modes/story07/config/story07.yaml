@@ -71,7 +71,7 @@ slides:
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
-   story_01_outro_slide:
+   story_07_outro_slide:
     widgets:
       - type: text
         text: STORY 07 END SHOW
