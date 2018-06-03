@@ -24,9 +24,9 @@ class BonusLightController(Scriptlet):
 
         for x in range(9):
             if binary[8-x] == '1':
-                self._get_bonus_light_by_number(x).on(fade_ms=fade, priority=1000)
+                self._get_bonus_light_by_number(x).on(fade_ms=fade)
             else:
-                self._get_bonus_light_by_number(x).off(fade_ms=fade, priority=1000)
+                self._get_bonus_light_by_number(x).off(fade_ms=fade)
 
     @staticmethod
     def _get_bonus_light_by_number(num: int):
