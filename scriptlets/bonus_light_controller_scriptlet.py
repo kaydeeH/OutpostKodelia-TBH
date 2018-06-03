@@ -10,7 +10,6 @@ class BonusLightController(Scriptlet):
     def on_load(self):
         self.debug_log("Bonus Light Controller scriptlet loaded!")
         BonusLightController.lights = self.machine.lights.items_tagged('bonus_light')
-        self.debug_log("{} bonus lights being managed.".format(BonusLightController.lights.__len__()))
         self.machine.events.add_handler('player_bonuscount', self._handle_bonus_change, 10000)
 
     def _handle_bonus_change(self, **kwargs):

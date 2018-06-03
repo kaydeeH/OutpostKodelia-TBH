@@ -15,9 +15,8 @@ mode:
 # ALL STORY MODES ARE RESPONSIBLE FOR ISSUING THE scoop_eject EVENT TO START THE MODE
 # TEMP UNTIL REAL MODE PUT INTO PLACE
 event_player:
-   mode_story_04_started:
+   mode_story04_started:
      - scoop_eject
-
 
 variable_player:
   mode_story04_started:
@@ -66,6 +65,13 @@ show_player:
        speed: 40
        loops: 1
        events_when_completed: scoop_eject
+  mode_story04_started:
+     meteor:
+       manual_advance: true
+       priority: 401
+  timer_meteortimer_tick:
+     meteor:
+       action: advance
 
 timers:
    meteorTimer:

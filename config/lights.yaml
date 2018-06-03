@@ -367,6 +367,7 @@ lights:
     number: 2-72-73-74
     subtype: led
     default_fade_ms: 50ms
+    tags: scoop_light
     platform_settings:
       polarity: true
   l_GIScoopLL:
