@@ -2,14 +2,84 @@
 
 mode:
    start_events: selector_untitled_mode_3_selected
-   stop_events: timer_yttimer03_complete, ball_ending
+   stop_events: story_is_completed
    priority: 400
 
-# ALL STORY MODES ARE RESPONSIBLE FOR ISSUING THE scoop_eject EVENT TO START THE MODE
+# All Story Modes --
+#     Issue a scoop_eject after any introduction activities
+# Modes that end with a Scoop Hit --
+#     Issue a scoop eject after any outro-activities
 # TEMP UNTIL REAL MODE PUT INTO PLACE
+
+# Success/Failure
+# By default, success = not losing ball, failure = losing ball
+# If your mode has a different ruleset, change when the events
+# story_is_completed_successful / acheivement_story##_successful
+# story_is_completed_unsuccessful / acheivement_story##_unsuccessful
+# are issued.
+
 event_player:
-   mode_story_03_started:
+   mode_story03_started:
+     - story_is_about_to_begin
+   story_intro_complete:
      - scoop_eject
+   timer_yttimer03_complete:
+     - story_is_about_to_end
+   story_outro_complete:
+     - story_is_completed_successful
+     - acheivement_story03_successful
+#    Only used when scoop hits end the mode
+#    - scoop_eject
+   ball_ending:
+     - story_is_completed_unsuccessful
+     - acheivement_story03_unsuccessful
+   story_is_completed_successful:
+    - story_is_completed
+   story_is_completed_unsuccessful:
+    - story_is_completed
+
+#  Base intro / outro shows
+show_player:
+   story_is_about_to_begin:
+      story_03_intro:
+         events_when_advanced: story_intro_complete
+         events_when_completed: story_intro_complete
+         events_when_stopped: story_intro_complete
+         loops: 0
+   story_is_about_to_end:
+      story_03_outro:
+         events_when_advanced: story_outro_complete
+         events_when_completed: story_outro_complete
+         events_when_stopped: story_outro_complete
+         loops: 0
+
+shows:
+   story_03_intro:
+     - time: 0
+       slides: story_03_intro_slide
+       duration: 3
+   story_03_outro:
+     - time: 0
+       slides: story_03_outro_slide
+       duration: 3
+
+slides:
+   story_03_intro_slide:
+    widgets:
+      - type: text
+        text: STORY 03 BEGIN SHOW
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+   story_03_outro_slide:
+    widgets:
+      - type: text
+        text: STORY 03 END SHOW
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+
+# The below is mode specific data
 
 variable_player:
    mode_story03_started:
@@ -25,7 +95,7 @@ variable_player:
 
 timers:
    yttimer03:
-     start_value: 300
+     start_value: 100
      end_value: 0
      tick_interval: .1s
      direction: down
