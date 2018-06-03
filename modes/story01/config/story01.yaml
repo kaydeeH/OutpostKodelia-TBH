@@ -1,9 +1,16 @@
 #config_version=5
 
+
 mode:
    start_events: selector_untitled_mode_1_selected
    stop_events: timer_yttimer01_complete, ball_ending
    priority: 400
+
+# ALL STORY MODES ARE RESPONSIBLE FOR ISSUING THE scoop_eject EVENT TO START THE MODE
+# TEMP UNTIL REAL MODE PUT INTO PLACE
+event_player:
+   mode_story_01_started:
+     - scoop_eject
 
 variable_player:
    mode_story01_started:

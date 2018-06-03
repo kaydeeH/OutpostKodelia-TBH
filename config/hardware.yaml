@@ -107,7 +107,7 @@ ball_holds:
    scoop:
      balls_to_hold: 1
      hold_devices: bd_scoop
-     release_one_events: selector_item_selected, scoop_eject
+     release_one_events: scoop_eject
 
 autofire_coils:
   slingshot_left:

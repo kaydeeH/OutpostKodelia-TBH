@@ -5,6 +5,12 @@ mode:
    stop_events: timer_yttimer07_complete, ball_ending
    priority: 400
 
+# ALL STORY MODES ARE RESPONSIBLE FOR ISSUING THE scoop_eject EVENT TO START THE MODE
+# TEMP UNTIL REAL MODE PUT INTO PLACE
+event_player:
+   mode_story_07_started:
+     - scoop_eject
+
 variable_player:
    mode_story07_started:
      temp_ythurryup_value:

@@ -1,29 +1,85 @@
 #config_version=5
 
+# *************** METEOR STRIKE ******************
+# A red light show of doooooooom will slowly descend upon the player.
+# Hit the scoop to escape the meteor before the light show gets to the end
+# Award score, restart show.  Mode ends on loss of ball or meteor strike on player (end of show)
+
+# ALL STORY MODES ARE RESPONSIBLE FOR ISSUING THE scoop_eject EVENT TO START THE MODE
+
 mode:
    start_events: selector_untitled_mode_4_selected
-   stop_events: timer_yttimer04_complete, ball_ending
+   stop_events: timer_meteorTimer_complete, ball_ending
    priority: 400
 
+# ALL STORY MODES ARE RESPONSIBLE FOR ISSUING THE scoop_eject EVENT TO START THE MODE
+# TEMP UNTIL REAL MODE PUT INTO PLACE
+event_player:
+   mode_story_04_started:
+     - scoop_eject
+
+
 variable_player:
-   mode_story04_started:
-     temp_ythurryup_value:
+  mode_story04_started:
+    meteor_accum:
+       int: 0
        action: set
-       int: 100000
-   timer_yttimer04_tick:
-     temp_ythurryup_value: -300
-   s_sTargetYellowL_active:
-     score: current_player.temp_ythurryup_value|block
-   s_sTargetYellowR_active:
-     score: current_player.temp_ythurryup_value|block
+    meteor_hits:
+       int: 0
+       action: set
+    timeRemain:
+       int: 30
+       action: set
+  timer_meteorTimer_started:
+    timeRemain:
+       int: (ticks_remaining)
+       action: set
+  shotScoopMeteor_hit:
+    meteor_hits: 1
+    score: 1000 * current_player.timeRemain
+    meteor_accum: 1000 * current_player.timeRemain
+    bonuscount: 3
+  timer_meteorTimer_tick:
+     timeRemain:
+       int: (ticks_remaining)
+       action: set
+
+shots:
+  shotScoopMeteor:
+    switch: s_ir_scoop_detect
+    show_tokens:
+      light: l_scoop
+    profile: shotScoopMeteorProfile
+
+shot_profiles:
+  shotScoopMeteorProfile:
+    show_when_disabled: true
+    advance_on_hit: false
+    block: true
+    states:
+      - name: scoopActive
+        show: popgreen
+
+show_player:
+  shotScoopMeteor_hit:
+     pinwheel:
+       speed: 40
+       loops: 1
+       events_when_completed: scoop_eject
 
 timers:
-   yttimer04:
-     start_value: 300
+   meteorTimer:
+     start_value: 30
      end_value: 0
-     tick_interval: .1s
+     tick_interval: 1s
      direction: down
      start_running: yes
+     control_events:
+      - event: shotScoopMeteor_hit
+        action: reset
+      - event: shotScoopMeteor_hit
+        action: pause
+        value: 2
 
 widget_player:
    mode_story04_started:
@@ -36,6 +92,6 @@ widget_player:
 widgets:
    yt_remain_widget_04:
      - type: text
-       text: "Story 04 Hurry Up: (temp_ythurryup_value)"
+       text: "Meteor Time: (timeRemain)s  Meteor Score: (meteor_accum)"
        y: 80%
 

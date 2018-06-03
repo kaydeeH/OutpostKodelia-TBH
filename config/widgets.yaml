@@ -1,5 +1,4 @@
 #config_version=5
-
 widgets:
   sample_quick_vid:
       - type: video
@@ -12,73 +11,73 @@ widgets:
         end_behavior: stop
   select_01_off:
       - type: text
-        text: MODE 01
+        text: Locate the Cygnus
         font_size: 100
         color: white
         y: 85%
   select_01_completed:
       - type: text
-        text: --Story 1 Complete--
+        text: --Cygnus Located--
         font_size: 100
         color: blue
         y: 85%
   select_02_off:
       - type: text
-        text: MODE 02
+        text: Escape the Black Hole
         font_size: 100
         color: white
         y: 70%
   select_02_completed:
       - type: text
-        text: --Story 2 Complete--
+        text: --Black Hole Escaped--
         font_size: 100
         color: blue
         y: 70%
   select_03_off:
       - type: text
-        text: MODE 03
+        text: Shooting Gallery
         font_size: 100
         color: white
         y: 55%
   select_03_completed:
       - type: text
-        text: --Story 3 Complete--
+        text: --Shooting Gallery Complete--
         font_size: 100
         color: blue
         y: 55%
   select_04_off:
       - type: text
-        text: MODE 04
+        text: Meteor Strike
         font_size: 100
         color: white
         y: 40%
   select_04_completed:
       - type: text
-        text: --Story 4 Complete--
+        text: --Meteor Strike Complete--
         font_size: 100
         color: blue
         y: 40%
   select_05_off:
       - type: text
-        text: MODE 05
+        text: Corridor Battle
         font_size: 100
         color: white
         y: 25%
   select_05_completed:
       - type: text
-        text: --Story 5 Complete--
+        text: --Corridor Battle Complete--
         font_size: 100
         color: blue
         y: 25%
   select_06_off:
       - type: text
-        text: MODE 06
+        text: David vs. Goliath
         font_size: 100
         color: white
         y: 10%
   select_06_completed:
       - type: text
-        text: --Story 6 Complete--
+        text: --David vs. Goliath Complete--
         font_size: 100
         color: blue
         y: 10%

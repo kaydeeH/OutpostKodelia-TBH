@@ -17,6 +17,10 @@ slides:
     y: 85%
     font_size: 100
 
+event_player:
+  bonus_product:
+    - do_my_nothing_event
+
 widget_player:
   bonus_product:
     bonus_pops:
