@@ -142,12 +142,15 @@ show_player:
        loops: 1
        events_when_completed: scoop_eject
   story_intro_complete:
+     meteor_yellow:
+       speed: .5
+       priority: 401
      meteor:
        manual_advance: true
-       priority: 401
+       priority: 402
      scoopEscapeShow:
        speed: 1
-       priority: 402
+       priority: 450
   timer_meteortimer_tick:
      meteor:
        action: advance
@@ -155,41 +158,38 @@ show_player:
      meteor_scoop:
        speed: 4
        loops: -1
-       priority: 402
+       priority: 450
 #       show_tokens:
 #         rate: 250
   timer_meteortimer_tick{ticks_remaining > 18 and ticks_remaining <= 24}:
      meteor_scoop:
        speed: 8
        loops: -1
-       priority: 402
+       priority: 450
 #       show_tokens:
 #         rate: 125
   timer_meteortimer_tick{ticks_remaining > 12 and ticks_remaining <= 18}:
      meteor_scoop:
        speed: 16
        loops: -1
-       priority: 402
+       priority: 450
 #       show_tokens:
 #         rate: 62
   timer_meteortimer_tick{ticks_remaining > 6 and ticks_remaining <= 12}:
      meteor_scoop:
        speed: 32
        loops: -1
-       priority: 402
+       priority: 450
 #       show_tokens:
 #         rate: 31
   timer_meteortimer_tick{ticks_remaining <= 6}:
      meteor_scoop:
        speed: 64
        loops: -1
-       priority: 402
+       priority: 450
 #       show_tokens:
 #         rate: 15
-#  story_intro_complete:
-#     scoopEscapeShow:
-#       speed: 1
-#       priority: 402
+
 # BELOW are the "base" show player entries
   story_is_about_to_begin:
      story_04_intro:
