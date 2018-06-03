@@ -1,0 +1,36 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_GIScoopUC:
+      color: 0010FF
+      fade: 500ms
+    l_GIScoopMR:
+      color: 0010FF
+      fade: 500ms
+    l_GIScoopML:
+      color: 0010FF
+      fade: 500ms
+    l_GIScoopLR:
+      color: 0010FF
+      fade: 500ms
+    l_GIScoopLL:
+      color: 0010FF
+      fade: 500ms
+- duration: 1
+  lights:
+    l_GIScoopUC:
+      color: 00087F
+      fade: 500ms
+    l_GIScoopMR:
+      color: 00087F
+      fade: 500ms
+    l_GIScoopML:
+      color: 00087F
+      fade: 500ms
+    l_GIScoopLR:
+      color: 00087F
+      fade: 500ms
+    l_GIScoopLL:
+      color: 00087F
+      fade: 500ms

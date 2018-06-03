@@ -1,0 +1,11 @@
+#show_version=5
+- duration: 1
+  lights:
+    l_scoop:
+      color: 0010FF
+      fade: 15ms
+- duration: 1
+  lights:
+    l_scoop:
+      color: 000000
+      fade: 15ms

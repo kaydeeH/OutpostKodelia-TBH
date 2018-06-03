@@ -9,6 +9,7 @@ mode:
    start_events: selector_untitled_mode_4_selected
    stop_events: story_is_completed
    priority: 400
+   file_log: full
 
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
@@ -140,13 +141,55 @@ show_player:
        speed: 40
        loops: 1
        events_when_completed: scoop_eject
-  mode_story04_started:
+  story_intro_complete:
      meteor:
        manual_advance: true
        priority: 401
+     scoopEscapeShow:
+       speed: 1
+       priority: 402
   timer_meteortimer_tick:
      meteor:
        action: advance
+  timer_meteortimer_tick{ticks_remaining > 24}:
+     meteor_scoop:
+       speed: 4
+       loops: -1
+       priority: 402
+#       show_tokens:
+#         rate: 250
+  timer_meteortimer_tick{ticks_remaining > 18 and ticks_remaining <= 24}:
+     meteor_scoop:
+       speed: 8
+       loops: -1
+       priority: 402
+#       show_tokens:
+#         rate: 125
+  timer_meteortimer_tick{ticks_remaining > 12 and ticks_remaining <= 18}:
+     meteor_scoop:
+       speed: 16
+       loops: -1
+       priority: 402
+#       show_tokens:
+#         rate: 62
+  timer_meteortimer_tick{ticks_remaining > 6 and ticks_remaining <= 12}:
+     meteor_scoop:
+       speed: 32
+       loops: -1
+       priority: 402
+#       show_tokens:
+#         rate: 31
+  timer_meteortimer_tick{ticks_remaining <= 6}:
+     meteor_scoop:
+       speed: 64
+       loops: -1
+       priority: 402
+#       show_tokens:
+#         rate: 15
+#  story_intro_complete:
+#     scoopEscapeShow:
+#       speed: 1
+#       priority: 402
 # BELOW are the "base" show player entries
   story_is_about_to_begin:
      story_04_intro:
@@ -161,20 +204,21 @@ show_player:
        events_when_stopped: story_outro_complete
        loops: 0
 
-
 timers:
    meteorTimer:
      start_value: 30
      end_value: 0
      tick_interval: 1s
      direction: down
-     start_running: yes
+     start_running: no
      control_events:
       - event: shotScoopMeteor_hit
         action: reset
       - event: shotScoopMeteor_hit
         action: pause
         value: 2
+      - event: story_intro_complete
+        action: start
 
 widget_player:
    story_intro_complete:
