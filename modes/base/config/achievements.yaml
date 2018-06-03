@@ -8,7 +8,8 @@ achievements:
    select_events: selector_untitled_mode_1_highlighted
    disable_events: selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
    start_events: mode_story01_started
-   complete_events: mode_story01_stopped
+   complete_events: acheivement_story01_successful
+   reset_events: acheivement_story01_unsuccessful
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: popblue
@@ -20,7 +21,8 @@ achievements:
    select_events: selector_untitled_mode_2_highlighted
    start_events: mode_story02_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
-   complete_events: mode_story02_stopped
+   complete_events: acheivement_story02_successful
+   reset_events: acheivement_story02_unsuccessful
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: popblue
@@ -32,7 +34,8 @@ achievements:
    select_events: selector_untitled_mode_3_highlighted
    start_events: mode_story03_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
-   complete_events: mode_story03_stopped
+   complete_events: acheivement_story03_successful
+   reset_events: acheivement_story03_unsuccessful
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: popblue
@@ -44,7 +47,8 @@ achievements:
    select_events: selector_untitled_mode_4_highlighted
    start_events: mode_story04_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
-   complete_events: mode_story04_stopped
+   complete_events: acheivement_story04_successful
+   reset_events: acheivement_story04_unsuccessful
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: popblue
@@ -56,7 +60,8 @@ achievements:
    select_events: selector_untitled_mode_5_highlighted
    start_events: mode_story05_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
-   complete_events: mode_story05_stopped
+   complete_events: acheivement_story05_successful
+   reset_events: acheivement_story05_unsuccessful
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: popblue
@@ -68,7 +73,8 @@ achievements:
    select_events: selector_untitled_mode_6_highlighted
    start_events: mode_story06_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_7_highlighted
-   complete_events: mode_story06_stopped
+   complete_events: acheivement_story06_successful
+   reset_events: acheivement_story06_unsuccessful
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: popblue
@@ -80,7 +86,8 @@ achievements:
    select_events: selector_untitled_mode_7_highlighted
    start_events: mode_story06_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted
-   complete_events: mode_story07_stopped
+   complete_events: acheivement_story07_successful
+   reset_events: acheivement_story07_unsuccessful
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: popblue
