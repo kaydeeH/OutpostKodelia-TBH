@@ -1,0 +1,9 @@
+#config_version=5
+variable_player:
+  shotgrouppopbumpers_hit:
+    score: 1500
+    bonuscount: 2
+    pops: 1
+  story_is_about_to_end:
+    score: 100000
+    bonuscount: 10

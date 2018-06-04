@@ -1,5 +1,10 @@
 #config_version=5
 
+# David vs. Goliath - Pop bumper frenzy. Pop bumpers do damage, time elapsed without pops costs points. Win!
+
+config:
+  - story06-scoring.yaml
+
 mode:
    start_events: selector_untitled_mode_6_selected
    stop_events: story_is_completed
@@ -9,7 +14,6 @@ mode:
 #     Issue a scoop_eject after any introduction activities
 # Modes that end with a Scoop Hit --
 #     Issue a scoop eject after any outro-activities
-# TEMP UNTIL REAL MODE PUT INTO PLACE
 
 # Success/Failure
 # By default, success = not losing ball, failure = losing ball
@@ -23,20 +27,23 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
-   timer_yttimer06_complete:
+   player_damage{value<=0}:
      - story_is_about_to_end
+   timer_battletimer_complete:
+     - story_is_about_to_fail
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story06_successful
-#    Only used when scoop hits end the mode
-#    - scoop_eject
+   story_outro_fail_complete:
+     - story_is_completed_unsuccessful
+     - acheivement_story06_unsuccessful
    ball_ending:
      - story_is_completed_unsuccessful
      - acheivement_story06_unsuccessful
    story_is_completed_successful:
-    - story_is_completed
+     - story_is_completed
    story_is_completed_unsuccessful:
-    - story_is_completed
+     - story_is_completed
 
 #  Base intro / outro shows
 show_player:
@@ -45,6 +52,12 @@ show_player:
          events_when_advanced: story_intro_complete
          events_when_completed: story_intro_complete
          events_when_stopped: story_intro_complete
+         loops: 0
+   story_is_about_to_fail:
+      story_06_outro_fail:
+         events_when_advanced: story_outro_fail_complete
+         events_when_completed: story_outro_fail_complete
+         events_when_stopped: story_outro_fail_complete
          loops: 0
    story_is_about_to_end:
       story_06_outro:
@@ -58,6 +71,10 @@ shows:
      - time: 0
        slides: story_06_intro_slide
        duration: 3
+   story_06_outro_fail:
+     - time: 0
+       slides: story_06_outro_fail_slide
+       duration: 3
    story_06_outro:
      - time: 0
        slides: story_06_outro_slide
@@ -67,39 +84,88 @@ slides:
    story_06_intro_slide:
     widgets:
       - type: text
-        text: STORY 06 BEGIN SHOW
+        text: DAVID VS. GOLIATH
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: Hit Pop Bumpers to attack MAXIMILLIAN!
+        y: 40%
+        color: red
+        font_size: 50
+   story_06_outro_fail_slide:
+    widgets:
+      - type: text
+        text: DAVID VS. GOLIATH
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: No one sucks as bad as you.
+        y: 40%
+        color: red
+        font_size: 50
    story_06_outro_slide:
     widgets:
       - type: text
-        text: STORY 06 END SHOW
+        text: DAVID VS. GOLIATH
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: "You Kicked some Robot Butt in just (battletime)s"
+        y: 40%
+        color: red
+        font_size: 50
 
 # The below is mode specific data
 
 variable_player:
-   mode_story06_started:
-     temp_ythurryup_value:
+   story_intro_complete:
+     damage:
        action: set
-       int: 100000
-   timer_yttimer06_tick:
-     temp_ythurryup_value: -300
-   s_sTargetYellowL_active:
-     score: current_player.temp_ythurryup_value|block
-   s_sTargetYellowR_active:
-     score: current_player.temp_ythurryup_value|block
+       int: 30
+     battleticks:
+       action: set
+       int: 0
+   timer_battletimer_tick:
+     damage: 1
+   timer_battlecounter_tick:
+     battleticks: 1
+   shotgrouppopbumpers_hit:
+     damage: -3
+   story_is_about_to_end:
+     battletime:
+       action: set
+       float: current_player.battleticks / 10
 
 timers:
-   yttimer06:
-     start_value: 100
-     end_value: 0
+   battlecounter:
+     start_value: 0
      tick_interval: .1s
-     direction: down
-     start_running: yes
+     direction: up
+     start_running: no
+     control_events:
+        - event: story_intro_complete
+          action: start
+        - event: story_is_about_to_end
+          action: pause
+          value: 0
+   battletimer:
+     start_value: 30
+     end_value: 60
+     tick_interval: 1s
+     direction: up
+     start_running: no
+     control_events:
+        - event: story_intro_complete
+          action: start
+        - event: shotgrouppopbumpers_hit
+          action: subtract
+          value: 3
+        - event: story_is_about_to_end
+          action: pause
+          value: 0
 
 widget_player:
    mode_story06_started:
@@ -112,6 +178,6 @@ widget_player:
 widgets:
    yt_remain_widget_06:
      - type: text
-       text: "Story 06 Hurry Up: (temp_ythurryup_value)"
+       text: "VINCent :0:  (damage)   :60: Maximillian"
        y: 80%
 

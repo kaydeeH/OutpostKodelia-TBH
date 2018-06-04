@@ -34,13 +34,12 @@ event_player:
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story01_successful
-#    Only used when scoop hits end the mode
-#    - scoop_eject
    ball_ending:
      - story_is_completed_unsuccessful
      - acheivement_story01_unsuccessful
    story_is_completed_successful:
      - story_is_completed
+     - scoop_eject
    story_is_completed_unsuccessful:
      - story_is_completed
 # Mode Specific Event Handlers
