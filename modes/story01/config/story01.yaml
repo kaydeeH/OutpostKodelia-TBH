@@ -48,8 +48,8 @@ event_player:
      - cygnus_located
    shotScoopStory01_ShotProfileScoopStory01_scoopActive_hit:
      - cygnus_found
-   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
-     - scoop_eject
+#   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
+#     - scoop_eject
 
 # Do we want to do something for each lane found?
    shotLane0Story01_unlit_hit:
@@ -78,6 +78,11 @@ show_player:
          events_when_completed: story_outro_complete
          events_when_stopped: story_outro_complete
          loops: 0
+   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
+      pinwheel:
+        speed: 40
+        loops: 1
+        events_when_completed: scoop_eject
 
 shows:
    story_01_intro:
