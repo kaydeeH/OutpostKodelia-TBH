@@ -38,8 +38,8 @@ event_player:
      - story_is_completed_unsuccessful
      - acheivement_story01_unsuccessful
    story_is_completed_successful:
-     - story_is_completed
      - scoop_eject
+     - story_is_completed
    story_is_completed_unsuccessful:
      - story_is_completed
 # Mode Specific Event Handlers
@@ -47,6 +47,8 @@ event_player:
      - cygnus_located
    shotScoopStory01_ShotProfileScoopStory01_scoopActive_hit:
      - cygnus_found
+   shotScoopStory01_ShotProfileScoopStory01_inactive_hit:
+     - scoop_eject
 
 # Do we want to do something for each lane found?
    shotLane0Story01_unlit_hit:

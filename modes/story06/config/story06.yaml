@@ -37,9 +37,10 @@ event_player:
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
      - acheivement_story06_unsuccessful
-   ball_ending:
-     - story_is_completed_unsuccessful
-     - acheivement_story06_unsuccessful
+   ball_will_end:
+     - story_is_about_to_fail
+#     - story_is_completed_unsuccessful
+#     - acheivement_story06_unsuccessful
    story_is_completed_successful:
      - story_is_completed
    story_is_completed_unsuccessful:

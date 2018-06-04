@@ -40,7 +40,6 @@ event_player:
      - story_is_completed_unsuccessful
      - acheivement_story05_unsuccessful
      - mode_using_targets_ended # always add this if your mode makes use of the drop targets
-#    - scoop_eject
    ball_ending:
      - story_is_completed_unsuccessful
      - acheivement_story05_unsuccessful
