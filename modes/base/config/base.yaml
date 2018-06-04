@@ -184,11 +184,13 @@ shots:
       light: l_scoop
     profile: shotProfileScoop
     advance_events: selector_item_selected, ach_completed
-    enable_events: story_is_completed, mode_base_started, scoop_reset
+    enable_events: story_is_completed, scoop_reset
     disable_events: story_is_about_to_begin
     reset_events: scoop_reset
 
 event_player:
+    mode_base_started{ball==1 and is_extra_ball==0}:
+      - scoop_reset
     shotGroupToplanes_lit_complete:
       - scoop_reset
     drop_target_bank_leftfull_down:
