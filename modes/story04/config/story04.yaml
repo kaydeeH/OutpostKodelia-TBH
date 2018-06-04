@@ -28,13 +28,16 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
-   timer_meteorTimer_complete:
+   story_has_passed:
      - story_is_about_to_end
+   story_has_failed:
+     - story_is_about_to_fail
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story04_successful
-#    Only used when scoop hits end the mode
-#    - scoop_eject
+   story_outro_fail_complete:
+     - story_is_completed_unsuccessful
+     - acheivement_story04_unsuccessful
    ball_ending:
      - story_is_completed_unsuccessful
      - acheivement_story04_unsuccessful
@@ -69,6 +72,10 @@ shows:
      - time: 0
        slides: story_04_intro_slide
        duration: 3
+   story_04_outro_fail:
+     - time: 0
+       slides: story_04_outro_fail_slide
+       duration: 3
    story_04_outro:
      - time: 0
        slides: story_04_outro_slide
@@ -78,21 +85,71 @@ slides:
    story_04_intro_slide:
     widgets:
       - type: text
-        text: STORY 04 BEGIN SHOW
+        text: METEOR STRIKE
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: Avoid meteors by hitting the scoop shot!
+        y: 40%
+        color: red
+        font_size: 50
+   story_04_outro_fail_slide:
+    widgets:
+      - type: text
+        text: METEOR STRIKE FAILED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: You are sent home in a space box
+        y: 40%
+        color: red
+        font_size: 50
    story_04_outro_slide:
     widgets:
       - type: text
-        text: STORY 04 END SHOW
+        text: METEOR STRIKE PASSED
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: You are the very greatest
+        y: 40%
+        color: red
+        font_size: 50
 
 # The below is mode specific data
 
 # EVENTS starting on mode_story04_started have been moved to story_intro_complete
+
+# We will use a STATE MACHINE to drive whether or not the timer at the end of the mode
+# triggers a SUCCESS or FAILURE response for the mode.
+state_machines:
+  end_result:
+    states:
+      start:
+        label: willFail
+      has_failed:
+        label: hasFailed
+        events_when_started: story_has_failed
+      will_pass:
+        label: willPass
+        events_when_started: debug_event_will_pass_set
+      has_passed:
+        label: hasPassed
+        events_when_started: story_has_passed
+    transitions:
+      - source: start
+        target: will_pass
+        events: shotScoopMeteor_hit
+      - source: start
+        target: has_failed
+        events: timer_meteorTimer_complete
+      - source: will_pass
+        target: has_passed
+        events: timer_meteorTimer_complete
+
 
 variable_player:
   story_intro_complete:
@@ -191,6 +248,12 @@ show_player:
        events_when_advanced: story_intro_complete
        events_when_completed: story_intro_complete
        events_when_stopped: story_intro_complete
+       loops: 0
+  story_is_about_to_fail:
+     story_04_outro_fail:
+       events_when_advanced: story_outro_fail_complete
+       events_when_completed: story_outro_fail_complete
+       events_when_stopped: story_outro_fail_complete
        loops: 0
   story_is_about_to_end:
      story_04_outro:
