@@ -122,8 +122,6 @@ variable_player:
 shots:
   shotScoopMeteor:
     switch: s_ir_scoop_detect
-    show_tokens:
-      light: l_scoop
     profile: shotScoopMeteorProfile
 
 shot_profiles:
@@ -141,13 +139,10 @@ show_player:
        speed: 40
        loops: 1
        events_when_completed: scoop_eject
-  story_intro_complete:
-     meteor_yellow:
-       speed: .5
-       priority: 401
+  timer_meteortimer_started:
      meteor:
        manual_advance: true
-       priority: 402
+       priority: 401
      scoopEscapeShow:
        speed: 1
        priority: 450
@@ -206,6 +201,7 @@ show_player:
 
 timers:
    meteorTimer:
+     max_value: 30
      start_value: 30
      end_value: 0
      tick_interval: 1s
@@ -213,10 +209,14 @@ timers:
      start_running: no
      control_events:
       - event: shotScoopMeteor_hit
-        action: reset
+        action: add
+        value: 30
       - event: shotScoopMeteor_hit
         action: pause
         value: 2
+      - event: shotScoopMeteor_hit
+        action: change_tick_interval
+        value: 0.1
       - event: story_intro_complete
         action: start
 

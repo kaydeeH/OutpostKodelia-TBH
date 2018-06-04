@@ -1,980 +1,1091 @@
 #show_version=5
 - duration: 1
   lights:
-      l_GIUpperCL:
-        color: 'C83400'
+      l_2x:
+        color: 'FFE700'
         fade: 1000ms
-      l_GIUpperCR:
-        color: 'C83300'
+      l_3x:
+        color: 'FFE700'
         fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIUpperCL:
-        color: 'C82600'
+      l_4x:
+        color: 'FFE700'
         fade: 1000ms
-      l_GIUpperCR:
-        color: 'C82500'
+      l_5x:
+        color: 'FFE700'
         fade: 1000ms
-      l_GIUpperR:
-        color: 'C83700'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIUpperCL:
-        color: 'C81600'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'C81500'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C83100'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C82B00'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIUpperCL:
-        color: 'C80800'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'C80700'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C82300'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C81B00'
-        fade: 1000ms
-      l_lane0:
-        color: 'C83200'
-        fade: 1000ms
-      l_lane1:
-        color: 'C83100'
-        fade: 1000ms
-      l_lane2:
-        color: 'C83100'
-        fade: 1000ms
-      l_lane3:
-        color: 'C83200'
-        fade: 1000ms
-      l_lane4:
-        color: 'C83200'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIAboveScoopUpper:
-        color: 'C83300'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'C83400'
-        fade: 1000ms
-      l_GIUpperCL:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C81200'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C80C00'
-        fade: 1000ms
-      l_lane0:
-        color: 'C82300'
-        fade: 1000ms
-      l_lane1:
-        color: 'C82300'
-        fade: 1000ms
-      l_lane2:
-        color: 'C82300'
-        fade: 1000ms
-      l_lane3:
-        color: 'C82300'
-        fade: 1000ms
-      l_lane4:
-        color: 'C82300'
-        fade: 1000ms
-
-- duration: 1
-  lights:
       l_GIAboveScoopLower:
-        color: 'C83600'
+        color: 'FFE700'
         fade: 1000ms
       l_GIAboveScoopUpper:
-        color: 'C82600'
+        color: 'FFE700'
+        fade: 1000ms
+      l_GIAboveSpinnerLower:
+        color: 'FFE700'
         fade: 1000ms
       l_GIAboveSpinnerUpper:
-        color: 'C82600'
+        color: 'FFE700'
         fade: 1000ms
-      l_GILane0:
-        color: 'C83000'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C83000'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C83100'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C83100'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C83100'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C83100'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C03800'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C80500'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C80100'
-        fade: 1000ms
-      l_lane0:
-        color: 'C81300'
-        fade: 1000ms
-      l_lane1:
-        color: 'C81300'
-        fade: 1000ms
-      l_lane2:
-        color: 'C81200'
-        fade: 1000ms
-      l_lane3:
-        color: 'C81300'
-        fade: 1000ms
-      l_lane4:
-        color: 'C81300'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIAboveScoopLower:
-        color: 'C82900'
-        fade: 1000ms
-      l_GIAboveScoopUpper:
-        color: 'C81600'
-        fade: 1000ms
-      l_GIAboveSpinnerLower:
-        color: 'C83900'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'C81500'
-        fade: 1000ms
-      l_GILane0:
-        color: 'C82100'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C82100'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C82200'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C82200'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C82200'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C82200'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C83000'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane0:
-        color: 'C80600'
-        fade: 1000ms
-      l_lane1:
-        color: 'C80500'
-        fade: 1000ms
-      l_lane2:
-        color: 'C80500'
-        fade: 1000ms
-      l_lane3:
-        color: 'C80600'
-        fade: 1000ms
-      l_lane4:
-        color: 'C80600'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C83900'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIAboveScoopLower:
-        color: 'C81900'
-        fade: 1000ms
-      l_GIAboveScoopUpper:
-        color: 'C80700'
-        fade: 1000ms
-      l_GIAboveSpinnerLower:
-        color: 'C82E00'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'C80700'
-        fade: 1000ms
-      l_GILane0:
-        color: 'C81100'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C81100'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C81200'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C81300'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C81200'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C81300'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C82100'
-        fade: 1000ms
-      l_lane0:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane1:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane2:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane3:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane4:
-        color: 'C80000'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C82E00'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C83100'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIAboveScoopLower:
-        color: 'C80A00'
-        fade: 1000ms
-      l_GIAboveScoopUpper:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIAboveSpinnerLower:
-        color: 'C81E00'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane0:
-        color: 'C80400'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C80400'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C80500'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C80500'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C80500'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C80500'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C83900'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C83000'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C81100'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C83900'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C81E00'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C82200'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIAboveScoopLower:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIAboveSpinnerLower:
-        color: 'C80F00'
-        fade: 1000ms
-      l_GILane0:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C83800'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C82E00'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C82100'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C80400'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C82E00'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C83000'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C80F00'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C81200'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIAboveSpinnerLower:
-        color: 'C80200'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C82C00'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C81E00'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C81100'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C80000'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C81F00'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C82100'
-        fade: 1000ms
-      l_spinner:
-        color: 'C03800'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C80200'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C80400'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIAboveSpinnerLower:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'C83500'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C80F00'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C80400'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C83900'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C80F00'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C81200'
-        fade: 1000ms
-      l_scoop:
-        color: 'C83300'
-        fade: 1000ms
-      l_spinner:
-        color: 'C83000'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C80000'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIScoopLL:
-        color: 'C82800'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C80300'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C80000'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C82E00'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C80300'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C80400'
-        fade: 1000ms
-      l_scoop:
-        color: 'C82500'
-        fade: 1000ms
-      l_spinner:
-        color: 'C82100'
-        fade: 1000ms
-
-- duration: 1
-  lights:
       l_GIDropCenterLeft:
-        color: 'C83700'
+        color: 'FFE700'
         fade: 1000ms
       l_GIDropCenterRight:
-        color: 'C83700'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'C83400'
-        fade: 1000ms
-      l_GIDropRight1:
-        color: 'C83100'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'C81900'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C80100'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'C83300'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'C83100'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C81F00'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C80000'
-        fade: 1000ms
-      l_scoop:
-        color: 'C81500'
-        fade: 1000ms
-      l_spinner:
-        color: 'C81100'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIDropCenterLeft:
-        color: 'C82C00'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C82C00'
+        color: 'FFE700'
         fade: 1000ms
       l_GIDropLeft0:
-        color: 'C83800'
+        color: 'FFE700'
         fade: 1000ms
       l_GIDropLeft1:
-        color: 'C82800'
+        color: 'FFE700'
         fade: 1000ms
       l_GIDropRight0:
-        color: 'C83600'
+        color: 'FFE700'
         fade: 1000ms
       l_GIDropRight1:
-        color: 'C82200'
+        color: 'FFE700'
         fade: 1000ms
-      l_GIScoopLL:
-        color: 'C80A00'
+      l_GILane0:
+        color: 'FFE700'
         fade: 1000ms
-      l_GIScoopLR:
-        color: 'C80000'
+      l_GILane1:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C83700'
+      l_GILane2:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropCenterRight:
-        color: 'C83700'
+      l_GILane3:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropLeft2:
-        color: 'C83300'
+      l_GILane4:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropLeft3:
-        color: 'C82600'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'C83100'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'C82300'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C81000'
-        fade: 1000ms
-      l_mode6:
-        color: 'C83900'
-        fade: 1000ms
-      l_scoop:
-        color: 'C80700'
-        fade: 1000ms
-      l_spinner:
-        color: 'C80400'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIDropCenterLeft:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GIDropLeft0:
-        color: 'C82C00'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'C81800'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'C82900'
-        fade: 1000ms
-      l_GIDropRight1:
-        color: 'C81300'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonus8:
-        color: 'C83900'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C82B00'
-        fade: 1000ms
-      l_dropCenterRight:
-        color: 'C82A00'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'C83200'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'C82500'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'C81600'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'C83100'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'C82200'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'C81300'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C80300'
-        fade: 1000ms
-      l_mode6:
-        color: 'C82F00'
-        fade: 1000ms
-      l_scoop:
-        color: 'C80000'
-        fade: 1000ms
-      l_spinner:
-        color: 'C80000'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIDropCenterLeft:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GIDropLeft0:
-        color: 'C81D00'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'C80900'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'C81900'
-        fade: 1000ms
-      l_GIDropRight1:
-        color: 'C80500'
-        fade: 1000ms
-      l_bonus7:
-        color: 'C83600'
-        fade: 1000ms
-      l_bonus8:
-        color: 'C82E00'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C81B00'
-        fade: 1000ms
-      l_dropCenterRight:
-        color: 'C81A00'
-        fade: 1000ms
-      l_dropLeft0:
-        color: 'C83100'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'C82300'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'C81500'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'C80800'
-        fade: 1000ms
-      l_dropRight0:
-        color: 'C83000'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'C82200'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'C81200'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'C80600'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode5:
-        color: 'C83100'
-        fade: 1000ms
-      l_mode6:
-        color: 'C82000'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIDropCenterLeft:
-        color: 'C80100'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C80100'
-        fade: 1000ms
-      l_GIDropLeft0:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'C80A00'
-        fade: 1000ms
-      l_GIDropRight1:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonus6:
-        color: 'C83400'
-        fade: 1000ms
-      l_bonus7:
-        color: 'C82A00'
-        fade: 1000ms
-      l_bonus8:
-        color: 'C81E00'
-        fade: 1000ms
-      l_bonusBig1:
-        color: 'C83300'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C80C00'
-        fade: 1000ms
-      l_dropCenterRight:
-        color: 'C80B00'
-        fade: 1000ms
-      l_dropLeft0:
-        color: 'C82200'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'C81300'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'C80700'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropRight0:
-        color: 'C82100'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'C81200'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'C80500'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode4:
-        color: 'C83100'
-        fade: 1000ms
-      l_mode5:
-        color: 'C82200'
-        fade: 1000ms
-      l_mode6:
-        color: 'C81000'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIDropCenterLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIDropLeft0:
-        color: 'C80200'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'C80000'
+      l_GILane5:
+        color: 'FFE700'
         fade: 1000ms
       l_GILowLeft:
-        color: 'C83500'
+        color: 'FFE700'
         fade: 1000ms
       l_GILowRight:
-        color: 'C83500'
+        color: 'FFE700'
         fade: 1000ms
-      l_bonus4:
-        color: 'C83800'
+      l_GIScoopLL:
+        color: 'FFE700'
         fade: 1000ms
-      l_bonus5:
-        color: 'C83000'
+      l_GIScoopLR:
+        color: 'FFE700'
         fade: 1000ms
-      l_bonus6:
-        color: 'C82600'
+      l_GIScoopML:
+        color: 'FFE700'
         fade: 1000ms
-      l_bonus7:
-        color: 'C81A00'
+      l_GIScoopMR:
+        color: 'FFE700'
         fade: 1000ms
-      l_bonus8:
-        color: 'C80E00'
+      l_GIScoopUC:
+        color: 'FFE700'
         fade: 1000ms
-      l_bonusBig0:
-        color: 'C83500'
+      l_GISlingLeft0:
+        color: 'FFE700'
         fade: 1000ms
-      l_bonusBig1:
-        color: 'C82500'
+      l_GISlingLeft1:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C80100'
+      l_GISlingRight0:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropCenterRight:
-        color: 'C80000'
+      l_GISlingRight1:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropLeft0:
-        color: 'C81200'
+      l_GIUpperCL:
+        color: 'FFFF00'
         fade: 1000ms
-      l_dropLeft1:
-        color: 'C80500'
+      l_GIUpperCR:
+        color: 'FFFF00'
         fade: 1000ms
-      l_dropLeft2:
-        color: 'C80000'
+      l_GIUpperL:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropRight0:
-        color: 'C81100'
+      l_GIUpperR:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropRight1:
-        color: 'C80400'
+      l_bonus0:
+        color: 'FFE700'
         fade: 1000ms
-      l_dropRight2:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode3:
-        color: 'C83200'
-        fade: 1000ms
-      l_mode4:
-        color: 'C82300'
-        fade: 1000ms
-      l_mode5:
-        color: 'C81200'
-        fade: 1000ms
-      l_mode6:
-        color: 'C80300'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GIDropLeft0:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILowLeft:
-        color: 'C82900'
-        fade: 1000ms
-      l_GILowRight:
-        color: 'C82800'
-        fade: 1000ms
-      l_bonus3:
-        color: 'C83600'
-        fade: 1000ms
-      l_bonus4:
-        color: 'C82D00'
-        fade: 1000ms
-      l_bonus5:
-        color: 'C82100'
-        fade: 1000ms
-      l_bonus6:
-        color: 'C81600'
-        fade: 1000ms
-      l_bonus7:
-        color: 'C80B00'
-        fade: 1000ms
-      l_bonus8:
-        color: 'C80200'
-        fade: 1000ms
-      l_bonusBig0:
-        color: 'C82700'
-        fade: 1000ms
-      l_bonusBig1:
-        color: 'C81500'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropLeft0:
-        color: 'C80400'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropRight0:
-        color: 'C80400'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode2:
-        color: 'C83500'
-        fade: 1000ms
-      l_mode3:
-        color: 'C82400'
-        fade: 1000ms
-      l_mode4:
-        color: 'C81300'
-        fade: 1000ms
-      l_mode5:
-        color: 'C80400'
-        fade: 1000ms
-      l_mode6:
-        color: 'C80000'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GILowLeft:
-        color: 'C81900'
-        fade: 1000ms
-      l_GILowRight:
-        color: 'C81800'
+      l_bonus1:
+        color: 'FFE700'
         fade: 1000ms
       l_bonus2:
-        color: 'C83300'
+        color: 'FFE700'
         fade: 1000ms
       l_bonus3:
-        color: 'C82900'
+        color: 'FFE700'
         fade: 1000ms
       l_bonus4:
-        color: 'C81E00'
+        color: 'FFE700'
         fade: 1000ms
       l_bonus5:
-        color: 'C81100'
+        color: 'FFE700'
         fade: 1000ms
       l_bonus6:
-        color: 'C80800'
+        color: 'FFE700'
         fade: 1000ms
       l_bonus7:
-        color: 'C80000'
+        color: 'FFE700'
         fade: 1000ms
       l_bonus8:
-        color: 'C80000'
+        color: 'FFE700'
         fade: 1000ms
       l_bonusBig0:
-        color: 'C81700'
+        color: 'FFE700'
         fade: 1000ms
       l_bonusBig1:
-        color: 'C80700'
+        color: 'FFE700'
+        fade: 1000ms
+      l_dropCenterLeft:
+        color: 'FFE700'
+        fade: 1000ms
+      l_dropCenterRight:
+        color: 'FFE700'
         fade: 1000ms
       l_dropLeft0:
-        color: 'C80000'
+        color: 'FFE700'
+        fade: 1000ms
+      l_dropLeft1:
+        color: 'FFE700'
+        fade: 1000ms
+      l_dropLeft2:
+        color: 'FFE700'
+        fade: 1000ms
+      l_dropLeft3:
+        color: 'FFE700'
         fade: 1000ms
       l_dropRight0:
-        color: 'C80000'
+        color: 'FFE700'
+        fade: 1000ms
+      l_dropRight1:
+        color: 'FFE700'
+        fade: 1000ms
+      l_dropRight2:
+        color: 'FFE700'
+        fade: 1000ms
+      l_dropRight3:
+        color: 'FFE700'
+        fade: 1000ms
+      l_jetLowerCenter:
+        color: 'FFE700'
+        fade: 1000ms
+      l_jetUpperLeft:
+        color: 'FFE700'
+        fade: 1000ms
+      l_jetUpperRight:
+        color: 'FFE700'
+        fade: 1000ms
+      l_lane0:
+        color: 'FFE700'
+        fade: 1000ms
+      l_lane1:
+        color: 'FFE700'
+        fade: 1000ms
+      l_lane2:
+        color: 'FFE700'
+        fade: 1000ms
+      l_lane3:
+        color: 'FFE700'
+        fade: 1000ms
+      l_lane4:
+        color: 'FFE700'
+        fade: 1000ms
+      l_mode0:
+        color: 'FFE700'
         fade: 1000ms
       l_mode1:
-        color: 'C83500'
+        color: 'FFE700'
         fade: 1000ms
       l_mode2:
-        color: 'C82700'
+        color: 'FFE700'
         fade: 1000ms
       l_mode3:
+        color: 'FFE700'
+        fade: 1000ms
+      l_mode4:
+        color: 'FFE700'
+        fade: 1000ms
+      l_mode5:
+        color: 'FFE700'
+        fade: 1000ms
+      l_mode6:
+        color: 'FFE700'
+        fade: 1000ms
+      l_scoop:
+        color: 'FFE700'
+        fade: 1000ms
+      l_shootAgain:
+        color: 'FFE700'
+        fade: 1000ms
+      l_specialLeft:
+        color: 'FFE700'
+        fade: 1000ms
+      l_specialRight:
+        color: 'FFE700'
+        fade: 1000ms
+      l_spinner:
+        color: 'FFE700'
+        fade: 1000ms
+      l_yellowTargetLeft:
+        color: 'FFE700'
+        fade: 1000ms
+      l_yellowTargetRight:
+        color: 'FFE700'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIUpperCL:
+        color: 'C82900'
+        fade: 1000ms
+      l_GIUpperCR:
+        color: 'C82800'
+        fade: 1000ms
+      l_GIUpperR:
+        color: 'FFFF00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIUpperCL:
+        color: 'C81B00'
+        fade: 1000ms
+      l_GIUpperCR:
+        color: 'C81900'
+        fade: 1000ms
+      l_GIUpperL:
+        color: 'FFFF00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIUpperCL:
+        color: 'C80D00'
+        fade: 1000ms
+      l_GIUpperCR:
+        color: 'C80C00'
+        fade: 1000ms
+      l_GIUpperL:
+        color: 'C82800'
+        fade: 1000ms
+      l_GIUpperR:
+        color: 'C82100'
+        fade: 1000ms
+      l_lane0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_lane1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_lane2:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_lane3:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_lane4:
+        color: 'FFFF00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveScoopUpper:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIAboveSpinnerUpper:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIUpperCL:
+        color: 'C80200'
+        fade: 1000ms
+      l_GIUpperCR:
+        color: 'C80200'
+        fade: 1000ms
+      l_GIUpperL:
+        color: 'C81900'
+        fade: 1000ms
+      l_GIUpperR:
+        color: 'C81300'
+        fade: 1000ms
+      l_lane0:
+        color: 'C82900'
+        fade: 1000ms
+      l_lane1:
+        color: 'C82900'
+        fade: 1000ms
+      l_lane2:
+        color: 'C82900'
+        fade: 1000ms
+      l_lane3:
+        color: 'C82900'
+        fade: 1000ms
+      l_lane4:
+        color: 'C82900'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveScoopLower:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GILane0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GILane1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GILane2:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GILane3:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GILane4:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GILane5:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIUpperCL:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIUpperCR:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIUpperL:
+        color: 'C80C00'
+        fade: 1000ms
+      l_GIUpperR:
+        color: 'C80600'
+        fade: 1000ms
+      l_lane0:
+        color: 'C81B00'
+        fade: 1000ms
+      l_lane1:
+        color: 'C81A00'
+        fade: 1000ms
+      l_lane2:
+        color: 'C81A00'
+        fade: 1000ms
+      l_lane3:
+        color: 'C81B00'
+        fade: 1000ms
+      l_lane4:
+        color: 'C81B00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveScoopUpper:
+        color: 'C81F00'
+        fade: 1000ms
+      l_GIAboveSpinnerUpper:
+        color: 'C81F00'
+        fade: 1000ms
+      l_GIScoopUC:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIUpperL:
+        color: 'C80200'
+        fade: 1000ms
+      l_GIUpperR:
+        color: 'C80000'
+        fade: 1000ms
+      l_lane0:
+        color: 'C80E00'
+        fade: 1000ms
+      l_lane1:
+        color: 'C80D00'
+        fade: 1000ms
+      l_lane2:
+        color: 'C80D00'
+        fade: 1000ms
+      l_lane3:
+        color: 'C80D00'
+        fade: 1000ms
+      l_lane4:
+        color: 'C80D00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveScoopLower:
+        color: 'C82300'
+        fade: 1000ms
+      l_GIAboveScoopUpper:
+        color: 'C81000'
+        fade: 1000ms
+      l_GIAboveSpinnerLower:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIAboveSpinnerUpper:
+        color: 'C81000'
+        fade: 1000ms
+      l_GILane0:
+        color: 'C81B00'
+        fade: 1000ms
+      l_GILane1:
+        color: 'C81B00'
+        fade: 1000ms
+      l_GILane2:
+        color: 'C81C00'
+        fade: 1000ms
+      l_GILane3:
+        color: 'C81C00'
+        fade: 1000ms
+      l_GILane4:
+        color: 'C81C00'
+        fade: 1000ms
+      l_GILane5:
+        color: 'C81C00'
+        fade: 1000ms
+      l_GIUpperL:
+        color: 'C80000'
+        fade: 1000ms
+      l_lane0:
+        color: 'C80200'
+        fade: 1000ms
+      l_lane1:
+        color: 'C80200'
+        fade: 1000ms
+      l_lane2:
+        color: 'C80200'
+        fade: 1000ms
+      l_lane3:
+        color: 'C80200'
+        fade: 1000ms
+      l_lane4:
+        color: 'C80200'
+        fade: 1000ms
+      l_yellowTargetLeft:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_yellowTargetRight:
+        color: 'FFFF00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveScoopLower:
         color: 'C81400'
         fade: 1000ms
-      l_mode4:
+      l_GIAboveScoopUpper:
+        color: 'C80400'
+        fade: 1000ms
+      l_GIAboveSpinnerUpper:
+        color: 'C80400'
+        fade: 1000ms
+      l_GILane0:
+        color: 'C80D00'
+        fade: 1000ms
+      l_GILane1:
+        color: 'C80D00'
+        fade: 1000ms
+      l_GILane2:
+        color: 'C80D00'
+        fade: 1000ms
+      l_GILane3:
+        color: 'C80E00'
+        fade: 1000ms
+      l_GILane4:
+        color: 'C80D00'
+        fade: 1000ms
+      l_GILane5:
+        color: 'C80E00'
+        fade: 1000ms
+      l_GIScoopMR:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIScoopUC:
+        color: 'C81B00'
+        fade: 1000ms
+      l_lane0:
+        color: 'C80000'
+        fade: 1000ms
+      l_lane1:
+        color: 'C80000'
+        fade: 1000ms
+      l_lane2:
+        color: 'C80000'
+        fade: 1000ms
+      l_lane3:
+        color: 'C80000'
+        fade: 1000ms
+      l_lane4:
+        color: 'C80000'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveScoopLower:
+        color: 'C80800'
+        fade: 1000ms
+      l_GIAboveScoopUpper:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIAboveSpinnerLower:
+        color: 'C81A00'
+        fade: 1000ms
+      l_GIAboveSpinnerUpper:
+        color: 'C80000'
+        fade: 1000ms
+      l_GILane0:
+        color: 'C80200'
+        fade: 1000ms
+      l_GILane1:
+        color: 'C80200'
+        fade: 1000ms
+      l_GILane2:
+        color: 'C80300'
+        fade: 1000ms
+      l_GILane3:
+        color: 'C80300'
+        fade: 1000ms
+      l_GILane4:
+        color: 'C80300'
+        fade: 1000ms
+      l_GILane5:
+        color: 'C80300'
+        fade: 1000ms
+      l_GIScoopML:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIScoopUC:
+        color: 'C80D00'
+        fade: 1000ms
+      l_jetUpperLeft:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_jetUpperRight:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_yellowTargetLeft:
+        color: 'C81A00'
+        fade: 1000ms
+      l_yellowTargetRight:
+        color: 'C81E00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveScoopLower:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIAboveSpinnerLower:
+        color: 'C80C00'
+        fade: 1000ms
+      l_GILane0:
+        color: 'C80000'
+        fade: 1000ms
+      l_GILane1:
+        color: 'C80000'
+        fade: 1000ms
+      l_GILane2:
+        color: 'C80000'
+        fade: 1000ms
+      l_GILane3:
+        color: 'C80000'
+        fade: 1000ms
+      l_GILane4:
+        color: 'C80000'
+        fade: 1000ms
+      l_GILane5:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIScoopLR:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIScoopMR:
+        color: 'C81E00'
+        fade: 1000ms
+      l_GIScoopUC:
+        color: 'C80200'
+        fade: 1000ms
+      l_yellowTargetLeft:
+        color: 'C80C00'
+        fade: 1000ms
+      l_yellowTargetRight:
+        color: 'C80F00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveSpinnerLower:
+        color: 'C80200'
+        fade: 1000ms
+      l_GIScoopML:
+        color: 'C81C00'
+        fade: 1000ms
+      l_GIScoopMR:
+        color: 'C80F00'
+        fade: 1000ms
+      l_GIScoopUC:
+        color: 'C80000'
+        fade: 1000ms
+      l_jetUpperLeft:
+        color: 'C81C00'
+        fade: 1000ms
+      l_jetUpperRight:
+        color: 'C81F00'
+        fade: 1000ms
+      l_scoop:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_spinner:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_yellowTargetLeft:
+        color: 'C80200'
+        fade: 1000ms
+      l_yellowTargetRight:
+        color: 'C80400'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIAboveSpinnerLower:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIScoopLL:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIScoopLR:
+        color: 'C81B00'
+        fade: 1000ms
+      l_GIScoopML:
+        color: 'C80E00'
+        fade: 1000ms
+      l_GIScoopMR:
+        color: 'C80400'
+        fade: 1000ms
+      l_jetLowerCenter:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_jetUpperLeft:
+        color: 'C80F00'
+        fade: 1000ms
+      l_jetUpperRight:
+        color: 'C81100'
+        fade: 1000ms
+      l_yellowTargetLeft:
+        color: 'C80000'
+        fade: 1000ms
+      l_yellowTargetRight:
+        color: 'C80000'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIDropRight1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIScoopLR:
+        color: 'C80D00'
+        fade: 1000ms
+      l_GIScoopML:
+        color: 'C80300'
+        fade: 1000ms
+      l_GIScoopMR:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropRight3:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_jetUpperLeft:
+        color: 'C80300'
+        fade: 1000ms
+      l_jetUpperRight:
+        color: 'C80400'
+        fade: 1000ms
+      l_spinner:
+        color: 'C82000'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIDropCenterLeft:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIDropCenterRight:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIDropLeft1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIScoopLL:
+        color: 'C81900'
+        fade: 1000ms
+      l_GIScoopLR:
+        color: 'C80200'
+        fade: 1000ms
+      l_GIScoopML:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropLeft3:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_jetLowerCenter:
+        color: 'C82000'
+        fade: 1000ms
+      l_jetUpperLeft:
+        color: 'C80000'
+        fade: 1000ms
+      l_jetUpperRight:
+        color: 'C80000'
+        fade: 1000ms
+      l_scoop:
+        color: 'C81600'
+        fade: 1000ms
+      l_spinner:
+        color: 'C81200'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIDropLeft0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIDropRight0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GIScoopLL:
+        color: 'C80C00'
+        fade: 1000ms
+      l_GIScoopLR:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropCenterLeft:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropCenterRight:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropLeft2:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropRight2:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_jetLowerCenter:
+        color: 'C81100'
+        fade: 1000ms
+      l_mode6:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_scoop:
+        color: 'C80800'
+        fade: 1000ms
+      l_spinner:
+        color: 'C80600'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIDropCenterLeft:
+        color: 'C81E00'
+        fade: 1000ms
+      l_GIDropCenterRight:
+        color: 'C81E00'
+        fade: 1000ms
+      l_GIDropLeft1:
+        color: 'C81900'
+        fade: 1000ms
+      l_GIDropRight1:
+        color: 'C81500'
+        fade: 1000ms
+      l_GIScoopLL:
+        color: 'C80100'
+        fade: 1000ms
+      l_bonus8:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropLeft1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropLeft3:
+        color: 'C81800'
+        fade: 1000ms
+      l_dropRight1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropRight3:
+        color: 'C81500'
+        fade: 1000ms
+      l_jetLowerCenter:
         color: 'C80500'
+        fade: 1000ms
+      l_scoop:
+        color: 'C80000'
+        fade: 1000ms
+      l_spinner:
+        color: 'C80000'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIDropCenterLeft:
+        color: 'C81000'
+        fade: 1000ms
+      l_GIDropCenterRight:
+        color: 'C81000'
+        fade: 1000ms
+      l_GIDropLeft1:
+        color: 'C80C00'
+        fade: 1000ms
+      l_GIDropRight0:
+        color: 'C81C00'
+        fade: 1000ms
+      l_GIDropRight1:
+        color: 'C80800'
+        fade: 1000ms
+      l_GIScoopLL:
+        color: 'C80000'
+        fade: 1000ms
+      l_bonus7:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropLeft0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropLeft2:
+        color: 'C81900'
+        fade: 1000ms
+      l_dropLeft3:
+        color: 'C80B00'
+        fade: 1000ms
+      l_dropRight0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropRight2:
+        color: 'C81600'
+        fade: 1000ms
+      l_dropRight3:
+        color: 'C80800'
+        fade: 1000ms
+      l_jetLowerCenter:
+        color: 'C80000'
+        fade: 1000ms
+      l_mode5:
+        color: 'FFFF00'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIDropCenterLeft:
+        color: 'C80400'
+        fade: 1000ms
+      l_GIDropCenterRight:
+        color: 'C80400'
+        fade: 1000ms
+      l_GIDropLeft0:
+        color: 'C81100'
+        fade: 1000ms
+      l_GIDropLeft1:
+        color: 'C80200'
+        fade: 1000ms
+      l_GIDropRight0:
+        color: 'C80E00'
+        fade: 1000ms
+      l_GIDropRight1:
+        color: 'C80000'
+        fade: 1000ms
+      l_bonus6:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_bonusBig1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropCenterLeft:
+        color: 'C81000'
+        fade: 1000ms
+      l_dropCenterRight:
+        color: 'C80F00'
+        fade: 1000ms
+      l_dropLeft1:
+        color: 'C81700'
+        fade: 1000ms
+      l_dropLeft2:
+        color: 'C80B00'
+        fade: 1000ms
+      l_dropLeft3:
+        color: 'C80100'
+        fade: 1000ms
+      l_dropRight1:
+        color: 'C81600'
+        fade: 1000ms
+      l_dropRight2:
+        color: 'C80900'
+        fade: 1000ms
+      l_dropRight3:
+        color: 'C80000'
+        fade: 1000ms
+      l_mode4:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_mode6:
+        color: 'C81400'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIDropCenterLeft:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIDropCenterRight:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIDropLeft0:
+        color: 'C80500'
+        fade: 1000ms
+      l_GIDropLeft1:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIDropRight0:
+        color: 'C80300'
+        fade: 1000ms
+      l_GILowLeft:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GILowRight:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_bonus4:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_bonus5:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_bonus8:
+        color: 'C81300'
+        fade: 1000ms
+      l_bonusBig0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_dropCenterLeft:
+        color: 'C80400'
+        fade: 1000ms
+      l_dropCenterRight:
+        color: 'C80400'
+        fade: 1000ms
+      l_dropLeft0:
+        color: 'C81700'
+        fade: 1000ms
+      l_dropLeft1:
+        color: 'C80A00'
+        fade: 1000ms
+      l_dropLeft2:
+        color: 'C80100'
+        fade: 1000ms
+      l_dropLeft3:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropRight0:
+        color: 'C81600'
+        fade: 1000ms
+      l_dropRight1:
+        color: 'C80900'
+        fade: 1000ms
+      l_dropRight2:
+        color: 'C80000'
+        fade: 1000ms
+      l_mode3:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_mode5:
+        color: 'C81700'
+        fade: 1000ms
+      l_mode6:
+        color: 'C80700'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GIDropLeft0:
+        color: 'C80000'
+        fade: 1000ms
+      l_GIDropRight0:
+        color: 'C80000'
+        fade: 1000ms
+      l_bonus3:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_bonus7:
+        color: 'C81100'
+        fade: 1000ms
+      l_bonus8:
+        color: 'C80700'
+        fade: 1000ms
+      l_dropCenterLeft:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropCenterRight:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropLeft0:
+        color: 'C80A00'
+        fade: 1000ms
+      l_dropLeft1:
+        color: 'C80100'
+        fade: 1000ms
+      l_dropLeft2:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropRight0:
+        color: 'C80900'
+        fade: 1000ms
+      l_dropRight1:
+        color: 'C80000'
+        fade: 1000ms
+      l_mode2:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_mode4:
+        color: 'C81900'
+        fade: 1000ms
+      l_mode5:
+        color: 'C80A00'
+        fade: 1000ms
+      l_mode6:
+        color: 'C80000'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_bonus2:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_bonus5:
+        color: 'C81800'
+        fade: 1000ms
+      l_bonus6:
+        color: 'C80E00'
+        fade: 1000ms
+      l_bonus7:
+        color: 'C80400'
+        fade: 1000ms
+      l_bonus8:
+        color: 'C80000'
+        fade: 1000ms
+      l_bonusBig1:
+        color: 'C80D00'
+        fade: 1000ms
+      l_dropLeft0:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropLeft1:
+        color: 'C80000'
+        fade: 1000ms
+      l_dropRight0:
+        color: 'C80000'
+        fade: 1000ms
+      l_mode1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_mode4:
+        color: 'C80B00'
         fade: 1000ms
       l_mode5:
         color: 'C80000'
@@ -983,49 +1094,82 @@
 - duration: 1
   lights:
       l_GILowLeft:
-        color: 'C80A00'
+        color: 'C81100'
         fade: 1000ms
       l_GILowRight:
-        color: 'C80900'
-        fade: 1000ms
-      l_bonus0:
-        color: 'C83800'
+        color: 'C81000'
         fade: 1000ms
       l_bonus1:
-        color: 'C83000'
-        fade: 1000ms
-      l_bonus2:
-        color: 'C82500'
-        fade: 1000ms
-      l_bonus3:
-        color: 'C81900'
+        color: 'FFFF00'
         fade: 1000ms
       l_bonus4:
-        color: 'C80E00'
+        color: 'C81500'
         fade: 1000ms
       l_bonus5:
+        color: 'C80A00'
+        fade: 1000ms
+      l_bonus6:
+        color: 'C80300'
+        fade: 1000ms
+      l_bonus7:
+        color: 'C80000'
+        fade: 1000ms
+      l_bonusBig0:
+        color: 'C80F00'
+        fade: 1000ms
+      l_bonusBig1:
+        color: 'C80200'
+        fade: 1000ms
+      l_mode0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_mode3:
+        color: 'C80D00'
+        fade: 1000ms
+      l_mode4:
+        color: 'C80100'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_GILowLeft:
+        color: 'C80500'
+        fade: 1000ms
+      l_GILowRight:
         color: 'C80400'
+        fade: 1000ms
+      l_GISlingLeft1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_GISlingRight1:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_bonus0:
+        color: 'FFFF00'
+        fade: 1000ms
+      l_bonus3:
+        color: 'C81300'
+        fade: 1000ms
+      l_bonus4:
+        color: 'C80800'
+        fade: 1000ms
+      l_bonus5:
+        color: 'C80100'
         fade: 1000ms
       l_bonus6:
         color: 'C80000'
         fade: 1000ms
       l_bonusBig0:
-        color: 'C80800'
+        color: 'C80400'
         fade: 1000ms
       l_bonusBig1:
         color: 'C80000'
         fade: 1000ms
-      l_mode0:
-        color: 'C83600'
-        fade: 1000ms
-      l_mode1:
-        color: 'C82800'
-        fade: 1000ms
       l_mode2:
-        color: 'C81700'
+        color: 'C81100'
         fade: 1000ms
       l_mode3:
-        color: 'C80600'
+        color: 'C80200'
         fade: 1000ms
       l_mode4:
         color: 'C80000'
@@ -1039,26 +1183,20 @@
       l_GILowRight:
         color: 'C80000'
         fade: 1000ms
-      l_GISlingLeft1:
-        color: 'C83200'
+      l_GISlingLeft0:
+        color: 'FFFF00'
         fade: 1000ms
-      l_GISlingRight1:
-        color: 'C83300'
-        fade: 1000ms
-      l_bonus0:
-        color: 'C82D00'
-        fade: 1000ms
-      l_bonus1:
-        color: 'C82100'
+      l_GISlingRight0:
+        color: 'FFFF00'
         fade: 1000ms
       l_bonus2:
-        color: 'C81500'
+        color: 'C80F00'
         fade: 1000ms
       l_bonus3:
-        color: 'C80A00'
+        color: 'C80600'
         fade: 1000ms
       l_bonus4:
-        color: 'C80200'
+        color: 'C80000'
         fade: 1000ms
       l_bonus5:
         color: 'C80000'
@@ -1066,14 +1204,11 @@
       l_bonusBig0:
         color: 'C80000'
         fade: 1000ms
-      l_mode0:
-        color: 'C82A00'
-        fade: 1000ms
       l_mode1:
-        color: 'C81800'
+        color: 'C81200'
         fade: 1000ms
       l_mode2:
-        color: 'C80800'
+        color: 'C80500'
         fade: 1000ms
       l_mode3:
         color: 'C80000'
@@ -1082,40 +1217,31 @@
 - duration: 1
   lights:
       l_2x:
-        color: 'C03800'
+        color: 'FFFF00'
         fade: 1000ms
-      l_GISlingLeft0:
-        color: 'C83300'
+      l_3x:
+        color: 'FFFF00'
         fade: 1000ms
-      l_GISlingLeft1:
-        color: 'C82300'
+      l_4x:
+        color: 'FFFF00'
         fade: 1000ms
-      l_GISlingRight0:
-        color: 'C83500'
-        fade: 1000ms
-      l_GISlingRight1:
-        color: 'C82600'
-        fade: 1000ms
-      l_bonus0:
-        color: 'C81E00'
+      l_5x:
+        color: 'FFFF00'
         fade: 1000ms
       l_bonus1:
-        color: 'C81100'
+        color: 'C80D00'
         fade: 1000ms
       l_bonus2:
-        color: 'C80700'
+        color: 'C80400'
         fade: 1000ms
       l_bonus3:
         color: 'C80000'
         fade: 1000ms
-      l_bonus4:
-        color: 'C80000'
-        fade: 1000ms
       l_mode0:
-        color: 'C81A00'
+        color: 'FFFC00'
         fade: 1000ms
       l_mode1:
-        color: 'C80900'
+        color: 'C80600'
         fade: 1000ms
       l_mode2:
         color: 'C80000'
@@ -1123,80 +1249,50 @@
 
 - duration: 1
   lights:
-      l_2x:
-        color: 'C83000'
-        fade: 1000ms
-      l_3x:
-        color: 'C83000'
-        fade: 1000ms
-      l_4x:
-        color: 'C83000'
-        fade: 1000ms
-      l_5x:
-        color: 'C83100'
-        fade: 1000ms
-      l_GISlingLeft0:
-        color: 'C82500'
-        fade: 1000ms
       l_GISlingLeft1:
-        color: 'C81200'
-        fade: 1000ms
-      l_GISlingRight0:
-        color: 'C82800'
+        color: 'C80F00'
         fade: 1000ms
       l_GISlingRight1:
-        color: 'C81500'
+        color: 'C81200'
         fade: 1000ms
       l_bonus0:
-        color: 'C80E00'
+        color: 'C80B00'
         fade: 1000ms
       l_bonus1:
-        color: 'C80400'
+        color: 'C80200'
         fade: 1000ms
       l_bonus2:
         color: 'C80000'
         fade: 1000ms
       l_mode0:
-        color: 'C80B00'
+        color: 'C80800'
         fade: 1000ms
       l_mode1:
         color: 'C80000'
         fade: 1000ms
       l_specialLeft:
-        color: 'C83800'
+        color: 'FFFF00'
         fade: 1000ms
       l_specialRight:
-        color: 'C83900'
+        color: 'FFFF00'
         fade: 1000ms
 
 - duration: 1
   lights:
-      l_2x:
-        color: 'C82100'
-        fade: 1000ms
-      l_3x:
-        color: 'C82100'
-        fade: 1000ms
-      l_4x:
-        color: 'C82100'
-        fade: 1000ms
-      l_5x:
-        color: 'C82200'
-        fade: 1000ms
       l_GISlingLeft0:
-        color: 'C81500'
+        color: 'C81200'
         fade: 1000ms
       l_GISlingLeft1:
-        color: 'C80500'
+        color: 'C80400'
         fade: 1000ms
       l_GISlingRight0:
-        color: 'C81900'
+        color: 'FFFC00'
         fade: 1000ms
       l_GISlingRight1:
-        color: 'C80700'
+        color: 'C80600'
         fade: 1000ms
       l_bonus0:
-        color: 'C80200'
+        color: 'C80100'
         fade: 1000ms
       l_bonus1:
         color: 'C80000'
@@ -1205,37 +1301,31 @@
         color: 'C80000'
         fade: 1000ms
       l_shootAgain:
-        color: 'C83600'
-        fade: 1000ms
-      l_specialLeft:
-        color: 'C82C00'
-        fade: 1000ms
-      l_specialRight:
-        color: 'C82F00'
+        color: 'FFFF00'
         fade: 1000ms
 
 - duration: 1
   lights:
       l_2x:
-        color: 'C81100'
+        color: 'C80F00'
         fade: 1000ms
       l_3x:
-        color: 'C81100'
+        color: 'C80F00'
         fade: 1000ms
       l_4x:
-        color: 'C81100'
+        color: 'C80F00'
         fade: 1000ms
       l_5x:
-        color: 'C81200'
+        color: 'C81000'
         fade: 1000ms
       l_GISlingLeft0:
-        color: 'C80700'
+        color: 'C80600'
         fade: 1000ms
       l_GISlingLeft1:
         color: 'C80000'
         fade: 1000ms
       l_GISlingRight0:
-        color: 'C80A00'
+        color: 'C80800'
         fade: 1000ms
       l_GISlingRight1:
         color: 'C80000'
@@ -1243,15 +1333,6 @@
       l_bonus0:
         color: 'C80000'
         fade: 1000ms
-      l_shootAgain:
-        color: 'C82900'
-        fade: 1000ms
-      l_specialLeft:
-        color: 'C81C00'
-        fade: 1000ms
-      l_specialRight:
-        color: 'C82000'
-        fade: 1000ms
 
 - duration: 1
   lights:
@@ -1262,13 +1343,10 @@
         color: 'C80400'
         fade: 1000ms
       l_4x:
-        color: 'C80500'
+        color: 'C80400'
         fade: 1000ms
       l_5x:
-        color: 'C80500'
-        fade: 1000ms
-      l_GICreditsIn:
-        color: 'C83600'
+        color: 'C80400'
         fade: 1000ms
       l_GISlingLeft0:
         color: 'C80000'
@@ -1277,54 +1355,18 @@
         color: 'C80000'
         fade: 1000ms
       l_shootAgain:
-        color: 'C81900'
+        color: 'FFFE00'
         fade: 1000ms
       l_specialLeft:
-        color: 'C80D00'
+        color: 'C80C00'
         fade: 1000ms
       l_specialRight:
-        color: 'C81100'
+        color: 'C80F00'
         fade: 1000ms
 
 - duration: 1
   lights:
-      l_2x:
-        color: 'C80000'
-        fade: 1000ms
-      l_3x:
-        color: 'C80000'
-        fade: 1000ms
-      l_4x:
-        color: 'C80000'
-        fade: 1000ms
-      l_5x:
-        color: 'C80000'
-        fade: 1000ms
-      l_GICreditsIn:
-        color: 'C82900'
-        fade: 1000ms
       l_shootAgain:
-        color: 'C80A00'
-        fade: 1000ms
-      l_specialLeft:
-        color: 'C80200'
-        fade: 1000ms
-      l_specialRight:
-        color: 'C80400'
-        fade: 1000ms
-
-- duration: 1
-  lights:
-      l_GICreditsIn:
-        color: 'C81A00'
-        fade: 1000ms
-      l_shootAgain:
-        color: 'C80000'
-        fade: 1000ms
-      l_specialLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_specialRight:
-        color: 'C80000'
+        color: 'C81700'
         fade: 1000ms
     
