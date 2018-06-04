@@ -30,26 +30,38 @@ widget_player:
        key: select01
        action: add
        slide: selector_slide
+       widget_settings:
+         text: "Locate the Cygnus"
     select_02_off:
        key: select02
        action: add
        slide: selector_slide
+       widget_settings:
+         text: "Escape the Black Hole"
     select_03_off:
        key: select03
        action: add
        slide: selector_slide
+       widget_settings:
+         text: "Shooting Gallery"
     select_04_off:
        key: select04
        action: add
        slide: selector_slide
+       widget_settings:
+         text: "Meteor Strike"
     select_05_off:
        key: select05
        action: add
        slide: selector_slide
+       widget_settings:
+         text: "Corridor Battle"
     select_06_off:
        key: select06
        action: add
        slide: selector_slide
+       widget_settings:
+         text: "David vs. Goliath"
   untitled_mode_1_omitted:
     select_01_off:
        key: select01
