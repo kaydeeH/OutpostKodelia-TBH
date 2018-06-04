@@ -1,0 +1,481 @@
+#show_version=5
+- duration: 1
+  lights:
+      l_2x: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_3x: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_4x: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_5x: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIAboveScoopLower: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIAboveScoopUpper: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIAboveSpinnerLower: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIAboveSpinnerUpper: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GICreditsIn: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIDropCenterLeft: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIDropCenterRight: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIDropLeft0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIDropLeft1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIDropRight0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIDropRight1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GILane0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GILane1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GILane2: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GILane3: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GILane4: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GILane5: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GILowLeft: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GILowRight: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIScoopLL: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIScoopLR: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIScoopML: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIScoopMR: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIScoopUC: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GISlingLeft0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GISlingLeft1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GISlingRight0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GISlingRight1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIUpperCL: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIUpperCR: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIUpperL: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_GIUpperR: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus2: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus3: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus4: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus5: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus6: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus7: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonus8: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonusBig0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_bonusBig1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropCenterLeft: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropCenterRight: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropLeft0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropLeft1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropLeft2: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropLeft3: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropRight0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropRight1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropRight2: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_dropRight3: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_jetLowerCenter: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_jetUpperLeft: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_jetUpperRight: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_lane0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_lane1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_lane2: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_lane3: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_lane4: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_mode0: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_mode1: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_mode2: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_mode3: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_mode4: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_mode5: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_mode6: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_scoop: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_shootAgain: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_specialLeft: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_specialRight: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_spinner: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_yellowTargetLeft: 
+        color: 'EFD700'
+        fade: 1000ms
+      l_yellowTargetRight: 
+        color: 'EFD700'
+        fade: 1000ms
+
+- duration: 1
+  lights:
+      l_2x: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_3x: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_4x: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_5x: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIAboveScoopLower: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIAboveScoopUpper: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIAboveSpinnerLower: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIAboveSpinnerUpper: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GICreditsIn: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIDropCenterLeft: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIDropCenterRight: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIDropLeft0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIDropLeft1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIDropRight0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIDropRight1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GILane0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GILane1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GILane2: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GILane3: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GILane4: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GILane5: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GILowLeft: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GILowRight: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIScoopLL: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIScoopLR: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIScoopML: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIScoopMR: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIScoopUC: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GISlingLeft0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GISlingLeft1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GISlingRight0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GISlingRight1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIUpperCL: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIUpperCR: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIUpperL: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_GIUpperR: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus2: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus3: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus4: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus5: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus6: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus7: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonus8: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonusBig0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_bonusBig1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropCenterLeft: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropCenterRight: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropLeft0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropLeft1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropLeft2: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropLeft3: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropRight0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropRight1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropRight2: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_dropRight3: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_jetLowerCenter: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_jetUpperLeft: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_jetUpperRight: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_lane0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_lane1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_lane2: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_lane3: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_lane4: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_mode0: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_mode1: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_mode2: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_mode3: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_mode4: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_mode5: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_mode6: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_scoop: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_shootAgain: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_specialLeft: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_specialRight: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_spinner: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_yellowTargetLeft: 
+        color: 'E0C800'
+        fade: 1000ms
+      l_yellowTargetRight: 
+        color: 'E0C800'
+        fade: 1000ms
+    
