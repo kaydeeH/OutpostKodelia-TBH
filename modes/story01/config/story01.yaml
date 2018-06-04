@@ -10,6 +10,7 @@ mode:
    start_events: selector_untitled_mode_1_selected
    stop_events: story_is_completed
    priority: 400
+   file_log: full
 
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
