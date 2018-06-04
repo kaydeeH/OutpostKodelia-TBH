@@ -213,6 +213,10 @@ event_player:
       - ach_completed
     achievement_untitled_mode_7_state_completed:
       - ach_completed
+    story_is_completed:
+      - start_base_music
+    mode_base_started:
+      - start_base_music
 
 # shotGroupPopBumpers_popBumpBlue_complete
 # shotGroupPopBumpers_popBumpGreen_complete
@@ -295,11 +299,15 @@ sound_player:
     s_jet_lower_center_active: testFX3
     s_jet_upper_right_active: testFX3
     s_jet_upper_left_active: testFX3
-    mode_base_started:
+    start_base_music:
       overture:
           action: play
           loops: -1
           mode_end_action: stop
+          fade_out: 1s
+    mode_selector_stopped:
+      overture:
+          action: stop
 
 show_player:
   mode_base_started:

@@ -279,7 +279,7 @@ timers:
         value: 2
       - event: shotScoopMeteor_hit
         action: change_tick_interval
-        value: 0.1
+        value: 0.9
       - event: story_intro_complete
         action: start
 
@@ -297,3 +297,10 @@ widgets:
        text: "Meteor Time: (timeRemain)s  Meteor Score: (meteor_accum)"
        y: 80%
 
+sound_player:
+    mode_story04_started:
+      meteor:
+          action: play
+          loops: -1
+          fade_out: 2s
+          mode_end_action: stop

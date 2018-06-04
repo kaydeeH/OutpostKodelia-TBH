@@ -39,3 +39,5 @@ sounds:
         file: 135885__andre-onate__gama-laser.wav
     overture:
         file: Overture.wav
+    meteor:
+        file: HotterAndHeavier-SecondHalf.wav
