@@ -4,33 +4,33 @@
   lights:
     l_GIScoopUC:
       color: 0010FF
-      fade: 500ms
+      fade: 1000ms
     l_GIScoopMR:
       color: 0010FF
-      fade: 500ms
+      fade: 1000ms
     l_GIScoopML:
       color: 0010FF
-      fade: 500ms
+      fade: 1000ms
     l_GIScoopLR:
       color: 0010FF
-      fade: 500ms
+      fade: 1000ms
     l_GIScoopLL:
       color: 0010FF
-      fade: 500ms
+      fade: 1000ms
 - duration: 1
   lights:
     l_GIScoopUC:
       color: 00087F
-      fade: 500ms
+      fade: 1000ms
     l_GIScoopMR:
       color: 00087F
-      fade: 500ms
+      fade: 1000ms
     l_GIScoopML:
       color: 00087F
-      fade: 500ms
+      fade: 1000ms
     l_GIScoopLR:
       color: 00087F
-      fade: 500ms
+      fade: 1000ms
     l_GIScoopLL:
       color: 00087F
-      fade: 500ms
+      fade: 1000ms
