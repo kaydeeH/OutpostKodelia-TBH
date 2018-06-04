@@ -13,12 +13,12 @@ slide_player:
   mode_base_started: scoring_slide
 #  scoop_slide: s_ir_scoop_detect_active
 
-widget_player:
-   s_jet_upper_left_active:
-      sample_quick_vid:
-         slide: scoring_slide
-         widget_settings:
-           expire: 2s
+#widget_player:
+#   s_jet_upper_left_active:
+#      sample_quick_vid:
+#         slide: scoring_slide
+#         widget_settings:
+#           expire: 2s
 
 slides:
    scoring_slide:
