@@ -47,7 +47,7 @@ event_player:
      - cygnus_located
    shotScoopStory01_ShotProfileScoopStory01_scoopActive_hit:
      - cygnus_found
-   shotScoopStory01_ShotProfileScoopStory01_inactive_hit:
+   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
      - scoop_eject
 
 # Do we want to do something for each lane found?
