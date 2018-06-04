@@ -150,6 +150,7 @@ slides:
 
 shot_groups:
  shotGroupCorridorTargets:
+   reset_events: story_is_completed_unsuccessful
    shots: corL0, corL1, corL2, corL3, corLC, corRC, corR3, corR2, corR1, corR0
    enable_events: story_intro_complete
    disable_events: story_is_about_to_end

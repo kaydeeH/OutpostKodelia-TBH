@@ -9,7 +9,6 @@ mode:
 #     Issue a scoop_eject after any introduction activities
 # Modes that end with a Scoop Hit --
 #     Issue a scoop eject after any outro-activities
-# TEMP UNTIL REAL MODE PUT INTO PLACE
 
 # Success/Failure
 # By default, success = not losing ball, failure = losing ball
@@ -23,13 +22,14 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
-   timer_yttimer02_complete:
+   shotScoopEscape_shotProfileScoopEscape_inctive_hit:
+     - scoop_eject
+   shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
      - story_is_about_to_end
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story02_successful
-#    Only used when scoop hits end the mode
-#    - scoop_eject
+     - scoop_eject
    ball_ending:
      - story_is_completed_unsuccessful
      - acheivement_story02_unsuccessful
@@ -67,52 +67,157 @@ slides:
    story_02_intro_slide:
     widgets:
       - type: text
-        text: STORY 02 BEGIN SHOW
+        text: Escape The Black Hole
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: Stabalize the Palomino by hitting Pop Bumpers
+        y: 40%
+        color: red
+        font_size: 50
+      - type: text
+        text: When light, hit the spinner to engage Thrusters
+        y: 30%
+        color: red
+        font_size: 50
+      - type: text
+        text: Then ESCAPE the black hole out the scoop!
+        y: 20%
+        color: red
+        font_size: 50
    story_02_outro_slide:
     widgets:
       - type: text
-        text: STORY 02 END SHOW
+        text: YOU HAVE ESCAPED THE BLACK HOLE
         color: red
-        font_size: 100
+        font_size: 80
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: You are super duper neat
+        y: 40%
+        color: red
+        font_size: 50
 
 # The below is mode specific data
 
 
 variable_player:
-   mode_story02_started:
-     temp_ythurryup_value:
+   story_intro_complete:
+     stability:
        action: set
-       int: 100000
-   timer_yttimer02_tick:
-     temp_ythurryup_value: -300
-   s_sTargetYellowL_active:
-     score: current_player.temp_ythurryup_value|block
-   s_sTargetYellowR_active:
-     score: current_player.temp_ythurryup_value|block
+       int: 50
+   timer_destablizer_tick:
+      stability: -1
+   shotgrouppopbumpers_hit:
+      stability: 5
+
 
 timers:
-   yttimer02:
-     start_value: 100
-     end_value: 0
-     tick_interval: .1s
-     direction: down
-     start_running: yes
+   destablizer:
+     start_value: 0
+     tick_interval: 1s
+     direction: up
+     start_running: no
+     control_events:
+       - event: story_intro_complete
+         action: start
 
 widget_player:
-   mode_story02_started:
+#   story_intro_complete:
+#      yt_remain_widget_02:
+#         slide: scoring_slide
+   status_stabilize_engines:
       yt_remain_widget_02:
+         slide: scoring_slide
+   status_engage_engines:
+      yt_remain_widget_02:
+         action: remove
+      yt_engine_widget_02:
+         slide: scoring_slide
+   remove_status_engage_engines:
+      yt_engine_widget_02:
+         action: remove
+   status_escape:
+      yt_engine_widget_02:
+         action: remove
+      yt_escape_widget_02:
          slide: scoring_slide
    story02_ended:
       yt_remain_widget_02:
          action: remove
+      yt_engine_widget_02:
+         action: remove
+
+shots:
+  spinnerEngines:
+    switch: s_spinner
+    show_tokens:
+       light: l_spinner
+    disable_events: status_stabilize_engines
+    enable_events: status_engage_engines
+  shotScoopEscape:
+    switch: s_ir_scoop_detect
+    reset_events: story_intro_complete
+    advance_events: status_escape
+    show_tokens:
+      light: l_scoop
+    profile: shotProfileScoopEscape
+
+shot_profiles:
+  shotProfileScoopEscape:
+    show_when_disabled: true
+    advance_on_hit: false
+    block: true
+    states:
+      - name: inactive
+        show: off
+      - name: scoopActive
+        show: popgreen
+
+state_machines:
+   escapeMachine:
+     states:
+       start:
+         label: Start State
+       stabilizeEngines:
+         label: start
+         events_when_started: status_stabilize_engines
+       engageEngines:
+         label: Engage State
+         events_when_started: status_engage_engines
+         events_when_stopped: remove_status_engage_engines
+       escapeReady:
+         label: Escape State
+         events_when_started: status_escape
+     transitions:
+       - source: start
+         target: stabilizeEngines
+         events: story_intro_complete
+       - source: stabilizeEngines
+         target: engageEngines
+         events: player_stability{value>=100}
+       - source: engageEngines
+         target: stabilizeEngines
+         events: player_stability{value<100}
+       - source: engageEngines
+         target: escapeReady
+         events: spinnerengines_hit
+
 
 widgets:
    yt_remain_widget_02:
      - type: text
-       text: "Story 02 Hurry Up: (temp_ythurryup_value)"
+       text: "PALOMINO STABILITY: (stability)"
        y: 80%
+   yt_engine_widget_02:
+     - type: text
+       text: " -- STABILITY ACHIEVED * ENGAGE ENGINES --"
+       y: 80%
+   yt_escape_widget_02:
+     - type: text
+       font_size: 30
+       text: " -- ENGINES ENGAGED ** ESCAPE THE BLACK HOLE --"
+       y: 80%
+
 
