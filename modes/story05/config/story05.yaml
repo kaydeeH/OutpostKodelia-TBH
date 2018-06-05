@@ -6,13 +6,7 @@ config:
 mode:
    start_events: selector_untitled_mode_5_selected
    stop_events: story_is_completed
-   priority: 400
-
-# All Story Modes --
-#     Issue a scoop_eject after any introduction activities
-# Modes that end with a Scoop Hit --
-#     Issue a scoop eject after any outro-activities
-# TEMP UNTIL REAL MODE PUT INTO PLACE
+   priority: 900
 
 # Success/Failure
 # By default, success = not losing ball, failure = losing ball
@@ -20,6 +14,11 @@ mode:
 # story_is_completed_successful / acheivement_story##_successful
 # story_is_completed_unsuccessful / acheivement_story##_unsuccessful
 # are issued.
+
+queue_relay_player:
+  ball_ending:
+    post: story_is_about_to_fail
+    wait_for: story_outro_fail_complete
 
 event_player:
    mode_story05_started:
@@ -40,9 +39,6 @@ event_player:
      - story_is_completed_unsuccessful
      - acheivement_story05_unsuccessful
      - mode_using_targets_ended # always add this if your mode makes use of the drop targets
-   ball_ending:
-     - story_is_completed_unsuccessful
-     - acheivement_story05_unsuccessful
    story_is_completed_successful:
     - story_is_completed
    story_is_completed_unsuccessful:
@@ -72,21 +68,15 @@ event_player:
 show_player:
    story_is_about_to_begin:
       story_05_intro:
-         events_when_advanced: story_intro_complete
          events_when_completed: story_intro_complete
-         events_when_stopped: story_intro_complete
          loops: 0
    story_is_about_to_fail:
       story_05_outro_fail:
-         events_when_advanced: story_outro_failed_complete
          events_when_completed: story_outro_failed_complete
-         events_when_stopped: story_outro_failed_complete
          loops: 0
    story_is_about_to_end:
       story_05_outro:
-         events_when_advanced: story_outro_complete
          events_when_completed: story_outro_complete
-         events_when_stopped: story_outro_complete
          loops: 0
 
 shows:
