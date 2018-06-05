@@ -8,7 +8,8 @@ config:
 mode:
    start_events: selector_untitled_mode_6_selected
    stop_events: story_is_completed
-   priority: 400
+   stop_on_ball_end: false
+   priority: 900
 
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
@@ -21,6 +22,11 @@ mode:
 # story_is_completed_successful / acheivement_story##_successful
 # story_is_completed_unsuccessful / acheivement_story##_unsuccessful
 # are issued.
+
+queue_relay_player:
+  ball_ending:
+    post: story_is_about_to_fail
+    wait_for: story_outro_fail_complete
 
 event_player:
    mode_story06_started:
@@ -37,10 +43,6 @@ event_player:
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
      - acheivement_story06_unsuccessful
-   ball_will_end:
-     - story_is_about_to_fail
-#     - story_is_completed_unsuccessful
-#     - acheivement_story06_unsuccessful
    story_is_completed_successful:
      - story_is_completed
    story_is_completed_unsuccessful:
@@ -50,21 +52,15 @@ event_player:
 show_player:
    story_is_about_to_begin:
       story_06_intro:
-         events_when_advanced: story_intro_complete
          events_when_completed: story_intro_complete
-         events_when_stopped: story_intro_complete
          loops: 0
    story_is_about_to_fail:
       story_06_outro_fail:
-         events_when_advanced: story_outro_fail_complete
          events_when_completed: story_outro_fail_complete
-         events_when_stopped: story_outro_fail_complete
          loops: 0
    story_is_about_to_end:
       story_06_outro:
-         events_when_advanced: story_outro_complete
          events_when_completed: story_outro_complete
-         events_when_stopped: story_outro_complete
          loops: 0
 
 shows:
@@ -122,6 +118,10 @@ slides:
 # The below is mode specific data
 
 variable_player:
+   mode_story06_started:
+     damage:
+       action: set
+       int: 999
    story_intro_complete:
      damage:
        action: set

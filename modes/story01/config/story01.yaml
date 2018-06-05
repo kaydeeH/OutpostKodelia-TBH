@@ -9,7 +9,7 @@ config:
 mode:
    start_events: selector_untitled_mode_1_selected
    stop_events: story_is_completed
-   priority: 400
+   priority: 900
    file_log: full
 
 # All Story Modes --
@@ -25,6 +25,11 @@ mode:
 # story_is_completed_unsuccessful / acheivement_story##_unsuccessful
 # are issued.
 
+queue_relay_player:
+  ball_ending:
+    post: story_is_about_to_fail
+    wait_for: story_outro_fail_complete
+
 event_player:
    mode_story01_started:
      - story_is_about_to_begin
@@ -35,7 +40,7 @@ event_player:
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story01_successful
-   ball_ending:
+   story_outro_complete_failed:
      - story_is_completed_unsuccessful
      - acheivement_story01_unsuccessful
    story_is_completed_successful:
@@ -68,15 +73,15 @@ event_player:
 show_player:
    story_is_about_to_begin:
       story_01_intro:
-         events_when_advanced: story_intro_complete
          events_when_completed: story_intro_complete
-         events_when_stopped: story_intro_complete
+         loops: 0
+   story_is_about_to_fail:
+      story_01_outro_failed:
+         events_when_completed: story_outro_complete_failed
          loops: 0
    story_is_about_to_end:
       story_01_outro:
-         events_when_advanced: story_outro_complete
          events_when_completed: story_outro_complete
-         events_when_stopped: story_outro_complete
          loops: 0
    shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
       pinwheel:
@@ -92,6 +97,10 @@ shows:
    story_01_outro:
      - time: 0
        slides: story_01_outro_slide
+       duration: 3
+   story_01_outro_failed:
+     - time: 0
+       slides: story_01_outro_failed_slide
        duration: 3
 
 slides:
@@ -116,6 +125,18 @@ slides:
         font_name: ocr-a-tribute-bold
       - type: text
         text: "Time Taken: (cygnus_seconds) seconds"
+        y: 40%
+        color: red
+        font_size: 50
+   story_01_outro_failed_slide:
+    widgets:
+      - type: text
+        text: "CYGNUS NOT LOCATED"
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: "MISSION FAILURE"
         y: 40%
         color: red
         font_size: 50

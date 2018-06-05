@@ -8,7 +8,7 @@
 mode:
    start_events: selector_untitled_mode_4_selected
    stop_events: story_is_completed
-   priority: 400
+   priority: 900
    file_log: full
 
 # All Story Modes --
@@ -22,6 +22,11 @@ mode:
 # story_is_completed_successful / acheivement_story##_successful
 # story_is_completed_unsuccessful / acheivement_story##_unsuccessful
 # are issued.
+
+queue_relay_player:
+  ball_ending:
+    post: ball_has_been_lost
+    wait_for: story_is_completed
 
 event_player:
    mode_story04_started:
@@ -145,10 +150,10 @@ state_machines:
         events: shotScoopMeteor_hit
       - source: start
         target: has_failed
-        events: timer_meteorTimer_complete
+        events: timer_meteorTimer_complete, ball_has_been_lost
       - source: will_pass
         target: has_passed
-        events: timer_meteorTimer_complete
+        events: timer_meteorTimer_complete, ball_has_been_lost
 
 
 variable_player:
@@ -199,10 +204,10 @@ show_player:
   timer_meteortimer_started:
      meteor:
        manual_advance: true
-       priority: 401
+       priority: 901
      scoopEscapeShow:
        speed: 1
-       priority: 450
+       priority: 950
   timer_meteortimer_tick:
      meteor:
        action: advance
@@ -210,56 +215,50 @@ show_player:
      meteor_scoop:
        speed: 4
        loops: -1
-       priority: 450
+       priority: 950
 #       show_tokens:
 #         rate: 250
   timer_meteortimer_tick{ticks_remaining > 18 and ticks_remaining <= 24}:
      meteor_scoop:
        speed: 8
        loops: -1
-       priority: 450
+       priority: 950
 #       show_tokens:
 #         rate: 125
   timer_meteortimer_tick{ticks_remaining > 12 and ticks_remaining <= 18}:
      meteor_scoop:
        speed: 16
        loops: -1
-       priority: 450
+       priority: 950
 #       show_tokens:
 #         rate: 62
   timer_meteortimer_tick{ticks_remaining > 6 and ticks_remaining <= 12}:
      meteor_scoop:
        speed: 32
        loops: -1
-       priority: 450
+       priority: 950
 #       show_tokens:
 #         rate: 31
   timer_meteortimer_tick{ticks_remaining <= 6}:
      meteor_scoop:
        speed: 64
        loops: -1
-       priority: 450
+       priority: 950
 #       show_tokens:
 #         rate: 15
 
 # BELOW are the "base" show player entries
   story_is_about_to_begin:
      story_04_intro:
-       events_when_advanced: story_intro_complete
        events_when_completed: story_intro_complete
-       events_when_stopped: story_intro_complete
        loops: 0
   story_is_about_to_fail:
      story_04_outro_fail:
-       events_when_advanced: story_outro_fail_complete
        events_when_completed: story_outro_fail_complete
-       events_when_stopped: story_outro_fail_complete
        loops: 0
   story_is_about_to_end:
      story_04_outro:
-       events_when_advanced: story_outro_complete
        events_when_completed: story_outro_complete
-       events_when_stopped: story_outro_complete
        loops: 0
 
 timers:

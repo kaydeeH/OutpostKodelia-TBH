@@ -3,7 +3,7 @@
 mode:
    start_events: selector_untitled_mode_2_selected
    stop_events: story_is_completed
-   priority: 400
+   priority: 900
 
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
@@ -16,6 +16,11 @@ mode:
 # story_is_completed_successful / acheivement_story##_successful
 # story_is_completed_unsuccessful / acheivement_story##_unsuccessful
 # are issued.
+
+queue_relay_player:
+  ball_ending:
+    post: story_is_about_to_fail
+    wait_for: story_outro_fail_complete
 
 event_player:
    mode_story02_started:
@@ -30,9 +35,9 @@ event_player:
      - scoop_eject
      - story_is_completed_successful
      - acheivement_story02_successful
-   ball_ending:
-     - story_is_completed_unsuccessful
-     - acheivement_story02_unsuccessful
+   story_outro_fail_complete:
+     - story_is_completed_successful
+     - acheivement_story02_successful
    story_is_completed_successful:
     - story_is_completed
    story_is_completed_unsuccessful:
@@ -42,21 +47,25 @@ event_player:
 show_player:
    story_is_about_to_begin:
       story_02_intro:
-         events_when_advanced: story_intro_complete
          events_when_completed: story_intro_complete
-         events_when_stopped: story_intro_complete
+         loops: 0
+   story_is_about_to_fail:
+      story_02_fail_outro:
+         events_when_completed: story_outro_fail_complete
          loops: 0
    story_is_about_to_end:
       story_02_outro:
-         events_when_advanced: story_outro_complete
          events_when_completed: story_outro_complete
-         events_when_stopped: story_outro_complete
          loops: 0
 
 shows:
    story_02_intro:
      - time: 0
        slides: story_02_intro_slide
+       duration: 3
+   story_02_fail_outro:
+     - time: 0
+       slides: story_02_outro_fail_slide
        duration: 3
    story_02_outro:
      - time: 0
@@ -84,6 +93,18 @@ slides:
       - type: text
         text: Then ESCAPE the black hole out the scoop!
         y: 20%
+        color: red
+        font_size: 50
+   story_02_outro_fail_slide:
+    widgets:
+      - type: text
+        text: YOU FAILED TO ESCAPE THE BLACK HOLE
+        color: red
+        font_size: 60
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: You are *NOT* super duper neat
+        y: 40%
         color: red
         font_size: 50
    story_02_outro_slide:
