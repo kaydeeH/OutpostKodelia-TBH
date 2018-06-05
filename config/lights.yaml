@@ -223,24 +223,28 @@ lights:
     number: 2-12-13-14
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
   l_dropRight2:
     number: 2-15-16-17
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
   l_dropRight1:
     number: 2-18-19-20
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
   l_dropRight0:
     number: 2-21-22-23
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
 
@@ -273,6 +277,7 @@ lights:
     number: 2-33-34-35
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
 
@@ -315,24 +320,28 @@ lights:
     number: 2-48-49-50
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
   l_dropLeft1:
     number: 2-51-52-53
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
   l_dropLeft2:
     number: 2-54-55-56
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
   l_dropLeft3:
     number: 2-57-58-59
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
 
@@ -359,6 +368,7 @@ lights:
     number: 2-69-70-71
     subtype: led
     default_fade_ms: 50ms
+    tags: gallery
     platform_settings:
       polarity: true
 

@@ -4,3 +4,4 @@ scriptlets:
   - start_interruptor_scriptlet.StartInterruptor
   - bonus_light_controller_scriptlet.BonusLightController
   - bonus_countdown_scriptlet.BonusCountdown
+  - shooting_gallery_light_controller.ShootingGalleryLightController

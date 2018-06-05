@@ -4,6 +4,7 @@ mode:
    start_events: selector_untitled_mode_3_selected
    stop_events: story_is_completed
    priority: 400
+   file_log: full
 
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
@@ -21,6 +22,7 @@ mode:
 event_player:
    mode_story03_started:
      - story_is_about_to_begin
+     - mode_using_targets_started # always add this if your mode makes use of the drop targets
    story_intro_complete:
      - scoop_eject
    timer_yttimer03_complete:
@@ -28,6 +30,7 @@ event_player:
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story03_successful
+     - mode_using_targets_ended # always add this if your mode makes use of the drop targets
 #    Only used when scoop hits end the mode
 #    - scoop_eject
    ball_ending:
@@ -42,17 +45,78 @@ event_player:
 show_player:
    story_is_about_to_begin:
       story_03_intro:
-         events_when_advanced: story_intro_complete
          events_when_completed: story_intro_complete
-         events_when_stopped: story_intro_complete
          loops: 0
+      drop_target_blackout_show:
+         priority: 400
    story_is_about_to_end:
       story_03_outro:
-         events_when_advanced: story_outro_complete
          events_when_completed: story_outro_complete
-         events_when_stopped: story_outro_complete
          loops: 0
-
+   gallery_light_change{lightname=="l_dropRight0" and colorval=="red"):
+      gallery_flasher_show:
+         speed: 10
+         priority: 401
+         loops: -1
+         show_tokens:
+           ln: l_dropRight0
+           cv: FF0000
+   gallery_light_change{lightname==l_dropRight1" and colorval=="red"):
+      gallery_flasher_show:
+         speed: 10
+         priority: 401
+         loops: -1
+         show_tokens:
+           ln: l_dropRight1
+           cv: FF0000
+   gallery_light_change{lightname=="l_dropRight2" and colorval=="red"):
+      gallery_flasher_show:
+         speed: 10
+         priority: 401
+         loops: -1
+         show_tokens:
+           ln: l_dropRight2
+           cv: FF0000
+   gallery_light_change{lightname=="l_dropRight3" and colorval=="red"):
+      gallery_flasher_show:
+         speed: 10
+         priority: 401
+         loops: -1
+         show_tokens:
+           ln: l_dropRight3
+           cv: FF0000
+   gallery_light_change{lightname=="l_dropLeft0" and colorval=="red"):
+      gallery_flasher_show:
+         speed: 10
+         priority: 401
+         loops: -1
+         show_tokens:
+           ln: l_dropLeft0
+           cv: FF0000
+   gallery_light_change{lightname=="l_dropLeft1" and colorval=="red"):
+      gallery_flasher_show:
+         speed: 10
+         priority: 401
+         loops: -1
+         show_tokens:
+           ln: l_dropLeft1
+           cv: FF0000
+   gallery_light_change{lightname=="l_dropLeft2" and colorval=="red"):
+      gallery_flasher_show:
+         speed: 10
+         priority: 401
+         loops: -1
+         show_tokens:
+           ln: l_dropLeft2
+           cv: FF0000
+   gallery_light_change{lightname=="l_dropLeft3" and colorval=="red"):
+      gallery_flasher_show:
+         speed: 10
+         priority: 401
+         loops: -1
+         show_tokens:
+           ln: l_dropLeft3
+           cv: FF0000
 shows:
    story_03_intro:
      - time: 0
@@ -94,24 +158,13 @@ variable_player:
      score: current_player.temp_ythurryup_value|block
 
 timers:
-   yttimer03:
-     start_value: 100
+   gallery_timer:
+     max_value: 600
+     start_value: 600
      end_value: 0
-     tick_interval: .1s
+     tick_interval: 500ms
      direction: down
-     start_running: yes
-
-widget_player:
-   mode_story03_started:
-      yt_remain_widget_03:
-         slide: scoring_slide
-   story03_ended:
-      yt_remain_widget_03:
-         action: remove
-
-widgets:
-   yt_remain_widget_03:
-     - type: text
-       text: "Story 03 Hurry Up: (temp_ythurryup_value)"
-       y: 80%
-
+     start_running: no
+     control_events:
+      - event: story_intro_complete
+        action: start
