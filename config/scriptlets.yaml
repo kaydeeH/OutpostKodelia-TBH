@@ -5,3 +5,4 @@ scriptlets:
   - bonus_light_controller_scriptlet.BonusLightController
   - bonus_countdown_scriptlet.BonusCountdown
   - shooting_gallery_light_controller.ShootingGalleryLightController
+  - shooting_gallery_achievement.ShootingGalleryAchievement

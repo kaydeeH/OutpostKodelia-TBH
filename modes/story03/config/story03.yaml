@@ -1,10 +1,13 @@
 #config_version=5
 
+config:
+  - story03-scoring.yaml
+
 mode:
-   start_events: selector_untitled_mode_3_selected
-   stop_events: story_is_completed
-   priority: 900
-   file_log: full
+  start_events: selector_untitled_mode_3_selected
+  stop_events: story_is_completed
+  priority: 900
+  file_log: full
 
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
@@ -25,165 +28,267 @@ queue_relay_player:
     wait_for: story_outro_fail_complete
 
 event_player:
-   mode_story03_started:
-     - story_is_about_to_begin
-     - mode_using_targets_started # always add this if your mode makes use of the drop targets
-   story_intro_complete:
-     - scoop_eject
-   timer_yttimer03_complete:
-     - story_is_about_to_end
-   story_outro_complete:
-     - story_is_completed_successful
-     - acheivement_story03_successful
-     - mode_using_targets_ended # always add this if your mode makes use of the drop targets
+  mode_story03_started:
+    - story_is_about_to_begin
+    - mode_using_targets_started # always add this if your mode makes use of the drop targets
+  story_intro_complete:
+    - scoop_eject
+  story_outro_complete:
+    - story_is_completed_successful
+    - acheivement_story03_successful
+    - mode_using_targets_ended # always add this if your mode makes use of the drop targets
 #    Only used when scoop hits end the mode
 #    - scoop_eject
-   story_outro_fail_complete:
-     - story_is_completed_unsuccessful
-     - acheivement_story03_unsuccessful
-   story_is_completed_successful:
+  story_outro_fail_complete:
+    - story_is_completed_unsuccessful
+    - acheivement_story03_unsuccessful
+  story_is_completed_successful:
     - story_is_completed
-   story_is_completed_unsuccessful:
+  story_is_completed_unsuccessful:
     - story_is_completed
+  shot_dt_r0_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_r1_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_r2_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_r3_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_l0_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_l1_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_l2_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_l3_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_cr_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_cl_flashing_red_hit:
+    - gallery_target_hit
+  shot_dt_r0_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_r1_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_r2_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_r3_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_l0_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_l1_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_l2_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_l3_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_cr_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_cl_flashing_green_hit:
+    - gallery_target_hit
+  shot_dt_r0_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_r1_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_r2_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_r3_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_l0_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_l1_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_l2_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_l3_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_cr_flashing_blue_hit:
+    - gallery_target_hit
+  shot_dt_cl_flashing_blue_hit:
+    - gallery_target_hit
+
+shots:
+  shot_dt_l0:
+    switch: s_dTargetL0
+    show_tokens:
+      light: l_dropLeft0
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_0_change
+    reset_events: gallery_light_0_off
+  shot_dt_l1:
+    switch: s_dTargetL1
+    show_tokens:
+      light: l_dropLeft1
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_1_change
+    reset_events: gallery_light_1_off
+  shot_dt_l2:
+    switch: s_dTargetL2
+    show_tokens:
+      light: l_dropLeft2
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_2_change
+    reset_events: gallery_light_2_off
+  shot_dt_l3:
+    switch: s_dTargetL3
+    show_tokens:
+      light: l_dropLeft3
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_3_change
+    reset_events: gallery_light_3_off
+  shot_dt_r0:
+    switch: s_dTargetR0
+    show_tokens:
+      light: l_dropRight0
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_4_change
+    reset_events: gallery_light_4_off
+  shot_dt_r1:
+    switch: s_dTargetR1
+    show_tokens:
+      light: l_dropRight1
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_5_change
+    reset_events: gallery_light_5_off
+  shot_dt_r2:
+    switch: s_dTargetR2
+    show_tokens:
+      light: l_dropRight2
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_6_change
+    reset_events: gallery_light_6_off
+  shot_dt_r3:
+    switch: s_dTargetR3
+    show_tokens:
+      light: l_dropRight3
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_7_change
+    reset_events: gallery_light_7_off
+  shot_dt_cr:
+    switch: s_dTargetCR
+    show_tokens:
+      light: l_dropCenterRight
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_8_change
+    reset_events: gallery_light_8_off
+  shot_dt_cl:
+    switch: s_dTargetCL
+    show_tokens:
+      light: l_dropCenterLeft
+    profile: shot_profile_gallery_targets
+    advance_events: gallery_light_9_change
+    reset_events: gallery_light_9_off
+
+shot_profiles:
+  shot_profile_gallery_targets:
+    block: true
+    advance_on_hit: false
+    show_when_disabled: false
+    states:
+      - name: unlit
+        show: gallery_flasher_off_show
+        priority: 901
+      - name: flashing_red
+        show: gallery_flasher_red_show
+        priority: 901
+        speed: 10
+      - name: flashing_green
+        show: gallery_flasher_green_show
+        priority: 901
+        speed: 10
+      - name: flashing_blue
+        show: gallery_flasher_blue_show
+        priority: 901
+        speed: 10
 
 #  Base intro / outro shows
 show_player:
-   story_is_about_to_begin:
-      story_03_intro:
-         events_when_completed: story_intro_complete
-         loops: 0
-      drop_target_blackout_show:
-         priority: 400
-   story_is_about_to_fail:
-      story_03_fail_outro:
-         events_when_completed: story_outro_fail_complete
-         loops: 0
-   story_is_about_to_end:
-      story_03_outro:
-         events_when_completed: story_outro_complete
-         loops: 0
-   gallery_light_change{lightname=="l_dropRight0" and colorval=="red"):
-      gallery_flasher_show:
-         speed: 10
-         priority: 401
-         loops: -1
-         show_tokens:
-           ln: l_dropRight0
-           cv: FF0000
-   gallery_light_change{lightname==l_dropRight1" and colorval=="red"):
-      gallery_flasher_show:
-         speed: 10
-         priority: 401
-         loops: -1
-         show_tokens:
-           ln: l_dropRight1
-           cv: FF0000
-   gallery_light_change{lightname=="l_dropRight2" and colorval=="red"):
-      gallery_flasher_show:
-         speed: 10
-         priority: 401
-         loops: -1
-         show_tokens:
-           ln: l_dropRight2
-           cv: FF0000
-   gallery_light_change{lightname=="l_dropRight3" and colorval=="red"):
-      gallery_flasher_show:
-         speed: 10
-         priority: 401
-         loops: -1
-         show_tokens:
-           ln: l_dropRight3
-           cv: FF0000
-   gallery_light_change{lightname=="l_dropLeft0" and colorval=="red"):
-      gallery_flasher_show:
-         speed: 10
-         priority: 401
-         loops: -1
-         show_tokens:
-           ln: l_dropLeft0
-           cv: FF0000
-   gallery_light_change{lightname=="l_dropLeft1" and colorval=="red"):
-      gallery_flasher_show:
-         speed: 10
-         priority: 401
-         loops: -1
-         show_tokens:
-           ln: l_dropLeft1
-           cv: FF0000
-   gallery_light_change{lightname=="l_dropLeft2" and colorval=="red"):
-      gallery_flasher_show:
-         speed: 10
-         priority: 401
-         loops: -1
-         show_tokens:
-           ln: l_dropLeft2
-           cv: FF0000
-   gallery_light_change{lightname=="l_dropLeft3" and colorval=="red"):
-      gallery_flasher_show:
-         speed: 10
-         priority: 401
-         loops: -1
-         show_tokens:
-           ln: l_dropLeft3
-           cv: FF0000
+  story_is_about_to_begin:
+    story_03_intro:
+      events_when_completed: story_intro_complete
+      loops: 0
+    drop_target_blackout_show:
+      priority: 900
+  story_is_about_to_fail:
+    story_03_fail_outro:
+      events_when_completed: story_outro_fail_complete
+      loops: 0
+  story_is_about_to_end:
+    story_03_outro:
+      events_when_completed: story_outro_complete
+      loops: 0
+
 shows:
-   story_03_intro:
-     - time: 0
-       slides: story_03_intro_slide
-       duration: 3
-   story_03_fail_outro:
-     - time: 0
-       slides: story_03_outro_fail_slide
-       duration: 3
-   story_03_outro:
-     - time: 0
-       slides: story_03_outro_slide
-       duration: 3
+  story_03_intro:
+    - time: 0
+      slides: story_03_intro_slide
+      duration: 3
+  story_03_fail_outro:
+    - time: 0
+      slides: story_03_outro_fail_slide
+      duration: 3
+  story_03_outro:
+    - time: 0
+      slides: story_03_outro_slide
+      duration: 3
 
 slides:
-   story_03_intro_slide:
+  story_03_intro_slide:
     widgets:
       - type: text
-        text: STORY 03 BEGIN SHOW
+        text: SHOOTING GALLERY
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
-   story_03_outro_fail_slide:
       - type: text
-        text: YOU ARE TEH SUCK
+        text: Hit at least 3 lit targets in 60s to defeat Captain S.T.A.R.
+        y: 40%
+        color: red
+        font_size: 50
+  story_03_outro_fail_slide:
+      - type: text
+        text: SHOOTING GALLERY FAILED
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
-   story_03_outro_slide:
+      - type: text
+        text: "If one dances, one MUST pay the piper."
+        y: 30%
+        font_size: 50
+  story_03_outro_slide:
     widgets:
       - type: text
-        text: STORY 03 END SHOW
+        text: SHOOTING GALLERY DONE
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+      - type: text
+        text: "Meet me in parts storage..."
+        y: 30%
+        font_size: 50
+      - type: text
+        text: "Targets Hit: (gallery_targets_hit)"
+        y: 20%
+        font_size: 50
 
 # The below is mode specific data
 
 variable_player:
-   mode_story03_started:
-     temp_ythurryup_value:
-       action: set
-       int: 100000
-   timer_yttimer03_tick:
-     temp_ythurryup_value: -300
-   s_sTargetYellowL_active:
-     score: current_player.temp_ythurryup_value|block
-   s_sTargetYellowR_active:
-     score: current_player.temp_ythurryup_value|block
+  mode_story03_started:
+    gallery_targets_hit:
+      action: set
+      int: 0
+  gallery_target_hit:
+    gallery_targets_hit: 1
 
 timers:
-   gallery_timer:
-     max_value: 600
-     start_value: 600
-     end_value: 0
-     tick_interval: 500ms
-     direction: down
-     start_running: no
-     control_events:
+  gallery_timer:
+    max_value: 12
+    start_value: 12
+    end_value: 0
+    tick_interval: 10s
+    direction: down
+    start_running: no
+    control_events:
       - event: story_intro_complete
         action: start
