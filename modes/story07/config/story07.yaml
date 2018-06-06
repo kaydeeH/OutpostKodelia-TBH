@@ -28,7 +28,7 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
-   timer_yttimer07_complete:
+   shotScoopBeyond_shotProfileScoopBeyond_scoopActive_hit:
      - story_is_about_to_end
    story_outro_complete:
      - story_is_completed_successful
@@ -42,6 +42,21 @@ event_player:
     - story_is_completed
    story_is_completed_unsuccessful:
     - story_is_completed
+# Mode Specific Event Player Stuff
+   s_spinner_active:
+       - enable_lane_shot
+   timer_traj_timer_complete:
+       - traj_time_out
+   lanetraj0_available_hit:
+       - traj_set
+   lanetraj1_available_hit:
+       - traj_set
+   lanetraj2_available_hit:
+       - traj_set
+   lanetraj3_available_hit:
+       - traj_set
+   lanetraj4_available_hit:
+       - traj_set
 
 #  Base intro / outro shows
 show_player:
@@ -57,6 +72,53 @@ show_player:
       story_07_outro:
          events_when_completed: story_outro_complete
          loops: 0
+   enable_lane_shot_1:
+      lane1shot:
+        priority: 950
+        loops: -1
+   enable_lane_shot_2:
+      lane2shot:
+        priority: 950
+        loops: -1
+   enable_lane_shot_3:
+      lane3shot:
+        priority: 950
+        loops: -1
+   enable_lane_shot_4:
+      lane4shot:
+        priority: 950
+        loops: -1
+   enable_lane_shot_5:
+      lane5shot:
+        priority: 950
+        loops: -1
+   traj_time_out:
+      lane1shot:
+         action: stop
+      lane2shot:
+         action: stop
+      lane3shot:
+         action: stop
+      lane4shot:
+         action: stop
+      lane5shot:
+         action: stop
+   traj_set:
+      lane1shot:
+         action: stop
+      lane2shot:
+         action: stop
+      lane3shot:
+         action: stop
+      lane4shot:
+         action: stop
+      lane5shot:
+         action: stop
+   shotScoopBeyond_shotProfileScoopBeyond_scoopInactive_hit:
+      pinwheel:
+        speed: 40
+        loops: 1
+        events_when_completed: scoop_eject
 
 shows:
    story_07_intro:
@@ -76,46 +138,131 @@ slides:
    story_07_intro_slide:
     widgets:
       - type: text
-        text: STORY 07 BEGIN SHOW
+        text: In, Through, and Beyond!
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
    story_07_outro_fail_slide:
     widgets:
       - type: text
-        text: STORY 07 FAIL SHOW
+        text: NO BEYOND FOR YOU
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
    story_07_outro_slide:
     widgets:
       - type: text
-        text: STORY 07 PASS SHOW
+        text: "--- Beyond ---"
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
 
 # The below is mode specific data
 
-variable_player:
-   mode_story07_started:
-     temp_ythurryup_value:
-       action: set
-       int: 100000
-   timer_yttimer07_tick:
-     temp_ythurryup_value: -300
-   s_sTargetYellowL_active:
-     score: current_player.temp_ythurryup_value|block
-   s_sTargetYellowR_active:
-     score: current_player.temp_ythurryup_value|block
+random_event_player:
+  enable_lane_shot:
+    - enable_lane_shot_1
+    - enable_lane_shot_2
+    - enable_lane_shot_3
+    - enable_lane_shot_4
+    - enable_lane_shot_5
+  time_traj_timer_complete:
+    - traj_time_out
+
+shots:
+   laneTraj0:
+     switch: s_lane0
+     profile: traj_lanes
+     advance_events: enable_lane_shot_1
+     reset_events: traj_time_out, traj_set
+   laneTraj1:
+     switch: s_lane1
+     profile: traj_lanes
+     advance_events: enable_lane_shot_2
+     reset_events: traj_time_out, traj_set
+   laneTraj2:
+     switch: s_lane2
+     profile: traj_lanes
+     advance_events: enable_lane_shot_3
+     reset_events: traj_time_out, traj_set
+   laneTraj3:
+     switch: s_lane3
+     profile: traj_lanes
+     advance_events: enable_lane_shot_4
+     reset_events: traj_time_out, traj_set
+   laneTraj4:
+     switch: s_lane4
+     profile: traj_lanes
+     advance_events: enable_lane_shot_5
+     reset_events: traj_time_out, traj_set
+   shotScoopBeyond:
+     switch: s_ir_scoop_detect
+     advance_events: enable_scoop_loop, timer_scoop_off_timer_complete
+     reset_events: timer_scoop_timer_complete
+     show_tokens:
+       light: l_scoop
+     profile: shotProfileScoopBeyond
+
+shot_profiles:
+   traj_lanes:
+     block: true
+     advance_on_hit: false
+     states:
+       - name: off
+       - name: available
+   shotProfileScoopBeyond:
+     show_when_disabled: true
+     advance_on_hit: false
+     block: true
+     states:
+       - name: scoopInactive
+         show: off
+       - name: scoopActive
+         show: popgreen
+
+#variable_player:
+#   mode_story07_started:
+#     temp_ythurryup_value:
+#       action: set
+#       int: 100000
+#   timer_yttimer07_tick:
+#     temp_ythurryup_value: -300
+#   s_sTargetYellowL_active:
+#     score: current_player.temp_ythurryup_value|block
+#   s_sTargetYellowR_active:
+#     score: current_player.temp_ythurryup_value|block
 
 timers:
-   yttimer07:
-     start_value: 300
+   traj_timer:
+     start_value: 5
      end_value: 0
-     tick_interval: .1s
+     tick_interval: 1s
      direction: down
-     start_running: yes
+     start_running: no
+     control_events:
+       - event: enable_lane_shot
+         action: restart
+   scoop_timer:
+     start_value: 10
+     end_value: 0
+     tick_interval: 1s
+     direction: down
+     start_running: no
+     control_events:
+       - event: enable_scoop_loop
+         action: restart
+       - event: timer_scoop_off_timer_complete
+         action: restart
+   scoop_off_timer:
+     start_value: 10
+     end_value: 0
+     tick_interval: 1s
+     direction: down
+     start_running: no
+     control_events:
+       - event: timer_scoop_timer_complete
+         action: restart
+
 
 widget_player:
    mode_story07_started:
@@ -128,5 +275,67 @@ widget_player:
 widgets:
    yt_remain_widget_07:
      - type: text
-       text: "Story 07 Hurry Up: (temp_ythurryup_value)"
+       text: "spinner then lanes ya dolt"
        y: 80%
+
+# Mode 7 States
+state_machines:
+  beyond:
+     states:
+       start:
+         label: mode_entry
+       traj01:
+         label: Set Trajectory 1
+       traj01hit:
+         label: Trajectory 1 Set
+       traj02:
+         label: Set Trajectory 2
+       traj02hit:
+         label: Trajectory 2 Set
+       traj03:
+         label: Set Trajectory 3
+       scoopOpen:
+         label: Scoop Open
+         events_when_started: enable_scoop_loop
+       scoopClosed:
+         label: Scoop Closed
+       completion:
+         label: completion
+     transitions:
+       - source: start
+         target: traj01
+         events: enable_lane_shot
+       - source: traj01hit
+         target: traj02
+         events: enable_lane_shot
+       - source: traj02hit
+         target: traj03
+         events: enable_lane_shot
+       - source: traj01
+         target: start
+         events: traj_time_out
+       - source: traj02
+         target: traj01hit
+         events: traj_time_out
+       - source: traj03
+         target: traj02hit
+         events: traj_time_out
+       - source: traj01
+         target: traj01hit
+         events: traj_set
+       - source: traj02
+         target: traj02hit
+         events: traj_set
+       - source: traj03
+         target: scoopOpen
+         events: traj_set
+       - source: scoopOpen
+         target: scoopClosed
+         events: scoop_timeout
+       - source: scoopClosed
+         target: scoopOpen
+         events: scoop_timer_reset
+       - source: scoopOpen
+         target: completion
+         events: scoop_out_success
+
