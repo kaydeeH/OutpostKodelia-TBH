@@ -35,6 +35,7 @@ modes:
   - story05
   - story06
   - story07
+  - information
   - storyScoopOverride
   - pop_blue
   - endOfGame

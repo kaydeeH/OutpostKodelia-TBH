@@ -284,23 +284,31 @@ state_machines:
      states:
        start:
          label: mode_entry
+         events_when_started: debug_beyond_start
        traj01:
          label: Set Trajectory 1
+         events_when_started: debug_beyond_traj01
        traj01hit:
          label: Trajectory 1 Set
+         events_when_started: debug_beyond_traj01hit
        traj02:
          label: Set Trajectory 2
+         events_when_started: debug_beyond_traj02
        traj02hit:
          label: Trajectory 2 Set
+         events_when_started: debug_beyond_traj02hit
        traj03:
          label: Set Trajectory 3
+         events_when_started: debug_beyond_traj03
        scoopOpen:
          label: Scoop Open
-         events_when_started: enable_scoop_loop
+         events_when_started: enable_scoop_loop, debug_beyond_scoop_open
        scoopClosed:
          label: Scoop Closed
+         events_when_started: debug_beyond_scoop_closed
        completion:
          label: completion
+         events_when_started: debug_beyond_completion
      transitions:
        - source: start
          target: traj01
