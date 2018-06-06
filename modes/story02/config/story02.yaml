@@ -36,8 +36,8 @@ event_player:
      - story_is_completed_successful
      - acheivement_story02_successful
    story_outro_fail_complete:
-     - story_is_completed_successful
-     - acheivement_story02_successful
+     - story_is_completed_unsuccessful
+     - acheivement_story02_unsuccessful
    story_is_completed_successful:
     - story_is_completed
    story_is_completed_unsuccessful:
