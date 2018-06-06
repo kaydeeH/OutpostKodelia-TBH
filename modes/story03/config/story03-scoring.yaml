@@ -1,0 +1,20 @@
+#config_version=5
+variable_player:
+  player_gallery_targets_hit:
+    score: current_player.gallery_targets_hit * 5000
+    drops: 1
+    bonuscount: current_player.gallery_targets_hit
+
+# block switch based scoring from base mode
+  s_dTargetR0_active:
+    score: 0|block
+  s_dTargetR1_active:
+    score: 0|block
+  s_dTargetR2_active:
+    score: 0|block
+  s_dTargetR3_active:
+    score: 0|block
+  s_dTargetCL_active:
+    score: 0|block
+  s_dTargetCR_active:
+    score: 0|block

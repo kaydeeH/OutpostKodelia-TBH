@@ -2,7 +2,7 @@
 
 - duration: 1
   lights:
-    (ln): (cv)
+    (light): 0000FF
 - duration: 1
   lights:
-    (ln): 000000
+    (light): 000000

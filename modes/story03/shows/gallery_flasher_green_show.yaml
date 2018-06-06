@@ -1,0 +1,8 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    (light): 00FF00
+- duration: 1
+  lights:
+    (light): 000000
