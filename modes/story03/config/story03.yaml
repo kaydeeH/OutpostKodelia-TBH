@@ -48,64 +48,114 @@ event_player:
     - story_is_completed
   shot_dt_r0_flashing_red_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r1_flashing_red_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r2_flashing_red_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r3_flashing_red_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_l0_flashing_red_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l1_flashing_red_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l2_flashing_red_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l3_flashing_red_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_cr_flashing_red_hit:
     - gallery_target_hit
+    - drop_right_center_reset
   shot_dt_cl_flashing_red_hit:
     - gallery_target_hit
+    - drop_left_center_reset
   shot_dt_r0_flashing_green_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r1_flashing_green_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r2_flashing_green_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r3_flashing_green_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_l0_flashing_green_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l1_flashing_green_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l2_flashing_green_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l3_flashing_green_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_cr_flashing_green_hit:
     - gallery_target_hit
+    - drop_right_center_reset
   shot_dt_cl_flashing_green_hit:
     - gallery_target_hit
+    - drop_left_center_reset
   shot_dt_r0_flashing_blue_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r1_flashing_blue_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r2_flashing_blue_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_r3_flashing_blue_hit:
     - gallery_target_hit
+    - drops_right_reset
   shot_dt_l0_flashing_blue_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l1_flashing_blue_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l2_flashing_blue_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_l3_flashing_blue_hit:
     - gallery_target_hit
+    - drops_left_reset
   shot_dt_cr_flashing_blue_hit:
     - gallery_target_hit
+    - drop_right_center_reset
   shot_dt_cl_flashing_blue_hit:
     - gallery_target_hit
+    - drop_left_center_reset
+  shot_dt_r0_unlit_hit:
+    - drops_right_reset
+  shot_dt_r1_unlit_hit:
+    - drops_right_reset
+  shot_dt_r2_unlit_hit:
+    - drops_right_reset
+  shot_dt_r3_unlit_hit:
+    - drops_right_reset
+  shot_dt_l0_unlit_hit:
+    - drops_left_reset
+  shot_dt_l1_unlit_hit:
+    - drops_left_reset
+  shot_dt_l2_unlit_hit:
+    - drops_left_reset
+  shot_dt_l3_unlit_hit:
+    - drops_left_reset
+  shot_dt_cr_unlit_hit:
+    - drop_right_center_reset
+  shot_dt_cl_unlit_hit:
+    - drop_left_center_reset
 
 shots:
   shot_dt_l0:
@@ -283,8 +333,8 @@ variable_player:
 
 timers:
   gallery_timer:
-    max_value: 12
-    start_value: 12
+    max_value: 6
+    start_value: 6
     end_value: 0
     tick_interval: 10s
     direction: down
