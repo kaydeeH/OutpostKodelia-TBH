@@ -219,6 +219,11 @@ event_player:
       - start_base_music
     mode_base_started:
       - start_base_music
+    the_one_event_to_reset_them_all:
+      - drops_left_reset
+      - drops_right_reset
+      - drop_left_center_reset
+      - drop_right_center_reset
 
 # shotGroupPopBumpers_popBumpBlue_complete
 # shotGroupPopBumpers_popBumpGreen_complete

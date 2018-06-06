@@ -23,6 +23,7 @@ queue_relay_player:
 event_player:
    mode_story05_started:
      - story_is_about_to_begin
+     - the_one_event_to_reset_them_all
      - mode_using_targets_started # always add this if your mode makes use of the drop targets
    story_intro_complete:
      - scoop_eject
