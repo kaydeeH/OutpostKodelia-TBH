@@ -1,0 +1,21 @@
+#config_version=5
+
+mode:
+   start_events: ball_starting
+   stop_events: ball_ending
+   priority: 5000
+
+event_player:
+   flipper_cradle:
+    - start_information
+   flipper_cradle_release:
+    - stop_information
+
+show_player:
+   start_information:
+     pinwheel:
+       speed: 40
+       loops: -1
+   stop_information:
+     pinwheel:
+       action: stop

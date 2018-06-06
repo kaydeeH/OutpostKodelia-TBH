@@ -11,6 +11,7 @@ accruals:
     reset_on_complete: true
     disable_on_complete: false
   enableWizard:
+    persist_state: true
     events:
       - acheivement_story01_successful
       - acheivement_story02_successful
