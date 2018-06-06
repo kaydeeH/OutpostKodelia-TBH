@@ -259,6 +259,9 @@ show_player:
       loops: 0
     drop_target_blackout_show:
       priority: 900
+    giDim:
+      loops: -1
+      priority: 900
   story_is_about_to_fail:
     story_03_fail_outro:
       events_when_completed: story_outro_fail_complete
