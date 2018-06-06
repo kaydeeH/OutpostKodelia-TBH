@@ -129,6 +129,9 @@ variable_player:
      battleticks:
        action: set
        int: 0
+     greenness:
+       action: set
+       int: 498
    timer_battletimer_tick:
      damage: 1
    timer_battlecounter_tick:
@@ -139,6 +142,8 @@ variable_player:
      battletime:
        action: set
        float: current_player.battleticks / 10
+   timer_greentimer_tick:
+     greenness: -1
 
 timers:
    battlecounter:
@@ -167,18 +172,115 @@ timers:
         - event: story_is_about_to_end
           action: pause
           value: 0
+   greentimer:
+     start_value: 498
+     end_value: 0
+     tick_interval: 100ms
+     direction: down
+     start_running: yes
 
 widget_player:
    mode_story06_started:
       yt_remain_widget_06:
          slide: scoring_slide
+   story_intro_complete:
+      david_and_goliath_widget:
+         slide: scoring_slide
+      green_bar_widget:
+         slide: scoring_slide
+      health_shell_blackout_widget:
+         slide: scoring_slide
+      health_shell_widget:
+         slide: scoring_slide
+   story_is_about_to_end:
+      david_and_goliath_widget:
+         action: remove
+      health_shell_widget:
+         action: remove
+      health_shell_blackout_widget:
+         action: remove
+      green_bar_widget:
+         action: remove
    story06_ended:
       yt_remain_widget_06:
          action: remove
 
 widgets:
-   yt_remain_widget_06:
-     - type: text
-       text: "VINCent :0:  (damage)   :60: Maximillian"
-       y: 80%
+  yt_remain_widget_06:
+    - type: text
+      text: "VINCent :0:  (damage)   :60: Maximillian"
+      y: 80%
+  david_and_goliath_widget:
+    - type: image
+      image: david_goliath
+  health_shell_widget:
+    - type: rectangle
+      y: 50
+      width: 1000
+      height: 20
+      corner_radius: 3
+      corner_segments: 3
+      color: CC0000
+  health_shell_blackout_widget:
+    - type: rectangle
+      y: 50
+      width: 996
+      height: 16
+      corner_radius: 3
+      corner_segments: 3
+      color: 000000
+  green_bar_widget:
+    - type: rectangle
+      y: 50
+      z: 20
+      anchor_x: left
+      anchor_y: center
+      width: 1
+      height: 16
+      corner_radius: 3
+      corner_segments: 3
+      color: 00FF00
 
+
+#my_test_slide:
+#  widgets:
+#    - type: image
+#      image: david_goliath
+#    - type: rectangle
+#      y: 50
+#      width: 6
+#      height: 20
+#      color: CC0000
+#    - type: rectangle
+#      y: 50
+#      anchor_x: left
+#      anchor_y: center
+#      width: 498
+#      height: 16
+#      corner_radius: 3
+#      corner_segments: 3
+#      color: 00FF00
+#    - type: rectangle
+#      y: 50
+#      anchor_x: right
+#      anchor_y: center
+#      width: 235
+#      height: 16
+#      corner_radius: 3
+#      corner_segments: 3
+#      color: FF0000
+#    - type: rectangle
+#      y: 50
+#      width: 996
+#      height: 16
+#      corner_radius: 3
+#      corner_segments: 3
+#      color: 000000
+#    - type: rectangle
+#      y: 50
+#      width: 1000
+#      height: 20
+#      corner_radius: 3
+#      corner_segments: 3
+#      color: CC0000
+#

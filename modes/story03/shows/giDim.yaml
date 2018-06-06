@@ -3,104 +3,104 @@
 - duration: 1
   lights:
     l_GIAboveScoopLower:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIAboveScoopUpper:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIAboveSpinnerLower:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIAboveSpinnerUpper:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIDropCenterLeft:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIDropCenterRight:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIDropLeft0:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIDropLeft1:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIDropRight0:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIDropRight1:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GILane0:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GILane1:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GILane2:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GILane3:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GILane4:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GILane5:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GILowLeft:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GILowRight:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIScoopLL:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIScoopLR:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIScoopML:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIScoopMR:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIScoopUC:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GISlingLeft0:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GISlingLeft1:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GISlingRight0:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GISlingRight1:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIUpperCL:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIUpperCR:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIUpperL:
-      color: 888888
+      color: 111111
       fade: 1s
     l_GIUpperR:
-      color: 888888
+      color: 111111
       fade: 1s
     l_jetUpperRight:
-      color: 888888
+      color: 111111
       fade: 1s
     l_jetUpperLeft:
-      color: 888888
+      color: 111111
       fade: 1s
     l_jetLowerCenter:
-      color: 888888
+      color: 111111
       fade: 1s

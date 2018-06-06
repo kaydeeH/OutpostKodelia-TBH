@@ -2,34 +2,105 @@
 
 - duration: 1
   lights:
-    l_GIAboveScoopLower: ffffff
-    l_GIAboveScoopUpper: ffffff
-    l_GIAboveSpinnerLower: ffffff
-    l_GIAboveSpinnerUpper: ffffff
-    l_GIDropCenterLeft: ffffff
-    l_GIDropCenterRight: ffffff
-    l_GIDropLeft0: ffffff
-    l_GIDropLeft1: ffffff
-    l_GIDropRight0: ffffff
-    l_GIDropRight1: ffffff
-    l_GILane0: ffffff
-    l_GILane1: ffffff
-    l_GILane2: ffffff
-    l_GILane3: ffffff
-    l_GILane4: ffffff
-    l_GILane5: ffffff
-    l_GILowLeft: ffffff
-    l_GILowRight: ffffff
-    l_GIScoopLL: ffffff
-    l_GIScoopLR: ffffff
-    l_GIScoopML: ffffff
-    l_GIScoopMR: ffffff
-    l_GIScoopUC: ffffff
-    l_GISlingLeft0: ffffff
-    l_GISlingLeft1: ffffff
-    l_GISlingRight0: ffffff
-    l_GISlingRight1: ffffff
-    l_GIUpperCL: ffffff
-    l_GIUpperCR: ffffff
-    l_GIUpperL: ffffff
-    l_GIUpperR: ffffff
+    l_GIAboveScoopLower:
+      color: FFFFFF
+      fade: 1s
+    l_GIAboveScoopUpper:
+      color: FFFFFF
+      fade: 1s
+    l_GIAboveSpinnerLower:
+      color: FFFFFF
+      fade: 1s
+    l_GIAboveSpinnerUpper:
+      color: FFFFFF
+      fade: 1s
+    l_GIDropCenterLeft:
+      color: FFFFFF
+      fade: 1s
+    l_GIDropCenterRight:
+      color: FFFFFF
+      fade: 1s
+    l_GIDropLeft0:
+      color: FFFFFF
+      fade: 1s
+    l_GIDropLeft1:
+      color: FFFFFF
+      fade: 1s
+    l_GIDropRight0:
+      color: FFFFFF
+      fade: 1s
+    l_GIDropRight1:
+      color: FFFFFF
+      fade: 1s
+    l_GILane0:
+      color: FFFFFF
+      fade: 1s
+    l_GILane1:
+      color: FFFFFF
+      fade: 1s
+    l_GILane2:
+      color: FFFFFF
+      fade: 1s
+    l_GILane3:
+      color: FFFFFF
+      fade: 1s
+    l_GILane4:
+      color: FFFFFF
+      fade: 1s
+    l_GILane5:
+      color: FFFFFF
+      fade: 1s
+    l_GILowLeft:
+      color: FFFFFF
+      fade: 1s
+    l_GILowRight:
+      color: FFFFFF
+      fade: 1s
+    l_GIScoopLL:
+      color: FFFFFF
+      fade: 1s
+    l_GIScoopLR:
+      color: FFFFFF
+      fade: 1s
+    l_GIScoopML:
+      color: FFFFFF
+      fade: 1s
+    l_GIScoopMR:
+      color: FFFFFF
+      fade: 1s
+    l_GIScoopUC:
+      color: FFFFFF
+      fade: 1s
+    l_GISlingLeft0:
+      color: FFFFFF
+      fade: 1s
+    l_GISlingLeft1:
+      color: FFFFFF
+      fade: 1s
+    l_GISlingRight0:
+      color: FFFFFF
+      fade: 1s
+    l_GISlingRight1:
+      color: FFFFFF
+      fade: 1s
+    l_GIUpperCL:
+      color: FFFFFF
+      fade: 1s
+    l_GIUpperCR:
+      color: FFFFFF
+      fade: 1s
+    l_GIUpperL:
+      color: FFFFFF
+      fade: 1s
+    l_GIUpperR:
+      color: FFFFFF
+      fade: 1s
+    l_jetUpperRight:
+      color: FFFFFF
+      fade: 1s
+    l_jetUpperLeft:
+      color: FFFFFF
+      fade: 1s
+    l_jetLowerCenter:
+      color: FFFFFF
+      fade: 1s
