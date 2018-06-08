@@ -180,6 +180,7 @@
               duration: 0.1s
       - type: video
         video: Intro
+        volume: 0.5
         width: 1366
         height: 688
       - type: Text

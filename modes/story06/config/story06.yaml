@@ -1,15 +1,16 @@
 #config_version=5
 
-# David vs. Goliath - Pop bumper frenzy. Pop bumpers do damage, time elapsed without pops costs points. Win!
+# David vs. Goliath - Pop bumper frenzy. Pop bumpers do health, time elapsed without pops costs points. Win!
 
 config:
   - story06-scoring.yaml
 
 mode:
-   start_events: selector_untitled_mode_6_selected
-   stop_events: story_is_completed
-   stop_on_ball_end: false
-   priority: 900
+  start_events: selector_untitled_mode_6_selected
+  stop_events: story_is_completed
+  stop_on_ball_end: false
+  priority: 900
+  file_log: full
 
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
@@ -29,194 +30,208 @@ queue_relay_player:
     wait_for: story_outro_fail_complete
 
 event_player:
-   mode_story06_started:
-     - story_is_about_to_begin
-   story_intro_complete:
-     - scoop_eject
-   player_damage{value<=0}:
-     - story_is_about_to_end
-   timer_battletimer_complete:
-     - story_is_about_to_fail
-   story_outro_complete:
-     - story_is_completed_successful
-     - acheivement_story06_successful
-   story_outro_fail_complete:
-     - story_is_completed_unsuccessful
-     - acheivement_story06_unsuccessful
-   story_is_completed_successful:
-     - story_is_completed
-   story_is_completed_unsuccessful:
-     - story_is_completed
+  mode_story06_started:
+    - story_is_about_to_begin
+  story_intro_complete:
+    - scoop_eject
+  player_health{value >= 100}:
+    - story_is_about_to_end
+  player_health{value <= 0}:
+    - story_is_about_to_fail
+  story_outro_complete:
+    - story_is_completed_successful
+    - acheivement_story06_successful
+  story_outro_fail_complete:
+    - story_is_completed_unsuccessful
+    - acheivement_story06_unsuccessful
+  story_is_completed_successful:
+    - story_is_completed
+  story_is_completed_unsuccessful:
+    - story_is_completed
 
 #  Base intro / outro shows
 show_player:
-   story_is_about_to_begin:
-      story_06_intro:
-         events_when_completed: story_intro_complete
-         loops: 0
-   story_is_about_to_fail:
-      story_06_outro_fail:
-         events_when_completed: story_outro_fail_complete
-         loops: 0
-   story_is_about_to_end:
-      story_06_outro:
-         events_when_completed: story_outro_complete
-         loops: 0
+  story_is_about_to_begin:
+    story_06_intro:
+      events_when_completed: story_intro_complete
+      loops: 0
+  story_is_about_to_fail:
+    story_06_outro_fail:
+      events_when_completed: story_outro_fail_complete
+      loops: 0
+  story_is_about_to_end:
+    story_06_outro:
+      events_when_completed: story_outro_complete
+      loops: 0
 
 shows:
-   story_06_intro:
-     - time: 0
-       slides: story_06_intro_slide
-       duration: 3
-   story_06_outro_fail:
-     - time: 0
-       slides: story_06_outro_fail_slide
-       duration: 3
-   story_06_outro:
-     - time: 0
-       slides: story_06_outro_slide
-       duration: 3
+  story_06_intro:
+    - time: 0
+      slides: story_06_intro_slide
+      duration: 3
+  story_06_outro_fail:
+    - time: 0
+      slides: story_06_outro_fail_slide
+      duration: 3
+  story_06_outro:
+    - time: 0
+      slides: story_06_outro_slide
+      duration: 3
 
 slides:
-   story_06_intro_slide:
+  story_06_intro_slide:
     widgets:
       - type: text
-        text: DAVID VS. GOLIATH
+        text: David vs. Goliath
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
       - type: text
-        text: Hit Pop Bumpers to attack MAXIMILLIAN!
+        text: Hit pop bumpers to attack Maximilian!
         y: 40%
         color: red
         font_size: 50
-   story_06_outro_fail_slide:
+  story_06_outro_fail_slide:
     widgets:
       - type: text
-        text: DAVID VS. GOLIATH
+        text: Goliath defeats David
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
       - type: text
-        text: No one sucks as bad as you.
+        text: Only this time, David is overmatched...
         y: 40%
         color: red
         font_size: 50
-   story_06_outro_slide:
+  story_06_outro_slide:
     widgets:
       - type: text
-        text: DAVID VS. GOLIATH
+        text: David defeats Goliath!
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
       - type: text
-        text: "You Kicked some Robot Butt in just (battletime)s"
+        text: "The bigger they are, the harder they fall. [Time taken:(battletime)s]"
         y: 40%
         color: red
         font_size: 50
 
 # The below is mode specific data
-
 variable_player:
-   mode_story06_started:
-     damage:
-       action: set
-       int: 999
-   story_intro_complete:
-     damage:
-       action: set
-       int: 30
-     battleticks:
-       action: set
-       int: 0
-     greenness:
-       action: set
-       int: 498
-   timer_battletimer_tick:
-     damage: 1
-   timer_battlecounter_tick:
-     battleticks: 1
-   shotgrouppopbumpers_hit:
-     damage: -3
-   story_is_about_to_end:
-     battletime:
-       action: set
-       float: current_player.battleticks / 10
-   timer_greentimer_tick:
-     greenness: -1
+  story_intro_complete:
+    health:
+      action: set
+      float: 50
+    battleticks:
+      action: set
+      int: 0
+  timer_battletimer_tick:
+    health: -1 #Health lost per second.
+  timer_battlecounter_tick:
+    battleticks: 1
+  shotgrouppopbumpers_hit:
+    health: 5 #Health gained per pop bumper hit.
+  story_is_about_to_end:
+    battletime:
+      action: set
+      float: current_player.battleticks / 10
+  player_health{value > 50}:
+    red_width:
+      action: set
+      int: 0
+    green_width:
+      action: set
+      int: (current_player.health - 50) / 50 * 398
+  player_health{value < 50}:
+    red_width:
+      action: set
+      int: (50 - current_player.health) / 50 * 398
+    green_width:
+      action: set
+      int: 0
+  player_health{value == 50}:
+    red_width:
+      action: set
+      int: 0
+    green_width:
+      action: set
+      int: 0
 
 timers:
-   battlecounter:
-     start_value: 0
-     tick_interval: .1s
-     direction: up
-     start_running: no
-     control_events:
-        - event: story_intro_complete
-          action: start
-        - event: story_is_about_to_end
-          action: pause
-          value: 0
-   battletimer:
-     start_value: 30
-     end_value: 60
-     tick_interval: 1s
-     direction: up
-     start_running: no
-     control_events:
-        - event: story_intro_complete
-          action: start
-        - event: shotgrouppopbumpers_hit
-          action: subtract
-          value: 3
-        - event: story_is_about_to_end
-          action: pause
-          value: 0
-   greentimer:
-     start_value: 498
-     end_value: 0
-     tick_interval: 100ms
-     direction: down
-     start_running: yes
+  battlecounter:
+    start_value: 0
+    tick_interval: .1s
+    direction: up
+    start_running: no
+    control_events:
+      - event: story_intro_complete
+        action: start
+      - event: story_is_about_to_end
+        action: pause
+        value: 0
+  battletimer:
+    start_value: 0 #50
+#    end_value: 0
+    tick_interval: 1s
+    direction: up # down
+    start_running: no
+    control_events:
+      - event: story_intro_complete
+        action: start
+#      - event: shotgrouppopbumpers_hit
+#        action: add
+#        value: 5
+      - event: story_is_about_to_end
+        action: pause
+        value: 0
 
 widget_player:
-   mode_story06_started:
-      yt_remain_widget_06:
-         slide: scoring_slide
-   story_intro_complete:
-      david_and_goliath_widget:
-         slide: scoring_slide
-      green_bar_widget:
-         slide: scoring_slide
-      health_shell_blackout_widget:
-         slide: scoring_slide
-      health_shell_widget:
-         slide: scoring_slide
-   story_is_about_to_end:
-      david_and_goliath_widget:
-         action: remove
-      health_shell_widget:
-         action: remove
-      health_shell_blackout_widget:
-         action: remove
-      green_bar_widget:
-         action: remove
-   story06_ended:
-      yt_remain_widget_06:
-         action: remove
+#  mode_story06_started:
+#    yt_remain_widget_06:
+#      slide: scoring_slide
+  story_intro_complete:
+    david_and_goliath_widget:
+      slide: scoring_slide
+    green_bar_widget:
+      slide: scoring_slide
+    red_bar_widget:
+      slide: scoring_slide
+    health_shell_blackout_widget:
+      slide: scoring_slide
+    health_shell_widget:
+      slide: scoring_slide
+    health_shell_centerline:
+      slide: scoring_slide
+  story_is_about_to_end:
+    dsavid_and_goliath_widget:
+      action: remove
+    health_shell_widget:
+      action: remove
+    health_shell_blackout_widget:
+      action: remove
+    health_shell_centerline:
+      action: remove
+    green_bar_widget:
+      action: remove
+    red_bar_widget:
+      action: remove
+#  story06_ended:
+#    yt_remain_widget_06:
+#      action: remove
 
 widgets:
-  yt_remain_widget_06:
-    - type: text
-      text: "VINCent :0:  (damage)   :60: Maximillian"
-      y: 80%
+#  yt_remain_widget_06:
+#    - type: text
+#      text: "H (health)  |  BT (battleticks)  |  RW (red_width)  |  GW (green_width)"
+#      y: 80%
   david_and_goliath_widget:
     - type: image
       image: david_goliath
   health_shell_widget:
     - type: rectangle
       y: 50
-      width: 1000
+      z: 20
+      width: 800
       height: 20
       corner_radius: 3
       corner_segments: 3
@@ -224,7 +239,8 @@ widgets:
   health_shell_blackout_widget:
     - type: rectangle
       y: 50
-      width: 996
+      z: 21
+      width: 796
       height: 16
       corner_radius: 3
       corner_segments: 3
@@ -232,55 +248,37 @@ widgets:
   green_bar_widget:
     - type: rectangle
       y: 50
-      z: 20
+      z: 22
       anchor_x: left
       anchor_y: center
-      width: 1
+      width: 0
       height: 16
       corner_radius: 3
       corner_segments: 3
       color: 00FF00
-
-
-#my_test_slide:
-#  widgets:
-#    - type: image
-#      image: david_goliath
-#    - type: rectangle
-#      y: 50
-#      width: 6
-#      height: 20
-#      color: CC0000
-#    - type: rectangle
-#      y: 50
-#      anchor_x: left
-#      anchor_y: center
-#      width: 498
-#      height: 16
-#      corner_radius: 3
-#      corner_segments: 3
-#      color: 00FF00
-#    - type: rectangle
-#      y: 50
-#      anchor_x: right
-#      anchor_y: center
-#      width: 235
-#      height: 16
-#      corner_radius: 3
-#      corner_segments: 3
-#      color: FF0000
-#    - type: rectangle
-#      y: 50
-#      width: 996
-#      height: 16
-#      corner_radius: 3
-#      corner_segments: 3
-#      color: 000000
-#    - type: rectangle
-#      y: 50
-#      width: 1000
-#      height: 20
-#      corner_radius: 3
-#      corner_segments: 3
-#      color: CC0000
-#
+      animations:
+        player_green_width:
+          - property: width
+            value: (value)
+  red_bar_widget:
+    - type: rectangle
+      y: 50
+      z: 22
+      anchor_x: right
+      anchor_y: center
+      width: 0
+      height: 16
+      corner_radius: 3
+      corner_segments: 3
+      color: FF0000
+      animations:
+        player_red_width:
+          - property: width
+            value: (value)
+  health_shell_centerline:
+    - type: rectangle
+      y: 50
+      z: 23
+      width: 6
+      height: 23
+      color: CC0000

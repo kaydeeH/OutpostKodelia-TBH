@@ -14,11 +14,11 @@ sound_system:
        voice:
           type: standard
           simultaneous_sounds: 1
-          volume: 0.7
+          volume: 1.0
        sfx:
           type: standard
           simultaneous_sounds: 32
-          volume: .6
+          volume: 1.0
 
 sounds:
     testFX1:
