@@ -15,7 +15,8 @@ slides:
         y: 80%
         x: right - 10
         font_size: 50
-        font_name: ocr-a-tribute-bold
+        font_name: lucon
+        color: BBD8F0
         anchor_x: right
         anchor_y: bottom
       - type: text
@@ -25,7 +26,8 @@ slides:
         anchor_x: right
         anchor_y: bottom
         font_size: 50
-        font_name: ocr-a-tribute-bold
+        font_name: lucon
+        color: BBD8F0
       - type: text
         text: "Bonus Value (pds)"
         x: right - 90
@@ -310,7 +312,8 @@ widgets:
         number_grouping: true
         min_digits: 2
         font_size: 100
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         y: 10%
 # two to four players
    player_score_multiple_players:
@@ -319,7 +322,8 @@ widgets:
         number_grouping: true
         min_digits: 2
         font_size: 90
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         y: 15%
 # Multiple Players --
 # We need one active and one inactive widget per player
@@ -328,14 +332,16 @@ widgets:
       - type: text
         text: PLAYER 1
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 35%
         y: 5%
    player_2_of_2_is_inactive:
       - type: text
         text: (player2|score)
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 60%
@@ -344,7 +350,8 @@ widgets:
       - type: text
         text: (player1|score)
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 35%
@@ -353,7 +360,8 @@ widgets:
       - type: text
         text: PLAYER 2
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 60%
@@ -363,14 +371,16 @@ widgets:
       - type: text
         text: PLAYER 1
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 25%
         y: 5%
    player_2_of_3_is_inactive:
       - type: text
         text: (player2|score)
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 50%
@@ -379,7 +389,8 @@ widgets:
       - type: text
         text: (player3|score)
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 75%
@@ -390,21 +401,24 @@ widgets:
         number_grouping: true
         min_digits: 2
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 25%
         y: 5%
    player_2_of_3_is_active:
       - type: text
         text: PLAYER 2
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 50%
         y: 5%
    player_3_of_3_is_active:
       - type: text
         text: PLAYER 3
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 75%
         y: 5%
 # four players
@@ -412,35 +426,40 @@ widgets:
       - type: text
         text: PLAYER 1
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 15%
         y: 5%
    player_2_of_4_is_active:
       - type: text
         text: PLAYER 2
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 38%
         y: 5%
    player_3_of_4_is_active:
       - type: text
         text: PLAYER 3
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 62%
         y: 5%
    player_4_of_4_is_active:
       - type: text
         text: PLAYER 4
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         x: 87%
         y: 5%
    player_1_of_4_is_inactive:
       - type: text
         text: (player1|score)
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 15%
@@ -449,7 +468,8 @@ widgets:
       - type: text
         text: (player2|score)
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 40%
@@ -458,7 +478,8 @@ widgets:
       - type: text
         text: (player3|score)
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 65%
@@ -467,7 +488,8 @@ widgets:
       - type: text
         text: (player4|score)
         font_size: 40
-        font_name: ocr-a-tribute-bold
+        font_name: digital-7-mono
+        color: AC0000
         number_grouping: true
         min_digits: 2
         x: 85%
