@@ -23,3 +23,25 @@ images:
        file: BlackholeLogo.gif
     david_goliath:
        file: MaxVsVincent.jpg
+    singlePlayerScoreFrame:
+       file: CurrentPlayerScoreForSingle.png
+    multiPlayerScoreFrame:
+       file: CurrentPlayerScoreForMultiple.png
+    ballBar:
+       file: BallBar.png
+    ballSpinner:
+       file: BallSpinner.png
+    bonusBase:
+       file: BonusBase.png
+    bonusPopBox:
+       file: BonusPopBox.png
+    leftBar:
+       file: LeftBar.png
+    multiScoreLeft:
+       file: MultiPlayerHoldBoxLeft.png
+    multiScoreMid:
+       file: MultiPlayerHoldBoxMiddle.png
+    multiScoreMidDummy:
+       file: MultiPlayerDummyBoxMiddle.png
+    multiScoreRight:
+       file: MultiPlayerHoldBoxRight.png

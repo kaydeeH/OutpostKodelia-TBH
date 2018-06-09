@@ -14,12 +14,12 @@ class PlayerTurnRethrower(Scriptlet):
         int_player_count = self.machine.game.num_players     # type: int
         int_current_player = self.machine.game.player.number # type: int
 
-        if int_current_player == int_player_count:
-            int_player_turn = 1
-        else:
-            int_player_turn = int_current_player + 1
-
-        self.machine.events.post("player_turn_started_out_of", number=int_player_turn, total=int_player_count)
+        if self.machine.game.player.extra_balls < 1:
+          if int_current_player == int_player_count:
+              int_player_turn = 1
+          else:
+              int_player_turn = int_current_player + 1
+          self.machine.events.post("player_turn_started_out_of", number=int_player_turn, total=int_player_count)
 
     def _player_turn_start(self, **kwargs):
         int_player_count = self.machine.game.num_players  # type: int
