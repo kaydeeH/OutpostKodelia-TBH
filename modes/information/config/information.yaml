@@ -19,3 +19,17 @@ show_player:
    stop_information:
      pinwheel:
        action: stop
+
+slide_player:
+   start_information:
+     info_1:
+       action: play
+   stop_information:
+     info_1:
+       action: remove
+
+slides:
+   info_1:
+     - type: text
+       text: Basic Information Slide
+

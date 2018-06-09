@@ -20,6 +20,8 @@ slides:
 event_player:
   bonus_product:
     - do_my_nothing_event
+  bonus_start:
+    - bonus_slide_is_displayed
 
 widget_player:
   bonus_product:

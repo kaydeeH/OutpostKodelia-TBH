@@ -4,62 +4,26 @@ config:
   - scoring.yaml
   - statemachines.yaml
 
+
+# ---------------------------------------------------
+# Ideas for improvement
+# ---------------------------------------------------
+# THINGS THAT CAN BE THEIR OWN MODE
+#   bonus multiplier
+#   rotating target/extra ball mechanic
+
+# Can we prevent the selector mode from starting when
+#   only one regular (1 to 6) mode remains?
+#   mode 7 will automatically start?
+# ...or maybe just keep its slide from appearing in this case
+
+
 mode:
   start_events: ball_starting
   priority: 100
   file_log: full
 
-slide_player:
-  mode_base_started: scoring_slide
-#  scoop_slide: s_ir_scoop_detect_active
-
-#widget_player:
-#   s_jet_upper_left_active:
-#      sample_quick_vid:
-#         slide: scoring_slide
-#         widget_settings:
-#           expire: 2s
-
 slides:
-   scoring_slide:
-    widgets:
-      - type: image
-        image: logo
-        x: 150
-        y: 650
-      - type: text
-        text: (score)
-        number_grouping: true
-        min_digits: 2
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-        y: 40%
-      - type: text
-        text: PLAYER (number)
-        y: 10
-        x: 10
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        anchor_x: left
-        anchor_y: bottom
-      - type: text
-        text: BALL (ball)
-        y: 10
-        x: right-10
-        anchor_x: right
-        anchor_y: bottom
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "Bonus Value (pds)"
-        y: 30%
-      - type: text
-        text: "Bonus Count: (bonuscount)"
-        y: 25%
-      - type: text
-        text: "BONUS X: (bonus_multiplier)"
-        font_size: 30
-        y: 20%
    scoop_slide:
     widgets:
       - type: text
@@ -413,14 +377,17 @@ show_player:
             light1: l_GIScoopLR
   shotScoop_scoopReady_hit:
       scoop_show:
+          priority: 275
           loops: 0
           events_when_completed: select_mode_start
   shotScoop_scoopActive_hit:
       scoop_show_ip:
+          priority: 275
           loops: 0
           events_when_completed: scoop_eject
   shotScoop_scoopNotReady_hit:
       scoop_show_nr:
+          priority: 275
           loops: 0
           events_when_completed: scoop_eject
   extra_ball_is_lit:

@@ -1,0 +1,479 @@
+#config_version=5
+
+slide_player:
+  single_player_ball_started: scoring_slide
+
+slides:
+   scoring_slide:
+    widgets:
+      - type: image
+        image: logo
+        x: 150
+        y: 650
+      - type: text
+        text: PLAYER (number)
+        y: 80%
+        x: right - 10
+        font_size: 50
+        font_name: ocr-a-tribute-bold
+        anchor_x: right
+        anchor_y: bottom
+      - type: text
+        text: BALL (ball)
+        y: 88%
+        x: right - 10
+        anchor_x: right
+        anchor_y: bottom
+        font_size: 50
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: "Bonus Value (pds)"
+        x: right - 90
+        y: 205
+      - type: text
+        text: "Bonus Count: (bonuscount)"
+        #text: "Number of Players:  (game.num_players)"
+        x: right - 130
+        y: 20%
+      - type: text
+        text: "BONUS X: (bonus_multiplier)"
+        #text: "Number of Players: (machine.game.num_players)"
+        x: right - 135
+        y: 15%
+
+# this will end up being the "one player only" widget
+#      - type: text
+#        text: (score)
+#        number_grouping: true
+#        min_digits: 2
+#        font_size: 100
+#        font_name: ocr-a-tribute-bold
+#        y: 10%
+#
+#state_machines:
+#  player_tracker:
+#     states:
+#       start:
+#         label: 1up only
+#       players2:
+#         label: 2up start
+#       players3:
+#         label: 3up start
+#       players4:
+#         label: 4up start
+#       player1of2:
+#         label: player 1 of 2
+#         events_when_started: player_1_of_2
+#       player2of2:
+#         label: player 2 of 2
+#         events_when_started: player_2_of_2
+#       player1of3:
+#         label: player 1 of 3
+#         events_when_started: player_1_of_3
+#       player2of3:
+#         label: player 2 of 3
+#         events_when_started: player_2_of_3
+#       player3of3:
+#         label: player 3 of 3
+#         events_when_started: player_3_of_3
+#       player1of4:
+#         label: player 1 of 4
+#         events_when_started: player_1_of_4
+#       player2of4:
+#         label: player 2 of 4
+#         events_when_started: player_2_of_4
+#       player3of4:
+#         label: player 3 of 4
+#         events_when_started: player_3_of_4
+#       player4of4:
+#         label: player 4 of 4
+#         events_when_started: player_4_of_4
+#     transitions:
+#       - source: start
+#         target: players2
+#         events: player_added{num==2}
+#       - source: players2
+#         target: players3
+#         events: player_added{num==3}
+#       - source: players3
+#         target: players4
+#         events: player_added{num==4}
+#       - source: player1of2
+#         target: player2of2
+#         events: player_turn_started{number==2}
+#       - source: player1of3
+#         target: player2of3
+#         events: player_turn_started{number==2}
+#       - source: player1of4
+#         target: player2of4
+#         events: player_turn_started{number==2}
+#       - source: player2of3
+#         target: player3of3
+#         events: player_turn_started{number==3}
+#       - source: player2of4
+#         target: player3of4
+#         events: player_turn_started{number==3}
+#       - source: player3of4
+#         target: player4of4
+#         events: player_turn_started{number==4}
+#       - source: player2of2
+#         target: player1of2
+#         events: player_turn_started{number==1}
+#       - source: player3of3
+#         target: player1of3
+#         events: player_turn_started{number==1}
+#       - source: player4of4
+#         target: player1of4
+#         events: player_turn_started{number==1}
+
+widget_player:
+  player_added{num==1}:
+    player_score_p1_only:
+      slide: scoring_slide
+  player_added{num==2}:
+    player_score_p1_only:
+      action: remove
+      slide: scoring_slide
+    player_score_multiple_players:
+      slide: scoring_slide
+    player_1_of_2_is_active:
+      slide: scoring_slide
+    player_2_of_2_is_inactive:
+      slide: scoring_slide
+  player_added{num==3}:
+    player_1_of_2_is_active:
+      slide: scoring_slide
+      action: remove
+    player_2_of_2_is_inactive:
+      slide: scoring_slide
+      action: remove
+    player_1_of_3_is_active:
+      slide: scoring_slide
+    player_2_of_3_is_inactive:
+      slide: scoring_slide
+    player_3_of_3_is_inactive:
+      slide: scoring_slide
+  player_added{num==4}:
+    player_1_of_3_is_active:
+      action: remove
+      slide: scoring_slide
+    player_2_of_3_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_3_of_3_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_1_of_4_is_active:
+      slide: scoring_slide
+    player_2_of_4_is_inactive:
+      slide: scoring_slide
+    player_3_of_4_is_inactive:
+      slide: scoring_slide
+    player_4_of_4_is_inactive:
+      slide: scoring_slide
+  player_turn_started_out_of{number==1 and total==2}:
+    player_1_of_2_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_2_of_2_is_active:
+      action: remove
+      slide: scoring_slide
+    player_1_of_2_is_active:
+      slide: scoring_slide
+    player_2_of_2_is_inactive:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  player_turn_started_out_of{number==2 and total==2}:
+    player_1_of_2_is_active:
+      action: remove
+      slide: scoring_slide
+    player_2_of_2_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_1_of_2_is_inactive:
+      slide: scoring_slide
+    player_2_of_2_is_active:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  player_turn_started_out_of{number==1 and total==3}:
+    player_1_of_3_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_3_of_3_is_active:
+      action: remove
+      slide: scoring_slide
+    player_1_of_3_is_active:
+      slide: scoring_slide
+    player_3_of_3_is_inactive:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  player_turn_started_out_of{number==2 and total==3}:
+    player_1_of_3_is_active:
+      action: remove
+      slide: scoring_slide
+    player_2_of_3_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_1_of_3_is_inactive:
+      slide: scoring_slide
+    player_2_of_3_is_active:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  player_turn_started_out_of{number==3 and total==3}:
+    player_2_of_3_is_active:
+      action: remove
+      slide: scoring_slide
+    player_3_of_3_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_2_of_3_is_inactive:
+      slide: scoring_slide
+    player_3_of_3_is_active:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  player_turn_started_out_of{number==1 and total==4}:
+    player_1_of_4_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_4_of_4_is_active:
+      action: remove
+      slide: scoring_slide
+    player_1_of_4_is_active:
+      slide: scoring_slide
+    player_4_of_4_is_inactive:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  player_turn_started_out_of{number==2 and total==4}:
+    player_2_of_4_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_1_of_4_is_active:
+      action: remove
+      slide: scoring_slide
+    player_2_of_4_is_active:
+      slide: scoring_slide
+    player_1_of_4_is_inactive:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  player_turn_started_out_of{number==3 and total==4}:
+    player_3_of_4_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_2_of_4_is_active:
+      action: remove
+      slide: scoring_slide
+    player_3_of_4_is_active:
+      slide: scoring_slide
+    player_2_of_4_is_inactive:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  player_turn_started_out_of{number==4 and total==4}:
+    player_4_of_4_is_inactive:
+      action: remove
+      slide: scoring_slide
+    player_3_of_4_is_active:
+      action: remove
+      slide: scoring_slide
+    player_4_of_4_is_active:
+      slide: scoring_slide
+    player_3_of_4_is_inactive:
+      slide: scoring_slide
+    player_score_multiple_players:
+      action: remove
+      slide: scoring_slide
+  multiplayer_game_player_start:
+    player_score_multiple_players:
+      slide: scoring_slide
+
+
+widgets:
+# one player only
+   player_score_p1_only:
+      - type: text
+        text: (score)
+        number_grouping: true
+        min_digits: 2
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+        y: 10%
+# two to four players
+   player_score_multiple_players:
+      - type: text
+        text: (score)
+        number_grouping: true
+        min_digits: 2
+        font_size: 90
+        font_name: ocr-a-tribute-bold
+        y: 15%
+# Multiple Players --
+# We need one active and one inactive widget per player
+# two players only
+   player_1_of_2_is_active:
+      - type: text
+        text: PLAYER 1
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 35%
+        y: 5%
+   player_2_of_2_is_inactive:
+      - type: text
+        text: (player2|score)
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 60%
+        y: 5%
+   player_1_of_2_is_inactive:
+      - type: text
+        text: (player1|score)
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 35%
+        y: 5%
+   player_2_of_2_is_active:
+      - type: text
+        text: PLAYER 2
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 60%
+        y: 5%
+# three players
+   player_1_of_3_is_active:
+      - type: text
+        text: PLAYER 1
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 25%
+        y: 5%
+   player_2_of_3_is_inactive:
+      - type: text
+        text: (player2|score)
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 50%
+        y: 5%
+   player_3_of_3_is_inactive:
+      - type: text
+        text: (player3|score)
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 75%
+        y: 5%
+   player_1_of_3_is_inactive:
+      - type: text
+        text: (player1|score)
+        number_grouping: true
+        min_digits: 2
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 25%
+        y: 5%
+   player_2_of_3_is_active:
+      - type: text
+        text: PLAYER 2
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 50%
+        y: 5%
+   player_3_of_3_is_active:
+      - type: text
+        text: PLAYER 3
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 75%
+        y: 5%
+# four players
+   player_1_of_4_is_active:
+      - type: text
+        text: PLAYER 1
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 15%
+        y: 5%
+   player_2_of_4_is_active:
+      - type: text
+        text: PLAYER 2
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 38%
+        y: 5%
+   player_3_of_4_is_active:
+      - type: text
+        text: PLAYER 3
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 62%
+        y: 5%
+   player_4_of_4_is_active:
+      - type: text
+        text: PLAYER 4
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        x: 87%
+        y: 5%
+   player_1_of_4_is_inactive:
+      - type: text
+        text: (player1|score)
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 15%
+        y: 5%
+   player_2_of_4_is_inactive:
+      - type: text
+        text: (player2|score)
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 40%
+        y: 5%
+   player_3_of_4_is_inactive:
+      - type: text
+        text: (player3|score)
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 65%
+        y: 5%
+   player_4_of_4_is_inactive:
+      - type: text
+        text: (player4|score)
+        font_size: 40
+        font_name: ocr-a-tribute-bold
+        number_grouping: true
+        min_digits: 2
+        x: 85%
+        y: 5%
+
+
+
+
+
