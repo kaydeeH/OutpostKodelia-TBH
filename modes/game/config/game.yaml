@@ -46,104 +46,119 @@ slides:
         color: BBD8F0
         z: 70
       - type: text
-        text: "Bonus Value (pds)"
-        x: right - 90
-        y: 205
+        text: "GRAVITY\nASSISTS\n"
+        y: top - 28
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 20
+        font_name: lucon
+        color: BBD8F0
+        z: 70
       - type: text
-        text: "Bonus Count: (bonuscount)"
-        #text: "Number of Players:  (game.num_players)"
-        x: right - 130
-        y: 20%
+        text: "(gravassist)/(gravassistTarget)"
+        y: top - 78
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 28
+        font_name: lucon
+        color: BBD8F0
+        z: 70
       - type: text
-        text: "BONUS X: (bonus_multiplier)"
-        #text: "Number of Players: (machine.game.num_players)"
-        x: right - 135
-        y: 15%
-
-# this will end up being the "one player only" widget
+        text: "INERTIAL\nBOOSTS"
+        y: top - 136
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 20
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: "(pops)/(popsTarget)"
+        y: top - 186
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 28
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: "COORDINATE\nLOCKS"
+        y: top - 244
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 20
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: "(lanes)/(lanesTarget)"
+        y: top - 294
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 28
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: "ROBOTS\nDESTROYED"
+        y: top - 352
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 20
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: "(drops)/(dropsTarget)"
+        y: top - 402
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 28
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: "GYROSCOPE\nROTATIONS"
+        y: top - 460
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 20
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: "(spins)/(spinsTarget)"
+        y: top - 510
+        x: left + 85
+        anchor_x: center
+        anchor_y: top
+        font_size: 28
+        font_name: lucon
+        color: BBD8F0
+        z: 70
 #      - type: text
-#        text: (score)
-#        number_grouping: true
-#        min_digits: 2
-#        font_size: 100
-#        font_name: ocr-a-tribute-bold
-#        y: 10%
-#
-#state_machines:
-#  player_tracker:
-#     states:
-#       start:
-#         label: 1up only
-#       players2:
-#         label: 2up start
-#       players3:
-#         label: 3up start
-#       players4:
-#         label: 4up start
-#       player1of2:
-#         label: player 1 of 2
-#         events_when_started: player_1_of_2
-#       player2of2:
-#         label: player 2 of 2
-#         events_when_started: player_2_of_2
-#       player1of3:
-#         label: player 1 of 3
-#         events_when_started: player_1_of_3
-#       player2of3:
-#         label: player 2 of 3
-#         events_when_started: player_2_of_3
-#       player3of3:
-#         label: player 3 of 3
-#         events_when_started: player_3_of_3
-#       player1of4:
-#         label: player 1 of 4
-#         events_when_started: player_1_of_4
-#       player2of4:
-#         label: player 2 of 4
-#         events_when_started: player_2_of_4
-#       player3of4:
-#         label: player 3 of 4
-#         events_when_started: player_3_of_4
-#       player4of4:
-#         label: player 4 of 4
-#         events_when_started: player_4_of_4
-#     transitions:
-#       - source: start
-#         target: players2
-#         events: player_added{num==2}
-#       - source: players2
-#         target: players3
-#         events: player_added{num==3}
-#       - source: players3
-#         target: players4
-#         events: player_added{num==4}
-#       - source: player1of2
-#         target: player2of2
-#         events: player_turn_started{number==2}
-#       - source: player1of3
-#         target: player2of3
-#         events: player_turn_started{number==2}
-#       - source: player1of4
-#         target: player2of4
-#         events: player_turn_started{number==2}
-#       - source: player2of3
-#         target: player3of3
-#         events: player_turn_started{number==3}
-#       - source: player2of4
-#         target: player3of4
-#         events: player_turn_started{number==3}
-#       - source: player3of4
-#         target: player4of4
-#         events: player_turn_started{number==4}
-#       - source: player2of2
-#         target: player1of2
-#         events: player_turn_started{number==1}
-#       - source: player3of3
-#         target: player1of3
-#         events: player_turn_started{number==1}
-#       - source: player4of4
-#         target: player1of4
-#         events: player_turn_started{number==1}
+#        text: "Bonus Value (pds)"
+#        x: right - 90
+#        y: 205
+#      - type: text
+#        text: "Bonus Count: (bonuscount)"
+#        #text: "Number of Players:  (game.num_players)"
+#        x: right - 130
+#        y: 20%
+#      - type: text
+#        text: "BONUS X: (bonus_multiplier)"
+#        #text: "Number of Players: (machine.game.num_players)"
+#        x: right - 135
+#        y: 15%
 
 widget_player:
   player_added{num==1}:
@@ -337,7 +352,6 @@ widget_player:
     player_score_multiple_players:
       slide: scoring_slide
 
-
 widgets:
 # one player only
    player_score_p1_only:
@@ -348,11 +362,31 @@ widgets:
         font_size: 86
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center
+        x: center + 254
         y: bottom + 115
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 86
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 254
+        y: bottom + 115
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 86
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 254
+        y: bottom + 115
+        z: 65
    player_score_from_p1_only:
       - type: image
         image: singlePlayerScoreFrame
@@ -361,6 +395,7 @@ widgets:
         x: center
         y: bottom
         z: 50
+
 # two to four players
    player_score_multiple_players:
       - type: text
@@ -371,10 +406,30 @@ widgets:
         font_name: digital-7-mono
         color: AC0000
         anchor_y: top
-        anchor_x: center
-        x: center
+        anchor_x: right
+        x: center + 228
         y: bottom + 146
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 76
+        font_name: digital-7-mono
+        color: 380000
+        anchor_y: top
+        anchor_x: right
+        x: center + 228
+        y: bottom + 146
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 76
+        font_name: digital-7-mono
+        color: 380000
+        anchor_y: top
+        anchor_x: right
+        x: center + 228
+        y: bottom + 146
+        z: 65
 
 # Multiple Players --
 # We need one active and one inactive widget per player
@@ -410,15 +465,35 @@ widgets:
         z: 50
    player_1_of_2_is_active:
       - type: text
-        text: PLAYER 1
+        text: "PLAYER  1  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center - 252
+        x: center - 148
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 148
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 148
+        y: bottom + 40
+        z: 65
    player_2_of_2_is_inactive:
       - type: text
         text: (player2|score)
@@ -427,11 +502,31 @@ widgets:
         color: AC0000
         number_grouping: true
         min_digits: 2
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center + 252
+        x: center + 356
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 356
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 356
+        y: bottom + 40
+        z: 65
    player_1_of_2_is_inactive:
       - type: text
         text: (player1|score)
@@ -440,24 +535,64 @@ widgets:
         color: AC0000
         number_grouping: true
         min_digits: 2
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center - 252
+        x: center - 148
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 148
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 148
+        y: bottom + 40
+        z: 65
    player_2_of_2_is_active:
       - type: text
-        text: PLAYER 2
+        text: "PLAYER  2  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
         number_grouping: true
         min_digits: 2
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center + 252
+        x: center + 356
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 356
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 356
+        y: bottom + 40
+        z: 65
 # three players
    player_score_frame_three_players:
       - type: image
@@ -490,28 +625,69 @@ widgets:
         z: 50
    player_1_of_3_is_active:
       - type: text
-        text: PLAYER 1
+        text: "PLAYER  1  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center - 252
+        x: center - 148
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 148
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 148
+        y: bottom + 40
+        z: 65
    player_2_of_3_is_inactive:
       - type: text
         text: (player2|score)
         font_size: 36
         font_name: digital-7-mono
-        color: AC0000
         number_grouping: true
         min_digits: 2
-        anchor_x: center
+        color: AC0000
+        anchor_x: right
         anchor_y: top
-        x: center
+        x: center + 104
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 104
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 104
+        y: bottom + 40
+        z: 65
+
    player_3_of_3_is_inactive:
       - type: text
         text: (player3|score)
@@ -520,48 +696,130 @@ widgets:
         color: AC0000
         number_grouping: true
         min_digits: 2
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center + 252
+        x: center + 356
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 356
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 356
+        y: bottom + 40
+        z: 65
    player_1_of_3_is_inactive:
       - type: text
         text: (player1|score)
         number_grouping: true
-        min_digits: 2
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center - 252
+        x: center - 148
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 148
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 148
+        y: bottom + 40
+        z: 65
+
    player_2_of_3_is_active:
       - type: text
-        text: PLAYER 2
+        text: "PLAYER  2  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center
+        x: center + 104
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 104
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 104
+        y: bottom + 40
+        z: 65
+
    player_3_of_3_is_active:
       - type: text
-        text: PLAYER 3
+        text: "PLAYER  3  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
         number_grouping: true
         min_digits: 2
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center + 252
+        x: center + 356
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 356
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 356
+        y: bottom + 40
+        z: 65
+
 
 # four players
    player_score_frame_four_players:
@@ -602,48 +860,132 @@ widgets:
         z: 50
    player_1_of_4_is_active:
       - type: text
-        text: PLAYER 1
+        text: "PLAYER  1  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center - 378
+        x: center - 274
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 274
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 274
+        y: bottom + 40
+        z: 65
+
    player_2_of_4_is_active:
       - type: text
-        text: PLAYER 2
+        text: "PLAYER  2  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center - 126
+        x: center - 22
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 22
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 22
+        y: bottom + 40
+        z: 65
+
    player_3_of_4_is_active:
       - type: text
-        text: PLAYER 3
+        text: "PLAYER  3  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center + 126
+        x: center + 230
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 230
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 230
+        y: bottom + 40
+        z: 65
+
    player_4_of_4_is_active:
       - type: text
-        text: PLAYER 4
+        text: "PLAYER  4  "
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center + 378
+        x: center + 482
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 482
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 482
+        y: bottom + 40
+        z: 65
+
    player_1_of_4_is_inactive:
       - type: text
         text: (player1|score)
@@ -652,48 +994,132 @@ widgets:
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center - 378
+        x: center - 274
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 274
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 274
+        y: bottom + 40
+        z: 65
+
    player_2_of_4_is_inactive:
       - type: text
         text: (player2|score)
+        number_grouping: true
+        min_digits: 2
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        number_grouping: true
-        min_digits: 2
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center - 126
+        x: center - 22
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 22
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center - 22
+        y: bottom + 40
+        z: 65
+
    player_3_of_4_is_inactive:
       - type: text
         text: (player3|score)
+        number_grouping: true
+        min_digits: 2
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        number_grouping: true
-        min_digits: 2
-        x: center + 126
+        x: center + 230
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 230
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 230
+        y: bottom + 40
+        z: 65
+
    player_4_of_4_is_inactive:
       - type: text
         text: (player4|score)
+        number_grouping: true
+        min_digits: 2
         font_size: 36
         font_name: digital-7-mono
         color: AC0000
-        number_grouping: true
-        min_digits: 2
-        anchor_x: center
+        anchor_x: right
         anchor_y: top
-        x: center + 378
+        x: center + 482
         y: bottom + 40
         z: 70
+      - type: text
+        text: 8888888888888
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 482
+        y: bottom + 40
+        z: 65
+      - type: text
+        text: " ,   ,   ,   "
+        font_size: 36
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        x: center + 482
+        y: bottom + 40
+        z: 65
+
 

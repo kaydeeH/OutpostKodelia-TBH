@@ -80,6 +80,28 @@ variable_player:
     bonus_l5:
        int: 0
        action: set
+#todo Assign some real stuff here
+    gravassist:
+       int: 61
+       action: set
+    gravassistTarget:
+       int: 200
+       action: set
+    popsTarget:
+       int: 200
+       action: set
+    lanes:
+       int: 61
+       action: set
+    lanesTarget:
+       int: 200
+       action: set
+    dropsTarget:
+       int: 200
+       action: set
+    spinsTarget:
+       int: 200
+       action: set
   s_jet_upper_left_active:
     score: 1000
     pops: 1
