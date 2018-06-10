@@ -23,6 +23,22 @@ state_machines:
          target: extra_ball
          events: shotGroupLeftTargets_lit_complete, shotGroupRightTargets_lit_complete
 
+  scoop_notify:
+     states:
+       start:
+         label: start state
+       doNotify:
+         label: do the notification
+         events_when_started: do_scoop_notify
+     transitions:
+       - source: start
+         target: doNotify
+         events: scoop_reset
+       - source: doNotify
+         target: start
+         events: shotScoop_scoopReady_hit
+
+
   lt0:
      states:
        start:

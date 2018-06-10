@@ -7,3 +7,6 @@ scriptlets:
   - shooting_gallery_light_controller.ShootingGalleryLightController
   - shooting_gallery_achievement.ShootingGalleryAchievement
   - player_turn_rethrower.PlayerTurnRethrower
+  - ball_goal_calc.BallGoalCalc
+  - bonus_box_rotate.BonusBoxRotate
+  - bonus_multi_notify.BonusMultiNotify

@@ -37,6 +37,8 @@ modes:
   - story06
   - story07
   - information
+  - ball_goals
+  - notify
   - storyScoopOverride
   - pop_blue
   - endOfGame

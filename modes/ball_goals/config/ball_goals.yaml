@@ -1,0 +1,17 @@
+#config_version=5
+
+config:
+   - ball_goals_var_player.yaml
+
+mode:
+   start_events: ball_starting
+   stop_events: ball_ending
+   priority: 600
+
+# When a value has reached its reward level, we want to --
+# - award an increase in bonus value
+# - added if they've all now reached the same level?
+# - set the next target
+# - offer an item bonus
+
+

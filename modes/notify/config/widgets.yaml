@@ -1,0 +1,217 @@
+#config_version=5
+
+animations:
+   bonus_slide_in:
+       - property: x
+         relative: true
+         value: 0
+#         duration: 177ms
+         duration: 177ms
+       - property: x
+         relative: true
+         value: -177
+#         duration: 177ms
+         duration: 177ms
+         easing: out_cubic
+   bonus_slide_out:
+       - property: x
+         relative: true
+         value: +177
+#         duration: 177ms
+         duration: 177ms
+         easing: in_cubic
+   bonus_rotate:
+       - property: x
+         relative: true
+         value: 0
+#         duration: 177ms
+         duration: 100ms
+       - property: y
+         relative: true
+         value: 144
+         duration: 144ms
+#         duration: 144ms
+
+
+widgets:
+   bonus_pop_box:
+   - type: image
+     image: bonusBase
+     anchor_x: right
+     anchor_y: bottom
+     x: right + 177
+     y: bottom
+     z: 60
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_first_remove: bonus_slide_out
+
+# ### BOX 1 ###
+   simple_bonus_box_01:
+   - type: image
+     image: bonusPopBox
+     anchor_x: right
+     anchor_y: bottom
+     x: right + 177
+     y: bottom + 142                    # 354, 498
+     z: 60
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_01_start: bonus_slide_out
+       bonus_box_01_rotate: bonus_rotate
+   - type: text
+     text: (bonus_box_01_text)
+     anchor_x: center
+     anchor_y: bottom
+     font_size: 20
+     font_name: lucon
+     color: BBD8F0
+#     x: right - 85 + 177
+     x: right + 92
+     y: bottom + 208                   # 320, 464
+     z: 70
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_01_start: bonus_slide_out
+       bonus_box_01_rotate: bonus_rotate
+   - type: text
+     text: (bonus_box_01_value)
+     anchor_x: center
+     anchor_y: bottom
+     font_size: 40
+     font_name: digital-7-mono
+     color: CC0000
+#     x: right - 85 + 177
+     x: right + 92
+     y: bottom + 175
+     z: 70
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_01_start: bonus_slide_out
+       bonus_box_01_rotate: bonus_rotate
+
+# ### BOX 2 ###
+   simple_bonus_box_02:
+   - type: image
+     image: bonusPopBox
+     anchor_x: right
+     anchor_y: bottom
+     x: right + 177
+     y: bottom + 142                    # 354, 498
+     z: 60
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_02_start: bonus_slide_out
+       bonus_box_02_rotate: bonus_rotate
+   - type: text
+     text: (bonus_box_02_text)
+     anchor_x: center
+     anchor_y: bottom
+     font_size: 20
+     font_name: lucon
+     color: BBD8F0
+     x: right + 92
+     y: bottom + 208
+     z: 70
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_02_start: bonus_slide_out
+       bonus_box_02_rotate: bonus_rotate
+   - type: text
+     text: (bonus_box_02_value)
+     anchor_x: center
+     anchor_y: bottom
+     font_size: 40
+     font_name: digital-7-mono
+     color: CC0000
+     x: right + 92
+     y: bottom + 175
+     z: 70
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_02_start: bonus_slide_out
+       bonus_box_02_rotate: bonus_rotate
+
+# ### BOX 3 ###
+   simple_bonus_box_03:
+   - type: image
+     image: bonusPopBox
+     anchor_x: right
+     anchor_y: bottom
+     x: right + 177
+     y: bottom + 142                    # 354, 498
+     z: 60
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_03_start: bonus_slide_out
+       bonus_box_03_rotate: bonus_rotate
+   - type: text
+     text: (bonus_box_03_text)
+     anchor_x: center
+     anchor_y: bottom
+     font_size: 20
+     font_name: lucon
+     color: BBD8F0
+     x: right + 92
+     y: bottom + 208
+     z: 70
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_03_start: bonus_slide_out
+       bonus_box_03_rotate: bonus_rotate
+   - type: text
+     text: (bonus_box_03_value)
+     anchor_x: center
+     anchor_y: bottom
+     font_size: 40
+     font_name: digital-7-mono
+     color: CC0000
+     x: right + 92
+     y: bottom + 175
+     z: 70
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_03_start: bonus_slide_out
+       bonus_box_03_rotate: bonus_rotate
+
+# ### BOX 4 ###
+   simple_bonus_box_04:
+   - type: image
+     image: bonusPopBox
+     anchor_x: right
+     anchor_y: bottom
+     x: right + 177
+     y: bottom + 142                    # 354, 498
+     z: 60
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_04_start: bonus_slide_out
+       bonus_box_04_rotate: bonus_rotate
+   - type: text
+     text: (bonus_box_04_text)
+     anchor_x: center
+     anchor_y: bottom
+     font_size: 20
+     font_name: lucon
+     color: BBD8F0
+     x: right + 92
+     y: bottom + 208
+     z: 70
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_04_start: bonus_slide_out
+       bonus_box_04_rotate: bonus_rotate
+   - type: text
+     text: (bonus_box_04_value)
+     anchor_x: center
+     anchor_y: bottom
+     font_size: 40
+     font_name: digital-7-mono
+     color: CC0000
+     x: right + 92
+     y: bottom + 175
+     z: 70
+     animations:
+       add_to_slide: bonus_slide_in
+       bonus_box_remove_04_start: bonus_slide_out
+       bonus_box_04_rotate: bonus_rotate

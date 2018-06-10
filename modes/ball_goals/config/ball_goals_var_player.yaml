@@ -1,0 +1,56 @@
+#config_version=5
+
+
+# All of the "accumulation" counters will be here.
+# Items will *always* count, so they'll be triggered by switches.
+
+variable_player:
+# Gravity Assist - Scoop
+  s_ir_scoop_detect_active:
+    gravassist: 1
+
+# Inertial Boost - Pop Bumpers
+  s_jet_upper_left_active:
+    pops: 1
+  s_jet_upper_right_active:
+    pops: 1
+  s_jet_lower_center_active:
+    pops: 1
+
+# Coordinates - Top Lanes
+  s_lane0_active:
+    lanes: 1
+  s_lane1_active:
+    lanes: 1
+  s_lane2_active:
+    lanes: 1
+  s_lane3_active:
+    lanes: 1
+  s_lane4_active:
+    lanes: 1
+
+# Robots - Drop Targets
+  s_dTargetL0_active:
+    drops: 1
+  s_dTargetL1_active:
+    drops: 1
+  s_dTargetL2_active:
+    drops: 1
+  s_dTargetL3_active:
+    drops: 1
+  s_dTargetR0_active:
+    drops: 1
+  s_dTargetR1_active:
+    drops: 1
+  s_dTargetR2_active:
+    drops: 1
+  s_dTargetR3_active:
+    drops: 1
+  s_dTargetCL_active:
+    drops: 1
+  s_dTargetCR_active:
+    drops: 1
+
+# Gyro - Spins
+  s_spinner_active:
+    spins: 1
