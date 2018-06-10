@@ -1,0 +1,145 @@
+#config_version=5
+
+# TO ADD A BONUS BOX
+# Throw an event:
+# invoke_notify_by_event
+# args: new_text, new_value
+# Text becomes the white text at the top
+# Value becomes the red text at the bottom
+
+config:
+   - widgets.yaml
+
+mode:
+   start_events: ball_starting
+   stop_events: ball_ending
+   priority: 300
+
+event_player:
+   bonus_box_create{box==1}:
+     - bonus_box_01_create
+   bonus_box_create{box==2}:
+     - bonus_box_02_create
+   bonus_box_create{box==3}:
+     - bonus_box_03_create
+   bonus_box_create{box==4}:
+     - bonus_box_04_create
+   bonus_box_rotate{box==1}:
+     - bonus_box_01_rotate
+   bonus_box_rotate{box==2}:
+     - bonus_box_02_rotate
+   bonus_box_rotate{box==3}:
+     - bonus_box_03_rotate
+   bonus_box_rotate{box==4}:
+     - bonus_box_04_rotate
+   bonus_box_remove_01_start:
+     - bonus_box_01_remove |320ms
+   bonus_box_remove_02_start:
+     - bonus_box_02_remove |320ms
+   bonus_box_remove_03_start:
+     - bonus_box_03_remove |320ms
+   bonus_box_remove_04_start:
+     - bonus_box_04_remove |320ms
+   bonus_box_first_remove:
+     - bonus_box_first_remove_done |320ms
+
+
+#event_player:
+#   mode_notify_started:
+#     - add_one_widget
+
+timers:
+   bonus_box_01_timer:
+     start_value: 0
+     end_value: 10
+     direction: up
+     start_running: false
+     control_events:
+       - action: restart
+         event: bonus_box_01_create
+       - action: pause
+         event: bonus_box_remove_01_start
+         value: 0
+   bonus_box_02_timer:
+     start_value: 0
+     end_value: 10
+     direction: up
+     start_running: false
+     control_events:
+       - action: restart
+         event: bonus_box_02_create
+       - action: pause
+         event: bonus_box_remove_02_start
+         value: 0
+   bonus_box_03_timer:
+     start_value: 0
+     end_value: 10
+     direction: up
+     start_running: false
+     control_events:
+       - action: restart
+         event: bonus_box_03_create
+       - action: pause
+         event: bonus_box_remove_03_start
+         value: 0
+   bonus_box_04_timer:
+     start_value: 0
+     end_value: 10
+     direction: up
+     start_running: false
+     control_events:
+       - action: restart
+         event: bonus_box_04_create
+       - action: pause
+         event: bonus_box_remove_04_start
+         value: 0
+   bonus_box_queue:
+     start_value: 0
+     direction: up
+     start_running: true
+     tick_interval: .5s
+
+variable_player:
+   mode_notify_started:
+     bonus_box_01_position: 0
+     bonus_box_02_position: 0
+     bonus_box_03_position: 0
+     bonus_box_04_position: 0
+     bonus_box_counter: 0
+
+widget_player:
+   bonus_box_first:
+     bonus_pop_box:
+       slide: scoring_slide
+   bonus_box_first_remove_done:
+     bonus_pop_box:
+       action: remove
+       slide: scoring_slide
+   bonus_box_01_create:
+     simple_bonus_box_01:
+       slide: scoring_slide
+   bonus_box_01_remove:
+     simple_bonus_box_01:
+       action: remove
+       slide: scoring_slide
+   bonus_box_02_create:
+     simple_bonus_box_02:
+       slide: scoring_slide
+   bonus_box_02_remove:
+     simple_bonus_box_02:
+       action: remove
+       slide: scoring_slide
+   bonus_box_03_create:
+     simple_bonus_box_03:
+       slide: scoring_slide
+   bonus_box_03_remove:
+     simple_bonus_box_03:
+       action: remove
+       slide: scoring_slide
+   bonus_box_04_create:
+     simple_bonus_box_04:
+       slide: scoring_slide
+   bonus_box_04_remove:
+     simple_bonus_box_04:
+       action: remove
+       slide: scoring_slide

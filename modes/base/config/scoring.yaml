@@ -33,19 +33,26 @@ counters:
     disable_on_complete: false
     multiple_hit_window: 10ms
 
+event_player:
+  do_scoop_notify:
+    invoke_notify_by_event:
+       new_value: "ACTIVE"
+       new_text: "SCOOP\nSHOT"
+
 variable_player:
+# This should tell the NOTIFY mode to add a scoop shot active box!
+#  do_scoop_notify:
+#    bonus_box_new_value:
+#       string: "ACTIVE"
+#    bonus_box_new_text:
+#       string: "SCOOP\nSHOT"
+#    bonus_box_counter: 1
+
+
+
   mode_base_started:
-    pops:
-       int: 1
-       action: set
-    drops:
-       int: 1
-       action: set
-    spins:
-       int: 0
-       action: set
     pds:
-       int: 1
+       int: 100
        action: set
     bonustype1:
        int: 0
@@ -80,165 +87,260 @@ variable_player:
     bonus_l5:
        int: 0
        action: set
-#todo Assign some real stuff here
-    gravassist:
-       int: 61
-       action: set
+
+# -- Gravity Assist - Scoops
     gravassistTarget:
-       int: 200
+       int: 4
        action: set
+    gravassist:
+       int: 0
+       action: set
+    gravassistLevel:
+       int: 1
+       action: set
+
+# -- Inertial Boost
     popsTarget:
-       int: 200
+       int: 20
+       action: set
+    pops:
+       int: 0
+       action: set
+    popsLevel:
+       int: 1
+       action: set
+
+# Coordinate Locks
+    lanesTarget:
+       int: 10
        action: set
     lanes:
-       int: 61
+       int: 0
        action: set
-    lanesTarget:
-       int: 200
+    lanesLevel:
+       int: 1
        action: set
+
+# Robots
     dropsTarget:
-       int: 200
+       int: 10
        action: set
+    drops:
+       int: 0
+       action: set
+    dropsLevel:
+       int: 1
+       action: set
+
+# Gyro
     spinsTarget:
-       int: 200
+       int: 20
        action: set
+    spins:
+       int: 0
+       action: set
+    spinsLevel:
+       int: 1
+       action: set
+
+
+
   s_jet_upper_left_active:
-    score: 1000
-    pops: 1
+    score: 100 * current_player.popsLevel
   s_jet_upper_right_active:
-    score: 1000
-    pops: 1
+    score: 100 * current_player.popsLevel
   s_jet_lower_center_active:
-    score: 1000
-    pops: 1
+    score: 100 * current_player.popsLevel
+
   s_slingshot_left_active:
-    score: 500
-  s_slingshot_right_active:
-    score: 500
-  shotTargetL0_unlit_hit:
-    score: 100
-  shotTargetL1_unlit_hit:
-    score: 100
-  shotTargetL2_unlit_hit:
-    score: 100
-  shotTargetL3_unlit_hit:
-    score: 100
-  shotTargetL0_flashing_hit:
-    score: 10000
-  shotTargetL1_flashing_hit:
-    score: 10000
-  shotTargetL2_flashing_hit:
-    score: 10000
-  shotTargetL3_flashing_hit:
-    score: 10000
-  shotTargetL0_lit_hit:
-    score: 400
-  shotTargetL1_lit_hit:
-    score: 400
-  shotTargetL2_lit_hit:
-    score: 400
-  shotTargetL3_lit_hit:
-    score: 400
-  s_dTargetR0_active:
-    score: 100
-  s_dTargetR1_active:
-    score: 100
-  s_dTargetR2_active:
-    score: 100
-  s_dTargetR3_active:
-    score: 100
-  s_dTargetCL_active:
-    score: 200
-    drops: 1
-  s_dTargetCR_active:
-    score: 200
-    drops: 1
-  s_roInLaneLeft_active:
     score: 50
+  s_slingshot_right_active:
+    score: 50
+
+  shotGroupLeftTargets_unlit_hit:
+    score: 100 * current_player.dropsLevel
+    bonuscount: 1
+  shotGroupLeftTargets_lit_hit:
+    score: 250 * current_player.dropsLevel
+    bonuscount: 1
+  shotGroupLeftTargets_flashing_hit:
+    score: 1000 * current_player.dropsLevel
+    bonuscount: 1
+
+  shotGroupRightTargets_unlit_hit:
+    score: 100 * current_player.dropsLevel
+    bonuscount: 1
+  shotGroupRightTargets_lit_hit:
+    score: 250 * current_player.dropsLevel
+    bonuscount: 1
+  shotGroupRightTargets_flashing_hit:
+    score: 1000 * current_player.dropsLevel
+    bonuscount: 1
+
+#  shotTargetL0_unlit_hit:
+#    score: 100 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL1_unlit_hit:
+#    score: 100 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL2_unlit_hit:
+#    score: 100 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL3_unlit_hit:
+#    score: 100 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL0_flashing_hit:
+#    score: 1000 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL1_flashing_hit:
+#    score: 1000 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL2_flashing_hit:
+#    score: 1000 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL3_flashing_hit:
+#    score: 1000 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL0_lit_hit:
+#    score: 250 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL1_lit_hit:
+#    score: 250 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL2_lit_hit:
+#    score: 250 * current_player.dropsLevel
+#    bonuscount: 1
+#  shotTargetL3_lit_hit:
+#    score: 250 * current_player.dropsLevel
+#    bonuscount: 1
+
+  shotTargetR0_unlit_hit:
+    score: 100 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR1_unlit_hit:
+    score: 100 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR2_unlit_hit:
+    score: 100 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR3_unlit_hit:
+    score: 100 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR0_flashing_hit:
+    score: 1000 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR1_flashing_hit:
+    score: 1000 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR2_flashing_hit:
+    score: 1000 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR3_flashing_hit:
+    score: 1000 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR0_lit_hit:
+    score: 250 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR1_lit_hit:
+    score: 250 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR2_lit_hit:
+    score: 250 * current_player.dropsLevel
+    bonuscount: 1
+  shotTargetR3_lit_hit:
+    score: 250 * current_player.dropsLevel
+    bonuscount: 1
+
+  s_roInLaneLeft_active:
+    score: 500
     bonuscount: 1
   s_roInLaneRight_active:
-    score: 50
+    score: 500
     bonuscount: 1
   s_roOutLaneLeft_active:
-    score: 150
+    score: 1000
     bonuscount: 3
   s_roOutLaneRight_active:
-    score: 150
+    score: 1000
     bonuscount: 3
+
   s_sTargetDropL_active:
-    score: 1
+    score: 10
     bonuscount: 1
   s_sTargetDropR_active:
-    score: 1
+    score: 10
     bonuscount: 1
   s_sTargetLowL_active:
-    score: 1
+    score: 10
     bonuscount: 1
   s_sTargetLowR_active:
-    score: 1
+    score: 10
     bonuscount: 1
   s_sTargetUpperL_active:
-    score: 1
+    score: 10
     bonuscount: 1
   s_sTargetUpperR_active:
-    score: 1
+    score: 10
     bonuscount: 1
+
   s_sTargetYellowL_active:
-    score: 100
-    bonuscount: 1
+    score: 5000
+    bonuscount: 3
   s_sTargetYellowR_active:
-    score: 100
-    bonuscount: 1
+    score: 5000
+    bonuscount: 3
+
   s_spinner_active:
-    score: 100
-    spins: 1
+    score: 100 * current_player.spinsLevel
+    bounscount: 1
+
   s_ir_scoop_detect_active:
-    score: 10000
+    score: 10000 * current_player.gravassistLevel
     bonuscount: 1
 
   shotLane0_shotProfileToplanes_unlit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 1
   shotLane0_shotProfileToplanes_lit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 3
   shotLane1_shotProfileToplanes_unlit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 1
   shotLane1_shotProfileToplanes_lit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 3
   shotLane2_shotProfileToplanes_unlit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 1
   shotLane2_shotProfileToplanes_lit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 3
   shotLane3_shotProfileToplanes_unlit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 1
   shotLane3_shotProfileToplanes_lit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 3
   shotLane4_shotProfileToplanes_unlit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 1
   shotLane4_shotProfileToplanes_lit_hit:
-    score: 100
+    score: 100 * current_player.lanesLevel
     bonuscount: 3
 
   shotGroupToplanes_lit_complete:
-    score: 1000
+    score: 1000  * current_player.lanesLevel
     bonustype1: 1
     bonuscount: 10
   drop_target_bank_leftfull_down:
     score: 1000
     bonustype2: 1
-    bonuscount: 10
+    bonuscount: 6
   drop_target_bank_rightfull_down:
     score: 1000
     bonustype3: 1
-    bonuscount: 10
+    bonuscount: 6
   gravityAssistBonus:
     score: 1000
     bonustype4: 1
@@ -252,8 +354,6 @@ variable_player:
   player_bonustype1{value>1}:
      score:
         int: 5000
-     bonuscount:
-        int: 10
   player_bonustype2{value==1}:
      bonus_multiplier:
         int: 1
@@ -262,8 +362,6 @@ variable_player:
   player_bonustype2{value>1}:
      score:
         int: 5000
-     bonuscount:
-        int: 10
   player_bonustype3{value==1}:
      bonus_multiplier:
         int: 1
@@ -272,8 +370,6 @@ variable_player:
   player_bonustype3{value>1}:
      score:
         int: 5000
-     bonuscount:
-        int: 10
   player_bonustype4{value==1}:
      bonus_multiplier:
         int: 1
@@ -282,8 +378,6 @@ variable_player:
   player_bonustype4{value>1}:
      score:
         int: 5000
-     bonuscount:
-        int: 10
 
   bonus_reset_achieved:
      bonustype4:
@@ -301,6 +395,10 @@ variable_player:
 
   shotGroupLeftTargets_lit_complete:
      score: 5000
+     bonuscount: 3
+  shotGroupRightTargets_lit_complete:
+     score: 5000
+     bonuscount: 3
 
   acheivement_story01_successful:
      status_untitled_mode_1: 1
@@ -318,16 +416,3 @@ variable_player:
      status_untitled_mode_7:
        int: 0
        action: set
-  player_pops:
-     pds: 
-        int: (current_player.drops * (current_player.pops + current_player.spins))
-        action: set
-  player_drops:
-     pds: 
-        int: (current_player.drops * (current_player.pops + current_player.spins))
-        action: set
-  player_spins:
-     pds: 
-        int: (current_player.drops * (current_player.pops + current_player.spins))
-        action: set
-     
