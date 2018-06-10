@@ -141,11 +141,11 @@ variable_player:
       int: 0
     green_width:
       action: set
-      int: (current_player.health - 50) / 50 * 398
+      int: (current_player.health - 50) / 50 * 298
   player_health{value < 50}:
     red_width:
       action: set
-      int: (50 - current_player.health) / 50 * 398
+      int: (50 - current_player.health) / 50 * 298
     green_width:
       action: set
       int: 0
@@ -229,25 +229,25 @@ widgets:
       image: david_goliath
   health_shell_widget:
     - type: rectangle
-      y: 50
+      y: top - 50
       z: 20
-      width: 800
+      width: 600
       height: 20
       corner_radius: 3
       corner_segments: 3
       color: CC0000
   health_shell_blackout_widget:
     - type: rectangle
-      y: 50
+      y: top - 50
       z: 21
-      width: 796
+      width: 596
       height: 16
       corner_radius: 3
       corner_segments: 3
       color: 000000
   green_bar_widget:
     - type: rectangle
-      y: 50
+      y: top - 50
       z: 22
       anchor_x: left
       anchor_y: center
@@ -260,9 +260,10 @@ widgets:
         player_green_width:
           - property: width
             value: (value)
+            duration: 250ms
   red_bar_widget:
     - type: rectangle
-      y: 50
+      y: top - 50
       z: 22
       anchor_x: right
       anchor_y: center
@@ -275,9 +276,10 @@ widgets:
         player_red_width:
           - property: width
             value: (value)
+            duration: 250ms
   health_shell_centerline:
     - type: rectangle
-      y: 50
+      y: top - 50
       z: 23
       width: 6
       height: 23
