@@ -1,10 +1,9 @@
 #config_version=5
 
 # TO ADD A BONUS BOX
-# You change the player values
-# bonus_box_new_value
-# bonus_box_new_text
-# BOTH are strings -- change value then text
+# Throw an event:
+# invoke_notify_by_event
+# args: new_text, new_value
 # Text becomes the white text at the top
 # Value becomes the red text at the bottom
 

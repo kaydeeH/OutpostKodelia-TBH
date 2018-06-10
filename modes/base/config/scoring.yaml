@@ -33,14 +33,20 @@ counters:
     disable_on_complete: false
     multiple_hit_window: 10ms
 
+event_player:
+  do_scoop_notify:
+    invoke_notify_by_event:
+       new_value: "ACTIVE"
+       new_text: "SCOOP\nSHOT"
+
 variable_player:
 # This should tell the NOTIFY mode to add a scoop shot active box!
-  do_scoop_notify:
-    bonus_box_new_value:
-       string: "ACTIVE"
-    bonus_box_new_text:
-       string: "SCOOP\nSHOT"
-    bonus_box_counter: 1
+#  do_scoop_notify:
+#    bonus_box_new_value:
+#       string: "ACTIVE"
+#    bonus_box_new_text:
+#       string: "SCOOP\nSHOT"
+#    bonus_box_counter: 1
 
 
 

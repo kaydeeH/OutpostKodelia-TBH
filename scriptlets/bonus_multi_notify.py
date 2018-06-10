@@ -7,6 +7,8 @@ class BonusMultiNotify(Scriptlet):
 
     def _bonus_multi_notify(self, **kwargs):
         if self.machine.game.player.bonus_multiplier > 1:
-            self.machine.game.player.bonus_box_new_value = str(self.machine.game.player.bonus_multiplier) + "X"
-            self.machine.game.player.bonus_box_new_text = "BONUS\nMULTIPLIER"
-            self.machine.game.player.bonus_box_counter += 1
+            self.machine.events.post('invoke_notify_by_event', new_text="BONUS\nMULTIPLIER", new_value=str(self.machine.game.player.bonus_multiplier) + "X")
+
+            # self.machine.game.player.bonus_box_new_value = str(self.machine.game.player.bonus_multiplier) + "X"
+            # self.machine.game.player.bonus_box_new_text = "BONUS\nMULTIPLIER"
+            # self.machine.game.player.bonus_box_counter += 1

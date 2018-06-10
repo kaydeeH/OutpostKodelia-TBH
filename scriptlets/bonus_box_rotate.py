@@ -10,6 +10,7 @@ class BonusBoxRotate(Scriptlet):
 
         self.debug_log("Ball Goal Calc!")
         self.machine.events.add_handler('player_bonus_box_counter', self._add_to_box_queue)
+        self.machine.events.add_handler('invoke_notify_by_event', self._add_to_box_queue_parms)
 
 #        self.machine.events.add_handler('player_bonus_box_counter', self._new_bonus_box)
         self.machine.events.add_handler('timer_bonus_box_queue_tick', self._new_bonus_box)
@@ -22,11 +23,17 @@ class BonusBoxRotate(Scriptlet):
         BonusBoxRotate.newTextList.append(self.machine.game.player.bonus_box_new_text)
         BonusBoxRotate.newTextValue.append(self.machine.game.player.bonus_box_new_value)
 
+    def _add_to_box_queue_parms(self, **kwargs):
+        newText = kwargs.get("new_text")
+        newValue = kwargs.get("new_value")
+        BonusBoxRotate.newTextList.append(newText)
+        BonusBoxRotate.newTextValue.append(newValue)
+
     def _new_bonus_box(self, **kwargs):
         # we have a new bonus box to add, so lets use the first "empty" box, move everyone else on the board
-        if self.machine.game.player.bonus_box_counter > 0 and BonusBoxRotate.newTextList:
-          str_new_text = BonusBoxRotate.newTextList.pop()
-          str_new_value = BonusBoxRotate.newTextValue.pop()
+        if BonusBoxRotate.newTextList:
+          str_new_text = BonusBoxRotate.newTextList.pop(0)
+          str_new_value = BonusBoxRotate.newTextValue.pop(0)
           int_use_box = 0
           if self.machine.game.player.bonus_box_01_position == 0:
               int_use_box = 1
