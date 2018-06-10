@@ -34,5 +34,5 @@ variable_player:
     score: 25000
     bonuscount: 3
   cygnus_found:
-    score: 50000
+    score: 100000
     bonuscount: 3

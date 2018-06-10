@@ -1,0 +1,8 @@
+#config_version=5
+
+# In mode single ball save
+
+ball_saves:
+ inModeSave4:
+   enable_events: story_is_about_to_begin
+   balls_to_save: -1

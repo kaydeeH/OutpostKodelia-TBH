@@ -5,6 +5,8 @@
 
 config:
   - story01-scoring.yaml
+  - ballsave.yaml
+  - notification.yaml
 
 mode:
    start_events: selector_untitled_mode_1_selected
@@ -37,6 +39,8 @@ event_player:
      - scoop_eject
    cygnus_found:
      - story_is_about_to_end
+   in_mode_ball_save:
+     - story_is_about_to_fail
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story01_successful
@@ -138,6 +142,11 @@ slides:
       - type: text
         text: "MISSION FAILURE"
         y: 40%
+        color: red
+        font_size: 50
+      - type: text
+        text: " ** BALL SAVED ** "
+        y: 30%
         color: red
         font_size: 50
 

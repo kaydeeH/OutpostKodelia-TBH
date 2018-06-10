@@ -2,7 +2,7 @@
 mode:
   start_events: select_mode_start
   stop_events: selector_item_selected
-  priority: 300
+  priority: 325
 #  code: mpf.modes.carousel.code.carousel.Carousel
   code: selector.selector
   file_log: full

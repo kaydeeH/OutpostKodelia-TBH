@@ -3,7 +3,7 @@ config:
   - achievements.yaml
   - scoring.yaml
   - statemachines.yaml
-
+  - baseBallSave.yaml
 
 # ---------------------------------------------------
 # Ideas for improvement
@@ -188,6 +188,20 @@ event_player:
       - drops_right_reset
       - drop_left_center_reset
       - drop_right_center_reset
+    ball_save_inmodesave1_saving_ball:
+      - in_mode_ball_save
+    ball_save_inmodesave2_saving_ball:
+      - in_mode_ball_save
+    ball_save_inmodesave3_saving_ball:
+      - in_mode_ball_save
+    ball_save_inmodesave4_saving_ball:
+      - in_mode_ball_save
+    ball_save_inmodesave5_saving_ball:
+      - in_mode_ball_save
+    ball_save_inmodesave6_saving_ball:
+      - in_mode_ball_save
+    ball_save_inmodesave7_saving_ball:
+      - in_mode_ball_save
 
 # shotGroupPopBumpers_popBumpBlue_complete
 # shotGroupPopBumpers_popBumpGreen_complete

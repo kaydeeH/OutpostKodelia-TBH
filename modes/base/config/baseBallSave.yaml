@@ -1,0 +1,21 @@
+#config_version=5
+
+event_player:
+ ball_save_initial_saving_ball:
+   invoke_notify_by_event:
+     new_text: "LOST\nBALL"
+     new_value: "SAVED"
+ in_mode_ball_save:
+   invoke_notify_by_event:
+     new_text: "MODE FAIL\nBALL"
+     new_value: "SAVED"
+
+ball_saves:
+ initial:
+   active_time: 13s
+   grace_period: 2s
+   enable_events: mode_base_started
+   timer_start_events: single_player_ball_started, multiplayer_game_player_start
+   auto_launch: false
+   balls_to_save: 1
+

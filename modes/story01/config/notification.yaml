@@ -1,0 +1,28 @@
+#config_version=5
+
+event_player:
+   cygnus_lane_0_event:
+     invoke_notify_by_event:
+       new_text: "ALPHA\nCOORDINATES"
+       new_value: "LOCKED"
+   cygnus_lane_1_event:
+     invoke_notify_by_event:
+       new_text: "BETA\nCOORDINATES"
+       new_value: "LOCKED"
+   cygnus_lane_2_event:
+     invoke_notify_by_event:
+       new_text: "GAMMA\nCOORDINATES"
+       new_value: "LOCKED"
+   cygnus_lane_3_event:
+     invoke_notify_by_event:
+       new_text: "DELTA\nCOORDINATES"
+       new_value: "LOCKED"
+   cygnus_lane_4_event:
+     invoke_notify_by_event:
+       new_text: "EPSILON\nCOORDINATES"
+       new_value: "LOCKED"
+   cygnus_located:
+     invoke_notify_by_event:
+       new_text: "CYGNUS\nDOCKING"
+       new_value: "ENABLED"
+

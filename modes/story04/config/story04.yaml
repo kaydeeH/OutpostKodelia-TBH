@@ -5,6 +5,9 @@
 # Hit the scoop to escape the meteor before the light show gets to the end
 # Award score, restart show.  Mode ends on loss of ball or meteor strike on player (end of show)
 
+config:
+   - ballsave.yaml
+
 mode:
    start_events: selector_untitled_mode_4_selected
    stop_events: story_is_completed
@@ -33,6 +36,8 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
+   in_mode_ball_save:
+     - story_is_about_to_fail
    story_has_passed:
      - story_is_about_to_end
    story_has_failed:

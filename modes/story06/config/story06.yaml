@@ -4,6 +4,7 @@
 
 config:
   - story06-scoring.yaml
+  - ballsave.yaml
 
 mode:
   start_events: selector_untitled_mode_6_selected
@@ -34,6 +35,8 @@ event_player:
     - story_is_about_to_begin
   story_intro_complete:
     - scoop_eject
+  in_mode_ball_save:
+     - story_is_about_to_fail
   player_health{value >= 100}:
     - story_is_about_to_end
   player_health{value <= 0}:
