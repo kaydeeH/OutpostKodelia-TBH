@@ -3,6 +3,7 @@
 config:
   - story03-scoring.yaml
   - ballsave.yaml
+  - notification.yaml
 
 mode:
   start_events: selector_untitled_mode_3_selected

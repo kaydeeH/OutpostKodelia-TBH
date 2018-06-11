@@ -47,9 +47,6 @@ variable_player:
 #    bonus_box_new_text:
 #       string: "SCOOP\nSHOT"
 #    bonus_box_counter: 1
-
-
-
   mode_base_started:
     pds:
        int: 100

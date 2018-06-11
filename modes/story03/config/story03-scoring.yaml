@@ -2,7 +2,6 @@
 variable_player:
   player_gallery_targets_hit:
     score: current_player.gallery_targets_hit * 5000
-    drops: 1
     bonuscount: current_player.gallery_targets_hit
 
 # block switch based scoring from base mode
