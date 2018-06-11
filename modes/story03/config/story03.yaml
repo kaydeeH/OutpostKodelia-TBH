@@ -2,6 +2,8 @@
 
 config:
   - story03-scoring.yaml
+  - ballsave.yaml
+  - notification.yaml
 
 mode:
   start_events: selector_untitled_mode_3_selected
@@ -38,6 +40,8 @@ event_player:
     - drop_right_center_reset
   story_intro_complete:
     - scoop_eject
+  in_mode_ball_save:
+     - story_is_about_to_fail
   story_outro_complete:
     - story_is_completed_successful
     - acheivement_story03_successful

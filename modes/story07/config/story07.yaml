@@ -1,5 +1,8 @@
 #config_version=5
 
+config:
+   - ballsave.yaml
+
 mode:
    start_events: selector_untitled_mode_7_selected
    stop_events: story_is_completed
@@ -28,6 +31,8 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
+   in_mode_ball_save:
+     - story_is_about_to_fail
    shotScoopBeyond_shotProfileScoopBeyond_scoopActive_hit:
      - story_is_about_to_end
    story_outro_complete:
