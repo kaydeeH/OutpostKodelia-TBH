@@ -31,6 +31,11 @@ event_player:
   mode_story03_started:
     - story_is_about_to_begin
     - mode_using_targets_started # always add this if your mode makes use of the drop targets
+    # Reset all drop targets
+    - drops_left_reset
+    - drops_right_reset
+    - drop_left_center_reset
+    - drop_right_center_reset
   story_intro_complete:
     - scoop_eject
   story_outro_complete:
@@ -137,24 +142,34 @@ event_player:
     - gallery_target_hit
     - drop_left_center_reset
   shot_dt_r0_unlit_hit:
+    - gallery_unlit_target_hit
     - drops_right_reset
   shot_dt_r1_unlit_hit:
+    - gallery_unlit_target_hit
     - drops_right_reset
   shot_dt_r2_unlit_hit:
+    - gallery_unlit_target_hit
     - drops_right_reset
   shot_dt_r3_unlit_hit:
+    - gallery_unlit_target_hit
     - drops_right_reset
   shot_dt_l0_unlit_hit:
+    - gallery_unlit_target_hit
     - drops_left_reset
   shot_dt_l1_unlit_hit:
+    - gallery_unlit_target_hit
     - drops_left_reset
   shot_dt_l2_unlit_hit:
+    - gallery_unlit_target_hit
     - drops_left_reset
   shot_dt_l3_unlit_hit:
+    - gallery_unlit_target_hit
     - drops_left_reset
   shot_dt_cr_unlit_hit:
+    - gallery_unlit_target_hit
     - drop_right_center_reset
   shot_dt_cl_unlit_hit:
+    - gallery_unlit_target_hit
     - drop_left_center_reset
 
 shots:
@@ -294,10 +309,15 @@ slides:
         font_size: 100
         font_name: ocr-a-tribute-bold
       - type: text
-        text: Hit at least 3 lit targets in 60s to defeat Captain S.T.A.R.
+        text: V.I.N.Cent's my name, sharpshooting's my game. Try me!
         y: 40%
         color: red
         font_size: 50
+      - type: text
+        text: Hit at least 3 lit targets in 60s to defeat Captain S.T.A.R.
+        y: 30%
+        color: red
+        font_size: 42
   story_03_outro_fail_slide:
       - type: text
         text: SHOOTING GALLERY FAILED
@@ -345,3 +365,14 @@ timers:
     control_events:
       - event: story_intro_complete
         action: start
+
+sound_player:
+    gallery_target_hit: gallerylaser_hit
+    gallery_unlit_target_hit: gallerylaser
+    mode_story03_started:
+      bobandvincent:
+        action: play
+        loops: -1
+        fade_out: 2s
+        volume: 0.5
+        mode_end_action: stop

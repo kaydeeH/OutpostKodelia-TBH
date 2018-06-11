@@ -256,3 +256,12 @@ widgets:
      - type: text
        text: "Dock with the Cygnus by Scooping Out"
        y: 80%
+
+sound_player:
+    mode_story01_started:
+      thatsit:
+          action: play
+          loops: -1
+          fade_out: 2s
+          mode_end_action: stop
+          volume: 0.5

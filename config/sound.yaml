@@ -21,6 +21,7 @@ sound_system:
           volume: 1.0
 
 sounds:
+    # Generic SFX
     testFX1:
         file: 18382infernohvylas.wav
     testFX2:
@@ -37,7 +38,23 @@ sounds:
         file: 39457__the-bizniss__laser-3.wav
     testFX8:
         file: 135885__andre-onate__gama-laser.wav
+
+    # Movie SFX
+    gallerylaser:
+        file: gallery-laser.wav
+    starlaser:
+        file: gallery-star-laser.wav
+    gallerylaser_hit:
+        file: gallery-laser-hit.wav
+
+    # Music
     overture:
         file: Overture.wav
     meteor:
         file: HotterAndHeavier-SecondHalf.wav
+    bobandvincent:
+        file: BobandVINCent.wav
+    thatsit:
+        file: ThatsIt.wav
+
+

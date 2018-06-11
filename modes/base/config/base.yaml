@@ -276,6 +276,7 @@ sound_player:
           loops: -1
           mode_end_action: stop
           fade_out: 1s
+          volume: 0.5
     mode_selector_stopped:
       overture:
           action: stop

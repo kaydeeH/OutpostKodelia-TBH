@@ -303,3 +303,4 @@ sound_player:
           loops: -1
           fade_out: 2s
           mode_end_action: stop
+          volume: 0.5
