@@ -65,25 +65,25 @@ lights:
       polarity: true
 
 #J6  24..35
-  l_GILane1:
+  l_GILane4:
     number: 1-24-25-26
     subtype: led
     default_fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_GILane2:
+  l_GILane3:
     number: 1-27-28-29
     subtype: led
     default_fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_GILane3:
+  l_GILane2:
     number: 1-30-31-32
     subtype: led
     default_fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_GILane4:
+  l_GILane1:
     number: 1-33-34-35
     subtype: led
     default_fade_ms: 50ms

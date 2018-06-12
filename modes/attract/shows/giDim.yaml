@@ -3,95 +3,95 @@
 - duration: 1
   lights:
     l_GIAboveScoopLower:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIAboveScoopUpper:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIAboveSpinnerLower:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIAboveSpinnerUpper:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIDropCenterLeft:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIDropCenterRight:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIDropLeft0:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIDropLeft1:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIDropRight0:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIDropRight1:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GILane0:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GILane1:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GILane2:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GILane3:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GILane4:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GILane5:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GILowLeft:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GILowRight:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIScoopLL:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIScoopLR:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIScoopML:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIScoopMR:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIScoopUC:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GISlingLeft0:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GISlingLeft1:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GISlingRight0:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GISlingRight1:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIUpperCL:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIUpperCR:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIUpperL:
-      color: FFFFFF
+      color: 111111
       fade: 1s
     l_GIUpperR:
-      color: FFFFFF
+      color: 111111
       fade: 1s

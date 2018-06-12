@@ -1,37 +1,75 @@
 #config_version=5
 
 show_player:
-  mode_attract_started: attract_display_loop
-  mode_attract_started.1:
-     pinwheel:
-       speed: 20
-       loops: 3
-       events_when_completed: attract_next_01
-#    attract_light_show:
-#      speed: 10
-#    giWhite:
-#      speed: 1
-#    attractDrops:
-#      speed: 10
-#    attractBonusX:
-#      speed: 5
-  attract_next_01:
-     sample_wired_loop:
-       speed: 5
-       loops: 3
-       events_when_completed: attract_next_02
-  attract_next_02:
-     swirl:
-       speed: 15
-       loops: 1
-       events_when_completed: attract_next_03
-  attract_next_03:
-    swirl2:
-       speed: 10
-       loops: 3
-       events_when_completed: attract_next_04
-  attract_next_04:
-     pinwheel:
-       speed: 20
-       loops: 3
-       events_when_completed: attract_next_01
+  mode_attract_started:
+    giWhite: #Sets basic GI white lighting as the default
+      priority: 5
+      loops: -1
+    dummy_show: #just to get us past the initial mode start and into our event loop
+      loops: 0
+      events_when_completed: attract_01
+  attract_01:
+    field_off:
+      priority: 6
+    mode_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
+    pop_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
+    lane_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
+    text_loop:
+      loops: 8
+      events_when_completed: attract_02
+  attract_02:
+    giDim:
+      priority: 8
+      loops: 89
+    field_off:
+      priority: 8
+      loops: 89
+    video_play:
+      loops: 0
+      events_when_completed: attract_01
+
+
+#  mode_attract_started: attract_display_loop
+#
+#  mode_attract_started.1:
+#     pinwheel:
+#       speed: 20
+#       loops: 3
+#       events_when_completed: attract_next_01
+##    attract_light_show:
+##      speed: 10
+##    giWhite:
+##      speed: 1
+##    attractDrops:
+##      speed: 10
+##    attractBonusX:
+##      speed: 5
+#  attract_next_01:
+#     sample_wired_loop:
+#       speed: 5
+#       loops: 3
+#       events_when_completed: attract_next_02
+#  attract_next_02:
+#     swirl:
+#       speed: 15
+#       loops: 1
+#       events_when_completed: attract_next_03
+#  attract_next_03:
+#    swirl2:
+#       speed: 10
+#       loops: 3
+#       events_when_completed: attract_next_04
+#  attract_next_04:
+#     pinwheel:
+#       speed: 20
+#       loops: 3
+#       events_when_completed: attract_next_01

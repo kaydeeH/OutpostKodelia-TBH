@@ -1,0 +1,380 @@
+#show_version=5
+
+#Flash up
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: DC143C
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 00FF00
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: FFD700
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 483D88
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 800000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 800080
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+
+#Flash down
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 800080
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 800000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 483D88
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: FFD700
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 00FF00
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: DC143C
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+
+#Build up
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 800080
+
+#Build down
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 800080
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 191970
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 100ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+
+#Flash all 5 times
+- duration: 200ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 800080
+- duration: 200ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 200ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 800080
+- duration: 200ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 200ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 800080
+- duration: 200ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 200ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 800080
+- duration: 200ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000
+- duration: 200ms
+  lights:
+    l_mode0: 191970
+    l_mode1: DC143C
+    l_mode2: 00FF00
+    l_mode3: FFD700
+    l_mode4: 483D88
+    l_mode5: 800000
+    l_mode6: 800080
+- duration: 200ms
+  lights:
+    l_mode0: 000000
+    l_mode1: 000000
+    l_mode2: 000000
+    l_mode3: 000000
+    l_mode4: 000000
+    l_mode5: 000000
+    l_mode6: 000000

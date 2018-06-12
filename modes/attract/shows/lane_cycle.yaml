@@ -1,0 +1,201 @@
+#show_version=5
+
+#Lane 1
+- duration: 500ms
+  lights:
+    #Lane inserts
+    l_lane0:
+      color: CD0000
+      fade: 50ms
+    l_lane1:
+      color: 000000
+      fade: 50ms
+    l_lane2:
+      color: 000000
+      fade: 50ms
+    l_lane3:
+      color: 000000
+      fade: 50ms
+    l_lane4:
+      color: 000000
+      fade: 50ms
+
+    #Lane GIs
+    l_GILane0:
+      color: 0000CD
+      fade: 50ms
+    l_GILane1:
+      color: 0000CD
+      fade: 50ms
+    l_GILane2:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane3:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane4:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane5:
+      color: FFFFFF
+      fade: 50ms
+
+#Lane 3
+- duration: 500ms
+  lights:
+    #Lane inserts
+    l_lane0:
+      color: 000000
+      fade: 50ms
+    l_lane1:
+      color: 000000
+      fade: 50ms
+    l_lane2:
+      color: CD0000
+      fade: 50ms
+    l_lane3:
+      color: 000000
+      fade: 50ms
+    l_lane4:
+      color: 000000
+      fade: 50ms
+
+    #Lane GIs
+    l_GILane0:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane1:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane2:
+      color: 0000CD
+      fade: 50ms
+    l_GILane3:
+      color: 0000CD
+      fade: 50ms
+    l_GILane4:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane5:
+      color: FFFFFF
+      fade: 50ms
+
+#Lane 5
+- duration: 500ms
+  lights:
+    #Lane inserts
+    l_lane0:
+      color: 000000
+      fade: 50ms
+    l_lane1:
+      color: 000000
+      fade: 50ms
+    l_lane2:
+      color: 000000
+      fade: 50ms
+    l_lane3:
+      color: 000000
+      fade: 50ms
+    l_lane4:
+      color: CD0000
+      fade: 50ms
+
+    #Lane GIs
+    l_GILane0:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane1:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane2:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane3:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane4:
+      color: 0000CD
+      fade: 50ms
+    l_GILane5:
+      color: 0000CD
+      fade: 50ms
+
+#Lane 2
+- duration: 500ms
+  lights:
+    #Lane inserts
+    l_lane0:
+      color: 000000
+      fade: 50ms
+    l_lane1:
+      color: CD0000
+      fade: 50ms
+    l_lane2:
+      color: 000000
+      fade: 50ms
+    l_lane3:
+      color: 000000
+      fade: 50ms
+    l_lane4:
+      color: 000000
+      fade: 50ms
+
+    #Lane GIs
+    l_GILane0:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane1:
+      color: 0000CD
+      fade: 50ms
+    l_GILane2:
+      color: 0000CD
+      fade: 50ms
+    l_GILane3:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane4:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane5:
+      color: FFFFFF
+      fade: 50ms
+      
+#Lane 4
+- duration: 500ms
+  lights:
+    #Lane inserts
+    l_lane0:
+      color: 000000
+      fade: 50ms
+    l_lane1:
+      color: 000000
+      fade: 50ms
+    l_lane2:
+      color: 000000
+      fade: 50ms
+    l_lane3:
+      color: CD0000
+      fade: 50ms
+    l_lane4:
+      color: 000000
+      fade: 50ms
+
+    #Lane GIs
+    l_GILane0:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane1:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane2:
+      color: FFFFFF
+      fade: 50ms
+    l_GILane3:
+      color: 0000CD
+      fade: 50ms
+    l_GILane4:
+      color: 0000CD
+      fade: 50ms
+    l_GILane5:
+      color: FFFFFF
+      fade: 50ms

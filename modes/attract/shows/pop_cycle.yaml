@@ -1,0 +1,24 @@
+#show_version=5
+
+- duration: 2s
+  lights:
+    l_jetLowerCenter:
+      color: 800030
+      fade: 1s
+    l_jetUpperRight:
+      color: 800030
+      fade: 1s
+    l_jetUpperLeft:
+      color: 800030
+      fade: 1s
+- duration: 2s
+  lights:
+    l_jetLowerCenter:
+      color: 300080
+      fade: 1s
+    l_jetUpperRight:
+      color: 300080
+      fade: 1s
+    l_jetUpperLeft:
+      color: 300080
+      fade: 1s
