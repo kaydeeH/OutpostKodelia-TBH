@@ -1,0 +1,30 @@
+#config_version=5
+
+mode:
+   start_events: trigger_super_jets
+   stop_events: end_super_jets
+   priority: 2500
+
+event_player:
+   mode_superJets_started:
+     invoke_notify_by_event:
+       new_text: "SUPER\nJETS"
+       new_value: "ACTIVE"
+   timer_superjets_complete:
+     - end_super_jets
+
+timers:
+   superjets:
+     start_value: 30
+     end_value: 0
+     direction: down
+     start_running: true
+
+variable_player:
+  s_jet_upper_left_active:
+    score: 750 * current_player.temp_playfield_x * current_player.perm_playfield_x
+  s_jet_upper_right_active:
+    score: 750 * current_player.temp_playfield_x * current_player.perm_playfield_x
+  s_jet_lower_center_active:
+    score: 750 * current_player.temp_playfield_x * current_player.perm_playfield_x
+

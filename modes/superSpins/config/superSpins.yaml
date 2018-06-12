@@ -1,0 +1,25 @@
+#config_version=5
+
+mode:
+   start_events: trigger_super_spins
+   stop_events: end_super_spins
+   priority: 2500
+
+event_player:
+   mode_superSpins_started:
+     invoke_notify_by_event:
+       new_text: "SUPER\nSPINS"
+       new_value: "ACTIVE"
+   timer_superspins_complete:
+     - end_super_spins
+
+timers:
+   superspins:
+     start_value: 30
+     end_value: 0
+     direction: down
+     start_running: true
+
+variable_player:
+  s_spinner_active:
+    score: 900 * current_player.temp_playfield_x * current_player.perm_playfield_x

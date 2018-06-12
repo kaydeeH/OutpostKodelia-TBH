@@ -1,0 +1,32 @@
+#config_version=5
+
+mode:
+   start_events: playfield_double_start
+   stop_events: end_double_bonus
+   priority: 2500
+
+event_player:
+   mode_playfieldDouble_started:
+     invoke_notify_by_event:
+       new_text: "PLAYFIELD\nMULTIPLIER"
+       new_value: "DOUBLE"
+   timer_doublepf_complete:
+     - end_double_bonus
+
+timers:
+   doublepf:
+     start_value: 30
+     end_value: 0
+     direction: down
+     start_running: true
+
+variable_player:
+   mode_playfieldDouble_started:
+     temp_playfield_x:
+       action: set
+       int: current_player.temp_playfield_x * 2
+   timer_doublepf_stopped:
+     temp_playfield_x:
+       action: set
+       int: current_player.temp_playfield_x / 2
+

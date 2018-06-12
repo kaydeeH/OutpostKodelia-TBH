@@ -14,4 +14,8 @@ mode:
 # - set the next target
 # - offer an item bonus
 
-
+event_player:
+   ball_goal_inertial_boost_met:
+     - trigger_super_spins
+   ball_goal_spins_met:
+     - trigger_super_jets

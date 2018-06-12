@@ -24,8 +24,6 @@ config:
 
 modes:
   - base
-#  - scoreboard
-  - yt_hurry_up
   - selector
   - high_score
   - bonus
@@ -40,10 +38,16 @@ modes:
   - ball_goals
   - notify
   - storyScoopOverride
-  - pop_blue
+  - playfieldTriple
+  - playfieldDouble
+  - superJets
+  - superSpins
+  - insaneSpins
   - endOfGame
+#  - yt_hurry_up
 #  - pop_red
 #  - pop_green
+#  - pop_blue
 
 player_vars:
   pops:

@@ -1,0 +1,25 @@
+#config_version=5
+
+mode:
+   start_events: trigger_insane_spins
+   stop_events: end_insane_spins
+   priority: 2500
+
+event_player:
+   mode_insaneSpins_started:
+     invoke_notify_by_event:
+       new_text: "INSANE\nSPINS"
+       new_value: "ACTIVE"
+   timer_insane_complete:
+     - end_insane_spins
+
+timers:
+   insane:
+     start_value: 10
+     end_value: 0
+     direction: down
+     start_running: true
+
+variable_player:
+  s_spinner_active:
+    score: 99900 * current_player.temp_playfield_x * current_player.perm_playfield_x
