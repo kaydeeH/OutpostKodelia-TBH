@@ -38,15 +38,30 @@ event_player:
     invoke_notify_by_event:
        new_value: "ACTIVE"
        new_text: "SCOOP\nSHOT"
+  player_bonustype1{value>1}:
+    - playfield_triple_start
+  player_bonustype2{value>1}:
+    - playfield_double_start
+  player_bonustype3{value>1}:
+    - playfield_double_start
+
+# 10 Second INSANE SPINNER mode for finishing modes that end in the scoop shot
+  acheivement_story01_successful:
+    - trigger_insane_spins
+  acheivement_story02_successful:
+    - trigger_insane_spins
+  acheivement_story04_successful:
+    - trigger_insane_spins
+  acheivement_story07_successful:
+    - trigger_insane_spins
+
 
 variable_player:
-# This should tell the NOTIFY mode to add a scoop shot active box!
-#  do_scoop_notify:
-#    bonus_box_new_value:
-#       string: "ACTIVE"
-#    bonus_box_new_text:
-#       string: "SCOOP\nSHOT"
-#    bonus_box_counter: 1
+# -- Persistent Playfield Multiplier
+  mode_base_started{ball==1 and is_extra_ball==0}:
+    perm_playfield_x:
+       action: set
+       int: 1
   mode_base_started:
     pds:
        int: 100
@@ -84,7 +99,22 @@ variable_player:
     bonus_l5:
        int: 0
        action: set
-
+# -- Temporary Playfield Multiplier
+    temp_playfield_x:
+       int: 1
+       action: set
+# -- Yellow Target Count
+    yellow_hits:
+       int: 0
+       action: set
+# -- Slings Count
+    sling_hits:
+       int: 0
+       action: set
+# -- Generic Switch Count
+    other_switches:
+       int: 0
+       action: set
 # -- Gravity Assist - Scoops
     gravassistTarget:
        int: 4
@@ -117,7 +147,6 @@ variable_player:
     lanesLevel:
        int: 1
        action: set
-
 # Robots
     dropsTarget:
        int: 10
@@ -140,209 +169,163 @@ variable_player:
        int: 1
        action: set
 
-
-
+# Pop Bumpers
+# 250 each -- "Super" Modes may override
   s_jet_upper_left_active:
-    score: 100 * current_player.popsLevel
+    score: 250 * current_player.temp_playfield_x * current_player.perm_playfield_x
   s_jet_upper_right_active:
-    score: 100 * current_player.popsLevel
+    score: 250 * current_player.temp_playfield_x * current_player.perm_playfield_x
   s_jet_lower_center_active:
-    score: 100 * current_player.popsLevel
+    score: 250 * current_player.temp_playfield_x * current_player.perm_playfield_x
 
+# Slings
+# 100 + (10 * sling_hits)
   s_slingshot_left_active:
-    score: 50
+    score: (100 + (10 * current_player.sling_hits)) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    sling_hits: 1
   s_slingshot_right_active:
-    score: 50
+    score: (100 + (10 * current_player.sling_hits)) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    sling_hits: 1
 
+# Left and Right Drop Target Banks
+# 1000 unlit
+# 5000 flashing
+# 3000 lit
+# Full Bank - 5000 when advancing bonus multiplier
+#            10000 when not advancing bonus multiplier
   shotGroupLeftTargets_unlit_hit:
-    score: 100 * current_player.dropsLevel
+    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
   shotGroupLeftTargets_lit_hit:
-    score: 250 * current_player.dropsLevel
+    score: 3000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
   shotGroupLeftTargets_flashing_hit:
-    score: 1000 * current_player.dropsLevel
+    score: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
-
   shotGroupRightTargets_unlit_hit:
-    score: 100 * current_player.dropsLevel
+    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
   shotGroupRightTargets_lit_hit:
-    score: 250 * current_player.dropsLevel
+    score: 3000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
   shotGroupRightTargets_flashing_hit:
-    score: 1000 * current_player.dropsLevel
+    score: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
 
-#  shotTargetL0_unlit_hit:
-#    score: 100 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL1_unlit_hit:
-#    score: 100 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL2_unlit_hit:
-#    score: 100 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL3_unlit_hit:
-#    score: 100 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL0_flashing_hit:
-#    score: 1000 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL1_flashing_hit:
-#    score: 1000 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL2_flashing_hit:
-#    score: 1000 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL3_flashing_hit:
-#    score: 1000 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL0_lit_hit:
-#    score: 250 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL1_lit_hit:
-#    score: 250 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL2_lit_hit:
-#    score: 250 * current_player.dropsLevel
-#    bonuscount: 1
-#  shotTargetL3_lit_hit:
-#    score: 250 * current_player.dropsLevel
-#    bonuscount: 1
+# "Lit" Complete
+# Getting both awards extra ball, but each one is worth 25,000
+  shotGroupLeftTargets_lit_complete:
+     score: 25000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+     bonuscount: 3
+  shotGroupRightTargets_lit_complete:
+     score: 25000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+     bonuscount: 3
 
-  shotTargetR0_unlit_hit:
-    score: 100 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR1_unlit_hit:
-    score: 100 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR2_unlit_hit:
-    score: 100 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR3_unlit_hit:
-    score: 100 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR0_flashing_hit:
-    score: 1000 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR1_flashing_hit:
-    score: 1000 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR2_flashing_hit:
-    score: 1000 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR3_flashing_hit:
-    score: 1000 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR0_lit_hit:
-    score: 250 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR1_lit_hit:
-    score: 250 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR2_lit_hit:
-    score: 250 * current_player.dropsLevel
-    bonuscount: 1
-  shotTargetR3_lit_hit:
-    score: 250 * current_player.dropsLevel
-    bonuscount: 1
-
-  s_roInLaneLeft_active:
-    score: 500
-    bonuscount: 1
-  s_roInLaneRight_active:
-    score: 500
-    bonuscount: 1
-  s_roOutLaneLeft_active:
-    score: 1000
+# Full Down -- Regardless of other status
+# 5000 here.  5000 more later if we don't increase bonus X
+  drop_target_bank_leftfull_down:
+    score: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    bonustype2: 1
     bonuscount: 3
-  s_roOutLaneRight_active:
-    score: 1000
+  drop_target_bank_rightfull_down:
+    score: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    bonustype3: 1
     bonuscount: 3
 
-  s_sTargetDropL_active:
-    score: 10
-    bonuscount: 1
-  s_sTargetDropR_active:
-    score: 10
-    bonuscount: 1
-  s_sTargetLowL_active:
-    score: 10
-    bonuscount: 1
-  s_sTargetLowR_active:
-    score: 10
-    bonuscount: 1
-  s_sTargetUpperL_active:
-    score: 10
-    bonuscount: 1
-  s_sTargetUpperR_active:
-    score: 10
-    bonuscount: 1
-
+# Yellow Fixed Targets
+# 10000 x (hits this ball + 1)
   s_sTargetYellowL_active:
-    score: 5000
-    bonuscount: 3
+    score: (10000 * (current_player.yellow_hits + 1)) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    yellow_hits: 1
+    bonuscount: 1
   s_sTargetYellowR_active:
-    score: 5000
-    bonuscount: 3
+    score: (10000 * (current_player.yellow_hits + 1)) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    yellow_hits: 1
+    bonuscount: 1
 
+# Spinner
+# 100 pts, but modes can override
   s_spinner_active:
-    score: 100 * current_player.spinsLevel
-    bounscount: 1
+    score: 100 * current_player.temp_playfield_x * current_player.perm_playfield_x
 
+# Scoop
+# 10000 points
   s_ir_scoop_detect_active:
-    score: 10000 * current_player.gravassistLevel
+    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
 
-  shotLane0_shotProfileToplanes_unlit_hit:
-    score: 100 * current_player.lanesLevel
+# Lanes
+# 1000 Unlit
+# 3000 Lit
+  shotGroupToplanes_unlit_hit:
+    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
-  shotLane0_shotProfileToplanes_lit_hit:
-    score: 100 * current_player.lanesLevel
-    bonuscount: 3
-  shotLane1_shotProfileToplanes_unlit_hit:
-    score: 100 * current_player.lanesLevel
+  shotGroupToplanes_lit_hit:
+    score: 3000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
-  shotLane1_shotProfileToplanes_lit_hit:
-    score: 100 * current_player.lanesLevel
-    bonuscount: 3
-  shotLane2_shotProfileToplanes_unlit_hit:
-    score: 100 * current_player.lanesLevel
-    bonuscount: 1
-  shotLane2_shotProfileToplanes_lit_hit:
-    score: 100 * current_player.lanesLevel
-    bonuscount: 3
-  shotLane3_shotProfileToplanes_unlit_hit:
-    score: 100 * current_player.lanesLevel
-    bonuscount: 1
-  shotLane3_shotProfileToplanes_lit_hit:
-    score: 100 * current_player.lanesLevel
-    bonuscount: 3
-  shotLane4_shotProfileToplanes_unlit_hit:
-    score: 100 * current_player.lanesLevel
-    bonuscount: 1
-  shotLane4_shotProfileToplanes_lit_hit:
-    score: 100 * current_player.lanesLevel
-    bonuscount: 3
 
+# Lanes Complete
+# 5000 base.  5000 more will be awarded if bonus multi is not increased.
   shotGroupToplanes_lit_complete:
-    score: 1000  * current_player.lanesLevel
+    score: 5000  * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonustype1: 1
     bonuscount: 10
-  drop_target_bank_leftfull_down:
-    score: 1000
-    bonustype2: 1
-    bonuscount: 6
-  drop_target_bank_rightfull_down:
-    score: 1000
-    bonustype3: 1
-    bonuscount: 6
+
+# Inlanes
+#todo 10000 when opposite lane ball save active
+#Else 1000
+  s_roInLaneLeft_active:
+    score: 1000  * current_player.temp_playfield_x * current_player.perm_playfield_x
+    bonuscount: 1
+  s_roInLaneRight_active:
+    score: 1000  * current_player.temp_playfield_x * current_player.perm_playfield_x
+    bonuscount: 1
+
+# Outlanes
+#todo Collection High Perf Mode Bonus [Not yet implemented]
+#todo If lit ball save
+#todo else
+# If all else fails, 10000 pts
+  s_roOutLaneLeft_active:
+    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    bonuscount: 1
+  s_roOutLaneRight_active:
+    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    bonuscount: 1
+
+# Other Switches
+  s_sTargetDropL_active:
+    score: (10 + current_player.other_switches) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    other_switches: 1
+    bonuscount: 1
+  s_sTargetDropR_active:
+    score: (10 + current_player.other_switches) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    other_switches: 1
+    bonuscount: 1
+  s_sTargetLowL_active:
+    score: (10 + current_player.other_switches) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    other_switches: 1
+    bonuscount: 1
+  s_sTargetLowR_active:
+    score: (10 + current_player.other_switches) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    other_switches: 1
+    bonuscount: 1
+  s_sTargetUpperL_active:
+    score: (10 + current_player.other_switches) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    other_switches: 1
+    bonuscount: 1
+  s_sTargetUpperR_active:
+    score: (10 + current_player.other_switches) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    other_switches: 1
+    bonuscount: 1
+
+# This is the 50 pops + spins bonus for the bonus multiplier
   gravityAssistBonus:
-    score: 1000
+    score: 5000  * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonustype4: 1
     bonuscount: 10
 
+# Decide on bonus multi increase or 5000 extra points
   player_bonustype1{value==1}:
      bonus_multiplier:
         int: 1
@@ -350,7 +333,7 @@ variable_player:
         int: 1
   player_bonustype1{value>1}:
      score:
-        int: 5000
+        int: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
   player_bonustype2{value==1}:
      bonus_multiplier:
         int: 1
@@ -358,7 +341,7 @@ variable_player:
         int: 1
   player_bonustype2{value>1}:
      score:
-        int: 5000
+        int: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
   player_bonustype3{value==1}:
      bonus_multiplier:
         int: 1
@@ -366,7 +349,7 @@ variable_player:
         int: 1
   player_bonustype3{value>1}:
      score:
-        int: 5000
+        int: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
   player_bonustype4{value==1}:
      bonus_multiplier:
         int: 1
@@ -374,7 +357,7 @@ variable_player:
         int: 1
   player_bonustype4{value>1}:
      score:
-        int: 5000
+        int: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
 
   bonus_reset_achieved:
      bonustype4:
@@ -389,13 +372,6 @@ variable_player:
      bonustype3:
         int: 0
         action: set
-
-  shotGroupLeftTargets_lit_complete:
-     score: 5000
-     bonuscount: 3
-  shotGroupRightTargets_lit_complete:
-     score: 5000
-     bonuscount: 3
 
   acheivement_story01_successful:
      status_untitled_mode_1: 1
@@ -413,3 +389,6 @@ variable_player:
      status_untitled_mode_7:
        int: 0
        action: set
+
+  story_is_completed_successful:
+     perm_playfield_x: 1
