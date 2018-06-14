@@ -166,8 +166,8 @@ shot_profiles:
         show: popred
     loop: false
   shotProfileScoopStory01:
-    advance_on_hit: false
     block: true
+    advance_on_hit: false
     states:
       - name: scoopInactive
         show: off

@@ -1,7 +1,7 @@
 #config_version=5
 variable_player:
   player_gallery_targets_hit:
-    score: current_player.gallery_targets_hit * 5000
+    score: current_player.gallery_targets_hit * 75000
     bonuscount: current_player.gallery_targets_hit
 
 # block switch based scoring from base mode

@@ -2,6 +2,7 @@
 
 config:
    - ballsave.yaml
+   - story02-scoring.yaml
 
 mode:
    start_events: selector_untitled_mode_2_selected
@@ -91,7 +92,7 @@ slides:
         color: red
         font_size: 50
       - type: text
-        text: When light, hit the spinner to engage Thrusters
+        text: When lit, hit the spinner to engage Thrusters
         y: 30%
         color: red
         font_size: 50

@@ -1,7 +1,7 @@
 #config_version=5
 variable_player:
   corridor_target_hit:
-    score: (1 + current_player.corridor_targets_hit) * 5000|block
+    score: (1 + current_player.corridor_targets_hit) * 20000|block
     drops: 1
     bonuscount: 1
 
