@@ -124,7 +124,7 @@ slides:
         font_size: 100
         font_name: ocr-a-tribute-bold
       - type: text
-        text: You are the very greatest
+        text: "Meteor Scoring: (meteor_accum)"
         y: 40%
         color: red
         font_size: 50
@@ -178,8 +178,8 @@ variable_player:
        action: set
   shotScoopMeteor_hit:
     meteor_hits: 1
-    score: 1000 * current_player.timeRemain
-    meteor_accum: 1000 * current_player.timeRemain
+    score: ((current_player.meteor_hits + 1) * 50000) + (10000 * current_player.timeRemain)
+    meteor_accum: ((current_player.meteor_hits + 1) * 50000) + (10000 * current_player.timeRemain)
     bonuscount: 3
   timer_meteorTimer_tick:
      timeRemain:

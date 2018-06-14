@@ -1,0 +1,18 @@
+#config_version=5
+
+variable_player:
+  shotgrouppopbumpers_hit:
+     score: 20000
+     bonuscount: 1
+  s_jet_upper_left_active:
+    score: 0|block
+  s_jet_upper_right_active:
+    score: 0|block
+  s_jet_lower_center_active:
+    score: 0|block
+  status_escape:
+     score: 100000
+     bonuscount: 2
+  shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
+     score: 500000
+     bonuscount: 10
