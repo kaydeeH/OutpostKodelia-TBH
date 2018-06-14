@@ -10,13 +10,23 @@ event_player:
      new_text: "MODE FAIL\nBALL"
      new_value: "SAVED"
 
+queue_event_player:
+  ball_save_initial_enabled:
+    queue_event: ball_save_queued
+    events_when_finished: ball_save_timer_start
+
+queue_relay_player:
+  ball_save_queued:
+    post: waiting_for_eject_success
+    wait_for: sw_playfield_active
+
 ball_saves:
  initial:
-   active_time: 13s
+   active_time: 8s
    grace_period: 2s
-#   active_time: 1s
    enable_events: mode_base_started
-   timer_start_events: single_player_ball_started, multiplayer_game_player_start
+   timer_start_events: ball_save_timer_start
+   early_ball_save_events: s_roOutLaneRight_active, s_roOutLaneLeft_active
    auto_launch: false
    balls_to_save: 1
 
