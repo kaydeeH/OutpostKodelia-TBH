@@ -1,7 +1,7 @@
 #config_version=5
 
 high_score:
-  enter_initials_timeout: 30s
+  enter_initials_timeout: 60s
   award_slide_display_time: 10s
   _overwrite: True
   categories: !!omap
@@ -45,19 +45,27 @@ slides:
     style: text_default
     anchor_y: bottom
     x: center-27
-    y: bottom+21
+    y: bottom+610
+    font_size: 110
+    font_name: ocr-a-tribute-bold
+    color: ff330f
   - type: text
     text: (award)
     style: text_default
     anchor_y: bottom
     x: center-27
-    y: bottom+12
+    y: bottom+500
+    font_size: 110
+    font_name: ocr-a-tribute-bold
   - type: text_input
     key: high_score
     style: text_default
     anchor_y: bottom
     max_chars: 3
-    y: 1
+    y: bottom+400
+    font_size: 90
+    font_name: ocr-a-tribute-bold
+    color: ff330f
     animations:
       show_slide:
       - property: opacity

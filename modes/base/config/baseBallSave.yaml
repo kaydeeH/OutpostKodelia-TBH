@@ -14,6 +14,7 @@ ball_saves:
  initial:
    active_time: 13s
    grace_period: 2s
+#   active_time: 1s
    enable_events: mode_base_started
    timer_start_events: single_player_ball_started, multiplayer_game_player_start
    auto_launch: false

@@ -12,37 +12,251 @@ queue_relay_player:
       wait_for: slide_goslide_removed
 #      pass_args: true
 
+event_player:
+    mode_endOfGame_started:
+       pre_final_score_p1|500ms:
+       pre_final_score_p2|1000ms:
+       pre_final_score_p3|1500ms:
+       pre_final_score_p4|2000ms:
+       pre_a_winner_is_you|4000ms:
+
+# Handle the broken shit
+    final_position_p1{pos==2}:
+       - final_position_p1_2a
+    final_position_p1{pos==3}:
+       - final_position_p1_3a
+    final_position_p1{pos==4}:
+       - final_position_p1_4a
+    final_position_p2{pos==1}:
+       - final_position_p2_1a
+    final_position_p2{pos==3}:
+       - final_position_p2_3a
+    final_position_p2{pos==4}:
+       - final_position_p2_4a
+    final_position_p3{pos==1}:
+       - final_position_p3_1a
+    final_position_p3{pos==2}:
+       - final_position_p3_2a
+    final_position_p3{pos==4}:
+       - final_position_p3_4a
+    final_position_p4{pos==1}:
+       - final_position_p4_1a
+    final_position_p4{pos==2}:
+       - final_position_p4_2a
+    final_position_p4{pos==3}:
+       - final_position_p4_3a
+
+
 slide_player:
     show_game_over_slide:
       goslide:
-        expire: 5s
+        expire: 15s
+    s_start_active:
+      goslide:
+        action: remove
+    flipper_cradle:
+      goslide:
+        action: remove
 
 slides:
   goslide:
     widgets:
-#      - type: image
-#        image: logo
-#        x: 150
-#        y: 650
-#      - type: text
-#        text: (score)
-#        number_grouping: true
-#        min_digits: 2
-#        font_size: 100
-#        font_name: ocr-a-tribute-bold
-#        y: 40%
-#      - type: text
-#        text: PLAYER (number)
-#        y: 10
-#        x: 10
-#        font_size: 50
-#        font_name: ocr-a-tribute-bold
-#        anchor_x: left
-#        anchor_y: bottom
       - type: text
         font_size: 100
-        y: 25%
+        y: 75%
         color: red
         font_name: ocr-a-tribute-bold
         text: GAME OVER
+
+widget_player:
+   final_score_p1:
+      p1_final_score:
+        slide: goslide
+   final_score_p2:
+      p2_final_score:
+        slide: goslide
+   final_score_p3:
+      p3_final_score:
+        slide: goslide
+   final_score_p4:
+      p4_final_score:
+        slide: goslide
+
+widgets:
+   p1_final_score:
+      - type: text
+        font_size: 100
+        y: 60%
+        x: 25%
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: PLAYER  1
+        animations:
+           final_position_p1_2a:
+              - property: y
+                duration: 250ms
+                value: 45%
+           final_position_p1_3a:
+              - property: y
+                duration: 250ms
+                value: 30%
+           final_position_p1_4a:
+              - property: y
+                duration: 250ms
+                value: 15%
+      - type: text
+        font_size: 100
+        y: 60%
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: (player1|score)
+        number_grouping: true
+        min_digits: 2
+        x: 95%
+        anchor_x: right
+        animations:
+           final_position_p1_2a:
+              - property: y
+                duration: 250ms
+                value: 45%
+           final_position_p1_3a:
+              - property: y
+                duration: 250ms
+                value: 30%
+           final_position_p1_4a:
+              - property: y
+                duration: 250ms
+                value: 15%
+   p2_final_score:
+      - type: text
+        font_size: 100
+        y: 45%
+        x: 25%
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: PLAYER  2
+        animations:
+           final_position_p2_1a:
+              - property: y
+                value: 60%
+                duration: 250ms
+           final_position_p2_3a:
+              - property: y
+                value: 30%
+                duration: 250ms
+           final_position_p2_4a:
+              - property: y
+                value: 15%
+                duration: 250ms
+      - type: text
+        font_size: 100
+        y: 45%
+        x: 95%
+        anchor_x: right
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: (player2|score)
+        number_grouping: true
+        min_digits: 2
+        animations:
+           final_position_p2_1a:
+              - property: y
+                value: 60%
+                duration: 250ms
+           final_position_p2_3a:
+              - property: y
+                value: 30%
+                duration: 250ms
+           final_position_p2_4a:
+              - property: y
+                value: 15%
+                duration: 250ms
+   p3_final_score:
+      - type: text
+        font_size: 100
+        y: 30%
+        x: 25%
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: PLAYER  3
+        animations:
+           final_position_p3_1a:
+              - property: y
+                value: 60%
+                duration: 250ms
+           final_position_p3_2a:
+              - property: y
+                value: 45%
+                duration: 250ms
+           final_position_p3_4a:
+              - property: y
+                value: 15%
+                duration: 250ms
+      - type: text
+        font_size: 100
+        y: 30%
+        x: 95%
+        anchor_x: right
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: (player3|score)
+        number_grouping: true
+        min_digits: 2
+        animations:
+           final_position_p3_1a:
+              - property: y
+                value: 60%
+                duration: 250ms
+           final_position_p3_2a:
+              - property: y
+                value: 45%
+                duration: 250ms
+           final_position_p3_4a:
+              - property: y
+                value: 15%
+                duration: 250ms
+   p4_final_score:
+      - type: text
+        font_size: 100
+        y: 15%
+        x: 25%
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: PLAYER  4
+        animations:
+           final_position_p4_1a:
+              - property: y
+                value: 60%
+                duration: 250ms
+           final_position_p4_2a:
+              - property: y
+                value: 45%
+                duration: 250ms
+           final_position_p4_3a:
+              - property: y
+                value: 30%
+                duration: 250ms
+      - type: text
+        font_size: 100
+        y: 15%
+        x: 95%
+        anchor_x: right
+        color: red
+        font_name: ocr-a-tribute-bold
+        text: (player4|score)
+        number_grouping: true
+        min_digits: 2
+        animations:
+           final_position_p4_1a:
+              - property: y
+                value: 60%
+                duration: 250ms
+           final_position_p4_2a:
+              - property: y
+                value: 45%
+                duration: 250ms
+           final_position_p4_3a:
+              - property: y
+                value: 30%
+                duration: 250ms
 

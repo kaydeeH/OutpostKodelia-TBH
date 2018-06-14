@@ -10,3 +10,4 @@ scriptlets:
   - ball_goal_calc.BallGoalCalc
   - bonus_box_rotate.BonusBoxRotate
   - bonus_multi_notify.BonusMultiNotify
+  - endGame.EndGameEvents
