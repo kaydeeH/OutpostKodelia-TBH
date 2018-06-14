@@ -134,13 +134,15 @@
               value: 1
               duration: .5s
               repeat: true
+- duration: 1
+  slides:
+    dummy:
+      widgets:
+        - type: Text
+          text: ""
 - duration: 10
   slides:
     hsScreen:
-      transition:
-         type: move_in
-         duration: 1s
-         direction: top
       widgets:
       - type: Text
         text: "HIGH SCORES"

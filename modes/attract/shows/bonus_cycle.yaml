@@ -1,0 +1,370 @@
+#show_version=5
+
+#Flash to center and back
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 1E90FF
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 1E90FF
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 1E90FF
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 1E90FF
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 1E90FF
+    l_bonus4: 000000
+    l_bonus5: 1E90FF
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 1E90FF
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 1E90FF
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 1E90FF
+    l_bonus4: 000000
+    l_bonus5: 1E90FF
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 1E90FF
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 1E90FF
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 1E90FF
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 1E90FF
+    l_bonus8: 000000
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+
+#Build to center and back
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 000000
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 1E90FF
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 1E90FF
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 000000
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 1E90FF
+- duration: 100ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+
+#Flash all 5 times
+- duration: 200ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 1E90FF
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 200ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 200ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 1E90FF
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 200ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 200ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 1E90FF
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 200ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 200ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 1E90FF
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 200ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000
+- duration: 200ms
+  lights:
+    l_bonus0: 1E90FF
+    l_bonus1: 1E90FF
+    l_bonus2: 1E90FF
+    l_bonus3: 1E90FF
+    l_bonus4: 1E90FF
+    l_bonus5: 1E90FF
+    l_bonus6: 1E90FF
+    l_bonus7: 1E90FF
+    l_bonus8: 1E90FF
+- duration: 200ms
+  lights:
+    l_bonus0: 000000
+    l_bonus1: 000000
+    l_bonus2: 000000
+    l_bonus3: 000000
+    l_bonus4: 000000
+    l_bonus5: 000000
+    l_bonus6: 000000
+    l_bonus7: 000000
+    l_bonus8: 000000

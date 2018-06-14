@@ -1,0 +1,62 @@
+#show_version=5
+
+- duration: 500ms
+  lights:
+    l_2x: 6666FF
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
+- duration: 500ms
+  lights:
+    l_2x: 000000
+    l_3x: CC6699
+    l_4x: 000000
+    l_5x: 000000
+- duration: 500ms
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 33FF33
+    l_5x: 000000
+- duration: 500ms
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: FFFF66
+- duration: 500ms
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
+- duration: 500ms
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: FFFF66
+- duration: 500ms
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 33FF33
+    l_5x: 000000
+- duration: 500ms
+  lights:
+    l_2x: 000000
+    l_3x: CC6699
+    l_4x: 000000
+    l_5x: 000000
+- duration: 500ms
+  lights:
+    l_2x: 6666FF
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
+- duration: 500ms
+  lights:
+    l_2x: 000000
+    l_3x: 000000
+    l_4x: 000000
+    l_5x: 000000
