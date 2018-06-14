@@ -15,6 +15,14 @@ show_player:
       loops: -1
       speed: 1
       priority: 7
+    bonus_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
+    big_bonus_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
     pop_cycle:
       loops: -1
       speed: 1
@@ -23,15 +31,43 @@ show_player:
       loops: -1
       speed: 1
       priority: 7
+    drop_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
+    mult_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
+    special_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
+    scoop_ready_show:
+      loops: -1
+      speed: 1
+      priority: 7
+    extra_ball_cycle:
+      loops: -1
+      speed: 1
+      priority: 7
     text_loop:
       loops: 8
       events_when_completed: attract_02
   attract_02:
+    purple_swirl:
+       speed: 1
+       loops: 6
+       priority: 8
+    big_title:
+      loops: 0
+      events_when_completed: attract_03
+  attract_03:
     giDim:
-      priority: 8
+      priority: 9
       loops: 89
     field_off:
-      priority: 8
+      priority: 9
       loops: 89
     video_play:
       loops: 0

@@ -19,6 +19,8 @@ assets:
             load: on_demand
 
 images:
+    cygnus_logo:
+       file: Black-Hole-Movie.jpg
     logo:
        file: BlackholeLogo.gif
     david_goliath:

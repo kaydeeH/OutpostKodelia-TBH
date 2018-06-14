@@ -1,0 +1,8 @@
+#show_version=5
+
+- duration: 100ms
+  lights:
+    l_shootAgain: FF6600
+- duration: 200ms
+  lights:
+    l_shootAgain: 000000

@@ -1,0 +1,85 @@
+#show_version=5
+
+#Alternate slow
+- duration: 100ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: 000000
+- duration: 100ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: FF0066
+- duration: 100ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: 000000
+- duration: 100ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: FF0066
+- duration: 100ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: 000000
+- duration: 100ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: FF0066
+- duration: 100ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: 000000
+- duration: 100ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: FF0066
+- duration: 100ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: 000000
+- duration: 100ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: FF0066
+
+#Sync blink fast
+- duration: 200ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: FF0066
+- duration: 200ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: 000000
+- duration: 200ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: FF0066
+- duration: 200ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: 000000
+- duration: 200ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: FF0066
+- duration: 200ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: 000000
+- duration: 200ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: FF0066
+- duration: 200ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: 000000
+- duration: 200ms
+  lights:
+    l_bonusBig0: 66FF00
+    l_bonusBig1: FF0066
+- duration: 200ms
+  lights:
+    l_bonusBig0: 000000
+    l_bonusBig1: 000000

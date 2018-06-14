@@ -1,5 +1,5 @@
 #show_version=5
-- time: 0
+- duration: 100ms
   lights:
       l_2x:
         color: '180243'
@@ -50,7 +50,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopLower:
         color: '0A0119'
@@ -101,7 +101,7 @@
         color: '010101'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopLower:
         color: '180243'
@@ -179,7 +179,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveSpinnerLower:
         color: '000000'
@@ -233,7 +233,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_4x:
         color: '180242'
@@ -287,7 +287,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_3x:
         color: '000000'
@@ -332,7 +332,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_2x:
         color: '000000'
@@ -377,7 +377,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopLower:
         color: '000000'
@@ -446,7 +446,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveSpinnerLower:
         color: '180243'
@@ -512,7 +512,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_5x:
         color: '180243'
@@ -566,7 +566,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_3x:
         color: '180243'
@@ -617,7 +617,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_2x:
         color: '180243'
@@ -665,7 +665,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopLower:
         color: '180243'
@@ -734,7 +734,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveSpinnerLower:
         color: '000000'
@@ -791,7 +791,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_5x:
         color: '010101'
@@ -842,7 +842,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_4x:
         color: '000000'
@@ -896,7 +896,7 @@
         color: '010001'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_2x:
         color: '000000'
@@ -950,7 +950,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopLower:
         color: '000000'
@@ -1004,7 +1004,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveSpinnerLower:
         color: '180243'
@@ -1064,7 +1064,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIDropRight0:
         color: '000000'
@@ -1106,7 +1106,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_4x:
         color: '180243'
@@ -1163,7 +1163,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_2x:
         color: '180243'
@@ -1214,7 +1214,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopLower:
         color: '180243'
@@ -1271,7 +1271,7 @@
         color: '180242'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopUpper:
         color: '180243'
@@ -1346,7 +1346,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIDropCenterRight:
         color: '11022F'
@@ -1394,7 +1394,7 @@
         color: '05010C'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_4x:
         color: '000000'
@@ -1454,7 +1454,7 @@
         color: '10022C'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_2x:
         color: '000000'
@@ -1511,7 +1511,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopLower:
         color: '000000'
@@ -1562,7 +1562,7 @@
         color: '0A0119'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveScoopUpper:
         color: '000000'
@@ -1634,7 +1634,7 @@
         color: '180243'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_GIAboveSpinnerLower:
         color: '180243'
@@ -1682,7 +1682,7 @@
         color: '000000'
         fade: 100ms
 
-- time: '+1'
+- duration: 100ms
   lights:
       l_4x:
         color: '180243'

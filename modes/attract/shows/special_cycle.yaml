@@ -1,0 +1,12 @@
+#show_version=5
+
+- duration: 200ms
+  lights:
+    l_specialRight: CC0033
+    l_specialLeft: 000000
+    l_spinner: CC0033
+- duration: 200ms
+  lights:
+    l_specialRight: 000000
+    l_specialLeft: CC0033
+    l_spinner: 000000
