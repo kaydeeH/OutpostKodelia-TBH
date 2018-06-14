@@ -52,7 +52,7 @@ show_player:
       speed: 1
       priority: 7
     text_loop:
-      loops: 8
+      loops: 0
       events_when_completed: attract_02
   attract_02:
     purple_swirl:

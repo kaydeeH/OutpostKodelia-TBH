@@ -23,6 +23,8 @@ images:
        file: Black-Hole-Movie.jpg
     logo:
        file: BlackholeLogo.gif
+    starfield:
+       file: starfield.jpg
     david_goliath:
        file: MaxVsVincent.jpg
     singlePlayerScoreFrame:

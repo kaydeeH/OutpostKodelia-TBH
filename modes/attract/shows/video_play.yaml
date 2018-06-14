@@ -8,7 +8,7 @@
         text: "OUTPOST KODELIA STUDIOS\n\nPRESENTS"
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
       transition:
          type: move_in
          duration: 1s
@@ -21,7 +21,7 @@
         text: THE PINBALL EXPERIENCE
         font_name: ocr-a-tribute-bold
         font_size: 48
-        color: ff330f
+        color: FF2C1F
         y: 340
         x: 675
         anchor_y: center
@@ -44,7 +44,7 @@
         text: (machine|score6_label) - (machine|score6_name) (machine|score6_value)
         font_name: ocr-a-tribute-bold
         font_size: 36
-        color: dd330f
+        color: BF3228
         y: 160
         x: 695
         anchor_y: top
@@ -67,7 +67,7 @@
         text: (machine|score5_label) - (machine|score5_name) (machine|score5_value)
         font_name: ocr-a-tribute-bold
         font_size: 36
-        color: ff330f
+        color: BF3228
         y: 160
         x: 733
         anchor_y: top
@@ -90,7 +90,7 @@
         text: (machine|score4_label) - (machine|score4_name) (machine|score4_value)
         font_name: ocr-a-tribute-bold
         font_size: 36
-        color: ff330f
+        color: BF3228
         y: 160
         x: 725
         anchor_y: top
@@ -113,7 +113,7 @@
         text: (machine|score3_label) - (machine|score3_name) (machine|score3_value)
         font_name: ocr-a-tribute-bold
         font_size: 36
-        color: ff330f
+        color: BF3228
         y: 160
         x: 715
         anchor_y: top
@@ -136,7 +136,7 @@
         text: (machine|score2_label) - (machine|score2_name) (machine|score2_value)
         font_name: ocr-a-tribute-bold
         font_size: 36
-        color: ff330f
+        color: BF3228
         y: 160
         x: 555
         anchor_y: top
@@ -159,7 +159,7 @@
         text: (machine|score1_label) - (machine|score1_name) (machine|score1_value)
         font_name: ocr-a-tribute-bold
         font_size: 36
-        color: ff330f
+        color: BF3228
         y: 160
         x: 540
         anchor_y: top

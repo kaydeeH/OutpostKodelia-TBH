@@ -4,11 +4,16 @@
   slides:
     ok_productions:
       widgets:
+      - type: image
+        image: starfield
+        opacity: .7
+        z: 0
       - type: Text
         text: "OUTPOST KODELIA STUDIOS\n\nPRESENTS"
+        z: 1
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
         opacity: 0
         animations:
           show_slide:
@@ -26,6 +31,7 @@
         font_name: ocr-a-tribute-bold
         y: 10
         x: 10
+        z: 1
         anchor_y: bottom
         anchor_x: left
         animations:
@@ -43,6 +49,7 @@
         color: green
         y: 10
         x: 1355
+        z: 1
         anchor_y: bottom
         anchor_x: right
         animations:
@@ -58,13 +65,18 @@
   slides:
     title:
       widgets:
+      - type: image
+        image: starfield
+        opacity: .7
+        z: 0
       - type: Text
         text: THE BLACK HOLE
         font_name: ocr-a-tribute-bold
         font_size: 72
-        color: ff330f
+        color: FF2C1F
         opacity: 0
         y: center + 40
+        z: 1
         anchor_y: center
         anchor_x: center
         animations:
@@ -82,9 +94,10 @@
         text: THE PINBALL EXPERIENCE
         font_name: ocr-a-tribute-bold
         font_size: 36
-        color: ff330f
+        color: FF2C1F
         opacity: 0
         y: center - 40
+        z: 1
         anchor_y: center
         anchor_x: center
         animations:
@@ -106,6 +119,7 @@
         font_name: ocr-a-tribute-bold
         y: 10
         x: 10
+        z: 1
         anchor_y: bottom
         anchor_x: left
         animations:
@@ -123,6 +137,7 @@
         color: green
         y: 10
         x: 1355
+        z: 1
         anchor_y: bottom
         anchor_x: right
         animations:
@@ -134,77 +149,93 @@
               value: 1
               duration: .5s
               repeat: true
-- duration: 1
+- duration: 1ms
   slides:
     dummy:
       widgets:
-        - type: Text
-          text: ""
+      - type: image
+        image: starfield
+        opacity: .7
+        z: 0
 - duration: 10
   slides:
     hsScreen:
+      transition:
+        type: fade
+        duration: 1s
       widgets:
+      - type: image
+        image: starfield
+        opacity: .7
+        z: 0
       - type: Text
         text: "HIGH SCORES"
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
         y: 600
         x: 700
+        z: 1
         anchor_y: top
         anchor_x: center
       - type: Text
         text: (machine|score1_label) - (machine|score1_name) (machine|score1_value)
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
         y: 540
         x: 700
+        z: 1
         anchor_y: top
         anchor_x: center
       - type: Text
         text: (machine|score2_label) - (machine|score2_name) (machine|score2_value)
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
         y: 480
         x: 700
+        z: 1
         anchor_y: top
         anchor_x: center
       - type: Text
         text: (machine|score3_label) - (machine|score3_name) (machine|score3_value)
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
         y: 420
         x: 700
+        z: 1
         anchor_y: top
         anchor_x: center
       - type: Text
         text: (machine|score4_label) - (machine|score4_name) (machine|score4_value)
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
         y: 360
         x: 700
+        z: 1
         anchor_y: top
         anchor_x: center
       - type: Text
         text: (machine|score5_label) - (machine|score5_name) (machine|score5_value)
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
         y: 300
         x: 700
+        z: 1
         anchor_y: top
         anchor_x: center
       - type: Text
         text: (machine|score6_label) - (machine|score6_name) (machine|score6_value)
         font_name: ocr-a-tribute-bold
         font_size: 50
-        color: ff330f
+        color: FF2C1F
         y: 240
         x: 700
+        z: 1
         anchor_y: top
         anchor_x: center
       - type: Text
@@ -212,6 +243,7 @@
         font_name: ocr-a-tribute-bold
         y: 10
         x: 10
+        z: 1
         anchor_y: bottom
         anchor_x: left
         animations:
@@ -229,6 +261,7 @@
         color: green
         y: 10
         x: 1355
+        z: 1
         anchor_y: bottom
         anchor_x: right
         animations:
