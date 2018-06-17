@@ -165,6 +165,66 @@ slides:
         font_name: lucon
         color: BBD8F0
         z: 70
+      - type: text
+        text: (bonus_multiplier)X
+        y: top - 105
+        x: right - 105
+        anchor_x: right
+        anchor_y: top
+        font_size: 40
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: BONUS X
+        y: top - 90
+        x: right - 100
+        anchor_x: right
+        anchor_y: top
+        font_size: 14
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: (overall_playfield_multi)X
+        y: top - 105
+        x: right - 25
+        anchor_x: right
+        anchor_y: top
+        font_size: 40
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: PLAYFIELD
+        y: top - 90
+        x: right - 12
+        anchor_x: right
+        anchor_y: top
+        font_size: 14
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: (pds)
+        y: top - 105
+        x: right - 180
+        anchor_x: right
+        anchor_y: top
+        font_size: 40
+        font_name: lucon
+        color: BBD8F0
+        z: 70
+      - type: text
+        text: BONUS VALUE
+        y: top - 90
+        x: right - 185
+        anchor_x: right
+        anchor_y: top
+        font_size: 14
+        font_name: lucon
+        color: BBD8F0
+        z: 70
 #      - type: text
 #        text: "Bonus Value (pds)"
 #        x: right - 90

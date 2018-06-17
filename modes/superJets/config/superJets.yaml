@@ -22,9 +22,9 @@ timers:
 
 variable_player:
   s_jet_upper_left_active:
-    score: 750 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x|block
   s_jet_upper_right_active:
-    score: 750 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x|block
   s_jet_lower_center_active:
-    score: 750 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x|block
 

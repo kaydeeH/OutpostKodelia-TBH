@@ -45,6 +45,7 @@ event_player:
   player_bonustype3{value>1}:
     - playfield_double_start
 
+
 # 10 Second INSANE SPINNER mode for finishing modes that end in the scoop shot
   acheivement_story01_successful:
     - trigger_insane_spins
@@ -392,3 +393,5 @@ variable_player:
 
   story_is_completed_successful:
      perm_playfield_x: 1
+
+
