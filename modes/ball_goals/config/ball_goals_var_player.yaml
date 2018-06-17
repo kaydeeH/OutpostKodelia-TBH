@@ -54,3 +54,13 @@ variable_player:
 # Gyro - Spins
   s_spinner_active:
     spins: 1
+
+  player_temp_playfield_x:
+     overall_playfield_multi:
+        int: current_player.temp_playfield_x * current_player.perm_playfield_x
+        action: set
+
+  player_perm_playfield_x:
+     overall_playfield_multi:
+        int: current_player.temp_playfield_x * current_player.perm_playfield_x
+        action: set
