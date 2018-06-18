@@ -68,7 +68,7 @@ class BallGoalCalc(Scriptlet):
                   self.machine.game.player.pds += 100 * self.machine.game.player.spinsLevel
                   self.machine.events.post('ball_goal_level_up_sync_bonus', level=self.machine.game.player.spinsLevel)
 
-            self._ball_goal_notify("BONUS VALUE\nBOOST", "", self.machine.game.player.pds)
+            # self._ball_goal_notify("BONUS VALUE\nBOOST", "", self.machine.game.player.pds)
 
     def _ball_goal_notify(self, strText, strValue, intLevel):
         self.machine.events.post('invoke_notify_by_event', new_text=strText, new_value=strValue + str(intLevel))

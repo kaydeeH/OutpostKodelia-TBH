@@ -225,6 +225,45 @@ slides:
         font_name: lucon
         color: BBD8F0
         z: 70
+# Playfield Multiplier Ghosts
+      - type: ellipse
+        width: 80
+        height: 80
+        color: 380000
+        y: 40%
+        z: 1
+      - type: text
+        text: 2X
+        font_name: lucon
+        y: 40%
+        z: 3
+        color: 380000
+        font_size: 36
+      - type: ellipse
+        width: 70
+        height: 70
+        color: black
+        y: 40%
+        z: 2
+      - type: ellipse
+        width: 80
+        height: 80
+        color: 380000
+        y: 52%
+        z: 1
+      - type: ellipse
+        width: 70
+        height: 70
+        color: black
+        y: 52%
+        z: 2
+      - type: text
+        text: 3X
+        font_name: lucon
+        y: 52%
+        z: 3
+        color: 380000
+        font_size: 36
 #      - type: text
 #        text: "Bonus Value (pds)"
 #        x: right - 90
