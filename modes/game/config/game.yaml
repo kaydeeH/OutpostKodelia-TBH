@@ -36,11 +36,16 @@ slides:
    scoring_slide:
     widgets:
       - type: image
+        image: starfield
+        z: 0
+        opacity: 0.7
+      - type: image
         image: leftBar
         anchor_x: left
         anchor_y: top
         x: left
         y: top
+        z: 50
       - type: image
         image: ballBar
         anchor_x: right

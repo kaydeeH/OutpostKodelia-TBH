@@ -157,6 +157,129 @@
         image: starfield
         opacity: .7
         z: 0
+- duration: 15
+  slides:
+    praise1:
+      transition:
+        type: fade
+        duration: 1s
+      widgets:
+      - type: image
+        image: starfield
+        opacity: .7
+        z: 0
+      - type: Text
+        text: "Praise for The Black Hole - The Pinball Experience"
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: top - 40
+        x: center
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: Text
+        text: "\"It's a monster, all right... Smooth as glass.\" - Captain Dan Holland"
+        font_name: ocr-a-tribute-bold
+        font_size: 24
+        color: FF2C1F
+        y: top - 200
+        x: left + 40
+        z: 1
+        anchor_y: top
+        anchor_x: left
+      - type: Text
+        text: "It's \"the largest black hole I have ever encountered...\" - V.I.N.Cent"
+        font_name: ocr-a-tribute-bold
+        font_size: 24
+        color: FF2C1F
+        y: top - 340
+        x: right - 40
+        z: 1
+        anchor_y: top
+        anchor_x: right
+      - type: Text
+        text: "\"My God... Crazy! That's impossible!!\" - Harry Booth"
+        font_name: ocr-a-tribute-bold
+        font_size: 24
+        color: FF2C1F
+        y: top - 480
+        x: left + 40
+        z: 1
+        anchor_y: top
+        anchor_x: left
+      - type: Text
+        text: "\"It's certainly worth investigating... Strap yourselves in... Incredible!\" - Dr. Alex Durant"
+        font_name: ocr-a-tribute-bold
+        font_size: 24
+        color: FF2C1F
+        y: top - 620
+        x: right - 40
+        z: 1
+        anchor_y: top
+        anchor_x: right
+- duration: 15
+  slides:
+    praise2:
+      transition:
+        type: fade
+        duration: 1s
+      widgets:
+      - type: image
+        image: starfield
+        opacity: .7
+        z: 0
+      - type: Text
+        text: "Praise for The Black Hole - The Pinball Experience"
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: top - 40
+        x: center
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: Text
+        text: "\"It's like being in the eye of a hurricane.\" - Dr. Kate McCrae"
+        font_name: ocr-a-tribute-bold
+        font_size: 24
+        color: FF2C1F
+        y: top - 200
+        x: left + 40
+        z: 1
+        anchor_y: top
+        anchor_x: left
+      - type: Text
+        text: "\"Like a tree on Christmas morning.\" - Lt. Charles Pizer"
+        font_name: ocr-a-tribute-bold
+        font_size: 24
+        color: FF2C1F
+        y: top - 340
+        x: right - 40
+        z: 1
+        anchor_y: top
+        anchor_x: right
+      - type: Text
+        text: "Dr. Hanz Reinhardt could not be pulled away from his gameplay for a response.\nWhen we asked him for his thoughts, he angrily waved us off, saying only,\n\"I am on the brink of a great achievement!\" Later, he was overheard calling\nthe game, \"Fascinating… A feat unparalleled... What an incredible sight… I\nstill haven’t gotten used to it.\""
+        font_name: ocr-a-tribute-bold
+        font_size: 24
+        halign: left
+        color: FF2C1F
+        y: top - 480
+        x: left + 40
+        z: 1
+        anchor_y: top
+        anchor_x: left
+      - type: Text
+        text: "\"...\" - Maximilian"
+        font_name: ocr-a-tribute-bold
+        font_size: 24
+        color: FF2C1F
+        y: top - 700
+        x: right - 40
+        z: 1
+        anchor_y: top
+        anchor_x: right
 - duration: 10
   slides:
     hsScreen:

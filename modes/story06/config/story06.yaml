@@ -230,6 +230,7 @@ widgets:
   david_and_goliath_widget:
     - type: image
       image: david_goliath
+      z: 19
   health_shell_widget:
     - type: rectangle
       y: top - 50
