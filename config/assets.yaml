@@ -51,3 +51,29 @@ images:
        file: MultiPlayerHoldBoxRight.png
     badgeLocateTheCygnus:
        file: badge-locate_the_cygnus.png
+    badgeLocateTheCygnusOff:
+       file: badge-locate_the_cygnus-off.png
+    badgeEscapeOff:
+       file: badge-escape_the_black_hole-off.png
+    badgeEscape:
+       file: badge-escape_the_black_hole.png
+    badgeShootingOff:
+       file: badge-shooting_gallery-off.png
+    badgeShooting:
+       file: badge-shooting_gallery.png
+    badgeMeteorOff:
+       file: badge-meteor_strike-off.png
+    badgeMeteor:
+       file: badge-meteor_strike.png
+    badgeCorridorOff:
+       file: badge-corridor_battle-off.png
+    badgeCorridor:
+       file: badge-corridor_battle.png
+    badgeDavidOff:
+       file: badge-david_vs_goliath-off.png
+    badgeDavid:
+       file: badge-david_vs_goliath.png
+    badgeBeyondOff:
+       file: badge-in_through_beyond-off.png
+    badgeBeyond:
+       file: badge-in_through_beyond.png

@@ -1,0 +1,10 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    (light): 0000CC
+- duration: 1
+  widgets:
+     badge07:
+        slide: scoring_slide
+        action: add

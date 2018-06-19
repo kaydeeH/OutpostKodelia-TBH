@@ -29,6 +29,37 @@ event_player:
     - player_3_is_inactive
     - player_4_is_active
 
+#  single_player_ball_started:
+#    - revertBadge01
+#    - revertBadge02
+#    - revertBadge03
+#    - revertBadge04
+#    - revertBadge05
+#    - revertBadge06
+#    - revertBadge07
+#  player_turn_started_out_of:
+#    - revertBadge01
+#    - revertBadge02
+#    - revertBadge03
+#    - revertBadge04
+#    - revertBadge05
+#    - revertBadge06
+#    - revertBadge07
+#  acheivement_story01_successful:
+#    - applyBadge01
+#  acheivement_story02_successful:
+#    - applyBadge02
+#  acheivement_story03_successful:
+#    - applyBadge03
+#  acheivement_story04_successful:
+#    - applyBadge04
+#  acheivement_story05_successful:
+#    - applyBadge05
+#  acheivement_story06_successful:
+#    - applyBadge06
+#  acheivement_story07_successful:
+#    - applyBadge07
+
 slide_player:
   game_started: scoring_slide
 
@@ -232,89 +263,171 @@ slides:
         z: 70
 # Playfield Multiplier Ghosts
       - type: ellipse
-        width: 80
-        height: 80
+        width: 70
+        height: 70
         color: 0C2438
-        y: 40%
+        x: 15.5%
+        y: 18%
         z: 1
+        anchor_x: center
+        anchor_y: center
       - type: text
         text: 2X
         font_name: lucon
-        y: 40%
+        x: 15.5%
+        y: 18%
         z: 3
         color: 0C2438
-        font_size: 36
+        font_size: 32
+        anchor_x: center
+        anchor_y: center
+      - type: ellipse
+        width: 60
+        height: 60
+        color: black
+        x: 15.5%
+        y: 18%
+        z: 2
+        anchor_x: center
+        anchor_y: center
+# Triple Playfield
       - type: ellipse
         width: 70
         height: 70
-        color: black
-        y: 40%
-        z: 2
-      - type: ellipse
-        width: 80
-        height: 80
         color: 0C2438
-        y: 52%
+        x: 23%
+        y: 18%
         z: 1
+        anchor_x: center
+        anchor_y: center
       - type: ellipse
-        width: 70
-        height: 70
+        width: 60
+        height: 60
         color: black
-        y: 52%
+        x: 23%
+        y: 18%
         z: 2
+        anchor_x: center
+        anchor_y: center
       - type: text
         text: 3X
         font_name: lucon
-        y: 52%
+        x: 23%
+        y: 18%
         z: 3
         color: 0C2438
-        font_size: 36
+        font_size: 32
+        anchor_x: center
+        anchor_y: center
+# Super Spins
       - type: ellipse
-        width: 80
-        height: 80
+        width: 70
+        height: 70
         color: 0C2438
-        y: 64%
+        x: 77%
+        y: 18%
         z: 1
+        anchor_x: center
+        anchor_y: center
       - type: text
         text: "SUPER\nSPINS"
         font_name: lucon
-        y: 64%
+        x: 77%
+        y: 18%
         z: 3
         color: 0C2438
-        font_size: 18
+        font_size: 16
+        anchor_x: center
+        anchor_y: center
+      - type: ellipse
+        width: 60
+        height: 60
+        color: black
+        x: 77%
+        y: 18%
+        z: 2
+        anchor_x: center
+        anchor_y: center
+# Super Jets
       - type: ellipse
         width: 70
         height: 70
-        color: black
-        y: 64%
-        z: 2
-      - type: ellipse
-        width: 80
-        height: 80
         color: 0C2438
-        y: 76%
+        x: 84.5%
+        y: 18%
         z: 1
+        anchor_x: center
+        anchor_y: center
       - type: text
         text: "SUPER\nJETS"
         font_name: lucon
-        y: 76%
+        x: 84.5%
+        y: 18%
         z: 3
         color: 0C2438
-        font_size: 18
-      - type: ellipse
-        width: 70
-        height: 70
-        color: black
-        y: 76%
-        z: 2
-# Initial badges
-      - type: image
-        image: badgeLocateTheCygnus
+        font_size: 16
         anchor_x: center
         anchor_y: center
-        x: center
-        y: 88%
+      - type: ellipse
+        width: 60
+        height: 60
+        color: black
+        x: 84.5%
+        y: 18%
+        z: 2
+        anchor_x: center
+        anchor_y: center
+# Initial badges
+      - type: image
+        image: badgeLocateTheCygnusOff
+        anchor_x: center
+        anchor_y: center
+        x: 17%
+        y: 94%
         z: 10
+      - type: image
+        image: badgeEscapeOff
+        anchor_x: center
+        anchor_y: center
+        x: 26%
+        y: 94%
+        z: 10
+      - type: image
+        image: badgeShootingOff
+        anchor_x: center
+        anchor_y: center
+        x: 35%
+        y: 94%
+        z: 10
+      - type: image
+        image: badgeMeteorOff
+        anchor_x: center
+        anchor_y: center
+        x: 44%
+        y: 94%
+        z: 10
+      - type: image
+        image: badgeCorridorOff
+        anchor_x: center
+        anchor_y: center
+        x: 53%
+        y: 94%
+        z: 10
+      - type: image
+        image: badgeDavidOff
+        anchor_x: center
+        anchor_y: center
+        x: 62%
+        y: 94%
+        z: 10
+      - type: image
+        image: badgeBeyondOff
+        anchor_x: center
+        anchor_y: center
+        x: 71%
+        y: 94%
+        z: 10
+
 #      - type: text
 #        text: "Bonus Value (pds)"
 #        x: right - 90

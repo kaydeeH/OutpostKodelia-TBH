@@ -1,0 +1,59 @@
+#config_version=5
+
+widgets:
+     badge01:
+        - type: image
+          image: badgeLocateTheCygnus
+          anchor_x: center
+          anchor_y: center
+          x: 17%
+          y: 94%
+          z: 20
+     badge02:
+        - type: image
+          image: badgeEscape
+          anchor_x: center
+          anchor_y: center
+          x: 26%
+          y: 94%
+          z: 20
+     badge03:
+      - type: image
+        image: badgeShooting
+        anchor_x: center
+        anchor_y: center
+        x: 35%
+        y: 94%
+        z: 20
+     badge04:
+      - type: image
+        image: badgeMeteor
+        anchor_x: center
+        anchor_y: center
+        x: 44%
+        y: 94%
+        z: 20
+     badge05:
+      - type: image
+        image: badgeCorridor
+        anchor_x: center
+        anchor_y: center
+        x: 53%
+        y: 94%
+        z: 20
+     badge06:
+      - type: image
+        image: badgeDavid
+        anchor_x: center
+        anchor_y: center
+        x: 62%
+        y: 94%
+        z: 20
+     badge07:
+      - type: image
+        image: badgeBeyond
+        anchor_x: center
+        anchor_y: center
+        x: 71%
+        y: 94%
+        z: 20

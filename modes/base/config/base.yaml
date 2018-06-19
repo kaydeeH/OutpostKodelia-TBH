@@ -4,6 +4,7 @@ config:
   - scoring.yaml
   - statemachines.yaml
   - baseBallSave.yaml
+  - widgets.yaml
 
 # ---------------------------------------------------
 # Ideas for improvement
@@ -561,3 +562,4 @@ shows:
      - time: 0
        lights:
          l_5x: (color)
+
