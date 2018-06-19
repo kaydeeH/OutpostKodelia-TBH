@@ -15,7 +15,7 @@ event_player:
 
 timers:
    doublepf:
-     start_value: 30
+     start_value: 31
      end_value: 0
      direction: down
      start_running: true
@@ -29,4 +29,50 @@ variable_player:
      temp_playfield_x:
        action: set
        int: current_player.temp_playfield_x / 2
+
+widget_player:
+   mode_playfieldDouble_started:
+       doubleTimer:
+          slide: scoring_slide
+   timer_doublepf_complete:
+       doubleTimer:
+          slide: scoring_slide
+          action: remove
+
+widgets:
+  doubleTimer:
+    - type: ellipse
+      width: 80
+      height: 80
+      color: 008C1B
+      y: 40%
+      z: 10
+    - type: ellipse
+      width: 80
+      height: 80
+      color: black
+      y: 40%
+      z: 20
+      angle_start: 0
+      angle_end: 12
+      animations:
+         timer_doublepf_tick:
+            property: angle_end
+            value: 12
+            relative: true
+            duration: 1s
+    - type: ellipse
+      width: 70
+      height: 70
+      color: black
+      y: 40%
+      z: 30
+    - type: text
+      text: 2X
+      font_name: lucon
+      y: 40%
+      z: 40
+      color: BBD8F0
+      font_size: 36
+
 

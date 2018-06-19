@@ -49,3 +49,5 @@ images:
        file: MultiPlayerDummyBoxMiddle.png
     multiScoreRight:
        file: MultiPlayerHoldBoxRight.png
+    badgeLocateTheCygnus:
+       file: badge-locate_the_cygnus.png

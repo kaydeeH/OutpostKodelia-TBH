@@ -230,6 +230,91 @@ slides:
         font_name: lucon
         color: BBD8F0
         z: 70
+# Playfield Multiplier Ghosts
+      - type: ellipse
+        width: 80
+        height: 80
+        color: 0C2438
+        y: 40%
+        z: 1
+      - type: text
+        text: 2X
+        font_name: lucon
+        y: 40%
+        z: 3
+        color: 0C2438
+        font_size: 36
+      - type: ellipse
+        width: 70
+        height: 70
+        color: black
+        y: 40%
+        z: 2
+      - type: ellipse
+        width: 80
+        height: 80
+        color: 0C2438
+        y: 52%
+        z: 1
+      - type: ellipse
+        width: 70
+        height: 70
+        color: black
+        y: 52%
+        z: 2
+      - type: text
+        text: 3X
+        font_name: lucon
+        y: 52%
+        z: 3
+        color: 0C2438
+        font_size: 36
+      - type: ellipse
+        width: 80
+        height: 80
+        color: 0C2438
+        y: 64%
+        z: 1
+      - type: text
+        text: "SUPER\nSPINS"
+        font_name: lucon
+        y: 64%
+        z: 3
+        color: 0C2438
+        font_size: 18
+      - type: ellipse
+        width: 70
+        height: 70
+        color: black
+        y: 64%
+        z: 2
+      - type: ellipse
+        width: 80
+        height: 80
+        color: 0C2438
+        y: 76%
+        z: 1
+      - type: text
+        text: "SUPER\nJETS"
+        font_name: lucon
+        y: 76%
+        z: 3
+        color: 0C2438
+        font_size: 18
+      - type: ellipse
+        width: 70
+        height: 70
+        color: black
+        y: 76%
+        z: 2
+# Initial badges
+      - type: image
+        image: badgeLocateTheCygnus
+        anchor_x: center
+        anchor_y: center
+        x: center
+        y: 88%
+        z: 10
 #      - type: text
 #        text: "Bonus Value (pds)"
 #        x: right - 90
