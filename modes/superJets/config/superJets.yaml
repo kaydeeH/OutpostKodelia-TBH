@@ -29,32 +29,32 @@ variable_player:
     score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x|block
 
 widget_player:
-   mode_playfieldTriple_started:
-       tripleTimer:
+   mode_superJets_started:
+       superJetsTimer:
           slide: scoring_slide
-   timer_triplepf_complete:
-       tripleTimer:
+   timer_superjets_complete:
+       superJetsTimer:
           slide: scoring_slide
           action: remove
 
 widgets:
-  tripleTimer:
+  superJetsTimer:
     - type: ellipse
       width: 80
       height: 80
       color: 012077
-      y: 52%
+      y: 76%
       z: 10
     - type: ellipse
       width: 80
       height: 80
       color: black
-      y: 52%
+      y: 76%
       z: 20
       angle_start: 0
       angle_end: 12
       animations:
-         timer_triplepf_tick:
+         timer_superspins_tick:
             property: angle_end
             value: 12
             relative: true
@@ -63,12 +63,12 @@ widgets:
       width: 70
       height: 70
       color: black
-      y: 52%
+      y: 76%
       z: 30
     - type: text
-      text: 3X
+      text: "SUPER\nJETS"
       font_name: lucon
-      y: 52%
+      y: 76%
       z: 40
       color: BBD8F0
-      font_size: 36
+      font_size: 18

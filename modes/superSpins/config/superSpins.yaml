@@ -23,3 +23,48 @@ timers:
 variable_player:
   s_spinner_active:
     score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x|block
+
+widget_player:
+   mode_superSpins_started:
+       superSpinTimer:
+          slide: scoring_slide
+   timer_superspins_complete:
+       superSpinTimer:
+          slide: scoring_slide
+          action: remove
+
+widgets:
+  superSpinTimer:
+    - type: ellipse
+      width: 80
+      height: 80
+      color: 012077
+      y: 64%
+      z: 10
+    - type: ellipse
+      width: 80
+      height: 80
+      color: black
+      y: 64%
+      z: 20
+      angle_start: 0
+      angle_end: 12
+      animations:
+         timer_superspins_tick:
+            property: angle_end
+            value: 12
+            relative: true
+            duration: 1s
+    - type: ellipse
+      width: 70
+      height: 70
+      color: black
+      y: 64%
+      z: 30
+    - type: text
+      text: "SUPER\nSPINS"
+      font_name: lucon
+      y: 64%
+      z: 40
+      color: BBD8F0
+      font_size: 18
