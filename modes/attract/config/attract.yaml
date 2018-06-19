@@ -72,6 +72,45 @@ show_player:
     video_play:
       loops: 0
       events_when_completed: attract_01
+  green_ttb:
+    green_stripes_ttb:
+      speed: 30
+      loops: 11
+      priority: 10
+  green_btt:
+    green_stripes_btt:
+      speed: 30
+      loops: 8
+      priority: 10
+  green_rtl:
+    green_stripes_rtl:
+      speed: 30
+      loops: 8
+      priority: 10
+  green_ttb_2:
+    green_stripes_ttb:
+      speed: 30
+      loops: 8
+      priority: 10
+  green_x_rtl:
+    green_xs_rtl:
+      speed: 30
+      loops: 24
+      priority: 10
+  green_circ:
+    green_cir_ito:
+      speed: 30
+      loops: 3
+      priority: 10
+
+event_player:
+  attract_03: #All events have had +5s added to account for the title slide
+    - green_ttb|22s
+    - green_btt|34s
+    - green_rtl|43s
+    - green_ttb_2|51s
+    - green_x_rtl|60s
+    - green_circ|85s
 
 
 #  mode_attract_started: attract_display_loop
