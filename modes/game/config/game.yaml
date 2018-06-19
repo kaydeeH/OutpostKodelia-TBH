@@ -307,6 +307,14 @@ slides:
         color: black
         y: 76%
         z: 2
+# Initial badges
+      - type: image
+        image: badgeLocateTheCygnus
+        anchor_x: center
+        anchor_y: center
+        x: center
+        y: 88%
+        z: 10
 #      - type: text
 #        text: "Bonus Value (pds)"
 #        x: right - 90
