@@ -6,6 +6,7 @@ switches:
   s_start: #wired to right side controller
     number: 1/1/7
     tags: start
+    ignore_window_ms: 500
 
   #Left side switches
   s_flipper_left:
