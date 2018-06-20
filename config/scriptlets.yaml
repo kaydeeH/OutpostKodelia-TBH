@@ -11,3 +11,4 @@ scriptlets:
   - bonus_box_rotate.BonusBoxRotate
   - bonus_multi_notify.BonusMultiNotify
   - endGame.EndGameEvents
+  - selected_check.SelectedCheck
