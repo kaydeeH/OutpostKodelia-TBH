@@ -1,0 +1,596 @@
+#config_version=5
+mode:
+  start_events: select_mode_start
+  stop_events: selector2_item_selected, selector_untitled_mode_7_selected
+  code: mpf.modes.carousel.code.carousel.Carousel
+  priority: 325
+
+mode_settings:
+  selectable_items: mode1, mode2, mode3, mode4, mode5, mode6
+  select_item_events: selected_mode_is_available
+  next_item_events: s_flipper_right_active
+  previous_item_events: s_flipper_left_active
+
+variable_player:
+  selector2_mode1_highlighted:
+      mode_pick:
+         int: 1
+         action: set
+  selector2_mode2_highlighted:
+      mode_pick:
+         int: 2
+         action: set
+  selector2_mode3_highlighted:
+      mode_pick:
+         int: 3
+         action: set
+  selector2_mode4_highlighted:
+      mode_pick:
+         int: 4
+         action: set
+  selector2_mode5_highlighted:
+      mode_pick:
+         int: 5
+         action: set
+  selector2_mode6_highlighted:
+      mode_pick:
+         int: 6
+         action: set
+
+
+event_player:
+  s_start_active:
+     - check_selected_mode_is_available
+  selector2_mode1_selected:
+     - selector_untitled_mode_1_selected
+  selector2_mode2_selected:
+     - selector_untitled_mode_2_selected
+  selector2_mode3_selected:
+     - selector_untitled_mode_3_selected
+  selector2_mode4_selected:
+     - selector_untitled_mode_4_selected
+  selector2_mode5_selected:
+     - selector_untitled_mode_5_selected
+  selector2_mode6_selected:
+     - selector_untitled_mode_6_selected
+  selector2_mode7_selected:
+     - selector_untitled_mode_7_selected
+  selector2_mode1_highlighted:
+     - selector_untitled_mode_1_highlighted
+  selector2_mode2_highlighted:
+     - selector_untitled_mode_2_highlighted
+  selector2_mode3_highlighted:
+     - selector_untitled_mode_3_highlighted
+  selector2_mode4_highlighted:
+     - selector_untitled_mode_4_highlighted
+  selector2_mode5_highlighted:
+     - selector_untitled_mode_5_highlighted
+  selector2_mode6_highlighted:
+     - selector_untitled_mode_6_highlighted
+  selector2_mode7_highlighted:
+     - selector_untitled_mode_7_highlighted
+
+
+animations:
+  drop_text_down:
+    - property: opacity
+      value: 0
+      duration: 0
+  return_text:
+    - property: opacity
+      value: 0
+      duration: 250ms
+    - property: opacity
+      value: 1
+      timing: after_previous
+      duration: 50ms
+  title_small_right:
+    - property: opacity
+      value: 1
+      duration: 0
+    - property: font_size
+      value: 16
+      duration: 250ms
+      timing: after_previous
+    - property: y
+      value: 57%
+      duration: 250ms
+      timing: with_previous
+    - property: x
+      value: 90%
+      duration: 250ms
+      timing: with_previous
+  title_small_right_off:
+    - property: font_size
+      value: 16
+      duration: 250ms
+    - property: y
+      value: 57%
+      duration: 250ms
+      timing: with_previous
+    - property: x
+      value: 120%
+      duration: 250ms
+      timing: with_previous
+    - property: opacity
+      value: 0
+      duration: 0
+  title_small_left:
+    - property: opacity
+      value: 1
+      duration: 0
+    - property: font_size
+      value: 16
+      duration: 250ms
+      timing: after_previous
+    - property: y
+      value: 57%
+      duration: 250ms
+      timing: with_previous
+    - property: x
+      value: 10%
+      duration: 250ms
+      timing: with_previous
+  title_small_left_off:
+    - property: font_size
+      value: 16
+      duration: 250ms
+    - property: y
+      value: 57%
+      duration: 250ms
+      timing: with_previous
+    - property: x
+      value: -20%
+      duration: 250ms
+      timing: with_previous
+    - property: opacity
+      value: 0
+      duration: 0
+  title_large:
+    - property: font_size
+      value: 72
+      duration: 250ms
+    - property: y
+      value: 80%
+      duration: 250ms
+      timing: with_previous
+    - property: x
+      value: 50%
+      duration: 250ms
+      timing: with_previous
+  icon_small_right:
+    - property: opacity
+      value: 1
+      duration: 0
+    - property: scale
+      value: 1
+      duration: 250ms
+      timing: after_previous
+    - property: x
+      value: 90%
+      duration: 250ms
+      timing: with_previous
+    - property: y
+      value: 50%
+      duration: 250ms
+      timing: with_previous
+  icon_small_right_off:
+    - property: scale
+      value: 1
+      duration: 250ms
+      timing: after_previous
+    - property: x
+      value: 120%
+      duration: 250ms
+      timing: with_previous
+    - property: y
+      value: 50%
+      duration: 250ms
+      timing: with_previous
+    - property: opacity
+      value: 0
+      duration: 0
+  icon_small_left:
+    - property: opacity
+      value: 1
+      duration: 0
+    - property: scale
+      value: 1
+      duration: 250ms
+      timing: after_previous
+    - property: x
+      value: 10%
+      duration: 250ms
+      timing: with_previous
+    - property: y
+      value: 50%
+      duration: 250ms
+      timing: with_previous
+  icon_small_left_off:
+    - property: scale
+      value: 1
+      duration: 250ms
+      timing: after_previous
+    - property: x
+      value: -20%
+      duration: 250ms
+      timing: with_previous
+    - property: y
+      value: 50%
+      duration: 250ms
+      timing: with_previous
+    - property: opacity
+      value: 0
+      duration: 0
+  icon_large:
+    - property: scale
+      value: 5
+      duration: 250ms
+    - property: x
+      value: 35%
+      duration: 250ms
+      timing: with_previous
+    - property: y
+      value: 50%
+      duration: 250ms
+      timing: with_previous
+
+
+widget_player:
+  mode_selector2_started:
+    mode01_prim:
+      key: mode01
+      slide: selector2_slide
+      action: add
+    mode02_prim:
+      key: mode02
+      slide: selector2_slide
+      action: add
+    mode03_prim:
+      key: mode03
+      slide: selector2_slide
+      action: add
+    mode04_prim:
+      key: mode04
+      slide: selector2_slide
+      action: add
+    mode05_prim:
+      key: mode05
+      slide: selector2_slide
+      action: add
+    mode06_prim:
+      key: mode06
+      slide: selector2_slide
+      action: add
+
+widgets:
+# Starts in Center Pos
+  mode01_prim:
+    - type: text
+      text: LOCATE THE CYGNUS
+      font_name: ocr-a-tribute-bold
+      color: red
+      anchor_x: center
+      anchor_y: center
+      y: 80%
+      font_size: 72
+      animations:
+         selector2_mode1_highlighted: title_large
+         selector2_mode2_highlighted: title_small_left
+         selector2_mode3_highlighted: title_small_left_off
+         selector2_mode4_highlighted: title_small_left_off
+         selector2_mode5_highlighted: title_small_right_off
+         selector2_mode6_highlighted: title_small_right
+    - type: image
+      image: badgeLocateTheCygnus
+      anchor_x: center
+      anchor_y: center
+      x: 40%
+      scale: 5
+      animations:
+         selector2_mode1_highlighted: icon_large
+         selector2_mode2_highlighted: icon_small_left
+         selector2_mode3_highlighted: icon_small_left_off
+         selector2_mode4_highlighted: icon_small_left_off
+         selector2_mode5_highlighted: icon_small_right_off
+         selector2_mode6_highlighted: icon_small_right
+    - type: text
+      text: "\u00B7 SOMETHING SOMETHING\n\n\u00B7 DARK SIDE\n\n\u00B7 I LIKE TURTLES\n\n\u00B7 ALSO TACOS RULE"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 28
+      font_name: ocr-a-tribute-bold
+      animations:
+         selector2_mode1_highlighted: return_text
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
+# Starts in Right
+  mode02_prim:
+    - type: text
+      text: ESCAPE THE BLACK HOLE
+      font_name: ocr-a-tribute-bold
+      color: red
+      anchor_x: center
+      anchor_y: center
+      x: 90%
+      y: 57%
+      font_size: 16
+      animations:
+         selector2_mode2_highlighted: title_large
+         selector2_mode3_highlighted: title_small_left
+         selector2_mode4_highlighted: title_small_left_off
+         selector2_mode5_highlighted: title_small_left_off
+         selector2_mode6_highlighted: title_small_right_off
+         selector2_mode1_highlighted: title_small_right
+    - type: image
+      image: badgeEscape
+      anchor_x: center
+      anchor_y: center
+      x: 90%
+      y: 50%
+      scale: 1
+      animations:
+         selector2_mode2_highlighted: icon_large
+         selector2_mode3_highlighted: icon_small_left
+         selector2_mode4_highlighted: icon_small_left_off
+         selector2_mode5_highlighted: icon_small_left_off
+         selector2_mode6_highlighted: icon_small_right_off
+         selector2_mode1_highlighted: icon_small_right
+    - type: text
+      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      opacity: 0
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 28
+      font_name: ocr-a-tribute-bold
+      animations:
+         selector2_mode2_highlighted: return_text
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
+         selector2_mode1_highlighted: drop_text_down
+# Starts in Right Next
+  mode03_prim:
+    - type: text
+      text: SHOOTING GALLERY
+      font_name: ocr-a-tribute-bold
+      color: red
+      anchor_x: center
+      anchor_y: center
+      x: 120%
+      y: 57%
+      font_size: 16
+      opacity: 0
+      animations:
+         selector2_mode3_highlighted: title_large
+         selector2_mode4_highlighted: title_small_left
+         selector2_mode5_highlighted: title_small_left_off
+         selector2_mode6_highlighted: title_small_left_off
+         selector2_mode1_highlighted: title_small_right_off
+         selector2_mode2_highlighted: title_small_right
+    - type: image
+      image: badgeShooting
+      anchor_x: center
+      anchor_y: center
+      x: 120%
+      y: 50%
+      scale: 1
+      opacity: 0
+      animations:
+         selector2_mode3_highlighted: icon_large
+         selector2_mode4_highlighted: icon_small_left
+         selector2_mode5_highlighted: icon_small_left_off
+         selector2_mode6_highlighted: icon_small_left_off
+         selector2_mode1_highlighted: icon_small_right_off
+         selector2_mode2_highlighted: icon_small_right
+    - type: text
+      opacity: 0
+      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 28
+      font_name: ocr-a-tribute-bold
+      animations:
+         selector2_mode3_highlighted: return_text
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+# Starts in Right Next
+  mode04_prim:
+    - type: text
+      text: METEOR STRIKE
+      font_name: ocr-a-tribute-bold
+      color: red
+      anchor_x: center
+      anchor_y: center
+      x: 120%
+      y: 57%
+      font_size: 16
+      opacity: 0
+      animations:
+         selector2_mode4_highlighted: title_large
+         selector2_mode5_highlighted: title_small_left
+         selector2_mode6_highlighted: title_small_left_off
+         selector2_mode1_highlighted: title_small_left_off
+         selector2_mode2_highlighted: title_small_right_off
+         selector2_mode3_highlighted: title_small_right
+    - type: image
+      image: badgeMeteor
+      anchor_x: center
+      anchor_y: center
+      x: 120%
+      y: 50%
+      scale: 1
+      opacity: 0
+      animations:
+         selector2_mode4_highlighted: icon_large
+         selector2_mode5_highlighted: icon_small_left
+         selector2_mode6_highlighted: icon_small_left_off
+         selector2_mode1_highlighted: icon_small_left_off
+         selector2_mode2_highlighted: icon_small_right_off
+         selector2_mode3_highlighted: icon_small_right
+    - type: text
+      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      opacity: 0
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 28
+      font_name: ocr-a-tribute-bold
+      animations:
+         selector2_mode4_highlighted: return_text
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+# Starts in Left Next
+  mode05_prim:
+    - type: text
+      text: CORRIDOR BATTLE
+      font_name: ocr-a-tribute-bold
+      color: red
+      anchor_x: center
+      anchor_y: center
+      x: -20%
+      y: 57%
+      font_size: 16
+      opacity: 0
+      animations:
+         selector2_mode5_highlighted: title_large
+         selector2_mode6_highlighted: title_small_left
+         selector2_mode1_highlighted: title_small_left_off
+         selector2_mode2_highlighted: title_small_left_off
+         selector2_mode3_highlighted: title_small_right_off
+         selector2_mode4_highlighted: title_small_right
+    - type: image
+      image: badgeCorridor
+      anchor_x: center
+      anchor_y: center
+      x: -20%
+      y: 50%
+      scale: 1
+      opacity: 0
+      animations:
+         selector2_mode5_highlighted: icon_large
+         selector2_mode6_highlighted: icon_small_left
+         selector2_mode1_highlighted: icon_small_left_off
+         selector2_mode2_highlighted: icon_small_left_off
+         selector2_mode3_highlighted: icon_small_right_off
+         selector2_mode4_highlighted: icon_small_right
+    - type: text
+      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      opacity: 0
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 28
+      font_name: ocr-a-tribute-bold
+      animations:
+         selector2_mode5_highlighted: return_text
+         selector2_mode6_highlighted: drop_text_down
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+# Starts in Left
+  mode06_prim:
+    - type: text
+      text: DAVID VS GOLLIATH
+      font_name: ocr-a-tribute-bold
+      color: red
+      anchor_x: center
+      anchor_y: center
+      x: 10%
+      y: 57%
+      font_size: 16
+      animations:
+         selector2_mode6_highlighted: title_large
+         selector2_mode1_highlighted: title_small_left
+         selector2_mode2_highlighted: title_small_left_off
+         selector2_mode3_highlighted: title_small_left_off
+         selector2_mode4_highlighted: title_small_right_off
+         selector2_mode5_highlighted: title_small_right
+    - type: image
+      image: badgeDavid
+      anchor_x: center
+      anchor_y: center
+      x: 10%
+      y: 50%
+      scale: 1
+      animations:
+         selector2_mode6_highlighted: icon_large
+         selector2_mode1_highlighted: icon_small_left
+         selector2_mode2_highlighted: icon_small_left_off
+         selector2_mode3_highlighted: icon_small_left_off
+         selector2_mode4_highlighted: icon_small_right_off
+         selector2_mode5_highlighted: icon_small_right
+    - type: text
+      opacity: 0
+      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 28
+      font_name: ocr-a-tribute-bold
+      animations:
+         selector2_mode6_highlighted: return_text
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+
+#\u00B7
+#  mode01_left:
+#    - type: image
+#      image: badgeLocateTheCygnus
+#      anchor_x: center
+#      anchor_y: center
+#      x: 10%
+#    - type: text
+#      text: LOCATE THE CYGNUS
+#      anchor_x: center
+#      anchor_y: center
+#      x: 10%
+#      y: 56%
+#      font_size: 12  mode01_right:
+#    - type: image
+#      image: badgeLocateTheCygnus
+#      anchor_x: center
+#      anchor_y: center
+#      x: 90%
+#    - type: text
+#      text: LOCATE THE CYGNUS
+#      anchor_x: center
+#      anchor_y: center
+#      x: 90%
+#      y: 56%
+#      font_size: 12
+
+slide_player:
+  mode_selector2_started: selector2_slide
+
+slides:
+  selector2_slide: []

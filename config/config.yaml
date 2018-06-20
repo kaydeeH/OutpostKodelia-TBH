@@ -24,7 +24,8 @@ config:
 
 modes:
   - base
-  - selector
+#  - selector
+  - selector2
   - high_score
   - bonus
   - story01
