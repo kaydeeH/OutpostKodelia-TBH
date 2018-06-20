@@ -8,8 +8,8 @@ mode:
 mode_settings:
   selectable_items: mode1, mode2, mode3, mode4, mode5, mode6
   select_item_events: selected_mode_is_available
-  next_item_events: s_flipper_right_active
-  previous_item_events: s_flipper_left_active
+  next_item_events: mode_select_right
+  previous_item_events: mode_select_left
 
 variable_player:
   selector2_mode1_highlighted:
@@ -39,6 +39,10 @@ variable_player:
 
 
 event_player:
+  s_flipper_left_active:
+     - pre_mode_select_left
+  s_flipper_right_active:
+     - pre_mode_select_right
   s_start_active:
      - check_selected_mode_is_available
   selector2_mode1_selected:
@@ -72,6 +76,14 @@ event_player:
 
 
 animations:
+  check_seen:
+    - property: opacity
+      value: .8
+      duration: 250ms
+  check_unseen:
+    - property: opacity
+      value: 0
+      duration: 50ms
   drop_text_down:
     - property: opacity
       value: 0
@@ -79,7 +91,7 @@ animations:
   return_text:
     - property: opacity
       value: 0
-      duration: 250ms
+      duration: 200ms
     - property: opacity
       value: 1
       timing: after_previous
@@ -260,6 +272,36 @@ widget_player:
       action: add
     mode06_prim:
       key: mode06
+      slide: selector2_slide
+      action: add
+  status_untitled_mode_1_completed:
+    mode01_check:
+      key: mode01c
+      slide: selector2_slide
+      action: add
+  status_untitled_mode_2_completed:
+    mode02_check:
+      key: mode02c
+      slide: selector2_slide
+      action: add
+  status_untitled_mode_3_completed:
+    mode03_check:
+      key: mode03c
+      slide: selector2_slide
+      action: add
+  status_untitled_mode_4_completed:
+    mode04_check:
+      key: mode04c
+      slide: selector2_slide
+      action: add
+  status_untitled_mode_5_completed:
+    mode05_check:
+      key: mode05c
+      slide: selector2_slide
+      action: add
+  status_untitled_mode_6_completed:
+    mode06_check:
+      key: mode06c
       slide: selector2_slide
       action: add
 
@@ -561,6 +603,114 @@ widgets:
          selector2_mode3_highlighted: drop_text_down
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
+  mode01_check:
+    - type: text
+      text: "\u221A"
+      font_name: lucon
+      font_size: 300
+      x: 65%
+      color: green
+      opacity: .8
+      anchor_x: center
+      anchor_y: center
+      z: 40
+      animations:
+         selector2_mode1_highlighted: check_seen
+         selector2_mode2_highlighted: check_unseen
+         selector2_mode3_highlighted: check_unseen
+         selector2_mode4_highlighted: check_unseen
+         selector2_mode5_highlighted: check_unseen
+         selector2_mode6_highlighted: check_unseen
+  mode02_check:
+    - type: text
+      text: "\u221A"
+      font_name: lucon
+      font_size: 300
+      x: 65%
+      color: green
+      opacity: 0
+      anchor_x: center
+      anchor_y: center
+      z: 40
+      animations:
+         selector2_mode2_highlighted: check_seen
+         selector2_mode3_highlighted: check_unseen
+         selector2_mode4_highlighted: check_unseen
+         selector2_mode5_highlighted: check_unseen
+         selector2_mode6_highlighted: check_unseen
+         selector2_mode1_highlighted: check_unseen
+  mode03_check:
+    - type: text
+      text: "\u221A"
+      font_name: lucon
+      font_size: 300
+      x: 65%
+      color: green
+      opacity: 0
+      anchor_x: center
+      anchor_y: center
+      z: 40
+      animations:
+         selector2_mode3_highlighted: check_seen
+         selector2_mode4_highlighted: check_unseen
+         selector2_mode5_highlighted: check_unseen
+         selector2_mode6_highlighted: check_unseen
+         selector2_mode1_highlighted: check_unseen
+         selector2_mode2_highlighted: check_unseen
+  mode04_check:
+    - type: text
+      text: "\u221A"
+      font_name: lucon
+      font_size: 300
+      x: 65%
+      color: green
+      opacity: 0
+      anchor_x: center
+      anchor_y: center
+      z: 40
+      animations:
+         selector2_mode4_highlighted: check_seen
+         selector2_mode5_highlighted: check_unseen
+         selector2_mode6_highlighted: check_unseen
+         selector2_mode1_highlighted: check_unseen
+         selector2_mode2_highlighted: check_unseen
+         selector2_mode3_highlighted: check_unseen
+  mode05_check:
+    - type: text
+      text: "\u221A"
+      font_name: lucon
+      font_size: 300
+      x: 65%
+      color: green
+      opacity: 0
+      anchor_x: center
+      anchor_y: center
+      z: 40
+      animations:
+         selector2_mode5_highlighted: check_seen
+         selector2_mode6_highlighted: check_unseen
+         selector2_mode1_highlighted: check_unseen
+         selector2_mode2_highlighted: check_unseen
+         selector2_mode3_highlighted: check_unseen
+         selector2_mode4_highlighted: check_unseen
+  mode06_check:
+    - type: text
+      text: "\u221A"
+      font_name: lucon
+      font_size: 300
+      x: 65%
+      color: green
+      opacity: 0
+      anchor_x: center
+      anchor_y: center
+      z: 40
+      animations:
+         selector2_mode6_highlighted: check_seen
+         selector2_mode1_highlighted: check_unseen
+         selector2_mode2_highlighted: check_unseen
+         selector2_mode3_highlighted: check_unseen
+         selector2_mode4_highlighted: check_unseen
+         selector2_mode5_highlighted: check_unseen
 
 #\u00B7
 #  mode01_left:

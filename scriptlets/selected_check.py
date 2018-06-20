@@ -37,3 +37,7 @@ class SelectedCheck(Scriptlet):
         player = self.machine.game.player
         if player.vars.get(modes.get(1)) != 0 and player.vars.get(modes.get(2)) != 0 and player.vars.get(modes.get(3)) != 0 and player.vars.get(modes.get(4)) != 0 and player.vars.get(modes.get(5)) != 0 and player.vars.get(modes.get(6)) != 0:
             self.machine.events.post('selector2_mode7_selected')
+        else:
+            for ourMode in modes:
+                if player.vars.get(modes.get(ourMode)) != 0:
+                    self.machine.events.post("{}_completed".format(modes.get(ourMode)))

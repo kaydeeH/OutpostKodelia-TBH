@@ -12,8 +12,8 @@ class FlipDelay(Scriptlet):
         self.debug_log("Flip delay scriptlet loaded!")
         FlipDelay.left_time = datetime.utcnow()
         FlipDelay.right_time = datetime.utcnow()
-        self.machine.events.add_handler('s_flipper_left_active', self._left_delay, 10000)
-        self.machine.events.add_handler('s_flipper_right_active', self._right_delay, 10000)
+        self.machine.events.add_handler('pre_mode_select_left', self._left_delay, 10000)
+        self.machine.events.add_handler('pre_mode_select_right', self._right_delay, 10000)
 
     def _left_delay(self, **kwargs):
         del kwargs

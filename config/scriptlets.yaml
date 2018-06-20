@@ -12,3 +12,4 @@ scriptlets:
   - bonus_multi_notify.BonusMultiNotify
   - endGame.EndGameEvents
   - selected_check.SelectedCheck
+  - flip_delay_scriptlet.FlipDelay
