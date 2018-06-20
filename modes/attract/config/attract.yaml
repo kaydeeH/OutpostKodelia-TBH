@@ -112,6 +112,54 @@ event_player:
     - green_x_rtl|60s
     - green_circ|85s
 
+widget_player:
+  lastgame_player2:
+    player_2_score_widget:
+      slide: lastgame
+  lastgame_player3:
+    player_3_score_widget:
+      slide: lastgame
+  lastgame_player4:
+    player_4_score_widget:
+      slide: lastgame
+
+widgets:
+  player_2_score_widget:
+    - type: Text
+      text: Player 2 - (score)
+      font_name: ocr-a-tribute-bold
+      font_size: 50
+      number_grouping: true
+      color: FF2C1F
+      y: 480
+      x: 700
+      z: 1
+      anchor_y: top
+      anchor_x: center
+  player_3_score_widget:
+    - type: Text
+      text: Player 3 - (score)
+      font_name: ocr-a-tribute-bold
+      font_size: 50
+      number_grouping: true
+      color: FF2C1F
+      y: 420
+      x: 700
+      z: 1
+      anchor_y: top
+      anchor_x: center
+  player_4_score_widget:
+    - type: Text
+      text: Player 4 - (score)
+      font_name: ocr-a-tribute-bold
+      font_size: 50
+      number_grouping: true
+      color: FF2C1F
+      y: 360
+      x: 700
+      z: 1
+      anchor_y: top
+      anchor_x: center
 
 #  mode_attract_started: attract_display_loop
 #

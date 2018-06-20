@@ -13,3 +13,4 @@ scriptlets:
   - endGame.EndGameEvents
   - selected_check.SelectedCheck
   - flip_delay_scriptlet.FlipDelay
+  - last_game_scores.LastGameScores
