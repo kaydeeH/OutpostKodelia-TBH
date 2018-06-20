@@ -175,7 +175,7 @@ animations:
       value: 1
       duration: 0
     - property: scale
-      value: 1
+      value: .2
       duration: 250ms
       timing: after_previous
     - property: x
@@ -188,7 +188,7 @@ animations:
       timing: with_previous
   icon_small_right_off:
     - property: scale
-      value: 1
+      value: .2
       duration: 250ms
       timing: after_previous
     - property: x
@@ -207,7 +207,7 @@ animations:
       value: 1
       duration: 0
     - property: scale
-      value: 1
+      value: .2
       duration: 250ms
       timing: after_previous
     - property: x
@@ -220,7 +220,7 @@ animations:
       timing: with_previous
   icon_small_left_off:
     - property: scale
-      value: 1
+      value: .2
       duration: 250ms
       timing: after_previous
     - property: x
@@ -236,7 +236,7 @@ animations:
       duration: 0
   icon_large:
     - property: scale
-      value: 5
+      value: 1
       duration: 250ms
     - property: x
       value: 35%
@@ -324,11 +324,10 @@ widgets:
          selector2_mode5_highlighted: title_small_right_off
          selector2_mode6_highlighted: title_small_right
     - type: image
-      image: badgeLocateTheCygnus
+      image: badgeLocateTheCygnusBig
       anchor_x: center
       anchor_y: center
       x: 40%
-      scale: 5
       animations:
          selector2_mode1_highlighted: icon_large
          selector2_mode2_highlighted: icon_small_left
@@ -371,12 +370,12 @@ widgets:
          selector2_mode6_highlighted: title_small_right_off
          selector2_mode1_highlighted: title_small_right
     - type: image
-      image: badgeEscape
+      image: badgeEscapeBig
       anchor_x: center
       anchor_y: center
       x: 90%
       y: 50%
-      scale: 1
+      scale: .2
       animations:
          selector2_mode2_highlighted: icon_large
          selector2_mode3_highlighted: icon_small_left
@@ -421,12 +420,12 @@ widgets:
          selector2_mode1_highlighted: title_small_right_off
          selector2_mode2_highlighted: title_small_right
     - type: image
-      image: badgeShooting
+      image: badgeShootingBig
       anchor_x: center
       anchor_y: center
       x: 120%
       y: 50%
-      scale: 1
+      scale: .2
       opacity: 0
       animations:
          selector2_mode3_highlighted: icon_large
@@ -472,12 +471,12 @@ widgets:
          selector2_mode2_highlighted: title_small_right_off
          selector2_mode3_highlighted: title_small_right
     - type: image
-      image: badgeMeteor
+      image: badgeMeteorBig
       anchor_x: center
       anchor_y: center
       x: 120%
       y: 50%
-      scale: 1
+      scale: .2
       opacity: 0
       animations:
          selector2_mode4_highlighted: icon_large
@@ -523,12 +522,12 @@ widgets:
          selector2_mode3_highlighted: title_small_right_off
          selector2_mode4_highlighted: title_small_right
     - type: image
-      image: badgeCorridor
+      image: badgeCorridorBig
       anchor_x: center
       anchor_y: center
       x: -20%
       y: 50%
-      scale: 1
+      scale: .2
       opacity: 0
       animations:
          selector2_mode5_highlighted: icon_large
@@ -573,12 +572,12 @@ widgets:
          selector2_mode4_highlighted: title_small_right_off
          selector2_mode5_highlighted: title_small_right
     - type: image
-      image: badgeDavid
+      image: badgeDavidBig
       anchor_x: center
       anchor_y: center
       x: 10%
       y: 50%
-      scale: 1
+      scale: .2
       animations:
          selector2_mode6_highlighted: icon_large
          selector2_mode1_highlighted: icon_small_left

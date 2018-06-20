@@ -77,3 +77,17 @@ images:
        file: badge-in_through_beyond-off.png
     badgeBeyond:
        file: badge-in_through_beyond.png
+    badgeLocateTheCygnusBig:
+       file: badge-locate_the_cygnus-big.png
+    badgeEscapeBig:
+       file: badge-escape_the_black_hole-big.png
+    badgeShootingBig:
+       file: badge-shooting_gallery-big.png
+    badgeMeteorBig:
+       file: badge-meteor_strike-big.png
+    badgeCorridorBig:
+       file: badge-corridor_battle-big.png
+    badgeDavidBig:
+       file: badge-david_vs_goliath-big.png
+    badgeBeyondBig:
+       file: badge-in_through_beyond-big.png
