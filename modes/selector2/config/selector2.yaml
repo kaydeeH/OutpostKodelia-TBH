@@ -316,6 +316,7 @@ widgets:
       anchor_y: center
       y: 80%
       font_size: 72
+      z: 1
       animations:
          selector2_mode1_highlighted: title_large
          selector2_mode2_highlighted: title_small_left
@@ -328,6 +329,7 @@ widgets:
       anchor_x: center
       anchor_y: center
       x: 40%
+      z: 1
       animations:
          selector2_mode1_highlighted: icon_large
          selector2_mode2_highlighted: icon_small_left
@@ -344,6 +346,7 @@ widgets:
       x: 65%
       font_size: 28
       font_name: ocr-a-tribute-bold
+      z: 1
       animations:
          selector2_mode1_highlighted: return_text
          selector2_mode2_highlighted: drop_text_down
@@ -362,6 +365,7 @@ widgets:
       x: 90%
       y: 57%
       font_size: 16
+      z: 1
       animations:
          selector2_mode2_highlighted: title_large
          selector2_mode3_highlighted: title_small_left
@@ -376,6 +380,7 @@ widgets:
       x: 90%
       y: 50%
       scale: .2
+      z: 1
       animations:
          selector2_mode2_highlighted: icon_large
          selector2_mode3_highlighted: icon_small_left
@@ -393,6 +398,7 @@ widgets:
       x: 65%
       font_size: 28
       font_name: ocr-a-tribute-bold
+      z: 1
       animations:
          selector2_mode2_highlighted: return_text
          selector2_mode3_highlighted: drop_text_down
@@ -412,6 +418,7 @@ widgets:
       y: 57%
       font_size: 16
       opacity: 0
+      z: 1
       animations:
          selector2_mode3_highlighted: title_large
          selector2_mode4_highlighted: title_small_left
@@ -427,6 +434,7 @@ widgets:
       y: 50%
       scale: .2
       opacity: 0
+      z: 1
       animations:
          selector2_mode3_highlighted: icon_large
          selector2_mode4_highlighted: icon_small_left
@@ -444,6 +452,7 @@ widgets:
       x: 65%
       font_size: 28
       font_name: ocr-a-tribute-bold
+      z: 1
       animations:
          selector2_mode3_highlighted: return_text
          selector2_mode4_highlighted: drop_text_down
@@ -463,6 +472,7 @@ widgets:
       y: 57%
       font_size: 16
       opacity: 0
+      z: 1
       animations:
          selector2_mode4_highlighted: title_large
          selector2_mode5_highlighted: title_small_left
@@ -478,6 +488,7 @@ widgets:
       y: 50%
       scale: .2
       opacity: 0
+      z: 1
       animations:
          selector2_mode4_highlighted: icon_large
          selector2_mode5_highlighted: icon_small_left
@@ -495,6 +506,7 @@ widgets:
       x: 65%
       font_size: 28
       font_name: ocr-a-tribute-bold
+      z: 1
       animations:
          selector2_mode4_highlighted: return_text
          selector2_mode5_highlighted: drop_text_down
@@ -514,6 +526,7 @@ widgets:
       y: 57%
       font_size: 16
       opacity: 0
+      z: 1
       animations:
          selector2_mode5_highlighted: title_large
          selector2_mode6_highlighted: title_small_left
@@ -529,6 +542,7 @@ widgets:
       y: 50%
       scale: .2
       opacity: 0
+      z: 1
       animations:
          selector2_mode5_highlighted: icon_large
          selector2_mode6_highlighted: icon_small_left
@@ -546,6 +560,7 @@ widgets:
       x: 65%
       font_size: 28
       font_name: ocr-a-tribute-bold
+      z: 1
       animations:
          selector2_mode5_highlighted: return_text
          selector2_mode6_highlighted: drop_text_down
@@ -564,6 +579,7 @@ widgets:
       x: 10%
       y: 57%
       font_size: 16
+      z: 1
       animations:
          selector2_mode6_highlighted: title_large
          selector2_mode1_highlighted: title_small_left
@@ -578,6 +594,7 @@ widgets:
       x: 10%
       y: 50%
       scale: .2
+      z: 1
       animations:
          selector2_mode6_highlighted: icon_large
          selector2_mode1_highlighted: icon_small_left
@@ -595,6 +612,7 @@ widgets:
       x: 65%
       font_size: 28
       font_name: ocr-a-tribute-bold
+      z: 1
       animations:
          selector2_mode6_highlighted: return_text
          selector2_mode1_highlighted: drop_text_down
@@ -742,4 +760,9 @@ slide_player:
   mode_selector2_started: selector2_slide
 
 slides:
-  selector2_slide: []
+  selector2_slide:
+    widgets:
+      - type: image
+        image: starfield
+        z: 0
+        opacity: 0.7
