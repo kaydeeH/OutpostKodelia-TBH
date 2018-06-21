@@ -5,6 +5,7 @@ config:
   - statemachines.yaml
   - baseBallSave.yaml
   - widgets.yaml
+#  - junkytest.yaml        # can remove this after
 
 # ---------------------------------------------------
 # Ideas for improvement

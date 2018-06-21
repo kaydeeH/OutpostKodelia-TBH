@@ -14,3 +14,4 @@ scriptlets:
   - selected_check.SelectedCheck
   - flip_delay_scriptlet.FlipDelay
   - last_game_scores.LastGameScores
+  - text_type_in.TextTypeIn

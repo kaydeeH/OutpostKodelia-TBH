@@ -1,0 +1,43 @@
+#config_version=5
+
+event_player:
+  mode_base_started{ball==1 and is_extra_ball==0}:
+    - start_silly_test
+    - start_silly_test_scriptlet
+    - start_silly_timer|200ms
+  start_silly_test_scriptlet:
+    set_text_to_cycle:
+       text: "A TEST OF GOOFY STUFF BY OLIVIA HELM"
+       delay: 150
+       varname: "typed_display_text"
+       intermed: "*"
+
+#variable_player:
+#  start_silly_test:
+#     typed_display_text:
+#        string: " "
+
+widget_player:
+  start_silly_test:
+    junkytest:
+      slide: scoring_slide
+
+widgets:
+  junkytest:
+    - type: text
+      text: (typed_display_text)
+      z: 50
+      x: 25%
+      anchor_x: left
+      font_size: 40
+      color: white
+
+#
+#timers:
+#  texttimer:
+#   start_value: 0
+#   tick_interval: 50ms
+#   start_running: false
+#   control_events:
+#     - event: start_silly_timer
+#       action: start

@@ -1,8 +1,8 @@
 #config_version=5
 
 high_score:
-  enter_initials_timeout: 60s
-  award_slide_display_time: 10s
+  enter_initials_timeout: 90s
+  award_slide_display_time: 7s
   _overwrite: True
   categories: !!omap
   - score:
@@ -29,35 +29,62 @@ high_score:
      beyond:
        - KAH: 152
 
+widgets:
+   name_reg:
+    - type: text
+      text: CONGRATULATIONS!
+      style: text_default
+      anchor_y: bottom
+      y: bottom+150
+      font_size: 90
+      font_name: ocr-a-tribute-bold
+      color: ff330f
+      z: 1
+
+
+widget_player:
+  high_score_award_display:
+    name_reg:
+      action: add
+      slide: high_score_enter_initials_ov
+
 slide_player:
   _overwrite: true
   high_score_enter_initials: high_score_enter_initials_ov
-  high_score_award_display:
-    high_score_award_display_ov:
-        action: play
-    high_score_enter_initials_ov:
-        action: remove
+#  high_score_award_display:
+#    high_score_award_display_ov:
+#        action: play
+#    high_score_enter_initials_ov:
+#        action: remove
 
 slides:
   high_score_enter_initials_ov:
+  - type: image
+    image: starfield
+    z: 0
+    opacity: 0.7
   - type: text
     text: PLAYER (player_num)
     style: text_default
-    anchor_y: bottom
-    x: center-27
-    y: bottom+610
+    anchor_x: center
+    anchor_y: center
+    y: 85%
     font_size: 110
     font_name: ocr-a-tribute-bold
     color: ff330f
+    z: 1
   - type: text
     text: (award)
     style: text_default
-    anchor_y: bottom
-    x: center-27
-    y: bottom+500
+    anchor_x: center
+    anchor_y: center
+    y: 70%
     font_size: 110
     font_name: ocr-a-tribute-bold
+    z: 1
   - type: text_input
+    initial_char: A
+    dynamic_x: false
     key: high_score
     style: text_default
     anchor_y: bottom
@@ -66,6 +93,10 @@ slides:
     font_size: 90
     font_name: ocr-a-tribute-bold
     color: ff330f
+    shift_right_event: s_flipper_right_active
+    shift_left_event: s_flipper_left_active
+    select_event: s_start_active
+    z: 1
     animations:
       show_slide:
       - property: opacity
@@ -77,25 +108,17 @@ slides:
         duration: 0.3s
         repeat: true
         easing: in_out_quint
-
+      high_score_award_display:
+      - property: opacity
+        value: 0
+        duration: 0ms
   - type: text
     text: ""
     key: high_score
-    anchor_x: left
-    x: left+90
     style: text_default
-  grand champion_award_display:
-  - type: text
-    text: YOU TOTALLY DO NOT SUCK
-    color: red
-    y: top-55
-    anchor_y: top
-    font_size: 50
-  high_score_award_display_ov:
-  - type: text
-    text: YOUR NAME IS REGISTERED
-    color: red
-    y: top-5
-    anchor_y: top
-    font_size: 50
-
+    anchor_y: bottom
+    y: bottom+300
+    font_size: 90
+    font_name: ocr-a-tribute-bold
+    color: ff330f
+    z: 1
