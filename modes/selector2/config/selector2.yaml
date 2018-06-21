@@ -76,10 +76,24 @@ event_player:
 
 
 animations:
+  hide_text:
+    - property: x
+      value: 200%
+      duration: 0ms
+    - property: opacity
+      value: 0
+      duration: 0ms
   check_seen:
     - property: opacity
+      value: 0
+      duration: 0ms
+    - property: opacity
+      value: 0
+      duration: 200ms
+    - property: opacity
       value: .8
-      duration: 250ms
+      duration: 50ms
+      timing: after_previous
   check_unseen:
     - property: opacity
       value: 0
@@ -254,24 +268,48 @@ widget_player:
       key: mode01
       slide: selector2_slide
       action: add
+    mode01_instr:
+      key: mode01i
+      slide: selector2_slide
+      action: add
     mode02_prim:
       key: mode02
+      slide: selector2_slide
+      action: add
+    mode02_instr:
+      key: mode02i
       slide: selector2_slide
       action: add
     mode03_prim:
       key: mode03
       slide: selector2_slide
       action: add
+    mode03_instr:
+      key: mode03i
+      slide: selector2_slide
+      action: add
     mode04_prim:
       key: mode04
+      slide: selector2_slide
+      action: add
+    mode04_instr:
+      key: mode04i
       slide: selector2_slide
       action: add
     mode05_prim:
       key: mode05
       slide: selector2_slide
       action: add
+    mode05_instr:
+      key: mode05i
+      slide: selector2_slide
+      action: add
     mode06_prim:
       key: mode06
+      slide: selector2_slide
+      action: add
+    mode06_instr:
+      key: mode06i
       slide: selector2_slide
       action: add
   status_untitled_mode_1_completed:
@@ -279,31 +317,79 @@ widget_player:
       key: mode01c
       slide: selector2_slide
       action: add
+    mode01_result:
+      key: mode01r
+      slide: selector2_slide
+      action: add
+    mode01_instr:
+      key: mode01i
+      slide: selector2_slide
+      action: remove
   status_untitled_mode_2_completed:
     mode02_check:
       key: mode02c
       slide: selector2_slide
       action: add
+    mode02_result:
+      key: mode02r
+      slide: selector2_slide
+      action: add
+    mode02_instr:
+      key: mode02i
+      slide: selector2_slide
+      action: remove
   status_untitled_mode_3_completed:
     mode03_check:
       key: mode03c
       slide: selector2_slide
       action: add
+    mode03_result:
+      key: mode03r
+      slide: selector2_slide
+      action: add
+    mode03_instr:
+      key: mode03i
+      slide: selector2_slide
+      action: remove
   status_untitled_mode_4_completed:
     mode04_check:
       key: mode04c
       slide: selector2_slide
       action: add
+    mode04_result:
+      key: mode04r
+      slide: selector2_slide
+      action: add
+    mode04_instr:
+      key: mode04i
+      slide: selector2_slide
+      action: remove
   status_untitled_mode_5_completed:
     mode05_check:
       key: mode05c
       slide: selector2_slide
       action: add
+    mode05_result:
+      key: mode05r
+      slide: selector2_slide
+      action: add
+    mode05_instr:
+      key: mode05i
+      slide: selector2_slide
+      action: remove
   status_untitled_mode_6_completed:
     mode06_check:
       key: mode06c
       slide: selector2_slide
       action: add
+    mode06_result:
+      key: mode06r
+      slide: selector2_slide
+      action: add
+    mode06_instr:
+      key: mode06i
+      slide: selector2_slide
+      action: remove
 
 widgets:
 # Starts in Center Pos
@@ -328,7 +414,7 @@ widgets:
       image: badgeLocateTheCygnusBig
       anchor_x: center
       anchor_y: center
-      x: 40%
+      x: 35%
       z: 1
       animations:
          selector2_mode1_highlighted: icon_large
@@ -337,8 +423,9 @@ widgets:
          selector2_mode4_highlighted: icon_small_left_off
          selector2_mode5_highlighted: icon_small_right_off
          selector2_mode6_highlighted: icon_small_right
+  mode01_instr:
     - type: text
-      text: "\u00B7 SOMETHING SOMETHING\n\n\u00B7 DARK SIDE\n\n\u00B7 I LIKE TURTLES\n\n\u00B7 ALSO TACOS RULE"
+      text: "\u00B7LIGHT TOP LANES\n\n\u00B7Inlanes, Lone drops\n and Yellow Targets\n\ Spot Lanes\n\n\u00B7COMPLETE VIA THE SCOOP"
       color: white
       anchor_x: center
       anchor_y: center
@@ -348,6 +435,7 @@ widgets:
       font_name: ocr-a-tribute-bold
       z: 1
       animations:
+         status_untitled_mode_1_completed: hide_text
          selector2_mode1_highlighted: return_text
          selector2_mode2_highlighted: drop_text_down
          selector2_mode3_highlighted: drop_text_down
@@ -388,6 +476,7 @@ widgets:
          selector2_mode5_highlighted: icon_small_left_off
          selector2_mode6_highlighted: icon_small_right_off
          selector2_mode1_highlighted: icon_small_right
+  mode02_instr:
     - type: text
       text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
       opacity: 0
@@ -400,6 +489,7 @@ widgets:
       font_name: ocr-a-tribute-bold
       z: 1
       animations:
+         status_untitled_mode_2_completed: hide_text
          selector2_mode2_highlighted: return_text
          selector2_mode3_highlighted: drop_text_down
          selector2_mode4_highlighted: drop_text_down
@@ -442,6 +532,7 @@ widgets:
          selector2_mode6_highlighted: icon_small_left_off
          selector2_mode1_highlighted: icon_small_right_off
          selector2_mode2_highlighted: icon_small_right
+  mode03_instr:
     - type: text
       opacity: 0
       text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
@@ -454,6 +545,7 @@ widgets:
       font_name: ocr-a-tribute-bold
       z: 1
       animations:
+         status_untitled_mode_3_completed: hide_text
          selector2_mode3_highlighted: return_text
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
@@ -496,6 +588,7 @@ widgets:
          selector2_mode1_highlighted: icon_small_left_off
          selector2_mode2_highlighted: icon_small_right_off
          selector2_mode3_highlighted: icon_small_right
+  mode04_instr:
     - type: text
       text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
       opacity: 0
@@ -508,6 +601,7 @@ widgets:
       font_name: ocr-a-tribute-bold
       z: 1
       animations:
+         status_untitled_mode_4_completed: hide_text
          selector2_mode4_highlighted: return_text
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
@@ -550,6 +644,7 @@ widgets:
          selector2_mode2_highlighted: icon_small_left_off
          selector2_mode3_highlighted: icon_small_right_off
          selector2_mode4_highlighted: icon_small_right
+  mode05_instr:
     - type: text
       text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
       opacity: 0
@@ -562,6 +657,7 @@ widgets:
       font_name: ocr-a-tribute-bold
       z: 1
       animations:
+         status_untitled_mode_5_completed: hide_text
          selector2_mode5_highlighted: return_text
          selector2_mode6_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
@@ -602,6 +698,7 @@ widgets:
          selector2_mode3_highlighted: icon_small_left_off
          selector2_mode4_highlighted: icon_small_right_off
          selector2_mode5_highlighted: icon_small_right
+  mode06_instr:
     - type: text
       opacity: 0
       text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
@@ -614,6 +711,7 @@ widgets:
       font_name: ocr-a-tribute-bold
       z: 1
       animations:
+         status_untitled_mode_6_completed: hide_text
          selector2_mode6_highlighted: return_text
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
@@ -621,15 +719,11 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
   mode01_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: .8
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
       animations:
          selector2_mode1_highlighted: check_seen
@@ -639,16 +733,13 @@ widgets:
          selector2_mode5_highlighted: check_unseen
          selector2_mode6_highlighted: check_unseen
   mode02_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode2_highlighted: check_seen
          selector2_mode3_highlighted: check_unseen
@@ -657,16 +748,13 @@ widgets:
          selector2_mode6_highlighted: check_unseen
          selector2_mode1_highlighted: check_unseen
   mode03_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode3_highlighted: check_seen
          selector2_mode4_highlighted: check_unseen
@@ -675,16 +763,13 @@ widgets:
          selector2_mode1_highlighted: check_unseen
          selector2_mode2_highlighted: check_unseen
   mode04_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode4_highlighted: check_seen
          selector2_mode5_highlighted: check_unseen
@@ -693,16 +778,13 @@ widgets:
          selector2_mode2_highlighted: check_unseen
          selector2_mode3_highlighted: check_unseen
   mode05_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode5_highlighted: check_seen
          selector2_mode6_highlighted: check_unseen
@@ -711,16 +793,13 @@ widgets:
          selector2_mode3_highlighted: check_unseen
          selector2_mode4_highlighted: check_unseen
   mode06_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode6_highlighted: check_seen
          selector2_mode1_highlighted: check_unseen
@@ -728,6 +807,126 @@ widgets:
          selector2_mode3_highlighted: check_unseen
          selector2_mode4_highlighted: check_unseen
          selector2_mode5_highlighted: check_unseen
+  mode01_result:
+    - type: text
+      text: "CYGNUS LOCATED:\n\nTime: (modestat_1_final_timing) seconds"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 40
+      font_name: ocr-a-tribute-bold
+      z: 1
+      opacity: 1
+      animations:
+         status_untitled_mode_1_completed: check_seen
+         selector2_mode1_highlighted: return_text
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
+  mode02_result:
+    - type: text
+      text: "BLACK HOLE\nGRAVITY ESCAPED"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 40
+      font_name: ocr-a-tribute-bold
+      z: 1
+      opacity: 0
+      animations:
+         status_untitled_mode_2_completed: check_seen
+         selector2_mode2_highlighted: return_text
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
+         selector2_mode1_highlighted: drop_text_down
+  mode03_result:
+    - type: text
+      text: "SHOOTING GALLERY\nTargets: (modestat_3_final_hits)"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 40
+      font_name: ocr-a-tribute-bold
+      z: 1
+      opacity: 0
+      animations:
+         status_untitled_mode_3_completed: check_seen
+         selector2_mode3_highlighted: return_text
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+  mode04_result:
+    - type: text
+      text: "METEOR STRIKE\nMeteors Avoided: (modestat_4_final_hits)"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 40
+      font_name: ocr-a-tribute-bold
+      z: 1
+      opacity: 0
+      animations:
+         status_untitled_mode_4_completed: check_seen
+         selector2_mode4_highlighted: return_text
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+  mode05_result:
+    - type: text
+      text: "BATLLE WON\nTime Remaining: (modestat_5_final_extra_time)"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 40
+      font_name: ocr-a-tribute-bold
+      z: 1
+      opacity: 0
+      animations:
+         status_untitled_mode_5_completed: check_seen
+         selector2_mode5_highlighted: return_text
+         selector2_mode6_highlighted: drop_text_down
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+  mode06_result:
+    - type: text
+      text: "DAVID WINS\nBattle Time: (modestat_6_final_time)"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 40
+      font_name: ocr-a-tribute-bold
+      z: 1
+      opacity: 0
+      animations:
+         status_untitled_mode_6_completed: check_seen
+         selector2_mode6_highlighted: return_text
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
 
 #\u00B7
 #  mode01_left:
@@ -766,3 +965,18 @@ slides:
         image: starfield
         z: 0
         opacity: 0.7
+      - type: text
+        text: LEFT FLIPPER
+        x: 10%
+        y: 15%
+      - type: text
+        text: RIGHT FLIPPER
+        x: 90%
+        y: 15%
+      - type: text
+        text: START TO SELECT
+        anchor_x: center
+        anchor_y: center
+        x: center
+        y: 20%
+        font_size: 60

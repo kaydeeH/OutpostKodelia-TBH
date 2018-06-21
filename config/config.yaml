@@ -104,7 +104,22 @@ player_vars:
 #  status_untitled_mode_7:
 #     initial_value: 0
 
-
+# This is where some mode achievement text can be stored
+  modestat_1_final_timing:
+     initial_value: 0.0
+     value_type: float
+  modestat_3_final_hits:
+     initial_value: 0
+     value_type: int
+  modestat_4_final_hits:
+     initial_value: 0
+     value_type: int
+  modestat_5_final_extra_time:
+     initial_value: 0.0
+     value_type: float
+  modestat_6_final_time:
+     initial_value: 0.0
+     value_type: float
 
 keyboard:
   "!":

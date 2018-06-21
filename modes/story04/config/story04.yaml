@@ -185,6 +185,10 @@ variable_player:
      timeRemain:
        int: (ticks_remaining)
        action: set
+  story_is_about_to_end:
+     modestat_4_final_hits:
+       int: (current_player.meteor_hits)
+       action: set
 
 shots:
   shotScoopMeteor:
