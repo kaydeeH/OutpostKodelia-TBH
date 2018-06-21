@@ -138,6 +138,10 @@ variable_player:
     battletime:
       action: set
       float: current_player.battleticks / 10
+  player_battletime:
+    modestat_6_final_time:
+      action: set
+      float: current_player.battletime
   player_health{value > 50}:
     red_width:
       action: set

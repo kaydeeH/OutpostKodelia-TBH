@@ -357,6 +357,10 @@ variable_player:
       int: 0
   gallery_target_hit:
     gallery_targets_hit: 1
+  story_is_about_to_end:
+    modestat_3_final_hits:
+      action: set
+      int: (current_player.gallery_targets_hit)
 
 timers:
   gallery_timer:

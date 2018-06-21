@@ -228,6 +228,10 @@ variable_player:
      cygnus_seconds:
        float: current_player.cygnus_timer_ticks / 10
        action: set
+   story_is_about_to_end:
+     modestat_1_final_timing:
+       action: set
+       float: current_player.cygnus_seconds
 
 timers:
    cygnusTimer:
