@@ -91,3 +91,5 @@ images:
        file: badge-david_vs_goliath-big.png
     badgeBeyondBig:
        file: badge-in_through_beyond-big.png
+    checkmark:
+       file: checkmark.png

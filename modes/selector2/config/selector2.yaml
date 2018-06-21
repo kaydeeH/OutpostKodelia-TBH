@@ -85,8 +85,15 @@ animations:
       duration: 0ms
   check_seen:
     - property: opacity
+      value: 0
+      duration: 0ms
+    - property: opacity
+      value: 0
+      duration: 200ms
+    - property: opacity
       value: .8
-      duration: 250ms
+      duration: 50ms
+      timing: after_previous
   check_unseen:
     - property: opacity
       value: 0
@@ -407,7 +414,7 @@ widgets:
       image: badgeLocateTheCygnusBig
       anchor_x: center
       anchor_y: center
-      x: 40%
+      x: 35%
       z: 1
       animations:
          selector2_mode1_highlighted: icon_large
@@ -712,15 +719,11 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
   mode01_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: .8
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
       animations:
          selector2_mode1_highlighted: check_seen
@@ -730,16 +733,13 @@ widgets:
          selector2_mode5_highlighted: check_unseen
          selector2_mode6_highlighted: check_unseen
   mode02_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode2_highlighted: check_seen
          selector2_mode3_highlighted: check_unseen
@@ -748,16 +748,13 @@ widgets:
          selector2_mode6_highlighted: check_unseen
          selector2_mode1_highlighted: check_unseen
   mode03_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode3_highlighted: check_seen
          selector2_mode4_highlighted: check_unseen
@@ -766,16 +763,13 @@ widgets:
          selector2_mode1_highlighted: check_unseen
          selector2_mode2_highlighted: check_unseen
   mode04_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode4_highlighted: check_seen
          selector2_mode5_highlighted: check_unseen
@@ -784,16 +778,13 @@ widgets:
          selector2_mode2_highlighted: check_unseen
          selector2_mode3_highlighted: check_unseen
   mode05_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode5_highlighted: check_seen
          selector2_mode6_highlighted: check_unseen
@@ -802,16 +793,13 @@ widgets:
          selector2_mode3_highlighted: check_unseen
          selector2_mode4_highlighted: check_unseen
   mode06_check:
-    - type: text
-      text: "\u221A"
-      font_name: lucon
-      font_size: 300
-      x: 65%
-      color: green
-      opacity: 0
+    - type: image
+      image: checkmark
       anchor_x: center
       anchor_y: center
+      x: 35%
       z: 40
+      opacity: 0
       animations:
          selector2_mode6_highlighted: check_seen
          selector2_mode1_highlighted: check_unseen
