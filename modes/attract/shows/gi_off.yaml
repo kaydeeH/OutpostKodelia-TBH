@@ -1,0 +1,97 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_GIAboveScoopLower:
+      color: 000000
+      fade: 1s
+    l_GIAboveScoopUpper:
+      color: 000000
+      fade: 1s
+    l_GIAboveSpinnerLower:
+      color: 000000
+      fade: 1s
+    l_GIAboveSpinnerUpper:
+      color: 000000
+      fade: 1s
+    l_GIDropCenterLeft:
+      color: 000000
+      fade: 1s
+    l_GIDropCenterRight:
+      color: 000000
+      fade: 1s
+    l_GIDropLeft0:
+      color: 000000
+      fade: 1s
+    l_GIDropLeft1:
+      color: 000000
+      fade: 1s
+    l_GIDropRight0:
+      color: 000000
+      fade: 1s
+    l_GIDropRight1:
+      color: 000000
+      fade: 1s
+    l_GILane0:
+      color: 000000
+      fade: 1s
+    l_GILane1:
+      color: 000000
+      fade: 1s
+    l_GILane2:
+      color: 000000
+      fade: 1s
+    l_GILane3:
+      color: 000000
+      fade: 1s
+    l_GILane4:
+      color: 000000
+      fade: 1s
+    l_GILane5:
+      color: 000000
+      fade: 1s
+    l_GILowLeft:
+      color: 000000
+      fade: 1s
+    l_GILowRight:
+      color: 000000
+      fade: 1s
+    l_GIScoopLL:
+      color: 000000
+      fade: 1s
+    l_GIScoopLR:
+      color: 000000
+      fade: 1s
+    l_GIScoopML:
+      color: 000000
+      fade: 1s
+    l_GIScoopMR:
+      color: 000000
+      fade: 1s
+    l_GIScoopUC:
+      color: 000000
+      fade: 1s
+    l_GISlingLeft0:
+      color: 000000
+      fade: 1s
+    l_GISlingLeft1:
+      color: 000000
+      fade: 1s
+    l_GISlingRight0:
+      color: 000000
+      fade: 1s
+    l_GISlingRight1:
+      color: 000000
+      fade: 1s
+    l_GIUpperCL:
+      color: 000000
+      fade: 1s
+    l_GIUpperCR:
+      color: 000000
+      fade: 1s
+    l_GIUpperL:
+      color: 000000
+      fade: 1s
+    l_GIUpperR:
+      color: 000000
+      fade: 1s
