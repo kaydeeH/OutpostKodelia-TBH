@@ -1,22 +1,16 @@
 #show_version=5
 
 - duration: 5
-  slides:
-    titleScreen:
-      widgets:
-      - type: Text
-        text: "OUTPOST KODELIA STUDIOS\n\nPRESENTS"
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-      transition:
-         type: move_in
-         duration: 1s
-         direction: top
+  slides: ok_productions
 - duration: 85
   slides:
-    playIntro:
+    video:
       widgets:
+      - type: video
+        video: Intro
+        volume: 0.5
+        width: 1366
+        height: 688
       - type: Text
         text: THE PINBALL EXPERIENCE
         font_name: ocr-a-tribute-bold
@@ -26,11 +20,9 @@
         x: 675
         anchor_y: center
         anchor_x: center
+        opacity: 0
         animations:
           pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: 0s
             - property: opacity
               value: 0
               duration: 17s
@@ -49,11 +41,9 @@
         x: 695
         anchor_y: top
         anchor_x: left
+        opacity: 0
         animations:
           pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: 0s
             - property: opacity
               value: 0
               duration: 22.4s
@@ -72,11 +62,9 @@
         x: 733
         anchor_y: top
         anchor_x: left
+        opacity: 0
         animations:
           pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: 0s
             - property: opacity
               value: 0
               duration: 25.8s
@@ -95,11 +83,9 @@
         x: 725
         anchor_y: top
         anchor_x: left
+        opacity: 0
         animations:
           pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: 0s
             - property: opacity
               value: 0
               duration: 29.4s
@@ -118,11 +104,9 @@
         x: 715
         anchor_y: top
         anchor_x: left
+        opacity: 0
         animations:
           pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: 0s
             - property: opacity
               value: 0
               duration: 33s
@@ -141,11 +125,9 @@
         x: 555
         anchor_y: top
         anchor_x: left
+        opacity: 0
         animations:
           pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: 0s
             - property: opacity
               value: 0
               duration: 36.2s
@@ -164,11 +146,9 @@
         x: 540
         anchor_y: top
         anchor_x: left
+        opacity: 0
         animations:
           pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: 0s
             - property: opacity
               value: 0
               duration: 41.9s
@@ -178,41 +158,3 @@
             - property: opacity
               value: 0
               duration: 0.1s
-      - type: video
-        video: Intro
-        volume: 0.5
-        width: 1366
-        height: 688
-      - type: Text
-        text: PRESS START
-        font_name: ocr-a-tribute-bold
-        y: 10
-        x: 10
-        anchor_y: bottom
-        anchor_x: left
-        animations:
-          pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: .5s
-            - property: opacity
-              value: 1
-              duration: .5s
-              repeat: true
-      - type: Text
-        text: FREE PLAY
-        font_name: ocr-a-tribute-bold
-        color: green
-        y: 10
-        x: 1355
-        anchor_y: bottom
-        anchor_x: right
-        animations:
-          pre_show_slide:
-            - property: opacity
-              value: 0
-              duration: .5s
-            - property: opacity
-              value: 1
-              duration: .5s
-              repeat: true

@@ -2,7 +2,7 @@
 
 show_player:
   mode_attract_started:
-    giWhite: #Sets basic GI white lighting as the default
+    giWhite: #Sets basic GI white lighting as the default, plays forever
       priority: 5
       loops: -1
     dummy_show: #just to get us past the initial mode start and into our event loop
@@ -43,7 +43,7 @@ show_player:
       loops: -1
       speed: 1
       priority: 7
-    scoop_ready_show:
+    scoop_cycle:
       loops: -1
       speed: 1
       priority: 7
@@ -65,7 +65,7 @@ show_player:
   attract_03:
     giDim:
       priority: 9
-      loops: 89
+      loops: 22
     field_off:
       priority: 9
       loops: 89
@@ -77,6 +77,10 @@ show_player:
       speed: 30
       loops: 11
       priority: 10
+    gi_off:
+      speed: 1
+      loops: 68
+      priority: 9
   green_btt:
     green_stripes_btt:
       speed: 30
@@ -113,6 +117,30 @@ event_player:
     - green_circ|85s
 
 widget_player:
+  #Add "press start" and "freeplay" widgets to slides as they load
+  slide_ok_productions_created:
+    freeplay_start_widget:
+      slide: ok_productions
+  slide_title_created:
+    freeplay_start_widget:
+      slide: title
+  slide_lastgame_created:
+    freeplay_start_widget:
+      slide: lastgame
+  slide_praise1_created:
+    freeplay_start_widget:
+      slide: praise1
+  slide_praise2_created:
+    freeplay_start_widget:
+      slide: praise2
+  slide_high_scores_created:
+    freeplay_start_widget:
+      slide: high_scores
+  slide_video_created:
+    freeplay_start_widget:
+      slide: video
+
+  #Add player scores to last game slide, as relevant
   lastgame_player2:
     player_2_score_widget:
       slide: lastgame
@@ -125,74 +153,229 @@ widget_player:
 
 widgets:
   player_2_score_widget:
-    - type: Text
-      text: Player 2 - (score)
+    - type: text
+      font_size: 80
+      y: 43.4%
+      x: 10%
+      z: 10
+      anchor_x: left
+      anchor_y: bottom
+      color: BBD8F0
       font_name: ocr-a-tribute-bold
-      font_size: 50
-      number_grouping: true
+      text: PLAYER 2
+    - type: text
+      font_size: 80
+      y: 43.4%
+      x: 90%
+      z: 10
+      anchor_x: right
+      anchor_y: bottom
       color: FF2C1F
-      y: 480
-      x: 700
-      z: 1
-      anchor_y: top
-      anchor_x: center
+      font_name: ocr-a-tribute-bold
+      text: (score)
+      number_grouping: true
+      min_digits: 2
   player_3_score_widget:
-    - type: Text
-      text: Player 3 - (score)
+    - type: text
+      font_size: 80
+      y: 26.7%
+      x: 10%
+      z: 10
+      anchor_x: left
+      anchor_y: bottom
+      color: BBD8F0
       font_name: ocr-a-tribute-bold
-      font_size: 50
-      number_grouping: true
+      text: PLAYER 3
+    - type: text
+      font_size: 80
+      y: 26.7%
+      x: 90%
+      z: 10
+      anchor_x: right
+      anchor_y: bottom
       color: FF2C1F
-      y: 420
-      x: 700
-      z: 1
-      anchor_y: top
-      anchor_x: center
+      font_name: ocr-a-tribute-bold
+      text: (score)
+      number_grouping: true
+      min_digits: 2
   player_4_score_widget:
+    - type: text
+      font_size: 80
+      y: 10%
+      x: 10%
+      z: 10
+      anchor_x: left
+      anchor_y: bottom
+      color: BBD8F0
+      font_name: ocr-a-tribute-bold
+      text: PLAYER 4
+    - type: text
+      font_size: 80
+      y: 10%
+      x: 90%
+      z: 10
+      anchor_x: right
+      anchor_y: bottom
+      color: FF2C1F
+      font_name: ocr-a-tribute-bold
+      text: (score)
+      number_grouping: true
+      min_digits: 2
+  freeplay_start_widget:
     - type: Text
-      text: Player 4 - (score)
+      text: PRESS START
+      font_name: ocr-a-tribute-bold
+      y: 10
+      x: 10
+      z: 1
+      anchor_y: bottom
+      anchor_x: left
+      animations:
+        add_to_slide:
+          - property: opacity
+            value: 0
+            duration: .5s
+          - property: opacity
+            value: 1
+            duration: .5s
+            repeat: true
+    - type: Text
+      text: FREE PLAY
+      font_name: ocr-a-tribute-bold
+      color: green
+      y: 10
+      x: 1355
+      z: 1
+      anchor_y: bottom
+      anchor_x: right
+      animations:
+        add_to_slide:
+          - property: opacity
+            value: 0
+            duration: .5s
+          - property: opacity
+            value: 1
+            duration: .5s
+            repeat: true
+
+slides:
+  lastgame:
+    transition:
+      type: fade
+      duration: 1s
+    widgets:
+    - type: image
+      image: starfield
+      opacity: .7
+      z: 0
+    - type: text
+      font_size: 100
+      y: 90%
+      z: 10
+      anchor_y: top
+      color: FF2C1F
+      font_name: ocr-a-tribute-bold
+      text: LAST GAME
+    - type: text
+      font_size: 80
+      y: 60.1%
+      x: 10%
+      z: 10
+      anchor_x: left
+      anchor_y: bottom
+      color: BBD8F0
+      font_name: ocr-a-tribute-bold
+      text: PLAYER 1
+    - type: text
+      font_size: 80
+      y: 60.1%
+      x: 90%
+      z: 10
+      anchor_x: right
+      anchor_y: bottom
+      color: FF2C1F
+      font_name: ocr-a-tribute-bold
+      text: (machine|player1_score)
+      number_grouping: true
+      min_digits: 2
+  ok_productions:
+    transition:
+      type: fade
+      duration: 1s
+    widgets:
+    - type: image
+      image: starfield
+      opacity: .7
+      z: 0
+    - type: Text
+      text: "OUTPOST KODELIA STUDIOS\n\nPRESENTS"
+      z: 1
       font_name: ocr-a-tribute-bold
       font_size: 50
-      number_grouping: true
       color: FF2C1F
-      y: 360
-      x: 700
+      opacity: 0
+      animations:
+        show_slide:
+          - property: opacity
+            value: 1
+            duration: 1s
+          - property: opacity
+            value: 1
+            duration: 3s
+          - property: opacity
+            value: 0
+            duration: 1s
+  title:
+    transition:
+      type: fade
+      duration: 1s
+    widgets:
+    - type: image
+      image: starfield
+      opacity: .7
+      z: 0
+    - type: Text
+      text: THE BLACK HOLE
+      font_name: ocr-a-tribute-bold
+      font_size: 72
+      color: FF2C1F
+      opacity: 0
+      y: center + 40
       z: 1
-      anchor_y: top
+      anchor_y: center
       anchor_x: center
-
-#  mode_attract_started: attract_display_loop
-#
-#  mode_attract_started.1:
-#     pinwheel:
-#       speed: 20
-#       loops: 3
-#       events_when_completed: attract_next_01
-##    attract_light_show:
-##      speed: 10
-##    giWhite:
-##      speed: 1
-##    attractDrops:
-##      speed: 10
-##    attractBonusX:
-##      speed: 5
-#  attract_next_01:
-#     sample_wired_loop:
-#       speed: 5
-#       loops: 3
-#       events_when_completed: attract_next_02
-#  attract_next_02:
-#     swirl:
-#       speed: 15
-#       loops: 1
-#       events_when_completed: attract_next_03
-#  attract_next_03:
-#    swirl2:
-#       speed: 10
-#       loops: 3
-#       events_when_completed: attract_next_04
-#  attract_next_04:
-#     pinwheel:
-#       speed: 20
-#       loops: 3
-#       events_when_completed: attract_next_01
+      animations:
+        show_slide:
+          - property: opacity
+            value: 1
+            duration: 1s
+          - property: opacity
+            value: 1
+            duration: 5s
+          - property: opacity
+            value: 0
+            duration: 1s
+    - type: Text
+      text: THE PINBALL EXPERIENCE
+      font_name: ocr-a-tribute-bold
+      font_size: 36
+      color: FF2C1F
+      opacity: 0
+      y: center - 40
+      z: 1
+      anchor_y: center
+      anchor_x: center
+      animations:
+        show_slide:
+          - property: opacity
+            value: 0
+            duration: 2s
+          - property: opacity
+            value: 1
+            duration: 1s
+          - property: opacity
+            value: 1
+            duration: 3s
+          - property: opacity
+            value: 0
+            duration: 1s
