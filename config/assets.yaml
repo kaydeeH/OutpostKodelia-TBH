@@ -29,8 +29,12 @@ images:
        file: MaxVsVincent.jpg
     singlePlayerScoreFrame:
        file: CurrentPlayerScoreForSingle.png
+    scoreBlueLightLitSp:
+       file: score_blue_light_box-lit-sp.png
     multiPlayerScoreFrame:
        file: CurrentPlayerScoreForMultiple.png
+    scoreBlueLightLitMp:
+       file: score_blue_light_box-lit-mp.png
     ballBar:
        file: BallBar.png
     ballSpinner:

@@ -8,6 +8,7 @@ event_player:
     - load_one_player_elements|100ms
   player_added{num==2}:
     - remove_one_player_elements|200ms
+    - start_multiplayer_lights|500ms
   player_added{num==3}:
     - remove_two_player_elements|200ms
   player_added{num==4}:
@@ -28,8 +29,6 @@ event_player:
   player_turn_started_out_of{number==4}:
     - player_3_is_inactive
     - player_4_is_active
-  slide_scoring_slide_created:
-    - lower_green_light_delay|250ms
 
 #  single_player_ball_started:
 #    - revertBadge01
@@ -89,14 +88,10 @@ slides:
         scale: 1.01
         opacity: 0
         animations:
-          add_to_slide:
-            - property: opacity
-              value: 0
-              duration: 5000ms
+          green_light_timer_0:
             - property: opacity
               value: 1
               duration: 15ms
-              timing: after_previous
             - property: opacity
               value: 1
               duration: 250ms
@@ -105,7 +100,6 @@ slides:
               value: 0
               duration: 15ms
               timing: after_previous
-              repeat: true
       - type: image
         image: leftGreenLightsLit
         anchor_x: left
@@ -116,14 +110,10 @@ slides:
         scale: 1.01
         opacity: 0
         animations:
-          lower_green_light_delay:
-            - property: opacity
-              value: 0
-              duration: 5000ms
+          green_light_timer_1:
             - property: opacity
               value: 1
               duration: 15ms
-              timing: after_previous
             - property: opacity
               value: 1
               duration: 250ms
@@ -132,7 +122,6 @@ slides:
               value: 0
               duration: 15ms
               timing: after_previous
-              repeat: true
       - type: image
         image: ballBar
         anchor_x: right
@@ -506,30 +495,20 @@ slides:
         y: 94%
         z: 10
 
-#      - type: text
-#        text: "Bonus Value (pds)"
-#        x: right - 90
-#        y: 205
-#      - type: text
-#        text: "Bonus Count: (bonuscount)"
-#        #text: "Number of Players:  (game.num_players)"
-#        x: right - 130
-#        y: 20%
-#      - type: text
-#        text: "BONUS X: (bonus_multiplier)"
-#        #text: "Number of Players: (machine.game.num_players)"
-#        x: right - 135
-#        y: 15%
-
 widget_player:
   # Handle the creation of the single player display
   player_added{num==1}:
     player_score_single_player:
       slide: scoring_slide
+    player_score_single_player_lights:
+      slide: scoring_slide
 
   # Add Player Two, make appropriate display changes
   remove_one_player_elements:
     player_score_single_player:
+      slide: scoring_slide
+      action: remove
+    player_score_single_player_lights:
       slide: scoring_slide
       action: remove
 
@@ -549,6 +528,10 @@ widget_player:
     mp_player_score_frame_right:
       slide: scoring_slide
     mp_dummy_score_frame:
+      slide: scoring_slide
+
+  start_multiplayer_lights:
+    player_score_multiplayer_lights:
       slide: scoring_slide
 
   # Add Player Three, make appropriate display changes
@@ -675,6 +658,177 @@ widgets:
               value: -144
               duration: 144ms
               easing: in_cubic
+
+   player_score_single_player_lights:
+      - type: image
+        image: scoreBlueLightLitSp
+        x: center - 278
+        y: bottom + 2
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_0:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitSp
+        x: center - 199
+        y: bottom + 2
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+         blue_light_timer_1:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitSp
+        x: center - 119
+        y: bottom + 2
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_2:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitSp
+        x: center - 39
+        y: bottom + 2
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_3:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitSp
+        x: center + 41
+        y: bottom + 2
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_4:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitSp
+        x: center + 120
+        y: bottom + 2
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_5:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitSp
+        x: center + 200
+        y: bottom + 2
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_6:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitSp
+        x: center + 279
+        y: bottom + 2
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_7:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+
    # Configuration and event handling for multiplayer games
    player_score_multiple_players:
       - type: text
@@ -765,6 +919,176 @@ widgets:
               timing: after_previous
               easing: out_cubic
 
+   player_score_multiplayer_lights:
+      - type: image
+        image: scoreBlueLightLitMp
+        x: center - 222
+        y: bottom + 52
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_0:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitMp
+        x: center - 159
+        y: bottom + 52
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+         blue_light_timer_1:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitMp
+        x: center - 95
+        y: bottom + 52
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_2:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitMp
+        x: center - 31
+        y: bottom + 52
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_3:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitMp
+        x: center + 32
+        y: bottom + 52
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_4:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitMp
+        x: center + 96
+        y: bottom + 52
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_5:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitMp
+        x: center + 159
+        y: bottom + 52
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_6:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+      - type: image
+        image: scoreBlueLightLitMp
+        x: center + 223
+        y: bottom + 52
+        z: 55
+        anchor_y: bottom
+        anchor_x: center
+        opacity: 0
+        animations:
+          blue_light_timer_7:
+            - property: opacity
+              value: 1
+              duration: 15ms
+            - property: opacity
+              value: 1
+              duration: 500ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+   
    mp_player_score_frame_left:
       - type: image
         image: multiScoreLeft

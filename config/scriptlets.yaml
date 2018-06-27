@@ -15,3 +15,4 @@ scriptlets:
   - flip_delay_scriptlet.FlipDelay
   - last_game_scores.LastGameScores
   - text_type_in.TextTypeIn
+  - light_timers_scriptlet.LightTimers
