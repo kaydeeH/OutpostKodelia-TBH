@@ -28,6 +28,8 @@ event_player:
   player_turn_started_out_of{number==4}:
     - player_3_is_inactive
     - player_4_is_active
+  slide_scoring_slide_created:
+    - lower_green_light_delay|250ms
 
 #  single_player_ball_started:
 #    - revertBadge01
@@ -78,6 +80,60 @@ slides:
         y: top
         z: 50
       - type: image
+        image: leftGreenLightsLit
+        anchor_x: left
+        anchor_y: top
+        x: left + 14
+        y: top - 550
+        z: 55
+        scale: 1.01
+        opacity: 0
+        animations:
+          add_to_slide:
+            - property: opacity
+              value: 0
+              duration: 5000ms
+            - property: opacity
+              value: 1
+              duration: 15ms
+              timing: after_previous
+            - property: opacity
+              value: 1
+              duration: 250ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+              repeat: true
+      - type: image
+        image: leftGreenLightsLit
+        anchor_x: left
+        anchor_y: top
+        x: left + 14
+        y: top - 575
+        z: 55
+        scale: 1.01
+        opacity: 0
+        animations:
+          lower_green_light_delay:
+            - property: opacity
+              value: 0
+              duration: 5000ms
+            - property: opacity
+              value: 1
+              duration: 15ms
+              timing: after_previous
+            - property: opacity
+              value: 1
+              duration: 250ms
+              timing: after_previous
+            - property: opacity
+              value: 0
+              duration: 15ms
+              timing: after_previous
+              repeat: true
+      - type: image
         image: ballBar
         anchor_x: right
         anchor_y: top
@@ -86,11 +142,33 @@ slides:
         z: 50
       - type: image
         image: ballSpinner
-        anchor_x: right
-        anchor_y: top
-        x: right - 200
-        y: top - 23
+        anchor_x: center
+        anchor_y: center
+        x: right - 225
+        y: top - 43
         z: 55
+        animations:
+          add_to_slide:
+            - property: rotation
+              value: 0
+              duration: 1s
+              easing: in_out_cubic
+            - property: rotation
+              value: 0
+              duration: 5s
+              timing: after_previous
+              easing: in_out_cubic
+            - property: rotation
+              value: 360
+              duration: 1s
+              timing: after_previous
+              easing: in_out_cubic
+            - property: rotation
+              value: 360
+              duration: 5s
+              timing: after_previous
+              easing: in_out_cubic
+              repeat: true
       - type: text
         text: BALL (ball)
         y: top - 25

@@ -41,6 +41,8 @@ images:
        file: BonusPopBox.png
     leftBar:
        file: LeftBar.png
+    leftGreenLightsLit:
+       file: left_green_light_bundle-lit.png
     multiScoreLeft:
        file: MultiPlayerHoldBoxLeft.png
     multiScoreMid:

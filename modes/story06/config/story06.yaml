@@ -193,9 +193,6 @@ timers:
         value: 0
 
 widget_player:
-#  mode_story06_started:
-#    yt_remain_widget_06:
-#      slide: scoring_slide
   story_intro_complete:
     david_and_goliath_widget:
       slide: scoring_slide
@@ -222,31 +219,24 @@ widget_player:
       action: remove
     red_bar_widget:
       action: remove
-#  story06_ended:
-#    yt_remain_widget_06:
-#      action: remove
 
 widgets:
-#  yt_remain_widget_06:
-#    - type: text
-#      text: "H (health)  |  BT (battleticks)  |  RW (red_width)  |  GW (green_width)"
-#      y: 80%
   david_and_goliath_widget:
     - type: image
       image: david_goliath
       z: 19
   health_shell_widget:
     - type: rectangle
-      y: top - 50
+      y: center - 197
       z: 20
       width: 600
       height: 20
       corner_radius: 3
       corner_segments: 3
-      color: CC0000
+      color: BBD8F0
   health_shell_blackout_widget:
     - type: rectangle
-      y: top - 50
+      y: center - 197
       z: 21
       width: 596
       height: 16
@@ -255,7 +245,7 @@ widgets:
       color: 000000
   green_bar_widget:
     - type: rectangle
-      y: top - 50
+      y: center - 197
       z: 22
       anchor_x: left
       anchor_y: center
@@ -271,7 +261,7 @@ widgets:
             duration: 250ms
   red_bar_widget:
     - type: rectangle
-      y: top - 50
+      y: center - 197
       z: 22
       anchor_x: right
       anchor_y: center
@@ -287,8 +277,8 @@ widgets:
             duration: 250ms
   health_shell_centerline:
     - type: rectangle
-      y: top - 50
+      y: center - 197
       z: 23
       width: 6
       height: 23
-      color: CC0000
+      color: 323D4A
