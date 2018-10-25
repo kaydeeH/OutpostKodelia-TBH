@@ -20,13 +20,13 @@ queue_relay_player:
     post: waiting_for_eject_success
     wait_for: sw_playfield_active
 
-ball_saves:
- initial:
-   active_time: 8s
-   grace_period: 2s
-   enable_events: mode_base_started
-   timer_start_events: ball_save_timer_start
-   early_ball_save_events: s_roOutLaneRight_active, s_roOutLaneLeft_active
-   auto_launch: false
-   balls_to_save: 1
+#ball_saves:
+# initial:
+#   active_time: 8s
+#   grace_period: 2s
+#   enable_events: mode_base_started
+#   timer_start_events: ball_save_timer_start
+#   early_ball_save_events: s_roOutLaneRight_active, s_roOutLaneLeft_active
+#   auto_launch: false
+#   balls_to_save: 1
 

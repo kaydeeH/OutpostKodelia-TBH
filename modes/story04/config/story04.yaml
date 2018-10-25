@@ -6,7 +6,7 @@
 # Award score, restart show.  Mode ends on loss of ball or meteor strike on player (end of show)
 
 config:
-   - ballsave.yaml
+#   - ballsave.yaml
 
 mode:
    start_events: selector_untitled_mode_4_selected

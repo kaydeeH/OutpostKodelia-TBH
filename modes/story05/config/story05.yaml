@@ -2,7 +2,7 @@
 
 config:
   - story05-scoring.yaml
-  - ballsave.yaml
+#  - ballsave.yaml
 
 mode:
    start_events: selector_untitled_mode_5_selected

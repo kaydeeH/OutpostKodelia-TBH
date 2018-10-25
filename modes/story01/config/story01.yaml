@@ -5,7 +5,7 @@
 
 config:
   - story01-scoring.yaml
-  - ballsave.yaml
+#  - ballsave.yaml
   - notification.yaml
 
 mode:

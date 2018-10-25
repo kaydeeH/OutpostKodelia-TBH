@@ -34,6 +34,12 @@ class BonusBoxRotate(Scriptlet):
         if BonusBoxRotate.newTextList:
           str_new_text = BonusBoxRotate.newTextList.pop(0)
           str_new_value = BonusBoxRotate.newTextValue.pop(0)
+
+          # -- This is a bit of a hack ---
+          # OVERRIDE the bonus box text with a number value -- this is the only way I have been able to get a number to come through for some reason?
+          if str_new_text == "RESCUE":
+              str_new_value = self.machine.game.player.last_rescue_score
+
           int_use_box = 0
           if self.machine.game.player.bonus_box_01_position == 0:
               int_use_box = 1

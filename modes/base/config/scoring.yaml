@@ -58,11 +58,18 @@ event_player:
 
 
 variable_player:
+# --- *** GAME VARIABLES ***
 # -- Persistent Playfield Multiplier
   mode_base_started{ball==1 and is_extra_ball==0}:
     perm_playfield_x:
        action: set
        int: 1
+    outlane_rescue_value:
+       action: set
+       int: 100000
+    outlane_sacrifice_value:
+       action: set
+       int: 100000
   mode_base_started:
     pds:
        int: 100
@@ -287,12 +294,12 @@ variable_player:
 #todo If lit ball save
 #todo else
 # If all else fails, 10000 pts
-  s_roOutLaneLeft_active:
-    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
-    bonuscount: 1
-  s_roOutLaneRight_active:
-    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
-    bonuscount: 1
+#  s_roOutLaneLeft_active:
+#    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+#    bonuscount: 1
+#  s_roOutLaneRight_active:
+#    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+#    bonuscount: 1
 
 # Other Switches
   s_sTargetDropL_active:

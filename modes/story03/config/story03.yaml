@@ -2,7 +2,7 @@
 
 config:
   - story03-scoring.yaml
-  - ballsave.yaml
+#  - ballsave.yaml
   - notification.yaml
 
 mode:

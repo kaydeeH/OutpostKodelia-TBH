@@ -4,7 +4,7 @@
 
 config:
   - story06-scoring.yaml
-  - ballsave.yaml
+#  - ballsave.yaml
 
 mode:
   start_events: selector_untitled_mode_6_selected

@@ -1,0 +1,202 @@
+#config_version=5
+
+#This will be the mode that handles the RESCUE and SACRIFICE outlanes
+
+
+# s_roOutLaneLeft - RESCUE
+# s_roOutLaneRight - SACRIFICE
+
+# --- SCORING VALUES -- SET AT GAME START IN /base/config/scoring.yaml
+# outlane_rescue_value:
+# outlane_sacrifice_value:
+
+mode:
+   start_events: ball_starting
+   stop_events: ball_ending
+   priority: 3000
+
+
+
+# This is where we will respond to events that can enable the outlanes
+event_player:
+   mode_outlaneBots_started:
+     - enable_outlane_rescue
+     - set_sacrifice_off
+   reenable_outlane_rescue:
+     increase_rescue_value{current_player.rescue_is_active==1}:
+       dmy: 0  # Did not work without this, seems to be because the other event has parms required
+     invoke_notify_by_event{current_player.rescue_is_active==1}:
+       new_text: "RESCUE\nINCREASED"
+       new_value: ""
+     enable_outlane_rescue{current_player.rescue_is_active==0}:
+       dmy: 0  # Did not work without this, seems to be because the other event has parms required
+     invoke_notify_by_event{current_player.rescue_is_active==0}:
+       new_text: "RESCUE\nENABLED"
+       new_value: ""
+   reenable_outlane_sacrifice:
+     increase_sacrifice_value{current_player.sacrifice_is_active==1}:
+       dmy: 0  # Did not work without this, seems to be because the other event has parms required
+     invoke_notify_by_event{current_player.sacrifice_is_active==1}:
+       new_text: "SACRIFICE\nINCREASED"
+       new_value: ""
+     enable_outlane_sacrifice{current_player.sacrifice_is_active==0}:
+       dmy: 0  # Did not work without this, seems to be because the other event has parms required
+     invoke_notify_by_event{current_player.sacrifice_is_active==0}:
+       new_text: "SACRIFICE\nENABLED"
+       new_value: ""
+   shotoutlanerescue_lit_hit:
+     - rescue_lane_activated
+   shotoutlanesacrifice_lit_hit:
+     - sacrifice_lane_activated
+   ball_save_rescueSave_saving_ball:
+     invoke_notify_by_event:
+       new_text: "RESCUE"
+       new_value: "X"
+#TODO - decide how this is done
+   s_sTargetYellowL_active:
+     - reenable_outlane_rescue
+   s_sTargetYellowR_active:
+     - reenable_outlane_sacrifice
+
+#   shotoutlanesacrifice_lit_hit:
+
+# ** enable and/or increment rescue value on some event
+# ** enable sacrifice on some event
+# ** trigger ballsave on lit rescue
+# ** trigger scoring, display, and increase value on lit sacrifice shot
+
+# EVENTS NOT YET IMPLEMENTED (nothing triggers them)
+# enable_outlane_rescue
+# enable_outlane_sacrifice
+
+
+variable_player:
+   rescue_lane_activated:
+     score: current_player.outlane_rescue_value * current_player.temp_playfield_x * current_player.perm_playfield_x
+     bonuscount: 1
+     rescue_is_active:
+        action: set
+        int: 0
+     last_rescue_score:
+        action: set
+        int: current_player.outlane_rescue_value * current_player.temp_playfield_x * current_player.perm_playfield_x
+   increase_rescue_value:
+     outlane_rescue_value: 75000
+   enable_outlane_rescue:
+     rescue_is_active:
+        action: set
+        int: 1
+   ball_save_rescueSave_saving_ball:
+     outlane_rescue_value: 75000
+   sacrifice_lane_activated:
+     score: current_player.outlane_sacrifice_value * current_player.temp_playfield_x * current_player.perm_playfield_x
+     bonuscount: 1
+   sacrifice_complete:
+     outlane_sacrifice_value: current_player.outlane_sacrifice_value * 10
+     sacrifice_is_active:
+        action: set
+        int: 0
+   increase_sacrifice_value:
+     outline_sacrifice_value: current_player.outlane_sacrifice_value * 1.1
+   set_sacrifice_off:
+     sacrifice_is_active:
+        action: set
+        int: 0
+   enable_outlane_sacrifice:
+     sacrifice_is_active:
+        action: set
+        int: 1
+
+shot_profiles:
+   outlaneBotRescue:
+     advance_on_hit: false
+     states:
+        - name: unlit
+          show: outlaneRescueOff
+          manual_advance: true
+        - name: lit
+          show: outlaneRescueOn
+          manual_advance: true
+   outlaneBotSacrifice:
+     advance_on_hit: false
+     states:
+        - name: unlit
+          show: outlaneSacrificeOff
+          manual_advance: true
+        - name: lit
+          show: outlaneSacrificeOn
+          manual_advance: true
+
+shots:
+  shotOutlaneRescue:
+    switch: s_roOutLaneLeft
+    profile: outlaneBotRescue
+    advance_events: enable_outlane_rescue
+    reset_events: rescue_lane_activated
+  shotOutlaneSacrifice:
+    switch: s_roOutLaneRight
+    profile: outlaneBotSacrifice
+    advance_events: enable_outlane_sacrifice
+    reset_events: sacrifice_lane_activated
+
+# this is a ball save that gets triggered when rescue lit is hit
+ball_saves:
+   rescueSave:
+     enable_events: rescue_lane_activated
+
+show_player:
+   rescue_lane_activated:
+     report_rescue_event:
+        loops: 0
+   sacrifice_lane_activated:
+     report_sacrifice_event:
+        loops: 0
+        events_when_completed: sacrifice_complete
+
+shows:
+   report_rescue_event:
+     - time: 0
+       slides: report_rescue_slide
+       duration: 3
+   report_sacrifice_event:
+     - time: 0
+       slides: report_sacrifice_slide
+       duration: 3
+# RESCUE LIGHT -- l_specialLeft
+# SACRIFICE LIGHT -- l_specialRight
+   outlaneRescueOff:
+     - time: 0
+       lights:
+         l_specialLeft : off
+       duration: -1
+   outlaneRescueOn:
+     - time: 0
+       lights:
+         l_specialLeft : blue
+       duration: -1
+   outlaneSacrificeOff:
+     - time: 0
+       lights:
+         l_specialRight : off
+       duration: -1
+   outlaneSacrificeOn:
+     - time: 0
+       lights:
+         l_specialRight : red
+       duration: -1
+
+slides:
+   report_rescue_slide:
+    widgets:
+      - type: text
+        text: RESCUE
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+   report_sacrifice_slide:
+    widgets:
+      - type: text
+        text: SACRIFICE
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold

@@ -1,7 +1,7 @@
 #config_version=5
 
 config:
-   - ballsave.yaml
+#   - ballsave.yaml
    - story02-scoring.yaml
 
 mode:
