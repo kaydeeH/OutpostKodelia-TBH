@@ -4,6 +4,8 @@ config:
   - story05-scoring.yaml
 #  - ballsave.yaml
 
+#TODO -- Character Collect -- Certain amount of time remaining?
+
 mode:
    start_events: selector_untitled_mode_5_selected
    stop_events: story_is_completed
@@ -67,6 +69,9 @@ event_player:
     - corridor_target_hit
    corR3_active_hit:
     - corridor_target_hit
+# Character Collect
+   player_modestat_5_final_extra_time{value>19}:
+    - random_character_collect
 
 #  Base intro / outro shows
 show_player:

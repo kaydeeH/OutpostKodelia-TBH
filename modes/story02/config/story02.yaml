@@ -4,6 +4,9 @@ config:
 #   - ballsave.yaml
    - story02-scoring.yaml
 
+#TODO We should fail the mode if stablization gets to 0
+#TODO Character collect -- could be completion, or reaching stabilization
+
 mode:
    start_events: selector_untitled_mode_2_selected
    stop_events: story_is_completed
@@ -41,6 +44,8 @@ event_player:
      - scoop_eject
      - story_is_completed_successful
      - acheivement_story02_successful
+#TODO -- for now we are granting a character just for completing
+     - random_character_collect
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
      - acheivement_story02_unsuccessful

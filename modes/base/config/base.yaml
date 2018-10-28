@@ -5,6 +5,7 @@ config:
   - statemachines.yaml
   - baseBallSave.yaml
   - widgets.yaml
+  - centerdrops.yaml
 #  - junkytest.yaml        # can remove this after
 
 # ---------------------------------------------------
@@ -19,6 +20,9 @@ config:
 #   mode 7 will automatically start?
 # ...or maybe just keep its slide from appearing in this case
 
+#TODO -- add ways to collect the bots (VinCENT and Old Bob)
+#TODO -- implement the character bonuses for the final mode
+#TODO -- make something happen after the final mode
 
 mode:
   start_events: ball_starting

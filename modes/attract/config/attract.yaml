@@ -71,6 +71,7 @@ show_player:
       loops: 89
     video_play:
       loops: 0
+      events_when_played: trigger_text
       events_when_completed: attract_01
   green_ttb:
     green_stripes_ttb:
@@ -115,6 +116,42 @@ event_player:
     - green_ttb_2|51s
     - green_x_rtl|60s
     - green_circ|85s
+  trigger_text:
+     set_text_to_cycle|23s:
+       text: "THE PINBALL EXPERIENCE"
+       delay: 45
+       varname: "thePinExp"
+       intermed: "*"
+     set_text_to_cycle|28.3s:
+       text: "s6"
+       delay: 45
+       varname: "s6"
+       intermed: "*"
+     set_text_to_cycle|32.3s:
+       text: "s5"
+       delay: 45
+       varname: "s5"
+       intermed: "*"
+     set_text_to_cycle|35.9s:
+       text: "s4"
+       delay: 45
+       varname: "s4"
+       intermed: "*"
+     set_text_to_cycle|39.5s:
+       text: "s3"
+       delay: 45
+       varname: "s3"
+       intermed: "*"
+     set_text_to_cycle|42.7s:
+       text: "s2"
+       delay: 45
+       varname: "s2"
+       intermed: "*"
+     set_text_to_cycle|48.4s:
+       text: "s1"
+       delay: 45
+       varname: "s1"
+       intermed: "*"
 
 widget_player:
   #Add "press start" and "freeplay" widgets to slides as they load

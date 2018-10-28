@@ -175,6 +175,9 @@ event_player:
   shot_dt_cl_unlit_hit:
     - gallery_unlit_target_hit
     - drop_left_center_reset
+# Character Collect
+  player_gallery_targets_hit{value==5}:
+    - random_character_collect
 
 shots:
   shot_dt_l0:

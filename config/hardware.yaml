@@ -172,14 +172,14 @@ drop_target_banks:
      leftCenter:
          drop_targets: LC
          reset_coils: c_dropCenterL
-         reset_on_complete: 500ms
+#        reset_on_complete: 500ms
          ignore_switch_ms: 200ms
          reset_events:
            player_turn_will_start, mode_using_targets_ended, drop_left_center_reset
      rightCenter:
          drop_targets: RC
          reset_coils: c_dropCenterR
-         reset_on_complete: 500ms
+#        reset_on_complete: 500ms
          ignore_switch_ms: 200ms
          reset_events:
            player_turn_will_start, mode_using_targets_ended, drop_right_center_reset

@@ -55,6 +55,9 @@ event_player:
     - story_is_completed
    story_is_completed_unsuccessful:
     - story_is_completed
+# Character Collect
+   player_meteor_hits{value==3}:
+    - random_character_collect
 
 #  Base intro / outro shows
 

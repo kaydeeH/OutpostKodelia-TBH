@@ -13,6 +13,14 @@ event_player:
    timer_superspins_complete:
      - end_super_spins
 
+show_player:
+   mode_superSpins_started:
+      superSpin:
+        loops: -1
+   timer_superspins_complete:
+      superSpin:
+        action: stop
+
 timers:
    superspins:
      start_value: 30

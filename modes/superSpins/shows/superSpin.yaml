@@ -1,0 +1,8 @@
+#show_version=5
+
+- duration: 100ms
+  lights:
+    l_spinner: 0000CC
+- duration: 100ms
+  lights:
+    l_spinner: off

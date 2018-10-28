@@ -52,11 +52,7 @@ event_player:
      invoke_notify_by_event:
        new_text: "RESCUE"
        new_value: "X"
-#TODO - decide how this is done
-   s_sTargetYellowL_active:
-     - reenable_outlane_rescue
-   s_sTargetYellowR_active:
-     - reenable_outlane_sacrifice
+
 
 #   shotoutlanesacrifice_lit_hit:
 

@@ -12,149 +12,163 @@
         width: 1366
         height: 688
       - type: Text
-        text: THE PINBALL EXPERIENCE
+#        text: THE PINBALL EXPERIENCE
+        text: (machine|thePinExp)
         font_name: ocr-a-tribute-bold
         font_size: 48
         color: FF2C1F
         y: 340
-        x: 675
+        x: 388
+        z: 1
         anchor_y: center
-        anchor_x: center
-        opacity: 0
+        anchor_x: left
+        opacity: 1
         animations:
           pre_show_slide:
             - property: opacity
-              value: 0
+              value: 1
               duration: 17s
             - property: opacity
               value: 1
-              duration: 4.6s
+              duration: 4.7s
             - property: opacity
               value: 0
               duration: 0.1s
       - type: Text
-        text: (machine|score6_label) - (machine|score6_name) (machine|score6_value)
+#        text: (machine|score6_label) - (machine|score6_name) (machine|score6_value)
+        text: (machine|s6)
         font_name: ocr-a-tribute-bold
         font_size: 36
         color: BF3228
         y: 160
         x: 695
+        z: 1
         anchor_y: top
         anchor_x: left
         opacity: 0
         animations:
           pre_show_slide:
             - property: opacity
-              value: 0
-              duration: 22.4s
+              value: 1
+              duration: 22.3s
             - property: opacity
               value: 1
-              duration: 3.9s
+              duration: 4.3s
             - property: opacity
               value: 0
               duration: 0.1s
       - type: Text
-        text: (machine|score5_label) - (machine|score5_name) (machine|score5_value)
+#        text: (machine|score5_label) - (machine|score5_name) (machine|score5_value)
+        text: (machine|s5)
         font_name: ocr-a-tribute-bold
         font_size: 36
         color: BF3228
         y: 160
         x: 733
+        z: 1
         anchor_y: top
         anchor_x: left
         opacity: 0
         animations:
           pre_show_slide:
             - property: opacity
-              value: 0
-              duration: 25.8s
+              value: 1
+              duration: 26s
             - property: opacity
               value: 1
-              duration: 4.25s
+              duration: 4.3s
             - property: opacity
               value: 0
               duration: 0.1s
       - type: Text
-        text: (machine|score4_label) - (machine|score4_name) (machine|score4_value)
+#        text: (machine|score4_label) - (machine|score4_name) (machine|score4_value)
+        text: (machine|s4)
         font_name: ocr-a-tribute-bold
         font_size: 36
         color: BF3228
         y: 160
         x: 725
+        z: 1
         anchor_y: top
         anchor_x: left
         opacity: 0
         animations:
           pre_show_slide:
             - property: opacity
-              value: 0
+              value: 1
               duration: 29.4s
             - property: opacity
               value: 1
-              duration: 4.25s
+              duration: 4.4s
             - property: opacity
               value: 0
               duration: 0.1s
       - type: Text
-        text: (machine|score3_label) - (machine|score3_name) (machine|score3_value)
+#        text: (machine|score3_label) - (machine|score3_name) (machine|score3_value)
+        text: (machine|s3)
         font_name: ocr-a-tribute-bold
         font_size: 36
         color: BF3228
         y: 160
         x: 715
+        z: 1
         anchor_y: top
         anchor_x: left
         opacity: 0
         animations:
           pre_show_slide:
             - property: opacity
-              value: 0
+              value: 1
               duration: 33s
             - property: opacity
               value: 1
-              duration: 4.2s
+              duration: 4.45s
             - property: opacity
               value: 0
               duration: 0.1s
       - type: Text
-        text: (machine|score2_label) - (machine|score2_name) (machine|score2_value)
+#        text: (machine|score2_label) - (machine|score2_name) (machine|score2_value)
+        text: (machine|s2)
         font_name: ocr-a-tribute-bold
         font_size: 36
         color: BF3228
         y: 160
         x: 555
+        z: 1
         anchor_y: top
         anchor_x: left
         opacity: 0
         animations:
           pre_show_slide:
             - property: opacity
-              value: 0
+              value: 1
               duration: 36.2s
             - property: opacity
               value: 1
-              duration: 5.55s
+              duration: 6.08s
             - property: opacity
               value: 0
               duration: 0.1s
       - type: Text
-        text: (machine|score1_label) - (machine|score1_name) (machine|score1_value)
+#        text: (machine|score1_label) - (machine|score1_name) (machine|score1_value)
+        text: (machine|s1)
         font_name: ocr-a-tribute-bold
         font_size: 36
         color: BF3228
         y: 160
         x: 540
+        z: 1
         anchor_y: top
         anchor_x: left
         opacity: 0
         animations:
           pre_show_slide:
             - property: opacity
-              value: 0
+              value: 1
               duration: 41.9s
             - property: opacity
               value: 1
-              duration: 5.5s
+              duration: 5.9s
             - property: opacity
               value: 0
               duration: 0.1s

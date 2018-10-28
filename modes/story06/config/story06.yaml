@@ -2,6 +2,8 @@
 
 # David vs. Goliath - Pop bumper frenzy. Pop bumpers do health, time elapsed without pops costs points. Win!
 
+#TODO -- Character Collect -- Certain amount of time overall?
+
 config:
   - story06-scoring.yaml
 #  - ballsave.yaml
@@ -49,6 +51,8 @@ event_player:
     - acheivement_story06_unsuccessful
   story_is_completed_successful:
     - story_is_completed
+#TODO -- for now we are granting a character just for completing
+    - random_character_collect
   story_is_completed_unsuccessful:
     - story_is_completed
 

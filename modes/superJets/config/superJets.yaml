@@ -13,6 +13,14 @@ event_player:
    timer_superjets_complete:
      - end_super_jets
 
+show_player:
+   mode_superJets_started:
+      superJet:
+        loops: -1
+   timer_superjets_complete:
+      superJet:
+        action: stop
+
 timers:
    superjets:
      start_value: 30

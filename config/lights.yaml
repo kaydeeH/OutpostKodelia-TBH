@@ -483,6 +483,31 @@ lights:
       polarity: true
 
 #J10 36..47 -- Flipper Lane GI Planned Here
+#TODO validate these are the correct Lane Guide GI ports
+  l_giLeftLaneGuide0:
+    number: 3-36-37-38
+    subtype: led
+    default_fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_giLeftLaneGuide1:
+    number: 3-39-40-41
+    subtype: led
+    default_fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_giRightLaneGuide1:
+    number: 3-42-43-44
+    subtype: led
+    default_fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_giRightLaneGuide0:
+    number: 3-45-46-47
+    subtype: led
+    default_fade_ms: 50ms
+    platform_settings:
+      polarity: true
 
 #J7 48..59
   l_specialRight:

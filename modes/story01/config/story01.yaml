@@ -3,6 +3,8 @@
 # Locate the Cygnus (s01) -
 # Lock in coordinates with the lanes and scoop out.
 
+#TODO -- does this mode need a timeout?
+
 config:
   - story01-scoring.yaml
 #  - ballsave.yaml
@@ -59,7 +61,9 @@ event_player:
      - cygnus_found
 #   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
 #     - scoop_eject
-
+# Character Collect
+   player_modestat_1_final_timing{value<75}:
+     - random_character_collect
 # Do we want to do something for each lane found?
    shotLane0Story01_unlit_hit:
      - cygnus_lane_0_event

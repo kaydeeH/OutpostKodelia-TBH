@@ -13,6 +13,14 @@ event_player:
    timer_doublepf_complete:
      - end_double_bonus
 
+show_player:
+   mode_playfieldDouble_started:
+      pfDouble:
+        loops: -1
+   timer_doublepf_complete:
+      pfDouble:
+        action: stop
+
 timers:
    doublepf:
      start_value: 31

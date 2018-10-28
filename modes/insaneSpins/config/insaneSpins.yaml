@@ -21,5 +21,10 @@ timers:
      start_running: true
 
 variable_player:
+  mode_insaneSpins_started:
+    insaneSpinCount:
+       action: set
+       int: 0
   s_spinner_active:
     score: 99900 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    insaneSpinCount: 1

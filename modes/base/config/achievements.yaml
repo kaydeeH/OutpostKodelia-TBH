@@ -1,5 +1,9 @@
 #config_version=5
 
+#TODO -- Change the shows
+#TODO    See if we can go back to "started" after "selected" if it was previously started
+#TODO    Probably need to change up the "disable" events.
+
 achievements:
  untitled_mode_1:
    show_tokens:
@@ -92,3 +96,207 @@ achievements:
    show_when_started: popgreen
    show_when_completed: ach7
    show_when_stopped: off
+
+
+#TODO why does the ach_started show work for all below except the first one?  Is it a monitor problem?  Works if I use a different light.  Confusing.
+ mode_01_started:
+   show_tokens:
+     light: l_mode0
+   start_events: mode_story01_started
+   complete_events: acheivement_story01_unsuccessful, acheivement_story01_successful
+   show_when_completed: ach_started
+   events_when_completed: m1_start
+ mode_02_started:
+   show_tokens:
+     light: l_mode1
+   start_events: mode_story02_started
+   complete_events: acheivement_story02_unsuccessful, acheivement_story02_successful
+   show_when_completed: ach_started
+   events_when_completed: m2_start
+ mode_03_started:
+   show_tokens:
+      light: l_mode2
+   start_events: mode_story03_started
+   complete_events: acheivement_story03_unsuccessful, acheivement_story03_successful
+   show_when_completed: ach_started
+   events_when_completed: m3_start
+ mode_04_started:
+   show_tokens:
+      light: l_mode3
+   start_events: mode_story04_started
+   complete_events: acheivement_story04_unsuccessful, acheivement_story04_successful
+   show_when_completed: ach_started
+   events_when_completed: m4_start
+ mode_05_started:
+   show_tokens:
+      light: l_mode4
+   start_events: mode_story05_started
+   complete_events: acheivement_story05_unsuccessful, acheivement_story05_successful
+   show_when_completed: ach_started
+   events_when_completed: m5_start
+ mode_06_started:
+   show_tokens:
+      light: l_mode5
+   start_events: mode_story06_started
+   complete_events: acheivement_story06_unsuccessful, acheivement_story06_successful
+   show_when_completed: ach_started
+   events_when_completed: m6_start
+ mode_07_started:
+   show_tokens:
+      light: l_mode6
+   start_events: mode_story07_started
+   complete_events: acheivement_story07_unsuccessful, acheivement_story07_successful
+   show_when_completed: ach_started
+   events_when_completed: m7_start
+
+# This will be for character collection for the wizard mode bonus
+ char_vincent:
+   start_events: first_ball_for_current_player
+   complete_events: char_vincent_complete
+ char_bob:
+   start_events: first_ball_for_current_player
+   complete_events: char_bob_complete
+ char_dan:
+   start_events: first_ball_for_current_player
+   complete_events: char_dan_complete
+ char_charlie:
+   start_events: first_ball_for_current_player
+   complete_events: char_charlie_complete
+ char_harry:
+   start_events: first_ball_for_current_player
+   complete_events: char_harry_complete
+ char_kate:
+   start_events: first_ball_for_current_player
+   complete_events: char_kate_complete
+ char_alex:
+   start_events: first_ball_for_current_player
+   complete_events: char_alex_complete
+ char_hans:
+   start_events: first_ball_for_current_player
+   complete_events: char_hans_complete
+
+random_event_player:
+   random_character_collect:
+      events:
+        - char_dan_complete
+        - char_charlie_complete
+        - char_harry_complete
+        - char_kate_complete
+        - char_alex_complete
+        - char_hans_complete
+      force_all: true
+      scope: player
+
+show_player:
+  char_dan_complete:
+     char_dan_collect:
+       loops: 0
+  char_charlie_complete:
+     char_charlie_collect:
+       loops: 0
+  char_harry_complete:
+     char_harry_collect:
+       loops: 0
+  char_kate_complete:
+     char_kate_collect:
+       loops: 0
+  char_alex_complete:
+     char_alex_collect:
+       loops: 0
+  char_hans_complete:
+     char_hans_collect:
+       loops: 0
+
+shows:
+  ach_started:
+     - time: 0
+       lights:
+          (light): 0000CC
+     - time: +100ms
+       lights:
+          (light): off
+       duration: 100ms
+  char_dan_collect:
+     - time: 0
+       slides: char_dan
+       duration: 2
+  char_charlie_collect:
+     - time: 0
+       slides: char_charlie
+       duration: 2
+  char_harry_collect:
+     - time: 0
+       slides: char_harry
+       duration: 2
+  char_kate_collect:
+     - time: 0
+       slides: char_kate
+       duration: 2
+  char_alex_collect:
+     - time: 0
+       slides: char_alex
+       duration: 2
+  char_hans_collect:
+     - time: 0
+       slides: char_hans
+       duration: 2
+
+slides:
+   char_dan:
+    widgets:
+      - type: text
+        text: DAN COLLECTED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+   char_charlie:
+    widgets:
+      - type: text
+        text: CHARLIE COLLECTED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+   char_harry:
+    widgets:
+      - type: text
+        text: HARRY COLLECTED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+   char_kate:
+    widgets:
+      - type: text
+        text: KATE COLLECTED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+   char_alex:
+    widgets:
+      - type: text
+        text: ALEX COLLECTED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+   char_hans:
+    widgets:
+      - type: text
+        text: HANS COLLECTED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+
+variable_player:
+  m1_start:
+    status_mode_01_started: 1
+  m2_start:
+    status_mode_02_started: 1
+  m3_start:
+    status_mode_03_started: 1
+  m4_start:
+    status_mode_04_started: 1
+  m5_start:
+    status_mode_05_started: 1
+  m6_start:
+    status_mode_06_started: 1
+  m7_start:
+    status_mode_07_started: 1

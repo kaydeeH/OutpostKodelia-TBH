@@ -13,6 +13,14 @@ event_player:
    timer_triplepf_complete:
      - end_triple_bonus
 
+show_player:
+   mode_playfieldTriple_started:
+      pfTriple:
+        loops: -1
+   timer_triplepf_complete:
+      pfTriple:
+        action: stop
+
 timers:
    triplepf:
      start_value: 30

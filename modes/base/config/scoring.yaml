@@ -34,6 +34,8 @@ counters:
     multiple_hit_window: 10ms
 
 event_player:
+  mode_base_started{ball==1 and is_extra_ball==0}:
+    - first_ball_for_current_player
   do_scoop_notify:
     invoke_notify_by_event:
        new_value: "ACTIVE"
@@ -70,6 +72,13 @@ variable_player:
     outlane_sacrifice_value:
        action: set
        int: 100000
+    status_mode_01_started: 0
+    status_mode_02_started: 0
+    status_mode_03_started: 0
+    status_mode_04_started: 0
+    status_mode_05_started: 0
+    status_mode_06_started: 0
+    status_mode_07_started: 0
   mode_base_started:
     pds:
        int: 100
