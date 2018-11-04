@@ -36,8 +36,8 @@ event_player:
      - story_is_about_to_fail
    story_intro_complete:
      - scoop_eject
-   shotScoopEscape_shotProfileScoopEscape_inactive_hit:
-     - scoop_eject
+#   shotScoopEscape_shotProfileScoopEscape_inactive_hit:
+#     - scoop_eject
    shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
      - story_is_about_to_end
    story_outro_complete:
@@ -68,6 +68,11 @@ show_player:
       story_02_outro:
          events_when_completed: story_outro_complete
          loops: 0
+   shotScoopEscape_shotProfileScoopEscape_inactive_hit:
+      pinwheel:
+        speed: 40
+        loops: 1
+        events_when_completed: scoop_eject
 
 shows:
    story_02_intro:
