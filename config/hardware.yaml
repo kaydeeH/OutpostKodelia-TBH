@@ -8,22 +8,6 @@ p3_roc:
   use_watchdog: true
   watchdog_time: 1s
 
-displays:
-  lcd:
-    width: 1366
-    height: 768
-    default: true
-
-window:
-  width: 1366
-  height: 768
-  title: The Black Hole
-  resizable: false
-  fullscreen: false
-  borderless: false
-  exit_on_escape: true
-  source_display: lcd
-
 coils:
   c_flipper_right_main:
     number: A0-B0-0
