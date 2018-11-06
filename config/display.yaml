@@ -1,0 +1,17 @@
+#config_version=5
+
+displays:
+  lcd:
+    width: 1366
+    height: 768
+    default: true
+
+window:
+  width: 1366
+  height: 768
+  title: The Black Hole
+  resizable: false
+  fullscreen: false
+  borderless: false
+  exit_on_escape: true
+  source_display: lcd
