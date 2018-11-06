@@ -242,11 +242,11 @@ variable_player:
 # 5000 here.  5000 more later if we don't increase bonus X
   drop_target_bank_leftfull_down:
     score: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
-    bonustype2: 1
+    bonustype1: 1
     bonuscount: 3
   drop_target_bank_rightfull_down:
     score: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
-    bonustype3: 1
+    bonustype4: 1
     bonuscount: 3
 
 # Yellow Fixed Targets
@@ -285,7 +285,7 @@ variable_player:
 # 5000 base.  5000 more will be awarded if bonus multi is not increased.
   shotGroupToplanes_lit_complete:
     score: 5000  * current_player.temp_playfield_x * current_player.perm_playfield_x
-    bonustype1: 1
+    bonustype2: 1
     bonuscount: 10
 
 # Inlanes
@@ -339,7 +339,7 @@ variable_player:
 # This is the 50 pops + spins bonus for the bonus multiplier
   gravityAssistBonus:
     score: 5000  * current_player.temp_playfield_x * current_player.perm_playfield_x
-    bonustype4: 1
+    bonustype3: 1
     bonuscount: 10
 
 # Decide on bonus multi increase or 5000 extra points
