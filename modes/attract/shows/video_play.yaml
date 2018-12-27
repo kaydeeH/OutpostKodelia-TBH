@@ -11,6 +11,10 @@
         volume: 0.5
         width: 1366
         height: 688
+        control_events:
+          - event: slide_video_created
+            action: position
+            value: 0.01
       - type: Text
 #        text: THE PINBALL EXPERIENCE
         text: (machine|thePinExp)
@@ -24,13 +28,10 @@
         anchor_x: left
         opacity: 1
         animations:
-          pre_show_slide:
+          show_slide:
             - property: opacity
               value: 1
-              duration: 17s
-            - property: opacity
-              value: 1
-              duration: 4.7s
+              duration: 20.78s
             - property: opacity
               value: 0
               duration: 0.1s
@@ -47,13 +48,10 @@
         anchor_x: left
         opacity: 0
         animations:
-          pre_show_slide:
+          show_slide:
             - property: opacity
               value: 1
-              duration: 22.3s
-            - property: opacity
-              value: 1
-              duration: 4.3s
+              duration: 25.44s
             - property: opacity
               value: 0
               duration: 0.1s
@@ -70,13 +68,10 @@
         anchor_x: left
         opacity: 0
         animations:
-          pre_show_slide:
+          show_slide:
             - property: opacity
               value: 1
-              duration: 26s
-            - property: opacity
-              value: 1
-              duration: 4.3s
+              duration: 29.37s
             - property: opacity
               value: 0
               duration: 0.1s
@@ -93,13 +88,10 @@
         anchor_x: left
         opacity: 0
         animations:
-          pre_show_slide:
+          show_slide:
             - property: opacity
               value: 1
-              duration: 29.4s
-            - property: opacity
-              value: 1
-              duration: 4.4s
+              duration: 32.77s
             - property: opacity
               value: 0
               duration: 0.1s
@@ -116,13 +108,10 @@
         anchor_x: left
         opacity: 0
         animations:
-          pre_show_slide:
+          show_slide:
             - property: opacity
               value: 1
-              duration: 33s
-            - property: opacity
-              value: 1
-              duration: 4.45s
+              duration: 36.4s
             - property: opacity
               value: 0
               duration: 0.1s
@@ -139,13 +128,10 @@
         anchor_x: left
         opacity: 0
         animations:
-          pre_show_slide:
+          show_slide:
             - property: opacity
               value: 1
-              duration: 36.2s
-            - property: opacity
-              value: 1
-              duration: 6.08s
+              duration: 41.6s
             - property: opacity
               value: 0
               duration: 0.1s
@@ -162,13 +148,10 @@
         anchor_x: left
         opacity: 0
         animations:
-          pre_show_slide:
+          show_slide:
             - property: opacity
               value: 1
-              duration: 41.9s
-            - property: opacity
-              value: 1
-              duration: 5.9s
+              duration: 46.80s
             - property: opacity
               value: 0
               duration: 0.1s

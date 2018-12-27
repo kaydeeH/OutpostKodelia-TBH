@@ -71,7 +71,7 @@ event_player:
     - corridor_target_hit
 # Character Collect
    player_modestat_5_final_extra_time{value>19}:
-    - random_character_collect
+    - random_character_collect|3100ms
 
 #  Base intro / outro shows
 show_player:

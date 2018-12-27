@@ -1,7 +1,7 @@
 #config_version=5
 
 mode:
-   start_events: shotGroupPopBumpers_popBumpGreen_complete
+   start_events: shotgrouppopbumpers_popBumpGreen_complete
    stop_events: timer_popGreen_complete, ball_ending
    priority: 290
 

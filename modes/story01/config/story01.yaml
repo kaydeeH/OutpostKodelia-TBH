@@ -63,7 +63,7 @@ event_player:
 #     - scoop_eject
 # Character Collect
    player_modestat_1_final_timing{value<75.0}:
-     - random_character_collect
+     - random_character_collect|3100ms
 # Do we want to do something for each lane found?
    shotLane0Story01_unlit_hit:
      - cygnus_lane_0_event
@@ -146,11 +146,6 @@ slides:
       - type: text
         text: "MISSION FAILURE"
         y: 40%
-        color: red
-        font_size: 50
-      - type: text
-        text: " ** BALL SAVED ** "
-        y: 30%
         color: red
         font_size: 50
 

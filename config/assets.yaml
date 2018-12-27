@@ -99,3 +99,5 @@ images:
        file: badge-in_through_beyond-big.png
     checkmark:
        file: checkmark.png
+    redx:
+       file: redx.png

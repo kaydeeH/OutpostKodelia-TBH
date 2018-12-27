@@ -72,57 +72,8 @@ variable_player:
     outlane_sacrifice_value:
        action: set
        int: 100000
-    status_mode_01_started: 0
-    status_mode_02_started: 0
-    status_mode_03_started: 0
-    status_mode_04_started: 0
-    status_mode_05_started: 0
-    status_mode_06_started: 0
-    status_mode_07_started: 0
-  mode_base_started:
     pds:
        int: 100
-       action: set
-    bonustype1:
-       int: 0
-       action: set
-    bonustype2:
-       int: 0
-       action: set
-    bonustype3:
-       int: 0
-       action: set
-    bonustype4:
-       int: 0
-       action: set
-    bonuscount:
-       int: 1
-       action: set
-    bonuscountdisplay:
-       int: 0
-       action: set
-    bonus_multiplier:
-       int: 1
-       action: set
-    bonus_l2:
-       int: 0
-       action: set
-    bonus_l3:
-       int: 0
-       action: set
-    bonus_l4:
-       int: 0
-       action: set
-    bonus_l5:
-       int: 0
-       action: set
-# -- Temporary Playfield Multiplier
-    temp_playfield_x:
-       int: 1
-       action: set
-# -- Yellow Target Count
-    yellow_hits:
-       int: 0
        action: set
 # -- Slings Count
     sling_hits:
@@ -184,6 +135,49 @@ variable_player:
        action: set
     spinsLevel:
        int: 1
+       action: set
+
+  mode_base_started:
+    bonustype1:
+       int: 0
+       action: set
+    bonustype2:
+       int: 0
+       action: set
+    bonustype3:
+       int: 0
+       action: set
+    bonustype4:
+       int: 0
+       action: set
+    bonuscount:
+       int: 1
+       action: set
+    bonuscountdisplay:
+       int: 0
+       action: set
+    bonus_multiplier:
+       int: 1
+       action: set
+    bonus_l2:
+       int: 0
+       action: set
+    bonus_l3:
+       int: 0
+       action: set
+    bonus_l4:
+       int: 0
+       action: set
+    bonus_l5:
+       int: 0
+       action: set
+# -- Temporary Playfield Multiplier
+    temp_playfield_x:
+       int: 1
+       action: set
+# -- Yellow Target Count
+    yellow_hits:
+       int: 0
        action: set
 
 # Pop Bumpers

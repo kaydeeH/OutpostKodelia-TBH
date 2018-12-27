@@ -1,7 +1,9 @@
 #config_version=5
 
 event_player:
-  player_gallery_targets_hit:
+# Bug fix -- changed the event below to prevent scoring a hit upon entry
+#  player_gallery_targets_hit:
+  gallery_target_hit:
      invoke_notify_by_event:
        new_text: "GALLERY\nTARGET"
        new_value: "HIT"

@@ -45,7 +45,7 @@ event_player:
      - story_is_completed_successful
      - acheivement_story02_successful
 #TODO -- for now we are granting a character just for completing
-     - random_character_collect
+     - random_character_collect|3100ms
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
      - acheivement_story02_unsuccessful

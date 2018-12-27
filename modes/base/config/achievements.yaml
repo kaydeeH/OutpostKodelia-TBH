@@ -104,49 +104,42 @@ achievements:
      light: l_mode0
    start_events: mode_story01_started
    complete_events: acheivement_story01_unsuccessful, acheivement_story01_successful
-   show_when_completed: ach_started
    events_when_completed: m1_start
  mode_02_started:
    show_tokens:
      light: l_mode1
    start_events: mode_story02_started
    complete_events: acheivement_story02_unsuccessful, acheivement_story02_successful
-   show_when_completed: ach_started
    events_when_completed: m2_start
  mode_03_started:
    show_tokens:
       light: l_mode2
    start_events: mode_story03_started
    complete_events: acheivement_story03_unsuccessful, acheivement_story03_successful
-   show_when_completed: ach_started
    events_when_completed: m3_start
  mode_04_started:
    show_tokens:
       light: l_mode3
    start_events: mode_story04_started
    complete_events: acheivement_story04_unsuccessful, acheivement_story04_successful
-   show_when_completed: ach_started
    events_when_completed: m4_start
  mode_05_started:
    show_tokens:
       light: l_mode4
    start_events: mode_story05_started
    complete_events: acheivement_story05_unsuccessful, acheivement_story05_successful
-   show_when_completed: ach_started
    events_when_completed: m5_start
  mode_06_started:
    show_tokens:
       light: l_mode5
    start_events: mode_story06_started
    complete_events: acheivement_story06_unsuccessful, acheivement_story06_successful
-   show_when_completed: ach_started
    events_when_completed: m6_start
  mode_07_started:
    show_tokens:
       light: l_mode6
    start_events: mode_story07_started
    complete_events: acheivement_story07_unsuccessful, acheivement_story07_successful
-   show_when_completed: ach_started
    events_when_completed: m7_start
 
 # This will be for character collection for the wizard mode bonus
@@ -208,14 +201,6 @@ show_player:
        loops: 0
 
 shows:
-  ach_started:
-     - time: 0
-       lights:
-          (light): 0000CC
-     - time: +100ms
-       lights:
-          (light): off
-       duration: 100ms
   char_dan_collect:
      - time: 0
        slides: char_dan
@@ -285,18 +270,4 @@ slides:
         font_size: 100
         font_name: ocr-a-tribute-bold
 
-variable_player:
-  m1_start:
-    status_mode_01_started: 1
-  m2_start:
-    status_mode_02_started: 1
-  m3_start:
-    status_mode_03_started: 1
-  m4_start:
-    status_mode_04_started: 1
-  m5_start:
-    status_mode_05_started: 1
-  m6_start:
-    status_mode_06_started: 1
-  m7_start:
-    status_mode_07_started: 1
+

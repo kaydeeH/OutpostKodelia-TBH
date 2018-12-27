@@ -209,9 +209,9 @@ event_player:
     ball_save_inmodesave7_saving_ball:
       - in_mode_ball_save
 
-# shotGroupPopBumpers_popBumpBlue_complete
-# shotGroupPopBumpers_popBumpGreen_complete
-# shotGroupPopBumpers_popBumpRed_complete
+# shotgrouppopbumpers_popBumpBlue_complete
+# shotgrouppopbumpers_popBumpGreen_complete
+# shotgrouppopbumpers_popBumpRed_complete
 
 shot_profiles:
   shotProfileLeftTargets:
@@ -264,7 +264,7 @@ shot_profiles:
         show: off
 
 shot_groups:
-   shotGroupPopBumpers:
+   shotgrouppopbumpers:
        shots: shotCenterPop, shotUpperLeftPop, shotUpperRightPop
    shotGroupToplanes:
        shots: shotLane0, shotLane1, shotLane2, shotLane3, shotLane4

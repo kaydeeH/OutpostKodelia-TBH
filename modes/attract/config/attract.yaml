@@ -108,6 +108,7 @@ show_player:
       loops: 3
       priority: 10
 
+
 event_player:
   attract_03: #All events have had +5s added to account for the title slide
     - green_ttb|22s
@@ -116,38 +117,39 @@ event_player:
     - green_ttb_2|51s
     - green_x_rtl|60s
     - green_circ|85s
-  trigger_text:
-     set_text_to_cycle|23s:
+#  trigger_text:
+  slide_video_active:
+     set_text_to_cycle|17.15s:
        text: "THE PINBALL EXPERIENCE"
        delay: 45
        varname: "thePinExp"
        intermed: "*"
-     set_text_to_cycle|28.3s:
+     set_text_to_cycle|23.27s:
        text: "s6"
        delay: 45
        varname: "s6"
        intermed: "*"
-     set_text_to_cycle|32.3s:
+     set_text_to_cycle|27.29s:
        text: "s5"
        delay: 45
        varname: "s5"
        intermed: "*"
-     set_text_to_cycle|35.9s:
+     set_text_to_cycle|30.96s:
        text: "s4"
        delay: 45
        varname: "s4"
        intermed: "*"
-     set_text_to_cycle|39.5s:
+     set_text_to_cycle|34.40s:
        text: "s3"
        delay: 45
        varname: "s3"
        intermed: "*"
-     set_text_to_cycle|42.7s:
+     set_text_to_cycle|38.67s:
        text: "s2"
        delay: 45
        varname: "s2"
        intermed: "*"
-     set_text_to_cycle|48.4s:
+     set_text_to_cycle|43.46s:
        text: "s1"
        delay: 45
        varname: "s1"
@@ -176,6 +178,7 @@ widget_player:
   slide_video_created:
     freeplay_start_widget:
       slide: video
+
 
   #Add player scores to last game slide, as relevant
   lastgame_player2:

@@ -21,8 +21,9 @@ event_player:
      invoke_notify_by_event:
        new_text: "EPSILON\nCOORDINATES"
        new_value: "LOCKED"
+# added 10ms delay below to insure lane notifications occur first
    cygnus_located:
-     invoke_notify_by_event:
+     invoke_notify_by_event|10ms:
        new_text: "CYGNUS\nDOCKING"
        new_value: "ENABLED"
 

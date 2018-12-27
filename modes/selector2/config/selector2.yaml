@@ -6,7 +6,7 @@ mode:
   priority: 325
 
 mode_settings:
-  selectable_items: mode1, mode2, mode3, mode4, mode5, mode6
+  selectable_items: mode1, mode2, mode3, mode4, mode5, mode6, mode7
   select_item_events: selected_mode_is_available
   next_item_events: mode_select_right
   previous_item_events: mode_select_left
@@ -36,7 +36,10 @@ variable_player:
       mode_pick:
          int: 6
          action: set
-
+  selector2_mode7_highlighted:
+      mode_pick:
+         int: 7
+         action: set
 
 event_player:
   s_flipper_left_active:
@@ -312,6 +315,14 @@ widget_player:
       key: mode06i
       slide: selector2_slide
       action: add
+    mode07_prim:
+      key: mode07
+      slide: selector2_slide
+      action: add
+    mode07_instr:
+      key: mode07i
+      slide: selector2_slide
+      action: add
   status_untitled_mode_1_completed:
     mode01_check:
       key: mode01c
@@ -390,6 +401,30 @@ widget_player:
       key: mode06i
       slide: selector2_slide
       action: remove
+  status_untitled_mode_7_completed:
+    mode07_check:
+      key: mode07c
+      slide: selector2_slide
+      action: add
+    mode07_result:
+      key: mode07r
+      slide: selector2_slide
+      action: add
+    mode07_instr:
+      key: mode07i
+      slide: selector2_slide
+      action: remove
+  wizard_mode_not_available:
+    mode07_redx:
+      key: mode07x
+      slide: selector2_slide
+      action: add
+  wizard_mode_is_available:
+    mode07_redx:
+      key: mode07x
+      slide: selector2_slide
+      action: remove
+
 
 widgets:
 # Starts in Center Pos
@@ -409,7 +444,8 @@ widgets:
          selector2_mode3_highlighted: title_small_left_off
          selector2_mode4_highlighted: title_small_left_off
          selector2_mode5_highlighted: title_small_right_off
-         selector2_mode6_highlighted: title_small_right
+         selector2_mode6_highlighted: title_small_right_off
+         selector2_mode7_highlighted: title_small_right
     - type: image
       image: badgeLocateTheCygnusBig
       anchor_x: center
@@ -422,7 +458,8 @@ widgets:
          selector2_mode3_highlighted: icon_small_left_off
          selector2_mode4_highlighted: icon_small_left_off
          selector2_mode5_highlighted: icon_small_right_off
-         selector2_mode6_highlighted: icon_small_right
+         selector2_mode6_highlighted: icon_small_right_off
+         selector2_mode7_highlighted: icon_small_right
   mode01_instr:
     - type: text
       text: "\u00B7LIGHT TOP LANES\n\n\u00B7Inlanes, Lone drops\n and Yellow Targets\n\ Spot Lanes\n\n\u00B7COMPLETE VIA THE SCOOP"
@@ -442,6 +479,7 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
 # Starts in Right
   mode02_prim:
     - type: text
@@ -460,6 +498,7 @@ widgets:
          selector2_mode4_highlighted: title_small_left_off
          selector2_mode5_highlighted: title_small_left_off
          selector2_mode6_highlighted: title_small_right_off
+         selector2_mode7_highlighted: title_small_right_off
          selector2_mode1_highlighted: title_small_right
     - type: image
       image: badgeEscapeBig
@@ -475,10 +514,11 @@ widgets:
          selector2_mode4_highlighted: icon_small_left_off
          selector2_mode5_highlighted: icon_small_left_off
          selector2_mode6_highlighted: icon_small_right_off
+         selector2_mode7_highlighted: icon_small_right_off
          selector2_mode1_highlighted: icon_small_right
   mode02_instr:
     - type: text
-      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      text: "- Stabalize the Palomino by \n hitting Pop Bumpers\n\n- When lit, hit the spinner \n to engage Thrusters\n\n- Then ESCAPE the black hole\n out the scoop!\n\n"
       opacity: 0
       color: white
       anchor_x: center
@@ -495,6 +535,7 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
 # Starts in Right Next
   mode03_prim:
@@ -514,6 +555,7 @@ widgets:
          selector2_mode4_highlighted: title_small_left
          selector2_mode5_highlighted: title_small_left_off
          selector2_mode6_highlighted: title_small_left_off
+         selector2_mode7_highlighted: title_small_right_off
          selector2_mode1_highlighted: title_small_right_off
          selector2_mode2_highlighted: title_small_right
     - type: image
@@ -530,12 +572,13 @@ widgets:
          selector2_mode4_highlighted: icon_small_left
          selector2_mode5_highlighted: icon_small_left_off
          selector2_mode6_highlighted: icon_small_left_off
+         selector2_mode7_highlighted: icon_small_right_off
          selector2_mode1_highlighted: icon_small_right_off
          selector2_mode2_highlighted: icon_small_right
   mode03_instr:
     - type: text
       opacity: 0
-      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      text: "- Hit lit drop targets until time runs out"
       color: white
       anchor_x: center
       anchor_y: center
@@ -550,6 +593,7 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
 # Starts in Right Next
@@ -569,7 +613,8 @@ widgets:
          selector2_mode4_highlighted: title_large
          selector2_mode5_highlighted: title_small_left
          selector2_mode6_highlighted: title_small_left_off
-         selector2_mode1_highlighted: title_small_left_off
+         selector2_mode7_highlighted: title_small_left_off
+         selector2_mode1_highlighted: title_small_right_off
          selector2_mode2_highlighted: title_small_right_off
          selector2_mode3_highlighted: title_small_right
     - type: image
@@ -585,12 +630,13 @@ widgets:
          selector2_mode4_highlighted: icon_large
          selector2_mode5_highlighted: icon_small_left
          selector2_mode6_highlighted: icon_small_left_off
-         selector2_mode1_highlighted: icon_small_left_off
+         selector2_mode7_highlighted: icon_small_left_off
+         selector2_mode1_highlighted: icon_small_right_off
          selector2_mode2_highlighted: icon_small_right_off
          selector2_mode3_highlighted: icon_small_right
   mode04_instr:
     - type: text
-      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      text: "- Hit the scoop to avoid meteors"
       opacity: 0
       color: white
       anchor_x: center
@@ -605,6 +651,7 @@ widgets:
          selector2_mode4_highlighted: return_text
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
          selector2_mode3_highlighted: drop_text_down
@@ -624,8 +671,9 @@ widgets:
       animations:
          selector2_mode5_highlighted: title_large
          selector2_mode6_highlighted: title_small_left
+         selector2_mode7_highlighted: title_small_left_off
          selector2_mode1_highlighted: title_small_left_off
-         selector2_mode2_highlighted: title_small_left_off
+         selector2_mode2_highlighted: title_small_right_off
          selector2_mode3_highlighted: title_small_right_off
          selector2_mode4_highlighted: title_small_right
     - type: image
@@ -640,13 +688,14 @@ widgets:
       animations:
          selector2_mode5_highlighted: icon_large
          selector2_mode6_highlighted: icon_small_left
+         selector2_mode7_highlighted: icon_small_left_off
          selector2_mode1_highlighted: icon_small_left_off
-         selector2_mode2_highlighted: icon_small_left_off
+         selector2_mode2_highlighted: icon_small_right_off
          selector2_mode3_highlighted: icon_small_right_off
          selector2_mode4_highlighted: icon_small_right
   mode05_instr:
     - type: text
-      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      text: "- Hit all 10 lit drop targets"
       opacity: 0
       color: white
       anchor_x: center
@@ -660,11 +709,12 @@ widgets:
          status_untitled_mode_5_completed: hide_text
          selector2_mode5_highlighted: return_text
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
          selector2_mode3_highlighted: drop_text_down
          selector2_mode4_highlighted: drop_text_down
-# Starts in Left
+# Starts in Left Next
   mode06_prim:
     - type: text
       text: DAVID VS GOLLIATH
@@ -672,36 +722,38 @@ widgets:
       color: red
       anchor_x: center
       anchor_y: center
-      x: 10%
+      x: -20%
       y: 57%
       font_size: 16
       z: 1
       animations:
          selector2_mode6_highlighted: title_large
-         selector2_mode1_highlighted: title_small_left
+         selector2_mode7_highlighted: title_small_left
+         selector2_mode1_highlighted: title_small_left_off
          selector2_mode2_highlighted: title_small_left_off
-         selector2_mode3_highlighted: title_small_left_off
+         selector2_mode3_highlighted: title_small_right_off
          selector2_mode4_highlighted: title_small_right_off
          selector2_mode5_highlighted: title_small_right
     - type: image
       image: badgeDavidBig
       anchor_x: center
       anchor_y: center
-      x: 10%
+      x: -20%
       y: 50%
       scale: .2
       z: 1
       animations:
          selector2_mode6_highlighted: icon_large
-         selector2_mode1_highlighted: icon_small_left
+         selector2_mode7_highlighted: icon_small_left
+         selector2_mode1_highlighted: icon_small_left_off
          selector2_mode2_highlighted: icon_small_left_off
-         selector2_mode3_highlighted: icon_small_left_off
+         selector2_mode3_highlighted: icon_small_right_off
          selector2_mode4_highlighted: icon_small_right_off
          selector2_mode5_highlighted: icon_small_right
   mode06_instr:
     - type: text
       opacity: 0
-      text: "- SOMETHING SOMETHING\n\n- DARK SIDE\n\n- I LIKE TURTLES\n\n- ALSO TACOS RULE"
+      text: "- Hit the pop bumpers to \n fight Maximillian"
       color: white
       anchor_x: center
       anchor_y: center
@@ -713,11 +765,69 @@ widgets:
       animations:
          status_untitled_mode_6_completed: hide_text
          selector2_mode6_highlighted: return_text
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
          selector2_mode3_highlighted: drop_text_down
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
+# Starts in Left
+  mode07_prim:
+    - type: text
+      text: IN - THROUGH - AND BEYOND!
+      font_name: ocr-a-tribute-bold
+      color: red
+      anchor_x: center
+      anchor_y: center
+      x: 10%
+      y: 57%
+      font_size: 16
+      z: 1
+      animations:
+         selector2_mode7_highlighted: title_large
+         selector2_mode1_highlighted: title_small_left
+         selector2_mode2_highlighted: title_small_left_off
+         selector2_mode3_highlighted: title_small_left_off
+         selector2_mode4_highlighted: title_small_right_off
+         selector2_mode5_highlighted: title_small_right_off
+         selector2_mode6_highlighted: title_small_right
+    - type: image
+      image: badgeBeyondBig
+      anchor_x: center
+      anchor_y: center
+      x: 10%
+      y: 50%
+      scale: .2
+      z: 1
+      animations:
+         selector2_mode7_highlighted: icon_large
+         selector2_mode1_highlighted: icon_small_left
+         selector2_mode2_highlighted: icon_small_left_off
+         selector2_mode3_highlighted: icon_small_left_off
+         selector2_mode4_highlighted: icon_small_right_off
+         selector2_mode5_highlighted: icon_small_right_off
+         selector2_mode6_highlighted: icon_small_right
+  mode07_instr:
+    - type: text
+      opacity: 0
+      text: "- Complete 3 scenes to enable \n\n - More completions awards larger score"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 28
+      font_name: ocr-a-tribute-bold
+      z: 1
+      animations:
+         status_untitled_mode_7_completed: hide_text
+         selector2_mode7_highlighted: return_text
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
   mode01_check:
     - type: image
       image: checkmark
@@ -732,6 +842,7 @@ widgets:
          selector2_mode4_highlighted: check_unseen
          selector2_mode5_highlighted: check_unseen
          selector2_mode6_highlighted: check_unseen
+         selector2_mode7_highlighted: check_unseen
   mode02_check:
     - type: image
       image: checkmark
@@ -746,6 +857,7 @@ widgets:
          selector2_mode4_highlighted: check_unseen
          selector2_mode5_highlighted: check_unseen
          selector2_mode6_highlighted: check_unseen
+         selector2_mode7_highlighted: check_unseen
          selector2_mode1_highlighted: check_unseen
   mode03_check:
     - type: image
@@ -760,6 +872,7 @@ widgets:
          selector2_mode4_highlighted: check_unseen
          selector2_mode5_highlighted: check_unseen
          selector2_mode6_highlighted: check_unseen
+         selector2_mode7_highlighted: check_unseen
          selector2_mode1_highlighted: check_unseen
          selector2_mode2_highlighted: check_unseen
   mode04_check:
@@ -774,6 +887,7 @@ widgets:
          selector2_mode4_highlighted: check_seen
          selector2_mode5_highlighted: check_unseen
          selector2_mode6_highlighted: check_unseen
+         selector2_mode7_highlighted: check_unseen
          selector2_mode1_highlighted: check_unseen
          selector2_mode2_highlighted: check_unseen
          selector2_mode3_highlighted: check_unseen
@@ -788,6 +902,7 @@ widgets:
       animations:
          selector2_mode5_highlighted: check_seen
          selector2_mode6_highlighted: check_unseen
+         selector2_mode7_highlighted: check_unseen
          selector2_mode1_highlighted: check_unseen
          selector2_mode2_highlighted: check_unseen
          selector2_mode3_highlighted: check_unseen
@@ -802,11 +917,45 @@ widgets:
       opacity: 0
       animations:
          selector2_mode6_highlighted: check_seen
+         selector2_mode7_highlighted: check_unseen
          selector2_mode1_highlighted: check_unseen
          selector2_mode2_highlighted: check_unseen
          selector2_mode3_highlighted: check_unseen
          selector2_mode4_highlighted: check_unseen
          selector2_mode5_highlighted: check_unseen
+  mode07_check:
+    - type: image
+      image: checkmark
+      anchor_x: center
+      anchor_y: center
+      x: 35%
+      z: 40
+      opacity: 0
+      animations:
+         selector2_mode7_highlighted: check_seen
+         selector2_mode1_highlighted: check_unseen
+         selector2_mode2_highlighted: check_unseen
+         selector2_mode3_highlighted: check_unseen
+         selector2_mode4_highlighted: check_unseen
+         selector2_mode5_highlighted: check_unseen
+         selector2_mode6_highlighted: check_unseen
+  mode07_redx:
+    - type: image
+      image: redx
+      anchor_x: center
+      anchor_y: center
+      x: 35%
+      z: 40
+      opacity: 0
+      animations:
+         selector2_mode7_highlighted: check_seen
+         selector2_mode1_highlighted: check_unseen
+         selector2_mode2_highlighted: check_unseen
+         selector2_mode3_highlighted: check_unseen
+         selector2_mode4_highlighted: check_unseen
+         selector2_mode5_highlighted: check_unseen
+         selector2_mode6_highlighted: check_unseen
+
   mode01_result:
     - type: text
       text: "CYGNUS LOCATED:\n\nTime: (modestat_1_final_timing) seconds"
@@ -827,6 +976,7 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
   mode02_result:
     - type: text
       text: "BLACK HOLE\nGRAVITY ESCAPED"
@@ -846,6 +996,7 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
   mode03_result:
     - type: text
@@ -865,6 +1016,7 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
   mode04_result:
@@ -884,6 +1036,7 @@ widgets:
          selector2_mode4_highlighted: return_text
          selector2_mode5_highlighted: drop_text_down
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
          selector2_mode3_highlighted: drop_text_down
@@ -903,6 +1056,7 @@ widgets:
          status_untitled_mode_5_completed: check_seen
          selector2_mode5_highlighted: return_text
          selector2_mode6_highlighted: drop_text_down
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
          selector2_mode3_highlighted: drop_text_down
@@ -922,12 +1076,33 @@ widgets:
       animations:
          status_untitled_mode_6_completed: check_seen
          selector2_mode6_highlighted: return_text
+         selector2_mode7_highlighted: drop_text_down
          selector2_mode1_highlighted: drop_text_down
          selector2_mode2_highlighted: drop_text_down
          selector2_mode3_highlighted: drop_text_down
          selector2_mode4_highlighted: drop_text_down
          selector2_mode5_highlighted: drop_text_down
-
+  mode07_result:
+    - type: text
+      text: "NO RESULTS YET"
+      color: white
+      anchor_x: center
+      anchor_y: center
+      halign: left
+      x: 65%
+      font_size: 40
+      font_name: ocr-a-tribute-bold
+      z: 1
+      opacity: 0
+      animations:
+         status_untitled_mode_7_completed: check_seen
+         selector2_mode7_highlighted: return_text
+         selector2_mode1_highlighted: drop_text_down
+         selector2_mode2_highlighted: drop_text_down
+         selector2_mode3_highlighted: drop_text_down
+         selector2_mode4_highlighted: drop_text_down
+         selector2_mode5_highlighted: drop_text_down
+         selector2_mode6_highlighted: drop_text_down
 #\u00B7
 #  mode01_left:
 #    - type: image
