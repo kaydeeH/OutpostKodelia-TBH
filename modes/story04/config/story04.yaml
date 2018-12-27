@@ -158,10 +158,10 @@ state_machines:
         events: shotScoopMeteor_hit
       - source: start
         target: has_failed
-        events: timer_meteorTimer_complete, ball_has_been_lost
+        events: timer_meteortimer_complete, ball_has_been_lost
       - source: will_pass
         target: has_passed
-        events: timer_meteorTimer_complete, ball_has_been_lost
+        events: timer_meteortimer_complete, ball_has_been_lost
 
 
 variable_player:
@@ -175,7 +175,7 @@ variable_player:
     timeRemain:
        int: 30
        action: set
-  timer_meteorTimer_started:
+  timer_meteortimer_started:
     timeRemain:
        int: (ticks_remaining)
        action: set
@@ -184,7 +184,7 @@ variable_player:
     score: ((current_player.meteor_hits + 1) * 50000) + (10000 * current_player.timeRemain)
     meteor_accum: ((current_player.meteor_hits + 1) * 50000) + (10000 * current_player.timeRemain)
     bonuscount: 3
-  timer_meteorTimer_tick:
+  timer_meteortimer_tick:
      timeRemain:
        int: (ticks_remaining)
        action: set
@@ -274,7 +274,7 @@ show_player:
        loops: 0
 
 timers:
-   meteorTimer:
+   meteortimer:
      max_value: 30
      start_value: 30
      end_value: 0

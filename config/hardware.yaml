@@ -4,7 +4,7 @@ hardware:
   platform: p3_roc
   driverboards: pdb
 
-p3_roc:
+p_roc:
   use_watchdog: true
   watchdog_time: 1s
 
@@ -139,28 +139,28 @@ drop_targets:
          switch: s_dTargetCR
 
 drop_target_banks:
-     leftFull:
+     leftfull:
          drop_targets: L0, L1, L2, L3
          reset_coils: c_dropLeft0, c_dropLeft1
          reset_on_complete: 500ms
          ignore_switch_ms: 200ms
          reset_events:
            player_turn_will_start, mode_using_targets_ended, drops_left_reset
-     rightFull:
+     rightfull:
          drop_targets: R0, R1, R2, R3
          reset_coils: c_dropRight0, c_dropRight1
          reset_on_complete: 500ms
          ignore_switch_ms: 200ms
          reset_events:
            player_turn_will_start, mode_using_targets_ended, drops_right_reset
-     leftCenter:
+     leftcenter:
          drop_targets: LC
          reset_coils: c_dropCenterL
 #        reset_on_complete: 500ms
          ignore_switch_ms: 200ms
          reset_events:
            player_turn_will_start, mode_using_targets_ended, drop_left_center_reset
-     rightCenter:
+     rightcenter:
          drop_targets: RC
          reset_coils: c_dropCenterR
 #        reset_on_complete: 500ms

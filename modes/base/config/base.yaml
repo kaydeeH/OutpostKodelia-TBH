@@ -154,7 +154,7 @@ shots:
       light: l_scoop
     profile: shotProfileScoop
     advance_events: selector_item_selected, ach_completed
-    enable_events: story_is_completed, scoop_reset
+    enable_events: story_is_about_to_end, story_is_about_to_fail, story_is_completed, scoop_reset
     disable_events: story_is_about_to_begin
     reset_events: scoop_reset
 

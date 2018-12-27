@@ -351,6 +351,7 @@ variable_player:
   player_bonustype1{value>1}:
      score:
         int: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+
   player_bonustype2{value==1}:
      bonus_multiplier:
         int: 1
@@ -359,6 +360,7 @@ variable_player:
   player_bonustype2{value>1}:
      score:
         int: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+
   player_bonustype3{value==1}:
      bonus_multiplier:
         int: 1
@@ -367,6 +369,7 @@ variable_player:
   player_bonustype3{value>1}:
      score:
         int: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+
   player_bonustype4{value==1}:
      bonus_multiplier:
         int: 1

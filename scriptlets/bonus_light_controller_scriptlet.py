@@ -1,8 +1,8 @@
 from mpf.core.scriptlet import Scriptlet
 from mpf.devices.light import Light
-from mpf.core.device_manager import DeviceCollectionType
+from mpf.core.device_manager import DeviceCollection
 
-lights = None  # type: DeviceCollectionType[str, Light]
+lights = None  # type: DeviceCollection[str, Light]
 
 
 class BonusLightController(Scriptlet):
