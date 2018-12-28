@@ -48,7 +48,7 @@ event_player:
      - rescue_lane_activated
    shotoutlanesacrifice_lit_hit:
      - sacrifice_lane_activated
-   ball_save_rescueSave_saving_ball:
+   ball_save_rescuesave_saving_ball:
      invoke_notify_by_event:
        new_text: "RESCUE"
        new_value: "X"
@@ -82,7 +82,7 @@ variable_player:
      rescue_is_active:
         action: set
         int: 1
-   ball_save_rescueSave_saving_ball:
+   ball_save_rescuesave_saving_ball:
      outlane_rescue_value: 75000
    sacrifice_lane_activated:
      score: current_player.outlane_sacrifice_value * current_player.temp_playfield_x * current_player.perm_playfield_x

@@ -185,12 +185,12 @@ shots:
        light: l_dropLeft3
      profile: shotProfileStory05Drops
    corLC:
-     switch: s_dTargetCL
+     switch: s_dtargetcl
      show_tokens:
        light: l_dropCenterLeft
      profile: shotProfileStory05Drops
    corRC:
-     switch: s_dTargetCR
+     switch: s_dtargetcr
      show_tokens:
        light: l_dropCenterRight
      profile: shotProfileStory05Drops

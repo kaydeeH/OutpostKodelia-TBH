@@ -263,10 +263,10 @@ switch:
   s_credit:
     x: 0.16067358225952147
     y: 0.9727891156462585
-  s_dTargetCL:
+  s_dtargetcl:
     x: 0.42411146276692496
     y: 0.454421768707483
-  s_dTargetCR:
+  s_dtargetcr:
     x: 0.5245589144748809
     y: 0.45714285714285713
   s_dTargetL0:

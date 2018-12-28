@@ -14,7 +14,7 @@ variable_player:
     score: 0|block
   s_dTargetR3_active:
     score: 0|block
-  s_dTargetCL_active:
+  s_dtargetcl_active:
     score: 0|block
-  s_dTargetCR_active:
+  s_dtargetcr_active:
     score: 0|block

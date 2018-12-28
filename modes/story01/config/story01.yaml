@@ -180,7 +180,7 @@ shots:
       light: l_scoop
     profile: shotProfileScoopStory01
   shotLane0Story01:
-    switch: s_lane0, s_dTargetCL
+    switch: s_lane0, s_dtargetcl
     show_tokens:
       light: l_lane0
     profile: shotProfileToplanesStory01
@@ -200,7 +200,7 @@ shots:
       light: l_lane3
     profile: shotProfileToplanesStory01
   shotLane4Story01:
-    switch: s_lane4, s_dTargetCR
+    switch: s_lane4, s_dtargetcr
     show_tokens:
       light: l_lane4
     profile: shotProfileToplanesStory01

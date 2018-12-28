@@ -7,10 +7,10 @@ event_player:
      - ball1_ct1
      - ball1_ct2
      - ball1_ct3
-   s_dTargetCR_active:
+   s_dtargetcr_active:
      - drop_left_center_reset
      - count_center_drop
-   s_dTargetCL_active:
+   s_dtargetcl_active:
      - drop_right_center_reset
      - count_center_drop
    s_sTargetYellowL_active:
@@ -20,16 +20,19 @@ event_player:
      - drop_left_center_reset
      - reenable_outlane_sacrifice
 
-#TODO Add some points for hitting these targets!!!
 counters:
    center_drop_rescue:
      count_events: count_center_drop, ball1_ct1, ball1_ct2, ball1_ct3
      count_complete_value: 6
      events_when_complete: reenable_outlane_sacrifice
      persist_state: true
+     reset_on_complete: true
+     disable_on_complete: false
    center_drop_sac:
      count_events: count_center_drop
      count_complete_value: 6
      persist_state: true
      events_when_complete: reenable_outlane_rescue
+     reset_on_complete: true
+     disable_on_complete: false
 

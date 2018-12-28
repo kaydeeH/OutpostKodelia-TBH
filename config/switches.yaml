@@ -115,10 +115,10 @@ switches:
   s_jet_upper_right:
     number: 2/1/2
 #    tags: playfield_active
-  s_dTargetCL:
+  s_dtargetcl:
     number: 2/1/4
 #    tags: playfield_active
-  s_dTargetCR:
+  s_dtargetcr:
     number: 2/1/3
 #    tags: playfield_active
   s_credit: #wired to upper/center controller

@@ -237,14 +237,14 @@ shots:
     advance_events: gallery_light_7_change
     reset_events: gallery_light_7_off
   shot_dt_cr:
-    switch: s_dTargetCR
+    switch: s_dtargetcr
     show_tokens:
       light: l_dropCenterRight
     profile: shot_profile_gallery_targets
     advance_events: gallery_light_8_change
     reset_events: gallery_light_8_off
   shot_dt_cl:
-    switch: s_dTargetCL
+    switch: s_dtargetcl
     show_tokens:
       light: l_dropCenterLeft
     profile: shot_profile_gallery_targets

@@ -134,9 +134,9 @@ drop_targets:
      R3:
          switch: s_dTargetR3
      LC:
-         switch: s_dTargetCL
+         switch: s_dtargetcl
      RC:
-         switch: s_dTargetCR
+         switch: s_dtargetcr
 
 drop_target_banks:
      leftfull:

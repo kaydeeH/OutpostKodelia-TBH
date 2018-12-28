@@ -46,9 +46,9 @@ variable_player:
     drops: 1
   s_dTargetR3_active:
     drops: 1
-  s_dTargetCL_active:
+  s_dtargetcl_active:
     drops: 1
-  s_dTargetCR_active:
+  s_dtargetcr_active:
     drops: 1
 
 # Gyro - Spins

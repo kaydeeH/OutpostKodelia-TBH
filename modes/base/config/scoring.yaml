@@ -330,6 +330,14 @@ variable_player:
     other_switches: 1
     bonuscount: 1
 
+# Center Drops
+  s_dtargetcl_active:
+    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    bonuscount: 1
+  s_dtargetcr_active:
+    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    bonuscount: 1
+
 # This is the 50 pops + spins bonus for the bonus multiplier
   gravityAssistBonus:
     score: 5000  * current_player.temp_playfield_x * current_player.perm_playfield_x
