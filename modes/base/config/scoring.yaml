@@ -297,10 +297,10 @@ variable_player:
 #todo If lit ball save
 #todo else
 # If all else fails, 10000 pts
-#  s_roOutLaneLeft_active:
+#  s_rooutlaneleft_active:
 #    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
 #    bonuscount: 1
-#  s_roOutLaneRight_active:
+#  s_rooutlaneright_active:
 #    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
 #    bonuscount: 1
 

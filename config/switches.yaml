@@ -33,7 +33,7 @@ switches:
   s_dTargetL3:
     number: 0/0/7
 #    tags: playfield_active
-  s_roOutLaneLeft:
+  s_rooutlaneleft:
     number: 0/1/0
     tags: playfield_active
   s_roInLaneLeft:
@@ -74,7 +74,7 @@ switches:
   s_dTargetR3:
     number: 1/0/7
 #    tags: playfield_active
-  s_roOutLaneRight:
+  s_rooutlaneright:
     number: 1/1/0
     tags: playfield_active
   s_roInLaneRight:

@@ -173,13 +173,13 @@ keyboard:
   4:
     switch: s_lane4
   x:
-    switch: s_roOutLaneLeft
+    switch: s_rooutlaneleft
   c:
     switch: s_roInLaneLeft
   v:
     switch: s_roInLaneRight
   b:
-    switch: s_roOutLaneRight
+    switch: s_rooutlaneright
   f:
     switch: s_sTargetDropL
   g:

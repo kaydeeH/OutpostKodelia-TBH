@@ -338,10 +338,10 @@ switch:
   s_roInLaneRight:
     x: 0.8286914765906364
     y: 0.7306122448979592
-  s_roOutLaneLeft:
+  s_rooutlaneleft:
     x: 0.04986421518398942
     y: 0.7374149659863947
-  s_roOutLaneRight:
+  s_rooutlaneright:
     x: 0.8956564443959402
     y: 0.7469387755102042
   s_sTargetDropL:

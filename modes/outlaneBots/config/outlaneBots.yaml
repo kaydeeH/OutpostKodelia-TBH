@@ -3,8 +3,8 @@
 #This will be the mode that handles the RESCUE and SACRIFICE outlanes
 
 
-# s_roOutLaneLeft - RESCUE
-# s_roOutLaneRight - SACRIFICE
+# s_rooutlaneleft - RESCUE
+# s_rooutlaneright - SACRIFICE
 
 # --- SCORING VALUES -- SET AT GAME START IN /base/config/scoring.yaml
 # outlane_rescue_value:
@@ -104,34 +104,34 @@ variable_player:
         int: 1
 
 shot_profiles:
-   outlaneBotRescue:
+   outlanebotrescue:
      advance_on_hit: false
      states:
         - name: unlit
-          show: outlaneRescueOff
+          show: outlanerescueoff
           manual_advance: true
         - name: lit
-          show: outlaneRescueOn
+          show: outlanerescueon
           manual_advance: true
-   outlaneBotSacrifice:
+   outlanebotsacrifice:
      advance_on_hit: false
      states:
         - name: unlit
-          show: outlaneSacrificeOff
+          show: outlanesacrificeoff
           manual_advance: true
         - name: lit
-          show: outlaneSacrificeOn
+          show: outlanesacrificeon
           manual_advance: true
 
 shots:
-  shotOutlaneRescue:
-    switch: s_roOutLaneLeft
-    profile: outlaneBotRescue
+  shotoutlanerescue:
+    switch: s_rooutlaneleft
+    profile: outlanebotrescue
     advance_events: enable_outlane_rescue
     reset_events: rescue_lane_activated
-  shotOutlaneSacrifice:
-    switch: s_roOutLaneRight
-    profile: outlaneBotSacrifice
+  shotoutlanesacrifice:
+    switch: s_rooutlaneright
+    profile: outlanebotsacrifice
     advance_events: enable_outlane_sacrifice
     reset_events: sacrifice_lane_activated
 
@@ -160,22 +160,22 @@ shows:
        duration: 3
 # RESCUE LIGHT -- l_specialLeft
 # SACRIFICE LIGHT -- l_specialRight
-   outlaneRescueOff:
+   outlanerescueoff:
      - time: 0
        lights:
          l_specialLeft : off
        duration: -1
-   outlaneRescueOn:
+   outlanerescueon:
      - time: 0
        lights:
          l_specialLeft : blue
        duration: -1
-   outlaneSacrificeOff:
+   outlanesacrificeoff:
      - time: 0
        lights:
          l_specialRight : off
        duration: -1
-   outlaneSacrificeOn:
+   outlanesacrificeon:
      - time: 0
        lights:
          l_specialRight : red
