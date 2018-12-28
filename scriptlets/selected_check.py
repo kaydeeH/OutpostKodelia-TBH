@@ -31,7 +31,7 @@ class SelectedCheck(Scriptlet):
         player = self.machine.game.player
         if (player.vars.get(modes.get(player.vars.get("mode_pick"))) == 0) and player.vars.get("mode_pick") != 7:
             self.machine.events.post('selected_mode_is_available')
-        if player.vars.get("mode_pick") == 7 and player.vars.get(startedmodes.get(1)) + player.vars.get(startedmodes.get(2)) + player.vars.get(startedmodes.get(3)) + player.vars.get(startedmodes.get(4)) + player.vars.get(startedmodes.get(5)) + player.vars.get(startedmodes.get(6)) > 2:
+        if player.vars.get("mode_pick") == 7 and player.vars.get(modes.get(1)) + player.vars.get(modes.get(2)) + player.vars.get(modes.get(3)) + player.vars.get(modes.get(4)) + player.vars.get(modes.get(5)) + player.vars.get(modes.get(6)) > 2:
             self.machine.events.post('selected_mode_is_available')
             self.machine.events.post('wizard_mode_is_available')
 
