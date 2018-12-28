@@ -77,23 +77,30 @@ variable_player:
         action: set
         int: current_player.outlane_rescue_value * current_player.temp_playfield_x * current_player.perm_playfield_x
    increase_rescue_value:
-     outlane_rescue_value: 75000
+     outlane_rescue_value:
+        action: add
+        int: 75000
    enable_outlane_rescue:
      rescue_is_active:
         action: set
         int: 1
-   ball_save_rescuesave_saving_ball:
-     outlane_rescue_value: 75000
+     outlane_rescue_value:
+        action: add
+        int: 75000
    sacrifice_lane_activated:
      score: current_player.outlane_sacrifice_value * current_player.temp_playfield_x * current_player.perm_playfield_x
      bonuscount: 1
    sacrifice_complete:
-     outlane_sacrifice_value: current_player.outlane_sacrifice_value * 10
+     outlane_sacrifice_value:
+        action: set
+        int: current_player.outlane_sacrifice_value * 10
      sacrifice_is_active:
         action: set
         int: 0
    increase_sacrifice_value:
-     outline_sacrifice_value: current_player.outlane_sacrifice_value * 1.1
+     outlane_sacrifice_value:
+        action: add
+        int: current_player.outlane_sacrifice_value * .1
    set_sacrifice_off:
      sacrifice_is_active:
         action: set

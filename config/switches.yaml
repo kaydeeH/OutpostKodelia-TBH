@@ -23,15 +23,19 @@ switches:
     tags: playfield_active
   s_dTargetL0:
     number: 0/0/4
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_dTargetL1:
     number: 0/0/5
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_dTargetL2:
     number: 0/0/6
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_dTargetL3:
     number: 0/0/7
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_rooutlaneleft:
     number: 0/1/0
@@ -64,15 +68,19 @@ switches:
     tags: playfield_active
   s_dTargetR0:
     number: 1/0/4
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_dTargetR1:
     number: 1/0/5
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_dTargetR2:
     number: 1/0/6
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_dTargetR3:
     number: 1/0/7
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_rooutlaneright:
     number: 1/1/0
@@ -117,9 +125,11 @@ switches:
 #    tags: playfield_active
   s_dtargetcl:
     number: 2/1/4
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_dtargetcr:
     number: 2/1/3
+    ignore_window_ms: 250
 #    tags: playfield_active
   s_credit: #wired to upper/center controller
     number: 2/1/7

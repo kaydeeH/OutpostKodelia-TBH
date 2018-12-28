@@ -20,6 +20,27 @@ event_player:
      - drop_left_center_reset
      - reenable_outlane_sacrifice
 
+variable_player:
+   ball1_ct1:
+     debug_rescue_count:
+        action: add
+        int: 1
+   ball1_ct2:
+     debug_rescue_count:
+        action: add
+        int: 1
+   ball1_ct3:
+     debug_rescue_count:
+        action: add
+        int: 1
+   count_center_drop:
+     debug_rescue_count:
+        action: add
+        int: 1
+     debug_sacrifice_count:
+        action: add
+        int: 1
+
 counters:
    center_drop_rescue:
      count_events: count_center_drop, ball1_ct1, ball1_ct2, ball1_ct3

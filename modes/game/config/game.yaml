@@ -494,6 +494,41 @@ slides:
         x: 71%
         y: 94%
         z: 10
+# DEBUG
+      - type: text
+        anchor_x: center
+        anchor_y: center
+        x: 30%
+        text: "RESCUE"
+      - type: text
+        anchor_x: center
+        anchor_y: center
+        x: 30%
+        y: 60%
+        text: (outlane_rescue_value)
+      - type: text
+        anchor_x: center
+        anchor_y: center
+        x: 30%
+        y: 70%
+        text: (debug_rescue_count)
+      - type: text
+        anchor_x: center
+        anchor_y: center
+        x: 70%
+        text: "SACRIFICE"
+      - type: text
+        anchor_x: center
+        anchor_y: center
+        x: 70%
+        y: 60%
+        text: (outlane_sacrifice_value)
+      - type: text
+        anchor_x: center
+        anchor_y: center
+        x: 70%
+        y: 70%
+        text: (debug_sacrifice_count)
 
 widget_player:
   # Handle the creation of the single player display
