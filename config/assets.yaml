@@ -99,5 +99,39 @@ images:
        file: badge-in_through_beyond-big.png
     checkmark:
        file: checkmark.png
+    nomark:
+       file: nomark.png
     redx:
        file: redx.png
+    alex:
+       file: alex.png
+    alexoff:
+       file: alex-off.png
+    charlie:
+       file: charlie.png
+    charlieoff:
+       file: charlie-off.png
+    dan:
+       file: dan.png
+    danoff:
+       file: dan-off.png
+    kate:
+       file: kate.png
+    kateoff:
+       file: kate-off.png
+    harry:
+       file: harry.png
+    harryoff:
+       file: harry-off.png
+    hanz:
+       file: hanz.png
+    hanzoff:
+       file: hanz-off.png
+    vincent:
+       file: vincent.png
+    vincentoff:
+       file: vincent-off.png
+    bob:
+       file: bob.png
+    boboff:
+       file: bob-off.png

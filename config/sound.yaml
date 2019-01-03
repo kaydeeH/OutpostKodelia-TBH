@@ -22,12 +22,14 @@ sound_system:
 
 sounds:
     # Generic SFX
-    testFX1:
+    testFX1_old:
         file: 18382infernohvylas.wav
     testFX2:
         file: 151022__bubaproducer__laser-shot-silenced.wav
-    testFX3:
+    testFX1:
         file: 191594__fins__laser.wav
+    testFX3:
+        file: 191594__fins__laser2.wav
     testFX4:
         file: 234083__211redman112__lasgun-fire.ogg
     testFX5:
