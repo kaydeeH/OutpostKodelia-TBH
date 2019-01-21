@@ -1,0 +1,7 @@
+#show_version=5
+ - duration: -1
+   lights:
+     l_dropLeft0: green
+     l_dropLeft1: green
+     l_dropLeft2: green
+     l_dropLeft3: green

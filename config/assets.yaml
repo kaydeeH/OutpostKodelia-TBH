@@ -101,8 +101,8 @@ images:
        file: checkmark.png
     nomark:
        file: nomark.png
-    redx:
-       file: redx.png
+#    redx:
+#       file: redx.png
     alex:
        file: alex.png
     alexoff:

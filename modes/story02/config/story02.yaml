@@ -1,10 +1,9 @@
 #config_version=5
 
 config:
-#   - ballsave.yaml
    - story02-scoring.yaml
+#   - ballsave.yaml
 
-#TODO We should fail the mode if stablization gets to 0
 #TODO Character collect -- could be completion, or reaching stabilization
 
 mode:
@@ -53,6 +52,34 @@ event_player:
     - story_is_completed
    story_is_completed_unsuccessful:
     - story_is_completed
+   s_spinner_active:
+    - enable_lane_shot
+   timer_traj_timer_complete:
+    - traj_time_out
+   lanetraj0_available_hit:
+    - traj_set
+   lanetraj1_available_hit:
+    - traj_set
+   lanetraj2_available_hit:
+    - traj_set
+   lanetraj3_available_hit:
+    - traj_set
+   lanetraj4_available_hit:
+    - traj_set
+   enable_scoop_loop:
+    - status_escape
+
+
+
+random_event_player:
+  enable_lane_shot:
+    - enable_lane_shot_1
+    - enable_lane_shot_2
+    - enable_lane_shot_3
+    - enable_lane_shot_4
+    - enable_lane_shot_5
+  time_traj_timer_complete:
+    - traj_time_out
 
 #  Base intro / outro shows
 show_player:
@@ -73,6 +100,93 @@ show_player:
         speed: 40
         loops: 1
         events_when_completed: scoop_eject
+   player_shot_lanetraj0{value==1}:
+      lane1shot:
+        priority: 950
+        loops: -1
+      lane2shot:
+        action: stop
+      lane3shot:
+        action: stop
+      lane4shot:
+        action: stop
+      lane5shot:
+        action: stop
+   player_shot_lanetraj1{value==1}:
+      lane2shot:
+        priority: 950
+        loops: -1
+      lane1shot:
+        action: stop
+      lane3shot:
+        action: stop
+      lane4shot:
+        action: stop
+      lane5shot:
+        action: stop
+   player_shot_lanetraj2{value==1}:
+      lane3shot:
+        priority: 950
+        loops: -1
+      lane1shot:
+        action: stop
+      lane2shot:
+        action: stop
+      lane4shot:
+        action: stop
+      lane5shot:
+        action: stop
+   player_shot_lanetraj3{value==1}:
+      lane4shot:
+        priority: 950
+        loops: -1
+      lane1shot:
+        action: stop
+      lane2shot:
+        action: stop
+      lane3shot:
+        action: stop
+      lane5shot:
+        action: stop
+   player_shot_lanetraj4{value==1}:
+      lane5shot:
+        priority: 950
+        loops: -1
+      lane1shot:
+        action: stop
+      lane2shot:
+        action: stop
+      lane3shot:
+        action: stop
+      lane4shot:
+        action: stop
+   traj_time_out:
+      lane1shot:
+         action: stop
+      lane2shot:
+         action: stop
+      lane3shot:
+         action: stop
+      lane4shot:
+         action: stop
+      lane5shot:
+         action: stop
+   traj_set:
+      lane1shot:
+         action: stop
+      lane2shot:
+         action: stop
+      lane3shot:
+         action: stop
+      lane4shot:
+         action: stop
+      lane5shot:
+         action: stop
+variable_player:
+  traj_set:
+    score: 100000
+  scoop_out_success:
+    score: 500000
 
 shows:
    story_02_intro:
@@ -97,12 +211,12 @@ slides:
         font_size: 100
         font_name: ocr-a-tribute-bold
       - type: text
-        text: Stabalize the Palomino by hitting Pop Bumpers
+        text: Hit the Spinner
         y: 40%
         color: red
         font_size: 50
       - type: text
-        text: When lit, hit the spinner to engage Thrusters
+        text: Then hit the lit lane (3x)
         y: 30%
         color: red
         font_size: 50
@@ -139,42 +253,39 @@ slides:
 # The below is mode specific data
 
 
-variable_player:
-   story_intro_complete:
-     stability:
-       action: set
-       int: 50
-   timer_destablizer_tick:
-      stability: -1
-   shotgrouppopbumpers_hit:
-      stability: 5
-
 
 timers:
-   destablizer:
-     start_value: 0
+   traj_timer:
+     start_value: 5
+     end_value: 0
      tick_interval: 1s
-     direction: up
+     direction: down
      start_running: no
      control_events:
-       - event: story_intro_complete
-         action: start
+       - event: enable_lane_shot
+         action: restart
+   scoop_timer:
+     start_value: 10
+     end_value: 0
+     tick_interval: 1s
+     direction: down
+     start_running: no
+     control_events:
+       - event: enable_scoop_loop
+         action: restart
+       - event: timer_scoop_off_timer_complete
+         action: restart
+   scoop_off_timer:
+     start_value: 10
+     end_value: 0
+     tick_interval: 1s
+     direction: down
+     start_running: no
+     control_events:
+       - event: timer_scoop_timer_complete
+         action: restart
 
 widget_player:
-#   story_intro_complete:
-#      yt_remain_widget_02:
-#         slide: scoring_slide
-   status_stabilize_engines:
-      yt_remain_widget_02:
-         slide: scoring_slide
-   status_engage_engines:
-      yt_remain_widget_02:
-         action: remove
-      yt_engine_widget_02:
-         slide: scoring_slide
-   remove_status_engage_engines:
-      yt_engine_widget_02:
-         action: remove
    status_escape:
       yt_engine_widget_02:
          action: remove
@@ -187,70 +298,135 @@ widget_player:
          action: remove
 
 shots:
-  spinnerEngines:
-    switch: s_spinner
-    show_tokens:
-       light: l_spinner
-    disable_events: status_stabilize_engines
-    enable_events: status_engage_engines
-  shotScoopEscape:
-    switch: s_ir_scoop_detect
-    reset_events: story_intro_complete
-    advance_events: status_escape
-    show_tokens:
-      light: l_scoop
-    profile: shotProfileScoopEscape
+   lanetraj0:
+     switch: s_lane0
+     profile: traj_lanes
+     advance_events: enable_lane_shot_1
+     reset_events: traj_time_out, traj_set, enable_lane_shot_2, enable_lane_shot_3, enable_lane_shot_4, enable_lane_shot_5, lanetraj1_traj_lanes_off_hit, lanetraj2_traj_lanes_off_hit, lanetraj3_traj_lanes_off_hit, lanetraj4_traj_lanes_off_hit
+   lanetraj1:
+     switch: s_lane1
+     profile: traj_lanes
+     advance_events: enable_lane_shot_2
+     reset_events: traj_time_out, traj_set, enable_lane_shot_1, enable_lane_shot_3, enable_lane_shot_4, enable_lane_shot_5, lanetraj0_traj_lanes_off_hit, lanetraj2_traj_lanes_off_hit, lanetraj3_traj_lanes_off_hit, lanetraj4_traj_lanes_off_hit
+   lanetraj2:
+     switch: s_lane2
+     profile: traj_lanes
+     advance_events: enable_lane_shot_3
+     reset_events: traj_time_out, traj_set, enable_lane_shot_1, enable_lane_shot_2, enable_lane_shot_4, enable_lane_shot_5, lanetraj0_traj_lanes_off_hit, lanetraj1_traj_lanes_off_hit, lanetraj3_traj_lanes_off_hit, lanetraj4_traj_lanes_off_hit
+   lanetraj3:
+     switch: s_lane3
+     profile: traj_lanes
+     advance_events: enable_lane_shot_4
+     reset_events: traj_time_out, traj_set, enable_lane_shot_1, enable_lane_shot_2, enable_lane_shot_3, enable_lane_shot_5, lanetraj0_traj_lanes_off_hit, lanetraj1_traj_lanes_off_hit, lanetraj2_traj_lanes_off_hit, lanetraj4_traj_lanes_off_hit
+   lanetraj4:
+     switch: s_lane4
+     profile: traj_lanes
+     advance_events: enable_lane_shot_5
+     reset_events: traj_time_out, traj_set, enable_lane_shot_1, enable_lane_shot_2, enable_lane_shot_3, enable_lane_shot_4, lanetraj0_traj_lanes_off_hit, lanetraj1_traj_lanes_off_hit, lanetraj2_traj_lanes_off_hit, lanetraj3_traj_lanes_off_hit
+   shotScoopEscape:
+     switch: s_ir_scoop_detect
+     reset_events: story_intro_complete
+     advance_events: status_escape
+     show_tokens:
+       light: l_scoop
+     profile: shotProfileScoopEscape
 
 shot_profiles:
-  shotProfileScoopEscape:
-    show_when_disabled: true
-    advance_on_hit: false
-    block: true
-    states:
-      - name: inactive
-        show: off
-      - name: scoopActive
-        show: popgreen
+   traj_lanes:
+     block: true
+     advance_on_hit: false
+     states:
+       - name: off
+       - name: available
+   shotProfileScoopEscape:
+     show_when_disabled: true
+     advance_on_hit: false
+     block: true
+     states:
+       - name: scoopInactive
+         show: off
+       - name: scoopActive
+         show: popgreen
 
+shot_groups:
+   shot_group_traj:
+       shots: lanetraj0, lanetraj1, lanetraj2, lanetraj3, lanetraj4
+       rotate_left_events: s_flipper_left_active
+       rotate_right_events: s_flipper_right_active
+       enable_events: story_is_about_to_begin
+       disable_events: ball_ending
+
+# Mode 7 States
 state_machines:
-   escapeMachine:
+  beyond:
      states:
        start:
-         label: Start State
-       stabilizeEngines:
-         label: start
-         events_when_started: status_stabilize_engines
-       engageEngines:
-         label: Engage State
-         events_when_started: status_engage_engines
-         events_when_stopped: remove_status_engage_engines
-       escapeReady:
-         label: Escape State
-         events_when_started: status_escape
+         label: mode_entry
+         events_when_started: debug_beyond_start
+       traj01:
+         label: Set Trajectory 1
+         events_when_started: debug_beyond_traj01
+       traj01hit:
+         label: Trajectory 1 Set
+         events_when_started: debug_beyond_traj01hit
+       traj02:
+         label: Set Trajectory 2
+         events_when_started: debug_beyond_traj02
+       traj02hit:
+         label: Trajectory 2 Set
+         events_when_started: debug_beyond_traj02hit
+       traj03:
+         label: Set Trajectory 3
+         events_when_started: debug_beyond_traj03
+       scoopOpen:
+         label: Scoop Open
+         events_when_started: enable_scoop_loop, debug_beyond_scoop_open
+       scoopClosed:
+         label: Scoop Closed
+         events_when_started: debug_beyond_scoop_closed
+       completion:
+         label: completion
+         events_when_started: debug_beyond_completion
      transitions:
        - source: start
-         target: stabilizeEngines
-         events: story_intro_complete
-       - source: stabilizeEngines
-         target: engageEngines
-         events: player_stability{value>=100}
-       - source: engageEngines
-         target: stabilizeEngines
-         events: player_stability{value<100}
-       - source: engageEngines
-         target: escapeReady
-         events: spinnerengines_hit
+         target: traj01
+         events: enable_lane_shot
+       - source: traj01hit
+         target: traj02
+         events: enable_lane_shot
+       - source: traj02hit
+         target: traj03
+         events: enable_lane_shot
+       - source: traj01
+         target: start
+         events: traj_time_out
+       - source: traj02
+         target: traj01hit
+         events: traj_time_out
+       - source: traj03
+         target: traj02hit
+         events: traj_time_out
+       - source: traj01
+         target: traj01hit
+         events: traj_set
+       - source: traj02
+         target: traj02hit
+         events: traj_set
+       - source: traj03
+         target: scoopOpen
+         events: traj_set
+       - source: scoopOpen
+         target: scoopClosed
+         events: scoop_timeout
+       - source: scoopClosed
+         target: scoopOpen
+         events: scoop_timer_reset
+       - source: scoopOpen
+         target: completion
+         events: scoop_out_success
 
 
 widgets:
-   yt_remain_widget_02:
-     - type: text
-       text: "PALOMINO STABILITY: (stability)"
-       y: 80%
-   yt_engine_widget_02:
-     - type: text
-       text: " -- STABILITY ACHIEVED * ENGAGE ENGINES --"
-       y: 80%
    yt_escape_widget_02:
      - type: text
        font_size: 30

@@ -1,8 +1,5 @@
 #config_version=5
 
-config:
-#   - ballsave.yaml
-
 mode:
    start_events: selector_untitled_mode_7_selected
    stop_events: story_is_completed
@@ -33,8 +30,6 @@ event_player:
      - scoop_eject
    in_mode_ball_save:
      - story_is_about_to_fail
-   shotScoopBeyond_shotProfileScoopBeyond_scoopActive_hit:
-     - story_is_about_to_end
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story07_successful
@@ -47,21 +42,17 @@ event_player:
     - story_is_completed
    story_is_completed_unsuccessful:
     - story_is_completed
-# Mode Specific Event Player Stuff
-   s_spinner_active:
-       - enable_lane_shot
-   timer_traj_timer_complete:
-       - traj_time_out
-   lanetraj0_available_hit:
-       - traj_set
-   lanetraj1_available_hit:
-       - traj_set
-   lanetraj2_available_hit:
-       - traj_set
-   lanetraj3_available_hit:
-       - traj_set
-   lanetraj4_available_hit:
-       - traj_set
+   player_wiz_feature_collects{value>=4}:
+    - wiz_enable_discovery_collect
+   shotScoopCollect_shotProfileScoopCollect_scoopActive_hit:
+    - wizard_cashout
+# Award Discovery Bonus, end the mode, reset things, eject the scoop
+   story07_cashout_wiz_cashout_selected:
+    - wizard_complete
+# Reset shots, eject the scoop
+   story07_cashout_wiz_cancel_selected:
+    - wizard_continue
+    - scoop_discovery_not_collected
 
 #  Base intro / outro shows
 show_player:
@@ -77,59 +68,21 @@ show_player:
       story_07_outro:
          events_when_completed: story_outro_complete
          loops: 0
-   enable_lane_shot_1:
-      lane1shot:
-        priority: 950
-        loops: -1
-   enable_lane_shot_2:
-      lane2shot:
-        priority: 950
-        loops: -1
-   enable_lane_shot_3:
-      lane3shot:
-        priority: 950
-        loops: -1
-   enable_lane_shot_4:
-      lane4shot:
-        priority: 950
-        loops: -1
-   enable_lane_shot_5:
-      lane5shot:
-        priority: 950
-        loops: -1
-   traj_time_out:
-      lane1shot:
-         action: stop
-      lane2shot:
-         action: stop
-      lane3shot:
-         action: stop
-      lane4shot:
-         action: stop
-      lane5shot:
-         action: stop
-   traj_set:
-      lane1shot:
-         action: stop
-      lane2shot:
-         action: stop
-      lane3shot:
-         action: stop
-      lane4shot:
-         action: stop
-      lane5shot:
-         action: stop
    shotScoopBeyond_shotProfileScoopBeyond_scoopInactive_hit:
       pinwheel:
         speed: 40
         loops: 1
         events_when_completed: scoop_eject
+   wizard_complete:
+      wizard_complete_show:
+        events_when_completed: story_outro_complete
+        loops: 0
 
 shows:
    story_07_intro:
      - time: 0
        slides: story_07_intro_slide
-       duration: 3
+       duration: 6
    story_07_fail_outro:
      - time: 0
        slides: story_07_outro_fail_slide
@@ -138,6 +91,14 @@ shows:
      - time: 0
        slides: story_07_outro_slide
        duration: 3
+   discovery_collect_show:
+     - time: 0
+       slides: discovery_collect_slide
+       duration: -1
+   wizard_complete_show:
+     - time: 0
+       slides: discovery_collect_slide
+       duration: 5
 
 slides:
    story_07_intro_slide:
@@ -147,6 +108,159 @@ slides:
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+        anchor_x: center
+        anchor_y: center
+        y: 90%
+      - type: text
+        text: "Scenes"
+        color: red
+        font_size: 80
+        font_name: ocr-a-tribute-bold
+        anchor_x: center
+        anchor_y: center
+        y: 75%
+        x: 16.5%
+      - type: text
+        text: "Bonus: (wizard_bonus_value)"
+        color: red
+        font_size: 80
+        font_name: ocr-a-tribute-bold
+        anchor_x: center
+        anchor_y: center
+        y: 60%
+        x: 39%
+      - type: image
+        image: badgeLocateTheCygnusOff
+        anchor_x: center
+        anchor_y: center
+        x: 36%
+        y: 75%
+        z: 10
+      - type: image
+        image: badgeEscapeOff
+        anchor_x: center
+        anchor_y: center
+        x: 45%
+        y: 75%
+        z: 10
+      - type: image
+        image: badgeShootingOff
+        anchor_x: center
+        anchor_y: center
+        x: 54%
+        y: 75%
+        z: 10
+      - type: image
+        image: badgeMeteorOff
+        anchor_x: center
+        anchor_y: center
+        x: 63%
+        y: 75%
+        z: 10
+      - type: image
+        image: badgeCorridorOff
+        anchor_x: center
+        anchor_y: center
+        x: 72%
+        y: 75%
+        z: 10
+      - type: image
+        image: badgeDavidOff
+        anchor_x: center
+        anchor_y: center
+        x: 81%
+        y: 75%
+        z: 10
+      - type: text
+        text: "Crew:"
+        color: red
+        font_size: 80
+        font_name: ocr-a-tribute-bold
+        anchor_x: center
+        anchor_y: center
+        y: 45%
+        x: 20.0%
+      - type: image
+        image: alexoff
+        anchor_x: center
+        anchor_y: center
+        x: 36%
+        y: 45%
+        z: 10
+      - type: image
+        image: charlieoff
+        anchor_x: center
+        anchor_y: center
+        x: 44%
+        y: 45%
+        z: 10
+      - type: image
+        image: danoff
+        anchor_x: center
+        anchor_y: center
+        x: 52%
+        y: 45%
+        z: 10
+      - type: image
+        image: kateoff
+        anchor_x: center
+        anchor_y: center
+        x: 60%
+        y: 45%
+        z: 10
+      - type: image
+        image: harryoff
+        anchor_x: center
+        anchor_y: center
+        x: 68%
+        y: 45%
+        z: 10
+      - type: image
+        image: hanzoff
+        anchor_x: center
+        anchor_y: center
+        x: 76%
+        y: 45%
+        z: 10
+      - type: image
+        image: vincentoff
+        anchor_x: center
+        anchor_y: center
+        x: 84%
+        y: 45%
+        z: 10
+      - type: image
+        image: boboff
+        anchor_x: center
+        anchor_y: center
+        x: 92%
+        y: 45%
+        z: 10
+      - type: text
+        text: "Discovery Value"
+        color: red
+        font_size: 80
+        font_name: ocr-a-tribute-bold
+        anchor_x: center
+        anchor_y: center
+        y: 30%
+        x: 25%
+      - type: text
+        text: "Collect data from left drop bank, right drop bank, lanes, and pops/spinner"
+        font_size: 32
+        font_name: ocr-a-tribute-bold
+        anchor_x: center
+        anchor_y: center
+        y: 21%
+        x: 50%
+      - type: text
+        text: "Hit the scoop to collect discovery bonus or continue to build it"
+        font_size: 32
+        font_name: ocr-a-tribute-bold
+        anchor_x: center
+        anchor_y: center
+        y: 16%
+        x: 50%
    story_07_outro_fail_slide:
     widgets:
       - type: text
@@ -161,119 +275,224 @@ slides:
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+   discovery_collect_slide:
+    widgets:
+      - type: text
+        text: "--- Collect Discovery Bonus Placeholder ---"
+        color: red
+        font_size: 50
+        font_name: ocr-a-tribute-bold
+
 
 # The below is mode specific data
 
-random_event_player:
-  enable_lane_shot:
-    - enable_lane_shot_1
-    - enable_lane_shot_2
-    - enable_lane_shot_3
-    - enable_lane_shot_4
-    - enable_lane_shot_5
-  time_traj_timer_complete:
-    - traj_time_out
+
 
 variable_player:
-  traj_set:
-    score: 100000
-  scoop_out_success:
-    score: 500000
+  story_is_about_to_begin:
+    wizard_bonus_value:
+       action: set
+       int: 0
+  wizard_bonus_increment:
+    wizard_bonus_value:
+       action: add
+       int: 1500000
+  wizard_bonus_multiply:
+    wizard_bonus_value:
+       action: set
+       int: current_player.wizard_bonus_value * 2
+  slide_story_07_intro_slide_removed:
+    score:
+       action: add
+       int: current_player.wizard_bonus_value
+  mode_story07_started:
+    wiz_feature_collects:
+       action: set
+       int: 0
+    wiz_lane_collect:
+       action: set
+       int: 0
+    wiz_left_collect:
+       action: set
+       int: 0
+    wiz_right_collect:
+       action: set
+       int: 0
+    wiz_ps_collect:
+       action: set
+       int: 0
+  wizard_continue:
+    wiz_feature_collects:
+       action: set
+       int: 0
+    wiz_lane_collect:
+       action: set
+       int: 0
+    wiz_left_collect:
+       action: set
+       int: 0
+    wiz_right_collect:
+       action: set
+       int: 0
+    wiz_ps_collect:
+       action: set
+       int: 0
+  wiz_lanes_hit{current_player.wiz_lane_collect==0}:
+    wiz_lane_collect:
+       action: set
+       int: 1
+    wiz_feature_collects:
+       action: add
+       int: 1
+  wiz_left_bank_hit{current_player.wiz_left_collect==0}:
+    wiz_left_collect:
+       action: set
+       int: 1
+    wiz_feature_collects:
+       action: add
+       int: 1
+  wiz_right_bank_hit{current_player.wiz_right_collect==0}:
+    wiz_right_collect:
+       action: set
+       int: 1
+    wiz_feature_collects:
+       action: add
+       int: 1
+  wiz_pop_spin_hit{current_player.wiz_ps_collect==0}:
+    wiz_ps_collect:
+       action: set
+       int: 1
+    wiz_feature_collects:
+       action: add
+       int: 1
 
 shots:
-   laneTraj0:
+   wiz_lane_0:
      switch: s_lane0
-     profile: traj_lanes
-     advance_events: enable_lane_shot_1
-     reset_events: traj_time_out, traj_set
-   laneTraj1:
+     advance_events: wiz_lanes_hit
+     profile: wiz_lane_profile
+   wiz_lane_1:
      switch: s_lane1
-     profile: traj_lanes
-     advance_events: enable_lane_shot_2
-     reset_events: traj_time_out, traj_set
-   laneTraj2:
+     advance_events: wiz_lanes_hit
+     profile: wiz_lane_profile
+   wiz_lane_2:
      switch: s_lane2
-     profile: traj_lanes
-     advance_events: enable_lane_shot_3
-     reset_events: traj_time_out, traj_set
-   laneTraj3:
+     advance_events: wiz_lanes_hit
+     profile: wiz_lane_profile
+   wiz_lane_3:
      switch: s_lane3
-     profile: traj_lanes
-     advance_events: enable_lane_shot_4
-     reset_events: traj_time_out, traj_set
-   laneTraj4:
+     advance_events: wiz_lanes_hit
+     profile: wiz_lane_profile
+   wiz_lane_4:
      switch: s_lane4
-     profile: traj_lanes
-     advance_events: enable_lane_shot_5
-     reset_events: traj_time_out, traj_set
-   shotScoopBeyond:
+     advance_events: wiz_lanes_hit
+     profile: wiz_lane_profile
+   wiz_left_0:
+     switch: s_dTargetL0
+     advance_events: wiz_left_bank_hit
+     profile: wiz_lb_profile
+   wiz_left_1:
+     switch: s_dTargetL1
+     advance_events: wiz_left_bank_hit
+     profile: wiz_lb_profile
+   wiz_left_2:
+     switch: s_dTargetL2
+     advance_events: wiz_left_bank_hit
+     profile: wiz_lb_profile
+   wiz_left_3:
+     switch: s_dTargetL3
+     advance_events: wiz_left_bank_hit
+     profile: wiz_lb_profile
+   wiz_right_0:
+     switch: s_dTargetR0
+     advance_events: wiz_right_bank_hit
+     profile: wiz_rb_profile
+   wiz_right_1:
+     switch: s_dTargetR1
+     advance_events: wiz_right_bank_hit
+     profile: wiz_rb_profile
+   wiz_right_2:
+     switch: s_dTargetR2
+     advance_events: wiz_right_bank_hit
+     profile: wiz_rb_profile
+   wiz_right_3:
+     switch: s_dTargetR3
+     advance_events: wiz_right_bank_hit
+     profile: wiz_rb_profile
+   wiz_pop_bot:
+     switch: s_jet_lower_center
+     advance_events: wiz_pop_spin_hit
+     profile: wiz_ps_profile
+   wiz_pop_left:
+     switch: s_jet_upper_left
+     advance_events: wiz_pop_spin_hit
+     profile: wiz_ps_profile
+   wiz_pop_right:
+     switch: s_jet_upper_right
+     advance_events: wiz_pop_spin_hit
+     profile: wiz_ps_profile
+   wiz_spin:
+     switch: s_spinner
+     advance_events: wiz_pop_spin_hit
+     profile: wiz_ps_profile
+   shotScoopCollect:
      switch: s_ir_scoop_detect
-     advance_events: enable_scoop_loop, timer_scoop_off_timer_complete
-     reset_events: timer_scoop_timer_complete
+     reset_events: story_intro_complete, scoop_discovery_not_collected
+     advance_events: wiz_enable_discovery_collect
      show_tokens:
        light: l_scoop
-     profile: shotProfileScoopBeyond
+     profile: shotProfileScoopCollect
 
 shot_profiles:
-   traj_lanes:
-     block: true
-     advance_on_hit: false
-     states:
-       - name: off
-       - name: available
-   shotProfileScoopBeyond:
-     show_when_disabled: true
-     advance_on_hit: false
-     block: true
-     states:
-       - name: scoopInactive
-         show: off
-       - name: scoopActive
-         show: popgreen
+   wiz_lb_profile:
+      states:
+        - name: waiting
+          show: wiz_lb_waiting
+        - name: collected
+          show: wiz_lb_collected
+   wiz_rb_profile:
+      states:
+        - name: waiting
+          show: wiz_rb_waiting
+        - name: collected
+          show: wiz_rb_collected
+   wiz_lane_profile:
+      states:
+        - name: waiting
+          show: wiz_lane_waiting
+        - name: collected
+          show: wiz_lane_collected
+   wiz_ps_profile:
+      states:
+        - name: waiting
+          show: wiz_ps_waiting
+        - name: collected
+          show: wiz_ps_collected
+   shotProfileScoopCollect:
+      show_when_disabled: true
+      advance_on_hit: false
+      block: true
+      states:
+        - name: scoopInactive
+          show: off
+        - name: scoopActive
+          show: popgreen
 
-#variable_player:
-#   mode_story07_started:
-#     temp_ythurryup_value:
-#       action: set
-#       int: 100000
-#   timer_yttimer07_tick:
-#     temp_ythurryup_value: -300
-#   s_sTargetYellowL_active:
-#     score: current_player.temp_ythurryup_value|block
-#   s_sTargetYellowR_active:
-#     score: current_player.temp_ythurryup_value|block
+shot_groups:
+   wiz_left_bank:
+      shots: wiz_left_0, wiz_left_1, wiz_left_2, wiz_left_3
+      reset_events: scoop_discovery_not_collected
+   wiz_right_bank:
+      shots: wiz_right_0, wiz_right_1, wiz_right_2, wiz_right_3
+      reset_events: scoop_discovery_not_collected
+   wiz_lanes:
+      shots: wiz_lane_0, wiz_lane_1, wiz_lane_2, wiz_lane_3, wiz_lane_4
+      reset_events: scoop_discovery_not_collected
+   wiz_pop_spin:
+      shots: wiz_pop_bot, wiz_pop_left, wiz_pop_right, wiz_spin
+      reset_events: scoop_discovery_not_collected
 
-timers:
-   traj_timer:
-     start_value: 5
-     end_value: 0
-     tick_interval: 1s
-     direction: down
-     start_running: no
-     control_events:
-       - event: enable_lane_shot
-         action: restart
-   scoop_timer:
-     start_value: 10
-     end_value: 0
-     tick_interval: 1s
-     direction: down
-     start_running: no
-     control_events:
-       - event: enable_scoop_loop
-         action: restart
-       - event: timer_scoop_off_timer_complete
-         action: restart
-   scoop_off_timer:
-     start_value: 10
-     end_value: 0
-     tick_interval: 1s
-     direction: down
-     start_running: no
-     control_events:
-       - event: timer_scoop_timer_complete
-         action: restart
-
+#timers:
 
 widget_player:
    mode_story07_started:
@@ -282,79 +501,166 @@ widget_player:
    story07_ended:
       yt_remain_widget_07:
          action: remove
+   status_untitled_mode_1_completed:
+      ach_01_on:
+         slide: story_07_intro_slide
+   status_untitled_mode_2_completed:
+      ach_02_on:
+         slide: story_07_intro_slide
+   status_untitled_mode_3_completed:
+      ach_03_on:
+         slide: story_07_intro_slide
+   status_untitled_mode_4_completed:
+      ach_04_on:
+         slide: story_07_intro_slide
+   status_untitled_mode_5_completed:
+      ach_05_on:
+         slide: story_07_intro_slide
+   status_untitled_mode_6_completed:
+      ach_06_on:
+         slide: story_07_intro_slide
+   char_alex_is_complete:
+      alex_on:
+         slide: story_07_intro_slide
+   char_bob_is_complete:
+      bob_on:
+         slide: story_07_intro_slide
+   char_charlie_is_complete:
+      charlie_on:
+         slide: story_07_intro_slide
+   char_dan_is_complete:
+      dan_on:
+         slide: story_07_intro_slide
+   char_hanz_is_complete:
+      hanz_on:
+         slide: story_07_intro_slide
+   char_harry_is_complete:
+      harry_on:
+         slide: story_07_intro_slide
+   char_kate_is_complete:
+      kate_on:
+         slide: story_07_intro_slide
+   char_vincent_is_complete:
+      vincent_on:
+         slide: story_07_intro_slide
 
 widgets:
    yt_remain_widget_07:
      - type: text
        text: "spinner then lanes ya dolt"
        y: 80%
+   ach_01_on:
+     - type: image
+       image: badgeLocateTheCygnus
+       anchor_x: center
+       anchor_y: center
+       x: 36%
+       y: 75%
+       z: 11
+   ach_02_on:
+     - type: image
+       image: badgeEscape
+       anchor_x: center
+       anchor_y: center
+       x: 45%
+       y: 75%
+       z: 11
+   ach_03_on:
+     - type: image
+       image: badgeShooting
+       anchor_x: center
+       anchor_y: center
+       x: 54%
+       y: 75%
+       z: 11
+   ach_04_on:
+     - type: image
+       image: badgeMeteor
+       anchor_x: center
+       anchor_y: center
+       x: 63%
+       y: 75%
+       z: 11
+   ach_05_on:
+     - type: image
+       image: badgeCorridor
+       anchor_x: center
+       anchor_y: center
+       x: 72%
+       y: 75%
+       z: 11
+   ach_06_on:
+     - type: image
+       image: badgeDavid
+       anchor_x: center
+       anchor_y: center
+       x: 81%
+       y: 75%
+       z: 11
+   alex_on:
+      - type: image
+        image: alex
+        anchor_x: center
+        anchor_y: center
+        x: 36%
+        y: 45%
+        z: 11
+   charlie_on:
+      - type: image
+        image: charlie
+        anchor_x: center
+        anchor_y: center
+        x: 44%
+        y: 45%
+        z: 11
+   dan_on:
+      - type: image
+        image: dan
+        anchor_x: center
+        anchor_y: center
+        x: 52%
+        y: 45%
+        z: 11
+   kate_on:
+      - type: image
+        image: kate
+        anchor_x: center
+        anchor_y: center
+        x: 60%
+        y: 45%
+        z: 11
+   harry_on:
+      - type: image
+        image: harry
+        anchor_x: center
+        anchor_y: center
+        x: 68%
+        y: 45%
+        z: 11
+   hanz_on:
+      - type: image
+        image: hanz
+        anchor_x: center
+        anchor_y: center
+        x: 76%
+        y: 45%
+        z: 11
+   vincent_on:
+      - type: image
+        image: vincent
+        anchor_x: center
+        anchor_y: center
+        x: 84%
+        y: 45%
+        z: 11
+   bob_on:
+      - type: image
+        image: bob
+        anchor_x: center
+        anchor_y: center
+        x: 92%
+        y: 45%
+        z: 11
 
-# Mode 7 States
-state_machines:
-  beyond:
-     states:
-       start:
-         label: mode_entry
-         events_when_started: debug_beyond_start
-       traj01:
-         label: Set Trajectory 1
-         events_when_started: debug_beyond_traj01
-       traj01hit:
-         label: Trajectory 1 Set
-         events_when_started: debug_beyond_traj01hit
-       traj02:
-         label: Set Trajectory 2
-         events_when_started: debug_beyond_traj02
-       traj02hit:
-         label: Trajectory 2 Set
-         events_when_started: debug_beyond_traj02hit
-       traj03:
-         label: Set Trajectory 3
-         events_when_started: debug_beyond_traj03
-       scoopOpen:
-         label: Scoop Open
-         events_when_started: enable_scoop_loop, debug_beyond_scoop_open
-       scoopClosed:
-         label: Scoop Closed
-         events_when_started: debug_beyond_scoop_closed
-       completion:
-         label: completion
-         events_when_started: debug_beyond_completion
-     transitions:
-       - source: start
-         target: traj01
-         events: enable_lane_shot
-       - source: traj01hit
-         target: traj02
-         events: enable_lane_shot
-       - source: traj02hit
-         target: traj03
-         events: enable_lane_shot
-       - source: traj01
-         target: start
-         events: traj_time_out
-       - source: traj02
-         target: traj01hit
-         events: traj_time_out
-       - source: traj03
-         target: traj02hit
-         events: traj_time_out
-       - source: traj01
-         target: traj01hit
-         events: traj_set
-       - source: traj02
-         target: traj02hit
-         events: traj_set
-       - source: traj03
-         target: scoopOpen
-         events: traj_set
-       - source: scoopOpen
-         target: scoopClosed
-         events: scoop_timeout
-       - source: scoopClosed
-         target: scoopOpen
-         events: scoop_timer_reset
-       - source: scoopOpen
-         target: completion
-         events: scoop_out_success
+
 

@@ -1,0 +1,29 @@
+#config_version=5
+mode:
+  start_events: wizard_cashout
+  stop_events: story07_cashout_wiz_cashout_selected, story07_cashout_wiz_cancel_selected
+  code: mpf.modes.carousel.code.carousel.Carousel
+  priority: 1100
+
+mode_settings:
+  selectable_items: wiz_cashout, wiz_cancel
+  select_item_events: s_start_active
+  next_item_events: s_flipper_right_active
+  previous_item_events: s_flipper_left_active
+
+slide_player:
+  story07_cashout_wiz_cashout_highlighted: select_wiz_cashout
+  story07_cashout_wiz_cancel_highlighted: select_wiz_cancel
+
+slides:
+  select_wiz_cashout:
+    widgets:
+      - type: text
+        text: COLLECT DISCOVERY BONUS
+        font_size: 100
+  select_wiz_cancel:
+    widgets:
+      - type: text
+        text: CONTINUE BUILDING BONUS
+        font_size: 100
+

@@ -941,7 +941,7 @@ widgets:
          selector2_mode6_highlighted: check_unseen
   mode07_redx:
     - type: image
-      image: redx
+      image: nomark
       anchor_x: center
       anchor_y: center
       x: 35%

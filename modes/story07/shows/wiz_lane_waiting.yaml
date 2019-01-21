@@ -1,0 +1,8 @@
+#show_version=5
+ - duration: -1
+   lights:
+     l_lane0: red
+     l_lane1: red
+     l_lane2: red
+     l_lane3: red
+     l_lane4: red

@@ -1,0 +1,7 @@
+#show_version=5
+ - duration: -1
+   lights:
+     l_jetUpperRight: green
+     l_jetUpperLeft: green
+     l_jetLowerCenter: green
+     l_spinner: green
