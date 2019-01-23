@@ -1,20 +1,6 @@
 #config_version=5
 variable_player:
-  corridor_target_hit:
-    score: (1 + current_player.corridor_targets_hit) * 20000|block
-    drops: 1
-    bonuscount: 1
+  player_corridor_targets_hit:
+    score: (current_player.corridor_targets_hit) * 100000 * current_player.temp_playfield_x * current_player.perm_playfield_x
 
-# block switch based scoring from base mode
-  s_dTargetR0_active:
-    score: 0|block
-  s_dTargetR1_active:
-    score: 0|block
-  s_dTargetR2_active:
-    score: 0|block
-  s_dTargetR3_active:
-    score: 0|block
-  s_dtargetcl_active:
-    score: 0|block
-  s_dtargetcr_active:
-    score: 0|block
+

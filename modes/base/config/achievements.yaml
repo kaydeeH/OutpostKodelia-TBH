@@ -98,7 +98,6 @@ achievements:
    show_when_stopped: off
 
 
-#TODO why does the ach_started show work for all below except the first one?  Is it a monitor problem?  Works if I use a different light.  Confusing.
  mode_01_started:
    show_tokens:
      light: l_mode0
@@ -146,27 +145,35 @@ achievements:
  char_vincent:
    start_events: first_ball_for_current_player
    complete_events: char_vincent_complete
+   reset_events: wizard_cashout
  char_bob:
    start_events: first_ball_for_current_player
    complete_events: char_bob_complete
+   reset_events: wizard_cashout
  char_dan:
    start_events: first_ball_for_current_player
    complete_events: char_dan_complete
+   reset_events: wizard_cashout
  char_charlie:
    start_events: first_ball_for_current_player
    complete_events: char_charlie_complete
+   reset_events: wizard_cashout
  char_harry:
    start_events: first_ball_for_current_player
    complete_events: char_harry_complete
+   reset_events: wizard_cashout
  char_kate:
    start_events: first_ball_for_current_player
    complete_events: char_kate_complete
+   reset_events: wizard_cashout
  char_alex:
    start_events: first_ball_for_current_player
    complete_events: char_alex_complete
+   reset_events: wizard_cashout
  char_hans:
    start_events: first_ball_for_current_player
    complete_events: char_hans_complete
+   reset_events: wizard_cashout
 
 random_event_player:
    random_character_collect:
@@ -199,6 +206,12 @@ show_player:
   char_hans_complete:
      char_hans_collect:
        loops: 0
+  char_vincent_complete:
+     char_vincent_collect:
+       loops: 0
+  char_bob_complete:
+     char_bob_collect:
+       loops: 0
 
 shows:
   char_dan_collect:
@@ -224,6 +237,14 @@ shows:
   char_hans_collect:
      - time: 0
        slides: char_hans
+       duration: 2
+  char_vincent_collect:
+     - time: 0
+       slides: char_vincent
+       duration: 2
+  char_bob_collect:
+     - time: 0
+       slides: char_bob
        duration: 2
 
 slides:
@@ -269,5 +290,18 @@ slides:
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
-
+   char_vincent:
+    widgets:
+      - type: text
+        text: VINCENT COLLECTED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+   char_bob:
+    widgets:
+      - type: text
+        text: BOB COLLECTED
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
 

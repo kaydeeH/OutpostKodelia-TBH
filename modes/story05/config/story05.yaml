@@ -236,8 +236,8 @@ variable_player:
        action: set
        float: current_player.corridor_timer_ticks / 10
    shotGroupCorridorTargets_complete_complete:
-      corridor_bonus: current_player.corridor_timer_ticks * 2500
-      score: current_player.corridor_timer_ticks * 2500
+      corridor_bonus: current_player.corridor_timer_ticks * 30000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+      score: current_player.corridor_timer_ticks * 30000 * current_player.temp_playfield_x * current_player.perm_playfield_x
    story_is_about_to_end:
       modestat_5_final_extra_time:
        action: set

@@ -1,9 +1,13 @@
 #config_version=5
 variable_player:
+  story_is_about_to_begin:
+    david_complete_base_value: 20000000
+  player_battleticks{value<720}:
+    david_complete_base_value: -25000
   shotgrouppopbumpers_hit:
-    score: 20000
+    score: 20000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
     pops: 1
   story_is_about_to_end:
-    score: 250000
+    score: current_player.david_complete_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 10

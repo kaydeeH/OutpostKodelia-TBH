@@ -1,18 +1,41 @@
 #config_version=5
 
 variable_player:
-  shotgrouppopbumpers_hit:
-     score: 20000
-     bonuscount: 1
-  s_jet_upper_left_active:
-    score: 0|block
-  s_jet_upper_right_active:
-    score: 0|block
-  s_jet_lower_center_active:
-    score: 0|block
-  status_escape:
-     score: 100000
-     bonuscount: 2
+  story_is_about_to_begin:
+     esacpe_lane_base: 500000
+     escape_lane_count: 0
+     escape_completed_scoring_base: 10000000
+     escape_scoop_enabled: 0
+  enable_scoop_loop:
+     escape_scoop_enabled:
+        action: set
+        int: 1
+  scoop_off:
+     escape_scoop_enabled:
+        action: set
+        int: 0
+  traj_set:
+     escape_lane_count: 1
+     bonuscount: 3
+  player_escape_lane_count{value==1}:
+     score:
+      int: current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+      action: add
+  player_escape_lane_count{value==2}:
+     score:
+      int: 3 * current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+      action: add
+  player_escape_lane_count{value==3}:
+     score:
+      int: 6 * current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+      action: add
+  player_escape_lane_count{value>3}:
+     score:
+      int: current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+      action: add
+     escape_completed_scoring_base: -1000000
+  player_escape_completed_scoring_base{value==0}:
+     escape_completed_scoring_base: 1000000
   shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
-     score: 500000
+     score: current_player.escape_completed_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
      bonuscount: 10

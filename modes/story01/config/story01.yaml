@@ -39,6 +39,7 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
+     - start_cygnus_timer
    cygnus_found:
      - story_is_about_to_end
    in_mode_ball_save:
@@ -67,14 +68,21 @@ event_player:
 # Do we want to do something for each lane found?
    shotLane0Story01_unlit_hit:
      - cygnus_lane_0_event
+     - cygnus_lane_score
    shotLane1Story01_unlit_hit:
      - cygnus_lane_1_event
+     - cygnus_lane_score
    shotLane2Story01_unlit_hit:
      - cygnus_lane_2_event
+     - cygnus_lane_score
    shotLane3Story01_unlit_hit:
      - cygnus_lane_3_event
+     - cygnus_lane_score
    shotLane4Story01_unlit_hit:
      - cygnus_lane_4_event
+     - cygnus_lane_score
+   shotGroupToplanesStory01_lit_hit:
+     - cygnus_lane_repeat_score
 
 
 #  Base intro / outro shows
@@ -223,6 +231,10 @@ variable_player:
        int: 0
    timer_cygnusTimer_tick:
      cygnus_timer_ticks: 1
+   timer_cygnusTimer_tick{current_player.cygnus_timer_ticks < 760 and current_player.cygnus_timer_ticks > 10}:
+     cygnus_completing_scoring_base: -30667
+   timer_cygnusTimer_tick{current_player.cygnus_timer_ticks == 760}:
+     cygnus_completing_scoring_base: -30417
    cygnus_found:
      cygnus_seconds:
        float: current_player.cygnus_timer_ticks / 10
@@ -239,7 +251,7 @@ timers:
      direction: up
      start_running: no
      control_events:
-     - event: story_intro_complete
+     - event: start_cygnus_timer
        action: start
      - event: cygnus_found
        action: stop
@@ -247,6 +259,8 @@ timers:
 widget_player:
    story_intro_complete:
       cygnus_searching:
+         slide: scoring_slide
+      cygnus_hurry_up:
          slide: scoring_slide
    cygnus_located:
       cygnus_searching:
@@ -258,6 +272,8 @@ widget_player:
          action: remove
       cygnus_found:
          action: remove
+      cygnus_hurry_up:
+         action: remove
 
 widgets:
    cygnus_searching:
@@ -268,7 +284,9 @@ widgets:
      - type: text
        text: "Dock with the Cygnus by Scooping Out"
        y: 80%
-
+   cygnus_hurry_up:
+     - type: text
+       text: "Cygnus Docking Value: (cygnus_completing_scoring_base)"
 sound_player:
     mode_story01_started:
       thatsit:

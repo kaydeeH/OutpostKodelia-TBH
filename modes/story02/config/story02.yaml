@@ -43,7 +43,7 @@ event_player:
      - scoop_eject
      - story_is_completed_successful
      - acheivement_story02_successful
-#TODO -- for now we are granting a character just for completing
+   story_outro_complete{current_player.escape_lane_count==3}:
      - random_character_collect|3100ms
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
@@ -52,7 +52,7 @@ event_player:
     - story_is_completed
    story_is_completed_unsuccessful:
     - story_is_completed
-   s_spinner_active:
+   s_spinner_active{current_player.escape_scoop_enabled==0}:
     - enable_lane_shot
    timer_traj_timer_complete:
     - traj_time_out
@@ -68,7 +68,8 @@ event_player:
     - traj_set
    enable_scoop_loop:
     - status_escape
-
+   timer_scoop_timer_complete:
+    - scoop_off
 
 
 random_event_player:
@@ -252,8 +253,6 @@ slides:
 
 # The below is mode specific data
 
-
-
 timers:
    traj_timer:
      start_value: 5
@@ -265,7 +264,7 @@ timers:
        - event: enable_lane_shot
          action: restart
    scoop_timer:
-     start_value: 10
+     start_value: 15
      end_value: 0
      tick_interval: 1s
      direction: down
@@ -273,27 +272,15 @@ timers:
      control_events:
        - event: enable_scoop_loop
          action: restart
-       - event: timer_scoop_off_timer_complete
-         action: restart
-   scoop_off_timer:
-     start_value: 10
-     end_value: 0
-     tick_interval: 1s
-     direction: down
-     start_running: no
-     control_events:
-       - event: timer_scoop_timer_complete
-         action: restart
 
 widget_player:
    status_escape:
-      yt_engine_widget_02:
-         action: remove
       yt_escape_widget_02:
          slide: scoring_slide
-   story02_ended:
-      yt_remain_widget_02:
+   scoop_off:
+      yt_escape_widget_02:
          action: remove
+   story02_ended:
       yt_engine_widget_02:
          action: remove
 
@@ -325,7 +312,7 @@ shots:
      reset_events: traj_time_out, traj_set, enable_lane_shot_1, enable_lane_shot_2, enable_lane_shot_3, enable_lane_shot_4, lanetraj0_traj_lanes_off_hit, lanetraj1_traj_lanes_off_hit, lanetraj2_traj_lanes_off_hit, lanetraj3_traj_lanes_off_hit
    shotScoopEscape:
      switch: s_ir_scoop_detect
-     reset_events: story_intro_complete
+     reset_events: story_intro_complete, scoop_off
      advance_events: status_escape
      show_tokens:
        light: l_scoop
@@ -381,9 +368,6 @@ state_machines:
        scoopOpen:
          label: Scoop Open
          events_when_started: enable_scoop_loop, debug_beyond_scoop_open
-       scoopClosed:
-         label: Scoop Closed
-         events_when_started: debug_beyond_scoop_closed
        completion:
          label: completion
          events_when_started: debug_beyond_completion
@@ -416,11 +400,8 @@ state_machines:
          target: scoopOpen
          events: traj_set
        - source: scoopOpen
-         target: scoopClosed
-         events: scoop_timeout
-       - source: scoopClosed
-         target: scoopOpen
-         events: scoop_timer_reset
+         target: traj03
+         events: scoop_off
        - source: scoopOpen
          target: completion
          events: scoop_out_success

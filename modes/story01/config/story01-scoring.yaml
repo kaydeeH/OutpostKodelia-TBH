@@ -1,38 +1,22 @@
 #config_version=5
 variable_player:
-  shotLane0Story01_shotProfileToplanesStory01_unlit_hit:
-    score: 50000
+  story_is_about_to_begin:
+    cygnus_lane_count: 0
+    cygnus_lane_scoring_base: 200000
+    cygnus_completing_scoring_base: 25000000
+  cygnus_lane_score:
+    cygnus_lane_count: 1
     bonuscount: 3
-  shotLane0Story01_shotProfileToplanesStory01_lit_hit:
-    score: 10000
-    bonuscount: 1
-  shotLane1Story01_shotProfileToplanesStory01_unlit_hit:
-    score: 50000
-    bonuscount: 3
-  shotLane1Story01_shotProfileToplanesStory01_lit_hit:
-    score: 10000
-    bonuscount: 1
-  shotLane2Story01_shotProfileToplanesStory01_unlit_hit:
-    score: 50000
-    bonuscount: 3
-  shotLane2Story01_shotProfileToplanesStory01_lit_hit:
-    score: 10000
-    bonuscount: 1
-  shotLane3Story01_shotProfileToplanesStory01_unlit_hit:
-    score: 50000
-    bonuscount: 3
-  shotLane3Story01_shotProfileToplanesStory01_lit_hit:
-    score: 10000
-    bonuscount: 1
-  shotLane4Story01_shotProfileToplanesStory01_unlit_hit:
-    score: 50000
-    bonuscount: 3
-  shotLane4Story01_shotProfileToplanesStory01_lit_hit:
-    score: 10000
+  player_cygnus_lane_count:
+    score:
+      int: current_player.cygnus_lane_scoring_base * current_player.cygnus_lane_count * current_player.temp_playfield_x * current_player.perm_playfield_x
+      action: add
+  cygnus_lane_repeat_score:
+    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
   cygnus_located:
-    score: 250000
+    score: 2000000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 3
   cygnus_found:
-    score: 500000
+    score: current_player.cygnus_completing_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 3

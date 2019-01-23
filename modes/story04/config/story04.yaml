@@ -181,9 +181,10 @@ variable_player:
        action: set
   shotScoopMeteor_hit:
     meteor_hits: 1
-    score: ((current_player.meteor_hits + 1) * 50000) + (10000 * current_player.timeRemain)
-    meteor_accum: ((current_player.meteor_hits + 1) * 50000) + (10000 * current_player.timeRemain)
     bonuscount: 3
+  player_meteor_hits:
+    score: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    meteor_accum: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
   timer_meteortimer_tick:
      timeRemain:
        int: (ticks_remaining)

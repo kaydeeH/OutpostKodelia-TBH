@@ -1,19 +1,13 @@
 #config_version=5
 variable_player:
-  player_gallery_targets_hit:
-    score: current_player.gallery_targets_hit * 75000
-    bonuscount: current_player.gallery_targets_hit
+  story_is_about_to_begin:
+    gallery_base_value: 0
+  gallery_target_hit{current_player.gallery_base_value==0}:
+    gallery_base_value: 2000000
+    bonuscount: 3
+  gallery_target_hit{current_player.gallery_base_value>0}:
+    gallery_base_value: 1000000
+    bonuscount: 3
+  player_gallery_base_value:
+    score: current_player.gallery_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
 
-# block switch based scoring from base mode
-  s_dTargetR0_active:
-    score: 0|block
-  s_dTargetR1_active:
-    score: 0|block
-  s_dTargetR2_active:
-    score: 0|block
-  s_dTargetR3_active:
-    score: 0|block
-  s_dtargetcl_active:
-    score: 0|block
-  s_dtargetcr_active:
-    score: 0|block

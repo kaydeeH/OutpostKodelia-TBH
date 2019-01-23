@@ -37,6 +37,7 @@ event_player:
     - story_is_about_to_begin
   story_intro_complete:
     - scoop_eject
+    - start_david_timer
   in_mode_ball_save:
      - story_is_about_to_fail
   player_health{value >= 100}:
@@ -175,7 +176,7 @@ timers:
     direction: up
     start_running: no
     control_events:
-      - event: story_intro_complete
+      - event: start_david_timer
         action: start
       - event: story_is_about_to_end
         action: pause
@@ -187,7 +188,7 @@ timers:
     direction: up # down
     start_running: no
     control_events:
-      - event: story_intro_complete
+      - event: start_david_timer
         action: start
 #      - event: shotgrouppopbumpers_hit
 #        action: add
@@ -198,6 +199,8 @@ timers:
 
 widget_player:
   story_intro_complete:
+    david_hurry_up:
+      slide: scoring_slide
     david_and_goliath_widget:
       slide: scoring_slide
     green_bar_widget:
@@ -222,6 +225,8 @@ widget_player:
     green_bar_widget:
       action: remove
     red_bar_widget:
+      action: remove
+    david_hurry_up:
       action: remove
 
 widgets:
@@ -286,3 +291,14 @@ widgets:
       width: 6
       height: 23
       color: 323D4A
+  david_hurry_up:
+    - type: text
+      x: center + 307
+      y: top - 520
+      anchor_x: right
+      anchor_y: top
+      font_size: 40
+      font_name: lucon
+      color: BBD8F0
+      z: 70
+      text: "Completion Bonus: (david_complete_base_value)"

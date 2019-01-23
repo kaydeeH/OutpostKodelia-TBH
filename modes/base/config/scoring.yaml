@@ -12,6 +12,7 @@ accruals:
     disable_on_complete: false
   enableWizard:
     persist_state: true
+    reset_events: wizard_cashout
     events:
       - acheivement_story01_successful
       - acheivement_story02_successful
@@ -41,13 +42,17 @@ event_player:
        new_value: "ACTIVE"
        new_text: "SCOOP\nSHOT"
   player_bonustype1{value>1}:
-    - playfield_triple_start
-  player_bonustype2{value>1}:
     - playfield_double_start
+  player_bonustype2{value>1}:
+    - playfield_triple_start
   player_bonustype3{value>1}:
     - playfield_double_start
-
-
+  player_bonustype4{value>1}:
+    - playfield_double_start
+  shotGroupLeftTargets_lit_complete:
+    - char_vincent_complete
+  shotGroupRightTargets_lit_complete:
+    - char_bob_complete
 # 10 Second INSANE SPINNER mode for finishing modes that end in the scoop shot
   acheivement_story01_successful:
     - trigger_insane_spins
@@ -73,7 +78,7 @@ variable_player:
        action: set
        int: 100000
     pds:
-       int: 100
+       int: 500
        action: set
 # -- Slings Count
     sling_hits:
@@ -183,11 +188,11 @@ variable_player:
 # Pop Bumpers
 # 250 each -- "Super" Modes may override
   s_jet_upper_left_active:
-    score: 250 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 500 * current_player.temp_playfield_x * current_player.perm_playfield_x
   s_jet_upper_right_active:
-    score: 250 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 500 * current_player.temp_playfield_x * current_player.perm_playfield_x
   s_jet_lower_center_active:
-    score: 250 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 500 * current_player.temp_playfield_x * current_player.perm_playfield_x
 
 # Slings
 # 100 + (10 * sling_hits)
@@ -257,7 +262,7 @@ variable_player:
 # Spinner
 # 100 pts, but modes can override
   s_spinner_active:
-    score: 100 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x
 
 # Scoop
 # 10000 points
@@ -272,13 +277,13 @@ variable_player:
     score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
   shotGroupToplanes_lit_hit:
-    score: 3000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 5000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
 
 # Lanes Complete
 # 5000 base.  5000 more will be awarded if bonus multi is not increased.
   shotGroupToplanes_lit_complete:
-    score: 5000  * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 25000  * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonustype2: 1
     bonuscount: 10
 
@@ -291,18 +296,6 @@ variable_player:
   s_roInLaneRight_active:
     score: 1000  * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
-
-# Outlanes
-#todo Collection High Perf Mode Bonus [Not yet implemented]
-#todo If lit ball save
-#todo else
-# If all else fails, 10000 pts
-#  s_rooutlaneleft_active:
-#    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
-#    bonuscount: 1
-#  s_rooutlaneright_active:
-#    score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
-#    bonuscount: 1
 
 # Other Switches
   s_sTargetDropL_active:
@@ -394,6 +387,28 @@ variable_player:
      bonustype3:
         int: 0
         action: set
+  wizard_cashout:
+     status_untitled_mode_1:
+        action: set
+        int: 0
+     status_untitled_mode_2:
+        action: set
+        int: 0
+     status_untitled_mode_3:
+        action: set
+        int: 0
+     status_untitled_mode_4:
+        action: set
+        int: 0
+     status_untitled_mode_5:
+        action: set
+        int: 0
+     status_untitled_mode_6:
+        action: set
+        int: 0
+     status_untitled_mode_7:
+        action: set
+        int: 0
 
   acheivement_story01_successful:
      status_untitled_mode_1: 1

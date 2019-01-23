@@ -46,6 +46,24 @@ event_player:
     - wiz_enable_discovery_collect
    shotScoopCollect_shotProfileScoopCollect_scoopActive_hit:
     - wizard_cashout
+# Initial Discovery Bonus Events
+   char_alex_is_complete:
+    - discovery_char_bonus
+   char_charlie_is_complete:
+    - discovery_char_bonus
+   char_dan_is_complete:
+    - discovery_char_bonus
+   char_kate_is_complete:
+    - discovery_char_bonus
+   char_harry_is_complete:
+    - discovery_char_bonus
+   char_hanz_is_complete:
+    - discovery_char_bonus
+   char_vincent_is_complete:
+    - discovery_char_bonus
+   char_bob_is_complete:
+    - discovery_char_bonus
+
 # Award Discovery Bonus, end the mode, reset things, eject the scoop
    story07_cashout_wiz_cashout_selected:
     - wizard_complete
@@ -237,14 +255,14 @@ slides:
         y: 45%
         z: 10
       - type: text
-        text: "Discovery Value"
+        text: "Discovery Value: (discovery_base_char_value)"
         color: red
         font_size: 80
         font_name: ocr-a-tribute-bold
         anchor_x: center
         anchor_y: center
         y: 30%
-        x: 25%
+        x: 40%
       - type: text
         text: "Collect data from left drop bank, right drop bank, lanes, and pops/spinner"
         font_size: 32
@@ -293,6 +311,16 @@ variable_player:
     wizard_bonus_value:
        action: set
        int: 0
+    discovery_bonus_value:
+       action: set
+       int: 0
+    discovery_base_char_value:
+       action: set
+       int: 2000000
+  discovery_char_bonus:
+    discovery_base_char_value:
+       action: set
+       int: current_player.discovery_base_char_value * 2
   wizard_bonus_increment:
     wizard_bonus_value:
        action: add
@@ -305,6 +333,10 @@ variable_player:
     score:
        action: add
        int: current_player.wizard_bonus_value
+  wizard_complete:
+    score:
+       action: add
+       int: current_player.discovery_base_char_value * current_player.temp_playfield_x * current_player.perm_playfield_x
   mode_story07_started:
     wiz_feature_collects:
        action: set
@@ -344,6 +376,9 @@ variable_player:
     wiz_feature_collects:
        action: add
        int: 1
+    discovery_base_char_value:
+       action: set
+       int: current_player.discovery_base_char_value * 1.25
   wiz_left_bank_hit{current_player.wiz_left_collect==0}:
     wiz_left_collect:
        action: set
@@ -351,6 +386,9 @@ variable_player:
     wiz_feature_collects:
        action: add
        int: 1
+    discovery_base_char_value:
+       action: set
+       int: current_player.discovery_base_char_value * 1.25
   wiz_right_bank_hit{current_player.wiz_right_collect==0}:
     wiz_right_collect:
        action: set
@@ -358,6 +396,9 @@ variable_player:
     wiz_feature_collects:
        action: add
        int: 1
+    discovery_base_char_value:
+       action: set
+       int: current_player.discovery_base_char_value * 1.25
   wiz_pop_spin_hit{current_player.wiz_ps_collect==0}:
     wiz_ps_collect:
        action: set
@@ -365,6 +406,9 @@ variable_player:
     wiz_feature_collects:
        action: add
        int: 1
+    discovery_base_char_value:
+       action: set
+       int: current_player.discovery_base_char_value * 1.25
 
 shots:
    wiz_lane_0:

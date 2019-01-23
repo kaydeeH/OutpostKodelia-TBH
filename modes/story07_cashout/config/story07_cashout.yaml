@@ -21,9 +21,15 @@ slides:
       - type: text
         text: COLLECT DISCOVERY BONUS
         font_size: 100
+      - type: text
+        text: (discovery_base_char_value)
+        y: 40%
   select_wiz_cancel:
     widgets:
       - type: text
         text: CONTINUE BUILDING BONUS
         font_size: 100
+      - type: text
+        text: (discovery_base_char_value)
+        y: 40%
 
