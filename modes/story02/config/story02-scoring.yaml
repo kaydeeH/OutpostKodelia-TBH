@@ -6,10 +6,17 @@ variable_player:
      escape_lane_count: 0
      escape_completed_scoring_base: 10000000
      escape_scoop_enabled: 0
+     lane_spin_count: 0
      modestat_2_base_scoring:
         action: set
         int: 0
      modestat_2_scoring:
+        action: set
+        int: 0
+  enable_lane_shot:
+     lane_spin_count: 1
+  traj_time_out:
+     lane_spin_count:
         action: set
         int: 0
   enable_scoop_loop:
@@ -23,6 +30,9 @@ variable_player:
   traj_set:
      escape_lane_count: 1
      bonuscount: 3
+     lane_spin_count:
+        action: set
+        int: 0
   player_escape_lane_count{value==1}:
      score:
       int: current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x

@@ -52,7 +52,7 @@ event_player:
     - story_is_completed
    story_is_completed_unsuccessful:
     - story_is_completed
-   s_spinner_active{current_player.escape_scoop_enabled==0}:
+   s_spinner_active{current_player.escape_scoop_enabled==0 and current_player.lane_spin_count<5}:
     - enable_lane_shot
    timer_traj_timer_complete:
     - traj_time_out
@@ -66,6 +66,16 @@ event_player:
     - traj_set
    lanetraj4_available_hit:
     - traj_set
+   lanetraj0_off_hit:
+    - traj_time_out
+   lanetraj1_off_hit:
+    - traj_time_out
+   lanetraj2_off_hit:
+    - traj_time_out
+   lanetraj3_off_hit:
+    - traj_time_out
+   lanetraj4_off_hit:
+    - traj_time_out
    enable_scoop_loop:
     - status_escape
    timer_scoop_timer_complete:
@@ -183,11 +193,11 @@ show_player:
          action: stop
       lane5shot:
          action: stop
-variable_player:
-  traj_set:
-    score: 100000
-  scoop_out_success:
-    score: 500000
+#variable_player:
+#  traj_set:
+#    score: 100000
+#  scoop_out_success:
+#    score: 500000
 
 shows:
    story_02_intro:
@@ -263,6 +273,8 @@ timers:
      control_events:
        - event: enable_lane_shot
          action: restart
+       - event: traj_time_out
+         action: stop
    scoop_timer:
      start_value: 15
      end_value: 0
