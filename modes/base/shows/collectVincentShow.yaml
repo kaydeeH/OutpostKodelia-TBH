@@ -317,6 +317,60 @@
       l_2x: 'FFFFFF'
       l_3x: 'FFFFFF'
 
+- duration: 6
+  lights:
+      l_GISlingLeft0: '000000'
+      l_GISlingLeft1: '000000'
+      l_mode0: '000000'
+      l_mode1: '000000'
+      l_2x: '000000'
+      l_3x: '000000'
+
+- duration: 6
+  lights:
+      l_GISlingLeft0: 'FFFFFF'
+      l_GISlingLeft1: 'FFFFFF'
+      l_mode0: 'FFFFFF'
+      l_mode1: 'FFFFFF'
+      l_2x: 'FFFFFF'
+      l_3x: 'FFFFFF'
+
+- duration: 6
+  lights:
+      l_GISlingLeft0: '000000'
+      l_GISlingLeft1: '000000'
+      l_mode0: '000000'
+      l_mode1: '000000'
+      l_2x: '000000'
+      l_3x: '000000'
+
+- duration: 6
+  lights:
+      l_GISlingLeft0: 'FFFFFF'
+      l_GISlingLeft1: 'FFFFFF'
+      l_mode0: 'FFFFFF'
+      l_mode1: 'FFFFFF'
+      l_2x: 'FFFFFF'
+      l_3x: 'FFFFFF'
+
+- duration: 6
+  lights:
+      l_GISlingLeft0: '000000'
+      l_GISlingLeft1: '000000'
+      l_mode0: '000000'
+      l_mode1: '000000'
+      l_2x: '000000'
+      l_3x: '000000'
+
+- duration: 6
+  lights:
+      l_GISlingLeft0: 'FFFFFF'
+      l_GISlingLeft1: 'FFFFFF'
+      l_mode0: 'FFFFFF'
+      l_mode1: 'FFFFFF'
+      l_2x: 'FFFFFF'
+      l_3x: 'FFFFFF'
+
 - duration: 1
   lights:
       l_GISlingLeft0: '000000'
