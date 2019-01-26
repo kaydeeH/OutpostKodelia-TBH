@@ -175,6 +175,12 @@ variable_player:
     timeRemain:
        int: 30
        action: set
+    modestat_4_base_scoring:
+       action: set
+       int: 0
+    modestat_4_scoring:
+       action: set
+       int: 0
   timer_meteortimer_started:
     timeRemain:
        int: (ticks_remaining)
@@ -185,6 +191,8 @@ variable_player:
   player_meteor_hits:
     score: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
     meteor_accum: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_4_scoring: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_4_base_scoring: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain)
   timer_meteortimer_tick:
      timeRemain:
        int: (ticks_remaining)

@@ -2,12 +2,22 @@
 variable_player:
   story_is_about_to_begin:
     david_complete_base_value: 20000000
+  modestat_6_base_scoring:
+      action: set
+      int: 0
+  modestat_6_scoring:
+      action: set
+      int: 0
   player_battleticks{value<720}:
     david_complete_base_value: -25000
   shotgrouppopbumpers_hit:
     score: 20000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_6_scoring: 20000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_6_base_scoring: 20000 * current_player.temp_playfield_x
     bonuscount: 1
     pops: 1
   story_is_about_to_end:
     score: current_player.david_complete_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_6_scoring: current_player.david_complete_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_6_base_scoring: current_player.david_complete_base_value
     bonuscount: 10

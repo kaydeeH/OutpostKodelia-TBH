@@ -958,7 +958,8 @@ widgets:
 
   mode01_result:
     - type: text
-      text: "CYGNUS LOCATED:\n\nTime: (modestat_1_final_timing) seconds"
+      text: "CYGNUS LOCATED:\n\nTime: (modestat_1_final_timing) seconds\n\nScore: (modestat_1_scoring)"
+      number_grouping: true
       color: white
       anchor_x: center
       anchor_y: center
@@ -979,7 +980,8 @@ widgets:
          selector2_mode7_highlighted: drop_text_down
   mode02_result:
     - type: text
-      text: "BLACK HOLE\nGRAVITY ESCAPED"
+      text: "BLACK HOLE\nGRAVITY ESCAPED\n\nScore: (modestat_2_scoring)"
+      number_grouping: true
       color: white
       anchor_x: center
       anchor_y: center
@@ -1000,7 +1002,8 @@ widgets:
          selector2_mode1_highlighted: drop_text_down
   mode03_result:
     - type: text
-      text: "SHOOTING GALLERY\nTargets: (modestat_3_final_hits)"
+      text: "SHOOTING GALLERY\nTargets: (modestat_3_final_hits)\n\nScore: (modestat_3_scoring)"
+      number_grouping: true
       color: white
       anchor_x: center
       anchor_y: center
@@ -1021,7 +1024,8 @@ widgets:
          selector2_mode2_highlighted: drop_text_down
   mode04_result:
     - type: text
-      text: "METEOR STRIKE\nMeteors Avoided: (modestat_4_final_hits)"
+      text: "METEOR STRIKE\nMeteors Avoided: (modestat_4_final_hits)\n\nScore: (modestat_4_scoring)"
+      number_grouping: true
       color: white
       anchor_x: center
       anchor_y: center
@@ -1042,7 +1046,8 @@ widgets:
          selector2_mode3_highlighted: drop_text_down
   mode05_result:
     - type: text
-      text: "BATLLE WON\nTime Remaining: (modestat_5_final_extra_time)"
+      text: "BATLLE WON\nTime Remaining: (modestat_5_final_extra_time)\n\nScore: (modestat_5_scoring)"
+      number_grouping: true
       color: white
       anchor_x: center
       anchor_y: center
@@ -1063,7 +1068,8 @@ widgets:
          selector2_mode4_highlighted: drop_text_down
   mode06_result:
     - type: text
-      text: "DAVID WINS\nBattle Time: (modestat_6_final_time)"
+      text: "DAVID WINS\nBattle Time: (modestat_6_final_time)\n\nScore: (modestat_6_scoring)"
+      number_grouping: true
       color: white
       anchor_x: center
       anchor_y: center

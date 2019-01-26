@@ -227,6 +227,12 @@ variable_player:
      corridor_timer_ticks:
        action: set
        int: 300
+   modestat_5_base_scoring:
+       action: set
+       int: 0
+   modestat_5_scoring:
+       action: set
+       int: 0
    corridor_target_hit:
       corridor_timer_ticks: 30
       corridor_targets_hit: 1

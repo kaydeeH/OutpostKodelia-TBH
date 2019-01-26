@@ -26,6 +26,7 @@ config:
 modes:
   - base
 #  - selector
+  - tilt
   - selector2
   - high_score
   - bonus
@@ -52,6 +53,7 @@ modes:
 #  - pop_red
 #  - pop_green
 #  - pop_blue
+
 
 player_vars:
   pops:
@@ -207,6 +209,7 @@ keyboard:
     switch: diag03
   "=":
     switch: diag04
-
+  "h":
+    switch: s_tilt_bob
 
 

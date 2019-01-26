@@ -6,6 +6,12 @@ variable_player:
      escape_lane_count: 0
      escape_completed_scoring_base: 10000000
      escape_scoop_enabled: 0
+     modestat_2_base_scoring:
+        action: set
+        int: 0
+     modestat_2_scoring:
+        action: set
+        int: 0
   enable_scoop_loop:
      escape_scoop_enabled:
         action: set
@@ -21,21 +27,33 @@ variable_player:
      score:
       int: current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
       action: add
+     modestat_2_scoring:
+      int: current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+      action: add
+     modestat_2_base_scoring: current_player.esacpe_lane_base
   player_escape_lane_count{value==2}:
      score:
       int: 3 * current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
       action: add
+     modestat_2_scoring: 3 * current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+     modestat_2_base_scoring: 3 * current_player.esacpe_lane_base
   player_escape_lane_count{value==3}:
      score:
       int: 6 * current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
       action: add
+     modestat_2_scoring: 6 * current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+     modestat_2_base_scoring: 6 * current_player.esacpe_lane_base
   player_escape_lane_count{value>3}:
      score:
       int: current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
       action: add
      escape_completed_scoring_base: -1000000
+     modestat_2_scoring: current_player.esacpe_lane_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+     modestat_2_base_scoring: current_player.esacpe_lane_base
   player_escape_completed_scoring_base{value==0}:
      escape_completed_scoring_base: 1000000
   shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
      score: current_player.escape_completed_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
      bonuscount: 10
+     modestat_2_scoring: current_player.escape_completed_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+     modestat_2_base_scoring: current_player.escape_completed_scoring_base

@@ -1,0 +1,60 @@
+#config_version=5
+
+tilt:
+  tilt_warning_switch_tag: tilt_warning
+  warnings_to_tilt: 3
+  reset_warnings_events: ball_ended
+  settle_time: 5s
+  multiple_hit_window: 300ms
+
+#show_player:
+#  tilt_warning:
+#      tilt_warning_show:
+#          priority: 20000001
+#          loops: 0
+#  tilt:
+#      tilt_show:
+#          priority: 20000001
+#          loops: 0
+#shows:
+#  tilt_warning_show:
+#     - time: 0
+#       slides: tbh_tilt_warning
+#  tilt_show:
+#     - time: 0
+#       slides: tbh_tilt_slide
+
+slide_player:
+  _overwrite: true
+  tilt_warning_1: tbh_tilt_warning
+  tilt_warning_2: tbh_tilt_warning_2
+  tilt: tbh_tilt_slide
+  tilt_clear:
+      tbh_tilt_slide:
+         action: remove
+
+slides:
+  tbh_tilt_warning:
+    widgets:
+      - type: text
+        text: DANGER
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+    expire: 2s
+  tbh_tilt_warning_2:
+    widgets:
+      - type: text
+        text: DANGER ** DANGER
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+    expire: 2s
+  tbh_tilt_slide:
+    widgets:
+      - type: text
+        text: TILT
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
+

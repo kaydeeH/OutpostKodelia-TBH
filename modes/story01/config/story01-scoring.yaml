@@ -4,6 +4,12 @@ variable_player:
     cygnus_lane_count: 0
     cygnus_lane_scoring_base: 200000
     cygnus_completing_scoring_base: 25000000
+    modestat_1_base_scoring:
+      action: set
+      int: 0
+    modestat_1_scoring:
+      action: set
+      int: 0
   cygnus_lane_score:
     cygnus_lane_count: 1
     bonuscount: 3
@@ -11,12 +17,24 @@ variable_player:
     score:
       int: current_player.cygnus_lane_scoring_base * current_player.cygnus_lane_count * current_player.temp_playfield_x * current_player.perm_playfield_x
       action: add
+    modestat_1_scoring:
+      int: current_player.cygnus_lane_scoring_base * current_player.cygnus_lane_count * current_player.temp_playfield_x * current_player.perm_playfield_x
+      action: add
+    modestat_1_base_scoring:
+      int: current_player.cygnus_lane_scoring_base * current_player.cygnus_lane_count
+      action: add
   cygnus_lane_repeat_score:
     score: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 1
+    modestat_1_scoring: 10000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_1_base_scoring: 10000
   cygnus_located:
     score: 2000000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 3
+    modestat_1_scoring: 2000000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_1_base_scoring: 2000000
   cygnus_found:
     score: current_player.cygnus_completing_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
     bonuscount: 3
+    modestat_1_scoring: current_player.cygnus_completing_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_1_base_scoring: current_player.cygnus_completing_scoring_base

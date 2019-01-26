@@ -185,6 +185,50 @@ variable_player:
        int: 0
        action: set
 
+# -- Mode Tallies
+    modestat_1_scoring:
+       int: 0
+       action: set
+    modestat_2_scoring:
+       int: 0
+       action: set
+    modestat_3_scoring:
+       int: 0
+       action: set
+    modestat_4_scoring:
+       int: 0
+       action: set
+    modestat_5_scoring:
+       int: 0
+       action: set
+    modestat_6_scoring:
+       int: 0
+       action: set
+    modestat_7_scoring:
+       int: 0
+       action: set
+    modestat_1_base_scoring:
+       int: 0
+       action: set
+    modestat_2_base_scoring:
+       int: 0
+       action: set
+    modestat_3_base_scoring:
+       int: 0
+       action: set
+    modestat_4_base_scoring:
+       int: 0
+       action: set
+    modestat_5_base_scoring:
+       int: 0
+       action: set
+    modestat_6_base_scoring:
+       int: 0
+       action: set
+    modestat_7_base_scoring:
+       int: 0
+       action: set
+
 # Pop Bumpers
 # 250 each -- "Super" Modes may override
   s_jet_upper_left_active:

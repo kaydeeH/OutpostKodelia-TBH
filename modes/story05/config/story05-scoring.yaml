@@ -2,5 +2,6 @@
 variable_player:
   player_corridor_targets_hit:
     score: (current_player.corridor_targets_hit) * 100000 * current_player.temp_playfield_x * current_player.perm_playfield_x
-
+    modestat_5_scoring: (current_player.corridor_targets_hit) * 100000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_5_base_scoring: (current_player.corridor_targets_hit) * 100000
 

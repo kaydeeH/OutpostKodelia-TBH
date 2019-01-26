@@ -39,6 +39,7 @@ slides:
         font_name: ocr-a-tribute-bold
     expire: 3s
 
+
 timers:
   targetRotator:
    start_value: 0

@@ -317,6 +317,12 @@ variable_player:
     discovery_base_char_value:
        action: set
        int: 2000000
+    modestat_7_base_scoring:
+       action: set
+       int: 0
+    modestat_7_scoring:
+       action: set
+       int: 0
   discovery_char_bonus:
     discovery_base_char_value:
        action: set
@@ -337,6 +343,12 @@ variable_player:
     score:
        action: add
        int: current_player.discovery_base_char_value * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_7_scoring:
+       action: add
+       int: current_player.discovery_base_char_value * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_7_base_scoring:
+       action: add
+       int: current_player.discovery_base_char_value
   mode_story07_started:
     wiz_feature_collects:
        action: set
