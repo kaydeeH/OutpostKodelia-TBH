@@ -146,34 +146,42 @@ achievements:
    start_events: first_ball_for_current_player
    complete_events: char_vincent_complete
    reset_events: wizard_cashout
+   show_when_completed: char_vincent
  char_bob:
    start_events: first_ball_for_current_player
    complete_events: char_bob_complete
    reset_events: wizard_cashout
+   show_when_completed: char_bob
  char_dan:
    start_events: first_ball_for_current_player
    complete_events: char_dan_complete
    reset_events: wizard_cashout
+   show_when_completed: char_dan
  char_charlie:
    start_events: first_ball_for_current_player
    complete_events: char_charlie_complete
    reset_events: wizard_cashout
+   show_when_completed: char_charlie
  char_harry:
    start_events: first_ball_for_current_player
    complete_events: char_harry_complete
    reset_events: wizard_cashout
+   show_when_completed: char_harry
  char_kate:
    start_events: first_ball_for_current_player
    complete_events: char_kate_complete
    reset_events: wizard_cashout
+   show_when_completed: char_kate
  char_alex:
    start_events: first_ball_for_current_player
    complete_events: char_alex_complete
    reset_events: wizard_cashout
+   show_when_completed: char_alex
  char_hans:
    start_events: first_ball_for_current_player
    complete_events: char_hans_complete
    reset_events: wizard_cashout
+   show_when_completed: char_hans
 
 random_event_player:
    random_character_collect:

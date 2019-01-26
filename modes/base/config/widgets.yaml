@@ -2,21 +2,21 @@
 
 widgets:
      badge01:
-        - type: image
-          image: badgeLocateTheCygnus
-          anchor_x: center
-          anchor_y: center
-          x: 17%
-          y: 94%
-          z: 20
+      - type: image
+        image: badgeLocateTheCygnus
+        anchor_x: center
+        anchor_y: center
+        x: 17%
+        y: 94%
+        z: 20
      badge02:
-        - type: image
-          image: badgeEscape
-          anchor_x: center
-          anchor_y: center
-          x: 26%
-          y: 94%
-          z: 20
+      - type: image
+        image: badgeEscape
+        anchor_x: center
+        anchor_y: center
+        x: 26%
+        y: 94%
+        z: 20
      badge03:
       - type: image
         image: badgeShooting
@@ -57,3 +57,69 @@ widgets:
         x: 71%
         y: 94%
         z: 20
+
+     badge_dan:
+      - type: image
+        image: dan
+        anchor_x: center
+        anchor_y: center
+        x: 17%
+        y: 84%
+        z: 20
+     badge_charlie:
+      - type: image
+        image: charlie
+        anchor_x: center
+        anchor_y: center
+        x: 25%
+        y: 84%
+        z: 20
+     badge_harry:
+      - type: image
+        image: harry
+        anchor_x: center
+        anchor_y: center
+        x: 33%
+        y: 84%
+        z: 20
+     badge_kate:
+      - type: image
+        image: kate
+        anchor_x: center
+        anchor_y: center
+        x: 41%
+        y: 84%
+        z: 20
+     badge_alex:
+      - type: image
+        image: alex
+        anchor_x: center
+        anchor_y: center
+        x: 49%
+        y: 84%
+        z: 20
+     badge_hans:
+      - type: image
+        image: hanz
+        anchor_x: center
+        anchor_y: center
+        x: 57%
+        y: 84%
+        z: 20
+     badge_vincent:
+      - type: image
+        image: vincent
+        anchor_x: center
+        anchor_y: center
+        x: 65%
+        y: 84%
+        z: 20
+     badge_bob:
+      - type: image
+        image: bob
+        anchor_x: center
+        anchor_y: center
+        x: 73%
+        y: 84%
+        z: 20
+

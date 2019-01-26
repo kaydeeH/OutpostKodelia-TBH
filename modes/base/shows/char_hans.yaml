@@ -1,0 +1,7 @@
+#show_version=5
+
+- duration: 1
+  widgets:
+     badge_hans:
+        slide: scoring_slide
+        action: add
