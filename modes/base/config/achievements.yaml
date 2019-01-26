@@ -209,6 +209,10 @@ show_player:
   char_vincent_complete:
      char_vincent_collect:
        loops: 0
+     collectVincentShow:
+       loops: 0
+       speed: 45
+       priority: 10
   char_bob_complete:
      char_bob_collect:
        loops: 0
