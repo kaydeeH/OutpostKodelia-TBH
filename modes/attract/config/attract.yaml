@@ -1,7 +1,6 @@
 #config_version=5
 
 show_player:
-
   mode_attract_started:
     giWhite: #Sets basic GI white lighting as the default, plays forever
       priority: 5
@@ -461,4 +460,3 @@ slides:
           - property: opacity
             value: 0
             duration: 1s
-
