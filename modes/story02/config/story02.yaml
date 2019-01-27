@@ -39,6 +39,7 @@ event_player:
 #     - scoop_eject
    shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
      - story_is_about_to_end
+     - story02_is_about_to_end
    story_outro_complete:
      - scoop_eject
      - story_is_completed_successful

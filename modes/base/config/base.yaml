@@ -216,7 +216,15 @@ event_player:
       - global_timer_pause
     wizard_cashout:
       - global_timer_pause
+    story_01_is_about_to_end:
+      - global_timer_pause
+    story02_is_about_to_end:
+      - global_timer_pause
     selector2_item_selected:
+      - global_timer_unpause
+    acheivement_story01_successful:
+      - global_timer_unpause
+    acheivement_story02_successful:
       - global_timer_unpause
     story07_intro_complete:
       - global_timer_unpause

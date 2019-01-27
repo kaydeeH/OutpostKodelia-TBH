@@ -186,6 +186,7 @@ variable_player:
        action: set
 
 # -- Mode Tallies
+  first_ball_for_current_player:
     modestat_1_scoring:
        int: 0
        action: set
@@ -228,6 +229,57 @@ variable_player:
     modestat_7_base_scoring:
        int: 0
        action: set
+    modestat_1_highest_scoring:
+       int: 0
+       action: set
+    modestat_2_highest_scoring:
+       int: 0
+       action: set
+    modestat_3_highest_scoring:
+       int: 0
+       action: set
+    modestat_4_highest_scoring:
+       int: 0
+       action: set
+    modestat_5_highest_scoring:
+       int: 0
+       action: set
+    modestat_6_highest_scoring:
+       int: 0
+       action: set
+    modestat_7_highest_scoring:
+       int: 0
+       action: set
+
+# Mode High Score Tracking
+  player_modestat_1_scoring{value>current_player.modestat_1_highest_scoring}:
+    modestat_1_highest_scoring:
+       action: set
+       int: current_player.modestat_1_scoring
+  player_modestat_2_scoring{value>current_player.modestat_2_highest_scoring}:
+    modestat_2_highest_scoring:
+       action: set
+       int: current_player.modestat_2_scoring
+  player_modestat_3_scoring{value>current_player.modestat_3_highest_scoring}:
+    modestat_3_highest_scoring:
+       action: set
+       int: current_player.modestat_3_scoring
+  player_modestat_4_scoring{value>current_player.modestat_4_highest_scoring}:
+    modestat_4_highest_scoring:
+       action: set
+       int: current_player.modestat_4_scoring
+  player_modestat_5_scoring{value>current_player.modestat_5_highest_scoring}:
+    modestat_5_highest_scoring:
+       action: set
+       int: current_player.modestat_5_scoring
+  player_modestat_6_scoring{value>current_player.modestat_6_highest_scoring}:
+    modestat_6_highest_scoring:
+       action: set
+       int: current_player.modestat_6_scoring
+  player_modestat_7_scoring{value>current_player.modestat_7_highest_scoring}:
+    modestat_7_highest_scoring:
+       action: set
+       int: current_player.modestat_7_scoring
 
 # Pop Bumpers
 # 250 each -- "Super" Modes may override
