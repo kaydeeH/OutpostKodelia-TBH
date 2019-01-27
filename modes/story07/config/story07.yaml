@@ -28,6 +28,7 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
+     - story07_intro_complete
    in_mode_ball_save:
      - story_is_about_to_fail
    story_outro_complete:
