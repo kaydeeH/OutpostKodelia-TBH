@@ -42,8 +42,17 @@ sounds:
         file: 135885__andre-onate__gama-laser.wav
     bass_hit:
         file: bass_hit.wav
+        track: sfx
     character_collect_sound:
         file: character_collect.wav
+        track: sfx
+        ducking:
+          target: music
+          delay: 0ms
+          attack: 100ms
+          attenuation: .3
+          release_point: 1s
+          release: 500ms
 
     # Movie SFX
     gallerylaser:
@@ -56,11 +65,19 @@ sounds:
     # Music
     overture:
         file: Overture.wav
+        track: music
+        fade_out: 1s
     meteor:
         file: HotterAndHeavier-SecondHalf.wav
+        track: music
+        fade_out: 1s
     bobandvincent:
         file: BobandVINCent.wav
+        track: music
+        fade_out: 1s
     thatsit:
         file: ThatsIt.wav
+        track: music
+        fade_out: 1s
 
 
