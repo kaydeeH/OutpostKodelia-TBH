@@ -42,6 +42,8 @@ sounds:
         file: 135885__andre-onate__gama-laser.wav
     bass_hit:
         file: bass_hit.wav
+    character_collect_sound:
+        file: character_collect.wav
 
     # Movie SFX
     gallerylaser:
