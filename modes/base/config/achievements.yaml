@@ -253,6 +253,16 @@ show_player:
        speed: 45
        priority: 10
 
+sound_player:
+  char_dan_complete: character_collect_sound
+  char_charlie_complete: character_collect_sound
+  char_harry_complete: character_collect_sound
+  char_kate_complete: character_collect_sound
+  char_alex_complete: character_collect_sound
+  char_hans_complete: character_collect_sound
+  char_vincent_complete: character_collect_sound
+  char_bob_complete: character_collect_sound
+
 shows:
   char_dan_collect:
      - time: 0
