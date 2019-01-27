@@ -95,3 +95,15 @@
     l_GIUpperR:
       color: FFFFFF
       fade: 1s
+    l_giLeftLaneGuide0:
+      color: FFFFFF
+      fade: 1s
+    l_giLeftLaneGuide1:
+      color: FFFFFF
+      fade: 1s
+    l_giRightLaneGuide0:
+      color: FFFFFF
+      fade: 1s
+    l_giRightLaneGuide1:
+      color: FFFFFF
+      fade: 1s
