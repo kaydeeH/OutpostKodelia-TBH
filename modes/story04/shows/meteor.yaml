@@ -1,1372 +1,2503 @@
 #show_version=5
-- duration: 1
-  lights:
-      l_2x:
-        color: 'FFE700'
-        fade: 1000ms
-      l_3x:
-        color: 'FFE700'
-        fade: 1000ms
-      l_4x:
-        color: 'FFE700'
-        fade: 1000ms
-      l_5x:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIAboveScoopLower:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIAboveScoopUpper:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIAboveSpinnerLower:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIDropCenterLeft:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIDropLeft0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIDropRight1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GILane0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GILane1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GILane2:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GILane3:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GILane4:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GILane5:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GILowLeft:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GILowRight:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GISlingLeft0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GISlingLeft1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GISlingRight0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GISlingRight1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIUpperCL:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'FFE700'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus2:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus3:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus4:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus5:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus6:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus7:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonus8:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonusBig0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_bonusBig1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropCenterRight:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropLeft0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropRight0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'FFE700'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'FFE700'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'FFE700'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'FFE700'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'FFE700'
-        fade: 1000ms
-      l_lane0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_lane1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_lane2:
-        color: 'FFE700'
-        fade: 1000ms
-      l_lane3:
-        color: 'FFE700'
-        fade: 1000ms
-      l_lane4:
-        color: 'FFE700'
-        fade: 1000ms
-      l_mode0:
-        color: 'FFE700'
-        fade: 1000ms
-      l_mode1:
-        color: 'FFE700'
-        fade: 1000ms
-      l_mode2:
-        color: 'FFE700'
-        fade: 1000ms
-      l_mode3:
-        color: 'FFE700'
-        fade: 1000ms
-      l_mode4:
-        color: 'FFE700'
-        fade: 1000ms
-      l_mode5:
-        color: 'FFE700'
-        fade: 1000ms
-      l_mode6:
-        color: 'FFE700'
-        fade: 1000ms
-      l_scoop:
-        color: 'FFE700'
-        fade: 1000ms
-      l_shootAgain:
-        color: 'FFE700'
-        fade: 1000ms
-      l_specialLeft:
-        color: 'FFE700'
-        fade: 1000ms
-      l_specialRight:
-        color: 'FFE700'
-        fade: 1000ms
-      l_spinner:
-        color: 'FFE700'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'FFE700'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'FFE700'
-        fade: 1000ms
 
-- duration: 1
+- time: 0
   lights:
-      l_GIUpperCL:
-        color: 'C82900'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'C82800'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'FFFF00'
-        fade: 1000ms
+      l_2x: 'C39403'
+      l_3x: 'C39403'
+      l_4x: 'C39403'
+      l_5x: 'C39403'
+      l_GIAboveScoopLower: 'C38B03'
+      l_GIAboveScoopUpper: 'C38902'
+      l_GIAboveSpinnerLower: 'C38D03'
+      l_GIAboveSpinnerUpper: 'C38903'
+      l_GICreditsIn: 'C39403'
+      l_GIDropCenterLeft: 'C39403'
+      l_GIDropCenterRight: 'C39403'
+      l_GIDropLeft0: 'C39403'
+      l_GIDropLeft1: 'C39403'
+      l_GIDropRight0: 'C39403'
+      l_GIDropRight1: 'C39403'
+      l_GILane0: 'C38A03'
+      l_GILane1: 'C38A03'
+      l_GILane2: 'C38A03'
+      l_GILane3: 'C38A03'
+      l_GILane4: 'C38A02'
+      l_GILane5: 'C38A02'
+      l_GILowLeft: 'C39403'
+      l_GILowRight: 'C39403'
+      l_GIScoopLL: 'C39402'
+      l_GIScoopLR: 'C39103'
+      l_GIScoopML: 'C39003'
+      l_GIScoopMR: 'C38F03'
+      l_GIScoopUC: 'C38C03'
+      l_GISlingLeft0: 'C39403'
+      l_GISlingLeft1: 'C39403'
+      l_GISlingRight0: 'C39403'
+      l_GISlingRight1: 'C39403'
+      l_GIUpperCL: 'C38103'
+      l_GIUpperCR: 'C38102'
+      l_GIUpperL: 'C38503'
+      l_GIUpperR: 'C38402'
+      l_bonus0: 'C39403'
+      l_bonus1: 'C39403'
+      l_bonus2: 'C39403'
+      l_bonus3: 'C39403'
+      l_bonus4: 'C39403'
+      l_bonus5: 'C39403'
+      l_bonus6: 'C39403'
+      l_bonus7: 'C39403'
+      l_bonus8: 'C39403'
+      l_bonusBig0: 'C39403'
+      l_bonusBig1: 'C39403'
+      l_dropCenterLeft: 'C39403'
+      l_dropCenterRight: 'C39403'
+      l_dropLeft0: 'C39403'
+      l_dropLeft1: 'C39403'
+      l_dropLeft2: 'C39403'
+      l_dropLeft3: 'C39403'
+      l_dropRight0: 'C39403'
+      l_dropRight1: 'C39403'
+      l_dropRight2: 'C39403'
+      l_dropRight3: 'C39403'
+      l_giLeftLaneGuide0: 'C39403'
+      l_giLeftLaneGuide1: 'C39403'
+      l_giRightLaneGuide0: 'C39403'
+      l_giRightLaneGuide1: 'C39403'
+      l_jetLowerCenter: 'C39403'
+      l_jetUpperLeft: 'C39002'
+      l_jetUpperRight: 'C39003'
+      l_lane0: 'C38703'
+      l_lane1: 'C38702'
+      l_lane2: 'C38602'
+      l_lane3: 'C38703'
+      l_lane4: 'C38703'
+      l_mode0: 'C39403'
+      l_mode1: 'C39403'
+      l_mode2: 'C39403'
+      l_mode3: 'C39403'
+      l_mode4: 'C39402'
+      l_mode5: 'C39403'
+      l_mode6: 'C39403'
+      l_scoop: 'C39303'
+      l_shootAgain: 'C39403'
+      l_specialLeft: 'C39403'
+      l_specialRight: 'C39403'
+      l_spinner: 'C39303'
+      l_yellowTargetLeft: 'C38D03'
+      l_yellowTargetRight: 'C38D03'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIUpperCL:
-        color: 'C81B00'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'C81900'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'FFFF00'
-        fade: 1000ms
+      l_GIAboveScoopLower: 'C38703'
+      l_GIAboveScoopUpper: 'C38503'
+      l_GIAboveSpinnerLower: 'C38A02'
+      l_GIAboveSpinnerUpper: 'C38502'
+      l_GIDropLeft1: 'C39303'
+      l_GIDropRight1: 'C39303'
+      l_GILane0: 'C38603'
+      l_GILane1: 'C38602'
+      l_GILane2: 'C38703'
+      l_GILane3: 'C38603'
+      l_GILane4: 'C38603'
+      l_GILane5: 'C38602'
+      l_GILowRight: 'C39402'
+      l_GIScoopLL: 'C39103'
+      l_GIScoopLR: 'C38E03'
+      l_GIScoopML: 'C38D03'
+      l_GIScoopMR: 'C38C03'
+      l_GIScoopUC: 'C38802'
+      l_GIUpperCL: 'C37C03'
+      l_GIUpperCR: 'C47C02'
+      l_GIUpperL: 'C38003'
+      l_GIUpperR: 'C47F03'
+      l_dropLeft3: 'C39303'
+      l_dropRight3: 'C39302'
+      l_jetLowerCenter: 'C39203'
+      l_jetUpperLeft: 'C38D03'
+      l_jetUpperRight: 'C38D03'
+      l_lane0: 'C38203'
+      l_lane1: 'C38302'
+      l_lane2: 'C38303'
+      l_lane3: 'C38303'
+      l_lane4: 'C38303'
+      l_mode4: 'C39403'
+      l_scoop: 'C39103'
+      l_spinner: 'C39103'
+      l_yellowTargetLeft: 'C38A03'
+      l_yellowTargetRight: 'C38B03'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIUpperCL:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'C80C00'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C82800'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C82100'
-        fade: 1000ms
-      l_lane0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_lane1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_lane2:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_lane3:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_lane4:
-        color: 'FFFF00'
-        fade: 1000ms
+      l_GIAboveScoopLower: 'C38302'
+      l_GIAboveScoopUpper: 'C38102'
+      l_GIAboveSpinnerLower: 'C38603'
+      l_GIAboveSpinnerUpper: 'C38102'
+      l_GIDropCenterLeft: 'C39103'
+      l_GIDropCenterRight: 'C39103'
+      l_GIDropLeft0: 'C39303'
+      l_GIDropLeft1: 'C39103'
+      l_GIDropRight0: 'C39203'
+      l_GIDropRight1: 'C39003'
+      l_GILane0: 'C38202'
+      l_GILane1: 'C38202'
+      l_GILane2: 'C38303'
+      l_GILane3: 'C38302'
+      l_GILane4: 'C38302'
+      l_GILane5: 'C38302'
+      l_GILowLeft: 'C39402'
+      l_GILowRight: 'C39403'
+      l_GIScoopLL: 'C38E03'
+      l_GIScoopLR: 'C38B03'
+      l_GIScoopML: 'C38A02'
+      l_GIScoopMR: 'C38803'
+      l_GIScoopUC: 'C38402'
+      l_GISlingRight1: 'C39402'
+      l_GIUpperCL: 'C47802'
+      l_GIUpperCR: 'C47803'
+      l_GIUpperL: 'C37C02'
+      l_GIUpperR: 'C47B02'
+      l_bonus5: 'C39402'
+      l_dropCenterLeft: 'C39203'
+      l_dropCenterRight: 'C39203'
+      l_dropLeft0: 'C39402'
+      l_dropLeft1: 'C39303'
+      l_dropLeft2: 'C39203'
+      l_dropLeft3: 'C39103'
+      l_dropRight1: 'C39303'
+      l_dropRight2: 'C39203'
+      l_dropRight3: 'C39103'
+      l_jetLowerCenter: 'C38F03'
+      l_jetUpperLeft: 'C38A03'
+      l_jetUpperRight: 'C38A03'
+      l_lane0: 'C37E02'
+      l_lane1: 'C47E02'
+      l_lane2: 'C37E02'
+      l_lane3: 'C37E03'
+      l_lane4: 'C37F02'
+      l_mode6: 'C39303'
+      l_scoop: 'C38E03'
+      l_spinner: 'C38D03'
+      l_yellowTargetLeft: 'C38602'
+      l_yellowTargetRight: 'C38602'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveScoopUpper:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIUpperCL:
-        color: 'C80200'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'C80200'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C81900'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C81300'
-        fade: 1000ms
-      l_lane0:
-        color: 'C82900'
-        fade: 1000ms
-      l_lane1:
-        color: 'C82900'
-        fade: 1000ms
-      l_lane2:
-        color: 'C82900'
-        fade: 1000ms
-      l_lane3:
-        color: 'C82900'
-        fade: 1000ms
-      l_lane4:
-        color: 'C82900'
-        fade: 1000ms
+      l_GIAboveScoopLower: 'C47F02'
+      l_GIAboveScoopUpper: 'C37D03'
+      l_GIAboveSpinnerLower: 'C38202'
+      l_GIAboveSpinnerUpper: 'C47D02'
+      l_GIDropCenterLeft: 'C38E03'
+      l_GIDropCenterRight: 'C38F03'
+      l_GIDropLeft0: 'C39003'
+      l_GIDropLeft1: 'C38E03'
+      l_GIDropRight0: 'C39003'
+      l_GIDropRight1: 'C38E03'
+      l_GILane0: 'C37E03'
+      l_GILane1: 'C47E03'
+      l_GILane2: 'C47E03'
+      l_GILane3: 'C37F03'
+      l_GILane4: 'C47E03'
+      l_GILane5: 'C37E02'
+      l_GILowLeft: 'C39403'
+      l_GIScoopLL: 'C38B03'
+      l_GIScoopLR: 'C38802'
+      l_GIScoopML: 'C38603'
+      l_GIScoopMR: 'C38502'
+      l_GIScoopUC: 'C38003'
+      l_GISlingRight1: 'C39403'
+      l_GIUpperCL: 'C47302'
+      l_GIUpperCR: 'C47302'
+      l_GIUpperL: 'C47803'
+      l_GIUpperR: 'C47602'
+      l_bonus5: 'C39403'
+      l_bonus6: 'C39402'
+      l_bonus7: 'C39303'
+      l_bonus8: 'C39203'
+      l_bonusBig1: 'C39303'
+      l_dropCenterLeft: 'C39003'
+      l_dropCenterRight: 'C39003'
+      l_dropLeft0: 'C39203'
+      l_dropLeft1: 'C39103'
+      l_dropLeft2: 'C38F03'
+      l_dropLeft3: 'C38E03'
+      l_dropRight0: 'C39203'
+      l_dropRight1: 'C39002'
+      l_dropRight2: 'C38F03'
+      l_dropRight3: 'C38E03'
+      l_giRightLaneGuide1: 'C39402'
+      l_jetLowerCenter: 'C38C03'
+      l_jetUpperLeft: 'C38602'
+      l_jetUpperRight: 'C38702'
+      l_lane0: 'C47A03'
+      l_lane1: 'C47A02'
+      l_lane2: 'C37A03'
+      l_lane3: 'C47A02'
+      l_lane4: 'C47A03'
+      l_mode4: 'C39303'
+      l_mode5: 'C39202'
+      l_mode6: 'C39003'
+      l_scoop: 'C38B03'
+      l_spinner: 'C38A02'
+      l_yellowTargetLeft: 'C38203'
+      l_yellowTargetRight: 'C38303'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveScoopLower:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GILane0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GILane1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GILane2:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GILane3:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GILane4:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GILane5:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIUpperCL:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIUpperCR:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C80C00'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C80600'
-        fade: 1000ms
-      l_lane0:
-        color: 'C81B00'
-        fade: 1000ms
-      l_lane1:
-        color: 'C81A00'
-        fade: 1000ms
-      l_lane2:
-        color: 'C81A00'
-        fade: 1000ms
-      l_lane3:
-        color: 'C81B00'
-        fade: 1000ms
-      l_lane4:
-        color: 'C81B00'
-        fade: 1000ms
+      l_GIAboveScoopLower: 'C37B02'
+      l_GIAboveScoopUpper: 'C47803'
+      l_GIAboveSpinnerLower: 'C37E02'
+      l_GIAboveSpinnerUpper: 'C37802'
+      l_GIDropCenterLeft: 'C38C03'
+      l_GIDropCenterRight: 'C38C03'
+      l_GIDropLeft0: 'C38D03'
+      l_GIDropLeft1: 'C38B03'
+      l_GIDropRight0: 'C38D03'
+      l_GIDropRight1: 'C38A02'
+      l_GILane0: 'C47A02'
+      l_GILane1: 'C47A02'
+      l_GILane2: 'C47A03'
+      l_GILane3: 'C47A02'
+      l_GILane4: 'C47A02'
+      l_GILane5: 'C47A02'
+      l_GILowLeft: 'C39203'
+      l_GILowRight: 'C39203'
+      l_GIScoopLL: 'C38703'
+      l_GIScoopLR: 'C38402'
+      l_GIScoopML: 'C38202'
+      l_GIScoopMR: 'C38003'
+      l_GIScoopUC: 'C37C03'
+      l_GIUpperCL: 'C46E02'
+      l_GIUpperCR: 'C46E02'
+      l_GIUpperL: 'C47302'
+      l_GIUpperR: 'C47202'
+      l_bonus3: 'C39303'
+      l_bonus4: 'C39303'
+      l_bonus5: 'C39203'
+      l_bonus6: 'C39103'
+      l_bonus7: 'C39003'
+      l_bonus8: 'C38F03'
+      l_bonusBig0: 'C39203'
+      l_bonusBig1: 'C39103'
+      l_dropCenterLeft: 'C38D03'
+      l_dropCenterRight: 'C38D03'
+      l_dropLeft0: 'C38F03'
+      l_dropLeft1: 'C38E03'
+      l_dropLeft2: 'C38C03'
+      l_dropLeft3: 'C38B02'
+      l_dropRight0: 'C38F03'
+      l_dropRight1: 'C38D02'
+      l_dropRight2: 'C38C03'
+      l_dropRight3: 'C38B03'
+      l_giRightLaneGuide1: 'C39403'
+      l_jetLowerCenter: 'C38803'
+      l_jetUpperLeft: 'C38203'
+      l_jetUpperRight: 'C38302'
+      l_lane0: 'C47502'
+      l_lane1: 'C47502'
+      l_lane2: 'C47502'
+      l_lane3: 'C47502'
+      l_lane4: 'C47502'
+      l_mode3: 'C39203'
+      l_mode4: 'C39003'
+      l_mode5: 'C38F03'
+      l_mode6: 'C38D03'
+      l_scoop: 'C38703'
+      l_specialLeft: 'C39402'
+      l_spinner: 'C38703'
+      l_yellowTargetLeft: 'C37E02'
+      l_yellowTargetRight: 'C37E03'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveScoopUpper:
-        color: 'C81F00'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'C81F00'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C80200'
-        fade: 1000ms
-      l_GIUpperR:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane0:
-        color: 'C80E00'
-        fade: 1000ms
-      l_lane1:
-        color: 'C80D00'
-        fade: 1000ms
-      l_lane2:
-        color: 'C80D00'
-        fade: 1000ms
-      l_lane3:
-        color: 'C80D00'
-        fade: 1000ms
-      l_lane4:
-        color: 'C80D00'
-        fade: 1000ms
+      l_GIAboveScoopLower: 'C37602'
+      l_GIAboveScoopUpper: 'C47302'
+      l_GIAboveSpinnerLower: 'C47A02'
+      l_GIAboveSpinnerUpper: 'C47302'
+      l_GIDropCenterLeft: 'C38803'
+      l_GIDropCenterRight: 'C38803'
+      l_GIDropLeft0: 'C38A03'
+      l_GIDropLeft1: 'C38703'
+      l_GIDropRight0: 'C38902'
+      l_GIDropRight1: 'C38702'
+      l_GILane0: 'C47502'
+      l_GILane1: 'C47502'
+      l_GILane2: 'C47502'
+      l_GILane3: 'C47502'
+      l_GILane4: 'C47502'
+      l_GILane5: 'C47502'
+      l_GILowLeft: 'C39003'
+      l_GILowRight: 'C39002'
+      l_GIScoopLL: 'C38303'
+      l_GIScoopLR: 'C38002'
+      l_GIScoopML: 'C37E03'
+      l_GIScoopMR: 'C47C02'
+      l_GIScoopUC: 'C47703'
+      l_GIUpperCL: 'C46902'
+      l_GIUpperCR: 'C56902'
+      l_GIUpperL: 'C46E02'
+      l_GIUpperR: 'C46D02'
+      l_bonus1: 'C39303'
+      l_bonus2: 'C39203'
+      l_bonus3: 'C39103'
+      l_bonus4: 'C39003'
+      l_bonus5: 'C38F03'
+      l_bonus6: 'C38E03'
+      l_bonus7: 'C38D03'
+      l_bonus8: 'C38C03'
+      l_bonusBig0: 'C39002'
+      l_bonusBig1: 'C38E03'
+      l_dropCenterLeft: 'C38A02'
+      l_dropCenterRight: 'C38A03'
+      l_dropLeft0: 'C38C03'
+      l_dropLeft1: 'C38B03'
+      l_dropLeft2: 'C38903'
+      l_dropLeft3: 'C38703'
+      l_dropRight0: 'C38C03'
+      l_dropRight1: 'C38A03'
+      l_dropRight2: 'C38903'
+      l_dropRight3: 'C38702'
+      l_giLeftLaneGuide1: 'C39402'
+      l_jetLowerCenter: 'C38403'
+      l_jetUpperLeft: 'C37E02'
+      l_jetUpperRight: 'C37E02'
+      l_lane0: 'C47002'
+      l_lane1: 'C47002'
+      l_lane2: 'C47002'
+      l_lane3: 'C47102'
+      l_lane4: 'C47102'
+      l_mode0: 'C39402'
+      l_mode1: 'C39203'
+      l_mode2: 'C39103'
+      l_mode3: 'C38F03'
+      l_mode4: 'C38E03'
+      l_mode5: 'C38C03'
+      l_mode6: 'C38A03'
+      l_scoop: 'C38303'
+      l_specialLeft: 'C39403'
+      l_spinner: 'C38302'
+      l_yellowTargetLeft: 'C47902'
+      l_yellowTargetRight: 'C47A02'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveScoopLower:
-        color: 'C82300'
-        fade: 1000ms
-      l_GIAboveScoopUpper:
-        color: 'C81000'
-        fade: 1000ms
-      l_GIAboveSpinnerLower:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'C81000'
-        fade: 1000ms
-      l_GILane0:
-        color: 'C81B00'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C81B00'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GIUpperL:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane0:
-        color: 'C80200'
-        fade: 1000ms
-      l_lane1:
-        color: 'C80200'
-        fade: 1000ms
-      l_lane2:
-        color: 'C80200'
-        fade: 1000ms
-      l_lane3:
-        color: 'C80200'
-        fade: 1000ms
-      l_lane4:
-        color: 'C80200'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'FFFF00'
-        fade: 1000ms
+      l_GIAboveScoopLower: 'C47102'
+      l_GIAboveScoopUpper: 'C46E02'
+      l_GIAboveSpinnerLower: 'C47502'
+      l_GIAboveSpinnerUpper: 'C46F02'
+      l_GIDropCenterLeft: 'C38403'
+      l_GIDropCenterRight: 'C38403'
+      l_GIDropLeft0: 'C38602'
+      l_GIDropLeft1: 'C38303'
+      l_GIDropRight0: 'C38603'
+      l_GIDropRight1: 'C38302'
+      l_GILane0: 'C47002'
+      l_GILane1: 'C47002'
+      l_GILane2: 'C47002'
+      l_GILane3: 'C47002'
+      l_GILane4: 'C47002'
+      l_GILane5: 'C47002'
+      l_GILowLeft: 'C38D03'
+      l_GILowRight: 'C38D03'
+      l_GIScoopLL: 'C38003'
+      l_GIScoopLR: 'C37C02'
+      l_GIScoopML: 'C37902'
+      l_GIScoopMR: 'C47802'
+      l_GIScoopUC: 'C47302'
+      l_GISlingLeft0: 'C39402'
+      l_GISlingLeft1: 'C39203'
+      l_GISlingRight1: 'C39203'
+      l_GIUpperCL: 'C56402'
+      l_GIUpperCR: 'C46402'
+      l_GIUpperL: 'C56902'
+      l_GIUpperR: 'C46802'
+      l_bonus0: 'C39203'
+      l_bonus1: 'C39103'
+      l_bonus2: 'C39003'
+      l_bonus3: 'C38E03'
+      l_bonus4: 'C38D02'
+      l_bonus5: 'C38C03'
+      l_bonus6: 'C38B03'
+      l_bonus7: 'C38A03'
+      l_bonus8: 'C38803'
+      l_bonusBig0: 'C38D03'
+      l_bonusBig1: 'C38B03'
+      l_dropCenterLeft: 'C38602'
+      l_dropCenterRight: 'C38603'
+      l_dropLeft0: 'C38803'
+      l_dropLeft1: 'C38702'
+      l_dropLeft2: 'C38503'
+      l_dropLeft3: 'C38303'
+      l_dropRight0: 'C38903'
+      l_dropRight1: 'C38702'
+      l_dropRight2: 'C38502'
+      l_dropRight3: 'C38303'
+      l_giLeftLaneGuide1: 'C39403'
+      l_jetLowerCenter: 'C38002'
+      l_jetUpperLeft: 'C47903'
+      l_jetUpperRight: 'C47A02'
+      l_lane0: 'C46B02'
+      l_lane1: 'C46B02'
+      l_lane2: 'C46B02'
+      l_lane3: 'C46B02'
+      l_lane4: 'C46B02'
+      l_mode0: 'C39203'
+      l_mode1: 'C39003'
+      l_mode2: 'C38F02'
+      l_mode3: 'C38C03'
+      l_mode4: 'C38B03'
+      l_mode5: 'C38903'
+      l_mode6: 'C38602'
+      l_scoop: 'C37F03'
+      l_spinner: 'C47E03'
+      l_yellowTargetLeft: 'C47502'
+      l_yellowTargetRight: 'C47503'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveScoopLower:
-        color: 'C81400'
-        fade: 1000ms
-      l_GIAboveScoopUpper:
-        color: 'C80400'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'C80400'
-        fade: 1000ms
-      l_GILane0:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C80E00'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C80E00'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C81B00'
-        fade: 1000ms
-      l_lane0:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane1:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane2:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane3:
-        color: 'C80000'
-        fade: 1000ms
-      l_lane4:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C39203'
+      l_3x: 'C39203'
+      l_4x: 'C39203'
+      l_5x: 'C39203'
+      l_GIAboveScoopLower: 'C46C02'
+      l_GIAboveScoopUpper: 'C46902'
+      l_GIAboveSpinnerLower: 'C47002'
+      l_GIAboveSpinnerUpper: 'C46902'
+      l_GIDropCenterLeft: 'C38003'
+      l_GIDropCenterRight: 'C38002'
+      l_GIDropLeft0: 'C38203'
+      l_GIDropLeft1: 'C38003'
+      l_GIDropRight0: 'C38202'
+      l_GIDropRight1: 'C47F03'
+      l_GILane0: 'C56B02'
+      l_GILane1: 'C46B02'
+      l_GILane2: 'C46B02'
+      l_GILane3: 'C46C02'
+      l_GILane4: 'C46B02'
+      l_GILane5: 'C46B02'
+      l_GILowLeft: 'C38A03'
+      l_GILowRight: 'C38902'
+      l_GIScoopLL: 'C37B02'
+      l_GIScoopLR: 'C47702'
+      l_GIScoopML: 'C47502'
+      l_GIScoopMR: 'C47302'
+      l_GIScoopUC: 'C46E02'
+      l_GISlingLeft0: 'C39103'
+      l_GISlingLeft1: 'C39003'
+      l_GISlingRight0: 'C39103'
+      l_GISlingRight1: 'C39003'
+      l_GIUpperCL: 'C55F02'
+      l_GIUpperCR: 'C55F02'
+      l_GIUpperL: 'C46302'
+      l_GIUpperR: 'C56302'
+      l_bonus0: 'C38F03'
+      l_bonus1: 'C38E03'
+      l_bonus2: 'C38D03'
+      l_bonus3: 'C38B03'
+      l_bonus4: 'C38A03'
+      l_bonus5: 'C38902'
+      l_bonus6: 'C38802'
+      l_bonus7: 'C38602'
+      l_bonus8: 'C38502'
+      l_bonusBig0: 'C38903'
+      l_bonusBig1: 'C38702'
+      l_dropCenterLeft: 'C38203'
+      l_dropCenterRight: 'C38203'
+      l_dropLeft0: 'C38502'
+      l_dropLeft1: 'C38303'
+      l_dropLeft2: 'C38102'
+      l_dropLeft3: 'C37F03'
+      l_dropRight0: 'C38503'
+      l_dropRight1: 'C38303'
+      l_dropRight2: 'C38102'
+      l_dropRight3: 'C37F02'
+      l_giLeftLaneGuide0: 'C39203'
+      l_giRightLaneGuide0: 'C39303'
+      l_giRightLaneGuide1: 'C39303'
+      l_jetLowerCenter: 'C37C02'
+      l_jetUpperLeft: 'C47502'
+      l_jetUpperRight: 'C47502'
+      l_lane0: 'C46602'
+      l_lane1: 'C46602'
+      l_lane2: 'C46602'
+      l_lane3: 'C46602'
+      l_lane4: 'C46702'
+      l_mode0: 'C38F02'
+      l_mode1: 'C38D03'
+      l_mode2: 'C38B02'
+      l_mode3: 'C38903'
+      l_mode4: 'C38703'
+      l_mode5: 'C38503'
+      l_mode6: 'C38303'
+      l_scoop: 'C47B02'
+      l_shootAgain: 'C39303'
+      l_specialLeft: 'C39303'
+      l_specialRight: 'C39303'
+      l_spinner: 'C47A02'
+      l_yellowTargetLeft: 'C47002'
+      l_yellowTargetRight: 'C47002'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveScoopLower:
-        color: 'C80800'
-        fade: 1000ms
-      l_GIAboveScoopUpper:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIAboveSpinnerLower:
-        color: 'C81A00'
-        fade: 1000ms
-      l_GIAboveSpinnerUpper:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane0:
-        color: 'C80200'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C80200'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C80300'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C80300'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C80300'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C80300'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C80D00'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C81A00'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C81E00'
-        fade: 1000ms
+      l_2x: 'C39003'
+      l_3x: 'C39003'
+      l_4x: 'C38F03'
+      l_5x: 'C38F02'
+      l_GIAboveScoopLower: 'C46702'
+      l_GIAboveScoopUpper: 'C46402'
+      l_GIAboveSpinnerLower: 'C56B02'
+      l_GIAboveSpinnerUpper: 'C56402'
+      l_GIDropCenterLeft: 'C47C02'
+      l_GIDropCenterRight: 'C37C02'
+      l_GIDropLeft0: 'C47E02'
+      l_GIDropLeft1: 'C47B02'
+      l_GIDropRight0: 'C37E03'
+      l_GIDropRight1: 'C47A02'
+      l_GILane0: 'C56602'
+      l_GILane1: 'C46602'
+      l_GILane2: 'C46602'
+      l_GILane3: 'C56602'
+      l_GILane4: 'C56602'
+      l_GILane5: 'C46602'
+      l_GILowLeft: 'C38602'
+      l_GILowRight: 'C38503'
+      l_GIScoopLL: 'C47702'
+      l_GIScoopLR: 'C47202'
+      l_GIScoopML: 'C47002'
+      l_GIScoopMR: 'C46E02'
+      l_GIScoopUC: 'C46902'
+      l_GISlingLeft0: 'C38E03'
+      l_GISlingLeft1: 'C38D03'
+      l_GISlingRight0: 'C38E03'
+      l_GISlingRight1: 'C38D02'
+      l_GIUpperCL: 'C55902'
+      l_GIUpperCR: 'C55902'
+      l_GIUpperL: 'C55E02'
+      l_GIUpperR: 'C55D02'
+      l_bonus0: 'C38C02'
+      l_bonus1: 'C38B03'
+      l_bonus2: 'C38902'
+      l_bonus3: 'C38803'
+      l_bonus4: 'C38603'
+      l_bonus5: 'C38502'
+      l_bonus6: 'C38403'
+      l_bonus7: 'C38203'
+      l_bonus8: 'C38002'
+      l_bonusBig0: 'C38603'
+      l_bonusBig1: 'C38302'
+      l_dropCenterLeft: 'C47E03'
+      l_dropCenterRight: 'C47E03'
+      l_dropLeft0: 'C38102'
+      l_dropLeft1: 'C47F03'
+      l_dropLeft2: 'C47D02'
+      l_dropLeft3: 'C47B02'
+      l_dropRight0: 'C38102'
+      l_dropRight1: 'C37F03'
+      l_dropRight2: 'C37C02'
+      l_dropRight3: 'C47B02'
+      l_giLeftLaneGuide0: 'C39002'
+      l_giLeftLaneGuide1: 'C39103'
+      l_giRightLaneGuide0: 'C39003'
+      l_giRightLaneGuide1: 'C39103'
+      l_jetLowerCenter: 'C37802'
+      l_jetUpperLeft: 'C47002'
+      l_jetUpperRight: 'C47002'
+      l_lane0: 'C56102'
+      l_lane1: 'C56102'
+      l_lane2: 'C46102'
+      l_lane3: 'C56102'
+      l_lane4: 'C46102'
+      l_mode0: 'C38B03'
+      l_mode1: 'C38903'
+      l_mode2: 'C38803'
+      l_mode3: 'C38502'
+      l_mode4: 'C38302'
+      l_mode5: 'C38102'
+      l_mode6: 'C47F02'
+      l_scoop: 'C47602'
+      l_shootAgain: 'C39203'
+      l_specialLeft: 'C39103'
+      l_specialRight: 'C39103'
+      l_spinner: 'C47502'
+      l_yellowTargetLeft: 'C46B02'
+      l_yellowTargetRight: 'C46C02'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveScoopLower:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIAboveSpinnerLower:
-        color: 'C80C00'
-        fade: 1000ms
-      l_GILane0:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane1:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane2:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane3:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane4:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILane5:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C81E00'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C80200'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C80C00'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C80F00'
-        fade: 1000ms
+      l_2x: 'C38C03'
+      l_3x: 'C38C02'
+      l_4x: 'C38C03'
+      l_5x: 'C38C02'
+      l_GIAboveScoopLower: 'C46202'
+      l_GIAboveScoopUpper: 'C55F02'
+      l_GIAboveSpinnerLower: 'C56602'
+      l_GIAboveSpinnerUpper: 'C55F02'
+      l_GICreditsIn: 'C39103'
+      l_GIDropCenterLeft: 'C47702'
+      l_GIDropCenterRight: 'C47702'
+      l_GIDropLeft0: 'C47A02'
+      l_GIDropLeft1: 'C47602'
+      l_GIDropRight0: 'C47902'
+      l_GIDropRight1: 'C47602'
+      l_GILane0: 'C46102'
+      l_GILane1: 'C56002'
+      l_GILane2: 'C56102'
+      l_GILane3: 'C56102'
+      l_GILane4: 'C56102'
+      l_GILane5: 'C56102'
+      l_GILowLeft: 'C38202'
+      l_GILowRight: 'C38202'
+      l_GIScoopLL: 'C47202'
+      l_GIScoopLR: 'C46D02'
+      l_GIScoopML: 'C46B02'
+      l_GIScoopMR: 'C46902'
+      l_GIScoopUC: 'C56302'
+      l_GISlingLeft0: 'C38B03'
+      l_GISlingLeft1: 'C38903'
+      l_GISlingRight0: 'C38C03'
+      l_GISlingRight1: 'C38903'
+      l_GIUpperCL: 'C55302'
+      l_GIUpperCR: 'C55402'
+      l_GIUpperL: 'C55902'
+      l_GIUpperR: 'C55802'
+      l_bonus0: 'C38803'
+      l_bonus1: 'C38703'
+      l_bonus2: 'C38503'
+      l_bonus3: 'C38402'
+      l_bonus4: 'C38303'
+      l_bonus5: 'C38103'
+      l_bonus6: 'C38003'
+      l_bonus7: 'C37E02'
+      l_bonus8: 'C47C02'
+      l_bonusBig0: 'C38202'
+      l_bonusBig1: 'C37F03'
+      l_dropCenterLeft: 'C47902'
+      l_dropCenterRight: 'C47902'
+      l_dropLeft0: 'C47D02'
+      l_dropLeft1: 'C37B02'
+      l_dropLeft2: 'C37802'
+      l_dropLeft3: 'C47602'
+      l_dropRight0: 'C47D02'
+      l_dropRight1: 'C37A03'
+      l_dropRight2: 'C47802'
+      l_dropRight3: 'C47602'
+      l_giLeftLaneGuide0: 'C38D03'
+      l_giLeftLaneGuide1: 'C38E03'
+      l_giRightLaneGuide0: 'C38D03'
+      l_giRightLaneGuide1: 'C38E03'
+      l_jetLowerCenter: 'C47302'
+      l_jetUpperLeft: 'C56B02'
+      l_jetUpperRight: 'C46C02'
+      l_lane0: 'C55C02'
+      l_lane1: 'C55B02'
+      l_lane2: 'C55C02'
+      l_lane3: 'C55C02'
+      l_lane4: 'C55C02'
+      l_mode0: 'C38803'
+      l_mode1: 'C38602'
+      l_mode2: 'C38403'
+      l_mode3: 'C38103'
+      l_mode4: 'C37F02'
+      l_mode5: 'C47D02'
+      l_mode6: 'C47A02'
+      l_scoop: 'C47102'
+      l_shootAgain: 'C38E02'
+      l_specialLeft: 'C38D03'
+      l_specialRight: 'C38E03'
+      l_spinner: 'C47102'
+      l_yellowTargetLeft: 'C46602'
+      l_yellowTargetRight: 'C56702'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveSpinnerLower:
-        color: 'C80200'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C80F00'
-        fade: 1000ms
-      l_GIScoopUC:
-        color: 'C80000'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C81C00'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C81F00'
-        fade: 1000ms
-      l_scoop:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_spinner:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C80200'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C80400'
-        fade: 1000ms
+      l_2x: 'C28902'
+      l_3x: 'C28903'
+      l_4x: 'C28902'
+      l_5x: 'C28902'
+      l_GIAboveScoopLower: 'C45D02'
+      l_GIAboveScoopUpper: 'C45902'
+      l_GIAboveSpinnerLower: 'C46102'
+      l_GIAboveSpinnerUpper: 'C45A02'
+      l_GICreditsIn: 'C28F03'
+      l_GIDropCenterLeft: 'C27302'
+      l_GIDropCenterRight: 'C37302'
+      l_GIDropLeft0: 'C37502'
+      l_GIDropLeft1: 'C37202'
+      l_GIDropRight0: 'C37402'
+      l_GIDropRight1: 'C37102'
+      l_GILane0: 'C45C02'
+      l_GILane1: 'C45C02'
+      l_GILane2: 'C45C02'
+      l_GILane3: 'C45C02'
+      l_GILane4: 'C45C02'
+      l_GILane5: 'C45C02'
+      l_GILowLeft: 'C37E02'
+      l_GILowRight: 'C27E02'
+      l_GIScoopLL: 'C36D02'
+      l_GIScoopLR: 'C46802'
+      l_GIScoopML: 'C46602'
+      l_GIScoopMR: 'C36402'
+      l_GIScoopUC: 'C45E02'
+      l_GISlingLeft0: 'C28803'
+      l_GISlingLeft1: 'C28503'
+      l_GISlingRight0: 'C28803'
+      l_GISlingRight1: 'C28502'
+      l_GIUpperCL: 'C44E02'
+      l_GIUpperCR: 'C44E02'
+      l_GIUpperL: 'C55302'
+      l_GIUpperR: 'C45202'
+      l_bonus0: 'C28503'
+      l_bonus1: 'C28303'
+      l_bonus2: 'C28103'
+      l_bonus3: 'C28002'
+      l_bonus4: 'C27E03'
+      l_bonus5: 'C27D03'
+      l_bonus6: 'C27B02'
+      l_bonus7: 'C37902'
+      l_bonus8: 'C27803'
+      l_bonusBig0: 'C27E03'
+      l_bonusBig1: 'C37B02'
+      l_dropCenterLeft: 'C37502'
+      l_dropCenterRight: 'C37503'
+      l_dropLeft0: 'C37803'
+      l_dropLeft1: 'C37602'
+      l_dropLeft2: 'C37402'
+      l_dropLeft3: 'C37202'
+      l_dropRight0: 'C37802'
+      l_dropRight1: 'C37603'
+      l_dropRight2: 'C37402'
+      l_dropRight3: 'C37102'
+      l_giLeftLaneGuide0: 'C28A03'
+      l_giLeftLaneGuide1: 'C28B03'
+      l_giRightLaneGuide0: 'C28A03'
+      l_giRightLaneGuide1: 'C28B03'
+      l_jetLowerCenter: 'C36E02'
+      l_jetUpperLeft: 'C46602'
+      l_jetUpperRight: 'C46602'
+      l_lane0: 'C45702'
+      l_lane1: 'C45602'
+      l_lane2: 'C45602'
+      l_lane3: 'C45602'
+      l_lane4: 'C45602'
+      l_mode0: 'C28402'
+      l_mode1: 'C28202'
+      l_mode2: 'C38003'
+      l_mode3: 'C27D03'
+      l_mode4: 'C27B03'
+      l_mode5: 'C27802'
+      l_mode6: 'C37602'
+      l_scoop: 'C46C02'
+      l_shootAgain: 'C28B03'
+      l_specialLeft: 'C28A03'
+      l_specialRight: 'C28B02'
+      l_spinner: 'C36C02'
+      l_yellowTargetLeft: 'C46002'
+      l_yellowTargetRight: 'C46102'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIAboveSpinnerLower:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C81B00'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C80E00'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C80400'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C80F00'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C81100'
-        fade: 1000ms
-      l_yellowTargetLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_yellowTargetRight:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C28503'
+      l_3x: 'C28503'
+      l_4x: 'C28503'
+      l_5x: 'C28502'
+      l_GIAboveScoopLower: 'C55802'
+      l_GIAboveScoopUpper: 'C55402'
+      l_GIAboveSpinnerLower: 'C45B02'
+      l_GIAboveSpinnerUpper: 'C45402'
+      l_GICreditsIn: 'C28C03'
+      l_GIDropCenterLeft: 'C36E02'
+      l_GIDropCenterRight: 'C36E02'
+      l_GIDropLeft0: 'C37002'
+      l_GIDropLeft1: 'C36D02'
+      l_GIDropRight0: 'C37002'
+      l_GIDropRight1: 'C46C02'
+      l_GILane0: 'C45602'
+      l_GILane1: 'C45602'
+      l_GILane2: 'C45602'
+      l_GILane3: 'C55602'
+      l_GILane4: 'C45602'
+      l_GILane5: 'C45602'
+      l_GILowLeft: 'C37902'
+      l_GILowRight: 'C27902'
+      l_GIScoopLL: 'C36802'
+      l_GIScoopLR: 'C46302'
+      l_GIScoopML: 'C46002'
+      l_GIScoopMR: 'C45E02'
+      l_GIScoopUC: 'C45902'
+      l_GISlingLeft0: 'C28303'
+      l_GISlingLeft1: 'C28103'
+      l_GISlingRight0: 'C28403'
+      l_GISlingRight1: 'C28202'
+      l_GIUpperCL: 'C54902'
+      l_GIUpperCR: 'C54901'
+      l_GIUpperL: 'C54E02'
+      l_GIUpperR: 'C44C02'
+      l_bonus0: 'C28102'
+      l_bonus1: 'C27F02'
+      l_bonus2: 'C27D02'
+      l_bonus3: 'C27C02'
+      l_bonus4: 'C37A02'
+      l_bonus5: 'C37802'
+      l_bonus6: 'C37602'
+      l_bonus7: 'C27502'
+      l_bonus8: 'C37302'
+      l_bonusBig0: 'C37903'
+      l_bonusBig1: 'C37602'
+      l_dropCenterLeft: 'C37002'
+      l_dropCenterRight: 'C37002'
+      l_dropLeft0: 'C37302'
+      l_dropLeft1: 'C37102'
+      l_dropLeft2: 'C36F02'
+      l_dropLeft3: 'C46D02'
+      l_dropRight0: 'C37302'
+      l_dropRight1: 'C37102'
+      l_dropRight2: 'C36F02'
+      l_dropRight3: 'C36C02'
+      l_giLeftLaneGuide0: 'C28602'
+      l_giLeftLaneGuide1: 'C28702'
+      l_giRightLaneGuide0: 'C28702'
+      l_giRightLaneGuide1: 'C28802'
+      l_jetLowerCenter: 'C46902'
+      l_jetUpperLeft: 'C46002'
+      l_jetUpperRight: 'C46102'
+      l_lane0: 'C45102'
+      l_lane1: 'C45102'
+      l_lane2: 'C45102'
+      l_lane3: 'C45102'
+      l_lane4: 'C55002'
+      l_mode0: 'C38002'
+      l_mode1: 'C27E03'
+      l_mode2: 'C37B02'
+      l_mode3: 'C27903'
+      l_mode4: 'C37602'
+      l_mode5: 'C37402'
+      l_mode6: 'C37102'
+      l_scoop: 'C46702'
+      l_shootAgain: 'C28803'
+      l_specialLeft: 'C28602'
+      l_specialRight: 'C28703'
+      l_spinner: 'C36602'
+      l_yellowTargetLeft: 'C45B02'
+      l_yellowTargetRight: 'C45B02'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIDropRight1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C80D00'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C80300'
-        fade: 1000ms
-      l_GIScoopMR:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C80300'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C80400'
-        fade: 1000ms
-      l_spinner:
-        color: 'C82000'
-        fade: 1000ms
+      l_2x: 'C28102'
+      l_3x: 'C28103'
+      l_4x: 'C38203'
+      l_5x: 'C28103'
+      l_GIAboveScoopLower: 'C55202'
+      l_GIAboveScoopUpper: 'C54F02'
+      l_GIAboveSpinnerLower: 'C45602'
+      l_GIAboveSpinnerUpper: 'C54F02'
+      l_GICreditsIn: 'C28802'
+      l_GIDropCenterLeft: 'C36802'
+      l_GIDropCenterRight: 'C36802'
+      l_GIDropLeft0: 'C36B02'
+      l_GIDropLeft1: 'C36802'
+      l_GIDropRight0: 'C36B02'
+      l_GIDropRight1: 'C46602'
+      l_GILane0: 'C45002'
+      l_GILane1: 'C55002'
+      l_GILane2: 'C55102'
+      l_GILane3: 'C55102'
+      l_GILane4: 'C45002'
+      l_GILane5: 'C55102'
+      l_GILowLeft: 'C37502'
+      l_GILowRight: 'C37402'
+      l_GIScoopLL: 'C36302'
+      l_GIScoopLR: 'C45E02'
+      l_GIScoopML: 'C45B02'
+      l_GIScoopMR: 'C45902'
+      l_GIScoopUC: 'C55302'
+      l_GISlingLeft0: 'C28003'
+      l_GISlingLeft1: 'C37D02'
+      l_GISlingRight0: 'C28003'
+      l_GISlingRight1: 'C37E03'
+      l_GIUpperCL: 'C54301'
+      l_GIUpperCR: 'C54301'
+      l_GIUpperL: 'C54801'
+      l_GIUpperR: 'C54701'
+      l_bonus0: 'C27C03'
+      l_bonus1: 'C27B02'
+      l_bonus2: 'C37902'
+      l_bonus3: 'C37702'
+      l_bonus4: 'C37503'
+      l_bonus5: 'C37302'
+      l_bonus6: 'C37202'
+      l_bonus7: 'C37002'
+      l_bonus8: 'C36E02'
+      l_bonusBig0: 'C37402'
+      l_bonusBig1: 'C37202'
+      l_dropCenterLeft: 'C46B02'
+      l_dropCenterRight: 'C36B02'
+      l_dropLeft0: 'C36F02'
+      l_dropLeft1: 'C36C02'
+      l_dropLeft2: 'C36A02'
+      l_dropLeft3: 'C36802'
+      l_dropRight0: 'C36F02'
+      l_dropRight1: 'C36C02'
+      l_dropRight2: 'C36A02'
+      l_dropRight3: 'C36702'
+      l_giLeftLaneGuide0: 'C28203'
+      l_giLeftLaneGuide1: 'C28302'
+      l_giRightLaneGuide0: 'C28203'
+      l_giRightLaneGuide1: 'C28402'
+      l_jetLowerCenter: 'C36302'
+      l_jetUpperLeft: 'C45B02'
+      l_jetUpperRight: 'C45B02'
+      l_lane0: 'C54B02'
+      l_lane1: 'C44B02'
+      l_lane2: 'C54B02'
+      l_lane3: 'C54B01'
+      l_lane4: 'C54B02'
+      l_mode0: 'C37C03'
+      l_mode1: 'C37903'
+      l_mode2: 'C37702'
+      l_mode3: 'C37402'
+      l_mode4: 'C37102'
+      l_mode5: 'C36E02'
+      l_mode6: 'C36C02'
+      l_scoop: 'C46202'
+      l_shootAgain: 'C28403'
+      l_specialLeft: 'C28303'
+      l_specialRight: 'C28303'
+      l_spinner: 'C36102'
+      l_yellowTargetLeft: 'C45602'
+      l_yellowTargetRight: 'C45602'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIDropCenterLeft:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'C81900'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C80200'
-        fade: 1000ms
-      l_GIScoopML:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C82000'
-        fade: 1000ms
-      l_jetUpperLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_jetUpperRight:
-        color: 'C80000'
-        fade: 1000ms
-      l_scoop:
-        color: 'C81600'
-        fade: 1000ms
-      l_spinner:
-        color: 'C81200'
-        fade: 1000ms
+      l_2x: 'C37D02'
+      l_3x: 'C37D02'
+      l_4x: 'C27D02'
+      l_5x: 'C27D02'
+      l_GIAboveScoopLower: 'C54C02'
+      l_GIAboveScoopUpper: 'C54902'
+      l_GIAboveSpinnerLower: 'C45002'
+      l_GIAboveSpinnerUpper: 'C54901'
+      l_GICreditsIn: 'C28402'
+      l_GIDropCenterLeft: 'C46302'
+      l_GIDropCenterRight: 'C36302'
+      l_GIDropLeft0: 'C36602'
+      l_GIDropLeft1: 'C46202'
+      l_GIDropRight0: 'C36502'
+      l_GIDropRight1: 'C36202'
+      l_GILane0: 'C54B02'
+      l_GILane1: 'C54B01'
+      l_GILane2: 'C54B02'
+      l_GILane3: 'C54B02'
+      l_GILane4: 'C54B02'
+      l_GILane5: 'C54B02'
+      l_GILowLeft: 'C37002'
+      l_GILowRight: 'C37002'
+      l_GIScoopLL: 'C45D02'
+      l_GIScoopLR: 'C45802'
+      l_GIScoopML: 'C45602'
+      l_GIScoopMR: 'C45302'
+      l_GIScoopUC: 'C54E02'
+      l_GISlingLeft0: 'C27B02'
+      l_GISlingLeft1: 'C37802'
+      l_GISlingRight0: 'C37C02'
+      l_GISlingRight1: 'C37902'
+      l_GIUpperCL: 'C53E01'
+      l_GIUpperCR: 'C53E01'
+      l_GIUpperL: 'C54301'
+      l_GIUpperR: 'C54201'
+      l_bonus0: 'C37803'
+      l_bonus1: 'C37602'
+      l_bonus2: 'C37402'
+      l_bonus3: 'C37202'
+      l_bonus4: 'C37102'
+      l_bonus5: 'C36F02'
+      l_bonus6: 'C36D02'
+      l_bonus7: 'C36B02'
+      l_bonus8: 'C36902'
+      l_bonusBig0: 'C37002'
+      l_bonusBig1: 'C36C02'
+      l_dropCenterLeft: 'C36602'
+      l_dropCenterRight: 'C36602'
+      l_dropLeft0: 'C36902'
+      l_dropLeft1: 'C36702'
+      l_dropLeft2: 'C46502'
+      l_dropLeft3: 'C46202'
+      l_dropRight0: 'C46902'
+      l_dropRight1: 'C46602'
+      l_dropRight2: 'C36402'
+      l_dropRight3: 'C46202'
+      l_giLeftLaneGuide0: 'C37E02'
+      l_giLeftLaneGuide1: 'C37F02'
+      l_giRightLaneGuide0: 'C37E03'
+      l_giRightLaneGuide1: 'C28002'
+      l_jetLowerCenter: 'C45F02'
+      l_jetUpperLeft: 'C45602'
+      l_jetUpperRight: 'C45602'
+      l_lane0: 'C54601'
+      l_lane1: 'C54601'
+      l_lane2: 'C54601'
+      l_lane3: 'C54601'
+      l_lane4: 'C54601'
+      l_mode0: 'C37702'
+      l_mode1: 'C37502'
+      l_mode2: 'C37202'
+      l_mode3: 'C36F02'
+      l_mode4: 'C36C02'
+      l_mode5: 'C46902'
+      l_mode6: 'C46702'
+      l_scoop: 'C45D02'
+      l_shootAgain: 'C28003'
+      l_specialLeft: 'C27F03'
+      l_specialRight: 'C27F02'
+      l_spinner: 'C45C02'
+      l_yellowTargetLeft: 'C45002'
+      l_yellowTargetRight: 'C55102'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIDropLeft0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'C80C00'
-        fade: 1000ms
-      l_GIScoopLR:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropCenterRight:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C81100'
-        fade: 1000ms
-      l_mode6:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_scoop:
-        color: 'C80800'
-        fade: 1000ms
-      l_spinner:
-        color: 'C80600'
-        fade: 1000ms
+      l_2x: 'C37802'
+      l_3x: 'C37902'
+      l_4x: 'C37902'
+      l_5x: 'C37802'
+      l_GIAboveScoopLower: 'C54701'
+      l_GIAboveScoopUpper: 'C54301'
+      l_GIAboveSpinnerLower: 'C54B02'
+      l_GIAboveSpinnerUpper: 'C54301'
+      l_GICreditsIn: 'C28002'
+      l_GIDropCenterLeft: 'C45E02'
+      l_GIDropCenterRight: 'C45E02'
+      l_GIDropLeft0: 'C46102'
+      l_GIDropLeft1: 'C45D02'
+      l_GIDropRight0: 'C46002'
+      l_GIDropRight1: 'C45C02'
+      l_GILane0: 'C54501'
+      l_GILane1: 'C54601'
+      l_GILane2: 'C54602'
+      l_GILane3: 'C54601'
+      l_GILane4: 'C54602'
+      l_GILane5: 'C54601'
+      l_GILowLeft: 'C36B02'
+      l_GILowRight: 'C36B02'
+      l_GIScoopLL: 'C45802'
+      l_GIScoopLR: 'C45302'
+      l_GIScoopML: 'C55002'
+      l_GIScoopMR: 'C54E02'
+      l_GIScoopUC: 'C54801'
+      l_GISlingLeft0: 'C37703'
+      l_GISlingLeft1: 'C37402'
+      l_GISlingRight0: 'C37702'
+      l_GISlingRight1: 'C37402'
+      l_GIUpperCL: 'C53801'
+      l_GIUpperCR: 'C63801'
+      l_GIUpperL: 'C53D01'
+      l_GIUpperR: 'C53C01'
+      l_bonus0: 'C37302'
+      l_bonus1: 'C37102'
+      l_bonus2: 'C36F02'
+      l_bonus3: 'C36D02'
+      l_bonus4: 'C36B02'
+      l_bonus5: 'C46902'
+      l_bonus6: 'C46802'
+      l_bonus7: 'C46602'
+      l_bonus8: 'C46402'
+      l_bonusBig0: 'C36B02'
+      l_bonusBig1: 'C46702'
+      l_dropCenterLeft: 'C46002'
+      l_dropCenterRight: 'C46002'
+      l_dropLeft0: 'C36402'
+      l_dropLeft1: 'C46202'
+      l_dropLeft2: 'C45F02'
+      l_dropLeft3: 'C45D02'
+      l_dropRight0: 'C46402'
+      l_dropRight1: 'C46202'
+      l_dropRight2: 'C45F02'
+      l_dropRight3: 'C45C02'
+      l_giLeftLaneGuide0: 'C27902'
+      l_giLeftLaneGuide1: 'C27B02'
+      l_giRightLaneGuide0: 'C37A02'
+      l_giRightLaneGuide1: 'C37C02'
+      l_jetLowerCenter: 'C45902'
+      l_jetUpperLeft: 'C55002'
+      l_jetUpperRight: 'C45102'
+      l_lane0: 'C54001'
+      l_lane1: 'C54001'
+      l_lane2: 'C54001'
+      l_lane3: 'C54001'
+      l_lane4: 'C54001'
+      l_mode0: 'C37302'
+      l_mode1: 'C37002'
+      l_mode2: 'C36D02'
+      l_mode3: 'C36A02'
+      l_mode4: 'C46702'
+      l_mode5: 'C36402'
+      l_mode6: 'C46102'
+      l_scoop: 'C45702'
+      l_shootAgain: 'C37C02'
+      l_specialLeft: 'C27A02'
+      l_specialRight: 'C37B03'
+      l_spinner: 'C45602'
+      l_yellowTargetLeft: 'C54B02'
+      l_yellowTargetRight: 'C54B01'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIDropCenterLeft:
-        color: 'C81E00'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C81E00'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'C81900'
-        fade: 1000ms
-      l_GIDropRight1:
-        color: 'C81500'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'C80100'
-        fade: 1000ms
-      l_bonus8:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'C81800'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'C81500'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C80500'
-        fade: 1000ms
-      l_scoop:
-        color: 'C80000'
-        fade: 1000ms
-      l_spinner:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C37302'
+      l_3x: 'C37302'
+      l_4x: 'C37302'
+      l_5x: 'C37302'
+      l_GIAboveScoopLower: 'C54101'
+      l_GIAboveScoopUpper: 'C53E01'
+      l_GIAboveSpinnerLower: 'C54501'
+      l_GIAboveSpinnerUpper: 'C53E01'
+      l_GICreditsIn: 'C27B02'
+      l_GIDropCenterLeft: 'C45802'
+      l_GIDropCenterRight: 'C45802'
+      l_GIDropLeft0: 'C45B02'
+      l_GIDropLeft1: 'C45702'
+      l_GIDropRight0: 'C45A02'
+      l_GIDropRight1: 'C45702'
+      l_GILane0: 'C54001'
+      l_GILane1: 'C54001'
+      l_GILane2: 'C54001'
+      l_GILane3: 'C54001'
+      l_GILane4: 'C54001'
+      l_GILane5: 'C54001'
+      l_GILowLeft: 'C46502'
+      l_GILowRight: 'C46502'
+      l_GIScoopLL: 'C45202'
+      l_GIScoopLR: 'C44D02'
+      l_GIScoopML: 'C54A02'
+      l_GIScoopMR: 'C54802'
+      l_GIScoopUC: 'C54201'
+      l_GISlingLeft0: 'C37102'
+      l_GISlingLeft1: 'C36E02'
+      l_GISlingRight0: 'C37202'
+      l_GISlingRight1: 'C36F02'
+      l_GIUpperCL: 'C63301'
+      l_GIUpperCR: 'C63201'
+      l_GIUpperL: 'C63801'
+      l_GIUpperR: 'C63701'
+      l_bonus0: 'C36E02'
+      l_bonus1: 'C46C02'
+      l_bonus2: 'C46A02'
+      l_bonus3: 'C46802'
+      l_bonus4: 'C46602'
+      l_bonus5: 'C36402'
+      l_bonus6: 'C46202'
+      l_bonus7: 'C46002'
+      l_bonus8: 'C45E02'
+      l_bonusBig0: 'C46502'
+      l_bonusBig1: 'C36202'
+      l_dropCenterLeft: 'C45B02'
+      l_dropCenterRight: 'C45B02'
+      l_dropLeft0: 'C45E02'
+      l_dropLeft1: 'C45C02'
+      l_dropLeft2: 'C45A02'
+      l_dropLeft3: 'C45702'
+      l_dropRight0: 'C45F02'
+      l_dropRight1: 'C45C02'
+      l_dropRight2: 'C45902'
+      l_dropRight3: 'C45702'
+      l_giLeftLaneGuide0: 'C37402'
+      l_giLeftLaneGuide1: 'C37602'
+      l_giRightLaneGuide0: 'C37502'
+      l_giRightLaneGuide1: 'C27602'
+      l_jetLowerCenter: 'C45302'
+      l_jetUpperLeft: 'C54B02'
+      l_jetUpperRight: 'C44B02'
+      l_lane0: 'C63A01'
+      l_lane1: 'C53B01'
+      l_lane2: 'C53A01'
+      l_lane3: 'C63B01'
+      l_lane4: 'C53A01'
+      l_mode0: 'C36D02'
+      l_mode1: 'C36A02'
+      l_mode2: 'C36702'
+      l_mode3: 'C46402'
+      l_mode4: 'C46102'
+      l_mode5: 'C45F02'
+      l_mode6: 'C45C02'
+      l_scoop: 'C45102'
+      l_shootAgain: 'C37703'
+      l_specialLeft: 'C27502'
+      l_specialRight: 'C37602'
+      l_spinner: 'C45102'
+      l_yellowTargetLeft: 'C54501'
+      l_yellowTargetRight: 'C54501'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIDropCenterLeft:
-        color: 'C81000'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C81000'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'C80C00'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'C81C00'
-        fade: 1000ms
-      l_GIDropRight1:
-        color: 'C80800'
-        fade: 1000ms
-      l_GIScoopLL:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonus7:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropLeft0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'C81900'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'C80B00'
-        fade: 1000ms
-      l_dropRight0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'C81600'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'C80800'
-        fade: 1000ms
-      l_jetLowerCenter:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode5:
-        color: 'FFFF00'
-        fade: 1000ms
+      l_2x: 'C36E02'
+      l_3x: 'C36F02'
+      l_4x: 'C36E02'
+      l_5x: 'C36E02'
+      l_GIAboveScoopLower: 'C53B01'
+      l_GIAboveScoopUpper: 'C53801'
+      l_GIAboveSpinnerLower: 'C53F01'
+      l_GIAboveSpinnerUpper: 'C63801'
+      l_GICreditsIn: 'C37702'
+      l_GIDropCenterLeft: 'C45202'
+      l_GIDropCenterRight: 'C45202'
+      l_GIDropLeft0: 'C45502'
+      l_GIDropLeft1: 'C45202'
+      l_GIDropRight0: 'C45502'
+      l_GIDropRight1: 'C45102'
+      l_GILane0: 'C53A01'
+      l_GILane1: 'C63A01'
+      l_GILane2: 'C53A01'
+      l_GILane3: 'C63A01'
+      l_GILane4: 'C63A01'
+      l_GILane5: 'C53B01'
+      l_GILowLeft: 'C46002'
+      l_GILowRight: 'C46002'
+      l_GIScoopLL: 'C54C02'
+      l_GIScoopLR: 'C54701'
+      l_GIScoopML: 'C54501'
+      l_GIScoopMR: 'C54201'
+      l_GIScoopUC: 'C53D01'
+      l_GISlingLeft0: 'C36C02'
+      l_GISlingLeft1: 'C36A02'
+      l_GISlingRight0: 'C36D02'
+      l_GISlingRight1: 'C36A02'
+      l_GIUpperCL: 'C62E01'
+      l_GIUpperCR: 'C62D01'
+      l_GIUpperL: 'C63201'
+      l_GIUpperR: 'C63101'
+      l_bonus0: 'C36902'
+      l_bonus1: 'C36702'
+      l_bonus2: 'C46502'
+      l_bonus3: 'C46302'
+      l_bonus4: 'C46102'
+      l_bonus5: 'C45F02'
+      l_bonus6: 'C45D02'
+      l_bonus7: 'C45B02'
+      l_bonus8: 'C45902'
+      l_bonusBig0: 'C46002'
+      l_bonusBig1: 'C45D02'
+      l_dropCenterLeft: 'C45502'
+      l_dropCenterRight: 'C45502'
+      l_dropLeft0: 'C45902'
+      l_dropLeft1: 'C45702'
+      l_dropLeft2: 'C45402'
+      l_dropLeft3: 'C45102'
+      l_dropRight0: 'C45902'
+      l_dropRight1: 'C45702'
+      l_dropRight2: 'C45402'
+      l_dropRight3: 'C55102'
+      l_giLeftLaneGuide0: 'C36F02'
+      l_giLeftLaneGuide1: 'C37102'
+      l_giRightLaneGuide0: 'C37002'
+      l_giRightLaneGuide1: 'C37102'
+      l_jetLowerCenter: 'C54E02'
+      l_jetUpperLeft: 'C54501'
+      l_jetUpperRight: 'C54501'
+      l_lane0: 'C63501'
+      l_lane1: 'C63501'
+      l_lane2: 'C63501'
+      l_lane3: 'C63501'
+      l_lane4: 'C63501'
+      l_mode0: 'C36802'
+      l_mode1: 'C36502'
+      l_mode2: 'C36202'
+      l_mode3: 'C45F02'
+      l_mode4: 'C45C02'
+      l_mode5: 'C45902'
+      l_mode6: 'C45602'
+      l_scoop: 'C54C02'
+      l_shootAgain: 'C37202'
+      l_specialLeft: 'C37002'
+      l_specialRight: 'C37102'
+      l_spinner: 'C54B02'
+      l_yellowTargetLeft: 'C53F01'
+      l_yellowTargetRight: 'C54001'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIDropCenterLeft:
-        color: 'C80400'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C80400'
-        fade: 1000ms
-      l_GIDropLeft0:
-        color: 'C81100'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'C80200'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'C80E00'
-        fade: 1000ms
-      l_GIDropRight1:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonus6:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonusBig1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C81000'
-        fade: 1000ms
-      l_dropCenterRight:
-        color: 'C80F00'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'C81700'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'C80B00'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'C80100'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'C81600'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'C80900'
-        fade: 1000ms
-      l_dropRight3:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode4:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_mode6:
-        color: 'C81400'
-        fade: 1000ms
+      l_2x: 'C36902'
+      l_3x: 'C36902'
+      l_4x: 'C46902'
+      l_5x: 'C36A02'
+      l_GIAboveScoopLower: 'C63601'
+      l_GIAboveScoopUpper: 'C63301'
+      l_GIAboveSpinnerLower: 'C53A01'
+      l_GIAboveSpinnerUpper: 'C63301'
+      l_GICreditsIn: 'C37202'
+      l_GIDropCenterLeft: 'C44D02'
+      l_GIDropCenterRight: 'C54D02'
+      l_GIDropLeft0: 'C55002'
+      l_GIDropLeft1: 'C54C02'
+      l_GIDropRight0: 'C44F02'
+      l_GIDropRight1: 'C54C02'
+      l_GILane0: 'C63501'
+      l_GILane1: 'C63501'
+      l_GILane2: 'C63501'
+      l_GILane3: 'C63501'
+      l_GILane4: 'C63501'
+      l_GILane5: 'C63501'
+      l_GILowLeft: 'C45A02'
+      l_GILowRight: 'C45A02'
+      l_GIScoopLL: 'C54702'
+      l_GIScoopLR: 'C54201'
+      l_GIScoopML: 'C53F01'
+      l_GIScoopMR: 'C53D01'
+      l_GIScoopUC: 'C63801'
+      l_GISlingLeft0: 'C46802'
+      l_GISlingLeft1: 'C46402'
+      l_GISlingRight0: 'C36802'
+      l_GISlingRight1: 'C36502'
+      l_GIUpperCL: 'C62801'
+      l_GIUpperCR: 'C62801'
+      l_GIUpperL: 'C62D01'
+      l_GIUpperR: 'C62C01'
+      l_bonus0: 'C36302'
+      l_bonus1: 'C46102'
+      l_bonus2: 'C45F02'
+      l_bonus3: 'C45D02'
+      l_bonus4: 'C45B02'
+      l_bonus5: 'C45902'
+      l_bonus6: 'C45702'
+      l_bonus7: 'C45502'
+      l_bonus8: 'C45302'
+      l_bonusBig0: 'C45A02'
+      l_bonusBig1: 'C45702'
+      l_dropCenterLeft: 'C45002'
+      l_dropCenterRight: 'C44F02'
+      l_dropLeft0: 'C45402'
+      l_dropLeft1: 'C45102'
+      l_dropLeft2: 'C54F02'
+      l_dropLeft3: 'C54C02'
+      l_dropRight0: 'C45402'
+      l_dropRight1: 'C55102'
+      l_dropRight2: 'C54E02'
+      l_dropRight3: 'C54C02'
+      l_giLeftLaneGuide0: 'C36A02'
+      l_giLeftLaneGuide1: 'C36C02'
+      l_giRightLaneGuide0: 'C36B02'
+      l_giRightLaneGuide1: 'C36D02'
+      l_jetLowerCenter: 'C54801'
+      l_jetUpperLeft: 'C54001'
+      l_jetUpperRight: 'C54001'
+      l_lane0: 'C63001'
+      l_lane1: 'C63001'
+      l_lane2: 'C63001'
+      l_lane3: 'C63001'
+      l_lane4: 'C63001'
+      l_mode0: 'C46302'
+      l_mode1: 'C46002'
+      l_mode2: 'C45C02'
+      l_mode3: 'C45902'
+      l_mode4: 'C45702'
+      l_mode5: 'C55402'
+      l_mode6: 'C55102'
+      l_scoop: 'C54601'
+      l_shootAgain: 'C36D02'
+      l_specialLeft: 'C36B02'
+      l_specialRight: 'C36C02'
+      l_spinner: 'C54501'
+      l_yellowTargetLeft: 'C53A01'
+      l_yellowTargetRight: 'C53B01'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIDropCenterLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIDropCenterRight:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIDropLeft0:
-        color: 'C80500'
-        fade: 1000ms
-      l_GIDropLeft1:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'C80300'
-        fade: 1000ms
-      l_GILowLeft:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GILowRight:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus4:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus5:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus8:
-        color: 'C81300'
-        fade: 1000ms
-      l_bonusBig0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C80400'
-        fade: 1000ms
-      l_dropCenterRight:
-        color: 'C80400'
-        fade: 1000ms
-      l_dropLeft0:
-        color: 'C81700'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'C80A00'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'C80100'
-        fade: 1000ms
-      l_dropLeft3:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropRight0:
-        color: 'C81600'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'C80900'
-        fade: 1000ms
-      l_dropRight2:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode3:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_mode5:
-        color: 'C81700'
-        fade: 1000ms
-      l_mode6:
-        color: 'C80700'
-        fade: 1000ms
+      l_2x: 'C36402'
+      l_3x: 'C46402'
+      l_4x: 'C36402'
+      l_5x: 'C36402'
+      l_GIAboveScoopLower: 'C63101'
+      l_GIAboveScoopUpper: 'C62D01'
+      l_GIAboveSpinnerLower: 'C63501'
+      l_GIAboveSpinnerUpper: 'C62E01'
+      l_GICreditsIn: 'C36D02'
+      l_GIDropCenterLeft: 'C54702'
+      l_GIDropCenterRight: 'C54701'
+      l_GIDropLeft0: 'C44A01'
+      l_GIDropLeft1: 'C54702'
+      l_GIDropRight0: 'C54A01'
+      l_GIDropRight1: 'C54601'
+      l_GILane0: 'C63001'
+      l_GILane1: 'C63001'
+      l_GILane2: 'C63001'
+      l_GILane3: 'C63001'
+      l_GILane4: 'C63001'
+      l_GILane5: 'C63001'
+      l_GILowLeft: 'C45502'
+      l_GILowRight: 'C45502'
+      l_GIScoopLL: 'C54201'
+      l_GIScoopLR: 'C53D01'
+      l_GIScoopML: 'C53A01'
+      l_GIScoopMR: 'C63801'
+      l_GIScoopUC: 'C63201'
+      l_GISlingLeft0: 'C36202'
+      l_GISlingLeft1: 'C45F02'
+      l_GISlingRight0: 'C46302'
+      l_GISlingRight1: 'C46002'
+      l_GIUpperCL: 'C62301'
+      l_GIUpperCR: 'C62301'
+      l_GIUpperL: 'C62801'
+      l_GIUpperR: 'C62701'
+      l_bonus0: 'C45E02'
+      l_bonus1: 'C45C02'
+      l_bonus2: 'C45A02'
+      l_bonus3: 'C45802'
+      l_bonus4: 'C45602'
+      l_bonus5: 'C45402'
+      l_bonus6: 'C45202'
+      l_bonus7: 'C45002'
+      l_bonus8: 'C44D02'
+      l_bonusBig0: 'C45402'
+      l_bonusBig1: 'C55202'
+      l_dropCenterLeft: 'C54A02'
+      l_dropCenterRight: 'C54A01'
+      l_dropLeft0: 'C54E02'
+      l_dropLeft1: 'C54C02'
+      l_dropLeft2: 'C54901'
+      l_dropLeft3: 'C54602'
+      l_dropRight0: 'C54E02'
+      l_dropRight1: 'C54B02'
+      l_dropRight2: 'C54901'
+      l_dropRight3: 'C54601'
+      l_giLeftLaneGuide0: 'C36502'
+      l_giLeftLaneGuide1: 'C46702'
+      l_giRightLaneGuide0: 'C36602'
+      l_giRightLaneGuide1: 'C36802'
+      l_jetLowerCenter: 'C54301'
+      l_jetUpperLeft: 'C53A01'
+      l_jetUpperRight: 'C53B01'
+      l_lane0: 'C62B01'
+      l_lane1: 'C62B01'
+      l_lane2: 'C62B01'
+      l_lane3: 'C62B01'
+      l_lane4: 'C62B01'
+      l_mode0: 'C35E02'
+      l_mode1: 'C45A02'
+      l_mode2: 'C45802'
+      l_mode3: 'C45402'
+      l_mode4: 'C45102'
+      l_mode5: 'C54E02'
+      l_mode6: 'C54C02'
+      l_scoop: 'C54101'
+      l_shootAgain: 'C36802'
+      l_specialLeft: 'C46602'
+      l_specialRight: 'C46702'
+      l_spinner: 'C54001'
+      l_yellowTargetLeft: 'C63501'
+      l_yellowTargetRight: 'C63501'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GIDropLeft0:
-        color: 'C80000'
-        fade: 1000ms
-      l_GIDropRight0:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonus3:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus7:
-        color: 'C81100'
-        fade: 1000ms
-      l_bonus8:
-        color: 'C80700'
-        fade: 1000ms
-      l_dropCenterLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropCenterRight:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropLeft0:
-        color: 'C80A00'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'C80100'
-        fade: 1000ms
-      l_dropLeft2:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropRight0:
-        color: 'C80900'
-        fade: 1000ms
-      l_dropRight1:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode2:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_mode4:
-        color: 'C81900'
-        fade: 1000ms
-      l_mode5:
-        color: 'C80A00'
-        fade: 1000ms
-      l_mode6:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C45F02'
+      l_3x: 'C45F02'
+      l_4x: 'C45F02'
+      l_5x: 'C45F02'
+      l_GIAboveScoopLower: 'C62B01'
+      l_GIAboveScoopUpper: 'C62801'
+      l_GIAboveSpinnerLower: 'C62F01'
+      l_GIAboveSpinnerUpper: 'C62901'
+      l_GICreditsIn: 'C36802'
+      l_GIDropCenterLeft: 'C54201'
+      l_GIDropCenterRight: 'C54201'
+      l_GIDropLeft0: 'C54501'
+      l_GIDropLeft1: 'C54101'
+      l_GIDropRight0: 'C54402'
+      l_GIDropRight1: 'C54001'
+      l_GILane0: 'C62A01'
+      l_GILane1: 'C62A01'
+      l_GILane2: 'C62B01'
+      l_GILane3: 'C62B01'
+      l_GILane4: 'C62B01'
+      l_GILane5: 'C62B01'
+      l_GILowLeft: 'C55002'
+      l_GILowRight: 'C54F02'
+      l_GIScoopLL: 'C53C01'
+      l_GIScoopLR: 'C63701'
+      l_GIScoopML: 'C63501'
+      l_GIScoopMR: 'C63201'
+      l_GIScoopUC: 'C62D01'
+      l_GISlingLeft0: 'C45D02'
+      l_GISlingLeft1: 'C45A02'
+      l_GISlingRight0: 'C45E02'
+      l_GISlingRight1: 'C45A02'
+      l_GIUpperCL: 'C71F00'
+      l_GIUpperCR: 'C61E01'
+      l_GIUpperL: 'C62300'
+      l_GIUpperR: 'C62201'
+      l_bonus0: 'C45902'
+      l_bonus1: 'C45702'
+      l_bonus2: 'C45502'
+      l_bonus3: 'C55202'
+      l_bonus4: 'C55102'
+      l_bonus5: 'C54E02'
+      l_bonus6: 'C54C02'
+      l_bonus7: 'C54A02'
+      l_bonus8: 'C54801'
+      l_bonusBig0: 'C44F02'
+      l_bonusBig1: 'C54C02'
+      l_dropCenterLeft: 'C54502'
+      l_dropCenterRight: 'C54501'
+      l_dropLeft0: 'C54801'
+      l_dropLeft1: 'C54601'
+      l_dropLeft2: 'C54401'
+      l_dropLeft3: 'C54101'
+      l_dropRight0: 'C54902'
+      l_dropRight1: 'C54602'
+      l_dropRight2: 'C54301'
+      l_dropRight3: 'C54001'
+      l_giLeftLaneGuide0: 'C46002'
+      l_giLeftLaneGuide1: 'C46202'
+      l_giRightLaneGuide0: 'C46002'
+      l_giRightLaneGuide1: 'C36202'
+      l_jetLowerCenter: 'C53D01'
+      l_jetUpperLeft: 'C63501'
+      l_jetUpperRight: 'C63501'
+      l_lane0: 'C62601'
+      l_lane1: 'C62501'
+      l_lane2: 'C62501'
+      l_lane3: 'C62501'
+      l_lane4: 'C62501'
+      l_mode0: 'C45802'
+      l_mode1: 'C45502'
+      l_mode2: 'C45202'
+      l_mode3: 'C44F02'
+      l_mode4: 'C54C02'
+      l_mode5: 'C54901'
+      l_mode6: 'C54501'
+      l_scoop: 'C53B01'
+      l_shootAgain: 'C36302'
+      l_specialLeft: 'C46102'
+      l_specialRight: 'C46102'
+      l_spinner: 'C63B01'
+      l_yellowTargetLeft: 'C62F01'
+      l_yellowTargetRight: 'C63001'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_bonus2:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus5:
-        color: 'C81800'
-        fade: 1000ms
-      l_bonus6:
-        color: 'C80E00'
-        fade: 1000ms
-      l_bonus7:
-        color: 'C80400'
-        fade: 1000ms
-      l_bonus8:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonusBig1:
-        color: 'C80D00'
-        fade: 1000ms
-      l_dropLeft0:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropLeft1:
-        color: 'C80000'
-        fade: 1000ms
-      l_dropRight0:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_mode4:
-        color: 'C80B00'
-        fade: 1000ms
-      l_mode5:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C35A02'
+      l_3x: 'C35A02'
+      l_4x: 'C35902'
+      l_5x: 'C35A02'
+      l_GIAboveScoopLower: 'C52601'
+      l_GIAboveScoopUpper: 'C62301'
+      l_GIAboveSpinnerLower: 'C52A01'
+      l_GIAboveSpinnerUpper: 'C52401'
+      l_GICreditsIn: 'C36302'
+      l_GIDropCenterLeft: 'C43D01'
+      l_GIDropCenterRight: 'C43D01'
+      l_GIDropLeft0: 'C43F01'
+      l_GIDropLeft1: 'C43C01'
+      l_GIDropRight0: 'C43F01'
+      l_GIDropRight1: 'C43B01'
+      l_GILane0: 'C52501'
+      l_GILane1: 'C52501'
+      l_GILane2: 'C52501'
+      l_GILane3: 'C52601'
+      l_GILane4: 'C52501'
+      l_GILane5: 'C52601'
+      l_GILowLeft: 'C44A01'
+      l_GILowRight: 'C44A01'
+      l_GIScoopLL: 'C53701'
+      l_GIScoopLR: 'C53201'
+      l_GIScoopML: 'C52F01'
+      l_GIScoopMR: 'C52D01'
+      l_GIScoopUC: 'C52801'
+      l_GISlingLeft0: 'C35802'
+      l_GISlingLeft1: 'C35402'
+      l_GISlingRight0: 'C35802'
+      l_GISlingRight1: 'C45502'
+      l_GIUpperCL: 'C61A00'
+      l_GIUpperCR: 'C61A01'
+      l_GIUpperL: 'C61E00'
+      l_GIUpperR: 'C51D00'
+      l_bonus0: 'C35302'
+      l_bonus1: 'C35102'
+      l_bonus2: 'C44F02'
+      l_bonus3: 'C44D02'
+      l_bonus4: 'C44B02'
+      l_bonus5: 'C44901'
+      l_bonus6: 'C44701'
+      l_bonus7: 'C44502'
+      l_bonus8: 'C44301'
+      l_bonusBig0: 'C44A01'
+      l_bonusBig1: 'C44701'
+      l_dropCenterLeft: 'C43F01'
+      l_dropCenterRight: 'C43F01'
+      l_dropLeft0: 'C44301'
+      l_dropLeft1: 'C44001'
+      l_dropLeft2: 'C43E01'
+      l_dropLeft3: 'C43B01'
+      l_dropRight0: 'C44301'
+      l_dropRight1: 'C44001'
+      l_dropRight2: 'C43E01'
+      l_dropRight3: 'C43B01'
+      l_giLeftLaneGuide0: 'C35A02'
+      l_giLeftLaneGuide1: 'C35C02'
+      l_giRightLaneGuide0: 'C35B02'
+      l_giRightLaneGuide1: 'C35E02'
+      l_jetLowerCenter: 'C53801'
+      l_jetUpperLeft: 'C52F01'
+      l_jetUpperRight: 'C53001'
+      l_lane0: 'C62101'
+      l_lane1: 'C62001'
+      l_lane2: 'C52100'
+      l_lane3: 'C52101'
+      l_lane4: 'C52001'
+      l_mode0: 'C35302'
+      l_mode1: 'C35002'
+      l_mode2: 'C34D02'
+      l_mode3: 'C44902'
+      l_mode4: 'C44601'
+      l_mode5: 'C44301'
+      l_mode6: 'C44001'
+      l_scoop: 'C53601'
+      l_shootAgain: 'C35E02'
+      l_specialLeft: 'C35B02'
+      l_specialRight: 'C35C02'
+      l_spinner: 'C53501'
+      l_yellowTargetLeft: 'C52A01'
+      l_yellowTargetRight: 'C52B01'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GILowLeft:
-        color: 'C81100'
-        fade: 1000ms
-      l_GILowRight:
-        color: 'C81000'
-        fade: 1000ms
-      l_bonus1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus4:
-        color: 'C81500'
-        fade: 1000ms
-      l_bonus5:
-        color: 'C80A00'
-        fade: 1000ms
-      l_bonus6:
-        color: 'C80300'
-        fade: 1000ms
-      l_bonus7:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonusBig0:
-        color: 'C80F00'
-        fade: 1000ms
-      l_bonusBig1:
-        color: 'C80200'
-        fade: 1000ms
-      l_mode0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_mode3:
-        color: 'C80D00'
-        fade: 1000ms
-      l_mode4:
-        color: 'C80100'
-        fade: 1000ms
+      l_2x: 'C45402'
+      l_3x: 'C45402'
+      l_4x: 'C45402'
+      l_5x: 'C35402'
+      l_GIAboveScoopLower: 'C52201'
+      l_GIAboveScoopUpper: 'C51F00'
+      l_GIAboveSpinnerLower: 'C52501'
+      l_GIAboveSpinnerUpper: 'C61F01'
+      l_GICreditsIn: 'C35E02'
+      l_GIDropCenterLeft: 'C53701'
+      l_GIDropCenterRight: 'C53701'
+      l_GIDropLeft0: 'C43A01'
+      l_GIDropLeft1: 'C53601'
+      l_GIDropRight0: 'C53901'
+      l_GIDropRight1: 'C53501'
+      l_GILane0: 'C62001'
+      l_GILane1: 'C62001'
+      l_GILane2: 'C52101'
+      l_GILane3: 'C62100'
+      l_GILane4: 'C62101'
+      l_GILane5: 'C62100'
+      l_GILowLeft: 'C44401'
+      l_GILowRight: 'C44401'
+      l_GIScoopLL: 'C53101'
+      l_GIScoopLR: 'C52C01'
+      l_GIScoopML: 'C52A01'
+      l_GIScoopMR: 'C52801'
+      l_GIScoopUC: 'C52301'
+      l_GISlingLeft0: 'C45202'
+      l_GISlingLeft1: 'C44F02'
+      l_GISlingRight0: 'C35302'
+      l_GISlingRight1: 'C44F02'
+      l_GIUpperCL: 'C61601'
+      l_GIUpperCR: 'C61500'
+      l_GIUpperL: 'C61901'
+      l_GIUpperR: 'C61900'
+      l_bonus0: 'C34E02'
+      l_bonus1: 'C34C02'
+      l_bonus2: 'C44A02'
+      l_bonus3: 'C44701'
+      l_bonus4: 'C44601'
+      l_bonus5: 'C44301'
+      l_bonus6: 'C44101'
+      l_bonus7: 'C43F01'
+      l_bonus8: 'C43D01'
+      l_bonusBig0: 'C44401'
+      l_bonusBig1: 'C44101'
+      l_dropCenterLeft: 'C53A01'
+      l_dropCenterRight: 'C43A01'
+      l_dropLeft0: 'C43E01'
+      l_dropLeft1: 'C43B01'
+      l_dropLeft2: 'C53901'
+      l_dropLeft3: 'C53601'
+      l_dropRight0: 'C43E01'
+      l_dropRight1: 'C43B01'
+      l_dropRight2: 'C43801'
+      l_dropRight3: 'C53601'
+      l_giLeftLaneGuide0: 'C35502'
+      l_giLeftLaneGuide1: 'C35702'
+      l_giRightLaneGuide0: 'C35602'
+      l_giRightLaneGuide1: 'C35802'
+      l_jetLowerCenter: 'C53201'
+      l_jetUpperLeft: 'C52A01'
+      l_jetUpperRight: 'C52B01'
+      l_lane0: 'C61C00'
+      l_lane1: 'C51C01'
+      l_lane2: 'C61C01'
+      l_lane3: 'C61C00'
+      l_lane4: 'C61C00'
+      l_mode0: 'C44D02'
+      l_mode1: 'C44A01'
+      l_mode2: 'C44701'
+      l_mode3: 'C44401'
+      l_mode4: 'C44101'
+      l_mode5: 'C43D01'
+      l_mode6: 'C43A01'
+      l_scoop: 'C53101'
+      l_shootAgain: 'C35802'
+      l_specialLeft: 'C35602'
+      l_specialRight: 'C35702'
+      l_spinner: 'C53001'
+      l_yellowTargetLeft: 'C52501'
+      l_yellowTargetRight: 'C52601'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GILowLeft:
-        color: 'C80500'
-        fade: 1000ms
-      l_GILowRight:
-        color: 'C80400'
-        fade: 1000ms
-      l_GISlingLeft1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GISlingRight1:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus3:
-        color: 'C81300'
-        fade: 1000ms
-      l_bonus4:
-        color: 'C80800'
-        fade: 1000ms
-      l_bonus5:
-        color: 'C80100'
-        fade: 1000ms
-      l_bonus6:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonusBig0:
-        color: 'C80400'
-        fade: 1000ms
-      l_bonusBig1:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode2:
-        color: 'C81100'
-        fade: 1000ms
-      l_mode3:
-        color: 'C80200'
-        fade: 1000ms
-      l_mode4:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C44E02'
+      l_3x: 'C44E02'
+      l_4x: 'C34F02'
+      l_5x: 'C34F02'
+      l_GIAboveScoopLower: 'C61D00'
+      l_GIAboveScoopUpper: 'C61A00'
+      l_GIAboveSpinnerLower: 'C52001'
+      l_GIAboveSpinnerUpper: 'C61A00'
+      l_GICreditsIn: 'C35802'
+      l_GIDropCenterLeft: 'C53201'
+      l_GIDropCenterRight: 'C53201'
+      l_GIDropLeft0: 'C53501'
+      l_GIDropLeft1: 'C53101'
+      l_GIDropRight0: 'C53401'
+      l_GIDropRight1: 'C53001'
+      l_GILane0: 'C61B01'
+      l_GILane1: 'C61C00'
+      l_GILane2: 'C61C01'
+      l_GILane3: 'C61C01'
+      l_GILane4: 'C61C00'
+      l_GILane5: 'C61C00'
+      l_GILowLeft: 'C43F01'
+      l_GILowRight: 'C43F01'
+      l_GIScoopLL: 'C52C01'
+      l_GIScoopLR: 'C52701'
+      l_GIScoopML: 'C52501'
+      l_GIScoopMR: 'C52301'
+      l_GIScoopUC: 'C61E01'
+      l_GISlingLeft0: 'C44C02'
+      l_GISlingLeft1: 'C44902'
+      l_GISlingRight0: 'C34D02'
+      l_GISlingRight1: 'C44A01'
+      l_GIUpperCL: 'C61101'
+      l_GIUpperCR: 'C61100'
+      l_GIUpperL: 'C61500'
+      l_GIUpperR: 'C61400'
+      l_bonus0: 'C44802'
+      l_bonus1: 'C44601'
+      l_bonus2: 'C44401'
+      l_bonus3: 'C44201'
+      l_bonus4: 'C44001'
+      l_bonus5: 'C43E01'
+      l_bonus6: 'C43C01'
+      l_bonus7: 'C43A01'
+      l_bonus8: 'C53801'
+      l_bonusBig0: 'C43F01'
+      l_bonusBig1: 'C43B01'
+      l_dropCenterLeft: 'C53501'
+      l_dropCenterRight: 'C53401'
+      l_dropLeft0: 'C53801'
+      l_dropLeft1: 'C53601'
+      l_dropLeft2: 'C53301'
+      l_dropLeft3: 'C53101'
+      l_dropRight0: 'C53801'
+      l_dropRight1: 'C53501'
+      l_dropRight2: 'C53301'
+      l_dropRight3: 'C53001'
+      l_giLeftLaneGuide0: 'C45002'
+      l_giLeftLaneGuide1: 'C35102'
+      l_giRightLaneGuide0: 'C35002'
+      l_giRightLaneGuide1: 'C45302'
+      l_jetLowerCenter: 'C52D01'
+      l_jetUpperLeft: 'C52501'
+      l_jetUpperRight: 'C52601'
+      l_lane0: 'C61700'
+      l_lane1: 'C61700'
+      l_lane2: 'C61701'
+      l_lane3: 'C61800'
+      l_lane4: 'C61701'
+      l_mode0: 'C44801'
+      l_mode1: 'C44401'
+      l_mode2: 'C44101'
+      l_mode3: 'C43E01'
+      l_mode4: 'C43B01'
+      l_mode5: 'C43801'
+      l_mode6: 'C53501'
+      l_scoop: 'C52B01'
+      l_shootAgain: 'C45302'
+      l_specialLeft: 'C45002'
+      l_specialRight: 'C45102'
+      l_spinner: 'C52B01'
+      l_yellowTargetLeft: 'C52001'
+      l_yellowTargetRight: 'C52101'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GILowLeft:
-        color: 'C80000'
-        fade: 1000ms
-      l_GILowRight:
-        color: 'C80000'
-        fade: 1000ms
-      l_GISlingLeft0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_GISlingRight0:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus2:
-        color: 'C80F00'
-        fade: 1000ms
-      l_bonus3:
-        color: 'C80600'
-        fade: 1000ms
-      l_bonus4:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonus5:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonusBig0:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode1:
-        color: 'C81200'
-        fade: 1000ms
-      l_mode2:
-        color: 'C80500'
-        fade: 1000ms
-      l_mode3:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C44902'
+      l_3x: 'C44901'
+      l_4x: 'C44902'
+      l_5x: 'C44901'
+      l_GIAboveScoopLower: 'C61800'
+      l_GIAboveScoopUpper: 'C61601'
+      l_GIAboveSpinnerLower: 'C61B01'
+      l_GIAboveSpinnerUpper: 'C61600'
+      l_GICreditsIn: 'C35302'
+      l_GIDropCenterLeft: 'C52C01'
+      l_GIDropCenterRight: 'C52D01'
+      l_GIDropLeft0: 'C52F01'
+      l_GIDropLeft1: 'C52C01'
+      l_GIDropRight0: 'C52F01'
+      l_GIDropRight1: 'C52B01'
+      l_GILane0: 'C61700'
+      l_GILane1: 'C61701'
+      l_GILane2: 'C61700'
+      l_GILane3: 'C61800'
+      l_GILane4: 'C61700'
+      l_GILane5: 'C61700'
+      l_GILowLeft: 'C43901'
+      l_GILowRight: 'C53A01'
+      l_GIScoopLL: 'C52701'
+      l_GIScoopLR: 'C62201'
+      l_GIScoopML: 'C62001'
+      l_GIScoopMR: 'C61E01'
+      l_GIScoopUC: 'C61900'
+      l_GISlingLeft0: 'C44701'
+      l_GISlingLeft1: 'C44401'
+      l_GISlingRight0: 'C44801'
+      l_GISlingRight1: 'C44401'
+      l_GIUpperCL: 'C60D00'
+      l_GIUpperCR: 'C70E00'
+      l_GIUpperL: 'C61100'
+      l_GIUpperR: 'C61000'
+      l_bonus0: 'C44301'
+      l_bonus1: 'C44101'
+      l_bonus2: 'C43E01'
+      l_bonus3: 'C43C01'
+      l_bonus4: 'C43A01'
+      l_bonus5: 'C53801'
+      l_bonus6: 'C53601'
+      l_bonus7: 'C53501'
+      l_bonus8: 'C53201'
+      l_bonusBig0: 'C43901'
+      l_bonusBig1: 'C53601'
+      l_dropCenterLeft: 'C52F01'
+      l_dropCenterRight: 'C52F01'
+      l_dropLeft0: 'C53301'
+      l_dropLeft1: 'C53001'
+      l_dropLeft2: 'C52E01'
+      l_dropLeft3: 'C52B01'
+      l_dropRight0: 'C53301'
+      l_dropRight1: 'C53001'
+      l_dropRight2: 'C52D01'
+      l_dropRight3: 'C52B01'
+      l_giLeftLaneGuide0: 'C44A02'
+      l_giLeftLaneGuide1: 'C44C02'
+      l_giRightLaneGuide0: 'C44B02'
+      l_giRightLaneGuide1: 'C34D02'
+      l_jetLowerCenter: 'C52801'
+      l_jetUpperLeft: 'C52100'
+      l_jetUpperRight: 'C52001'
+      l_lane0: 'C61300'
+      l_lane1: 'C61301'
+      l_lane2: 'C61300'
+      l_lane3: 'C61300'
+      l_lane4: 'C61300'
+      l_mode0: 'C44201'
+      l_mode1: 'C43F01'
+      l_mode2: 'C43C01'
+      l_mode3: 'C53901'
+      l_mode4: 'C53501'
+      l_mode5: 'C53301'
+      l_mode6: 'C53001'
+      l_scoop: 'C52601'
+      l_shootAgain: 'C44D02'
+      l_specialLeft: 'C44B02'
+      l_specialRight: 'C44C02'
+      l_spinner: 'C52501'
+      l_yellowTargetLeft: 'C51C00'
+      l_yellowTargetRight: 'C61C01'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_2x:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_3x:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_4x:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_5x:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_bonus1:
-        color: 'C80D00'
-        fade: 1000ms
-      l_bonus2:
-        color: 'C80400'
-        fade: 1000ms
-      l_bonus3:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode0:
-        color: 'FFFC00'
-        fade: 1000ms
-      l_mode1:
-        color: 'C80600'
-        fade: 1000ms
-      l_mode2:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C44301'
+      l_3x: 'C44401'
+      l_4x: 'C44401'
+      l_5x: 'C44401'
+      l_GIAboveScoopLower: 'C61400'
+      l_GIAboveScoopUpper: 'C61100'
+      l_GIAboveSpinnerLower: 'C61700'
+      l_GIAboveSpinnerUpper: 'C61200'
+      l_GICreditsIn: 'C44D02'
+      l_GIDropCenterLeft: 'C52701'
+      l_GIDropCenterRight: 'C52801'
+      l_GIDropLeft0: 'C52A01'
+      l_GIDropLeft1: 'C52601'
+      l_GIDropRight0: 'C52A01'
+      l_GIDropRight1: 'C52601'
+      l_GILane0: 'C61300'
+      l_GILane1: 'C61300'
+      l_GILane2: 'C61300'
+      l_GILane3: 'C61300'
+      l_GILane4: 'C61301'
+      l_GILane5: 'C61300'
+      l_GILowLeft: 'C53401'
+      l_GILowRight: 'C53401'
+      l_GIScoopLL: 'C52201'
+      l_GIScoopLR: 'C61E01'
+      l_GIScoopML: 'C61B01'
+      l_GIScoopMR: 'C61A00'
+      l_GIScoopUC: 'C61501'
+      l_GISlingLeft0: 'C44102'
+      l_GISlingLeft1: 'C43E01'
+      l_GISlingRight0: 'C44201'
+      l_GISlingRight1: 'C43F01'
+      l_GIUpperCL: 'C60A00'
+      l_GIUpperCR: 'C60A00'
+      l_GIUpperL: 'C70D00'
+      l_GIUpperR: 'C60C00'
+      l_bonus0: 'C43D01'
+      l_bonus1: 'C43B01'
+      l_bonus2: 'C53901'
+      l_bonus3: 'C53701'
+      l_bonus4: 'C53501'
+      l_bonus5: 'C53301'
+      l_bonus6: 'C53101'
+      l_bonus7: 'C52F01'
+      l_bonus8: 'C52D01'
+      l_bonusBig0: 'C53401'
+      l_bonusBig1: 'C53101'
+      l_dropCenterLeft: 'C52A01'
+      l_dropCenterRight: 'C52A01'
+      l_dropLeft0: 'C52E01'
+      l_dropLeft1: 'C52B01'
+      l_dropLeft2: 'C52901'
+      l_dropLeft3: 'C52601'
+      l_dropRight0: 'C52D01'
+      l_dropRight1: 'C52B01'
+      l_dropRight2: 'C52801'
+      l_dropRight3: 'C52601'
+      l_giLeftLaneGuide0: 'C44401'
+      l_giLeftLaneGuide1: 'C44701'
+      l_giRightLaneGuide0: 'C44501'
+      l_giRightLaneGuide1: 'C44702'
+      l_jetLowerCenter: 'C52301'
+      l_jetUpperLeft: 'C61C01'
+      l_jetUpperRight: 'C51C01'
+      l_lane0: 'C60F00'
+      l_lane1: 'C60F00'
+      l_lane2: 'C60F00'
+      l_lane3: 'C60F01'
+      l_lane4: 'C61000'
+      l_mode0: 'C43D01'
+      l_mode1: 'C43A01'
+      l_mode2: 'C53701'
+      l_mode3: 'C53401'
+      l_mode4: 'C53001'
+      l_mode5: 'C52E01'
+      l_mode6: 'C52B01'
+      l_scoop: 'C52101'
+      l_shootAgain: 'C44801'
+      l_specialLeft: 'C44501'
+      l_specialRight: 'C44602'
+      l_spinner: 'C52100'
+      l_yellowTargetLeft: 'C51701'
+      l_yellowTargetRight: 'C61801'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GISlingLeft1:
-        color: 'C80F00'
-        fade: 1000ms
-      l_GISlingRight1:
-        color: 'C81200'
-        fade: 1000ms
-      l_bonus0:
-        color: 'C80B00'
-        fade: 1000ms
-      l_bonus1:
-        color: 'C80200'
-        fade: 1000ms
-      l_bonus2:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode0:
-        color: 'C80800'
-        fade: 1000ms
-      l_mode1:
-        color: 'C80000'
-        fade: 1000ms
-      l_specialLeft:
-        color: 'FFFF00'
-        fade: 1000ms
-      l_specialRight:
-        color: 'FFFF00'
-        fade: 1000ms
+      l_2x: 'C43E01'
+      l_3x: 'C43E01'
+      l_4x: 'C43E01'
+      l_5x: 'C43E01'
+      l_GIAboveScoopLower: 'C61000'
+      l_GIAboveScoopUpper: 'C60E01'
+      l_GIAboveSpinnerLower: 'C61301'
+      l_GIAboveSpinnerUpper: 'C60E00'
+      l_GICreditsIn: 'C44801'
+      l_GIDropCenterLeft: 'C62301'
+      l_GIDropCenterRight: 'C62301'
+      l_GIDropLeft0: 'C52501'
+      l_GIDropLeft1: 'C52201'
+      l_GIDropRight0: 'C52501'
+      l_GIDropRight1: 'C52100'
+      l_GILane0: 'C70F00'
+      l_GILane1: 'C60F00'
+      l_GILane2: 'C60F01'
+      l_GILane3: 'C60F00'
+      l_GILane4: 'C60F00'
+      l_GILane5: 'C60F00'
+      l_GILowLeft: 'C52F01'
+      l_GILowRight: 'C52F01'
+      l_GIScoopLL: 'C61D00'
+      l_GIScoopLR: 'C61901'
+      l_GIScoopML: 'C61700'
+      l_GIScoopMR: 'C61500'
+      l_GIScoopUC: 'C61100'
+      l_GISlingLeft0: 'C43C01'
+      l_GISlingLeft1: 'C43901'
+      l_GISlingRight0: 'C53D01'
+      l_GISlingRight1: 'C43901'
+      l_GIUpperCL: 'C60700'
+      l_GIUpperCR: 'C70700'
+      l_GIUpperL: 'C70A00'
+      l_GIUpperR: 'C70900'
+      l_bonus0: 'C53801'
+      l_bonus1: 'C53601'
+      l_bonus2: 'C53301'
+      l_bonus3: 'C53201'
+      l_bonus4: 'C53001'
+      l_bonus5: 'C52E01'
+      l_bonus6: 'C52C01'
+      l_bonus7: 'C52A01'
+      l_bonus8: 'C52801'
+      l_bonusBig0: 'C52F01'
+      l_bonusBig1: 'C52C01'
+      l_dropCenterLeft: 'C52501'
+      l_dropCenterRight: 'C52501'
+      l_dropLeft0: 'C52901'
+      l_dropLeft1: 'C52601'
+      l_dropLeft2: 'C52401'
+      l_dropLeft3: 'C62201'
+      l_dropRight0: 'C52801'
+      l_dropRight1: 'C52601'
+      l_dropRight2: 'C52301'
+      l_dropRight3: 'C52101'
+      l_giLeftLaneGuide0: 'C43F01'
+      l_giLeftLaneGuide1: 'C44101'
+      l_giRightLaneGuide0: 'C44001'
+      l_giRightLaneGuide1: 'C44201'
+      l_jetLowerCenter: 'C51E00'
+      l_jetUpperLeft: 'C51700'
+      l_jetUpperRight: 'C61801'
+      l_lane0: 'C60C00'
+      l_lane1: 'C60C00'
+      l_lane2: 'C60B00'
+      l_lane3: 'C60C00'
+      l_lane4: 'C70C00'
+      l_mode0: 'C53801'
+      l_mode1: 'C53401'
+      l_mode2: 'C53101'
+      l_mode3: 'C52E01'
+      l_mode4: 'C52B01'
+      l_mode5: 'C52901'
+      l_mode6: 'C52601'
+      l_scoop: 'C61D01'
+      l_shootAgain: 'C44201'
+      l_specialLeft: 'C44001'
+      l_specialRight: 'C44101'
+      l_spinner: 'C61C00'
+      l_yellowTargetLeft: 'C61300'
+      l_yellowTargetRight: 'C61300'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_GISlingLeft0:
-        color: 'C81200'
-        fade: 1000ms
-      l_GISlingLeft1:
-        color: 'C80400'
-        fade: 1000ms
-      l_GISlingRight0:
-        color: 'FFFC00'
-        fade: 1000ms
-      l_GISlingRight1:
-        color: 'C80600'
-        fade: 1000ms
-      l_bonus0:
-        color: 'C80100'
-        fade: 1000ms
-      l_bonus1:
-        color: 'C80000'
-        fade: 1000ms
-      l_mode0:
-        color: 'C80000'
-        fade: 1000ms
-      l_shootAgain:
-        color: 'FFFF00'
-        fade: 1000ms
+      l_2x: 'C53801'
+      l_3x: 'C53901'
+      l_4x: 'C53901'
+      l_5x: 'C53901'
+      l_GIAboveScoopLower: 'C60C00'
+      l_GIAboveScoopUpper: 'C70A00'
+      l_GIAboveSpinnerLower: 'C60F00'
+      l_GIAboveSpinnerUpper: 'C60A00'
+      l_GICreditsIn: 'C44201'
+      l_GIDropCenterLeft: 'C51E00'
+      l_GIDropCenterRight: 'C61E00'
+      l_GIDropLeft0: 'C52001'
+      l_GIDropLeft1: 'C61D01'
+      l_GIDropRight0: 'C52000'
+      l_GIDropRight1: 'C61C01'
+      l_GILane0: 'C60B00'
+      l_GILane1: 'C60B00'
+      l_GILane2: 'C60C00'
+      l_GILane3: 'C60B00'
+      l_GILane4: 'C60C00'
+      l_GILane5: 'C70C00'
+      l_GILowLeft: 'C52A01'
+      l_GILowRight: 'C52901'
+      l_GIScoopLL: 'C61900'
+      l_GIScoopLR: 'C61401'
+      l_GIScoopML: 'C61300'
+      l_GIScoopMR: 'C71100'
+      l_GIScoopUC: 'C60D00'
+      l_GISlingLeft0: 'C53701'
+      l_GISlingLeft1: 'C53301'
+      l_GISlingRight0: 'C53701'
+      l_GISlingRight1: 'C53401'
+      l_GIUpperCL: 'C70400'
+      l_GIUpperCR: 'C70400'
+      l_GIUpperL: 'C70600'
+      l_GIUpperR: 'C70600'
+      l_bonus0: 'C53201'
+      l_bonus1: 'C53101'
+      l_bonus2: 'C52F01'
+      l_bonus3: 'C52D01'
+      l_bonus4: 'C52B01'
+      l_bonus5: 'C52801'
+      l_bonus6: 'C52701'
+      l_bonus7: 'C52501'
+      l_bonus8: 'C52301'
+      l_bonusBig0: 'C52A01'
+      l_bonusBig1: 'C52701'
+      l_dropCenterLeft: 'C52000'
+      l_dropCenterRight: 'C62001'
+      l_dropLeft0: 'C52301'
+      l_dropLeft1: 'C62100'
+      l_dropLeft2: 'C51F00'
+      l_dropLeft3: 'C61D00'
+      l_dropRight0: 'C52301'
+      l_dropRight1: 'C62101'
+      l_dropRight2: 'C51E01'
+      l_dropRight3: 'C61C01'
+      l_giLeftLaneGuide0: 'C53A01'
+      l_giLeftLaneGuide1: 'C53C01'
+      l_giRightLaneGuide0: 'C53A01'
+      l_giRightLaneGuide1: 'C43C01'
+      l_jetLowerCenter: 'C61A01'
+      l_jetUpperLeft: 'C61300'
+      l_jetUpperRight: 'C61300'
+      l_lane0: 'C60800'
+      l_lane1: 'C70800'
+      l_lane2: 'C70800'
+      l_lane3: 'C60800'
+      l_lane4: 'C60800'
+      l_mode0: 'C53201'
+      l_mode1: 'C52F01'
+      l_mode2: 'C52C01'
+      l_mode3: 'C52901'
+      l_mode4: 'C52601'
+      l_mode5: 'C52401'
+      l_mode6: 'C52001'
+      l_scoop: 'C51800'
+      l_shootAgain: 'C43D01'
+      l_specialLeft: 'C43A01'
+      l_specialRight: 'C43B01'
+      l_spinner: 'C61800'
+      l_yellowTargetLeft: 'C60F00'
+      l_yellowTargetRight: 'C60F00'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_2x:
-        color: 'C80F00'
-        fade: 1000ms
-      l_3x:
-        color: 'C80F00'
-        fade: 1000ms
-      l_4x:
-        color: 'C80F00'
-        fade: 1000ms
-      l_5x:
-        color: 'C81000'
-        fade: 1000ms
-      l_GISlingLeft0:
-        color: 'C80600'
-        fade: 1000ms
-      l_GISlingLeft1:
-        color: 'C80000'
-        fade: 1000ms
-      l_GISlingRight0:
-        color: 'C80800'
-        fade: 1000ms
-      l_GISlingRight1:
-        color: 'C80000'
-        fade: 1000ms
-      l_bonus0:
-        color: 'C80000'
-        fade: 1000ms
+      l_2x: 'C53301'
+      l_3x: 'C53301'
+      l_4x: 'C53301'
+      l_5x: 'C53301'
+      l_GIAboveScoopLower: 'C70900'
+      l_GIAboveScoopUpper: 'C70600'
+      l_GIAboveSpinnerLower: 'C60B00'
+      l_GIAboveSpinnerUpper: 'C60700'
+      l_GICreditsIn: 'C43D01'
+      l_GIDropCenterLeft: 'C61900'
+      l_GIDropCenterRight: 'C61901'
+      l_GIDropLeft0: 'C61B01'
+      l_GIDropLeft1: 'C61800'
+      l_GIDropRight0: 'C51B00'
+      l_GIDropRight1: 'C61800'
+      l_GILane0: 'C70800'
+      l_GILane1: 'C60800'
+      l_GILane2: 'C60800'
+      l_GILane3: 'C60800'
+      l_GILane4: 'C70800'
+      l_GILane5: 'C60800'
+      l_GILowLeft: 'C52501'
+      l_GILowRight: 'C52501'
+      l_GIScoopLL: 'C61400'
+      l_GIScoopLR: 'C61100'
+      l_GIScoopML: 'C60F00'
+      l_GIScoopMR: 'C60D00'
+      l_GIScoopUC: 'C60900'
+      l_GISlingLeft0: 'C53101'
+      l_GISlingLeft1: 'C52E01'
+      l_GISlingRight0: 'C53201'
+      l_GISlingRight1: 'C52F01'
+      l_GIUpperCL: 'C70100'
+      l_GIUpperCR: 'C70100'
+      l_GIUpperL: 'C70300'
+      l_GIUpperR: 'C70300'
+      l_bonus0: 'C52D01'
+      l_bonus1: 'C52B01'
+      l_bonus2: 'C52901'
+      l_bonus3: 'C52701'
+      l_bonus4: 'C52501'
+      l_bonus5: 'C52401'
+      l_bonus6: 'C52201'
+      l_bonus7: 'C52001'
+      l_bonus8: 'C61E01'
+      l_bonusBig0: 'C52401'
+      l_bonusBig1: 'C52201'
+      l_dropCenterLeft: 'C61B01'
+      l_dropCenterRight: 'C61B00'
+      l_dropLeft0: 'C51F00'
+      l_dropLeft1: 'C61C00'
+      l_dropLeft2: 'C61B01'
+      l_dropLeft3: 'C61800'
+      l_dropRight0: 'C61F01'
+      l_dropRight1: 'C61C01'
+      l_dropRight2: 'C51A00'
+      l_dropRight3: 'C61800'
+      l_giLeftLaneGuide0: 'C53401'
+      l_giLeftLaneGuide1: 'C53601'
+      l_giRightLaneGuide0: 'C53501'
+      l_giRightLaneGuide1: 'C53701'
+      l_jetLowerCenter: 'C61500'
+      l_jetUpperLeft: 'C70F00'
+      l_jetUpperRight: 'C60F00'
+      l_lane0: 'C70500'
+      l_lane1: 'C70500'
+      l_lane2: 'C70500'
+      l_lane3: 'C70500'
+      l_lane4: 'C70500'
+      l_mode0: 'C52D01'
+      l_mode1: 'C52A01'
+      l_mode2: 'C52701'
+      l_mode3: 'C62401'
+      l_mode4: 'C62101'
+      l_mode5: 'C51E00'
+      l_mode6: 'C51C00'
+      l_scoop: 'C61400'
+      l_shootAgain: 'C53701'
+      l_specialLeft: 'C53501'
+      l_specialRight: 'C53601'
+      l_spinner: 'C61300'
+      l_yellowTargetLeft: 'C60B00'
+      l_yellowTargetRight: 'C70C00'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_2x:
-        color: 'C80400'
-        fade: 1000ms
-      l_3x:
-        color: 'C80400'
-        fade: 1000ms
-      l_4x:
-        color: 'C80400'
-        fade: 1000ms
-      l_5x:
-        color: 'C80400'
-        fade: 1000ms
-      l_GISlingLeft0:
-        color: 'C80000'
-        fade: 1000ms
-      l_GISlingRight0:
-        color: 'C80000'
-        fade: 1000ms
-      l_shootAgain:
-        color: 'FFFE00'
-        fade: 1000ms
-      l_specialLeft:
-        color: 'C80C00'
-        fade: 1000ms
-      l_specialRight:
-        color: 'C80F00'
-        fade: 1000ms
+      l_2x: 'C52E01'
+      l_3x: 'C52E01'
+      l_4x: 'C52E01'
+      l_5x: 'C52E01'
+      l_GIAboveScoopLower: 'C70500'
+      l_GIAboveScoopUpper: 'C70400'
+      l_GIAboveSpinnerLower: 'C70800'
+      l_GIAboveSpinnerUpper: 'C70400'
+      l_GICreditsIn: 'C53701'
+      l_GIDropCenterLeft: 'C61500'
+      l_GIDropCenterRight: 'C61500'
+      l_GIDropLeft0: 'C61700'
+      l_GIDropLeft1: 'C61400'
+      l_GIDropRight0: 'C51700'
+      l_GIDropRight1: 'C61400'
+      l_GILane0: 'C70500'
+      l_GILane1: 'C60500'
+      l_GILane2: 'C70500'
+      l_GILane3: 'C70500'
+      l_GILane4: 'C70500'
+      l_GILane5: 'C60500'
+      l_GILowLeft: 'C52001'
+      l_GILowRight: 'C62001'
+      l_GIScoopLL: 'C61000'
+      l_GIScoopLR: 'C60D00'
+      l_GIScoopML: 'C70B00'
+      l_GIScoopMR: 'C70900'
+      l_GIScoopUC: 'C70600'
+      l_GISlingLeft0: 'C52C01'
+      l_GISlingLeft1: 'C52901'
+      l_GISlingRight0: 'C52D01'
+      l_GISlingRight1: 'C52A01'
+      l_GIUpperCL: 'C70000'
+      l_GIUpperCR: 'C70000'
+      l_GIUpperL: 'C70100'
+      l_GIUpperR: 'C70000'
+      l_bonus0: 'C52801'
+      l_bonus1: 'C52601'
+      l_bonus2: 'C52401'
+      l_bonus3: 'C52201'
+      l_bonus4: 'C52000'
+      l_bonus5: 'C51F01'
+      l_bonus6: 'C61D00'
+      l_bonus7: 'C61B01'
+      l_bonus8: 'C61900'
+      l_bonusBig0: 'C51F01'
+      l_bonusBig1: 'C51D00'
+      l_dropCenterLeft: 'C61700'
+      l_dropCenterRight: 'C61700'
+      l_dropLeft0: 'C51A00'
+      l_dropLeft1: 'C61800'
+      l_dropLeft2: 'C51600'
+      l_dropLeft3: 'C61400'
+      l_dropRight0: 'C61A00'
+      l_dropRight1: 'C61800'
+      l_dropRight2: 'C61601'
+      l_dropRight3: 'C61301'
+      l_giLeftLaneGuide0: 'C52F01'
+      l_giLeftLaneGuide1: 'C53101'
+      l_giRightLaneGuide0: 'C53001'
+      l_giRightLaneGuide1: 'C53101'
+      l_jetLowerCenter: 'C61100'
+      l_jetUpperLeft: 'C70B00'
+      l_jetUpperRight: 'C60C00'
+      l_lane0: 'C70200'
+      l_lane1: 'C70200'
+      l_lane2: 'C60200'
+      l_lane3: 'C70200'
+      l_lane4: 'C60300'
+      l_mode0: 'C52701'
+      l_mode1: 'C52401'
+      l_mode2: 'C62201'
+      l_mode3: 'C61F00'
+      l_mode4: 'C61D01'
+      l_mode5: 'C61A00'
+      l_mode6: 'C61800'
+      l_scoop: 'C61000'
+      l_shootAgain: 'C53201'
+      l_specialLeft: 'C53001'
+      l_specialRight: 'C53001'
+      l_spinner: 'C60F00'
+      l_yellowTargetLeft: 'C60700'
+      l_yellowTargetRight: 'C70800'
 
-- duration: 1
+- time: '+1'
   lights:
-      l_shootAgain:
-        color: 'C81700'
-        fade: 1000ms
-    
+      l_2x: 'C52801'
+      l_3x: 'C52801'
+      l_4x: 'C52901'
+      l_5x: 'C52901'
+      l_GIAboveScoopLower: 'C70300'
+      l_GIAboveScoopUpper: 'C70100'
+      l_GIAboveSpinnerLower: 'C70500'
+      l_GIAboveSpinnerUpper: 'C70100'
+      l_GICreditsIn: 'C53201'
+      l_GIDropCenterLeft: 'C61100'
+      l_GIDropCenterRight: 'C61100'
+      l_GIDropLeft0: 'C61300'
+      l_GIDropLeft1: 'C61000'
+      l_GIDropRight0: 'C61300'
+      l_GIDropRight1: 'C60F00'
+      l_GILane0: 'C70200'
+      l_GILane1: 'C70200'
+      l_GILane2: 'C70200'
+      l_GILane3: 'C60200'
+      l_GILane4: 'C70200'
+      l_GILane5: 'C70200'
+      l_GILowLeft: 'C61B00'
+      l_GILowRight: 'C61B00'
+      l_GIScoopLL: 'C70C00'
+      l_GIScoopLR: 'C60900'
+      l_GIScoopML: 'C70800'
+      l_GIScoopMR: 'C70600'
+      l_GIScoopUC: 'C70300'
+      l_GISlingLeft0: 'C52701'
+      l_GISlingLeft1: 'C52401'
+      l_GISlingRight0: 'C52801'
+      l_GISlingRight1: 'C52501'
+      l_GIUpperL: 'C70000'
+      l_bonus0: 'C52301'
+      l_bonus1: 'C52101'
+      l_bonus2: 'C51F01'
+      l_bonus3: 'C61E01'
+      l_bonus4: 'C61C01'
+      l_bonus5: 'C51A00'
+      l_bonus6: 'C61900'
+      l_bonus7: 'C61700'
+      l_bonus8: 'C61501'
+      l_bonusBig0: 'C51B00'
+      l_bonusBig1: 'C61800'
+      l_dropCenterLeft: 'C61201'
+      l_dropCenterRight: 'C61300'
+      l_dropLeft0: 'C61601'
+      l_dropLeft1: 'C61400'
+      l_dropLeft2: 'C61200'
+      l_dropLeft3: 'C61000'
+      l_dropRight0: 'C61601'
+      l_dropRight1: 'C61401'
+      l_dropRight2: 'C61100'
+      l_dropRight3: 'C60F00'
+      l_giLeftLaneGuide0: 'C52A01'
+      l_giLeftLaneGuide1: 'C52C01'
+      l_giRightLaneGuide0: 'C52A01'
+      l_giRightLaneGuide1: 'C52C01'
+      l_jetLowerCenter: 'C60D00'
+      l_jetUpperLeft: 'C70800'
+      l_jetUpperRight: 'C60800'
+      l_lane0: 'C70000'
+      l_lane1: 'C70000'
+      l_lane2: 'C70000'
+      l_lane3: 'C70000'
+      l_lane4: 'C70000'
+      l_mode0: 'C52301'
+      l_mode1: 'C62000'
+      l_mode2: 'C61D00'
+      l_mode3: 'C51B01'
+      l_mode4: 'C61800'
+      l_mode5: 'C61601'
+      l_mode6: 'C61300'
+      l_scoop: 'C70C00'
+      l_shootAgain: 'C52D01'
+      l_specialLeft: 'C52B01'
+      l_specialRight: 'C52C01'
+      l_spinner: 'C60C00'
+      l_yellowTargetLeft: 'C70400'
+      l_yellowTargetRight: 'C60500'
+
+- time: '+1'
+  lights:
+      l_2x: 'C52401'
+      l_3x: 'C52401'
+      l_4x: 'C52401'
+      l_5x: 'C52401'
+      l_GIAboveScoopLower: 'C70000'
+      l_GIAboveScoopUpper: 'C70000'
+      l_GIAboveSpinnerLower: 'C70200'
+      l_GIAboveSpinnerUpper: 'C70000'
+      l_GICreditsIn: 'C52D01'
+      l_GIDropCenterLeft: 'C70D00'
+      l_GIDropCenterRight: 'C60D00'
+      l_GIDropLeft0: 'C60E00'
+      l_GIDropLeft1: 'C70C00'
+      l_GIDropRight0: 'C60E00'
+      l_GIDropRight1: 'C70C00'
+      l_GILane0: 'C70000'
+      l_GILane1: 'C70000'
+      l_GILane2: 'C70000'
+      l_GILane3: 'C70000'
+      l_GILane4: 'C70000'
+      l_GILane5: 'C70000'
+      l_GILowLeft: 'C61700'
+      l_GILowRight: 'C61600'
+      l_GIScoopLL: 'C60900'
+      l_GIScoopLR: 'C70600'
+      l_GIScoopML: 'C70400'
+      l_GIScoopMR: 'C70400'
+      l_GIScoopUC: 'C70100'
+      l_GISlingLeft0: 'C62201'
+      l_GISlingLeft1: 'C51F01'
+      l_GISlingRight0: 'C52301'
+      l_GISlingRight1: 'C52000'
+      l_bonus0: 'C51E01'
+      l_bonus1: 'C51D00'
+      l_bonus2: 'C61B01'
+      l_bonus3: 'C61901'
+      l_bonus4: 'C61700'
+      l_bonus5: 'C61600'
+      l_bonus6: 'C61401'
+      l_bonus7: 'C61300'
+      l_bonus8: 'C61100'
+      l_bonusBig0: 'C61601'
+      l_bonusBig1: 'C61400'
+      l_dropCenterLeft: 'C60F00'
+      l_dropCenterRight: 'C60F00'
+      l_dropLeft0: 'C61100'
+      l_dropLeft1: 'C61000'
+      l_dropLeft2: 'C70E01'
+      l_dropLeft3: 'C60C00'
+      l_dropRight0: 'C61100'
+      l_dropRight1: 'C61000'
+      l_dropRight2: 'C60E00'
+      l_dropRight3: 'C70C00'
+      l_giLeftLaneGuide0: 'C52501'
+      l_giLeftLaneGuide1: 'C52601'
+      l_giRightLaneGuide0: 'C52501'
+      l_giRightLaneGuide1: 'C52701'
+      l_jetLowerCenter: 'C60A00'
+      l_jetUpperLeft: 'C70500'
+      l_jetUpperRight: 'C60500'
+      l_mode0: 'C51E01'
+      l_mode1: 'C61B00'
+      l_mode2: 'C61900'
+      l_mode3: 'C61601'
+      l_mode4: 'C61400'
+      l_mode5: 'C61100'
+      l_mode6: 'C60F00'
+      l_scoop: 'C60900'
+      l_shootAgain: 'C52801'
+      l_specialLeft: 'C52601'
+      l_specialRight: 'C52601'
+      l_spinner: 'C60800'
+      l_yellowTargetLeft: 'C70200'
+      l_yellowTargetRight: 'C70200'
+

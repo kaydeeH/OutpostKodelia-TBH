@@ -33,7 +33,7 @@ slides:
    scoop_slide:
     widgets:
       - type: text
-        text: SCOOP MADNESS
+        text: SELECT A SCENE
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
