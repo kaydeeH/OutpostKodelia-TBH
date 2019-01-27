@@ -202,56 +202,56 @@ show_player:
      collectDanShow:
        loops: 0
        speed: 45
-       priority: 10
+       priority: 2000
   char_charlie_complete:
      char_charlie_collect:
        loops: 0
      collectCharlieShow:
        loops: 0
        speed: 45
-       priority: 10
+       priority: 2000
   char_harry_complete:
      char_harry_collect:
        loops: 0
      collectHarryShow:
        loops: 0
        speed: 45
-       priority: 10
+       priority: 2000
   char_kate_complete:
      char_kate_collect:
        loops: 0
      collectKateShow:
        loops: 0
        speed: 45
-       priority: 10
+       priority: 2000
   char_alex_complete:
      char_alex_collect:
        loops: 0
      collectAlexShow:
        loops: 0
        speed: 45
-       priority: 10
+       priority: 2000
   char_hans_complete:
      char_hans_collect:
        loops: 0
      collectHansShow:
        loops: 0
        speed: 45
-       priority: 10
+       priority: 2000
   char_vincent_complete:
      char_vincent_collect:
        loops: 0
      collectVincentShow:
        loops: 0
        speed: 45
-       priority: 10
+       priority: 2000
   char_bob_complete:
      char_bob_collect:
        loops: 0
      collectBobShow:
        loops: 0
        speed: 45
-       priority: 10
+       priority: 2000
 
 sound_player:
   char_dan_complete: character_collect_sound

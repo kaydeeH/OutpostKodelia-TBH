@@ -71,6 +71,7 @@ sounds:
         file: CygnusFloating.wav
         track: music
         fade_out: 1s
+        volume: .6
     durantisdead:
         file: DurantIsDead.wav
         track: music
@@ -103,6 +104,7 @@ sounds:
         file: Overture.wav
         track: music
         fade_out: 1s
+        volume: .3
     prettybusy:
         file: PrettyBusy.wav
         track: music

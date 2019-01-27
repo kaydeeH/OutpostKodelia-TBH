@@ -384,6 +384,4 @@ sound_player:
       bobandvincent:
         action: play
         loops: -1
-        fade_out: 2s
-        volume: 0.5
         mode_end_action: stop

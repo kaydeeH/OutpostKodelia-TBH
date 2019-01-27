@@ -234,39 +234,29 @@ show_player:
        action: advance
   timer_meteortimer_tick{ticks_remaining > 24}:
      meteor_scoop:
+       speed: 1
+       loops: -1
+       priority: 950
+  timer_meteortimer_tick{ticks_remaining > 18 and ticks_remaining <= 24}:
+     meteor_scoop:
+       speed: 2
+       loops: -1
+       priority: 950
+  timer_meteortimer_tick{ticks_remaining > 12 and ticks_remaining <= 18}:
+     meteor_scoop:
        speed: 4
        loops: -1
        priority: 950
-#       show_tokens:
-#         rate: 250
-  timer_meteortimer_tick{ticks_remaining > 18 and ticks_remaining <= 24}:
+  timer_meteortimer_tick{ticks_remaining > 6 and ticks_remaining <= 12}:
      meteor_scoop:
        speed: 8
        loops: -1
        priority: 950
-#       show_tokens:
-#         rate: 125
-  timer_meteortimer_tick{ticks_remaining > 12 and ticks_remaining <= 18}:
+  timer_meteortimer_tick{ticks_remaining <= 6}:
      meteor_scoop:
        speed: 16
        loops: -1
        priority: 950
-#       show_tokens:
-#         rate: 62
-  timer_meteortimer_tick{ticks_remaining > 6 and ticks_remaining <= 12}:
-     meteor_scoop:
-       speed: 32
-       loops: -1
-       priority: 950
-#       show_tokens:
-#         rate: 31
-  timer_meteortimer_tick{ticks_remaining <= 6}:
-     meteor_scoop:
-       speed: 64
-       loops: -1
-       priority: 950
-#       show_tokens:
-#         rate: 15
 
 # BELOW are the "base" show player entries
   story_is_about_to_begin:
