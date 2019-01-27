@@ -13,7 +13,7 @@ achievements:
    disable_events: selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
    start_events: mode_story01_started
    complete_events: acheivement_story01_successful
-   reset_events: acheivement_story01_unsuccessful
+   reset_events: acheivement_story01_unsuccessful, full_mode_and_char_reset
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: ach1
@@ -26,7 +26,7 @@ achievements:
    start_events: mode_story02_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
    complete_events: acheivement_story02_successful
-   reset_events: acheivement_story02_unsuccessful
+   reset_events: acheivement_story02_unsuccessful, full_mode_and_char_reset
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: ach2
@@ -39,7 +39,7 @@ achievements:
    start_events: mode_story03_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
    complete_events: acheivement_story03_successful
-   reset_events: acheivement_story03_unsuccessful
+   reset_events: acheivement_story03_unsuccessful, full_mode_and_char_reset
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: ach3
@@ -52,7 +52,7 @@ achievements:
    start_events: mode_story04_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
    complete_events: acheivement_story04_successful
-   reset_events: acheivement_story04_unsuccessful
+   reset_events: acheivement_story04_unsuccessful, full_mode_and_char_reset
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: ach4
@@ -65,7 +65,7 @@ achievements:
    start_events: mode_story05_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_6_highlighted, selector_untitled_mode_7_highlighted
    complete_events: acheivement_story05_successful
-   reset_events: acheivement_story05_unsuccessful
+   reset_events: acheivement_story05_unsuccessful, full_mode_and_char_reset
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: ach5
@@ -78,7 +78,7 @@ achievements:
    start_events: mode_story06_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_7_highlighted
    complete_events: acheivement_story06_successful
-   reset_events: acheivement_story06_unsuccessful
+   reset_events: acheivement_story06_unsuccessful, full_mode_and_char_reset
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: ach6
@@ -91,7 +91,7 @@ achievements:
    start_events: mode_story06_started
    disable_events: selector_untitled_mode_1_highlighted, selector_untitled_mode_2_highlighted, selector_untitled_mode_3_highlighted, selector_untitled_mode_4_highlighted, selector_untitled_mode_5_highlighted, selector_untitled_mode_6_highlighted
    complete_events: acheivement_story07_successful
-   reset_events: acheivement_story07_unsuccessful
+   reset_events: acheivement_story07_unsuccessful, full_mode_and_char_reset
    show_when_selected: popred
    show_when_started: popgreen
    show_when_completed: ach7
@@ -145,42 +145,42 @@ achievements:
  char_vincent:
    start_events: first_ball_for_current_player
    complete_events: char_vincent_complete
-   reset_events: wizard_cashout
+   reset_events: full_mode_and_char_reset
    show_when_completed: char_vincent
  char_bob:
    start_events: first_ball_for_current_player
    complete_events: char_bob_complete
-   reset_events: wizard_cashout
+   reset_events: full_mode_and_char_reset
    show_when_completed: char_bob
  char_dan:
    start_events: first_ball_for_current_player
    complete_events: char_dan_complete
-   reset_events: wizard_cashout
+   reset_events: full_mode_and_char_reset
    show_when_completed: char_dan
  char_charlie:
    start_events: first_ball_for_current_player
    complete_events: char_charlie_complete
-   reset_events: wizard_cashout
+   reset_events: full_mode_and_char_reset
    show_when_completed: char_charlie
  char_harry:
    start_events: first_ball_for_current_player
    complete_events: char_harry_complete
-   reset_events: wizard_cashout
+   reset_events: full_mode_and_char_reset
    show_when_completed: char_harry
  char_kate:
    start_events: first_ball_for_current_player
    complete_events: char_kate_complete
-   reset_events: wizard_cashout
+   reset_events: full_mode_and_char_reset
    show_when_completed: char_kate
  char_alex:
    start_events: first_ball_for_current_player
    complete_events: char_alex_complete
-   reset_events: wizard_cashout
+   reset_events: full_mode_and_char_reset
    show_when_completed: char_alex
  char_hans:
    start_events: first_ball_for_current_player
    complete_events: char_hans_complete
-   reset_events: wizard_cashout
+   reset_events: full_mode_and_char_reset
    show_when_completed: char_hans
 
 random_event_player:
