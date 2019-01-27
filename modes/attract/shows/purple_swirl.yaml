@@ -1,1735 +1,700 @@
 #show_version=5
-- duration: 100ms
-  lights:
-      l_2x:
-        color: '180243'
-        fade: 100ms
-      l_3x:
-        color: '180243'
-        fade: 100ms
-      l_GILane3:
-        color: '000000'
-        fade: 100ms
-      l_GILowRight:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopLR:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopML:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '140236'
-        fade: 100ms
-      l_dropLeft0:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft1:
-        color: '000000'
-        fade: 100ms
-      l_dropRight0:
-        color: '000000'
-        fade: 100ms
-      l_lane3:
-        color: '000000'
-        fade: 100ms
-      l_mode0:
-        color: '180243'
-        fade: 100ms
-      l_mode1:
-        color: '10022B'
-        fade: 100ms
-      l_mode6:
-        color: '000000'
-        fade: 100ms
-      l_shootAgain:
-        color: '180243'
-        fade: 100ms
-      l_spinner:
-        color: '180243'
-        fade: 100ms
 
 - duration: 100ms
   lights:
-      l_GIAboveScoopLower:
-        color: '0A0119'
-        fade: 100ms
-      l_GIDropLeft0:
-        color: '000000'
-        fade: 100ms
-      l_GILane4:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopMR:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopUC:
-        color: '180243'
-        fade: 100ms
-      l_GISlingLeft0:
-        color: '060110'
-        fade: 100ms
-      l_GIUpperCR:
-        color: '000000'
-        fade: 100ms
-      l_bonus8:
-        color: '000000'
-        fade: 100ms
-      l_bonusBig1:
-        color: '000000'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft2:
-        color: '000000'
-        fade: 100ms
-      l_jetUpperRight:
-        color: '000000'
-        fade: 100ms
-      l_lane4:
-        color: '000000'
-        fade: 100ms
-      l_mode1:
-        color: '180243'
-        fade: 100ms
-      l_mode2:
-        color: '180243'
-        fade: 100ms
-      l_mode3:
-        color: '010101'
-        fade: 100ms
-
+      l_2x: '180243'
+      l_3x: '180243'
+      l_4x: '180243'
+      l_5x: '180243'
+      l_GIAboveSpinnerLower: '180243'
+      l_GIAboveSpinnerUpper: '180243'
+      l_GIDropCenterRight: '180243'
+      l_GIDropLeft0: '180243'
+      l_GIDropLeft1: '180243'
+      l_GILane4: '180243'
+      l_GILane5: '180243'
+      l_GIScoopLL: '180243'
+      l_GIScoopLR: '180243'
+      l_GIScoopML: '180243'
+      l_GISlingRight0: '180243'
+      l_GISlingRight1: '180243'
+      l_GIUpperCR: '180243'
+      l_GIUpperR: '180243'
+      l_bonus0: '180243'
+      l_bonus1: '180243'
+      l_bonus2: '180243'
+      l_bonus3: '180243'
+      l_bonus4: '180243'
+      l_bonus5: '180243'
+      l_bonus6: '180243'
+      l_bonus7: '180243'
+      l_bonus8: '180243'
+      l_bonusBig0: '180243'
+      l_bonusBig1: '180243'
+      l_dropCenterRight: '16023C'
+      l_dropLeft2: '120232'
+      l_dropLeft3: '180243'
+      l_giRightLaneGuide0: '180243'
+      l_giRightLaneGuide1: '180243'
+      l_jetUpperRight: '180243'
+      l_lane4: '180243'
+      l_mode0: '180243'
+      l_mode1: '180243'
+      l_scoop: '180243'
+      l_shootAgain: '180243'
+      l_specialRight: '180243'
+      l_spinner: '180243'
+      l_yellowTargetRight: '180243'
+    
 - duration: 100ms
   lights:
-      l_GIAboveScoopLower:
-        color: '180243'
-        fade: 100ms
-      l_GIAboveScoopUpper:
-        color: '180243'
-        fade: 100ms
-      l_GIAboveSpinnerUpper:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '130234'
-        fade: 100ms
-      l_GIDropLeft1:
-        color: '000000'
-        fade: 100ms
-      l_GIDropRight1:
-        color: '180243'
-        fade: 100ms
-      l_GILane0:
-        color: '180243'
-        fade: 100ms
-      l_GILane5:
-        color: '000000'
-        fade: 100ms
-      l_GISlingLeft0:
-        color: '180243'
-        fade: 100ms
-      l_GISlingLeft1:
-        color: '180243'
-        fade: 100ms
-      l_GISlingRight1:
-        color: '010001'
-        fade: 100ms
-      l_GIUpperL:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperR:
-        color: '000000'
-        fade: 100ms
-      l_bonus6:
-        color: '000000'
-        fade: 100ms
-      l_bonus7:
-        color: '000000'
-        fade: 100ms
-      l_bonusBig0:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft3:
-        color: '000000'
-        fade: 100ms
-      l_dropRight3:
-        color: '180243'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '0D0122'
-        fade: 100ms
-      l_mode3:
-        color: '180243'
-        fade: 100ms
-      l_mode4:
-        color: '180243'
-        fade: 100ms
-      l_specialLeft:
-        color: '180243'
-        fade: 100ms
-      l_specialRight:
-        color: '000000'
-        fade: 100ms
-      l_yellowTargetLeft:
-        color: '180243'
-        fade: 100ms
-      l_yellowTargetRight:
-        color: '000000'
-        fade: 100ms
-
+      l_GIAboveScoopLower: '010101'
+      l_GIDropCenterLeft: '0B011C'
+      l_GIDropLeft0: '000000'
+      l_GILane4: '000000'
+      l_GIScoopMR: '180243'
+      l_GIScoopUC: '180243'
+      l_GISlingLeft0: '180243'
+      l_GIUpperCR: '000000'
+      l_bonus7: '15023B'
+      l_bonus8: '000000'
+      l_bonusBig1: '000000'
+      l_dropCenterRight: '000000'
+      l_dropLeft2: '000000'
+      l_dropLeft3: '0E0126'
+      l_giLeftLaneGuide0: '090118'
+      l_giLeftLaneGuide1: '180243'
+      l_jetUpperRight: '0D0122'
+      l_lane4: '000000'
+      l_mode2: '180243'
+      l_mode3: '180243'
+    
 - duration: 100ms
   lights:
-      l_GIAboveSpinnerLower:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '10022A'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '010001'
-        fade: 100ms
-      l_GIDropRight0:
-        color: '180243'
-        fade: 100ms
-      l_GILane1:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopLL:
-        color: '000000'
-        fade: 100ms
-      l_GISlingRight0:
-        color: '000000'
-        fade: 100ms
-      l_GISlingRight1:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperCL:
-        color: '180243'
-        fade: 100ms
-      l_bonus4:
-        color: '000000'
-        fade: 100ms
-      l_bonus5:
-        color: '000000'
-        fade: 100ms
-      l_dropCenterLeft:
-        color: '040108'
-        fade: 100ms
-      l_dropRight2:
-        color: '180243'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '090118'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '180243'
-        fade: 100ms
-      l_lane0:
-        color: '180243'
-        fade: 100ms
-      l_mode5:
-        color: '180243'
-        fade: 100ms
-
+      l_GIAboveScoopLower: '180243'
+      l_GIAboveScoopUpper: '180243'
+      l_GIAboveSpinnerUpper: '000000'
+      l_GIDropCenterLeft: '180243'
+      l_GIDropCenterRight: '010001'
+      l_GIDropLeft1: '000000'
+      l_GIDropRight1: '180243'
+      l_GILane0: '180243'
+      l_GILane5: '000000'
+      l_GISlingLeft1: '180243'
+      l_GISlingRight1: '000000'
+      l_GIUpperL: '180243'
+      l_GIUpperR: '010001'
+      l_bonus6: '000000'
+      l_bonus7: '000000'
+      l_bonusBig0: '000000'
+      l_dropLeft3: '000000'
+      l_dropRight3: '11022D'
+      l_giLeftLaneGuide0: '180243'
+      l_jetUpperLeft: '010001'
+      l_jetUpperRight: '000000'
+      l_mode4: '180243'
+      l_specialLeft: '180243'
+      l_specialRight: '000000'
+      l_yellowTargetLeft: '180243'
+      l_yellowTargetRight: '000000'
+    
 - duration: 100ms
   lights:
-      l_4x:
-        color: '180242'
-        fade: 100ms
-      l_5x:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '000000'
-        fade: 100ms
-      l_GILane2:
-        color: '180243'
-        fade: 100ms
-      l_GILowLeft:
-        color: '180243'
-        fade: 100ms
-      l_bonus0:
-        color: '000000'
-        fade: 100ms
-      l_bonus1:
-        color: '000000'
-        fade: 100ms
-      l_bonus2:
-        color: '000000'
-        fade: 100ms
-      l_bonus3:
-        color: '000000'
-        fade: 100ms
-      l_dropCenterLeft:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft0:
-        color: '010101'
-        fade: 100ms
-      l_dropRight1:
-        color: '180243'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '180243'
-        fade: 100ms
-      l_lane1:
-        color: '180243'
-        fade: 100ms
-      l_lane2:
-        color: '010001'
-        fade: 100ms
-      l_scoop:
-        color: '000000'
-        fade: 100ms
-
+      l_GIAboveSpinnerLower: '000000'
+      l_GIDropCenterRight: '000000'
+      l_GIDropRight0: '180243'
+      l_GILane1: '180243'
+      l_GIScoopLL: '000000'
+      l_GISlingRight0: '000000'
+      l_GIUpperCL: '180243'
+      l_GIUpperR: '000000'
+      l_bonus3: '05010B'
+      l_bonus4: '000000'
+      l_bonus5: '000000'
+      l_dropCenterLeft: '180243'
+      l_dropRight2: '0D0123'
+      l_dropRight3: '180243'
+      l_giRightLaneGuide0: '000000'
+      l_giRightLaneGuide1: '000000'
+      l_jetUpperLeft: '180243'
+      l_lane0: '180243'
+      l_mode5: '180243'
+      l_scoop: '140238'
+    
 - duration: 100ms
   lights:
-      l_3x:
-        color: '000000'
-        fade: 100ms
-      l_4x:
-        color: '000000'
-        fade: 100ms
-      l_GILane3:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopLR:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopML:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft0:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft1:
-        color: '180243'
-        fade: 100ms
-      l_dropRight0:
-        color: '180243'
-        fade: 100ms
-      l_lane2:
-        color: '180243'
-        fade: 100ms
-      l_lane3:
-        color: '180243'
-        fade: 100ms
-      l_mode0:
-        color: '000000'
-        fade: 100ms
-      l_mode6:
-        color: '180243'
-        fade: 100ms
-      l_shootAgain:
-        color: '000000'
-        fade: 100ms
-      l_spinner:
-        color: '000000'
-        fade: 100ms
-
+      l_4x: '000000'
+      l_5x: '000000'
+      l_GILane2: '180243'
+      l_GILowLeft: '180243'
+      l_bonus0: '000000'
+      l_bonus1: '000000'
+      l_bonus2: '000000'
+      l_bonus3: '000000'
+      l_dropLeft0: '180243'
+      l_dropRight1: '180243'
+      l_dropRight2: '180243'
+      l_jetLowerCenter: '030106'
+      l_lane1: '180243'
+      l_mode6: '180243'
+      l_scoop: '000000'
+    
 - duration: 100ms
   lights:
-      l_2x:
-        color: '000000'
-        fade: 100ms
-      l_GIDropLeft0:
-        color: '180243'
-        fade: 100ms
-      l_GILane4:
-        color: '180243'
-        fade: 100ms
-      l_GILowRight:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopMR:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopUC:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperCR:
-        color: '180243'
-        fade: 100ms
-      l_bonus8:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft2:
-        color: '180243'
-        fade: 100ms
-      l_jetUpperRight:
-        color: '180243'
-        fade: 100ms
-      l_lane4:
-        color: '180243'
-        fade: 100ms
-      l_mode1:
-        color: '000000'
-        fade: 100ms
-      l_mode2:
-        color: '000000'
-        fade: 100ms
-
+      l_2x: '010001'
+      l_3x: '000000'
+      l_GILane3: '180243'
+      l_GIScoopLR: '000000'
+      l_GIScoopML: '000000'
+      l_dropLeft1: '180243'
+      l_dropLeft2: '010101'
+      l_dropRight0: '180243'
+      l_jetLowerCenter: '180243'
+      l_lane2: '180243'
+      l_mode0: '000000'
+      l_mode1: '000000'
+      l_shootAgain: '000000'
+      l_spinner: '140237'
+    
 - duration: 100ms
   lights:
-      l_GIAboveScoopLower:
-        color: '000000'
-        fade: 100ms
-      l_GIAboveScoopUpper:
-        color: '000000'
-        fade: 100ms
-      l_GIAboveSpinnerUpper:
-        color: '180243'
-        fade: 100ms
-      l_GIDropLeft1:
-        color: '180243'
-        fade: 100ms
-      l_GIDropRight1:
-        color: '000000'
-        fade: 100ms
-      l_GILane0:
-        color: '000000'
-        fade: 100ms
-      l_GILane5:
-        color: '180243'
-        fade: 100ms
-      l_GISlingLeft0:
-        color: '000000'
-        fade: 100ms
-      l_GISlingLeft1:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperL:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperR:
-        color: '0E0126'
-        fade: 100ms
-      l_bonus7:
-        color: '180243'
-        fade: 100ms
-      l_bonusBig0:
-        color: '0B011B'
-        fade: 100ms
-      l_bonusBig1:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft3:
-        color: '180243'
-        fade: 100ms
-      l_dropRight3:
-        color: '0B011D'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '090118'
-        fade: 100ms
-      l_mode3:
-        color: '000000'
-        fade: 100ms
-      l_mode4:
-        color: '06010E'
-        fade: 100ms
-      l_specialLeft:
-        color: '000000'
-        fade: 100ms
-      l_yellowTargetLeft:
-        color: '000000'
-        fade: 100ms
-      l_yellowTargetRight:
-        color: '180243'
-        fade: 100ms
-
+      l_2x: '000000'
+      l_GIDropCenterLeft: '0B011B'
+      l_GIDropLeft0: '180243'
+      l_GILane4: '180243'
+      l_GILowRight: '180243'
+      l_GIScoopMR: '000000'
+      l_GIScoopUC: '000000'
+      l_GISlingLeft0: '0F0227'
+      l_GIUpperCR: '120232'
+      l_bonus8: '180243'
+      l_bonusBig1: '010001'
+      l_dropCenterRight: '180243'
+      l_dropLeft2: '180243'
+      l_dropLeft3: '070113'
+      l_giLeftLaneGuide1: '000000'
+      l_lane3: '180243'
+      l_lane4: '180243'
+      l_mode2: '000000'
+      l_mode3: '000000'
+      l_spinner: '000000'
+    
 - duration: 100ms
   lights:
-      l_GIAboveSpinnerLower:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '06010F'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '010101'
-        fade: 100ms
-      l_GIDropRight0:
-        color: '05010B'
-        fade: 100ms
-      l_GILane1:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopLL:
-        color: '180243'
-        fade: 100ms
-      l_GISlingRight0:
-        color: '180243'
-        fade: 100ms
-      l_GISlingRight1:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperCL:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperR:
-        color: '180243'
-        fade: 100ms
-      l_bonus4:
-        color: '010001'
-        fade: 100ms
-      l_bonus5:
-        color: '180243'
-        fade: 100ms
-      l_bonus6:
-        color: '180243'
-        fade: 100ms
-      l_bonusBig0:
-        color: '180243'
-        fade: 100ms
-      l_dropRight3:
-        color: '000000'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '010101'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '000000'
-        fade: 100ms
-      l_lane0:
-        color: '000000'
-        fade: 100ms
-      l_mode4:
-        color: '000000'
-        fade: 100ms
-      l_mode5:
-        color: '010001'
-        fade: 100ms
-      l_specialRight:
-        color: '180243'
-        fade: 100ms
-
+      l_GIAboveScoopLower: '000000'
+      l_GIAboveScoopUpper: '000000'
+      l_GIDropCenterLeft: '000000'
+      l_GIDropCenterRight: '010001'
+      l_GIDropLeft1: '180243'
+      l_GILane0: '000000'
+      l_GILane5: '180243'
+      l_GISlingLeft0: '000000'
+      l_GISlingLeft1: '000000'
+      l_GIUpperCR: '180243'
+      l_GIUpperL: '000000'
+      l_bonus6: '06010F'
+      l_bonus7: '180243'
+      l_bonusBig0: '180243'
+      l_bonusBig1: '180243'
+      l_dropLeft3: '180243'
+      l_giLeftLaneGuide0: '000000'
+      l_jetUpperRight: '180243'
+      l_mode4: '000000'
+      l_specialLeft: '000000'
+      l_specialRight: '020104'
+      l_yellowTargetLeft: '000000'
+      l_yellowTargetRight: '010101'
+    
 - duration: 100ms
   lights:
-      l_5x:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '10022B'
-        fade: 100ms
-      l_GIDropRight0:
-        color: '000000'
-        fade: 100ms
-      l_GILane2:
-        color: '000000'
-        fade: 100ms
-      l_GILowLeft:
-        color: '000000'
-        fade: 100ms
-      l_bonus1:
-        color: '180243'
-        fade: 100ms
-      l_bonus2:
-        color: '180243'
-        fade: 100ms
-      l_bonus3:
-        color: '180243'
-        fade: 100ms
-      l_bonus4:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterLeft:
-        color: '000000'
-        fade: 100ms
-      l_dropRight1:
-        color: '11022E'
-        fade: 100ms
-      l_dropRight2:
-        color: '000000'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '000000'
-        fade: 100ms
-      l_lane1:
-        color: '000000'
-        fade: 100ms
-      l_mode5:
-        color: '000000'
-        fade: 100ms
-      l_scoop:
-        color: '180243'
-        fade: 100ms
-
+      l_GIAboveSpinnerLower: '180243'
+      l_GIAboveSpinnerUpper: '180243'
+      l_GIDropCenterRight: '180243'
+      l_GIDropRight1: '000000'
+      l_GILane1: '000000'
+      l_GIScoopLL: '180243'
+      l_GISlingRight0: '180243'
+      l_GISlingRight1: '180243'
+      l_GIUpperCL: '020103'
+      l_GIUpperR: '180243'
+      l_bonus4: '180243'
+      l_bonus5: '180243'
+      l_bonus6: '180243'
+      l_dropCenterLeft: '000000'
+      l_dropRight3: '000000'
+      l_giRightLaneGuide0: '180243'
+      l_giRightLaneGuide1: '180243'
+      l_jetUpperLeft: '000000'
+      l_lane0: '000000'
+      l_mode5: '000000'
+      l_scoop: '010101'
+      l_specialRight: '180243'
+      l_yellowTargetRight: '180243'
+    
 - duration: 100ms
   lights:
-      l_3x:
-        color: '180243'
-        fade: 100ms
-      l_4x:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '180243'
-        fade: 100ms
-      l_GILane3:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopLR:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopML:
-        color: '180243'
-        fade: 100ms
-      l_bonus0:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft0:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft1:
-        color: '000000'
-        fade: 100ms
-      l_dropRight0:
-        color: '000000'
-        fade: 100ms
-      l_dropRight1:
-        color: '000000'
-        fade: 100ms
-      l_lane2:
-        color: '000000'
-        fade: 100ms
-      l_lane3:
-        color: '130235'
-        fade: 100ms
-      l_mode6:
-        color: '000000'
-        fade: 100ms
-      l_shootAgain:
-        color: '180243'
-        fade: 100ms
-      l_spinner:
-        color: '180243'
-        fade: 100ms
-
+      l_5x: '180243'
+      l_GIDropRight0: '000000'
+      l_GILane2: '000000'
+      l_GILowLeft: '000000'
+      l_GIUpperCL: '000000'
+      l_bonus0: '15023A'
+      l_bonus1: '180243'
+      l_bonus2: '180243'
+      l_bonus3: '180243'
+      l_dropLeft0: '000000'
+      l_dropRight2: '000000'
+      l_jetLowerCenter: '010101'
+      l_lane1: '000000'
+      l_mode6: '000000'
+      l_scoop: '180243'
+    
 - duration: 100ms
   lights:
-      l_2x:
-        color: '180243'
-        fade: 100ms
-      l_GIDropLeft0:
-        color: '000000'
-        fade: 100ms
-      l_GILane4:
-        color: '000000'
-        fade: 100ms
-      l_GILowRight:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopMR:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopUC:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperCR:
-        color: '020103'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '180242'
-        fade: 100ms
-      l_dropLeft2:
-        color: '000000'
-        fade: 100ms
-      l_jetUpperRight:
-        color: '000000'
-        fade: 100ms
-      l_lane3:
-        color: '000000'
-        fade: 100ms
-      l_lane4:
-        color: '000000'
-        fade: 100ms
-      l_mode0:
-        color: '180243'
-        fade: 100ms
-      l_mode1:
-        color: '180243'
-        fade: 100ms
-      l_mode2:
-        color: '180243'
-        fade: 100ms
-
+      l_3x: '180243'
+      l_4x: '180243'
+      l_GILane3: '000000'
+      l_GIScoopLR: '180243'
+      l_GIScoopML: '180243'
+      l_bonus0: '180243'
+      l_dropLeft1: '000000'
+      l_dropRight0: '000000'
+      l_dropRight1: '000000'
+      l_jetLowerCenter: '000000'
+      l_lane2: '000000'
+      l_mode0: '180243'
+      l_shootAgain: '180243'
+    
 - duration: 100ms
   lights:
-      l_GIAboveScoopLower:
-        color: '180243'
-        fade: 100ms
-      l_GIAboveScoopUpper:
-        color: '180243'
-        fade: 100ms
-      l_GIAboveSpinnerUpper:
-        color: '0B011D'
-        fade: 100ms
-      l_GIDropLeft1:
-        color: '000000'
-        fade: 100ms
-      l_GIDropRight1:
-        color: '010001'
-        fade: 100ms
-      l_GILane0:
-        color: '180243'
-        fade: 100ms
-      l_GILane5:
-        color: '000000'
-        fade: 100ms
-      l_GISlingLeft0:
-        color: '180243'
-        fade: 100ms
-      l_GISlingLeft1:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperCR:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperL:
-        color: '180243'
-        fade: 100ms
-      l_bonus7:
-        color: '000000'
-        fade: 100ms
-      l_bonus8:
-        color: '000000'
-        fade: 100ms
-      l_bonusBig1:
-        color: '000000'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft3:
-        color: '000000'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '010101'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '0A011B'
-        fade: 100ms
-      l_mode3:
-        color: '180243'
-        fade: 100ms
-      l_specialLeft:
-        color: '180243'
-        fade: 100ms
-      l_yellowTargetLeft:
-        color: '180243'
-        fade: 100ms
-      l_yellowTargetRight:
-        color: '000000'
-        fade: 100ms
-
+      l_2x: '180243'
+      l_GIDropLeft0: '000000'
+      l_GILane4: '000000'
+      l_GILowRight: '000000'
+      l_GIScoopMR: '180243'
+      l_GIScoopUC: '180243'
+      l_bonus8: '140236'
+      l_dropCenterRight: '130233'
+      l_dropLeft2: '000000'
+      l_giLeftLaneGuide1: '130234'
+      l_lane3: '000000'
+      l_lane4: '170240'
+      l_mode1: '180243'
+      l_mode2: '180243'
+      l_spinner: '180243'
+    
 - duration: 100ms
   lights:
-      l_GIAboveSpinnerLower:
-        color: '000000'
-        fade: 100ms
-      l_GIAboveSpinnerUpper:
-        color: '000000'
-        fade: 100ms
-      l_GIDropRight1:
-        color: '180243'
-        fade: 100ms
-      l_GILane1:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopLL:
-        color: '010001'
-        fade: 100ms
-      l_GISlingRight0:
-        color: '000000'
-        fade: 100ms
-      l_GISlingRight1:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperCL:
-        color: '010101'
-        fade: 100ms
-      l_GIUpperR:
-        color: '000000'
-        fade: 100ms
-      l_bonus5:
-        color: '010101'
-        fade: 100ms
-      l_bonus6:
-        color: '000000'
-        fade: 100ms
-      l_bonusBig0:
-        color: '000000'
-        fade: 100ms
-      l_dropRight3:
-        color: '180243'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '180243'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '180243'
-        fade: 100ms
-      l_lane0:
-        color: '180243'
-        fade: 100ms
-      l_mode4:
-        color: '180243'
-        fade: 100ms
-      l_specialRight:
-        color: '000000'
-        fade: 100ms
-
+      l_GIAboveScoopLower: '180243'
+      l_GIAboveScoopUpper: '180243'
+      l_GIDropCenterLeft: '11022D'
+      l_GIDropLeft1: '000000'
+      l_GILane0: '180243'
+      l_GILane5: '000000'
+      l_GISlingLeft0: '180243'
+      l_GISlingLeft1: '180243'
+      l_GIUpperCR: '000000'
+      l_GIUpperL: '10022A'
+      l_bonus7: '000000'
+      l_bonus8: '000000'
+      l_bonusBig1: '000000'
+      l_dropCenterRight: '000000'
+      l_dropLeft3: '000000'
+      l_giLeftLaneGuide0: '180243'
+      l_giLeftLaneGuide1: '180243'
+      l_jetUpperLeft: '010001'
+      l_jetUpperRight: '000000'
+      l_lane4: '000000'
+      l_mode3: '180243'
+      l_mode4: '180243'
+      l_specialLeft: '180243'
+      l_yellowTargetLeft: '180243'
+    
 - duration: 100ms
   lights:
-      l_5x:
-        color: '010101'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '140238'
-        fade: 100ms
-      l_GIDropRight0:
-        color: '180243'
-        fade: 100ms
-      l_GILane2:
-        color: '180243'
-        fade: 100ms
-      l_GILowLeft:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopLL:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperCL:
-        color: '180243'
-        fade: 100ms
-      l_bonus2:
-        color: '010001'
-        fade: 100ms
-      l_bonus3:
-        color: '000000'
-        fade: 100ms
-      l_bonus4:
-        color: '000000'
-        fade: 100ms
-      l_bonus5:
-        color: '000000'
-        fade: 100ms
-      l_dropCenterLeft:
-        color: '180243'
-        fade: 100ms
-      l_dropRight2:
-        color: '180243'
-        fade: 100ms
-      l_lane1:
-        color: '180243'
-        fade: 100ms
-      l_mode5:
-        color: '180243'
-        fade: 100ms
-      l_scoop:
-        color: '000000'
-        fade: 100ms
-
+      l_GIAboveSpinnerLower: '000000'
+      l_GIAboveSpinnerUpper: '000000'
+      l_GIDropCenterLeft: '180243'
+      l_GIDropRight1: '180243'
+      l_GILane1: '180243'
+      l_GIScoopLL: '000000'
+      l_GISlingRight0: '000000'
+      l_GISlingRight1: '000000'
+      l_GIUpperL: '180243'
+      l_GIUpperR: '000000'
+      l_bonus5: '000000'
+      l_bonus6: '000000'
+      l_bonusBig0: '000000'
+      l_dropCenterLeft: '140238'
+      l_dropRight3: '180243'
+      l_giRightLaneGuide0: '000000'
+      l_jetLowerCenter: '0E0126'
+      l_jetUpperLeft: '180243'
+      l_lane0: '180243'
+      l_mode5: '180243'
+      l_specialRight: '000000'
+      l_yellowTargetRight: '000000'
+    
 - duration: 100ms
   lights:
-      l_4x:
-        color: '000000'
-        fade: 100ms
-      l_5x:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '0A011B'
-        fade: 100ms
-      l_GILane3:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopLR:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopML:
-        color: '000000'
-        fade: 100ms
-      l_bonus0:
-        color: '000000'
-        fade: 100ms
-      l_bonus1:
-        color: '000000'
-        fade: 100ms
-      l_bonus2:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft0:
-        color: '180243'
-        fade: 100ms
-      l_dropRight0:
-        color: '11022E'
-        fade: 100ms
-      l_dropRight1:
-        color: '180243'
-        fade: 100ms
-      l_lane2:
-        color: '180243'
-        fade: 100ms
-      l_mode6:
-        color: '180243'
-        fade: 100ms
-      l_shootAgain:
-        color: '000000'
-        fade: 100ms
-      l_spinner:
-        color: '010001'
-        fade: 100ms
-
+      l_5x: '000000'
+      l_GIDropCenterRight: '010001'
+      l_GIDropRight0: '180243'
+      l_GILane2: '180243'
+      l_GILowLeft: '180243'
+      l_GIUpperCL: '180243'
+      l_bonus1: '11022F'
+      l_bonus2: '000000'
+      l_bonus3: '000000'
+      l_bonus4: '000000'
+      l_dropCenterLeft: '180243'
+      l_dropRight2: '180243'
+      l_giRightLaneGuide1: '000000'
+      l_jetLowerCenter: '180243'
+      l_lane1: '180243'
+      l_scoop: '000000'
+    
 - duration: 100ms
   lights:
-      l_2x:
-        color: '000000'
-        fade: 100ms
-      l_3x:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '000000'
-        fade: 100ms
-      l_GIDropLeft0:
-        color: '180243'
-        fade: 100ms
-      l_GILane4:
-        color: '180243'
-        fade: 100ms
-      l_GILowRight:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopMR:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopUC:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft1:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft2:
-        color: '180243'
-        fade: 100ms
-      l_dropRight0:
-        color: '180243'
-        fade: 100ms
-      l_jetUpperRight:
-        color: '180243'
-        fade: 100ms
-      l_lane3:
-        color: '180243'
-        fade: 100ms
-      l_lane4:
-        color: '180243'
-        fade: 100ms
-      l_mode0:
-        color: '000000'
-        fade: 100ms
-      l_mode1:
-        color: '000000'
-        fade: 100ms
-      l_spinner:
-        color: '000000'
-        fade: 100ms
-
+      l_3x: '000000'
+      l_4x: '000000'
+      l_GIDropCenterRight: '000000'
+      l_GILane3: '180243'
+      l_GIScoopLR: '000000'
+      l_GIScoopML: '000000'
+      l_bonus0: '000000'
+      l_bonus1: '000000'
+      l_dropLeft0: '180243'
+      l_dropLeft1: '180243'
+      l_dropRight0: '0C011F'
+      l_dropRight1: '180243'
+      l_lane2: '180243'
+      l_mode6: '180243'
+      l_shootAgain: '000000'
+    
 - duration: 100ms
   lights:
-      l_GIAboveScoopLower:
-        color: '000000'
-        fade: 100ms
-      l_GIAboveScoopUpper:
-        color: '000000'
-        fade: 100ms
-      l_GIDropLeft1:
-        color: '180243'
-        fade: 100ms
-      l_GILane0:
-        color: '020105'
-        fade: 100ms
-      l_GILane5:
-        color: '180243'
-        fade: 100ms
-      l_GISlingLeft0:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperCR:
-        color: '180243'
-        fade: 100ms
-      l_bonus7:
-        color: '0C011F'
-        fade: 100ms
-      l_bonus8:
-        color: '180243'
-        fade: 100ms
-      l_bonusBig1:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft3:
-        color: '180243'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '11022F'
-        fade: 100ms
-      l_mode2:
-        color: '000000'
-        fade: 100ms
-      l_mode3:
-        color: '000000'
-        fade: 100ms
-      l_yellowTargetLeft:
-        color: '000000'
-        fade: 100ms
-      l_yellowTargetRight:
-        color: '180243'
-        fade: 100ms
-
+      l_2x: '000000'
+      l_GIDropLeft0: '180243'
+      l_GILane4: '11022D'
+      l_GILowRight: '180243'
+      l_GIScoopMR: '000000'
+      l_GIScoopUC: '000000'
+      l_dropLeft2: '180243'
+      l_dropRight0: '180243'
+      l_lane3: '180243'
+      l_mode0: '000000'
+      l_mode1: '000000'
+      l_mode2: '000000'
+      l_spinner: '000000'
+    
 - duration: 100ms
   lights:
-      l_GIAboveSpinnerLower:
-        color: '180243'
-        fade: 100ms
-      l_GIAboveSpinnerUpper:
-        color: '180243'
-        fade: 100ms
-      l_GIDropRight1:
-        color: '000000'
-        fade: 100ms
-      l_GILane0:
-        color: '000000'
-        fade: 100ms
-      l_GILane1:
-        color: '000000'
-        fade: 100ms
-      l_GISlingLeft1:
-        color: '000000'
-        fade: 100ms
-      l_GISlingRight1:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperL:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperR:
-        color: '180243'
-        fade: 100ms
-      l_bonus6:
-        color: '180243'
-        fade: 100ms
-      l_bonus7:
-        color: '180243'
-        fade: 100ms
-      l_bonusBig0:
-        color: '180243'
-        fade: 100ms
-      l_dropRight3:
-        color: '000000'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '000000'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '000000'
-        fade: 100ms
-      l_lane0:
-        color: '000000'
-        fade: 100ms
-      l_mode4:
-        color: '000000'
-        fade: 100ms
-      l_specialLeft:
-        color: '000000'
-        fade: 100ms
-      l_specialRight:
-        color: '180243'
-        fade: 100ms
-
+      l_GIAboveScoopLower: '000000'
+      l_GIAboveScoopUpper: '000000'
+      l_GIDropLeft1: '180243'
+      l_GILane0: '130234'
+      l_GILane4: '180243'
+      l_GILane5: '180243'
+      l_GISlingLeft0: '000000'
+      l_GISlingLeft1: '000000'
+      l_GIUpperCR: '180243'
+      l_bonus7: '180243'
+      l_bonus8: '180243'
+      l_bonusBig1: '180243'
+      l_dropCenterRight: '180243'
+      l_dropLeft3: '180243'
+      l_giLeftLaneGuide0: '000000'
+      l_giLeftLaneGuide1: '000000'
+      l_jetUpperRight: '180243'
+      l_lane4: '180243'
+      l_mode3: '000000'
+      l_specialLeft: '170240'
+      l_yellowTargetLeft: '000000'
+    
 - duration: 100ms
   lights:
-      l_GIDropRight0:
-        color: '000000'
-        fade: 100ms
-      l_GILane2:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopLL:
-        color: '180243'
-        fade: 100ms
-      l_GISlingRight0:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperCL:
-        color: '000000'
-        fade: 100ms
-      l_bonus3:
-        color: '180243'
-        fade: 100ms
-      l_bonus4:
-        color: '180243'
-        fade: 100ms
-      l_bonus5:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterLeft:
-        color: '130234'
-        fade: 100ms
-      l_dropRight2:
-        color: '000000'
-        fade: 100ms
-      l_lane1:
-        color: '000000'
-        fade: 100ms
-      l_mode5:
-        color: '000000'
-        fade: 100ms
-      l_scoop:
-        color: '180243'
-        fade: 100ms
-
+      l_GIAboveSpinnerLower: '06010F'
+      l_GIAboveSpinnerUpper: '180243'
+      l_GIDropCenterLeft: '010101'
+      l_GIDropCenterRight: '010001'
+      l_GIDropRight1: '000000'
+      l_GILane0: '000000'
+      l_GILane1: '030108'
+      l_GIScoopLL: '010001'
+      l_GISlingRight0: '0D0122'
+      l_GISlingRight1: '180243'
+      l_GIUpperL: '000000'
+      l_GIUpperR: '180243'
+      l_bonus5: '120232'
+      l_bonus6: '180243'
+      l_bonusBig0: '180243'
+      l_dropRight3: '000000'
+      l_giRightLaneGuide0: '180243'
+      l_jetLowerCenter: '0C0120'
+      l_jetUpperLeft: '000000'
+      l_lane0: '000000'
+      l_mode4: '000000'
+      l_mode5: '170240'
+      l_specialLeft: '000000'
+      l_specialRight: '180243'
+      l_yellowTargetRight: '180243'
+    
 - duration: 100ms
   lights:
-      l_4x:
-        color: '180243'
-        fade: 100ms
-      l_5x:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '010101'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '020102'
-        fade: 100ms
-      l_GILane3:
-        color: '000000'
-        fade: 100ms
-      l_GILowLeft:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopML:
-        color: '180243'
-        fade: 100ms
-      l_bonus0:
-        color: '180243'
-        fade: 100ms
-      l_bonus1:
-        color: '180243'
-        fade: 100ms
-      l_bonus2:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterLeft:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft0:
-        color: '000000'
-        fade: 100ms
-      l_dropRight0:
-        color: '0D0122'
-        fade: 100ms
-      l_dropRight1:
-        color: '000000'
-        fade: 100ms
-      l_lane2:
-        color: '000000'
-        fade: 100ms
-      l_mode6:
-        color: '0C0120'
-        fade: 100ms
-      l_shootAgain:
-        color: '180243'
-        fade: 100ms
-      l_spinner:
-        color: '180243'
-        fade: 100ms
-
+      l_5x: '010101'
+      l_GIAboveSpinnerLower: '180243'
+      l_GIDropCenterLeft: '000000'
+      l_GIDropCenterRight: '180241'
+      l_GIDropRight0: '000000'
+      l_GILane1: '000000'
+      l_GILane2: '0B011E'
+      l_GILowLeft: '000000'
+      l_GIScoopLL: '180243'
+      l_GISlingRight0: '180243'
+      l_GIUpperCL: '000000'
+      l_bonus2: '180243'
+      l_bonus3: '180243'
+      l_bonus4: '180243'
+      l_bonus5: '180243'
+      l_dropCenterLeft: '000000'
+      l_dropRight2: '000000'
+      l_giRightLaneGuide1: '180243'
+      l_jetLowerCenter: '000000'
+      l_lane1: '000000'
+      l_mode5: '000000'
+      l_scoop: '180243'
+    
 - duration: 100ms
   lights:
-      l_2x:
-        color: '180243'
-        fade: 100ms
-      l_3x:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '180243'
-        fade: 100ms
-      l_GILane4:
-        color: '000000'
-        fade: 100ms
-      l_GILowRight:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopLR:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopMR:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '180242'
-        fade: 100ms
-      l_dropLeft1:
-        color: '000000'
-        fade: 100ms
-      l_dropRight0:
-        color: '000000'
-        fade: 100ms
-      l_jetUpperRight:
-        color: '010001'
-        fade: 100ms
-      l_lane3:
-        color: '000000'
-        fade: 100ms
-      l_mode0:
-        color: '180243'
-        fade: 100ms
-      l_mode1:
-        color: '180243'
-        fade: 100ms
-      l_mode6:
-        color: '000000'
-        fade: 100ms
-
+      l_4x: '180243'
+      l_5x: '180243'
+      l_GIDropCenterRight: '180243'
+      l_GILane2: '000000'
+      l_GIScoopML: '180243'
+      l_bonus0: '180243'
+      l_bonus1: '180243'
+      l_dropLeft0: '000000'
+      l_dropRight0: '150239'
+      l_dropRight1: '000000'
+      l_lane2: '000000'
+      l_mode6: '000000'
+      l_shootAgain: '180243'
+    
 - duration: 100ms
   lights:
-      l_GIAboveScoopLower:
-        color: '180243'
-        fade: 100ms
-      l_GIAboveScoopUpper:
-        color: '010001'
-        fade: 100ms
-      l_GIDropLeft0:
-        color: '000000'
-        fade: 100ms
-      l_GILane5:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopUC:
-        color: '180243'
-        fade: 100ms
-      l_GISlingLeft0:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperCR:
-        color: '000000'
-        fade: 100ms
-      l_bonus7:
-        color: '0D0122'
-        fade: 100ms
-      l_bonus8:
-        color: '000000'
-        fade: 100ms
-      l_bonusBig1:
-        color: '000000'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft2:
-        color: '000000'
-        fade: 100ms
-      l_jetUpperRight:
-        color: '000000'
-        fade: 100ms
-      l_lane4:
-        color: '000000'
-        fade: 100ms
-      l_mode2:
-        color: '180243'
-        fade: 100ms
-      l_mode3:
-        color: '170240'
-        fade: 100ms
-      l_yellowTargetLeft:
-        color: '10022A'
-        fade: 100ms
-      l_yellowTargetRight:
-        color: '180242'
-        fade: 100ms
-
+      l_2x: '180243'
+      l_3x: '180243'
+      l_GIDropLeft0: '000000'
+      l_GILane3: '000000'
+      l_GILowRight: '000000'
+      l_GIScoopLR: '180243'
+      l_GIScoopMR: '180243'
+      l_dropCenterRight: '15023A'
+      l_dropLeft1: '000000'
+      l_dropLeft2: '000000'
+      l_dropRight0: '000000'
+      l_lane3: '000000'
+      l_mode0: '180243'
+      l_mode1: '180243'
+      l_mode2: '0B011B'
+      l_spinner: '180243'
+    
 - duration: 100ms
   lights:
-      l_GIAboveScoopUpper:
-        color: '180243'
-        fade: 100ms
-      l_GIAboveSpinnerLower:
-        color: '000000'
-        fade: 100ms
-      l_GIAboveSpinnerUpper:
-        color: '000000'
-        fade: 100ms
-      l_GIDropLeft1:
-        color: '000000'
-        fade: 100ms
-      l_GIDropRight1:
-        color: '180243'
-        fade: 100ms
-      l_GILane0:
-        color: '180243'
-        fade: 100ms
-      l_GISlingLeft1:
-        color: '180243'
-        fade: 100ms
-      l_GISlingRight1:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperL:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperR:
-        color: '000000'
-        fade: 100ms
-      l_bonus6:
-        color: '000000'
-        fade: 100ms
-      l_bonus7:
-        color: '000000'
-        fade: 100ms
-      l_bonusBig0:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft3:
-        color: '000000'
-        fade: 100ms
-      l_dropRight3:
-        color: '180243'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '0C0120'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '180243'
-        fade: 100ms
-      l_lane0:
-        color: '010002'
-        fade: 100ms
-      l_mode3:
-        color: '180243'
-        fade: 100ms
-      l_mode4:
-        color: '180243'
-        fade: 100ms
-      l_specialLeft:
-        color: '180243'
-        fade: 100ms
-      l_specialRight:
-        color: '000000'
-        fade: 100ms
-      l_yellowTargetLeft:
-        color: '180243'
-        fade: 100ms
-      l_yellowTargetRight:
-        color: '000000'
-        fade: 100ms
-
+      l_GIAboveScoopLower: '180243'
+      l_GIDropLeft1: '000000'
+      l_GILane4: '000000'
+      l_GIScoopUC: '180243'
+      l_GISlingLeft0: '180243'
+      l_GIUpperCR: '000000'
+      l_bonus7: '010101'
+      l_bonus8: '000000'
+      l_bonusBig1: '000000'
+      l_dropCenterRight: '000000'
+      l_dropLeft3: '000000'
+      l_giLeftLaneGuide0: '180243'
+      l_giLeftLaneGuide1: '180243'
+      l_jetUpperRight: '000000'
+      l_lane4: '000000'
+      l_mode2: '180243'
+      l_mode3: '180243'
+      l_yellowTargetLeft: '010001'
+    
 - duration: 100ms
   lights:
-      l_GIDropCenterRight:
-        color: '11022F'
-        fade: 100ms
-      l_GIDropRight0:
-        color: '180243'
-        fade: 100ms
-      l_GILane1:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopLL:
-        color: '000000'
-        fade: 100ms
-      l_GISlingRight0:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperCL:
-        color: '180243'
-        fade: 100ms
-      l_bonus3:
-        color: '010001'
-        fade: 100ms
-      l_bonus4:
-        color: '000000'
-        fade: 100ms
-      l_bonus5:
-        color: '000000'
-        fade: 100ms
-      l_dropRight2:
-        color: '180243'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '180243'
-        fade: 100ms
-      l_lane0:
-        color: '180243'
-        fade: 100ms
-      l_lane1:
-        color: '180243'
-        fade: 100ms
-      l_mode5:
-        color: '180243'
-        fade: 100ms
-      l_scoop:
-        color: '05010C'
-        fade: 100ms
-
+      l_GIAboveScoopUpper: '180243'
+      l_GIAboveSpinnerUpper: '000000'
+      l_GIDropCenterLeft: '0B011D'
+      l_GIDropCenterRight: '090117'
+      l_GIDropRight1: '180243'
+      l_GILane0: '180243'
+      l_GILane5: '000000'
+      l_GISlingLeft1: '180243'
+      l_GISlingRight1: '000000'
+      l_GIUpperL: '180243'
+      l_GIUpperR: '000000'
+      l_bonus5: '080115'
+      l_bonus6: '000000'
+      l_bonus7: '000000'
+      l_bonusBig0: '000000'
+      l_dropRight3: '180243'
+      l_giRightLaneGuide0: '000000'
+      l_jetUpperLeft: '180243'
+      l_mode4: '180243'
+      l_specialLeft: '180243'
+      l_specialRight: '000000'
+      l_yellowTargetLeft: '180243'
+      l_yellowTargetRight: '000000'
+    
 - duration: 100ms
   lights:
-      l_4x:
-        color: '000000'
-        fade: 100ms
-      l_5x:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '080115'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '010001'
-        fade: 100ms
-      l_GILane2:
-        color: '180243'
-        fade: 100ms
-      l_GILowLeft:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopML:
-        color: '0C011F'
-        fade: 100ms
-      l_bonus0:
-        color: '000000'
-        fade: 100ms
-      l_bonus1:
-        color: '000000'
-        fade: 100ms
-      l_bonus2:
-        color: '000000'
-        fade: 100ms
-      l_bonus3:
-        color: '000000'
-        fade: 100ms
-      l_dropCenterLeft:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft0:
-        color: '16023D'
-        fade: 100ms
-      l_dropRight0:
-        color: '030105'
-        fade: 100ms
-      l_dropRight1:
-        color: '180243'
-        fade: 100ms
-      l_lane2:
-        color: '180243'
-        fade: 100ms
-      l_scoop:
-        color: '000000'
-        fade: 100ms
-      l_shootAgain:
-        color: '17023F'
-        fade: 100ms
-      l_spinner:
-        color: '10022C'
-        fade: 100ms
-
+      l_GIAboveSpinnerLower: '000000'
+      l_GIDropCenterLeft: '180243'
+      l_GIDropCenterRight: '000000'
+      l_GIDropRight0: '180243'
+      l_GILane1: '180243'
+      l_GILowLeft: '0A011A'
+      l_GIScoopLL: '000000'
+      l_GISlingRight0: '000000'
+      l_GIUpperCL: '180243'
+      l_bonus2: '070113'
+      l_bonus3: '000000'
+      l_bonus4: '000000'
+      l_bonus5: '000000'
+      l_dropCenterLeft: '180243'
+      l_dropRight2: '180243'
+      l_giRightLaneGuide1: '000000'
+      l_jetLowerCenter: '070113'
+      l_lane0: '180243'
+      l_lane1: '16023E'
+      l_mode5: '180243'
+      l_scoop: '000000'
+    
 - duration: 100ms
   lights:
-      l_2x:
-        color: '000000'
-        fade: 100ms
-      l_3x:
-        color: '000000'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '000000'
-        fade: 100ms
-      l_GILane3:
-        color: '180243'
-        fade: 100ms
-      l_GILowRight:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopLR:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopML:
-        color: '000000'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '070110'
-        fade: 100ms
-      l_dropLeft0:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft1:
-        color: '180243'
-        fade: 100ms
-      l_dropRight0:
-        color: '180243'
-        fade: 100ms
-      l_lane3:
-        color: '180243'
-        fade: 100ms
-      l_mode0:
-        color: '000000'
-        fade: 100ms
-      l_mode1:
-        color: '000000'
-        fade: 100ms
-      l_mode6:
-        color: '180243'
-        fade: 100ms
-      l_shootAgain:
-        color: '000000'
-        fade: 100ms
-      l_spinner:
-        color: '000000'
-        fade: 100ms
-
+      l_4x: '000000'
+      l_5x: '000000'
+      l_GILane2: '180243'
+      l_GILowLeft: '180243'
+      l_GIScoopML: '010101'
+      l_bonus0: '000000'
+      l_bonus1: '000000'
+      l_bonus2: '000000'
+      l_dropLeft0: '180243'
+      l_dropRight0: '010001'
+      l_dropRight1: '180243'
+      l_jetLowerCenter: '180243'
+      l_lane1: '180243'
+      l_lane2: '180243'
+      l_mode6: '180243'
+      l_shootAgain: '000000'
+    
 - duration: 100ms
   lights:
-      l_GIAboveScoopLower:
-        color: '000000'
-        fade: 100ms
-      l_GIDropLeft0:
-        color: '180243'
-        fade: 100ms
-      l_GILane4:
-        color: '180243'
-        fade: 100ms
-      l_GIScoopMR:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopUC:
-        color: '000000'
-        fade: 100ms
-      l_GISlingLeft0:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperCR:
-        color: '180243'
-        fade: 100ms
-      l_bonus7:
-        color: '080115'
-        fade: 100ms
-      l_bonus8:
-        color: '180243'
-        fade: 100ms
-      l_bonusBig1:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterRight:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft2:
-        color: '180243'
-        fade: 100ms
-      l_jetUpperRight:
-        color: '180243'
-        fade: 100ms
-      l_lane4:
-        color: '180243'
-        fade: 100ms
-      l_mode2:
-        color: '000000'
-        fade: 100ms
-      l_mode3:
-        color: '0A0119'
-        fade: 100ms
-
+      l_2x: '000000'
+      l_3x: '000000'
+      l_GIDropLeft0: '010001'
+      l_GILane3: '180243'
+      l_GILowRight: '180243'
+      l_GIScoopLR: '000000'
+      l_GIScoopML: '000000'
+      l_dropCenterRight: '0C011E'
+      l_dropLeft1: '180243'
+      l_dropLeft2: '04010A'
+      l_dropRight0: '180243'
+      l_lane3: '180243'
+      l_mode0: '000000'
+      l_mode1: '000000'
+      l_mode2: '180241'
+      l_spinner: '000000'
+    
 - duration: 100ms
   lights:
-      l_GIAboveScoopUpper:
-        color: '000000'
-        fade: 100ms
-      l_GIAboveSpinnerUpper:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '010101'
-        fade: 100ms
-      l_GIDropLeft1:
-        color: '180243'
-        fade: 100ms
-      l_GIDropRight1:
-        color: '000000'
-        fade: 100ms
-      l_GILane0:
-        color: '000000'
-        fade: 100ms
-      l_GILane5:
-        color: '180243'
-        fade: 100ms
-      l_GISlingLeft1:
-        color: '000000'
-        fade: 100ms
-      l_GISlingRight1:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperL:
-        color: '000000'
-        fade: 100ms
-      l_GIUpperR:
-        color: '180243'
-        fade: 100ms
-      l_bonus6:
-        color: '180243'
-        fade: 100ms
-      l_bonus7:
-        color: '180243'
-        fade: 100ms
-      l_bonusBig0:
-        color: '180243'
-        fade: 100ms
-      l_dropLeft3:
-        color: '180243'
-        fade: 100ms
-      l_dropRight3:
-        color: '000000'
-        fade: 100ms
-      l_jetUpperLeft:
-        color: '000000'
-        fade: 100ms
-      l_mode3:
-        color: '000000'
-        fade: 100ms
-      l_mode4:
-        color: '000000'
-        fade: 100ms
-      l_specialLeft:
-        color: '000000'
-        fade: 100ms
-      l_specialRight:
-        color: '180243'
-        fade: 100ms
-      l_yellowTargetLeft:
-        color: '000000'
-        fade: 100ms
-      l_yellowTargetRight:
-        color: '180243'
-        fade: 100ms
-
+      l_GIAboveScoopLower: '000000'
+      l_GIDropCenterLeft: '16023D'
+      l_GIDropCenterRight: '010101'
+      l_GIDropLeft0: '180243'
+      l_GIDropLeft1: '010001'
+      l_GILane4: '180243'
+      l_GIScoopMR: '000000'
+      l_GIScoopUC: '000000'
+      l_GISlingLeft0: '000000'
+      l_GIUpperCR: '180243'
+      l_bonus7: '180243'
+      l_bonus8: '180243'
+      l_bonusBig1: '180243'
+      l_dropCenterRight: '180243'
+      l_dropLeft2: '180243'
+      l_dropLeft3: '0B011C'
+      l_giLeftLaneGuide0: '000000'
+      l_giLeftLaneGuide1: '000000'
+      l_jetUpperRight: '180243'
+      l_lane4: '180243'
+      l_mode2: '000000'
+      l_mode3: '000000'
+    
 - duration: 100ms
   lights:
-      l_GIAboveSpinnerLower:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '170240'
-        fade: 100ms
-      l_GIDropCenterRight:
-        color: '180243'
-        fade: 100ms
-      l_GIDropRight0:
-        color: '000000'
-        fade: 100ms
-      l_GILane1:
-        color: '000000'
-        fade: 100ms
-      l_GIScoopLL:
-        color: '180243'
-        fade: 100ms
-      l_GISlingRight0:
-        color: '180243'
-        fade: 100ms
-      l_GIUpperCL:
-        color: '000000'
-        fade: 100ms
-      l_bonus3:
-        color: '0E0124'
-        fade: 100ms
-      l_bonus4:
-        color: '180243'
-        fade: 100ms
-      l_bonus5:
-        color: '180243'
-        fade: 100ms
-      l_dropRight2:
-        color: '000000'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '010101'
-        fade: 100ms
-      l_lane0:
-        color: '000000'
-        fade: 100ms
-      l_mode5:
-        color: '000000'
-        fade: 100ms
-
+      l_GIAboveScoopUpper: '000000'
+      l_GIAboveSpinnerUpper: '180243'
+      l_GIDropCenterLeft: '000000'
+      l_GIDropCenterRight: '180243'
+      l_GIDropLeft1: '180243'
+      l_GIDropRight1: '000000'
+      l_GILane0: '000000'
+      l_GILane5: '180243'
+      l_GISlingLeft1: '000000'
+      l_GISlingRight1: '180243'
+      l_GIUpperL: '000000'
+      l_GIUpperR: '180243'
+      l_bonus5: '070110'
+      l_bonus6: '180243'
+      l_bonusBig0: '180243'
+      l_dropLeft3: '180243'
+      l_dropRight3: '000000'
+      l_jetUpperLeft: '05010C'
+      l_mode4: '000000'
+      l_specialLeft: '000000'
+      l_specialRight: '180243'
+      l_yellowTargetLeft: '000000'
+      l_yellowTargetRight: '180243'
+    
 - duration: 100ms
   lights:
-      l_4x:
-        color: '180243'
-        fade: 100ms
-      l_5x:
-        color: '180243'
-        fade: 100ms
-      l_GIDropCenterLeft:
-        color: '000000'
-        fade: 100ms
-      l_GILane2:
-        color: '000000'
-        fade: 100ms
-      l_GILowLeft:
-        color: '000000'
-        fade: 100ms
-      l_bonus0:
-        color: '180243'
-        fade: 100ms
-      l_bonus1:
-        color: '180243'
-        fade: 100ms
-      l_bonus2:
-        color: '180243'
-        fade: 100ms
-      l_bonus3:
-        color: '180243'
-        fade: 100ms
-      l_dropCenterLeft:
-        color: '000000'
-        fade: 100ms
-      l_dropLeft0:
-        color: '0E0124'
-        fade: 100ms
-      l_dropRight1:
-        color: '000000'
-        fade: 100ms
-      l_jetLowerCenter:
-        color: '000000'
-        fade: 100ms
-      l_lane1:
-        color: '000000'
-        fade: 100ms
-      l_lane2:
-        color: '000000'
-        fade: 100ms
-      l_scoop:
-        color: '180243'
-        fade: 100ms
-
+      l_GIAboveSpinnerLower: '180243'
+      l_GIDropRight0: '000000'
+      l_GILane1: '000000'
+      l_GIScoopLL: '180243'
+      l_GISlingRight0: '180243'
+      l_GIUpperCL: '000000'
+      l_bonus2: '010101'
+      l_bonus3: '180243'
+      l_bonus4: '180243'
+      l_bonus5: '180243'
+      l_dropCenterLeft: '000000'
+      l_dropRight2: '000000'
+      l_giRightLaneGuide0: '180243'
+      l_giRightLaneGuide1: '180243'
+      l_jetUpperLeft: '000000'
+      l_lane0: '000000'
+      l_mode5: '000000'
+      l_scoop: '05010B'
+    
+- duration: 100ms
+  lights:
+      l_4x: '180243'
+      l_5x: '180243'
+      l_GILane2: '000000'
+      l_GILowLeft: '000000'
+      l_bonus0: '180243'
+      l_bonus1: '180243'
+      l_bonus2: '180243'
+      l_dropLeft0: '000000'
+      l_dropRight1: '000000'
+      l_jetLowerCenter: '0E0126'
+      l_lane1: '000000'
+      l_lane2: '17023F'
+      l_mode6: '000000'
+      l_scoop: '180243'
+      l_shootAgain: '05010C'
