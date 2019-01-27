@@ -14,11 +14,11 @@ sound_system:
        voice:
           type: standard
           simultaneous_sounds: 1
-          volume: 1.0
+          volume: 0.9
        sfx:
           type: standard
           simultaneous_sounds: 32
-          volume: 1.0
+          volume: 0.9
 
 sounds:
     # Generic SFX
@@ -63,21 +63,63 @@ sounds:
         file: gallery-laser-hit.wav
 
     # Music
+    bobandvincent:
+        file: BobandVINCent.wav
+        track: music
+        fade_out: 1s
+    cygnusfloating:
+        file: CygnusFloating.wav
+        track: music
+        fade_out: 1s
+    durantisdead:
+        file: DurantIsDead.wav
+        track: music
+        fade_out: 1s
+    endtheme:
+        file: EndTheme.wav
+        track: music
+        fade_out: 1s
+    hotandheavy:
+        file: HotAndHeavy.wav
+        track: music
+        fade_out: 1s
+    hotterandheavier:
+        file: HotterAndHeavier-SecondHalf.wav
+        track: music
+        fade_out: 1s
+    intothehole:
+        file: IntoTheHole.wav
+        track: music
+        fade_out: 1s
+    katesok:
+        file: KatesOK.wav
+        track: music
+        fade_out: 1s
+    laser:
+        file: Laser.wav
+        track: music
+        fade_out: 1s
     overture:
         file: Overture.wav
         track: music
         fade_out: 1s
-    meteor:
-        file: HotterAndHeavier-SecondHalf.wav
-        track: music
-        fade_out: 1s
-    bobandvincent:
-        file: BobandVINCent.wav
+    prettybusy:
+        file: PrettyBusy.wav
         track: music
         fade_out: 1s
     thatsit:
         file: ThatsIt.wav
         track: music
         fade_out: 1s
-
-
+    thedooropens:
+        file: TheDoorOpens.wav
+        track: music
+        fade_out: 1s
+    theme:
+        file: Theme.wav
+        track: music
+        fade_out: 1s
+    zerogravity:
+        file: ZeroGravity.wav
+        track: music
+        fade_out: 1s

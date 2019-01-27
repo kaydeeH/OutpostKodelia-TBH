@@ -426,4 +426,9 @@ widgets:
        text: " -- ENGINES ENGAGED ** ESCAPE THE BLACK HOLE --"
        y: 80%
 
-
+sound_player:
+    mode_story02_started:
+      durantisdead:
+          action: play
+          loops: -1
+          mode_end_action: stop

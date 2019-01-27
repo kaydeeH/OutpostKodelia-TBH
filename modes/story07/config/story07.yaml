@@ -616,6 +616,11 @@ widget_player:
          slide: story_07_intro_slide
 
 sound_player:
+    mode_story07_started:
+      intothehole:
+          action: play
+          loops: -1
+          mode_end_action: stop
     status_untitled_mode_1_completed: bass_hit
     status_untitled_mode_2_completed: bass_hit
     status_untitled_mode_3_completed: bass_hit
@@ -631,6 +636,7 @@ sound_player:
     char_harry_is_complete: bass_hit
     char_kate_is_complete: bass_hit
     char_vincent_is_complete: bass_hit
+
 
 widgets:
    yt_remain_widget_07:
