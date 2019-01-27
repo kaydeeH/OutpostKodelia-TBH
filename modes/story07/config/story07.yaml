@@ -532,7 +532,7 @@ shot_profiles:
         - name: scoopInactive
           show: off
         - name: scoopActive
-          show: popgreen
+          show: scoopReadyShow
 
 shot_groups:
    wiz_left_bank:
@@ -599,6 +599,23 @@ widget_player:
    char_vincent_is_complete:
       vincent_on:
          slide: story_07_intro_slide
+
+sound_player:
+    status_untitled_mode_1_completed: bass_hit
+    status_untitled_mode_2_completed: bass_hit
+    status_untitled_mode_3_completed: bass_hit
+    status_untitled_mode_4_completed: bass_hit
+    status_untitled_mode_5_completed: bass_hit
+    status_untitled_mode_6_completed: bass_hit
+    status_untitled_mode_7_completed: bass_hit
+    char_alex_is_complete: bass_hit
+    char_bob_is_complete: bass_hit
+    char_charlie_is_complete: bass_hit
+    char_dan_is_complete: bass_hit
+    char_hanz_is_complete: bass_hit
+    char_harry_is_complete: bass_hit
+    char_kate_is_complete: bass_hit
+    char_vincent_is_complete: bass_hit
 
 widgets:
    yt_remain_widget_07:

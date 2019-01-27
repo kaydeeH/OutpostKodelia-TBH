@@ -1,0 +1,341 @@
+#show_version=5
+
+- time: 0
+  lights:
+      l_2x: 'FFFFFF'
+      l_3x: 'FFFFFF'
+      l_4x: 'FFFFFF'
+      l_5x: 'FFFFFF'
+      l_GIAboveScoopLower: 'FFFFFF'
+      l_GIAboveScoopUpper: 'FFFFFF'
+      l_GIAboveSpinnerLower: 'FFFFFF'
+      l_GIAboveSpinnerUpper: 'FFFFFF'
+      l_GICreditsIn: 'FFFFFF'
+      l_GIDropCenterLeft: 'FFFFFF'
+      l_GIDropCenterRight: 'FFFFFF'
+      l_GIDropLeft0: 'FFFFFF'
+      l_GIDropLeft1: 'FFFFFF'
+      l_GIDropRight0: 'FFFFFF'
+      l_GIDropRight1: 'FFFFFF'
+      l_GILane0: 'FFFFFF'
+      l_GILane1: 'FFFFFF'
+      l_GILane2: 'FFFFFF'
+      l_GILane3: 'FFFFFF'
+      l_GILane4: 'FFFFFF'
+      l_GILane5: 'FFFFFF'
+      l_GILowLeft: 'FFFFFF'
+      l_GILowRight: 'FFFFFF'
+      l_GIScoopLL: 'FFFFFF'
+      l_GIScoopLR: 'FFFFFF'
+      l_GIScoopML: 'FFFFFF'
+      l_GIScoopMR: 'FFFFFF'
+      l_GIScoopUC: 'FFFFFF'
+      l_GISlingLeft0: 'FFFFFF'
+      l_GISlingLeft1: 'FFFFFF'
+      l_GISlingRight0: 'FFFFFF'
+      l_GISlingRight1: 'FFFFFF'
+      l_GIUpperCL: 'FFFFFF'
+      l_GIUpperCR: 'FFFFFF'
+      l_GIUpperL: 'FFFFFF'
+      l_GIUpperR: 'FFFFFF'
+      l_bonus0: 'FFFFFF'
+      l_bonus1: 'FFFFFF'
+      l_bonus2: 'FFFFFF'
+      l_bonus3: 'FFFFFF'
+      l_bonus4: 'FFFFFF'
+      l_bonus5: 'FFFFFF'
+      l_bonus6: 'FFFFFF'
+      l_bonus7: 'FFFFFF'
+      l_bonus8: 'FFFFFF'
+      l_bonusBig0: 'FFFFFF'
+      l_bonusBig1: 'FFFFFF'
+      l_dropCenterLeft: 'FFFFFF'
+      l_dropCenterRight: 'FFFFFF'
+      l_dropLeft0: 'FFFFFF'
+      l_dropLeft1: 'FFFFFF'
+      l_dropLeft2: 'FFFFFF'
+      l_dropLeft3: 'FFFFFF'
+      l_dropRight0: 'FFFFFF'
+      l_dropRight1: 'FFFFFF'
+      l_dropRight2: 'FFFFFF'
+      l_dropRight3: 'FFFFFF'
+      l_giLeftLaneGuide0: 'FFFFFF'
+      l_giLeftLaneGuide1: 'FFFFFF'
+      l_giRightLaneGuide0: 'FFFFFF'
+      l_giRightLaneGuide1: 'FFFFFF'
+      l_jetLowerCenter: 'FFFFFF'
+      l_jetUpperLeft: 'FFFFFF'
+      l_jetUpperRight: 'FFFFFF'
+      l_lane0: 'FFFFFF'
+      l_lane1: 'FFFFFF'
+      l_lane2: 'FFFFFF'
+      l_lane3: 'FFFFFF'
+      l_lane4: 'FFFFFF'
+      l_mode0: 'FFFFFF'
+      l_mode1: 'FFFFFF'
+      l_mode2: 'FFFFFF'
+      l_mode3: 'FFFFFF'
+      l_mode4: 'FFFFFF'
+      l_mode5: 'FFFFFF'
+      l_mode6: 'FFFFFF'
+      l_scoop: 'FFFFFF'
+      l_shootAgain: 'FFFFFF'
+      l_specialLeft: 'FFFFFF'
+      l_specialRight: 'FFFFFF'
+      l_spinner: 'FFFFFF'
+      l_yellowTargetLeft: 'FFFFFF'
+      l_yellowTargetRight: 'FFFFFF'
+    
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+- time: '+1'
+  lights:
+      l_GIUpperCL: '000000'
+      l_GIUpperCR: '1E1E1E'
+    
+- time: '+1'
+  lights:
+      l_GIUpperCR: '000000'
+      l_GIUpperL: '000000'
+      l_GIUpperR: '080808'
+    
+- time: '+1'
+  lights:
+      l_GICreditsIn: '000000'
+      l_GIUpperR: '000000'
+    
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+- time: '+1'
+  lights:
+      l_specialLeft: 'E9E7E7'
+    
+- time: '+1'
+  lights:
+      l_GIAboveScoopUpper: '000000'
+      l_lane0: '000000'
+      l_specialLeft: '000000'
+    
+- time: '+1'
+  lights:
+      l_GIAboveScoopLower: '000000'
+      l_GILane0: 'D7D5D5'
+      l_GIScoopUC: '000000'
+      l_giLeftLaneGuide0: '000000'
+      l_giLeftLaneGuide1: '000000'
+      l_lane1: '000000'
+      l_lane2: '595858'
+    
+- time: '+1'
+  lights:
+      l_GILane0: '000000'
+      l_lane2: '000000'
+      l_lane3: '000000'
+      l_lane4: '000000'
+    
+- time: '+1'
+  lights:
+      l_GILane1: '000000'
+      l_GIScoopML: '000000'
+      l_GISlingLeft0: '000000'
+      l_shootAgain: '000000'
+    
+- time: '+1'
+  lights:
+      l_2x: '000000'
+      l_GIAboveSpinnerUpper: '000000'
+      l_GILane2: '000000'
+      l_GILowLeft: '161616'
+      l_GIScoopMR: '2D2C2C'
+      l_GISlingLeft1: '000000'
+      l_giRightLaneGuide1: '000000'
+      l_specialRight: '000000'
+      l_yellowTargetLeft: '000000'
+    
+- time: '+1'
+  lights:
+      l_3x: '000000'
+      l_4x: 'B8B7B7'
+      l_GIDropLeft1: '000000'
+      l_GILane3: '262626'
+      l_GILowLeft: '000000'
+      l_GIScoopLL: '000000'
+      l_GIScoopMR: '000000'
+      l_giRightLaneGuide0: '000000'
+    
+- time: '+1'
+  lights:
+      l_4x: '000000'
+      l_5x: '000000'
+      l_GIDropLeft0: '000000'
+      l_GILane3: '000000'
+      l_GILane4: '000000'
+      l_GILane5: '000000'
+      l_GIScoopLR: 'B8B7B7'
+    
+- time: '+1'
+  lights:
+      l_GIScoopLR: '000000'
+      l_GISlingRight0: '000000'
+      l_scoop: '000000'
+    
+- time: '+1'
+  lights:
+      l_dropLeft0: '000000'
+      l_dropLeft1: '000000'
+      l_dropLeft2: '000000'
+      l_dropLeft3: '000000'
+      l_mode0: '000000'
+    
+- time: '+1'
+  lights:
+      l_GISlingRight1: '000000'
+      l_bonus0: '000000'
+      l_jetUpperLeft: '000000'
+      l_mode1: '000000'
+      l_mode2: '535252'
+    
+- time: '+1'
+  lights:
+      l_GIAboveSpinnerLower: '000000'
+      l_bonus1: '000000'
+      l_mode2: '000000'
+      l_mode3: '000000'
+      l_mode4: '000000'
+      l_mode5: '000000'
+      l_mode6: '000000'
+      l_yellowTargetRight: '000000'
+    
+- time: '+1'
+  lights:
+      l_bonus2: '000000'
+    
+- time: '+1'
+  lights:
+      l_bonus3: '000000'
+      l_dropCenterLeft: '000000'
+      l_jetUpperRight: '000000'
+    
+- time: '+1'
+  lights:
+      l_GIDropCenterLeft: '000000'
+      l_bonus4: '000000'
+      l_jetLowerCenter: '000000'
+    
+- time: '+1'
+  lights:
+      l_GIDropCenterRight: '9A9999'
+      l_bonus5: '020202'
+    
+- time: '+1'
+  lights:
+      l_GIDropCenterRight: '000000'
+      l_GILowRight: 'E1E0E0'
+      l_bonus5: '000000'
+      l_bonus6: '020202'
+      l_bonusBig0: '000000'
+    
+- time: '+1'
+  lights:
+      l_GILowRight: '000000'
+      l_bonus6: '000000'
+      l_bonus7: '000000'
+      l_bonusBig1: 'A3A2A2'
+      l_dropCenterRight: '000000'
+    
+- time: '+1'
+  lights:
+      l_bonus8: '000000'
+      l_bonusBig1: '000000'
+      l_spinner: 'FEFCFC'
+    
+- time: '+1'
+  lights:
+      l_spinner: '000000'
+    
+- time: '+1'
+  lights:
+      l_dropRight0: '000000'
+      l_dropRight3: '000000'
+    
+- time: '+1'
+  lights:
+      l_dropRight1: '000000'
+      l_dropRight2: '000000'
+    
+- duration: 6
+  lights:
+      l_GIDropRight0: '000000'
+      l_GIDropRight1: '000000'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: 'FFFFFF'
+      l_GIDropRight1: 'FFFFFF'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: '000000'
+      l_GIDropRight1: '000000'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: 'FFFFFF'
+      l_GIDropRight1: 'FFFFFF'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: '000000'
+      l_GIDropRight1: '000000'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: 'FFFFFF'
+      l_GIDropRight1: 'FFFFFF'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: '000000'
+      l_GIDropRight1: '000000'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: 'FFFFFF'
+      l_GIDropRight1: 'FFFFFF'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: '000000'
+      l_GIDropRight1: '000000'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: 'FFFFFF'
+      l_GIDropRight1: 'FFFFFF'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: '000000'
+      l_GIDropRight1: '000000'
+
+- duration: 6
+  lights:
+      l_GIDropRight0: 'FFFFFF'
+      l_GIDropRight1: 'FFFFFF'
+
+- duration: 1
+  lights:
+      l_GIDropRight0: '000000'
+      l_GIDropRight1: '000000'

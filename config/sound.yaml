@@ -40,6 +40,8 @@ sounds:
         file: 39457__the-bizniss__laser-3.wav
     testFX8:
         file: 135885__andre-onate__gama-laser.wav
+    bass_hit:
+        file: bass_hit.wav
 
     # Movie SFX
     gallerylaser:

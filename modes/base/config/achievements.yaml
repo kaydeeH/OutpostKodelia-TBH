@@ -199,21 +199,45 @@ show_player:
   char_dan_complete:
      char_dan_collect:
        loops: 0
+     collectDanShow:
+       loops: 0
+       speed: 45
+       priority: 10
   char_charlie_complete:
      char_charlie_collect:
        loops: 0
+     collectCharlieShow:
+       loops: 0
+       speed: 45
+       priority: 10
   char_harry_complete:
      char_harry_collect:
        loops: 0
+     collectHarryShow:
+       loops: 0
+       speed: 45
+       priority: 10
   char_kate_complete:
      char_kate_collect:
        loops: 0
+     collectKateShow:
+       loops: 0
+       speed: 45
+       priority: 10
   char_alex_complete:
      char_alex_collect:
        loops: 0
+     collectAlexShow:
+       loops: 0
+       speed: 45
+       priority: 10
   char_hans_complete:
      char_hans_collect:
        loops: 0
+     collectHansShow:
+       loops: 0
+       speed: 45
+       priority: 10
   char_vincent_complete:
      char_vincent_collect:
        loops: 0
@@ -224,6 +248,10 @@ show_player:
   char_bob_complete:
      char_bob_collect:
        loops: 0
+     collectBobShow:
+       loops: 0
+       speed: 45
+       priority: 10
 
 shows:
   char_dan_collect:
