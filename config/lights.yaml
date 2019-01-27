@@ -482,8 +482,7 @@ lights:
     platform_settings:
       polarity: true
 
-#J10 36..47 -- Flipper Lane GI Planned Here
-#TODO validate these are the correct Lane Guide GI ports
+#J10 36..47
   l_giLeftLaneGuide0:
     number: 3-36-37-38
     subtype: led
