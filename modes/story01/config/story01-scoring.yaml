@@ -1,9 +1,15 @@
 #config_version=5
 variable_player:
   story_is_about_to_begin:
-    cygnus_lane_count: 0
-    cygnus_lane_scoring_base: 200000
-    cygnus_completing_scoring_base: 25000000
+    cygnus_lane_count:
+      action: set
+      int: 0
+    cygnus_lane_scoring_base:
+      action: set
+      int: 200000
+    cygnus_completing_scoring_base:
+      action: set
+      int: 25000000
     modestat_1_base_scoring:
       action: set
       int: 0

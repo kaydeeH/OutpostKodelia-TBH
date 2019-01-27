@@ -1,7 +1,9 @@
 #config_version=5
 variable_player:
   story_is_about_to_begin:
-    david_complete_base_value: 20000000
+    david_complete_base_value:
+      action: set
+      int: 20000000
   modestat_6_base_scoring:
       action: set
       int: 0

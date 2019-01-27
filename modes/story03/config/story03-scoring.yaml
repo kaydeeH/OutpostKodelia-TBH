@@ -1,7 +1,9 @@
 #config_version=5
 variable_player:
   story_is_about_to_begin:
-    gallery_base_value: 0
+    gallery_base_value:
+       action: set
+       int: 0
     modestat_3_base_scoring:
        action: set
        int: 0

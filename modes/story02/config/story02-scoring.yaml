@@ -2,11 +2,21 @@
 
 variable_player:
   story_is_about_to_begin:
-     esacpe_lane_base: 500000
-     escape_lane_count: 0
-     escape_completed_scoring_base: 10000000
-     escape_scoop_enabled: 0
-     lane_spin_count: 0
+     esacpe_lane_base:
+        action: set
+        int: 500000
+     escape_lane_count:
+        action: set
+        int: 0
+     escape_completed_scoring_base:
+        action: set
+        int: 10000000
+     escape_scoop_enabled:
+        action: set
+        int: 0
+     lane_spin_count:
+        action: set
+        int: 0
      modestat_2_base_scoring:
         action: set
         int: 0

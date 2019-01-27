@@ -72,6 +72,12 @@ event_player:
     - wizard_continue
     - scoop_discovery_not_collected
 
+# Trigger a reset event
+   wizard_complete:
+    - full_mode_and_char_reset
+   story_is_about_to_fail:
+    - full_mode_and_char_reset
+
 #  Base intro / outro shows
 show_player:
    story_is_about_to_begin:
@@ -205,6 +211,7 @@ slides:
         x: 36%
         y: 45%
         z: 10
+        opacity: .5
       - type: image
         image: charlieoff
         anchor_x: center
@@ -212,6 +219,7 @@ slides:
         x: 44%
         y: 45%
         z: 10
+        opacity: .5
       - type: image
         image: danoff
         anchor_x: center
@@ -219,6 +227,7 @@ slides:
         x: 52%
         y: 45%
         z: 10
+        opacity: .5
       - type: image
         image: kateoff
         anchor_x: center
@@ -226,6 +235,7 @@ slides:
         x: 60%
         y: 45%
         z: 10
+        opacity: .5
       - type: image
         image: harryoff
         anchor_x: center
@@ -233,6 +243,7 @@ slides:
         x: 68%
         y: 45%
         z: 10
+        opacity: .5
       - type: image
         image: hanzoff
         anchor_x: center
@@ -240,6 +251,7 @@ slides:
         x: 76%
         y: 45%
         z: 10
+        opacity: .5
       - type: image
         image: vincentoff
         anchor_x: center
@@ -247,6 +259,7 @@ slides:
         x: 84%
         y: 45%
         z: 10
+        opacity: .7
       - type: image
         image: boboff
         anchor_x: center
@@ -254,6 +267,7 @@ slides:
         x: 92%
         y: 45%
         z: 10
+        opacity: .7
       - type: text
         text: "Discovery Value: (discovery_base_char_value)"
         color: red
