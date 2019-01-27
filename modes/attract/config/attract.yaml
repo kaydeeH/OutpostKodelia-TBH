@@ -54,7 +54,8 @@ show_player:
       priority: 7
     text_loop:
       loops: 0
-      events_when_completed: attract_02
+#      events_when_completed: attract_02
+      events_when_completed: text_loop_finished
   attract_02:
     purple_swirl:
        speed: 1
@@ -108,7 +109,47 @@ show_player:
       speed: 30
       loops: 3
       priority: 10
+  hs_mode_1:
+    hs_1:
+      loops: 0
+      events_when_completed: attract_02
+  hs_mode_2:
+    hs_2:
+      loops: 0
+      events_when_completed: attract_02
+  hs_mode_3:
+    hs_3:
+      loops: 0
+      events_when_completed: attract_02
+  hs_mode_4:
+    hs_4:
+      loops: 0
+      events_when_completed: attract_02
+  hs_mode_5:
+    hs_5:
+      loops: 0
+      events_when_completed: attract_02
+  hs_mode_6:
+    hs_6:
+      loops: 0
+      events_when_completed: attract_02
+  hs_mode_7:
+    hs_7:
+      loops: 0
+      events_when_completed: attract_02
 
+random_event_player:
+  text_loop_finished:
+   scope: machine
+   force_all: true
+   events:
+    - hs_mode_1
+    - hs_mode_2
+    - hs_mode_3
+    - hs_mode_4
+    - hs_mode_5
+    - hs_mode_6
+    - hs_mode_7
 
 event_player:
   attract_03: #All events have had +5s added to account for the title slide
