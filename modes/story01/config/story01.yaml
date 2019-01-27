@@ -104,6 +104,46 @@ show_player:
         speed: 40
         loops: 1
         events_when_completed: scoop_eject
+   cygnus_lane_0_event:
+      lane_hit:
+        loops: 5
+        priority: 10000
+        show_tokens:
+          gi_1: l_GILane0
+          gi_2: l_GILane1
+          curr_lane: l_lane0
+   cygnus_lane_1_event:
+      lane_hit:
+        loops: 5
+        priority: 10000
+        show_tokens:
+          gi_1: l_GILane1
+          gi_2: l_GILane2
+          curr_lane: l_lane1
+   cygnus_lane_2_event:
+      lane_hit:
+        loops: 5
+        priority: 10000
+        show_tokens:
+          gi_1: l_GILane2
+          gi_2: l_GILane3
+          curr_lane: l_lane2
+   cygnus_lane_3_event:
+      lane_hit:
+        loops: 5
+        priority: 10000
+        show_tokens:
+          gi_1: l_GILane3
+          gi_2: l_GILane4
+          curr_lane: l_lane3
+   cygnus_lane_4_event:
+      lane_hit:
+        loops: 5
+        priority: 10000
+        show_tokens:
+          gi_1: l_GILane4
+          gi_2: l_GILane5
+          curr_lane: l_lane4
 
 shows:
    story_01_intro:
@@ -179,7 +219,7 @@ shot_profiles:
       - name: scoopInactive
         show: off
       - name: scoopActive
-        show: popgreen
+        show: scoopReadyShow
 shots:
   shotScoopStory01:
     switch: s_ir_scoop_detect

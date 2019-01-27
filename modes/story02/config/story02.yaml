@@ -345,7 +345,7 @@ shot_profiles:
        - name: scoopInactive
          show: off
        - name: scoopActive
-         show: popgreen
+         show: scoopReadyShow
 
 shot_groups:
    shot_group_traj:

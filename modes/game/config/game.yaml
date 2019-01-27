@@ -1995,3 +1995,11 @@ widgets:
               relative: true
               value: -200
               duration: 0ms
+
+   # Notification Text Widget
+   char_collect_notification:
+      - type: text
+        text: (char_collect_text)
+        color: red
+        font_size: 100
+        font_name: ocr-a-tribute-bold
