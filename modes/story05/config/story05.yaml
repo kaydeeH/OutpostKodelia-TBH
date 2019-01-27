@@ -282,3 +282,9 @@ widgets:
        text: "Targets Hit: (corridor_targets_hit)"
        y: 70%
 
+sound_player:
+    mode_story05_started:
+      zerogravity:
+          action: play
+          loops: -1
+          mode_end_action: stop

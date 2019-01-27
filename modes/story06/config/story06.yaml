@@ -302,3 +302,10 @@ widgets:
       color: BBD8F0
       z: 70
       text: "Completion Bonus: (david_complete_base_value)"
+
+sound_player:
+    mode_story06_started:
+      hotterandheavier:
+          action: play
+          loops: -1
+          mode_end_action: stop

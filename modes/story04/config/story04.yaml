@@ -319,9 +319,7 @@ widgets:
 
 sound_player:
     mode_story04_started:
-      meteor:
+      hotandheavy:
           action: play
           loops: -1
-          fade_out: 2s
           mode_end_action: stop
-          volume: 0.5

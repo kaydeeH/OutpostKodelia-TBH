@@ -221,6 +221,7 @@ shot_profiles:
         show: off
       - name: scoopActive
         show: scoopReadyShow
+
 shots:
   shotScoopStory01:
     switch: s_ir_scoop_detect
@@ -328,11 +329,10 @@ widgets:
    cygnus_hurry_up:
      - type: text
        text: "Cygnus Docking Value: (cygnus_completing_scoring_base)"
+
 sound_player:
     mode_story01_started:
-      thatsit:
+      cygnusfloating:
           action: play
           loops: -1
-          fade_out: 2s
           mode_end_action: stop
-          volume: 0.5
