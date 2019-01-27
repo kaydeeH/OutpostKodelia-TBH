@@ -1,0 +1,11 @@
+#show_version=5
+ - duration: 50ms
+   lights:
+      (gi_1) : white
+      (gi_2) : white
+      (curr_lane): red
+ - duration: 50ms
+   lights:
+      (gi_1) : off
+      (gi_2) : off
+      (curr_lane): off
