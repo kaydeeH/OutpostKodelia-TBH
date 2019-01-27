@@ -61,8 +61,8 @@ event_player:
      - cygnus_located
    shotScoopStory01_shotProfileScoopStory01_scoopActive_hit:
      - cygnus_found
-#   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
-#     - scoop_eject
+   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
+     - scoop_eject
 # Character Collect
    player_modestat_1_final_timing{value<75.0}:
      - random_character_collect|3100ms
