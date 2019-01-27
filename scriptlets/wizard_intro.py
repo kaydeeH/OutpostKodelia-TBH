@@ -100,6 +100,11 @@ class wizardIntro(Scriptlet):
                                                          eventname="char_bob_is_complete")
             wizardIntro.delay_time += 500
 
+        wizardIntro.delay_time += 3000
+        DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+                                                     ms=wizardIntro.delay_time,
+                                                     eventname="wizard_intro_slide_ready_to_remove")
+
     def _throw_event(self, **kwargs):
         event_name = kwargs.get("eventname")
         self.machine.events.post(event_name)

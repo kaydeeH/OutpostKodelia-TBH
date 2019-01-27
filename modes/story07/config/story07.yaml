@@ -85,6 +85,8 @@ show_player:
       story_07_intro:
          events_when_completed: story_intro_complete
          loops: 0
+   wizard_intro_slide_ready_to_remove:
+      story_07_intro: stop
    story_is_about_to_fail:
       story_07_fail_outro:
          events_when_completed: story_outro_fail_complete
@@ -107,7 +109,7 @@ shows:
    story_07_intro:
      - time: 0
        slides: story_07_intro_slide
-       duration: 6
+       duration: -1
    story_07_fail_outro:
      - time: 0
        slides: story_07_outro_fail_slide
