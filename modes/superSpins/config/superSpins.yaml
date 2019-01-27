@@ -27,6 +27,11 @@ timers:
      end_value: 0
      direction: down
      start_running: true
+     control_events:
+        - event: global_timer_pause
+          action: pause
+        - event: global_timer_unpause
+          action: start
 
 variable_player:
   s_spinner_active:

@@ -28,13 +28,13 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
+     - story07_intro_complete
    in_mode_ball_save:
      - story_is_about_to_fail
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story07_successful
-#    Only used when scoop hits end the mode
-#    - scoop_eject
+     - scoop_eject
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
      - acheivement_story07_unsuccessful
@@ -71,6 +71,7 @@ event_player:
    story07_cashout_wiz_cancel_selected:
     - wizard_continue
     - scoop_discovery_not_collected
+    - scoop_eject
 
 # Trigger a reset event
    wizard_complete:

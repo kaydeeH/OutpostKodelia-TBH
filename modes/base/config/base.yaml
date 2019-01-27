@@ -209,7 +209,21 @@ event_player:
       - in_mode_ball_save
     ball_save_inmodesave7_saving_ball:
       - in_mode_ball_save
-
+    # GLOBAL *** timer stops and restarts
+    select_mode_start:
+      - global_timer_pause
+    selector_untitled_mode_7_selected:
+      - global_timer_pause
+    wizard_cashout:
+      - global_timer_pause
+    selector2_item_selected:
+      - global_timer_unpause
+    story07_intro_complete:
+      - global_timer_unpause
+    wizard_complete:
+      - global_timer_unpause
+    wizard_continue:
+      - global_timer_unpause
 # shotgrouppopbumpers_popBumpBlue_complete
 # shotgrouppopbumpers_popBumpGreen_complete
 # shotgrouppopbumpers_popBumpRed_complete
