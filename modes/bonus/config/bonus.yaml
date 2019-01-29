@@ -3,7 +3,7 @@
 mode_settings:
   keep_multiplier: True
   display_delay_ms: 2000ms
-  hurry_up_delay_ms: 0
+  hurry_up_delay_ms: 2000ms
   bonus_entries:
       - event: bonus_product
         score: (current_player.pds) * (current_player.bonuscount)
@@ -22,6 +22,8 @@ event_player:
     - do_my_nothing_event
   bonus_start:
     - bonus_slide_is_displayed
+  flipper_cancel:
+    - bonus_countdown_speed_up
 
 widget_player:
   bonus_product:

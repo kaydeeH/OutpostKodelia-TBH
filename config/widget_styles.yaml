@@ -1,0 +1,12 @@
+#config_version=5
+
+# *** For some reason, it seems widget styles MUST be part of the base "config.yaml"
+# *** This file is included in config.yaml so all widget_styles to be used system-wide should be placed in this file only
+
+widget_styles:
+   char_collect_style:
+        color: red
+        font_size: 90
+        font_name: ocr-a-tribute-bold
+        opacity: .9
+        z: 15

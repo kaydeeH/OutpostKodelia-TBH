@@ -9,6 +9,7 @@ class BonusCountdown(Scriptlet):
         self.debug_log("Bonus Countdown scriptlet loaded!")
         self.machine.events.add_handler('bonus_product', self._start_bonus_countdown)
         self.machine.events.add_handler('bonus_countdown_decrement', self._decrement_bonus, 1)
+        self.machine.events.add_handler('bonus_countdown_speed_up', self._speed_up_bonus)
 
     def _start_bonus_countdown(self, **kwargs):
         del kwargs
@@ -22,6 +23,9 @@ class BonusCountdown(Scriptlet):
 
     def _decrement_bonus(self, **kwargs):
             DelayManager(self.machine.delayRegistry).add(callback=self._do_decrement, ms=BonusCountdown.delay)
+
+    def _speed_up_bonus(self, **kwargs):
+        BonusCountdown.delay = 10
 
     def _do_decrement(self):
         if self.machine.game.player.bonuscount > 0:

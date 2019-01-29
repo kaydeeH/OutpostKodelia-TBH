@@ -49,9 +49,9 @@ event_player:
     - playfield_double_start
   player_bonustype4{value>1}:
     - playfield_double_start
-  shotGroupLeftTargets_lit_complete:
+  shotGroupLeftTargets_lit_complete{device.achievements.char_vincent.state!="completed"}:
     - char_vincent_complete
-  shotGroupRightTargets_lit_complete:
+  shotGroupRightTargets_lit_complete{device.achievements.char_bob.state!="completed"}:
     - char_bob_complete
 # 10 Second INSANE SPINNER mode for finishing modes that end in the scoop shot
   acheivement_story01_successful:

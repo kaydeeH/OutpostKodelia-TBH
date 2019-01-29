@@ -7,7 +7,8 @@ show_player:
       loops: -1
     dummy_show: #just to get us past the initial mode start and into our event loop
       loops: 0
-      events_when_completed: attract_01
+      events_when_completed: attract_slide_next
+#      events_when_completed: attract_01
   attract_01:
     field_off:
       priority: 6
@@ -62,7 +63,8 @@ show_player:
        priority: 8
     big_title:
       loops: 0
-      events_when_completed: attract_03
+      events_when_completed: attract_slide_next
+#      events_when_completed: attract_03
   attract_03:
     giDim:
       priority: 9
@@ -73,7 +75,8 @@ show_player:
     video_play:
       loops: 0
       events_when_played: trigger_text
-      events_when_completed: attract_01
+ #     events_when_completed: attract_01
+      events_when_completed: attract_slide_next
   green_ttb:
     green_stripes_ttb:
       speed: 30
@@ -111,33 +114,49 @@ show_player:
   hs_mode_1:
     hs_1:
       loops: 0
-      events_when_completed: attract_02
+      events_when_completed: attract_slide_next
+#      events_when_completed: attract_02
   hs_mode_2:
     hs_2:
       loops: 0
-      events_when_completed: attract_02
+      events_when_completed: attract_slide_next
+#     events_when_completed: attract_02
   hs_mode_3:
     hs_3:
       loops: 0
-      events_when_completed: attract_02
+      events_when_completed: attract_slide_next
+#      events_when_completed: attract_02
   hs_mode_4:
     hs_4:
       loops: 0
-      events_when_completed: attract_02
+      events_when_completed: attract_slide_next
+#      events_when_completed: attract_02
   hs_mode_5:
     hs_5:
       loops: 0
-      events_when_completed: attract_02
+      events_when_completed: attract_slide_next
+#      events_when_completed: attract_02
   hs_mode_6:
     hs_6:
       loops: 0
-      events_when_completed: attract_02
+      events_when_completed: attract_slide_next
+#      events_when_completed: attract_02
   hs_mode_7:
     hs_7:
       loops: 0
-      events_when_completed: attract_02
+#      events_when_completed: attract_02
+      events_when_completed: attract_slide_next
 
 random_event_player:
+  attract_slide_next:
+   scope: machine
+   force_all: true
+   disable_random: true
+   events:
+      - attract_01
+      - attract_02
+      - attract_03
+
   text_loop_finished:
    scope: machine
    force_all: true
@@ -195,6 +214,64 @@ event_player:
        delay: 45
        varname: "s1"
        intermed: "*"
+  mode_attract_started:
+     - attract_random_control_var_set
+  s_flipper_left_active{machine.atrract_flipper_sound_permitted==1 and machine.attract_flipper_sound_cooldown_completed==1}:
+     - attract_random_sound_clip
+  s_flipper_right_active{machine.atrract_flipper_sound_permitted==1 and machine.attract_flipper_sound_cooldown_completed==1}:
+     - attract_random_sound_clip
+
+
+variable_player:
+   attract_random_control_var_set:
+      atrract_flipper_sound_permitted:
+        action: set_machine
+        int: 1
+      attract_flipper_sound_cooldown_completed:
+        action: set_machine
+        int: 1
+   attract_random_sound_clip:
+      attract_flipper_sound_cooldown_completed:
+        action: set_machine
+        int: 0
+   timer_attract_sound_cooldown_complete:
+      attract_flipper_sound_cooldown_completed:
+        action: set_machine
+        int: 1
+   attract_01:
+      atrract_flipper_sound_permitted:
+        action: set_machine
+        int: 1
+   attract_03:
+      atrract_flipper_sound_permitted:
+        action: set_machine
+        int: 0
+
+timers:
+   attract_sound_cooldown:
+      start_value: 0
+      end_value: 30
+      direction: up
+      control_events:
+          - event: attract_random_sound_clip
+            action: start
+      start_running: false
+   attract_last_scores_overlay:
+      start_value: 0
+      end_value: 20
+      direction: up
+      control_events:
+          - event: flipper_cancel
+            action: restart
+      start_running: false
+
+
+#slide_player:
+#   flipper_cancel:
+#      lastgame:
+#         action: play
+#         priority: 1000
+#         expire: 10
 
 widget_player:
   #Add "press start" and "freeplay" widgets to slides as they load
@@ -231,6 +308,13 @@ widget_player:
   lastgame_player4:
     player_4_score_widget:
       slide: lastgame
+
+  flipper_cancel:
+    last_game_override_widget:
+      target: lcd
+  timer_attract_last_scores_overlay_complete:
+    last_game_override_widget:
+      action: remove
 
 widgets:
   player_2_score_widget:
@@ -338,6 +422,47 @@ widgets:
             value: 1
             duration: .5s
             repeat: true
+  last_game_override_widget:
+    - type: text
+      y: 10
+      x: 400
+      z: 1000
+      font_name: ocr-a-tribute-bold
+      text: "P1: (machine|player1_score)"
+      number_grouping: true
+      min_digits: 2
+      anchor_y: bottom
+      anchor_x: right
+    - type: text
+      y: 10
+      x: 600
+      z: 1000
+      font_name: ocr-a-tribute-bold
+      text: "P2: (machine|player2_score)"
+      number_grouping: true
+      min_digits: 2
+      anchor_y: bottom
+      anchor_x: right
+    - type: text
+      y: 10
+      x: 800
+      z: 1000
+      font_name: ocr-a-tribute-bold
+      text: "P3: (machine|player3_score)"
+      number_grouping: true
+      min_digits: 2
+      anchor_y: bottom
+      anchor_x: right
+    - type: text
+      y: 10
+      x: 1000
+      z: 1000
+      font_name: ocr-a-tribute-bold
+      text: "P4: (machine|player4_score)"
+      number_grouping: true
+      min_digits: 2
+      anchor_y: bottom
+      anchor_x: right
 
 slides:
   lastgame:
@@ -460,3 +585,4 @@ slides:
           - property: opacity
             value: 0
             duration: 1s
+
