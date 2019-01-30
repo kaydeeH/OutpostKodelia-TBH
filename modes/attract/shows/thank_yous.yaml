@@ -1,0 +1,53 @@
+#show_version=5
+
+- duration: 12000ms
+  slides:
+    thank_you_title:
+      widgets:
+      - type: image
+        image: tbh-slide-template
+        z: 10
+      - type: Text
+        text: PRESS START
+        font_name: ocr-a-tribute-bold
+        y: 10
+        x: 10
+        anchor_y: bottom
+        anchor_x: left
+        z: 15
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: .5s
+            - property: opacity
+              value: 1
+              duration: .5s
+              repeat: true
+      - type: Text
+        text: FREE PLAY
+        font_name: ocr-a-tribute-bold
+        color: green
+        y: 10
+        x: 1355
+        anchor_y: bottom
+        anchor_x: right
+        z: 15
+        animations:
+          pre_show_slide:
+            - property: opacity
+              value: 0
+              duration: .5s
+            - property: opacity
+              value: 1
+              duration: .5s
+              repeat: true
+#      - type: text
+#        text: "THANK YOU SLIDE 01"
+#        color: red
+#        font_size: 90
+#        font_name: ocr-a-tribute-bold
+#        opacity: .9
+#        z: 150000
+#        x: center
+#        y: center

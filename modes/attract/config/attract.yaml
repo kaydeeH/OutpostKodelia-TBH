@@ -146,16 +146,21 @@ show_player:
       loops: 0
 #      events_when_completed: attract_02
       events_when_completed: attract_slide_next
+  attract_04:
+    thank_yous:
+      loops: 0
+      events_when_completed: attract_slide_next
 
 random_event_player:
   attract_slide_next:
    scope: machine
    force_all: true
-   disable_random: true
+#   disable_random: true
    events:
       - attract_01
       - attract_02
       - attract_03
+      - attract_04
 
   text_loop_finished:
    scope: machine
@@ -168,6 +173,20 @@ random_event_player:
     - hs_mode_5
     - hs_mode_6
     - hs_mode_7
+
+  slide_thank_you_title_active:
+   scope: machine
+   force_all: true
+   events:
+    - thank_you_01
+    - thank_you_02
+    - thank_you_03
+    - thank_you_04
+    - thank_you_05
+    - thank_you_06
+    - thank_you_07
+    - thank_you_08
+    - thank_you_09
 
 event_player:
   attract_03: #All events have had +5s added to account for the title slide
@@ -220,7 +239,24 @@ event_player:
      - attract_random_sound_clip
   s_flipper_right_active{machine.atrract_flipper_sound_permitted==1 and machine.attract_flipper_sound_cooldown_completed==1}:
      - attract_random_sound_clip
-
+  thank_you_01:
+     - thank_you_01_not_random
+  thank_you_02:
+     - thank_you_02_not_random
+  thank_you_03:
+     - thank_you_03_not_random
+  thank_you_04:
+     - thank_you_04_not_random
+  thank_you_05:
+     - thank_you_05_not_random
+  thank_you_06:
+     - thank_you_06_not_random
+  thank_you_07:
+     - thank_you_07_not_random
+  thank_you_08:
+     - thank_you_08_not_random
+  thank_you_09:
+     - thank_you_09_not_random
 
 variable_player:
    attract_random_control_var_set:
@@ -296,7 +332,115 @@ widget_player:
   slide_video_created:
     freeplay_start_widget:
       slide: video
-
+  thank_you_01:
+    thank_you_01_widget:
+      slide: thank_you_title
+  thank_you_02:
+    thank_you_02_widget:
+      slide: thank_you_title
+  thank_you_03:
+    thank_you_03_widget:
+      slide: thank_you_title
+  thank_you_04:
+    thank_you_04_widget:
+      slide: thank_you_title
+  thank_you_05:
+    thank_you_05_widget:
+      slide: thank_you_title
+  thank_you_06:
+    thank_you_06_widget:
+      slide: thank_you_title
+  thank_you_07:
+    thank_you_07_widget:
+      slide: thank_you_title
+  thank_you_08:
+    thank_you_08_widget:
+      slide: thank_you_title
+  thank_you_09:
+    thank_you_09_widget:
+      slide: thank_you_title
+  thank_you_01_not_random:
+    thank_you_01_widget_nr:
+      slide: thank_you_title
+  thank_you_02_not_random:
+    thank_you_02_widget_nr:
+      slide: thank_you_title
+  thank_you_03_not_random:
+    thank_you_03_widget_nr:
+      slide: thank_you_title
+  thank_you_04_not_random:
+    thank_you_04_widget_nr:
+      slide: thank_you_title
+  thank_you_05_not_random:
+    thank_you_05_widget_nr:
+      slide: thank_you_title
+  thank_you_06_not_random:
+    thank_you_06_widget_nr:
+      slide: thank_you_title
+  thank_you_07_not_random:
+    thank_you_07_widget_nr:
+      slide: thank_you_title
+  thank_you_08_not_random:
+    thank_you_08_widget_nr:
+      slide: thank_you_title
+  thank_you_09_not_random:
+    thank_you_09_widget_nr:
+      slide: thank_you_title
+  slide_thank_you_title_removed:
+    thank_you_01_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_02_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_03_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_04_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_05_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_06_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_07_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_08_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_09_widget:
+      action: remove
+      slide: thank_you_title
+    thank_you_01_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_02_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_03_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_04_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_05_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_06_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_07_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_08_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_09_widget_nr:
+      action: remove
+      slide: thank_you_title
 
   #Add player scores to last game slide, as relevant
   lastgame_player2:
@@ -463,6 +607,97 @@ widgets:
       min_digits: 2
       anchor_y: bottom
       anchor_x: right
+  thank_you_01_widget:
+    - type: text
+      text: "THANK YOU SLIDE 01"
+      style:
+        - thank_you_style
+  thank_you_02_widget:
+    - type: text
+      text: "THANK YOU SLIDE 02"
+      style:
+        - thank_you_style
+  thank_you_03_widget:
+    - type: text
+      text: "THANK YOU SLIDE 03"
+      style:
+        - thank_you_style
+  thank_you_04_widget:
+    - type: text
+      text: "THANK YOU SLIDE 04"
+      style:
+        - thank_you_style
+  thank_you_05_widget:
+    - type: text
+      text: "THANK YOU SLIDE 05"
+      style:
+        - thank_you_style
+  thank_you_06_widget:
+    - type: text
+      text: "THANK YOU SLIDE 06"
+      style:
+        - thank_you_style
+  thank_you_07_widget:
+    - type: text
+      text: "THANK YOU SLIDE 07"
+      style:
+        - thank_you_style
+  thank_you_08_widget:
+    - type: text
+      text: "THANK YOU SLIDE 08"
+      style:
+        - thank_you_style
+  thank_you_09_widget:
+    - type: text
+      style:
+        - thank_you_style
+      text: "THANK YOU SLIDE 09"
+  thank_you_01_widget_nr:
+    - type: text
+      text: "THANK YOU SLIDE 01"
+      style:
+        - thank_you_style2
+  thank_you_02_widget_nr:
+    - type: text
+      text: "THANK YOU SLIDE 02"
+      style:
+        - thank_you_style2
+  thank_you_03_widget_nr:
+    - type: text
+      text: "THANK YOU SLIDE 03"
+      style:
+        - thank_you_style2
+  thank_you_04_widget_nr:
+    - type: text
+      text: "THANK YOU SLIDE 04"
+      style:
+        - thank_you_style2
+  thank_you_05_widget_nr:
+    - type: text
+      text: "THANK YOU SLIDE 05"
+      style:
+        - thank_you_style2
+  thank_you_06_widget_nr:
+    - type: text
+      text: "THANK YOU SLIDE 06"
+      style:
+        - thank_you_style2
+  thank_you_07_widget_nr:
+    - type: text
+      text: "THANK YOU SLIDE 07"
+      style:
+        - thank_you_style2
+  thank_you_08_widget_nr:
+    - type: text
+      text: "THANK YOU SLIDE 08"
+      style:
+        - thank_you_style2
+  thank_you_09_widget_nr:
+    - type: text
+      style:
+        - thank_you_style2
+      text: "THANK YOU SLIDE 09"
+
 
 slides:
   lastgame:

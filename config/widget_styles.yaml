@@ -10,3 +10,19 @@ widget_styles:
         font_name: ocr-a-tribute-bold
         opacity: .9
         z: 15
+   thank_you_style:
+        color: red
+        font_size: 90
+        font_name: ocr-a-tribute-bold
+        opacity: .9
+        z: 15
+        x: center
+        y: center
+   thank_you_style2:
+        color: blue
+        font_size: 90
+        font_name: ocr-a-tribute-bold
+        opacity: .9
+        z: 15
+        x: center
+        y: 75%
