@@ -95,7 +95,7 @@ show_player:
       story_07_outro:
          events_when_completed: story_outro_complete
          loops: 0
-   shotScoopBeyond_shotProfileScoopBeyond_scoopInactive_hit:
+   shotScoopCollect_shotProfileScoopCollect_scoopInactive_hit:
       pinwheel:
         speed: 40
         loops: 1

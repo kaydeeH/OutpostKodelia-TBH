@@ -3,6 +3,7 @@ config:
   - hardware.yaml
   - sound.yaml
   - assets.yaml
+  - widget_styles.yaml
   - widgets.yaml
   - lights.yaml
   - scriptlets.yaml

@@ -2,16 +2,24 @@
 
 # Control behavior of Center Drop Targets, Yellow Targets, and Outlane Lighting
 
+variable_player:
+   mode_base_started:
+     enable_auto_drop_resets:
+       action: set
+       int: 1
+
 event_player:
    mode_base_started{ball==1 and is_extra_ball==0}:
      - ball1_ct1
      - ball1_ct2
      - ball1_ct3
-   s_dtargetcr_active:
+   s_dtargetcr_active{current_player.enable_auto_drop_resets==1}:
      - drop_left_center_reset
+   s_dtargetcr_active:
      - count_center_drop
-   s_dtargetcl_active:
+   s_dtargetcl_active{current_player.enable_auto_drop_resets==1}:
      - drop_right_center_reset
+   s_dtargetcl_active:
      - count_center_drop
    s_sTargetYellowL_active:
      - drop_right_center_reset
@@ -19,6 +27,13 @@ event_player:
    s_sTargetYellowR_active:
      - drop_left_center_reset
      - reenable_outlane_sacrifice
+# enable_auto_drop_resets = 1 allow drop target bank resets
+   drop_target_bank_leftfull_down{current_player.enable_auto_drop_resets==1}:
+     - drops_left_reset|500ms
+   drop_target_bank_rightfull_down{current_player.enable_auto_drop_resets==1}:
+     - drops_right_reset|500ms
+
+
 
 counters:
    center_drop_rescue:

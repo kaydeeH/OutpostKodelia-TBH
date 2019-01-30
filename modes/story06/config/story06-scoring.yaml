@@ -19,7 +19,9 @@ variable_player:
     bonuscount: 1
     pops: 1
   story_is_about_to_end:
-    score: current_player.david_complete_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score:
+       action: add
+       int: current_player.david_complete_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_6_scoring: current_player.david_complete_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_6_base_scoring: current_player.david_complete_base_value
     bonuscount: 10

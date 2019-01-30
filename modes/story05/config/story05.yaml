@@ -227,15 +227,18 @@ variable_player:
      corridor_timer_ticks:
        action: set
        int: 300
-   modestat_5_base_scoring:
+     enable_auto_drop_resets:
        action: set
        int: 0
-   modestat_5_scoring:
+     modestat_5_base_scoring:
+       action: set
+       int: 0
+     modestat_5_scoring:
        action: set
        int: 0
    corridor_target_hit:
-      corridor_timer_ticks: 30
-      corridor_targets_hit: 1
+     corridor_timer_ticks: 30
+     corridor_targets_hit: 1
    timer_corridor_timer_tick:
       corridor_timer_ticks: -1
       corridor_seconds:
@@ -244,10 +247,18 @@ variable_player:
    shotGroupCorridorTargets_complete_complete:
       corridor_bonus: current_player.corridor_timer_ticks * 30000 * current_player.temp_playfield_x * current_player.perm_playfield_x
       score: current_player.corridor_timer_ticks * 30000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+   story_is_about_to_fail:
+      enable_auto_drop_resets:
+       action: set
+       int: 1
    story_is_about_to_end:
       modestat_5_final_extra_time:
        action: set
        int: current_player.corridor_seconds
+      enable_auto_drop_resets:
+       action: set
+       int: 1
+
 timers:
    corridor_timer:
      start_value: 300

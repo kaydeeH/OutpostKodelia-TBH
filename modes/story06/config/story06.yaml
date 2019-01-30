@@ -40,6 +40,7 @@ event_player:
     - start_david_timer
   in_mode_ball_save:
      - story_is_about_to_fail
+#TODO -- make sure this can only happen one time!!!!!
   player_health{value >= 100}:
     - story_is_about_to_end
   player_health{value <= 0}:
@@ -133,11 +134,11 @@ variable_player:
     battleticks:
       action: set
       int: 0
-  timer_battletimer_tick:
+  timer_battletimer_tick{current_player.health<100}:
     health: -1 #Health lost per second.
   timer_battlecounter_tick:
     battleticks: 1
-  shotgrouppopbumpers_hit:
+  shotgrouppopbumpers_hit{current_player.health<100}:
     health: 5 #Health gained per pop bumper hit.
   story_is_about_to_end:
     battletime:

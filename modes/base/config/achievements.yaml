@@ -266,92 +266,268 @@ sound_player:
 shows:
   char_dan_collect:
      - time: 0
-       slides: char_dan
+       widgets:
+        char_dan:
+         slide: scoring_slide
+         action: add
        duration: 2
   char_charlie_collect:
      - time: 0
-       slides: char_charlie
+       widgets:
+        char_charlie:
+         slide: scoring_slide
+         action: add
        duration: 2
   char_harry_collect:
      - time: 0
-       slides: char_harry
+       widgets:
+        char_harry:
+         slide: scoring_slide
+         action: add
        duration: 2
   char_kate_collect:
      - time: 0
-       slides: char_kate
+       widgets:
+        char_kate:
+         slide: scoring_slide
+         action: add
        duration: 2
   char_alex_collect:
      - time: 0
-       slides: char_alex
+       widgets:
+        char_alex:
+         slide: scoring_slide
+         action: add
        duration: 2
   char_hans_collect:
      - time: 0
-       slides: char_hans
+       widgets:
+        char_hans:
+         slide: scoring_slide
+         action: add
        duration: 2
   char_vincent_collect:
      - time: 0
-       slides: char_vincent
+       widgets:
+        char_vincent:
+         slide: scoring_slide
+         action: add
        duration: 2
   char_bob_collect:
      - time: 0
-       slides: char_bob
+       widgets:
+        char_bob:
+         slide: scoring_slide
+         action: add
        duration: 2
 
-slides:
+#widget_styles:
+#   char_collect_style:
+#        color: red
+#        font_size: 90
+#        font_name: ocr-a-tribute-bold
+#        opacity: .9
+#        z: 15
+
+widgets:
    char_dan:
-    widgets:
       - type: text
         text: DAN COLLECTED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
+        style:
+          - char_collect_style
+      - type: image
+        image: dan
+        anchor_x: center
+        anchor_y: center
+        scale: 4
+        opacity: .99
+        z: 14
+        animations:
+          add_to_slide:
+            - property: x
+              value: 17%
+              duration: 2s
+            - property: y
+              value: 84%
+              duration: 2s
+              timing: with_previous
+            - property: scale
+              value: 1
+              timing: with_previous
+              duration: 2s
    char_charlie:
-    widgets:
       - type: text
         text: CHARLIE COLLECTED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
+        style:
+          - char_collect_style
+      - type: image
+        image: charlie
+        anchor_x: center
+        anchor_y: center
+        scale: 4
+        opacity: .99
+        z: 14
+        animations:
+          add_to_slide:
+            - property: x
+              value: 25%
+              duration: 2s
+            - property: y
+              value: 84%
+              duration: 2s
+              timing: with_previous
+            - property: scale
+              value: 1
+              timing: with_previous
+              duration: 2s
    char_harry:
-    widgets:
       - type: text
         text: HARRY COLLECTED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
+        style:
+          - char_collect_style
+      - type: image
+        image: harry
+        anchor_x: center
+        anchor_y: center
+        scale: 4
+        opacity: .99
+        z: 14
+        animations:
+          add_to_slide:
+            - property: x
+              value: 33%
+              duration: 2s
+            - property: y
+              value: 84%
+              duration: 2s
+              timing: with_previous
+            - property: scale
+              value: 1
+              timing: with_previous
+              duration: 2s
    char_kate:
-    widgets:
       - type: text
         text: KATE COLLECTED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
+        style:
+          - char_collect_style
+      - type: image
+        image: kate
+        anchor_x: center
+        anchor_y: center
+        scale: 4
+        opacity: .99
+        z: 14
+        animations:
+          add_to_slide:
+            - property: x
+              value: 41%
+              duration: 2s
+            - property: y
+              value: 84%
+              duration: 2s
+              timing: with_previous
+            - property: scale
+              value: 1
+              timing: with_previous
+              duration: 2s
    char_alex:
-    widgets:
       - type: text
         text: ALEX COLLECTED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
+        style:
+          - char_collect_style
+      - type: image
+        image: alex
+        anchor_x: center
+        anchor_y: center
+        scale: 4
+        opacity: .99
+        z: 14
+        animations:
+          add_to_slide:
+            - property: x
+              value: 49%
+              duration: 2s
+            - property: y
+              value: 84%
+              duration: 2s
+              timing: with_previous
+            - property: scale
+              value: 1
+              timing: with_previous
+              duration: 2s
    char_hans:
-    widgets:
       - type: text
         text: HANS COLLECTED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
+        style:
+          - char_collect_style
+      - type: image
+        image: hanz
+        anchor_x: center
+        anchor_y: center
+        scale: 4
+        opacity: .99
+        z: 14
+        animations:
+          add_to_slide:
+            - property: x
+              value: 57%
+              duration: 2s
+            - property: y
+              value: 84%
+              duration: 2s
+              timing: with_previous
+            - property: scale
+              value: 1
+              timing: with_previous
+              duration: 2s
    char_vincent:
-    widgets:
       - type: text
         text: VINCENT COLLECTED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
+        style:
+          - char_collect_style
+      - type: image
+        image: vincent
+        anchor_x: center
+        anchor_y: center
+        scale: 4
+        opacity: .99
+        z: 14
+        animations:
+          add_to_slide:
+            - property: x
+              value: 65%
+              duration: 2s
+            - property: y
+              value: 84%
+              duration: 2s
+              timing: with_previous
+            - property: scale
+              value: 1
+              timing: with_previous
+              duration: 2s
    char_bob:
-    widgets:
       - type: text
         text: BOB COLLECTED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
+        style:
+          - char_collect_style
+      - type: image
+        image: bob
+        anchor_x: center
+        anchor_y: center
+        scale: 4
+        opacity: .99
+        z: 14
+        animations:
+          add_to_slide:
+            - property: x
+              value: 73%
+              duration: 2s
+            - property: y
+              value: 84%
+              duration: 2s
+              timing: with_previous
+            - property: scale
+              value: 1
+              timing: with_previous
+              duration: 2s
 

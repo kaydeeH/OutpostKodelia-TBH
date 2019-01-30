@@ -1,0 +1,89 @@
+#show_version=5
+- duration: 8
+  slides:
+    praise1:
+      transition:
+        type: fade
+        duration: 1s
+      widgets:
+      - type: image
+        image: starfield
+        opacity: .7
+        z: 0
+      - type: Text
+        text: "In, Through, and Beyond! -- High Scores"
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: top - 40
+        x: center
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: Text
+        text: (machine|modestat_7_highest_scoring1_label) - (machine|modestat_7_highest_scoring1_name) (machine|modestat_7_highest_scoring1_value)
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: 540
+        x: 700
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: Text
+        text: (machine|modestat_7_highest_scoring2_label) - (machine|modestat_7_highest_scoring2_name) (machine|modestat_7_highest_scoring2_value)
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: 480
+        x: 700
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: Text
+        text: (machine|modestat_7_highest_scoring3_label) - (machine|modestat_7_highest_scoring3_name) (machine|modestat_7_highest_scoring3_value)
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: 420
+        x: 700
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: Text
+        text: (machine|modestat_7_highest_scoring4_label) - (machine|modestat_7_highest_scoring4_name) (machine|modestat_7_highest_scoring4_value)
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: 360
+        x: 700
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: Text
+        text: (machine|modestat_7_highest_scoring5_label) - (machine|modestat_7_highest_scoring5_name) (machine|modestat_7_highest_scoring5_value)
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: 300
+        x: 700
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: Text
+        text: (machine|modestat_7_highest_scoring6_label) - (machine|modestat_7_highest_scoring6_name) (machine|modestat_7_highest_scoring6_value)
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: 240
+        x: 700
+        z: 1
+        anchor_y: top
+        anchor_x: center
+      - type: image
+        image: badgeBeyondBig
+        anchor_x: center
+        anchor_y: center
+        z: 1
+        opacity: .25
+        scale: 2

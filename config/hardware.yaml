@@ -64,10 +64,10 @@ playfields:
   playfield:
     tags: default
     default_source_device: bd_drain
-    enable_ball_search: true
-    ball_search_timeout: 20s
-    ball_search_wait_after_iteration: 10s
-    ball_search_interval: 250ms
+#    enable_ball_search: true
+#    ball_search_timeout: 20s
+#    ball_search_wait_after_iteration: 10s
+#    ball_search_interval: 250ms
 
 flippers:
   left_flipper:
@@ -146,14 +146,14 @@ drop_target_banks:
      leftfull:
          drop_targets: L0, L1, L2, L3
          reset_coils: c_dropLeft0, c_dropLeft1
-         reset_on_complete: 500ms
+#         reset_on_complete: 500ms
          ignore_switch_ms: 200ms
          reset_events:
            player_turn_will_start, mode_using_targets_ended, drops_left_reset
      rightfull:
          drop_targets: R0, R1, R2, R3
          reset_coils: c_dropRight0, c_dropRight1
-         reset_on_complete: 500ms
+#         reset_on_complete: 500ms
          ignore_switch_ms: 200ms
          reset_events:
            player_turn_will_start, mode_using_targets_ended, drops_right_reset
