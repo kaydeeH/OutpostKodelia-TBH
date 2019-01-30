@@ -135,3 +135,5 @@ images:
        file: bob.png
     boboff:
        file: bob-off.png
+    tbh-slide-template:
+       file: TBH-SlideTemplate.png
