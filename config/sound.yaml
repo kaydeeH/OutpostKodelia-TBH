@@ -125,3 +125,74 @@ sounds:
         file: ZeroGravity.wav
         track: music
         fade_out: 1s
+
+    #Voice clips
+    alex_01:
+        file: a_glorious-pilgramage.wav
+    alex_02:
+        file: a_greatest-space-scientist.wav
+    bob_01:
+        file: b_if-maximilian-knew.wav
+    bob_02:
+        file: b_this-is-a-death-ship.wav
+    charlie_01:
+        file: c_lets-get-cracking.wav
+    harry_01:
+        file: h_are-you-programmed.wav
+    kate_01:
+        file: k_if-there's-any-justice.wav
+    kate_02:
+        file: k_old-and-bold-pilots.wav
+    kate_03:
+        file: k_uss-cygnus-mission.wav
+    hans_01:
+        file: r_end-justifies-the-means.wav
+    hans_02:
+        file: r_give-them-distance.wav
+    hans_03:
+        file: r_in-through-and-beyond.wav
+    hans_04:
+        file: r_maximilian.wav
+    hans_05:
+        file: r_one-step-too-far.wav
+    hans_06:
+        file: r_protect-me-from-maximilian.wav
+    hans_07:
+        file: r_the-esp-you-share.wav
+    vincent_01:
+        file: v_a-wolf-remains-a-wolf.wav
+    vincent_02:
+        file: v_nothing-a-hammer.wav
+    vincent_03:
+        file: v_ship_uss-cygnus.wav
+    vincent_04:
+        file: v_to-quote-cicero.wav
+    vincent_05:
+        file: v_vincent's-my-name.wav
+
+sound_pools:
+  atract_voice:
+    type: random_force_all
+    track: voice
+    sounds:
+      - alex_01
+      - alex_02
+      - bob_01
+      - bob_02
+      - charlie_01
+      - harry_01
+      - kate_01
+#      - kate_02
+      - kate_03
+      - hans_01
+      - hans_02
+      - hans_03
+      - hans_04
+      - hans_05
+      - hans_06
+      - hans_07
+      - vincent_01
+      - vincent_02
+#      - vincent_03
+      - vincent_04
+      - vincent_05

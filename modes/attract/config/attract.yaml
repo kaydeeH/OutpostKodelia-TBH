@@ -76,7 +76,7 @@ show_player:
       loops: 0
       events_when_played: trigger_text
  #     events_when_completed: attract_01
-      events_when_completed: attract_slide_next
+      events_when_completed: attract_slide_next, atrract_video_complete
   green_ttb:
     green_stripes_ttb:
       speed: 30
@@ -274,7 +274,7 @@ variable_player:
       attract_flipper_sound_cooldown_completed:
         action: set_machine
         int: 1
-   attract_01:
+   atrract_video_complete:
       atrract_flipper_sound_permitted:
         action: set_machine
         int: 1
@@ -821,3 +821,5 @@ slides:
             value: 0
             duration: 1s
 
+sound_player:
+   attract_random_sound_clip: atract_voice
