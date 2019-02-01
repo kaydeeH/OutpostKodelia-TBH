@@ -236,9 +236,11 @@ event_player:
   mode_attract_started:
      - attract_random_control_var_set
   s_flipper_left_active{machine.atrract_flipper_sound_permitted==1 and machine.attract_flipper_sound_cooldown_completed==1}:
-     - attract_random_sound_clip
+#     - attract_random_sound_clip
+     - attract_cooldown_start
   s_flipper_right_active{machine.atrract_flipper_sound_permitted==1 and machine.attract_flipper_sound_cooldown_completed==1}:
-     - attract_random_sound_clip
+#     - attract_random_sound_clip
+     - attract_cooldown_start
   thank_you_01:
      - thank_you_01_not_random
   thank_you_02:
@@ -266,7 +268,7 @@ variable_player:
       attract_flipper_sound_cooldown_completed:
         action: set_machine
         int: 1
-   attract_random_sound_clip:
+   attract_cooldown_start:
       attract_flipper_sound_cooldown_completed:
         action: set_machine
         int: 0
@@ -289,8 +291,8 @@ timers:
       end_value: 30
       direction: up
       control_events:
-          - event: attract_random_sound_clip
-            action: start
+          - event: attract_cooldown_start
+            action: restart
       start_running: false
    attract_last_scores_overlay:
       start_value: 0
@@ -822,4 +824,4 @@ slides:
             duration: 1s
 
 sound_player:
-   attract_random_sound_clip: atract_voice
+   timer_attract_sound_cooldown_started: atract_voice
