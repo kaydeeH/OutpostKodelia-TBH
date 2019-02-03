@@ -596,8 +596,11 @@ lights:
     channels:
       white:
         number: 4-72
+        platform_settings:
+          polarity: true
     type: w
     subtype: led
     fade_ms: 50ms
+
 #    platform_settings:
 #      polarity: true
