@@ -593,8 +593,11 @@ lights:
 #-----------------------------------------------------------------------
 #J8 72..83
   l_startButton:
-    number: 4-72
+    channels:
+      white:
+        number: 4-72
+    type: w
     subtype: led
     fade_ms: 50ms
-    platform_settings:
-      polarity: true
+#    platform_settings:
+#      polarity: true
