@@ -8,28 +8,144 @@ mode:
 event_player:
    flipper_cradle:
     - start_information
+    - set_information_scoop_available
+    - global_timer_pause
    flipper_cradle_release:
     - stop_information
+    - global_timer_unpause
+   s_flipper_right_active:
+    - next_information
+   s_flipper_left_active:
+    - next_information
+
+variable_player:
+   set_information_scoop_available:
+      information_scoop_available_text:
+         action: set
+         string: "AVAILABLE"
 
 show_player:
    start_information:
      pinwheel:
        speed: 40
        loops: -1
+     information_show:
+       loops: -1
    stop_information:
      pinwheel:
        action: stop
+     information_show:
+       action: stop
+   next_information:
+     information_show:
+       action: advance
 
-slide_player:
-   start_information:
-     info_1:
-       action: play
-   stop_information:
-     info_1:
-       action: remove
+shows:
+   information_show:
+      - duration: 5
+        slides:
+           info_1:
+             action: play
+      - duration: 5
+        slides:
+           info_2:
+             action: play
+      - duration: 5
+        slides:
+           info_3:
+             action: play
+
 
 slides:
    info_1:
+     - type: image
+       image: tbh-slide-template
+       z: 10
      - type: text
-       text: Basic Information Slide
+       text: SCENE STATUS
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 80
+       y: 82%
+#     - type: text
+#       text: "Scene Start at Scoop: (current_player.information_scoop_available_text)"
+#       font_name: ocr-a-tribute-bold
+#       color: FF2C1F
+#       z: 15
+#       font_size: 40
+#       y: 79%
+#     - type: image
+#       image: badgeLocateTheCygnus
+#       anchor_x: center
+#       anchor_y: center
+#       x: 12%
+#       y: 68%
+#       z: 20
+#     - type: image
+#       image: badgeEscape
+#       anchor_x: center
+#       anchor_y: center
+#       x: 12%
+#       y: 58%
+#       z: 20
+#     - type: image
+#       image: badgeShooting
+#       anchor_x: center
+#       anchor_y: center
+#       x: 12%
+#       y: 48%
+#       z: 20
+#     - type: image
+#       image: badgeMeteor
+#       anchor_x: center
+#       anchor_y: center
+#       x: 12%
+#       y: 38%
+#       z: 20
+#     - type: image
+#       image: badgeCorridor
+#       anchor_x: center
+#       anchor_y: center
+#       x: 12%
+#       y: 28%
+#       z: 20
+#     - type: image
+#       image: badgeDavid
+#       anchor_x: center
+#       anchor_y: center
+#       x: 12%
+#       y: 18%
+#       z: 20
+#     - type: image
+#       image: badgeBeyond
+#       anchor_x: center
+#       anchor_y: center
+#       x: 12%
+#       y: 8%
+#       z: 20
+   info_2:
+     - type: image
+       image: tbh-slide-template
+       z: 10
+     - type: text
+       text: BONUS MULTIPLERS
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 80
+       y: 85%
+
+   info_3:
+     - type: image
+       image: tbh-slide-template
+       z: 10
+     - type: text
+       text: GAME STATUS
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 80
+       y: 85%
+
 

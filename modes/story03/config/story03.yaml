@@ -376,6 +376,11 @@ timers:
     control_events:
       - event: story_intro_complete
         action: start
+      - event: global_timer_pause
+        action: pause
+      - event: global_timer_unpause
+        action: start
+
 
 sound_player:
     gallery_target_hit: gallerylaser_hit

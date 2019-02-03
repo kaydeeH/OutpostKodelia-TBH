@@ -297,6 +297,11 @@ timers:
        action: start
      - event: cygnus_found
        action: stop
+     - event: global_timer_pause
+       action: pause
+     - event: global_timer_unpause
+       action: start
+
 
 widget_player:
    story_intro_complete:

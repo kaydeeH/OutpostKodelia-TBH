@@ -182,6 +182,11 @@ timers:
       - event: story_is_about_to_end
         action: pause
         value: 0
+      - event: global_timer_pause
+        action: pause
+      - event: global_timer_unpause
+        action: start
+
   battletimer:
     start_value: 0 #50
 #    end_value: 0
@@ -197,6 +202,10 @@ timers:
       - event: story_is_about_to_end
         action: pause
         value: 0
+      - event: global_timer_pause
+        action: pause
+      - event: global_timer_unpause
+        action: start
 
 widget_player:
   story_intro_complete:
