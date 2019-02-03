@@ -588,4 +588,13 @@ lights:
       polarity: true
 
 
-
+#-----------------------------------------------------------------------
+#LED BOARD 4 (Backbox + Start Button)
+#-----------------------------------------------------------------------
+#J8 72..83
+  l_startButton:
+    number: 4-72
+    subtype: led
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true

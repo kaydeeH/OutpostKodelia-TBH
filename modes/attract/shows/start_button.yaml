@@ -1,0 +1,12 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_startButton:
+      color: FF
+      fade: 1s
+- duration: 1
+  lights:
+    l_startButton:
+      color: 00
+      fade: 1s

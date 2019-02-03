@@ -326,6 +326,9 @@ show_player:
   mode_base_started:
       giWhite:
           loops: -1
+      start_button:
+          loops: -1
+          priority: 5
   s_slingshot_left_active:
       redHitShow:
           priority: 101
@@ -440,7 +443,14 @@ show_player:
           action: stop
       extra_earned:
           loops: -1
-
+  player_score{value>0 and prev_value==0 and change!=0}:
+      start_off:
+        loops: -1
+        priority: 10
+  player_added{num==4}:
+      start_off:
+        loops: -1
+        priority: 10
   player_bonus_l2{value==0}:
       bonusL2:
         loops: -1
@@ -461,7 +471,6 @@ show_player:
         loops: -1
         show_tokens:
           color: 0000CC
-
   player_bonus_l3{value==0}:
       bonusL3:
         loops: -1
@@ -482,7 +491,6 @@ show_player:
         loops: -1
         show_tokens:
           color: 0000CC
-
   player_bonus_l4{value==0}:
       bonusL4:
         loops: -1
@@ -503,7 +511,6 @@ show_player:
         loops: -1
         show_tokens:
           color: 0000CC
-
   player_bonus_l5{value==0}:
       bonusL5:
         loops: -1

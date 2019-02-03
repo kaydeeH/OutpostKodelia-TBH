@@ -5,6 +5,9 @@ show_player:
     giWhite: #Sets basic GI white lighting as the default, plays forever
       priority: 5
       loops: -1
+    start_button:
+      priority: 5
+      loops: -1
     dummy_show: #just to get us past the initial mode start and into our event loop
       loops: 0
       events_when_completed: attract_slide_next
