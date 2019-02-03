@@ -33,6 +33,10 @@ event_player:
      invoke_notify_by_event{current_player.rescue_is_active==0}:
        new_text: "RESCUE\nENABLED"
        new_value: ""
+     display_rescue_increase{current_player.rescue_is_active==1}:
+       dmy: 0
+     display_rescue_enable{current_player.rescue_is_active==0}:
+       dmy: 0
    reenable_outlane_sacrifice:
      increase_sacrifice_value{current_player.sacrifice_is_active==1}:
        dmy: 0  # Did not work without this, seems to be because the other event has parms required
@@ -44,6 +48,10 @@ event_player:
      invoke_notify_by_event{current_player.sacrifice_is_active==0}:
        new_text: "SACRIFICE\nENABLED"
        new_value: ""
+     display_sac_increase{current_player.sacrifice_is_active==1}:
+       dmy: 0
+     display_sac_enable{current_player.sacrifice_is_active==0}:
+       dmy: 0
    shotoutlanerescue_lit_hit:
      - rescue_lane_activated
    shotoutlanesacrifice_lit_hit:
@@ -151,20 +159,109 @@ show_player:
    rescue_lane_activated:
      report_rescue_event:
         loops: 0
+     report_sacrifice_event:
+        action: stop
+     report_rescue_increased:
+        action: stop
+     report_rescue_activated:
+        action: stop
+     report_sacrifice_increased:
+        action: stop
+     report_sacrifice_activated:
+        action: stop
    sacrifice_lane_activated:
      report_sacrifice_event:
         loops: 0
         events_when_completed: sacrifice_complete
+     report_rescue_event:
+        action: stop
+     report_rescue_increased:
+        action: stop
+     report_rescue_activated:
+        action: stop
+     report_sacrifice_increased:
+        action: stop
+     report_sacrifice_activated:
+        action: stop
+   display_rescue_increase:
+     report_rescue_increased:
+        loops: 0
+     report_rescue_event:
+        action: stop
+     report_sacrifice_event:
+        action: stop
+     report_rescue_activated:
+        action: stop
+     report_sacrifice_increased:
+        action: stop
+     report_sacrifice_activated:
+        action: stop
+   display_rescue_enable:
+     report_rescue_activated:
+        loops: 0
+     report_rescue_event:
+        action: stop
+     report_sacrifice_event:
+        action: stop
+     report_rescue_increased:
+        action: stop
+     report_sacrifice_increased:
+        action: stop
+     report_sacrifice_activated:
+        action: stop
+   display_sac_increase:
+     report_sacrifice_increased:
+        loops: 0
+     report_rescue_event:
+        action: stop
+     report_sacrifice_event:
+        action: stop
+     report_rescue_increased:
+        action: stop
+     report_rescue_activated:
+        action: stop
+     report_sacrifice_activated:
+        action: stop
+   display_sac_enable:
+     report_sacrifice_activated:
+        loops: 0
+     report_rescue_event:
+        action: stop
+     report_sacrifice_event:
+        action: stop
+     report_rescue_increased:
+        action: stop
+     report_rescue_activated:
+        action: stop
+     report_sacrifice_increased:
+        action: stop
 
 shows:
    report_rescue_event:
      - time: 0
-       slides: report_rescue_slide
+       widgets: rescue_used
+       duration: 3
+   report_rescue_increased:
+     - time: 0
+       widgets: rescue_increased
+       duration: 3
+   report_rescue_activated:
+     - time: 0
+       widgets: rescue_enabled
        duration: 3
    report_sacrifice_event:
      - time: 0
-       slides: report_sacrifice_slide
+       widgets: sacrifice_used
        duration: 3
+   report_sacrifice_increased:
+     - time: 0
+       widgets: sacrifice_increased
+       duration: 3
+   report_sacrifice_activated:
+     - time: 0
+       widgets: sacrifice_enabled
+       duration: 3
+
 # RESCUE LIGHT -- l_specialLeft
 # SACRIFICE LIGHT -- l_specialRight
    outlanerescueoff:
@@ -203,3 +300,42 @@ slides:
         color: red
         font_size: 100
         font_name: ocr-a-tribute-bold
+
+
+widgets:
+   rescue_enabled:
+      - type: text
+        text: "RESCUE ENABLED\n(outlane_rescue_value)"
+        style:
+          - char_collect_style
+        number_grouping: true
+   rescue_increased:
+      - type: text
+        text: "RESCUE VALUE\n(outlane_rescue_value)"
+        style:
+          - char_collect_style
+        number_grouping: true
+   rescue_used:
+      - type: text
+        text: "BALL RESCUED\nKEEP SHOOTING\n(outlane_rescue_value)"
+        style:
+          - char_collect_style
+        number_grouping: true
+   sacrifice_enabled:
+      - type: text
+        text: "SACRIFICE ENABLED\n(outlane_sacrifice_value)"
+        style:
+          - char_collect_style
+        number_grouping: true
+   sacrifice_increased:
+      - type: text
+        text: "SACRIFICE VALUE\n(outlane_sacrifice_value)"
+        style:
+          - char_collect_style
+        number_grouping: true
+   sacrifice_used:
+      - type: text
+        text: "SACRIFICE\n(outlane_rescue_value)"
+        style:
+          - char_collect_style
+        number_grouping: true
