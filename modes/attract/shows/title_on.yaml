@@ -1,0 +1,24 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_bb_the:
+      color: FF
+    l_bb_0b:
+      color: FF
+    l_bb_0l:
+      color: FF
+    l_bb_0a:
+      color: FF
+    l_bb_0c:
+      color: FF
+    l_bb_0k:
+      color: FF
+    l_bb_1h:
+      color: FF
+    l_bb_1o:
+      color: FF
+    l_bb_1l:
+      color: FF
+    l_bb_1e:
+      color: FF

@@ -31,13 +31,13 @@ lights:
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_GIScoopLR: #needs to be drilled
+  l_GIScoopLR:
     number: 1-6-7-8
     subtype: led
     fade_ms: 50ms
     platform_settings:
       polarity: true
-  l_GIScoopMR: #needs to be drilled
+  l_GIScoopMR:
     number: 1-9-10-11
     subtype: led
     fade_ms: 50ms
@@ -602,5 +602,94 @@ lights:
     subtype: led
     fade_ms: 50ms
 
-#    platform_settings:
-#      polarity: true
+#J11 60..71 - "The Black Hole"
+  l_bb_the:
+    channels:
+      white:
+        number: 4-60
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0b:
+    channels:
+      white:
+        number: 4-61
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0l:
+    channels:
+      white:
+        number: 4-62
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0a:
+    channels:
+      white:
+        number: 4-63
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0c:
+    channels:
+      white:
+        number: 4-64
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_0k:
+    channels:
+      white:
+        number: 4-65
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_1h:
+    channels:
+      white:
+        number: 4-66
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_1o:
+    channels:
+      white:
+        number: 4-67
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_1l:
+    channels:
+      white:
+        number: 4-68
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_1e:
+    channels:
+      white:
+        number: 4-69
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms

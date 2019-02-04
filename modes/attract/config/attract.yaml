@@ -8,6 +8,9 @@ show_player:
     start_button:
       priority: 5
       loops: -1
+    title_on:
+      priority: 5
+      loops: -1
     dummy_show: #just to get us past the initial mode start and into our event loop
       loops: 0
       events_when_completed: attract_slide_next
@@ -62,12 +65,15 @@ show_player:
   attract_02:
     purple_swirl:
        speed: 1
-       loops: 6
+       loops: 9
        priority: 8
+    title_pulse:
+       loops: 8
+       priority: 10
     big_title:
-      loops: 0
-      events_when_completed: attract_slide_next
-#      events_when_completed: attract_03
+       loops: 0
+       events_when_completed: attract_slide_next
+#       events_when_completed: attract_03
   attract_03:
     giDim:
       priority: 9

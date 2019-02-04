@@ -304,6 +304,8 @@ show_player:
   mode_base_started:
       giWhite:
           loops: -1
+      title_on:
+          loops: -1
       start_button:
           loops: -1
           priority: 5

@@ -1,0 +1,66 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_bb_the:
+      color: 20
+      fade: 1s
+    l_bb_0b:
+      color: 20
+      fade: 1s
+    l_bb_0l:
+      color: 20
+      fade: 1s
+    l_bb_0a:
+      color: 20
+      fade: 1s
+    l_bb_0c:
+      color: 20
+      fade: 1s
+    l_bb_0k:
+      color: 20
+      fade: 1s
+    l_bb_1h:
+      color: 20
+      fade: 1s
+    l_bb_1o:
+      color: 20
+      fade: 1s
+    l_bb_1l:
+      color: 20
+      fade: 1s
+    l_bb_1e:
+      color: 20
+      fade: 1s
+- duration: 1
+  lights:
+    l_bb_the:
+      color: FF
+      fade: 1s
+    l_bb_0b:
+      color: FF
+      fade: 1s
+    l_bb_0l:
+      color: FF
+      fade: 1s
+    l_bb_0a:
+      color: FF
+      fade: 1s
+    l_bb_0c:
+      color: FF
+      fade: 1s
+    l_bb_0k:
+      color: FF
+      fade: 1s
+    l_bb_1h:
+      color: FF
+      fade: 1s
+    l_bb_1o:
+      color: FF
+      fade: 1s
+    l_bb_1l:
+      color: FF
+      fade: 1s
+    l_bb_1e:
+      color: FF
+      fade: 1s
