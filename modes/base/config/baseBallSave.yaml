@@ -5,6 +5,10 @@ event_player:
    invoke_notify_by_event:
      new_text: "LOST\nBALL"
      new_value: "SAVED"
+ ball_save_scoop_eject_saving_ball:
+   invoke_notify_by_event:
+     new_text: "LOST\nBALL"
+     new_value: "SAVED"
  s_rooutlaneleft_active:
    - s_rooutlaneleft_active_delay|10ms
  scoop_eject:
@@ -33,11 +37,13 @@ show_player:
    ball_save_initial_enabled:
        ball_save_light:
           loops: -1
+          priority: 10000
    ball_save_initial_disabled:
        ball_save_light: stop
    ball_save_scoop_eject_enabled:
        ball_save_light:
           loops: -1
+          priority: 10000
    ball_save_scoop_eject_disabled:
        ball_save_light: stop
 
