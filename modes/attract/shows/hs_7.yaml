@@ -12,78 +12,69 @@
         z: 0
       - type: Text
         text: "In, Through, and Beyond! -- High Scores"
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-        y: top - 40
-        x: center
-        z: 1
-        anchor_y: top
-        anchor_x: center
+        style:
+            - high_score_mode_title_style
       - type: Text
-        text: (machine|modestat_7_highest_scoring1_label) - (machine|modestat_7_highest_scoring1_name) (machine|modestat_7_highest_scoring1_value)
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-        y: 540
-        x: 700
-        z: 1
-        anchor_y: top
-        anchor_x: center
+        text: (machine|modestat_7_highest_scoring1_name)
+        style:
+            - high_score_mode_style
+            - hs_pos_1
       - type: Text
-        text: (machine|modestat_7_highest_scoring2_label) - (machine|modestat_7_highest_scoring2_name) (machine|modestat_7_highest_scoring2_value)
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-        y: 480
-        x: 700
-        z: 1
-        anchor_y: top
-        anchor_x: center
+        text: (machine|modestat_7_highest_scoring2_name)
+        style:
+            - high_score_mode_style
+            - hs_pos_2
       - type: Text
-        text: (machine|modestat_7_highest_scoring3_label) - (machine|modestat_7_highest_scoring3_name) (machine|modestat_7_highest_scoring3_value)
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-        y: 420
-        x: 700
-        z: 1
-        anchor_y: top
-        anchor_x: center
+        text: (machine|modestat_7_highest_scoring3_name)
+        style:
+            - high_score_mode_style
+            - hs_pos_3
       - type: Text
-        text: (machine|modestat_7_highest_scoring4_label) - (machine|modestat_7_highest_scoring4_name) (machine|modestat_7_highest_scoring4_value)
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-        y: 360
-        x: 700
-        z: 1
-        anchor_y: top
-        anchor_x: center
+        text: (machine|modestat_7_highest_scoring4_name)
+        style:
+            - high_score_mode_style
+            - hs_pos_4
       - type: Text
-        text: (machine|modestat_7_highest_scoring5_label) - (machine|modestat_7_highest_scoring5_name) (machine|modestat_7_highest_scoring5_value)
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-        y: 300
-        x: 700
-        z: 1
-        anchor_y: top
-        anchor_x: center
+        text: (machine|modestat_7_highest_scoring5_name)
+        style:
+            - high_score_mode_style
+            - hs_pos_5
       - type: Text
-        text: (machine|modestat_7_highest_scoring6_label) - (machine|modestat_7_highest_scoring6_name) (machine|modestat_7_highest_scoring6_value)
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-        y: 240
-        x: 700
-        z: 1
-        anchor_y: top
-        anchor_x: center
+        text: (machine|modestat_7_highest_scoring6_name)
+        style:
+            - high_score_mode_style
+            - hs_pos_6
+      - type: Text
+        text: (machine|modestat_7_highest_scoring1_value)
+        style:
+            - high_score_mode_style
+            - hs_pos_1_score
+      - type: Text
+        text: (machine|modestat_7_highest_scoring2_value)
+        style:
+            - high_score_mode_style
+            - hs_pos_2_score
+      - type: Text
+        text: (machine|modestat_7_highest_scoring3_value)
+        style:
+            - high_score_mode_style
+            - hs_pos_3_score
+      - type: Text
+        text: (machine|modestat_7_highest_scoring4_value)
+        style:
+            - high_score_mode_style
+            - hs_pos_4_score
+      - type: Text
+        text: (machine|modestat_7_highest_scoring5_value)
+        style:
+            - high_score_mode_style
+            - hs_pos_5_score
+      - type: Text
+        text: (machine|modestat_7_highest_scoring6_value)
+        style:
+            - high_score_mode_style
+            - hs_pos_6_score
       - type: image
         image: badgeBeyondBig
-        anchor_x: center
-        anchor_y: center
-        z: 1
-        opacity: .25
-        scale: 2
+        style:
+            - hs_badge
