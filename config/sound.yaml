@@ -46,6 +46,7 @@ sounds:
     character_collect_sound:
         file: character_collect.wav
         track: sfx
+        volume: .7
         ducking:
           target: music
           delay: 0ms
