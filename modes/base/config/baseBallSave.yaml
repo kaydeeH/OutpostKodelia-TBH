@@ -34,3 +34,18 @@ ball_saves:
    auto_launch: false
    balls_to_save: 1
 
+show_player:
+   ball_save_initial_enabled:
+       ball_save_light:
+          loops: -1
+   ball_save_initial_disabled:
+       ball_save_light: stop
+
+shows:
+   ball_save_light:
+     - time: 0
+       lights:
+         l_shootAgain: red
+     - time: 0.1
+       lights:
+         l_shootAgain: off

@@ -153,9 +153,7 @@ shots:
 # this is a ball save that gets triggered when rescue lit is hit
 ball_saves:
    rescueSave:
-     enable_events: rescue_lane_activated, playfield_active{current_player.rescue_is_active==1}
-     disable_events: ball_save_initial_saving_ball
-
+     enable_events: rescue_lane_activated
 
 show_player:
    rescue_lane_activated:
