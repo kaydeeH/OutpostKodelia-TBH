@@ -1,7 +1,7 @@
 #config_version=5
 
 mode:
-   start_events: selector_untitled_mode_7_selected
+   start_events: ready_to_start_mode_7
    stop_events: story_is_completed
    priority: 900
 
@@ -26,9 +26,11 @@ queue_relay_player:
 event_player:
    mode_story07_started:
      - story_is_about_to_begin
+     - global_timer_pause
    story_intro_complete:
      - scoop_eject
      - story07_intro_complete
+     - global_timer_unpause
    in_mode_ball_save:
      - story_is_about_to_fail
    story_outro_complete:
@@ -39,6 +41,7 @@ event_player:
      - story_is_completed_unsuccessful
      - acheivement_story07_unsuccessful
    story_is_completed_successful:
+    - global_timer_unpause
     - story_is_completed
    story_is_completed_unsuccessful:
     - story_is_completed
@@ -46,6 +49,7 @@ event_player:
     - wiz_enable_discovery_collect
    shotScoopCollect_shotProfileScoopCollect_scoopActive_hit:
     - wizard_cashout
+    - global_timer_pause
 # Initial Discovery Bonus Events
    char_alex_is_complete:
     - discovery_char_bonus
@@ -71,6 +75,7 @@ event_player:
    story07_cashout_wiz_cancel_selected:
     - wizard_continue
     - scoop_discovery_not_collected
+    - global_timer_unpause
     - scoop_eject
 
 # Trigger a reset event

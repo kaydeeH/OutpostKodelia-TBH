@@ -9,7 +9,7 @@ config:
 #   - ballsave.yaml
 
 mode:
-   start_events: selector_untitled_mode_4_selected
+   start_events: ready_to_start_mode_4
    stop_events: story_is_completed
    priority: 900
    file_log: full
@@ -36,6 +36,7 @@ event_player:
      - story_is_about_to_begin
    story_intro_complete:
      - scoop_eject
+     - global_timer_unpause
    in_mode_ball_save:
      - story_is_about_to_fail
    story_has_passed:

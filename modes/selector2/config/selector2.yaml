@@ -1,7 +1,7 @@
 #config_version=5
 mode:
   start_events: select_mode_start
-  stop_events: selector2_item_selected, selector_untitled_mode_7_selected
+  stop_events: select_mode_is_finished
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 325
 
@@ -42,6 +42,8 @@ variable_player:
          action: set
 
 event_player:
+  mode_selector2_started:
+     - global_timer_pause
   s_flipper_left_active:
      - pre_mode_select_left
   s_flipper_right_active:
@@ -76,7 +78,27 @@ event_player:
      - selector_untitled_mode_6_highlighted
   selector2_mode7_highlighted:
      - selector_untitled_mode_7_highlighted
-
+  selector_untitled_mode_1_selected:
+     - ready_to_start_mode_1
+     - select_mode_is_finished
+  selector_untitled_mode_2_selected:
+     - ready_to_start_mode_2
+     - select_mode_is_finished
+  selector_untitled_mode_3_selected:
+     - ready_to_start_mode_3
+     - select_mode_is_finished
+  selector_untitled_mode_4_selected:
+     - ready_to_start_mode_4
+     - select_mode_is_finished
+  selector_untitled_mode_5_selected:
+     - ready_to_start_mode_5
+     - select_mode_is_finished
+  selector_untitled_mode_6_selected:
+     - ready_to_start_mode_6
+     - select_mode_is_finished
+  selector_untitled_mode_7_selected:
+     - ready_to_start_mode_7
+     - select_mode_is_finished
 
 animations:
   hide_text:

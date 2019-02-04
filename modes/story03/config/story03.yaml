@@ -6,7 +6,7 @@ config:
   - notification.yaml
 
 mode:
-  start_events: selector_untitled_mode_3_selected
+  start_events: ready_to_start_mode_3
   stop_events: story_is_completed
   priority: 900
   file_log: full
@@ -40,6 +40,7 @@ event_player:
     - drop_right_center_reset
   story_intro_complete:
     - scoop_eject
+    - global_timer_unpause
   in_mode_ball_save:
      - story_is_about_to_fail
   story_outro_complete:

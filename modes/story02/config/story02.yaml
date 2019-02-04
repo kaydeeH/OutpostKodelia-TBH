@@ -7,7 +7,7 @@ config:
 #TODO Character collect -- could be completion, or reaching stabilization
 
 mode:
-   start_events: selector_untitled_mode_2_selected
+   start_events: ready_to_start_mode_2
    stop_events: story_is_completed
    priority: 900
 
@@ -35,12 +35,15 @@ event_player:
      - story_is_about_to_fail
    story_intro_complete:
      - scoop_eject
+     - global_timer_unpause
 #   shotScoopEscape_shotProfileScoopEscape_inactive_hit:
 #     - scoop_eject
    shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
+     - global_timer_pause
      - story_is_about_to_end
      - story02_is_about_to_end
    story_outro_complete:
+     - global_timer_unpause
      - scoop_eject
      - story_is_completed_successful
      - acheivement_story02_successful

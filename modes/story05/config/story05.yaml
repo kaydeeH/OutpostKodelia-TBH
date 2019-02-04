@@ -7,7 +7,7 @@ config:
 #TODO -- Character Collect -- Certain amount of time remaining?
 
 mode:
-   start_events: selector_untitled_mode_5_selected
+   start_events: ready_to_start_mode_5
    stop_events: story_is_completed
    priority: 900
 
@@ -30,6 +30,7 @@ event_player:
      - mode_using_targets_started # always add this if your mode makes use of the drop targets
    story_intro_complete:
      - scoop_eject
+     - global_timer_unpause
    in_mode_ball_save:
      - story_is_about_to_fail
    shotGroupCorridorTargets_complete_complete:

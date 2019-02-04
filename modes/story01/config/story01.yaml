@@ -11,7 +11,7 @@ config:
   - notification.yaml
 
 mode:
-   start_events: selector_untitled_mode_1_selected
+   start_events: ready_to_start_mode_1
    stop_events: story_is_completed
    priority: 900
    file_log: full
@@ -40,12 +40,14 @@ event_player:
    story_intro_complete:
      - scoop_eject
      - start_cygnus_timer
+     - global_timer_unpause
    cygnus_found:
      - story_is_about_to_end
      - story_01_is_about_to_end
    in_mode_ball_save:
      - story_is_about_to_fail
    story_outro_complete:
+     - global_timer_unpause
      - story_is_completed_successful
      - acheivement_story01_successful
    story_outro_complete_failed:
@@ -61,6 +63,7 @@ event_player:
      - cygnus_located
    shotScoopStory01_shotProfileScoopStory01_scoopActive_hit:
      - cygnus_found
+     - global_timer_pause
 #   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
 #     - scoop_eject
 # Character Collect
