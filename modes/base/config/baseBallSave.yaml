@@ -7,30 +7,25 @@ event_player:
      new_value: "SAVED"
  s_rooutlaneleft_active:
    - s_rooutlaneleft_active_delay|10ms
-
-
-# in_mode_ball_save:
-#   invoke_notify_by_event:
-#     new_text: "MODE FAIL\nBALL"
-#     new_value: "SAVED"
-#
-#queue_event_player:
-#  ball_save_initial_enabled:
-#    queue_event: ball_save_queued
-#    events_when_finished: ball_save_timer_start
-#
-#queue_relay_player:
-#  ball_save_queued:
-#    post: waiting_for_eject_success
-#    wait_for: sw_playfield_active
+ scoop_eject:
+   - scoop_eject_timer_start|10ms
+ player_score{change>0}:
+   - initial_ball_save_start
 
 ball_saves:
  initial:
    active_time: 3s
    grace_period: 2s
-   enable_events: mode_base_started, scoop_eject
-   timer_start_events: playfield_active
+   enable_events: mode_base_started
+   timer_start_events: initial_ball_save_start
    early_ball_save_events: s_rooutlaneright_active, s_rooutlaneleft_active_delay
+   auto_launch: false
+   balls_to_save: 1
+ scoop_eject:
+   active_time: 2s
+   grace_period: 2s
+   enable_events: scoop_eject
+   timer_start_events: scoop_eject_timer_start
    auto_launch: false
    balls_to_save: 1
 
@@ -39,6 +34,11 @@ show_player:
        ball_save_light:
           loops: -1
    ball_save_initial_disabled:
+       ball_save_light: stop
+   ball_save_scoop_eject_enabled:
+       ball_save_light:
+          loops: -1
+   ball_save_scoop_eject_disabled:
        ball_save_light: stop
 
 shows:

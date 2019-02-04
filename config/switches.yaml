@@ -121,7 +121,7 @@ switches:
   s_lane4:
     number: 2/0/4
 # testing -- don't make this validate playfield due to playfield curves
-#    tags: playfield_active
+    tags: playfield_active
   s_jet_upper_left:
     number: 2/1/0
 #    tags: playfield_active
