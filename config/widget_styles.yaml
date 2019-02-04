@@ -10,6 +10,77 @@ widget_styles:
         font_name: ocr-a-tribute-bold
         opacity: .9
         z: 15
+   high_score_mode_style:
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        anchor_y: top
+        anchor_x: right
+        number_grouping: true
+   high_score_mode_title_style:
+        font_name: ocr-a-tribute-bold
+        font_size: 50
+        color: FF2C1F
+        y: top - 40
+        x: center
+        anchor_y: top
+        anchor_x: center
+        opacity: 1
+        z: 15
+   hs_pos_1:
+        y: 540
+        x: 500
+        z: 1
+   hs_pos_2:
+        y: 480
+        x: 500
+        z: 1
+   hs_pos_3:
+        y: 420
+        x: 500
+        z: 1
+   hs_pos_4:
+        y: 360
+        x: 500
+        z: 1
+   hs_pos_5:
+        y: 300
+        x: 500
+        z: 1
+   hs_pos_6:
+        y: 240
+        x: 500
+        z: 1
+   hs_pos_1_score:
+        y: 540
+        x: 950
+        z: 1
+   hs_pos_2_score:
+        y: 480
+        x: 950
+        z: 1
+   hs_pos_3_score:
+        y: 420
+        x: 950
+        z: 1
+   hs_pos_4_score:
+        y: 360
+        x: 950
+        z: 1
+   hs_pos_5_score:
+        y: 300
+        x: 950
+        z: 1
+   hs_pos_6_score:
+        y: 240
+        x: 950
+        z: 1
+   hs_badge:
+        anchor_x: center
+        anchor_y: center
+        z: 1
+        opacity: .25
+        scale: 2
    thank_you_style:
         color: red
         font_size: 90
