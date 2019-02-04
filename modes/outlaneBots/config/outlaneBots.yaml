@@ -108,7 +108,7 @@ variable_player:
    increase_sacrifice_value:
      outlane_sacrifice_value:
         action: add
-        int: current_player.outlane_sacrifice_value * .1
+        int: current_player.outlane_sacrifice_value
    set_sacrifice_off:
      sacrifice_is_active:
         action: set

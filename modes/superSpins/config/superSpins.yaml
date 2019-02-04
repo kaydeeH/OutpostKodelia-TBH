@@ -2,7 +2,7 @@
 
 mode:
    start_events: trigger_super_spins
-   stop_events: end_super_spins
+   stop_events: end_super_spins, ball_ending
    priority: 2500
 
 event_player:

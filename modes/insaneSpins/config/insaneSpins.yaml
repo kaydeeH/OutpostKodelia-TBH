@@ -2,7 +2,7 @@
 
 mode:
    start_events: trigger_insane_spins
-   stop_events: end_insane_spins
+   stop_events: end_insane_spins, ball_ending
    priority: 2500
 
 event_player:
@@ -31,5 +31,5 @@ variable_player:
        action: set
        int: 0
   s_spinner_active:
-    score: 100000 * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: 500000 * current_player.temp_playfield_x * current_player.perm_playfield_x
     insaneSpinCount: 1

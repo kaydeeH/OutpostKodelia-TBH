@@ -23,10 +23,12 @@ event_player:
      - count_center_drop
    s_sTargetYellowL_active:
      - drop_right_center_reset
-     - reenable_outlane_rescue
+#     - reenable_outlane_rescue
+     - count_center_drop
    s_sTargetYellowR_active:
      - drop_left_center_reset
-     - reenable_outlane_sacrifice
+#     - reenable_outlane_sacrifice
+     - count_center_drop
 # enable_auto_drop_resets = 1 allow drop target bank resets
    drop_target_bank_leftfull_down{current_player.enable_auto_drop_resets==1}:
      - drops_left_reset|500ms

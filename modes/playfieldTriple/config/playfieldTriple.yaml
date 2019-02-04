@@ -2,7 +2,7 @@
 
 mode:
    start_events: playfield_triple_start
-   stop_events: end_triple_bonus
+   stop_events: end_triple_bonus, ball_ending
    priority: 2500
 
 event_player:

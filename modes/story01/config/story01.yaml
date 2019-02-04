@@ -44,8 +44,6 @@ event_player:
    cygnus_found:
      - story_is_about_to_end
      - story_01_is_about_to_end
-   in_mode_ball_save:
-     - story_is_about_to_fail
    story_outro_complete:
      - global_timer_unpause
      - story_is_completed_successful

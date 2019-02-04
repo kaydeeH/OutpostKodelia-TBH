@@ -49,9 +49,12 @@ event_player:
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
      - acheivement_story04_unsuccessful
-   ball_ending:
+   ball_ending{current_player.meteor_hits==0}:
      - story_is_completed_unsuccessful
      - acheivement_story04_unsuccessful
+   ball_ending{current_player.meteor_hits>0}:
+     - story_is_completed_successful
+     - acheivement_story04_successful
    story_is_completed_successful:
     - story_is_completed
    story_is_completed_unsuccessful:
