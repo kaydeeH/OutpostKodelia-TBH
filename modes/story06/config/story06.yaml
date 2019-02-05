@@ -6,7 +6,7 @@
 
 config:
   - story06-scoring.yaml
-#  - ballsave.yaml
+  - infoboard.yaml
 
 mode:
   start_events: ready_to_start_mode_6
@@ -35,13 +35,15 @@ queue_relay_player:
 event_player:
   mode_story06_started:
     - story_is_about_to_begin
+    - information_board_start
   story_intro_complete:
     - scoop_eject
     - start_david_timer
     - global_timer_unpause
-  in_mode_ball_save:
-     - story_is_about_to_fail
-#TODO -- make sure this can only happen one time!!!!!
+  story_is_about_to_fail:
+     - information_board_end
+  story_is_about_to_end:
+     - information_board_end
   player_health{value >= 100}:
     - story_is_about_to_end
   player_health{value <= 0}:
@@ -61,10 +63,10 @@ event_player:
 
 #  Base intro / outro shows
 show_player:
-  story_is_about_to_begin:
-    story_06_intro:
-      events_when_completed: story_intro_complete
-      loops: 0
+#  story_is_about_to_begin:
+#    story_06_intro:
+#      events_when_completed: story_intro_complete
+#      loops: 0
   story_is_about_to_fail:
     story_06_outro_fail:
       events_when_completed: story_outro_fail_complete
@@ -74,57 +76,7 @@ show_player:
       events_when_completed: story_outro_complete
       loops: 0
 
-shows:
-  story_06_intro:
-    - time: 0
-      slides: story_06_intro_slide
-      duration: 3
-  story_06_outro_fail:
-    - time: 0
-      slides: story_06_outro_fail_slide
-      duration: 3
-  story_06_outro:
-    - time: 0
-      slides: story_06_outro_slide
-      duration: 3
 
-slides:
-  story_06_intro_slide:
-    widgets:
-      - type: text
-        text: David vs. Goliath
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: Hit pop bumpers to attack Maximilian!
-        y: 40%
-        color: red
-        font_size: 50
-  story_06_outro_fail_slide:
-    widgets:
-      - type: text
-        text: Goliath defeats David
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: Only this time, David is overmatched...
-        y: 40%
-        color: red
-        font_size: 50
-  story_06_outro_slide:
-    widgets:
-      - type: text
-        text: David defeats Goliath!
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "The bigger they are, the harder they fall. [Time taken:(battletime)s]"
-        y: 40%
-        color: red
-        font_size: 50
 
 # The below is mode specific data
 variable_player:
@@ -210,8 +162,6 @@ timers:
 
 widget_player:
   story_intro_complete:
-    david_hurry_up:
-      slide: scoring_slide
     david_and_goliath_widget:
       slide: scoring_slide
     green_bar_widget:
@@ -236,8 +186,6 @@ widget_player:
     green_bar_widget:
       action: remove
     red_bar_widget:
-      action: remove
-    david_hurry_up:
       action: remove
 
 widgets:
@@ -302,17 +250,6 @@ widgets:
       width: 6
       height: 23
       color: 323D4A
-  david_hurry_up:
-    - type: text
-      x: center + 307
-      y: top - 520
-      anchor_x: right
-      anchor_y: top
-      font_size: 40
-      font_name: lucon
-      color: BBD8F0
-      z: 70
-      text: "Completion Bonus: (david_complete_base_value)"
 
 sound_player:
     mode_story06_started:

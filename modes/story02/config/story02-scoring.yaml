@@ -75,5 +75,6 @@ variable_player:
   shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
      score: current_player.escape_completed_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
      bonuscount: 10
+     mode2_final_score_display: current_player.escape_completed_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
      modestat_2_scoring: current_player.escape_completed_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
      modestat_2_base_scoring: current_player.escape_completed_scoring_base

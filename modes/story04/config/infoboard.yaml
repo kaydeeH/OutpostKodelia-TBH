@@ -1,0 +1,85 @@
+#config_version=5
+
+event_player:
+   story_is_about_to_begin:
+     - mode_04_setintro_01
+     - mode_04_setintro_02
+     - mode_04_setintro_03
+     - story_intro_complete|4s
+   mode_04_setintro_01:
+     set_infoboard_line_text:
+        linenbr: 1
+        text: "METEOR STRIKE"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   mode_04_setintro_02:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "Avoid meteors by hitting ..."
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   mode_04_setintro_03:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "...the scoop shot before impact!"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   story_intro_complete:
+     - mode_04_setinfo_01
+     - mode_04_setinfo_02
+     - mode_04_setinfo_03
+   mode_04_setinfo_01:
+     set_infoboard_line_text:
+        linenbr: 1
+        text: "METEOR STRIKE"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   player_modestat_4_scoring:
+     set_infoboard_line_text:
+        linenbr: 1
+        text: "METEOR STRIKE"
+        pts: modestat_4_scoring
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   mode_04_setinfo_02:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "METEORS AVOIDED"
+        pts: meteor_hits
+        secs: none
+        cycle: "star"
+        delayms: 25
+   player_modestat_4_last_meteor{value>0}:
+     mode_04_setinfo_02|3s:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "METEOR AVOIDED AWARD"
+        pts: modestat_4_last_meteor
+        secs: none
+        cycle: "star"
+        delayms: 25
+   mode_04_setinfo_03:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "METEOR PROXIMITY"
+        pts: timeRemain
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   player_timeRemain:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "METEOR PROXIMITY"
+        pts: timeRemain
+        secs: none
+        cycle: "instant"
+        delayms: 0

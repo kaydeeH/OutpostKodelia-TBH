@@ -145,26 +145,6 @@ show_player:
           gi_2: l_GILane5
           curr_lane: l_lane4
 
-shows:
-   story_01_intro:
-     - time: 0
-       slides: story_01_intro_slide
-       duration: 3
-   story_01_outro:
-     - time: 0
-       widgets:
-          cygnus_located_outro:
-             action: add
-             slide: scoring_slide
-       duration: 3
-   story_01_outro_failed:
-      - time: 0
-        widgets:
-          cygnus_failed_outro:
-             action: add
-             slide: scoring_slide
-        duration: 3
-
 # The below is mode specific data
 
 # SHOT PROFILES --
@@ -263,37 +243,6 @@ timers:
        action: pause
      - event: global_timer_unpause
        action: start
-
-widgets:
-   cygnus_located_outro:
-     - type: text
-       text: "CYGNUS LOCATED"
-       color: red
-       font_size: 100
-       font_name: ocr-a-tribute-bold
-       opacity: 1
-       z: 100
-     - type: text
-       text: "Time Taken: (cygnus_seconds) seconds"
-       y: 40%
-       color: red
-       opacity: 1
-       z: 100
-   cygnus_failed_outro:
-     - type: text
-       text: "CYGNUS NOT LOCATED"
-       color: red
-       font_size: 100
-       font_name: ocr-a-tribute-bold
-       opacity: 1
-       z: 100
-     - type: text
-       text: "MISSION FAILURE"
-       y: 40%
-       color: red
-       font_size: 50
-       opacity: 1
-       z: 100
 
 sound_player:
     mode_story01_started:

@@ -3,20 +3,23 @@ variable_player:
   story_is_about_to_begin:
     gallery_base_value:
        action: set
-       int: 0
+       int: 1000000
     modestat_3_base_scoring:
        action: set
        int: 0
     modestat_3_scoring:
        action: set
        int: 0
-  gallery_target_hit{current_player.gallery_base_value==0}:
-    gallery_base_value: 2000000
-    bonuscount: 3
-  gallery_target_hit{current_player.gallery_base_value>0}:
+#  gallery_target_hit{current_player.gallery_base_value==0}:
+#    gallery_base_value: 2000000
+#    bonuscount: 3
+#  gallery_target_hit{current_player.gallery_base_value>0}:
+#    gallery_base_value: 1000000
+#    bonuscount: 3
+  gallery_target_hit:
     gallery_base_value: 1000000
     bonuscount: 3
-  player_gallery_base_value:
+  player_gallery_base_value{value!=1000000}:
     score: current_player.gallery_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_3_scoring: current_player.gallery_base_value * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_3_base_scoring: current_player.gallery_base_value

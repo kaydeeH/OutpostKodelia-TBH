@@ -5,6 +5,9 @@ mode:
    stop_events: story_is_completed
    priority: 900
 
+config:
+  - infoboard.yaml
+
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
 # Modes that end with a Scoop Hit --
@@ -31,8 +34,8 @@ event_player:
      - scoop_eject
      - story07_intro_complete
      - global_timer_unpause
-   in_mode_ball_save:
-     - story_is_about_to_fail
+   slide_story_07_intro_slide_removed:
+     - information_board_start
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story07_successful
@@ -47,6 +50,7 @@ event_player:
     - story_is_completed
    player_wiz_feature_collects{value>=4}:
     - wiz_enable_discovery_collect
+    - wiz_enable_discovery_collect_infoboard|3s
    shotScoopCollect_shotProfileScoopCollect_scoopActive_hit:
     - wizard_cashout
     - global_timer_pause
@@ -412,7 +416,7 @@ variable_player:
        int: 1
     discovery_base_char_value:
        action: set
-       int: current_player.discovery_base_char_value * 1.25
+       int: current_player.discovery_base_char_value * 1.1
   wiz_left_bank_hit{current_player.wiz_left_collect==0}:
     wiz_left_collect:
        action: set
@@ -422,7 +426,7 @@ variable_player:
        int: 1
     discovery_base_char_value:
        action: set
-       int: current_player.discovery_base_char_value * 1.25
+       int: current_player.discovery_base_char_value * 1.1
   wiz_right_bank_hit{current_player.wiz_right_collect==0}:
     wiz_right_collect:
        action: set
@@ -432,7 +436,7 @@ variable_player:
        int: 1
     discovery_base_char_value:
        action: set
-       int: current_player.discovery_base_char_value * 1.25
+       int: current_player.discovery_base_char_value * 1.1
   wiz_pop_spin_hit{current_player.wiz_ps_collect==0}:
     wiz_ps_collect:
        action: set
@@ -442,7 +446,7 @@ variable_player:
        int: 1
     discovery_base_char_value:
        action: set
-       int: current_player.discovery_base_char_value * 1.25
+       int: current_player.discovery_base_char_value * 1.1
 
 shots:
    wiz_lane_0:

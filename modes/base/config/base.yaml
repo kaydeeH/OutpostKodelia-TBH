@@ -6,6 +6,8 @@ config:
   - baseBallSave.yaml
   - widgets.yaml
   - centerdrops.yaml
+  - mode_exit_widgets.yaml
+  - mode_exit_shows.yaml
 #  - junkytest.yaml        # can remove this after
 
 # ---------------------------------------------------

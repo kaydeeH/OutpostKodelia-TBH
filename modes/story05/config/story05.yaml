@@ -2,9 +2,7 @@
 
 config:
   - story05-scoring.yaml
-#  - ballsave.yaml
-
-#TODO -- Character Collect -- Certain amount of time remaining?
+  - infoboard.yaml
 
 mode:
    start_events: ready_to_start_mode_5
@@ -26,6 +24,7 @@ queue_relay_player:
 event_player:
    mode_story05_started:
      - story_is_about_to_begin
+     - information_board_start
      - the_one_event_to_reset_them_all
      - mode_using_targets_started # always add this if your mode makes use of the drop targets
    story_intro_complete:
@@ -42,6 +41,10 @@ event_player:
      - acheivement_story05_successful
      - mode_using_targets_ended # always add this if your mode makes use of the drop targets
 #    Only used when scoop hits end the mode
+   story_is_about_to_fail:
+      - information_board_end
+   story_is_about_to_end:
+      - information_board_end
    story_outro_failed_complete:
      - story_is_completed_unsuccessful
      - acheivement_story05_unsuccessful
@@ -76,10 +79,6 @@ event_player:
 
 #  Base intro / outro shows
 show_player:
-   story_is_about_to_begin:
-      story_05_intro:
-         events_when_completed: story_intro_complete
-         loops: 0
    story_is_about_to_fail:
       story_05_outro_fail:
          events_when_completed: story_outro_failed_complete
@@ -89,58 +88,6 @@ show_player:
          events_when_completed: story_outro_complete
          loops: 0
 
-shows:
-   story_05_intro:
-     - time: 0
-       slides: story_05_intro_slide
-       duration: 3
-   story_05_outro:
-     - time: 0
-       slides: story_05_outro_slide
-       duration: 3
-   story_05_outro_fail:
-     - time: 0
-       slides: story_05_outro_slide_fail
-       duration: 3
-
-slides:
-   story_05_intro_slide:
-    widgets:
-      - type: text
-        text: CORRIDOR BATTLE
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: Hit all lit targets in 30 seconds
-        y: 40%
-        color: red
-        font_size: 50
-   story_05_outro_slide:
-    widgets:
-      - type: text
-        text: CORRIDOR BATTLE ENDED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "Remaining Time (corridor_seconds)s"
-        y: 30%
-        font_size: 50
-      - type: text
-        text: "Bonus for remaining time: (corridor_bonus)"
-        y: 20%
-        font_size: 50
-   story_05_outro_slide_fail:
-      - type: text
-        text: CORRIDOR BATTLE ENDED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "You suck.  No bonus.  You are bad and should feel bad."
-        y: 30%
-        font_size: 50
 
 # The below is mode specific data
 
@@ -280,24 +227,6 @@ timers:
          action: pause
        - event: global_timer_unpause
          action: start
-
-
-widget_player:
-   story_intro_complete:
-      yt_remain_widget_05:
-         slide: scoring_slide
-   story_is_about_to_end:
-      yt_remain_widget_05:
-         action: remove
-
-widgets:
-   yt_remain_widget_05:
-     - type: text
-       text: "Corridor Battle : (corridor_seconds)s"
-       y: 80%
-     - type: text
-       text: "Targets Hit: (corridor_targets_hit)"
-       y: 70%
 
 sound_player:
     mode_story05_started:

@@ -197,27 +197,6 @@ show_player:
          action: stop
       lane5shot:
          action: stop
-#variable_player:
-#  traj_set:
-#    score: 100000
-#  scoop_out_success:
-#    score: 500000
-
-shows:
-   story_02_fail_outro:
-     - time: 0
-       widgets:
-          story_02_outro_fail_widget:
-             action: add
-             slide: scoring_slide
-       duration: 3
-   story_02_outro:
-     - time: 0
-       widgets:
-          story_02_outro_widget:
-             action: add
-             slide: scoring_slide
-       duration: 3
 
 # The below is mode specific data
 
@@ -375,31 +354,6 @@ state_machines:
        - source: scoopOpen
          target: completion
          events: scoop_out_success
-
-
-widgets:
-   story_02_outro_fail_widget:
-      - type: text
-        text: YOU FAILED TO ESCAPE THE BLACK HOLE
-        color: red
-        font_size: 60
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: You are *NOT* super duper neat
-        y: 40%
-        color: red
-        font_size: 50
-   story_02_outro_widget:
-      - type: text
-        text: YOU HAVE ESCAPED THE BLACK HOLE
-        color: red
-        font_size: 80
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: You are super duper neat
-        y: 40%
-        color: red
-        font_size: 50
 
 sound_player:
     mode_story02_started:

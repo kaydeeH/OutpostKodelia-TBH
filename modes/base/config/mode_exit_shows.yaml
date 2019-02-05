@@ -1,0 +1,92 @@
+#config_version=5
+
+shows:
+   story_01_outro:
+      - time: 0
+        widgets:
+          cygnus_located_outro:
+              action: add
+              slide: scoring_slide
+        duration: 3
+   story_01_outro_failed:
+      - time: 0
+        widgets:
+          cygnus_failed_outro:
+             action: add
+             slide: scoring_slide
+        duration: 3
+
+   story_02_fail_outro:
+      - time: 0
+        widgets:
+           story_02_outro_fail_widget:
+              action: add
+              slide: scoring_slide
+        duration: 3
+   story_02_outro:
+      - time: 0
+        widgets:
+           story_02_outro_widget:
+              action: add
+              slide: scoring_slide
+        duration: 3
+
+   story_03_fail_outro:
+      - time: 0
+        widgets:
+           story_03_outro_fail_widget:
+              action: add
+              slide: scoring_slide
+        duration: 3
+   story_03_outro:
+      - time: 0
+        widgets:
+           story_03_outro_widget:
+              action: add
+              slide: scoring_slide
+        duration: 3
+
+   story_04_outro_fail:
+      - time: 0
+        widgets:
+           story_04_outro_fail_widget:
+              action: add
+              slide: scoring_slide
+        duration: 3
+   story_04_outro:
+      - time: 0
+        widgets:
+           story_04_outro_widget:
+              action: add
+              slide: scoring_slide
+        duration: 3
+
+   story_05_outro:
+      - time: 0
+        widgets:
+           story_05_outro_widget:
+              action: add
+              slide: scoring_slide
+        duration: 3
+   story_05_outro_fail:
+      - time: 0
+        widgets:
+           story_05_outro_fail_widget:
+              action: add
+              slide: scoring_slide
+        duration: 3
+
+   story_06_outro_fail:
+      - time: 0
+        widgets:
+           story_06_outro_fail_widget:
+               action: add
+               slide: scoring_slide
+        duration: 3
+   story_06_outro:
+      - time: 0
+        widgets:
+           story_06_outro_widget:
+               action: add
+               slide: scoring_slide
+        duration: 3
