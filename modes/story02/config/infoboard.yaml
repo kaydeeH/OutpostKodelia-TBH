@@ -1,140 +1,143 @@
 #config_version=5
 
+variable_player:
+   timer_traj_timer_tick:
+     infoboard_mode02_traj_timer:
+        action: set
+        int: (ticks_remaining)
+   timer_traj_timer_stopped:
+     infoboard_mode02_traj_timer:
+        action: set
+        int: 0
 event_player:
    story_is_about_to_begin:
-     - mode_01_setintro_01
-     - mode_01_setintro_02
-     - mode_01_setintro_03
+     - mode_02_setintro_01
+     - mode_02_setintro_02
+     - mode_02_setintro_03
      - story_intro_complete|4s
-   mode_01_setintro_01:
+   mode_02_setintro_01:
      set_infoboard_line_text:
         linenbr: 1
-        text: "LOCATE THE CYGNUS"
+        text: "ESCAPE THE BLACK HOLE"
         pts: none
         secs: none
         cycle: "star"
         delayms: 25
-   mode_01_setintro_02:
+   mode_02_setintro_02:
      set_infoboard_line_text:
         linenbr: 2
-        text: "LOCK COORDINATES AT TOP LANES"
+        text: "HIT SPINNER THEN LIT LANE - 3X"
         pts: none
         secs: none
         cycle: "star"
         delayms: 25
-   mode_01_setintro_03:
+   mode_02_setintro_03:
      set_infoboard_line_text:
         linenbr: 3
-        text: "DOCK WITH CYGNUS AT THE SCOOP"
+        text: "ESCAPE BLACK HOLE VIA SCOOP"
         pts: none
         secs: none
         cycle: "star"
         delayms: 25
    story_intro_complete:
-     - mode_01_setinfo_01
-     - mode_01_setinfo_02
-     - mode_01_setinfo_03
-
-   mode_01_setinfo_01:
+     - mode_02_setinfo_01
+     - mode_02_setinfo_02
+     - mode_02_setinfo_03
+   mode_02_setinfo_01:
      set_infoboard_line_text:
         linenbr: 1
-        text: "LOCATE THE CYGNUS"
+        text: "ESCAPE THE BLACK HOLE"
         pts: none
         secs: none
         cycle: "instant"
         delayms: 0
-   player_modestat_1_scoring:
+   player_modestat_2_scoring:
      set_infoboard_line_text:
         linenbr: 1
-        text: "LOCATE THE CYGNUS"
-        pts: modestat_1_scoring
+        text: "ESCAPE THE BLACK HOLE"
+        pts: modestat_2_scoring
         secs: none
         cycle: "instant"
         delayms: 0
-   mode_01_setinfo_02:
+   mode_02_setinfo_02:
      set_infoboard_line_text:
         linenbr: 2
-        text: "TOP LANES LOCK COORDINATES"
+        text: "HIT SPINNER TO LIGHT TOP LANE"
         pts: none
         secs: none
         cycle: "instant"
         delayms: 0
-   mode_01_setinfo_03:
+   traj_set:
      set_infoboard_line_text:
         linenbr: 3
-        text: "Docking Value:"
-        pts: cygnus_completing_scoring_base
+        text: "TRAJECTORY LOCK TIME:"
+        pts: none
         secs: none
         cycle: "instant"
         delayms: 0
-   player_cygnus_completing_scoring_base:
+   mode_02_setinfo_03:
      set_infoboard_line_text:
         linenbr: 3
-        text: "Docking Value:"
-        pts: cygnus_completing_scoring_base
+        text: "TRAJECTORY LOCK TIME:"
+        pts: none
         secs: none
         cycle: "instant"
         delayms: 0
-   cygnus_lane_0_event:
+   player_infoboard_mode02_traj_timer:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "TRAJECTORY LOCK TIME:"
+        pts: none
+        secs: infoboard_mode02_traj_timer
+        cycle: "instant"
+        delayms: 0
+   debug_beyond_traj01:
      set_infoboard_line_text:
         linenbr: 2
-        text: "ALPHA COORDINATES LOCKED"
+        text: "LIT LANE SETS TRAJECTORY"
         pts: none
         secs: none
         cycle: "scroll"
         delayms: 25
-   cygnus_lane_1_event:
+   debug_beyond_traj02:
      set_infoboard_line_text:
         linenbr: 2
-        text: "BETA COORDINATES LOCKED"
+        text: "LIT LANE SETS TRAJECTORY"
         pts: none
         secs: none
         cycle: "scroll"
         delayms: 25
-   cygnus_lane_2_event:
+   debug_beyond_traj03:
      set_infoboard_line_text:
         linenbr: 2
-        text: "GAMMA COORDINATES LOCKED"
+        text: "LIT LANE SETS TRAJECTORY"
         pts: none
         secs: none
         cycle: "scroll"
         delayms: 25
-   cygnus_lane_3_event:
+   traj_time_out:
      set_infoboard_line_text:
         linenbr: 2
-        text: "DELTA COORDINATES LOCKED"
+        text: "HIT SPINNER TO LIGHT TOP LANE"
         pts: none
         secs: none
         cycle: "scroll"
         delayms: 25
-   cygnus_lane_4_event:
+   status_escape:
      set_infoboard_line_text:
         linenbr: 2
-        text: "EPSILON COORDINATES LOCKED"
+        text: "ESCAPE THE BLACK HOLE AT SCOOP"
         pts: none
         secs: none
         cycle: "scroll"
         delayms: 25
-# added 25ms * 36 delay below to insure lane notifications occur first
-   cygnus_located:
-     - cygnus_dock_prompt|900ms
-   cygnus_dock_prompt:
-     set_infoboard_line_text:
-        linenbr: 2
-        text: "CYGNUS DOCKING ENABLED"
-        pts: none
-        secs: none
-        cycle: "star"
-        delayms: 25
-     cygnus_scoop_prompt|3s:
+     trigger_infoboard_line_3:
         dmy: 0
-   cygnus_scoop_prompt:
+   trigger_infoboard_line_3:
      set_infoboard_line_text:
-        linenbr: 2
-        text: "DOCK WITH CYGNUS AT THE SCOOP"
+        linenbr: 3
+        text: "ESCAPE TIME REMAINING:"
         pts: none
         secs: none
-        cycle: "star"
-        delayms: 25
-     cygnus_dock_prompt|3s:
-        dmy: 0
+        cycle: "instant"
+        delayms: 0

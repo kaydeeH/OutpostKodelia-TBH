@@ -2,9 +2,7 @@
 
 config:
    - story02-scoring.yaml
-#   - ballsave.yaml
-
-#TODO Character collect -- could be completion, or reaching stabilization
+   - infoboard.yaml
 
 mode:
    start_events: ready_to_start_mode_2
@@ -31,6 +29,7 @@ queue_relay_player:
 event_player:
    mode_story02_started:
      - story_is_about_to_begin
+     - information_board_start
    in_mode_ball_save:
      - story_is_about_to_fail
    story_intro_complete:
@@ -39,6 +38,7 @@ event_player:
 #   shotScoopEscape_shotProfileScoopEscape_inactive_hit:
 #     - scoop_eject
    shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
+     - information_board_end
      - global_timer_pause
      - story_is_about_to_end
      - story02_is_about_to_end
@@ -98,10 +98,10 @@ random_event_player:
 
 #  Base intro / outro shows
 show_player:
-   story_is_about_to_begin:
-      story_02_intro:
-         events_when_completed: story_intro_complete
-         loops: 0
+#   story_is_about_to_begin:
+#      story_02_intro:
+#         events_when_completed: story_intro_complete
+#         loops: 0
    story_is_about_to_fail:
       story_02_fail_outro:
          events_when_completed: story_outro_fail_complete
@@ -279,9 +279,11 @@ timers:
          action: restart
        - event: traj_time_out
          action: stop
-       - event: global_timer_pause
+       - event: traj_set
          action: pause
-       - event: global_timer_unpause
+       - event: local_timer_pause
+         action: pause
+       - event: local_timer_unpause
          action: start
 
    scoop_timer:
@@ -293,9 +295,9 @@ timers:
      control_events:
        - event: enable_scoop_loop
          action: restart
-       - event: global_timer_pause
+       - event: local_timer_pause
          action: pause
-       - event: global_timer_unpause
+       - event: local_timer_unpause
          action: start
 
 widget_player:
