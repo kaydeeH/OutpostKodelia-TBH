@@ -6,7 +6,7 @@ widgets:
        image: mode_title_display_box
        anchor_x: left
        anchor_y: top
-       x: 169
+       x: 171
        y: 769
        z: 60
      - type: text
