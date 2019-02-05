@@ -6,8 +6,8 @@ widgets:
        image: mode_title_display_box
        anchor_x: left
        anchor_y: top
-       x: 13%
-       y: 99%
+       x: 169
+       y: 769
        z: 60
      - type: text
        text: 888888888888888888888888888888
