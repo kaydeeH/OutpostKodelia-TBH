@@ -19,6 +19,7 @@ class TextTypeIn(Scriptlet):
     def on_load(self):
         self.debug_log("text typer started!")
         self.machine.events.add_handler('set_text_to_cycle', self._set_text)
+        self.machine.events.add_handler('slide_video_created', self._clear_mach)
         self.machine.events.add_handler('slide_video_removed', self._clear_mach)
 
     def _clear_mach(self, **kwargs):

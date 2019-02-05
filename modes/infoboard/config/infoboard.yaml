@@ -1,0 +1,25 @@
+#config_version=5
+
+config:
+   - widgets.yaml
+
+# EVENTS to set values for infoboard_line_1_text, infoboard_line_2_text, infoboard_line_3_text
+# set_infoboard_line_text -   linenbr
+#                             text - literal text or a single player variable enclosed in ()
+#                             pts - this should be a player variable or "none"
+#                             secs - this should be a player variable or "none"
+#                             cycle (instant, scroll, star)
+#                             delayms
+
+mode:
+   start_events: information_board_start
+   stop_events: information_board_end
+   priority: 3000
+
+widget_player:
+   mode_infoboard_started:
+      mode_title_display_box:
+         slide: scoring_slide
+   infoboard_remove:
+      mode_title_display_box:
+         action: remove

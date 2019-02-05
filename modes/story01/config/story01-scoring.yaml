@@ -1,6 +1,6 @@
 #config_version=5
 variable_player:
-  story_is_about_to_begin:
+  story_intro_complete:
     cygnus_lane_count:
       action: set
       int: 0

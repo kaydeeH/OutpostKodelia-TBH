@@ -7,8 +7,8 @@
 
 config:
   - story01-scoring.yaml
-#  - ballsave.yaml
   - notification.yaml
+  - infoboard.yaml
 
 mode:
    start_events: ready_to_start_mode_1
@@ -37,6 +37,8 @@ queue_relay_player:
 event_player:
    mode_story01_started:
      - story_is_about_to_begin
+# TESTING ONLY
+     - information_board_start
    story_intro_complete:
      - scoop_eject
      - start_cygnus_timer
@@ -62,6 +64,8 @@ event_player:
    shotScoopStory01_shotProfileScoopStory01_scoopActive_hit:
      - cygnus_found
      - global_timer_pause
+# TESTING ONLY
+     - information_board_end
 #   shotScoopStory01_ShotProfileScoopStory01_scoopInactive_hit:
 #     - scoop_eject
 # Character Collect
@@ -89,10 +93,10 @@ event_player:
 
 #  Base intro / outro shows
 show_player:
-   story_is_about_to_begin:
-      story_01_intro:
-         events_when_completed: story_intro_complete
-         loops: 0
+#   story_is_about_to_begin:
+#      story_01_intro:
+#         events_when_completed: story_intro_complete
+#         loops: 0
    story_is_about_to_fail:
       story_01_outro_failed:
          events_when_completed: story_outro_complete_failed
@@ -154,50 +158,63 @@ shows:
        duration: 3
    story_01_outro:
      - time: 0
-       slides: story_01_outro_slide
+       widgets:
+          cygnus_located_outro:
+             action: add
+             slide: scoring_slide
        duration: 3
+#     - time: 0
+#       slides: story_01_outro_slide
+#       duration: 3
    story_01_outro_failed:
-     - time: 0
-       slides: story_01_outro_failed_slide
-       duration: 3
+      - time: 0
+        widgets:
+          cygnus_failed_outro:
+             action: add
+             slide: scoring_slide
+        duration: 3
+#     - time: 0
+#       slides: story_01_outro_failed_slide
+#       duration: 3
 
-slides:
-   story_01_intro_slide:
-    widgets:
-      - type: text
-        text: LOCATE THE CYGNUS
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: Lock in coordinates by lighting all top lanes then scoop out
-        y: 40%
-        color: red
-        font_size: 50
-   story_01_outro_slide:
-    widgets:
-      - type: text
-        text: "CYGNUS LOCATED"
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "Time Taken: (cygnus_seconds) seconds"
-        y: 40%
-        color: red
-        font_size: 50
-   story_01_outro_failed_slide:
-    widgets:
-      - type: text
-        text: "CYGNUS NOT LOCATED"
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "MISSION FAILURE"
-        y: 40%
-        color: red
-        font_size: 50
+# ** ALL OF THESE ARE OBSOLETE NOW
+#slides:
+#   story_01_intro_slide:
+#    widgets:
+#      - type: text
+#        text: LOCATE THE CYGNUS
+#        color: red
+#        font_size: 100
+#        font_name: ocr-a-tribute-bold
+#      - type: text
+#        text: Lock in coordinates by lighting all top lanes then scoop out
+#        y: 40%
+#        color: red
+#        font_size: 50
+#   story_01_outro_slide:
+#    widgets:
+#      - type: text
+#        text: "CYGNUS LOCATED"
+#        color: red
+#        font_size: 100
+#        font_name: ocr-a-tribute-bold
+#      - type: text
+#        text: "Time Taken: (cygnus_seconds) seconds"
+#        y: 40%
+#        color: red
+#        font_size: 50
+#   story_01_outro_failed_slide:
+#    widgets:
+#      - type: text
+#        text: "CYGNUS NOT LOCATED"
+#        color: red
+#        font_size: 100
+#        font_name: ocr-a-tribute-bold
+#      - type: text
+#        text: "MISSION FAILURE"
+#        y: 40%
+#        color: red
+#        font_size: 50
 
 # The below is mode specific data
 
@@ -304,40 +321,72 @@ timers:
        action: start
 
 
-widget_player:
-   story_intro_complete:
-      cygnus_searching:
-         slide: scoring_slide
-      cygnus_hurry_up:
-         slide: scoring_slide
-   cygnus_located:
-      cygnus_searching:
-         action: remove
-      cygnus_found:
-         slide: scoring_slide
-   story_is_about_to_end:
-      cygnus_searching:
-         action: remove
-      cygnus_found:
-         action: remove
-      cygnus_hurry_up:
-         action: remove
+#widget_player:
+#   story_intro_complete:
+#      cygnus_searching:
+#         slide: scoring_slide
+##      cygnus_hurry_up:
+##         slide: scoring_slide
+##      mode_title_display_box:
+##         slide: scoring_slide
+#   cygnus_located:
+#      cygnus_searching:
+#         action: remove
+#      cygnus_found:
+#         slide: scoring_slide
+#   story_is_about_to_end:
+#      cygnus_searching:
+#         action: remove
+#      cygnus_found:
+#         action: remove
+#      cygnus_hurry_up:
+#         action: remove
 
 widgets:
-   cygnus_searching:
+#   cygnus_searching:
+#     - type: text
+#       text: "Locate The Cygnus by Lighting Top Lanes"
+#       y: 80%
+#   cygnus_found:
+#     - type: text
+#       text: "Dock with the Cygnus by Scooping Out"
+#       y: 80%
+#   cygnus_hurry_up:
+#     - type: text
+#       text: "Cygnus Docking Value: (cygnus_completing_scoring_base)"
+   cygnus_located_outro:
      - type: text
-       text: "Locate The Cygnus by Lighting Top Lanes"
-       y: 80%
-   cygnus_found:
+       text: "CYGNUS LOCATED"
+       color: red
+       font_size: 100
+       font_name: ocr-a-tribute-bold
+       opacity: 1
+       z: 100
      - type: text
-       text: "Dock with the Cygnus by Scooping Out"
-       y: 80%
-   cygnus_hurry_up:
+       text: "Time Taken: (cygnus_seconds) seconds"
+       y: 40%
+       color: red
+       opacity: 1
+       z: 100
+   cygnus_failed_outro:
      - type: text
-       text: "Cygnus Docking Value: (cygnus_completing_scoring_base)"
+       text: "CYGNUS NOT LOCATED"
+       color: red
+       font_size: 100
+       font_name: ocr-a-tribute-bold
+       opacity: 1
+       z: 100
+     - type: text
+       text: "MISSION FAILURE"
+       y: 40%
+       color: red
+       font_size: 50
+       opacity: 1
+       z: 100
 
 sound_player:
     mode_story01_started:
+#    story_intro_complete:
       cygnusfloating:
           action: play
           loops: -1

@@ -312,6 +312,7 @@ shows:
         char_vincent:
          slide: scoring_slide
          action: add
+         priority: 3000
        duration: 2
   char_bob_collect:
      - time: 0
@@ -321,20 +322,12 @@ shows:
          action: add
        duration: 2
 
-#widget_styles:
-#   char_collect_style:
-#        color: red
-#        font_size: 90
-#        font_name: ocr-a-tribute-bold
-#        opacity: .9
-#        z: 15
-
 widgets:
    char_dan:
       - type: text
         text: DAN COLLECTED
         style:
-          - char_collect_style
+          - char_collect_style_bottom
       - type: image
         image: dan
         anchor_x: center
@@ -346,20 +339,20 @@ widgets:
           add_to_slide:
             - property: x
               value: 17%
-              duration: 2s
+              duration: 1.5s
             - property: y
               value: 84%
-              duration: 2s
+              duration: 1.5s
               timing: with_previous
             - property: scale
               value: 1
               timing: with_previous
-              duration: 2s
+              duration: 1.5s
    char_charlie:
       - type: text
         text: CHARLIE COLLECTED
         style:
-          - char_collect_style
+          - char_collect_style_bottom
       - type: image
         image: charlie
         anchor_x: center
@@ -371,20 +364,20 @@ widgets:
           add_to_slide:
             - property: x
               value: 25%
-              duration: 2s
+              duration: 1.5s
             - property: y
               value: 84%
-              duration: 2s
+              duration: 1.5s
               timing: with_previous
             - property: scale
               value: 1
               timing: with_previous
-              duration: 2s
+              duration: 1.5s
    char_harry:
       - type: text
         text: HARRY COLLECTED
         style:
-          - char_collect_style
+          - char_collect_style_bottom
       - type: image
         image: harry
         anchor_x: center
@@ -396,20 +389,20 @@ widgets:
           add_to_slide:
             - property: x
               value: 33%
-              duration: 2s
+              duration: 1.5s
             - property: y
               value: 84%
-              duration: 2s
+              duration: 1.5s
               timing: with_previous
             - property: scale
               value: 1
               timing: with_previous
-              duration: 2s
+              duration: 1.5s
    char_kate:
       - type: text
         text: KATE COLLECTED
         style:
-          - char_collect_style
+          - char_collect_style_bottom
       - type: image
         image: kate
         anchor_x: center
@@ -421,20 +414,20 @@ widgets:
           add_to_slide:
             - property: x
               value: 41%
-              duration: 2s
+              duration: 1.5s
             - property: y
               value: 84%
-              duration: 2s
+              duration: 1.5s
               timing: with_previous
             - property: scale
               value: 1
               timing: with_previous
-              duration: 2s
+              duration: 1.5s
    char_alex:
       - type: text
         text: ALEX COLLECTED
         style:
-          - char_collect_style
+          - char_collect_style_bottom
       - type: image
         image: alex
         anchor_x: center
@@ -446,20 +439,20 @@ widgets:
           add_to_slide:
             - property: x
               value: 49%
-              duration: 2s
+              duration: 1.5s
             - property: y
               value: 84%
-              duration: 2s
+              duration: 1.5s
               timing: with_previous
             - property: scale
               value: 1
               timing: with_previous
-              duration: 2s
+              duration: 1.5s
    char_hans:
       - type: text
         text: HANS COLLECTED
         style:
-          - char_collect_style
+          - char_collect_style_bottom
       - type: image
         image: hanz
         anchor_x: center
@@ -471,20 +464,20 @@ widgets:
           add_to_slide:
             - property: x
               value: 57%
-              duration: 2s
+              duration: 1.5s
             - property: y
               value: 84%
-              duration: 2s
+              duration: 1.5s
               timing: with_previous
             - property: scale
               value: 1
               timing: with_previous
-              duration: 2s
+              duration: 1.5s
    char_vincent:
       - type: text
         text: VINCENT COLLECTED
         style:
-          - char_collect_style
+          - char_collect_style_bottom
       - type: image
         image: vincent
         anchor_x: center
@@ -496,20 +489,20 @@ widgets:
           add_to_slide:
             - property: x
               value: 65%
-              duration: 2s
+              duration: 1.5s
             - property: y
               value: 84%
-              duration: 2s
+              duration: 1.5s
               timing: with_previous
             - property: scale
               value: 1
               timing: with_previous
-              duration: 2s
+              duration: 1.5s
    char_bob:
       - type: text
         text: BOB COLLECTED
         style:
-          - char_collect_style
+          - char_collect_style_bottom
       - type: image
         image: bob
         anchor_x: center
@@ -521,13 +514,13 @@ widgets:
           add_to_slide:
             - property: x
               value: 73%
-              duration: 2s
+              duration: 1.5s
             - property: y
               value: 84%
-              duration: 2s
+              duration: 1.5s
               timing: with_previous
             - property: scale
               value: 1
               timing: with_previous
-              duration: 2s
+              duration: 1.5s
 

@@ -501,7 +501,7 @@ slides:
         x: 17%
         y: 84%
         z: 10
-        opacity: .5
+        opacity: .25
       - type: image
         image: charlieoff
         anchor_x: center
@@ -509,7 +509,7 @@ slides:
         x: 25%
         y: 84%
         z: 10
-        opacity: .5
+        opacity: .25
       - type: image
         image: harryoff
         anchor_x: center
@@ -517,7 +517,7 @@ slides:
         x: 33%
         y: 84%
         z: 10
-        opacity: .5
+        opacity: .25
       - type: image
         image: kateoff
         anchor_x: center
@@ -525,7 +525,7 @@ slides:
         x: 41%
         y: 84%
         z: 10
-        opacity: .5
+        opacity: .25
       - type: image
         image: alexoff
         anchor_x: center
@@ -533,7 +533,7 @@ slides:
         x: 49%
         y: 84%
         z: 10
-        opacity: .5
+        opacity: .25
       - type: image
         image: hanzoff
         anchor_x: center
@@ -541,7 +541,7 @@ slides:
         x: 57%
         y: 84%
         z: 10
-        opacity: .5
+        opacity: .25
       - type: image
         image: vincentoff
         anchor_x: center
@@ -549,7 +549,7 @@ slides:
         x: 65%
         y: 84%
         z: 10
-        opacity: .7
+        opacity: .35
       - type: image
         image: boboff
         anchor_x: center
@@ -557,7 +557,7 @@ slides:
         x: 73%
         y: 84%
         z: 10
-        opacity: .7
+        opacity: .35
 widget_player:
   # Handle the creation of the single player display
   player_added{num==1}:

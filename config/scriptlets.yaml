@@ -17,3 +17,4 @@ scriptlets:
   - text_type_in.TextTypeIn
   - light_timers_scriptlet.LightTimers
   - wizard_intro.wizardIntro
+  - infobox.infobox

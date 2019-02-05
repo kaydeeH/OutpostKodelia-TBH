@@ -4,12 +4,22 @@
 # *** This file is included in config.yaml so all widget_styles to be used system-wide should be placed in this file only
 
 widget_styles:
-   char_collect_style:
+   char_collect_style_top:
         color: red
-        font_size: 90
+        font_size: 70
         font_name: ocr-a-tribute-bold
         opacity: .9
         z: 15
+        y: 72%
+        number_grouping: true
+   char_collect_style_bottom:
+        color: red
+        font_size: 70
+        font_name: ocr-a-tribute-bold
+        opacity: .9
+        z: 15
+        y: 25%
+        number_grouping: true
    high_score_mode_style:
         font_name: ocr-a-tribute-bold
         font_size: 50
@@ -97,3 +107,65 @@ widget_styles:
         z: 15
         x: center
         y: 75%
+
+# MODE INFOBOARD STYLES
+   infoboard_line_1_background:
+        font_size: 48
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: left
+        anchor_y: top
+        x: 19%
+        y: 97%
+        z: 61
+   infoboard_line_1_data:
+        number_grouping: true
+        min_digits: 2
+        font_size: 48
+        font_name: digital-7-mono
+        color: AC0000
+        anchor_x: left
+        anchor_y: top
+        x: 19%
+        y: 97%
+        z: 70
+   infoboard_line_2_background:
+        font_size: 48
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: left
+        anchor_y: top
+        x: 19%
+        y: 92%
+        z: 61
+   infoboard_line_2_data:
+        number_grouping: true
+        min_digits: 2
+        font_size: 48
+        font_name: digital-7-mono
+        color: AC0000
+        anchor_x: left
+        anchor_y: top
+        x: 19%
+        y: 92%
+        z: 70
+   infoboard_line_3_background:
+        font_size: 48
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: left
+        anchor_y: top
+        x: 19%
+        y: 87%
+        z: 61
+   infoboard_line_3_data:
+        number_grouping: true
+        min_digits: 2
+        font_size: 48
+        font_name: digital-7-mono
+        color: AC0000
+        anchor_x: left
+        anchor_y: top
+        x: 19%
+        y: 87%
+        z: 70

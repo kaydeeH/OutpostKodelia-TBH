@@ -107,8 +107,8 @@ variable_player:
         int: 0
    increase_sacrifice_value:
      outlane_sacrifice_value:
-        action: add
-        int: current_player.outlane_sacrifice_value
+        action: set
+        int: current_player.outlane_sacrifice_value * 2
    set_sacrifice_off:
      sacrifice_is_active:
         action: set
@@ -305,37 +305,56 @@ slides:
 widgets:
    rescue_enabled:
       - type: text
-        text: "RESCUE ENABLED\n(outlane_rescue_value)"
+        text: "RESCUE ENABLED"
         style:
-          - char_collect_style
-        number_grouping: true
+          - char_collect_style_top
+      - type: text
+        text: "(outlane_rescue_value)"
+        style:
+          - char_collect_style_bottom
    rescue_increased:
       - type: text
-        text: "RESCUE VALUE\n(outlane_rescue_value)"
+        text: "RESCUE VALUE"
         style:
-          - char_collect_style
-        number_grouping: true
+          - char_collect_style_top
+      - type: text
+        text: "(outlane_rescue_value)"
+        style:
+          - char_collect_style_bottom
    rescue_used:
       - type: text
-        text: "BALL RESCUED\nKEEP SHOOTING\n(outlane_rescue_value)"
+        text: "BALL RESCUED\nKEEP SHOOTING\n"
         style:
-          - char_collect_style
-        number_grouping: true
+          - char_collect_style_top
+      - type: text
+        text: "(outlane_rescue_value)"
+        style:
+          - char_collect_style_bottom
    sacrifice_enabled:
       - type: text
-        text: "SACRIFICE ENABLED\n(outlane_sacrifice_value)"
+        text: "SACRIFICE ENABLED"
         style:
-          - char_collect_style
-        number_grouping: true
+          - char_collect_style_top
+      - type: text
+        text: "(outlane_sacrifice_value)"
+        style:
+          - char_collect_style_bottom
    sacrifice_increased:
       - type: text
-        text: "SACRIFICE VALUE\n(outlane_sacrifice_value)"
+        text: "SACRIFICE VALUE"
         style:
-          - char_collect_style
-        number_grouping: true
+          - char_collect_style_top
+      - type: text
+        text: "(outlane_sacrifice_value)"
+        style:
+          - char_collect_style_bottom
    sacrifice_used:
       - type: text
-        text: "SACRIFICE\n(outlane_rescue_value)"
+        text: "SACRIFICE"
         style:
-          - char_collect_style
+          - char_collect_style_top
         number_grouping: true
+      - type: text
+        text: "(outlane_rescue_value)"
+        style:
+          - char_collect_style_bottom
