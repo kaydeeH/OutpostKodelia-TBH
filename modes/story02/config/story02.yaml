@@ -204,74 +204,28 @@ show_player:
 #    score: 500000
 
 shows:
-   story_02_intro:
-     - time: 0
-       slides: story_02_intro_slide
-       duration: 3
    story_02_fail_outro:
      - time: 0
-       slides: story_02_outro_fail_slide
+       widgets:
+          story_02_outro_fail_widget:
+             action: add
+             slide: scoring_slide
        duration: 3
    story_02_outro:
      - time: 0
-       slides: story_02_outro_slide
+       widgets:
+          story_02_outro_widget:
+             action: add
+             slide: scoring_slide
        duration: 3
-
-slides:
-   story_02_intro_slide:
-    widgets:
-      - type: text
-        text: Escape The Black Hole
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: Hit the Spinner
-        y: 40%
-        color: red
-        font_size: 50
-      - type: text
-        text: Then hit the lit lane (3x)
-        y: 30%
-        color: red
-        font_size: 50
-      - type: text
-        text: Then ESCAPE the black hole out the scoop!
-        y: 20%
-        color: red
-        font_size: 50
-   story_02_outro_fail_slide:
-    widgets:
-      - type: text
-        text: YOU FAILED TO ESCAPE THE BLACK HOLE
-        color: red
-        font_size: 60
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: You are *NOT* super duper neat
-        y: 40%
-        color: red
-        font_size: 50
-   story_02_outro_slide:
-    widgets:
-      - type: text
-        text: YOU HAVE ESCAPED THE BLACK HOLE
-        color: red
-        font_size: 80
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: You are super duper neat
-        y: 40%
-        color: red
-        font_size: 50
 
 # The below is mode specific data
 
 timers:
    traj_timer:
-     start_value: 5
+     start_value: 50
      end_value: 0
-     tick_interval: 1s
+     tick_interval: .1s
      direction: down
      start_running: no
      control_events:
@@ -287,9 +241,9 @@ timers:
          action: start
 
    scoop_timer:
-     start_value: 15
+     start_value: 150
      end_value: 0
-     tick_interval: 1s
+     tick_interval: .1s
      direction: down
      start_running: no
      control_events:
@@ -299,17 +253,6 @@ timers:
          action: pause
        - event: local_timer_unpause
          action: start
-
-widget_player:
-   status_escape:
-      yt_escape_widget_02:
-         slide: scoring_slide
-   scoop_off:
-      yt_escape_widget_02:
-         action: remove
-   story02_ended:
-      yt_engine_widget_02:
-         action: remove
 
 shots:
    lanetraj0:
@@ -435,11 +378,28 @@ state_machines:
 
 
 widgets:
-   yt_escape_widget_02:
-     - type: text
-       font_size: 30
-       text: " -- ENGINES ENGAGED ** ESCAPE THE BLACK HOLE --"
-       y: 80%
+   story_02_outro_fail_widget:
+      - type: text
+        text: YOU FAILED TO ESCAPE THE BLACK HOLE
+        color: red
+        font_size: 60
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: You are *NOT* super duper neat
+        y: 40%
+        color: red
+        font_size: 50
+   story_02_outro_widget:
+      - type: text
+        text: YOU HAVE ESCAPED THE BLACK HOLE
+        color: red
+        font_size: 80
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: You are super duper neat
+        y: 40%
+        color: red
+        font_size: 50
 
 sound_player:
     mode_story02_started:
