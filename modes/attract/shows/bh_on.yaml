@@ -4,21 +4,100 @@
   lights:
     l_bb_bh_a1:
       color: FF
+      fade: 1s
     l_bb_bh_a2:
       color: FF
+      fade: 1s
     l_bb_bh_a3:
       color: FF
+      fade: 1s
     l_bb_bh_a4:
       color: FF
+      fade: 1s
     l_bb_bh_b1:
-      color: FF
+      color: 55
+      fade: 1s
     l_bb_bh_b2:
-      color: FF
+      color: 55
+      fade: 1s
     l_bb_bh_b3:
-      color: FF
+      color: 55
+      fade: 1s
     l_bb_bh_b4:
-      color: FF
+      color: 55
+      fade: 1s
     l_bb_bh_c1:
       color: FF
+      fade: 1s
     l_bb_bh_c2:
       color: FF
+      fade: 1s
+    l_bb_bh_c3:
+      color: FF
+      fade: 1s
+    l_bb_bh_c4:
+      color: FF
+      fade: 1s
+    l_bb_bh_d1:
+      color: 55
+      fade: 1s
+    l_bb_bh_d2:
+      color: 55
+      fade: 1s
+    l_bb_bh_d3:
+      color: 55
+      fade: 1s
+    l_bb_bh_d4:
+      color: 55
+      fade: 1s
+
+- duration: 1
+  lights:
+    l_bb_bh_a1:
+      color: 55
+      fade: 1s
+    l_bb_bh_a2:
+      color: 55
+      fade: 1s
+    l_bb_bh_a3:
+      color: 55
+      fade: 1s
+    l_bb_bh_a4:
+      color: 55
+      fade: 1s
+    l_bb_bh_b1:
+      color: FF
+      fade: 1s
+    l_bb_bh_b2:
+      color: FF
+      fade: 1s
+    l_bb_bh_b3:
+      color: FF
+      fade: 1s
+    l_bb_bh_b4:
+      color: FF
+      fade: 1s
+    l_bb_bh_c1:
+      color: 55
+      fade: 1s
+    l_bb_bh_c2:
+      color: 55
+      fade: 1s
+    l_bb_bh_c3:
+      color: 55
+      fade: 1s
+    l_bb_bh_c4:
+      color: 55
+      fade: 1s
+    l_bb_bh_d1:
+      color: FF
+      fade: 1s
+    l_bb_bh_d2:
+      color: FF
+      fade: 1s
+    l_bb_bh_d3:
+      color: FF
+      fade: 1s
+    l_bb_bh_d4:
+      color: FF
+      fade: 1s
