@@ -28,8 +28,8 @@ widgets:
 #        style:
 #           - mode_outro_video
 # width/height values don't seem to work in widget styles
-        width: 400
-        height: 300
+#        width: 400
+#        height: 300
    cygnus_failed_outro:
       - type: text
         text: "CYGNUS NOT LOCATED"
