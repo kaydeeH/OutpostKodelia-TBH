@@ -591,6 +591,116 @@ lights:
 #-----------------------------------------------------------------------
 #LED BOARD 4 (Backbox + Start Button)
 #-----------------------------------------------------------------------
+#J5 00..11
+  l_bb_bh_a1:
+    channels:
+      white:
+        number: 4-0
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_a2:
+    channels:
+      white:
+        number: 4-1
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_a3:
+    channels:
+      white:
+        number: 4-2
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_a4:
+    channels:
+      white:
+        number: 4-3
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_b1:
+    channels:
+      white:
+        number: 4-4
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_b2:
+    channels:
+      white:
+        number: 4-5
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_b3:
+    channels:
+      white:
+        number: 4-6
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_b4:
+    channels:
+      white:
+        number: 4-7
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_c1:
+    channels:
+      white:
+        number: 4-8
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_c2:
+    channels:
+      white:
+        number: 4-9
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_c3:
+    channels:
+      white:
+        number: 4-10
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_bh_c4:
+    channels:
+      white:
+        number: 4-11
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
 #J8 72..83
   l_startButton:
     channels:
