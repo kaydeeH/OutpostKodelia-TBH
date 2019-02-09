@@ -4,76 +4,66 @@
 #NOTE -- All Widget Styles must be created in main/config/widget_styles.yaml - they don't seem to work at lower levels
 
 widgets:
+#  MODE EXIT BASE
+   mode_exit_container:
+      - type: image
+        image: mode_title_exit_box
+        anchor_x: center
+        anchor_y: center
+        y: 52.5%
+        z: 49
+
 #  MODE 01 -- LOCATE THE CYGNUS
    cygnus_located_outro:
       - type: text
         text: "CYGNUS LOCATED"
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-        opacity: 1
-        z: 100
+        style:
+           - mode_outro_title
       - type: text
         text: "Time Taken: (cygnus_seconds) seconds"
-        y: 40%
-        color: red
-        opacity: 1
-        z: 100
+        style:
+           - mode_outro_data_line_1
+#      - type: video
+#        video: test
+#        style:
+#           - mode_outro_video
+# width/height values don't seem to work in widget styles
+        width: 400
+        height: 300
    cygnus_failed_outro:
       - type: text
         text: "CYGNUS NOT LOCATED"
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-        opacity: 1
-        z: 100
+        style:
+           - mode_outro_title
       - type: text
         text: "MISSION FAILURE"
-        y: 40%
-        color: red
-        font_size: 50
-        opacity: 1
-        z: 100
+        style:
+           - mode_outro_data_line_1
 #  MODE 02 -- ESCAPE THE BLACK HOLE
    story_02_outro_fail_widget:
       - type: text
         text: ESCAPE THE BLACK HOLE FAILED
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        opacity: 1
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: You are *NOT* super duper neat
-        y: 40%
-        color: red
-        font_size: 50
-        opacity: 1
-        z: 50
+        style:
+           - mode_outro_data_line_1
    story_02_outro_widget:
       - type: text
         text: BLACK HOLE ESACPED
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        opacity: 1
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: (mode2_final_score_display)
-        y: 40%
-        color: red
-        font_size: 50
-        opacity: 1
-        number_grouping: true
-        z: 50
+        style:
+           - mode_outro_data_line_1
 #  MODE 03 -- SHOOTING GALLERY
    story_03_outro_fail_widget:
       - type: text
         text: SHOOTING GALLERY FAILED
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: "If one dances, one MUST pay the piper."
         y: 30%
@@ -82,101 +72,74 @@ widgets:
    story_03_outro_widget:
       - type: text
         text: SHOOTING GALLERY DONE
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: "Meet me in parts storage..."
-        y: 40%
-        font_size: 50
-        z: 50
+        style:
+           - mode_outro_data_line_1
       - type: text
         text: "Targets Hit: (gallery_targets_hit)"
-        y: 30%
-        font_size: 50
-        z: 50
+        style:
+           - mode_outro_data_line_2
 #  MODE 04 -- METEOR STRIKE
    story_04_outro_fail_widget:
       - type: text
         text: METEOR STRIKE FAILED
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: You are sent home in a space box
-        y: 40%
-        color: red
-        font_size: 50
-        z: 50
+        style:
+           - mode_outro_data_line_1
    story_04_outro_widget:
       - type: text
         text: METEOR STRIKE PASSED
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: "Meteor Scoring: (meteor_accum)"
-        y: 40%
-        color: red
-        font_size: 50
-        z: 50
-        number_grouping: true
+        style:
+           - mode_outro_data_line_1
 #  MODE 05 -- CORRIDOR BATTLE
    story_05_outro_widget:
       - type: text
         text: CORRIDOR BATTLE ENDED
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: "Remaining Time (corridor_seconds)s"
-        y: 40%
-        font_size: 50
+        style:
+           - mode_outro_data_line_1
       - type: text
         text: "Bonus for remaining time: (corridor_bonus)"
-        y: 30%
-        font_size: 50
-        z: 50
+        style:
+           - mode_outro_data_line_2
    story_05_outro_fail_widget:
       - type: text
         text: CORRIDOR BATTLE LOST
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: "You are bad and should feel bad."
-        y: 40%
-        font_size: 50
-        z: 50
+        style:
+           - mode_outro_data_line_1
 #  MODE 06 -- DAVID VS GOLIATH
    story_06_outro_fail_widget:
       - type: text
         text: Goliath defeats David
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: Only this time, David is overmatched...
-        y: 40%
-        color: red
-        font_size: 50
-        z: 50
+        style:
+           - mode_outro_data_line_1
    story_06_outro_widget:
       - type: text
         text: David defeats Goliath!
-        color: red
-        font_size: 50
-        font_name: ocr-a-tribute-bold
-        z: 50
+        style:
+           - mode_outro_title
       - type: text
         text: "The bigger they are, the harder they fall. [Time taken:(battletime)s]"
-        y: 40%
-        color: red
-        font_size: 50
-        z: 50
+        style:
+           - mode_outro_data_line_1

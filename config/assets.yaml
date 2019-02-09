@@ -137,6 +137,8 @@ images:
        file: bob-off.png
     tbh-slide-template:
        file: TBH-SlideTemplate.png
-# Experimental Assets
     mode_title_display_box:
        file: mode-title-display-box.png
+# Experimental Assets
+    mode_title_exit_box:
+       file: mode-exit-display-box.jpg

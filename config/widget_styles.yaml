@@ -169,3 +169,42 @@ widget_styles:
         x: 14.6%
         y: 86.8%
         z: 70
+
+# MODE 1-6 OUTRO STYLES
+   mode_outro_title:
+        color: red
+        font_size: 40
+        anchor_x: left
+        anchor_y: top
+        font_name: ocr-a-tribute-bold
+        opacity: 1
+        x: 16%
+        y: 71%
+        z: 50
+   mode_outro_data_line_1:
+        x: 16%
+        y: 66%
+        anchor_x: left
+        anchor_y: top
+        color: red
+        opacity: 1
+        z: 50
+        number_grouping: true
+   mode_outro_data_line_2:
+        x: 16%
+        y: 62%
+        anchor_x: left
+        anchor_y: top
+        color: red
+        opacity: 1
+        z: 50
+        number_grouping: true
+   mode_outro_video:
+        volume: 0.5
+        width: 400
+        height: 300
+        z: 51
+        anchor_x: left
+        anchor_y: top
+        x: 50%
+        y: 72%
