@@ -201,8 +201,8 @@ widget_styles:
         number_grouping: true
    mode_outro_video:
         volume: 0.5
-        width: 400
-        height: 300
+#        width: 400
+#        height: 300
         z: 51
         anchor_x: left
         anchor_y: top
