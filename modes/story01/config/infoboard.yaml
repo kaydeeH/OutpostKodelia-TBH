@@ -30,7 +30,6 @@ event_player:
         secs: none
         cycle: "star"
         delayms: 25
-
    story_intro_complete:
      - mode_01_setinfo_01
      - mode_01_setinfo_02
@@ -116,9 +115,9 @@ event_player:
         secs: none
         cycle: "scroll"
         delayms: 25
-# added 25ms * 30 delay below to insure lane notifications occur first
+# added 25ms * 36 delay below to insure lane notifications occur first
    cygnus_located:
-     - cygnus_dock_prompt|750ms
+     - cygnus_dock_prompt|900ms
    cygnus_dock_prompt:
      set_infoboard_line_text:
         linenbr: 2

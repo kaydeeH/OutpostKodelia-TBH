@@ -46,14 +46,14 @@ class infobox(Scriptlet):
 
         try:
             if infobox.in_pts >= 0:
-                newtext = newtext + (" " * (30 - len(newtext) - len('{:,}'.format(infobox.in_pts)))) + '{:,}'.format(
+                newtext = newtext + (" " * (36 - len(newtext) - len('{:,}'.format(infobox.in_pts)))) + '{:,}'.format(
                     infobox.in_pts)
         except:
             newtext = newtext
 
         try:
             if infobox.in_secs >= 0:
-                newtext = newtext + (" " * (30 - len(newtext) - len('{:.2}'.format(infobox.in_secs)))) + '{:.2}'.format(
+                newtext = newtext + (" " * (36 - len(newtext) - len('{:.2f}'.format(infobox.in_secs)))) + '{:.2f}'.format(
                     infobox.in_secs)
         except:
             newtext = newtext
@@ -76,15 +76,15 @@ class infobox(Scriptlet):
                 oldtext = self.machine.game.player.infoboard_line_3_text
 
             try:
-               oldtext = oldtext + (" " * (30 - len(oldtext)))
+               oldtext = oldtext + (" " * (36 - len(oldtext)))
             except:
                oldtext = "                              "
 
-            newtext = newtext + (" " * (30 - len(newtext)))
+            newtext = newtext + (" " * (36 - len(newtext)))
             eventtext = ""
 
-            for x in range(0, 31):
-                eventtext = oldtext[x:30] + newtext[0:x]
+            for x in range(0, 37):
+                eventtext = oldtext[x:36] + newtext[0:x]
                 DelayManager(self.machine.delayRegistry).add(callback=self._set_text_line,
                                                              ms=infobox.in_delayms * (x + 1),
                                                              eventname="update_info_box_line",
@@ -100,20 +100,20 @@ class infobox(Scriptlet):
                 oldtext = self.machine.game.player.infoboard_line_3_text
 
             try:
-               oldtext = oldtext + (" " * (30 - len(oldtext)))
+               oldtext = oldtext + (" " * (36 - len(oldtext)))
             except:
                oldtext = "                              "
 
-            newtext = newtext + (" " * (30 - len(newtext)))
+            newtext = newtext + (" " * (36 - len(newtext)))
             eventtext = ""
-            for x in range(0, 30):
-                eventtext = newtext[0:x] + "*" + oldtext[x+1:30]
+            for x in range(0, 36):
+                eventtext = newtext[0:x] + "*" + oldtext[x+1:36]
                 DelayManager(self.machine.delayRegistry).add(callback=self._set_text_line,
                                                              ms=infobox.in_delayms * (1 + (x * 2)),
                                                              eventname="update_info_box_line",
                                                              line=infobox.in_line_number,
                                                              newtext=eventtext)
-                eventtext = newtext[0:x+1] + oldtext[x+1:30]
+                eventtext = newtext[0:x+1] + oldtext[x+1:36]
                 DelayManager(self.machine.delayRegistry).add(callback=self._set_text_line,
                                                              ms=infobox.in_delayms * (2 + (x * 2)),
                                                              eventname="update_info_box_line",

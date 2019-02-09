@@ -2,9 +2,7 @@
 
 config:
    - story02-scoring.yaml
-#   - ballsave.yaml
-
-#TODO Character collect -- could be completion, or reaching stabilization
+   - infoboard.yaml
 
 mode:
    start_events: ready_to_start_mode_2
@@ -31,6 +29,7 @@ queue_relay_player:
 event_player:
    mode_story02_started:
      - story_is_about_to_begin
+     - information_board_start
    in_mode_ball_save:
      - story_is_about_to_fail
    story_intro_complete:
@@ -39,6 +38,7 @@ event_player:
 #   shotScoopEscape_shotProfileScoopEscape_inactive_hit:
 #     - scoop_eject
    shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
+     - information_board_end
      - global_timer_pause
      - story_is_about_to_end
      - story02_is_about_to_end
@@ -98,10 +98,10 @@ random_event_player:
 
 #  Base intro / outro shows
 show_player:
-   story_is_about_to_begin:
-      story_02_intro:
-         events_when_completed: story_intro_complete
-         loops: 0
+#   story_is_about_to_begin:
+#      story_02_intro:
+#         events_when_completed: story_intro_complete
+#         loops: 0
    story_is_about_to_fail:
       story_02_fail_outro:
          events_when_completed: story_outro_fail_complete
@@ -197,81 +197,14 @@ show_player:
          action: stop
       lane5shot:
          action: stop
-#variable_player:
-#  traj_set:
-#    score: 100000
-#  scoop_out_success:
-#    score: 500000
-
-shows:
-   story_02_intro:
-     - time: 0
-       slides: story_02_intro_slide
-       duration: 3
-   story_02_fail_outro:
-     - time: 0
-       slides: story_02_outro_fail_slide
-       duration: 3
-   story_02_outro:
-     - time: 0
-       slides: story_02_outro_slide
-       duration: 3
-
-slides:
-   story_02_intro_slide:
-    widgets:
-      - type: text
-        text: Escape The Black Hole
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: Hit the Spinner
-        y: 40%
-        color: red
-        font_size: 50
-      - type: text
-        text: Then hit the lit lane (3x)
-        y: 30%
-        color: red
-        font_size: 50
-      - type: text
-        text: Then ESCAPE the black hole out the scoop!
-        y: 20%
-        color: red
-        font_size: 50
-   story_02_outro_fail_slide:
-    widgets:
-      - type: text
-        text: YOU FAILED TO ESCAPE THE BLACK HOLE
-        color: red
-        font_size: 60
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: You are *NOT* super duper neat
-        y: 40%
-        color: red
-        font_size: 50
-   story_02_outro_slide:
-    widgets:
-      - type: text
-        text: YOU HAVE ESCAPED THE BLACK HOLE
-        color: red
-        font_size: 80
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: You are super duper neat
-        y: 40%
-        color: red
-        font_size: 50
 
 # The below is mode specific data
 
 timers:
    traj_timer:
-     start_value: 5
+     start_value: 50
      end_value: 0
-     tick_interval: 1s
+     tick_interval: .1s
      direction: down
      start_running: no
      control_events:
@@ -279,35 +212,26 @@ timers:
          action: restart
        - event: traj_time_out
          action: stop
-       - event: global_timer_pause
+       - event: traj_set
          action: pause
-       - event: global_timer_unpause
+       - event: local_timer_pause
+         action: pause
+       - event: local_timer_unpause
          action: start
 
    scoop_timer:
-     start_value: 15
+     start_value: 150
      end_value: 0
-     tick_interval: 1s
+     tick_interval: .1s
      direction: down
      start_running: no
      control_events:
        - event: enable_scoop_loop
          action: restart
-       - event: global_timer_pause
+       - event: local_timer_pause
          action: pause
-       - event: global_timer_unpause
+       - event: local_timer_unpause
          action: start
-
-widget_player:
-   status_escape:
-      yt_escape_widget_02:
-         slide: scoring_slide
-   scoop_off:
-      yt_escape_widget_02:
-         action: remove
-   story02_ended:
-      yt_engine_widget_02:
-         action: remove
 
 shots:
    lanetraj0:
@@ -430,14 +354,6 @@ state_machines:
        - source: scoopOpen
          target: completion
          events: scoop_out_success
-
-
-widgets:
-   yt_escape_widget_02:
-     - type: text
-       font_size: 30
-       text: " -- ENGINES ENGAGED ** ESCAPE THE BLACK HOLE --"
-       y: 80%
 
 sound_player:
     mode_story02_started:

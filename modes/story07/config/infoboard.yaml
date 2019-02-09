@@ -1,0 +1,89 @@
+#config_version=5
+
+event_player:
+   information_board_start:
+     - mode_07_setinfo_01
+     - mode_07_setinfo_02
+     - mode_07_setinfo_03
+
+   mode_07_setinfo_01:
+     set_infoboard_line_text:
+        linenbr: 1
+        text: "IN, THROUGH, AND BEYOND!"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   mode_07_setinfo_02:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "COLLECT DISCOVERIES"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   scoop_discovery_not_collected:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "COLLECT DISCOVERIES"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   mode_07_setinfo_03:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "DISCOVERY BONUS"
+        pts: discovery_base_char_value
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   player_discovery_base_char_value:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "DISCOVERY BONUS"
+        pts: discovery_base_char_value
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   player_wiz_lane_collect{value==1}:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "LANE DISCOVERY COLLECTED"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   player_wiz_left_collect{value==1}:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "LEFT BANK DISCOVERY COLLECTED"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   player_wiz_right_collect{value==1}:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "RIGHT BANK DISCOVERY COLLECTED"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   player_wiz_ps_collect{value==1}:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "POPS & SPINNER DISCOVERY COLLECTED"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   wiz_enable_discovery_collect_infoboard:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "COLLECT DISCOVERY BONUS AT SCOOP"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+

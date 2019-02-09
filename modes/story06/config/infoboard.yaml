@@ -1,0 +1,50 @@
+#config_version=5
+
+event_player:
+   story_is_about_to_begin:
+     - mode_06_setintro_01
+     - mode_06_setintro_02
+     - mode_06_setintro_03
+     - story_intro_complete|4s
+   mode_06_setintro_01:
+     set_infoboard_line_text:
+        linenbr: 1
+        text: "DAVID VS GOLIATH"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   mode_06_setintro_02:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "POP BUMPERS DAMAGE MAXIMILLIAN"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   mode_06_setintro_03:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "DEFEAT HIM BEFORE HE BEATS YOU"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   story_intro_complete:
+     - mode_06_setinfo_03
+   mode_06_setinfo_03:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "COMPLETION BONUS"
+        pts: david_complete_base_value
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   player_david_complete_base_value:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "COMPLETION BONUS"
+        pts: david_complete_base_value
+        secs: none
+        cycle: "instant"
+        delayms: 0

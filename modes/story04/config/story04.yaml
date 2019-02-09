@@ -6,7 +6,7 @@
 # Award score, restart show.  Mode ends on loss of ball or meteor strike on player (end of show)
 
 config:
-#   - ballsave.yaml
+   - infoboard.yaml
 
 mode:
    start_events: ready_to_start_mode_4
@@ -34,15 +34,16 @@ queue_relay_player:
 event_player:
    mode_story04_started:
      - story_is_about_to_begin
+     - information_board_start
    story_intro_complete:
      - scoop_eject
      - global_timer_unpause
-   in_mode_ball_save:
-     - story_is_about_to_fail
    story_has_passed:
      - story_is_about_to_end
+     - information_board_end
    story_has_failed:
      - story_is_about_to_fail
+     - information_board_end
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story04_successful
@@ -80,61 +81,6 @@ event_player:
 #         events_when_stopped: story_outro_complete
 #         loops: 0
 
-# These shows/slides are just placeholders.
-# Put any intro/outro shows you want here, just make sure
-# they start on events story_04_intro and story_04_outro
-
-shows:
-   story_04_intro:
-     - time: 0
-       slides: story_04_intro_slide
-       duration: 3
-   story_04_outro_fail:
-     - time: 0
-       slides: story_04_outro_fail_slide
-       duration: 3
-   story_04_outro:
-     - time: 0
-       slides: story_04_outro_slide
-       duration: 3
-
-slides:
-   story_04_intro_slide:
-    widgets:
-      - type: text
-        text: METEOR STRIKE
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: Avoid meteors by hitting the scoop shot!
-        y: 40%
-        color: red
-        font_size: 50
-   story_04_outro_fail_slide:
-    widgets:
-      - type: text
-        text: METEOR STRIKE FAILED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: You are sent home in a space box
-        y: 40%
-        color: red
-        font_size: 50
-   story_04_outro_slide:
-    widgets:
-      - type: text
-        text: METEOR STRIKE PASSED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "Meteor Scoring: (meteor_accum)"
-        y: 40%
-        color: red
-        font_size: 50
 
 # The below is mode specific data
 
@@ -192,17 +138,20 @@ variable_player:
   shotScoopMeteor_hit:
     meteor_hits: 1
     bonuscount: 3
-  player_meteor_hits:
+  player_meteor_hits{value>0}:
     score: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
     meteor_accum: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_4_last_meteor:
+       action: set
+       int: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_4_scoring: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_4_base_scoring: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain)
   timer_meteortimer_tick:
-     timeRemain:
+    timeRemain:
        int: (ticks_remaining)
        action: set
   story_is_about_to_end:
-     modestat_4_final_hits:
+    modestat_4_final_hits:
        int: (current_player.meteor_hits)
        action: set
 
@@ -263,10 +212,10 @@ show_player:
        priority: 950
 
 # BELOW are the "base" show player entries
-  story_is_about_to_begin:
-     story_04_intro:
-       events_when_completed: story_intro_complete
-       loops: 0
+#  story_is_about_to_begin:
+#     story_04_intro:
+#       events_when_completed: story_intro_complete
+#       loops: 0
   story_is_about_to_fail:
      story_04_outro_fail:
        events_when_completed: story_outro_fail_complete
@@ -300,21 +249,6 @@ timers:
         action: pause
       - event: global_timer_unpause
         action: start
-
-
-widget_player:
-   story_intro_complete:
-      yt_remain_widget_04:
-         slide: scoring_slide
-   story04_ended:
-      yt_remain_widget_04:
-         action: remove
-
-widgets:
-   yt_remain_widget_04:
-     - type: text
-       text: "Meteor Time: (timeRemain)s  Meteor Score: (meteor_accum)"
-       y: 80%
 
 sound_player:
     mode_story04_started:

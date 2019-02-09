@@ -2,8 +2,7 @@
 
 config:
   - story03-scoring.yaml
-#  - ballsave.yaml
-  - notification.yaml
+  - infoboard.yaml
 
 mode:
   start_events: ready_to_start_mode_3
@@ -32,6 +31,7 @@ queue_relay_player:
 event_player:
   mode_story03_started:
     - story_is_about_to_begin
+    - information_board_start
     - mode_using_targets_started # always add this if your mode makes use of the drop targets
     # Reset all drop targets
     - drops_left_reset
@@ -41,14 +41,16 @@ event_player:
   story_intro_complete:
     - scoop_eject
     - global_timer_unpause
-  in_mode_ball_save:
-     - story_is_about_to_fail
   story_outro_complete:
     - story_is_completed_successful
     - acheivement_story03_successful
     - mode_using_targets_ended # always add this if your mode makes use of the drop targets
 #    Only used when scoop hits end the mode
 #    - scoop_eject
+  story_is_about_to_fail:
+    - information_board_end
+  story_is_about_to_end:
+     - information_board_end
   story_outro_fail_complete:
     - story_is_completed_unsuccessful
     - acheivement_story03_unsuccessful
@@ -277,9 +279,9 @@ shot_profiles:
 #  Base intro / outro shows
 show_player:
   story_is_about_to_begin:
-    story_03_intro:
-      events_when_completed: story_intro_complete
-      loops: 0
+#    story_03_intro:
+#      events_when_completed: story_intro_complete
+#      loops: 0
     drop_target_blackout_show:
       priority: 900
     giDim:
@@ -294,63 +296,6 @@ show_player:
       events_when_completed: story_outro_complete
       loops: 0
 
-shows:
-  story_03_intro:
-    - time: 0
-      slides: story_03_intro_slide
-      duration: 3
-  story_03_fail_outro:
-    - time: 0
-      slides: story_03_outro_fail_slide
-      duration: 3
-  story_03_outro:
-    - time: 0
-      slides: story_03_outro_slide
-      duration: 3
-
-slides:
-  story_03_intro_slide:
-    widgets:
-      - type: text
-        text: SHOOTING GALLERY
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: V.I.N.Cent's my name, sharpshooting's my game. Try me!
-        y: 40%
-        color: red
-        font_size: 50
-      - type: text
-        text: Hit at least 3 lit targets in 60s to defeat Captain S.T.A.R.
-        y: 30%
-        color: red
-        font_size: 42
-  story_03_outro_fail_slide:
-      - type: text
-        text: SHOOTING GALLERY FAILED
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "If one dances, one MUST pay the piper."
-        y: 30%
-        font_size: 50
-  story_03_outro_slide:
-    widgets:
-      - type: text
-        text: SHOOTING GALLERY DONE
-        color: red
-        font_size: 100
-        font_name: ocr-a-tribute-bold
-      - type: text
-        text: "Meet me in parts storage..."
-        y: 30%
-        font_size: 50
-      - type: text
-        text: "Targets Hit: (gallery_targets_hit)"
-        y: 20%
-        font_size: 50
 
 # The below is mode specific data
 
@@ -365,6 +310,10 @@ variable_player:
     modestat_3_final_hits:
       action: set
       int: (current_player.gallery_targets_hit)
+  timer_gallery_timer_display_tick:
+    gallery_timer_remaining:
+      action: set
+      float: (ticks_remaining) * .1
 
 timers:
   gallery_timer:
@@ -377,11 +326,16 @@ timers:
     control_events:
       - event: story_intro_complete
         action: start
-      - event: global_timer_pause
-        action: pause
-      - event: global_timer_unpause
+  gallery_timer_display:
+    max_value: 600
+    start_value: 600
+    end_value: 0
+    tick_interval: .1s
+    direction: down
+    start_running: no
+    control_events:
+      - event: story_intro_complete
         action: start
-
 
 sound_player:
     gallery_target_hit: gallerylaser_hit

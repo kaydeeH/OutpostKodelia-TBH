@@ -1,0 +1,204 @@
+#config_version=5
+
+variable_player:
+   timer_traj_timer_tick:
+     infoboard_mode02_traj_timer:
+        action: set
+        float: (ticks_remaining) * .1
+   timer_traj_timer_stopped:
+     infoboard_mode02_traj_timer:
+        action: set
+        int: 0
+   timer_scoop_timer_tick:
+     infoboard_mode_02_scoop_timer:
+        action: set
+        float: (ticks_remaining) * .1
+   timer_scoop_timer_stopped:
+     infoboard_mode_02_scoop_timer:
+        action: set
+        float: 0
+
+event_player:
+   story_is_about_to_begin:
+     - mode_02_setintro_01
+     - mode_02_setintro_02
+     - mode_02_setintro_03
+     - story_intro_complete|4s
+   mode_02_setintro_01:
+     set_infoboard_line_text:
+        linenbr: 1
+        text: "ESCAPE THE BLACK HOLE"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   mode_02_setintro_02:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "HIT SPINNER THEN LIT LANE - 3 TIMES"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   mode_02_setintro_03:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "ESCAPE BLACK HOLE VIA SCOOP"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 25
+   story_intro_complete:
+     - mode_02_setinfo_01
+     - mode_02_setinfo_02
+     - mode_02_setinfo_03
+   mode_02_setinfo_01:
+     set_infoboard_line_text:
+        linenbr: 1
+        text: "ESCAPE THE BLACK HOLE"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   player_modestat_2_scoring:
+     set_infoboard_line_text:
+        linenbr: 1
+        text: "ESCAPE THE BLACK HOLE"
+        pts: modestat_2_scoring
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   mode_02_setinfo_02:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "HIT SPINNER TO LIGHT TOP LANE"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   traj_set:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "TRAJECTORY LOCK TIME:"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   mode_02_setinfo_03:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "TRAJECTORY LOCK TIME:"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   player_infoboard_mode02_traj_timer:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "TRAJECTORY LOCK TIME:"
+        pts: none
+        secs: infoboard_mode02_traj_timer
+        cycle: "instant"
+        delayms: 0
+   debug_beyond_traj01:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "LIT LANE SETS TRAJECTORY"
+        pts: none
+        secs: none
+        cycle: "scroll"
+        delayms: 25
+   debug_beyond_traj02:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "LIT LANE SETS TRAJECTORY"
+        pts: none
+        secs: none
+        cycle: "scroll"
+        delayms: 25
+   debug_beyond_traj03:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "LIT LANE SETS TRAJECTORY"
+        pts: none
+        secs: none
+        cycle: "scroll"
+        delayms: 25
+   traj_time_out:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "HIT SPINNER TO LIGHT TOP LANE"
+        pts: none
+        secs: none
+        cycle: "scroll"
+        delayms: 25
+   status_escape:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "ENGINES ENGAGED - ESCAPE AT SCOOP"
+        pts: none
+        secs: none
+        cycle: "scroll"
+        delayms: 25
+   player_infoboard_mode_02_scoop_timer:
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "ESCAPE TIME REMAINING:"
+        pts: none
+        secs: infoboard_mode_02_scoop_timer
+        cycle: "instant"
+        delayms: 0
+   debug_beyond_traj01hit:
+     debug_beyond_traj01hit_next:
+        dmy: 0
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "TRAJECTORY ONE LOCKED"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 10
+   debug_beyond_traj02hit:
+     debug_beyond_traj02hit_next:
+        dmy: 0
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "TRAJECTORY TWO LOCKED"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 10
+   debug_beyond_traj01hit_next:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "HIT SPINNER TO LIGHT TOP LANE"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   debug_beyond_traj02hit_next:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "HIT SPINNER TO LIGHT TOP LANE"
+        pts: none
+        secs: none
+        cycle: "instant"
+        delayms: 0
+   timer_scoop_timer_stopped:
+     mode02_reset_line_2:
+        dmy: 0
+     set_infoboard_line_text:
+        linenbr: 3
+        text: "TRAJECTORY TWO LOCKED"
+        pts: none
+        secs: none
+        cycle: "star"
+        delayms: 10
+   mode02_reset_line_2:
+     set_infoboard_line_text:
+        linenbr: 2
+        text: "HIT SPINNER TO LIGHT TOP LANE"
+        pts: none
+        secs: none
+        cycle: "scroll"
+        delayms: 10

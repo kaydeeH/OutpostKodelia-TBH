@@ -5,7 +5,7 @@ mode:
 
 event_player:
   player_added{num==1}:
-    - load_one_player_elements|100ms
+    - load_one_player_elements|200ms
   player_added{num==2}:
     - remove_one_player_elements|200ms
     - start_multiplayer_lights|500ms
