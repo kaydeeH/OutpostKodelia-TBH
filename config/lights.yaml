@@ -749,6 +749,15 @@ lights:
     type: w
     subtype: led
     fade_ms: 50ms
+  l_bb_star1:
+    channels:
+      white:
+        number: 4-83
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
 
 #J11 60..71 - "The Black Hole"
   l_bb_the:
