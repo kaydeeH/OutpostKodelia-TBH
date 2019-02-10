@@ -311,6 +311,12 @@ show_player:
       start_button:
           loops: -1
           priority: 5
+      bh_on:
+          priority: 5
+          loops: -1
+      stars_on:
+          priority: 5
+          loops: -1
   s_slingshot_left_active:
       redHitShow:
           priority: 101

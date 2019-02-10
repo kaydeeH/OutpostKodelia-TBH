@@ -4,3 +4,7 @@
   lights:
     l_bb_star1:
       color: FF
+    l_bb_star2:
+      color: FF
+    l_bb_star3:
+      color: FF
