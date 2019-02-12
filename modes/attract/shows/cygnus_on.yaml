@@ -1,0 +1,36 @@
+#show_version=5
+
+- duration: 1
+  lights:
+    l_bb_cy_1a:
+      color: BD
+    l_bb_cy_1b:
+      color: BD
+    l_bb_cy_1c:
+      color: BD
+    l_bb_cy_1dome:
+      color: BD
+    l_bb_cy_2a:
+      color: BD
+    l_bb_cy_2b:
+      color: BD
+    l_bb_cy_3a:
+      color: BD
+    l_bb_cy_3b:
+      color: BD
+    l_bb_cy_4a:
+      color: BD
+    l_bb_cy_5a:
+      color: BD
+    l_bb_cy_5b:
+      color: BD
+    l_bb_cy_6a:
+      color: BD
+    l_bb_cy_6b:
+      color: BD
+    l_bb_cy_6ea:
+      color: BD
+    l_bb_cy_6eb:
+      color: BD
+    l_bb_cy_6bridge:
+      color: BD

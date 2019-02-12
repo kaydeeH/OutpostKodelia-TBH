@@ -739,6 +739,154 @@ lights:
     subtype: led
     fade_ms: 50ms
 
+#J6 24...35
+  l_bb_cy_bridge:
+    channels:
+      white:
+        number: 4-24
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_6ea:
+    channels:
+      white:
+        number: 4-25
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_6eb:
+    channels:
+      white:
+        number: 4-26
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_6a:
+    channels:
+      white:
+        number: 4-27
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_6b:
+    channels:
+      white:
+        number: 4-28
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_5a:
+    channels:
+      white:
+        number: 4-29
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_5b:
+    channels:
+      white:
+        number: 4-30
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_4a:
+    channels:
+      white:
+        number: 4-31
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_3a:
+    channels:
+      white:
+        number: 4-32
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+#J10 36...47
+  l_bb_cy_3b:
+    channels:
+      white:
+        number: 4-36
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_2a:
+    channels:
+      white:
+        number: 4-37
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_2b:
+    channels:
+      white:
+        number: 4-38
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_1b:
+    channels:
+      white:
+        number: 4-39
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_1dome:
+    channels:
+      white:
+        number: 4-40
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_1c:
+    channels:
+      white:
+        number: 4-39
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+  l_bb_cy_1a:
+    channels:
+      white:
+        number: 4-40
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
 #J8 72..83
   l_startButton:
     channels:
