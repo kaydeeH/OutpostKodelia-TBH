@@ -3,34 +3,34 @@
 - duration: 1
   lights:
     l_bb_cy_1a:
-      color: BD
+      color: 7F
     l_bb_cy_1b:
-      color: BD
+      color: 7F
     l_bb_cy_1c:
-      color: BD
+      color: 7F
     l_bb_cy_1dome:
-      color: BD
+      color: 7F
     l_bb_cy_2a:
-      color: BD
+      color: 7F
     l_bb_cy_2b:
-      color: BD
+      color: 7F
     l_bb_cy_3a:
-      color: BD
+      color: 7F
     l_bb_cy_3b:
-      color: BD
+      color: 7F
     l_bb_cy_4a:
-      color: BD
+      color: 7F
     l_bb_cy_5a:
-      color: BD
+      color: 7F
     l_bb_cy_5b:
-      color: BD
+      color: 7F
     l_bb_cy_6a:
-      color: BD
+      color: 7F
     l_bb_cy_6b:
-      color: BD
+      color: 7F
     l_bb_cy_6ea:
-      color: BD
+      color: 7F
     l_bb_cy_6eb:
-      color: BD
+      color: 7F
     l_bb_cy_bridge:
-      color: BD
+      color: 7F
