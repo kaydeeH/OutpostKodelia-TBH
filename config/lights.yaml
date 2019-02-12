@@ -871,7 +871,7 @@ lights:
   l_bb_cy_1c:
     channels:
       white:
-        number: 4-39
+        number: 4-41
         platform_settings:
           polarity: true
     type: w
@@ -880,7 +880,7 @@ lights:
   l_bb_cy_1a:
     channels:
       white:
-        number: 4-40
+        number: 4-42
         platform_settings:
           polarity: true
     type: w
