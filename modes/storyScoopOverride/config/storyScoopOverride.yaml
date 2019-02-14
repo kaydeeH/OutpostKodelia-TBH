@@ -28,8 +28,8 @@ shot_profiles:
     advance_on_hit: false
     block: true
     states:
-      - name: scoopActive
-        show: popgreen
+      - name: scoop_override
+        show: off
 
 show_player:
   shotScoopOverride_hit:
