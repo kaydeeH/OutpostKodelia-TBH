@@ -558,6 +558,8 @@ shows:
          l_3x: red
          l_4x: red
          l_5x: red
+       sounds:
+         - charge_shot
   extra_lit:
      - time: 0
        lights:

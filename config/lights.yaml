@@ -35,12 +35,14 @@ lights:
     number: 1-6-7-8
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIScoopMR:
     number: 1-9-10-11
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -49,18 +51,21 @@ lights:
     number: 1-12-13-14
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GILane0:
     number: 1-15-16-17
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIScoopUC:
     number: 1-18-19-20
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -69,24 +74,28 @@ lights:
     number: 1-24-25-26
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GILane3:
     number: 1-27-28-29
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GILane2:
     number: 1-30-31-32
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GILane1:
     number: 1-33-34-35
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -95,12 +104,14 @@ lights:
     number: 1-36-37-38
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIUpperL:
     number: 1-39-40-41
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_lane0:
@@ -113,6 +124,7 @@ lights:
     number: 1-45-46-47
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -147,24 +159,28 @@ lights:
     number: 1-60-61-62
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIAboveSpinnerUpper:
     number: 1-63-64-65
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIUpperCR:
     number: 1-66-67-68
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIUpperR:
     number: 1-69-70-71
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -174,6 +190,7 @@ lights:
     number: 1-72-73-74
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_spinner:
@@ -186,12 +203,14 @@ lights:
     number: 1-78-79-80
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIDropRight1:
     number: 1-81-82-83
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -203,12 +222,14 @@ lights:
     number: 2-0-1-2
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIDropCenterRight:
     number: 2-3-4-5
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_jetLowerCenter:
@@ -384,12 +405,14 @@ lights:
     number: 2-75-76-77
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIScoopML:
     number: 2-78-79-80
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -401,24 +424,28 @@ lights:
     number: 3-0-1-2
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GILowLeft:
     number: 3-3-4-5
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIDropLeft0:
     number: 3-6-7-8
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GIDropLeft1:
     number: 3-9-10-11
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -487,24 +514,28 @@ lights:
     number: 3-36-37-38
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_giLeftLaneGuide1:
     number: 3-39-40-41
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_giRightLaneGuide1:
     number: 3-42-43-44
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_giRightLaneGuide0:
     number: 3-45-46-47
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -519,18 +550,21 @@ lights:
     number: 3-51-52-53
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GISlingRight1:
     number: 3-54-55-56
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_GILowRight:
     number: 3-57-58-59
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 
@@ -572,6 +606,7 @@ lights:
     number: 3-75-76-77
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
   l_specialLeft:
@@ -584,6 +619,7 @@ lights:
     number: 3-81-82-83
     subtype: led
     fade_ms: 50ms
+    tags: gi
     platform_settings:
       polarity: true
 

@@ -76,6 +76,10 @@ sounds:
         file: triple_explosion.wav
         track: sfx
         volume: .2
+    charge_shot:
+        file: charge_shot.wav
+        track: sfx
+        volume: .2
 
     # Movie SFX
     gallerylaser:
