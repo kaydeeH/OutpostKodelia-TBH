@@ -168,6 +168,7 @@ slides:
         anchor_y: center
         y: 60%
         x: 39%
+        number_grouping: true
       - type: image
         image: badgeLocateTheCygnusOff
         anchor_x: center
@@ -292,6 +293,7 @@ slides:
         anchor_y: center
         y: 30%
         x: 40%
+        number_grouping: true
       - type: text
         text: "Collect data from left drop bank, right drop bank, lanes, and pops/spinner"
         font_size: 32
