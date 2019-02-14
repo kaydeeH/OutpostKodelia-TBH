@@ -170,6 +170,8 @@ sounds:
         file: v_to-quote-cicero.wav
     vincent_05:
         file: v_vincent's-my-name.wav
+    ball_saved:
+        file: ball_saved.wav
 
 sound_pools:
   atract_voice:

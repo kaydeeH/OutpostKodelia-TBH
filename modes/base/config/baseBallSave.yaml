@@ -55,3 +55,7 @@ shows:
      - time: 0.1
        lights:
          l_shootAgain: off
+
+sound_player:
+   ball_save_initial_saving_ball: ball_saved
+   ball_save_scoop_eject_saving_ball: ball_saved
