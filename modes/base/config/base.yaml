@@ -302,6 +302,7 @@ sound_player:
       overture:
           action: stop
     scoop_reset: scene_ready
+    s_spinner_active: laser_pistol
 
 show_player:
   mode_base_started:

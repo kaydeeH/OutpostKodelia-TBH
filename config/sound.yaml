@@ -46,7 +46,7 @@ sounds:
     character_collect_sound:
         file: character_collect.wav
         track: sfx
-        volume: .3
+        volume: .2
         ducking:
           target: music
           delay: 0ms
@@ -54,6 +54,8 @@ sounds:
           attenuation: .3
           release_point: 1s
           release: 500ms
+    laser_pistol:
+        file: laser_pistol.wav
 
     # Movie SFX
     gallerylaser:
