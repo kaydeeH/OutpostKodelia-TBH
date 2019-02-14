@@ -232,3 +232,6 @@ state_machines:
        - source: lighton
          target: start
          events: reset_both_lane_lit_groups
+
+sound_player:
+  extra_ball_is_earned: extra_ball

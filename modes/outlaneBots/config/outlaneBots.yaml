@@ -358,3 +358,6 @@ widgets:
         text: "(outlane_rescue_value)"
         style:
           - char_collect_style_bottom
+
+sound_player:
+   ball_save_rescuesave_saving_ball: ball_rescued

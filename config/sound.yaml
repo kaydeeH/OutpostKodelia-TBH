@@ -172,6 +172,10 @@ sounds:
         file: v_vincent's-my-name.wav
     ball_saved:
         file: ball_saved.wav
+    ball_rescued:
+        file: ball_rescued.wav
+    extra_ball:
+        file: extra_ball.wav
 
 sound_pools:
   atract_voice:
