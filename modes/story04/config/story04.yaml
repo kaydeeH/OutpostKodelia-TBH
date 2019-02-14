@@ -13,6 +13,7 @@ mode:
    stop_events: story_is_completed
    priority: 900
    file_log: full
+   code: random_explosions.RandomExplosions
 
 # All Story Modes --
 #     Issue a scoop_eject after any introduction activities
@@ -35,6 +36,7 @@ event_player:
    mode_story04_started:
      - story_is_about_to_begin
      - information_board_start
+     - start_explosions|3s
    story_intro_complete:
      - scoop_eject
      - global_timer_unpause
@@ -256,3 +258,4 @@ sound_player:
           action: play
           loops: -1
           mode_end_action: stop
+    play_explosion: explosions

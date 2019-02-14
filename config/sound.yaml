@@ -56,6 +56,15 @@ sounds:
           release: 500ms
     laser_pistol:
         file: laser_pistol.wav
+        volume: .7
+    explosion1:
+        file: explosion1.wav
+    explosion2:
+        file: explosion2.wav
+    explosion3:
+        file: explosion3.wav
+    triple_explosion:
+        file: triple_explosion.wav
 
     # Movie SFX
     gallerylaser:
@@ -209,3 +218,11 @@ sound_pools:
 #      - vincent_03
       - vincent_04
       - vincent_05
+  explosions:
+    type: random_force_all
+    track: sfx
+    sounds:
+      - triple_explosion
+      - explosion1
+      - explosion2
+      - explosion3
