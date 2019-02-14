@@ -176,6 +176,8 @@ sounds:
         file: ball_rescued.wav
     extra_ball:
         file: extra_ball.wav
+    sacrifice:
+        file: sacrifice.wav
 
 sound_pools:
   atract_voice:
