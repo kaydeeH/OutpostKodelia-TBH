@@ -178,6 +178,8 @@ sounds:
         file: extra_ball.wav
     sacrifice:
         file: sacrifice.wav
+    scene_ready:
+        file: scene_ready.wav
 
 sound_pools:
   atract_voice:

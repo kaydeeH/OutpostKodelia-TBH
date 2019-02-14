@@ -301,6 +301,7 @@ sound_player:
     mode_selector_stopped:
       overture:
           action: stop
+    scoop_reset: scene_ready
 
 show_player:
   mode_base_started:
