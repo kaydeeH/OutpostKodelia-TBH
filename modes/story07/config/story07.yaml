@@ -93,6 +93,7 @@ show_player:
    story_is_about_to_begin:
       story_07_intro:
          events_when_completed: story_intro_complete
+         events_when_stopped: story_intro_complete
          loops: 0
    wizard_intro_slide_ready_to_remove:
       story_07_intro: stop
