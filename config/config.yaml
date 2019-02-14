@@ -79,37 +79,7 @@ player_vars:
   bonusTypeMax:
      initial_value: 1
 
-# Normal Game Settings
-  status_untitled_mode_1:
-     initial_value: 0
-  status_untitled_mode_2:
-     initial_value: 0
-  status_untitled_mode_3:
-     initial_value: 0
-  status_untitled_mode_4:
-     initial_value: 0
-  status_untitled_mode_5:
-     initial_value: 0
-  status_untitled_mode_6:
-     initial_value: 0
-  status_untitled_mode_7:
-     initial_value: 0
-
-# Testing Mode 7
-#  status_untitled_mode_1:
-#     initial_value: 1
-#  status_untitled_mode_2:
-#     initial_value: 1
-#  status_untitled_mode_3:
-#     initial_value: 1
-#  status_untitled_mode_4:
-#     initial_value: 1
-#  status_untitled_mode_5:
-#     initial_value: 1
-#  status_untitled_mode_6:
-#     initial_value: 1
-#  status_untitled_mode_7:
-#     initial_value: 0
+## Normal Game Settings
 
 # This is where some mode achievement text can be stored
   modestat_1_final_timing:

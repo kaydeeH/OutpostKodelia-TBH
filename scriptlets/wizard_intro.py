@@ -10,26 +10,25 @@ class wizardIntro(Scriptlet):
 
     def _start_display(self, **kwargs):
         del kwargs
-        player = self.machine.game.player
 
-        modes = {
-            1: "status_untitled_mode_1",
-            2: "status_untitled_mode_2",
-            3: "status_untitled_mode_3",
-            4: "status_untitled_mode_4",
-            5: "status_untitled_mode_5",
-            6: "status_untitled_mode_6"
-        }
+        mode_statuses = [
+            self.machine.achievements.untitled_mode_1.state,
+            self.machine.achievements.untitled_mode_2.state,
+            self.machine.achievements.untitled_mode_3.state,
+            self.machine.achievements.untitled_mode_4.state,
+            self.machine.achievements.untitled_mode_5.state,
+            self.machine.achievements.untitled_mode_6.state,
+            self.machine.achievements.untitled_mode_7.state
+        ]
 
         scene_count = 0
-        crew_count = 0
 
         wizardIntro.delay_time = 500
 
-        for ourMode in modes:
-             if player.vars.get(modes.get(ourMode)) != 0:
+        for num, modeStat in enumerate(mode_statuses, 1):
+            if modeStat == "completed":
                  scene_count += 1
-                 DelayManager(self.machine.delayRegistry).add(callback=self._throw_event, ms=wizardIntro.delay_time, eventname="{}_completed".format(modes.get(ourMode)))
+                 DelayManager(self.machine.delayRegistry).add(callback=self._throw_event, ms=wizardIntro.delay_time, eventname="status_untitled_mode_{}_completed".format(num))
 
                  if scene_count <= 3:
                      DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,

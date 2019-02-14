@@ -40,10 +40,12 @@ event_player:
      - story_is_completed_successful
      - acheivement_story07_successful
      - scoop_eject
+     - information_board_end
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
      - acheivement_story07_unsuccessful
      - full_mode_and_char_reset
+     - information_board_end
    story_is_completed_successful:
     - global_timer_unpause
     - story_is_completed

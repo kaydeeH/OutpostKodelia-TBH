@@ -1,5 +1,7 @@
 from mpf.core.scriptlet import Scriptlet
 
+# set of items in {} is a dictionary
+# set of items in [] is a list
 
 class SelectedCheck(Scriptlet):
     def on_load(self):
@@ -10,40 +12,49 @@ class SelectedCheck(Scriptlet):
 
     def _check_mode(self, **kwargs):
         del kwargs
-        modes = {
-            1: "status_untitled_mode_1",
-            2: "status_untitled_mode_2",
-            3: "status_untitled_mode_3",
-            4: "status_untitled_mode_4",
-            5: "status_untitled_mode_5",
-            6: "status_untitled_mode_6",
-            7: "status_untitled_mode_7"
+
+        mode_statuses_d = {
+            1: self.machine.achievements.untitled_mode_1.state,
+            2: self.machine.achievements.untitled_mode_2.state,
+            3: self.machine.achievements.untitled_mode_3.state,
+            4: self.machine.achievements.untitled_mode_4.state,
+            5: self.machine.achievements.untitled_mode_5.state,
+            6: self.machine.achievements.untitled_mode_6.state,
+            7: self.machine.achievements.untitled_mode_7.state
         }
+
+        mode_complete_count = 0
+
+        for modeStat in mode_statuses_d:
+            if mode_statuses_d[modeStat] == "completed":
+                mode_complete_count += 1
+
         player = self.machine.game.player
-        if (player.vars.get(modes.get(player.vars.get("mode_pick"))) == 0) and player.vars.get("mode_pick") != 7:
+        if (mode_statuses_d.get(player.vars.get("mode_pick")) != "completed") and player.vars.get("mode_pick") != 7:
             self.machine.events.post('selected_mode_is_available')
-        if player.vars.get("mode_pick") == 7 and player.vars.get(modes.get(1)) + player.vars.get(modes.get(2)) + player.vars.get(modes.get(3)) + player.vars.get(modes.get(4)) + player.vars.get(modes.get(5)) + player.vars.get(modes.get(6)) > 2:
+        if player.vars.get("mode_pick") == 7 and mode_complete_count > 2:
             self.machine.events.post('selected_mode_is_available')
             self.machine.events.post('wizard_mode_is_available')
 
     def _check_wiz(self, **kwargs):
         del kwargs
-        modes = {
-            1: "status_untitled_mode_1",
-            2: "status_untitled_mode_2",
-            3: "status_untitled_mode_3",
-            4: "status_untitled_mode_4",
-            5: "status_untitled_mode_5",
-            6: "status_untitled_mode_6",
-            7: "status_untitled_mode_7"
-        }
-        player = self.machine.game.player
 
-        for ourMode in modes:
-             if player.vars.get(modes.get(ourMode)) != 0 and ourMode != "status_untitled_mode_7":
-                 self.machine.events.post("{}_completed".format(modes.get(ourMode)))
+        mode_statuses = [
+            self.machine.achievements.untitled_mode_1.state,
+            self.machine.achievements.untitled_mode_2.state,
+            self.machine.achievements.untitled_mode_3.state,
+            self.machine.achievements.untitled_mode_4.state,
+            self.machine.achievements.untitled_mode_5.state,
+            self.machine.achievements.untitled_mode_6.state,
+            self.machine.achievements.untitled_mode_7.state
+        ]
 
-        if player.vars.get(modes.get(1)) + player.vars.get(modes.get(2)) + player.vars.get(modes.get(3)) + player.vars.get(modes.get(4)) + player.vars.get(modes.get(5)) + player.vars.get(modes.get(6)) < 3:
+        mode_complete_count = 0
+
+        for num, modeStat in enumerate(mode_statuses, 1):
+            if modeStat == "completed":
+               mode_complete_count += 1
+               self.machine.events.post("status_untitled_mode_{}_completed".format(num))
+
+        if mode_complete_count < 3:
             self.machine.events.post('wizard_mode_not_available')
-            self.machine.events.post('oh-test-no-wiz')
-
