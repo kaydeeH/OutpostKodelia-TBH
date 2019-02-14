@@ -56,15 +56,19 @@ sounds:
           release: 500ms
     laser_pistol:
         file: laser_pistol.wav
-        volume: .7
+        volume: .5
     explosion1:
         file: explosion1.wav
+        volume: .3
     explosion2:
         file: explosion2.wav
+        volume: .3
     explosion3:
         file: explosion3.wav
+        volume: .3
     triple_explosion:
         file: triple_explosion.wav
+        volume: .3
 
     # Movie SFX
     gallerylaser:
