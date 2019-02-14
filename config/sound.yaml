@@ -13,12 +13,12 @@ sound_system:
           volume: 0.5
        voice:
           type: standard
-          simultaneous_sounds: 1
-          volume: 0.9
+          simultaneous_sounds: 10
+          volume: 0.8
        sfx:
           type: standard
           simultaneous_sounds: 32
-          volume: 0.7
+          volume: 0.5
 
 sounds:
     # Generic SFX
@@ -28,8 +28,10 @@ sounds:
         file: 151022__bubaproducer__laser-shot-silenced.wav
     testFX1:
         file: 191594__fins__laser.wav
+        track: sfx
     testFX3:
         file: 191594__fins__laser2.wav
+        track: sfx
     testFX4:
         file: 234083__211redman112__lasgun-fire.ogg
     testFX5:
@@ -56,26 +58,34 @@ sounds:
           release: 500ms
     laser_pistol:
         file: laser_pistol.wav
+        track: sfx
         volume: .2
     explosion1:
         file: explosion1.wav
+        track: sfx
         volume: .2
     explosion2:
         file: explosion2.wav
+        track: sfx
         volume: .2
     explosion3:
         file: explosion3.wav
+        track: sfx
         volume: .2
     triple_explosion:
         file: triple_explosion.wav
+        track: sfx
         volume: .2
 
     # Movie SFX
     gallerylaser:
+        track: sfx
         file: gallery-laser.wav
     starlaser:
+        track: sfx
         file: gallery-star-laser.wav
     gallerylaser_hit:
+        track: sfx
         file: gallery-laser-hit.wav
 
     # Music
@@ -87,7 +97,6 @@ sounds:
         file: CygnusFloating.wav
         track: music
         fade_out: 1s
-        volume: .6
     durantisdead:
         file: DurantIsDead.wav
         track: music
@@ -145,56 +154,82 @@ sounds:
     #Voice clips
     alex_01:
         file: a_glorious-pilgramage.wav
+        track: voice
     alex_02:
         file: a_greatest-space-scientist-2.wav
+        track: voice
     bob_01:
         file: b_if-maximilian-knew.wav
+        track: voice
     bob_02:
         file: b_this-is-a-death-ship.wav
+        track: voice
     charlie_01:
         file: c_lets-get-cracking.wav
+        track: voice
     harry_01:
         file: h_are-you-programmed.wav
+        track: voice
     kate_01:
         file: k_if-there's-any-justice.wav
+        track: voice
     kate_02:
         file: k_old-and-bold-pilots.wav
+        track: voice
     kate_03:
         file: k_uss-cygnus-mission.wav
+        track: voice
     hans_01:
         file: r_end-justifies-the-means.wav
+        track: voice
     hans_02:
         file: r_give-them-distance.wav
+        track: voice
     hans_03:
         file: r_in-through-and-beyond.wav
+        track: voice
     hans_04:
         file: r_maximilian.wav
+        track: voice
     hans_05:
         file: r_one-step-too-far.wav
+        track: voice
     hans_06:
         file: r_protect-me-from-maximilian.wav
+        track: voice
     hans_07:
         file: r_the-esp-you-share.wav
+        track: voice
     vincent_01:
         file: v_a-wolf-remains-a-wolf.wav
+        track: voice
     vincent_02:
         file: v_nothing-a-hammer.wav
+        track: voice
     vincent_03:
         file: v_ship_uss-cygnus.wav
+        track: voice
     vincent_04:
         file: v_to-quote-cicero.wav
+        track: voice
     vincent_05:
         file: v_vincent's-my-name.wav
+        track: voice
     ball_saved:
         file: ball_saved.wav
+        track: voice
     ball_rescued:
         file: ball_rescued.wav
+        track: voice
     extra_ball:
         file: extra_ball.wav
+        track: voice
     sacrifice:
         file: sacrifice.wav
+        track: voice
     scene_ready:
         file: scene_ready.wav
+        track: voice
 
 sound_pools:
   atract_voice:
