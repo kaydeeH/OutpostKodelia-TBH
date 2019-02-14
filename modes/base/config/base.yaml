@@ -301,7 +301,7 @@ sound_player:
     mode_selector_stopped:
       overture:
           action: stop
-    scoop_reset: scene_ready
+    do_scoop_notify{current_player.score>0}: scene_ready
     s_spinner_active: laser_pistol
 
 show_player:

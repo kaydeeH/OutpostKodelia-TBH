@@ -39,8 +39,8 @@ event_player:
     - first_ball_for_current_player
   do_scoop_notify:
     invoke_notify_by_event:
-       new_value: "ACTIVE"
-       new_text: "SCOOP\nSHOT"
+       new_value: "READY"
+       new_text: "SCENE\nIS"
   player_bonustype1{value>1}:
     - playfield_double_start
   player_bonustype2{value>1}:
