@@ -18,7 +18,7 @@ sound_system:
        sfx:
           type: standard
           simultaneous_sounds: 32
-          volume: 0.9
+          volume: 0.7
 
 sounds:
     # Generic SFX
@@ -56,19 +56,19 @@ sounds:
           release: 500ms
     laser_pistol:
         file: laser_pistol.wav
-        volume: .5
+        volume: .2
     explosion1:
         file: explosion1.wav
-        volume: .3
+        volume: .2
     explosion2:
         file: explosion2.wav
-        volume: .3
+        volume: .2
     explosion3:
         file: explosion3.wav
-        volume: .3
+        volume: .2
     triple_explosion:
         file: triple_explosion.wav
-        volume: .3
+        volume: .2
 
     # Movie SFX
     gallerylaser:
