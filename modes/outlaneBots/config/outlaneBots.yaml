@@ -360,5 +360,5 @@ widgets:
           - char_collect_style_bottom
 
 sound_player:
-   shotoutlanerescue_lit_hit{device.ball_saves.initial.state=="disabled"}: ball_rescued
-   shotoutlanesacrifice_lit_hit: sacrifice
+   rescue_lane_activated: ball_rescued
+   sacrifice_lane_activated: sacrifice
