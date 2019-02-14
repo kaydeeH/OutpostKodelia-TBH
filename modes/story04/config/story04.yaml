@@ -65,6 +65,8 @@ event_player:
 # Character Collect
    player_meteor_hits{value==3}:
     - random_character_collect
+   s_ir_scoop_detect_active{current_player.story04_meteortimer_tick==0}:
+    - scoop_eject
 
 #  Base intro / outro shows
 
@@ -137,7 +139,7 @@ variable_player:
     timeRemain:
        int: (ticks_remaining)
        action: set
-  shotScoopMeteor_hit:
+  shotScoopMeteor_hit{current_player.story04_meteortimer_tick>0}:
     meteor_hits: 1
     bonuscount: 3
   player_meteor_hits{value>0}:

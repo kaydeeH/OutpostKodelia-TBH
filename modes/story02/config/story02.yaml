@@ -269,7 +269,7 @@ shots:
 
 shot_profiles:
    traj_lanes:
-     block: true
+     block: false
      advance_on_hit: false
      states:
        - name: off
@@ -277,7 +277,7 @@ shot_profiles:
    shotProfileScoopEscape:
      show_when_disabled: true
      advance_on_hit: false
-     block: true
+     block: false
      states:
        - name: scoopInactive
          show: off
