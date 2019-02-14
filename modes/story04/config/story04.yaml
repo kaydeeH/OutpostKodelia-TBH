@@ -143,12 +143,12 @@ variable_player:
     meteor_hits: 1
     bonuscount: 3
   player_meteor_hits{value>0}:
-    score: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
-    meteor_accum: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    score: (((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain)) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    meteor_accum: (((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain)) * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_4_last_meteor:
        action: set
-       int: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
-    modestat_4_scoring: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain) * current_player.temp_playfield_x * current_player.perm_playfield_x
+       int: (((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain)) * current_player.temp_playfield_x * current_player.perm_playfield_x
+    modestat_4_scoring: (((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain)) * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_4_base_scoring: ((current_player.meteor_hits) * 500000) + (50000 * current_player.timeRemain)
   timer_meteortimer_tick:
     timeRemain:

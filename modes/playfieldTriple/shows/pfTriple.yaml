@@ -2,7 +2,7 @@
 
 - duration: 100ms
   lights:
-    l_bonusBig1: 0000CC
+    l_bonusBig0: 0000CC
 - duration: 100ms
   lights:
-    l_bonusBig1: off
+    l_bonusBig0: off

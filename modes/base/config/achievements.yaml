@@ -97,91 +97,69 @@ achievements:
    show_when_completed: ach7
    show_when_stopped: off
 
-
- mode_01_started:
-   show_tokens:
-     light: l_mode0
-   start_events: mode_story01_started
-   complete_events: acheivement_story01_unsuccessful, acheivement_story01_successful
-   events_when_completed: m1_start
- mode_02_started:
-   show_tokens:
-     light: l_mode1
-   start_events: mode_story02_started
-   complete_events: acheivement_story02_unsuccessful, acheivement_story02_successful
-   events_when_completed: m2_start
- mode_03_started:
-   show_tokens:
-      light: l_mode2
-   start_events: mode_story03_started
-   complete_events: acheivement_story03_unsuccessful, acheivement_story03_successful
-   events_when_completed: m3_start
- mode_04_started:
-   show_tokens:
-      light: l_mode3
-   start_events: mode_story04_started
-   complete_events: acheivement_story04_unsuccessful, acheivement_story04_successful
-   events_when_completed: m4_start
- mode_05_started:
-   show_tokens:
-      light: l_mode4
-   start_events: mode_story05_started
-   complete_events: acheivement_story05_unsuccessful, acheivement_story05_successful
-   events_when_completed: m5_start
- mode_06_started:
-   show_tokens:
-      light: l_mode5
-   start_events: mode_story06_started
-   complete_events: acheivement_story06_unsuccessful, acheivement_story06_successful
-   events_when_completed: m6_start
- mode_07_started:
-   show_tokens:
-      light: l_mode6
-   start_events: mode_story07_started
-   complete_events: acheivement_story07_unsuccessful, acheivement_story07_successful
-   events_when_completed: m7_start
-
 # This will be for character collection for the wizard mode bonus
  char_vincent:
-   start_events: first_ball_for_current_player
+   start_events: char_collect_start
    complete_events: char_vincent_complete
    reset_events: full_mode_and_char_reset
    show_when_completed: char_vincent
+   restart_on_next_ball_when_started: true
+   restart_after_stop_possible: true
  char_bob:
-   start_events: first_ball_for_current_player
+   start_events: char_collect_start
    complete_events: char_bob_complete
    reset_events: full_mode_and_char_reset
    show_when_completed: char_bob
+   restart_on_next_ball_when_started: true
+   restart_after_stop_possible: true
  char_dan:
-   start_events: first_ball_for_current_player
+   start_events: char_collect_start
    complete_events: char_dan_complete
    reset_events: full_mode_and_char_reset
    show_when_completed: char_dan
+   restart_on_next_ball_when_started: true
+   restart_after_stop_possible: true
  char_charlie:
-   start_events: first_ball_for_current_player
+   start_events: char_collect_start
    complete_events: char_charlie_complete
    reset_events: full_mode_and_char_reset
    show_when_completed: char_charlie
+   restart_on_next_ball_when_started: true
+   restart_after_stop_possible: true
  char_harry:
-   start_events: first_ball_for_current_player
+   start_events: char_collect_start
    complete_events: char_harry_complete
    reset_events: full_mode_and_char_reset
    show_when_completed: char_harry
+   restart_on_next_ball_when_started: true
+   restart_after_stop_possible: true
  char_kate:
-   start_events: first_ball_for_current_player
+   start_events: char_collect_start
    complete_events: char_kate_complete
    reset_events: full_mode_and_char_reset
    show_when_completed: char_kate
+   restart_on_next_ball_when_started: true
+   restart_after_stop_possible: true
  char_alex:
-   start_events: first_ball_for_current_player
+   start_events: char_collect_start
    complete_events: char_alex_complete
    reset_events: full_mode_and_char_reset
    show_when_completed: char_alex
+   restart_on_next_ball_when_started: true
+   restart_after_stop_possible: true
  char_hans:
-   start_events: first_ball_for_current_player
+   start_events: char_collect_start
    complete_events: char_hans_complete
    reset_events: full_mode_and_char_reset
    show_when_completed: char_hans
+   restart_on_next_ball_when_started: true
+   restart_after_stop_possible: true
+
+event_player:
+   full_mode_and_char_reset:
+     - char_collect_start
+   first_ball_for_current_player:
+     - char_collect_start
 
 random_event_player:
    random_character_collect:

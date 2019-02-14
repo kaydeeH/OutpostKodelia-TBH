@@ -43,6 +43,7 @@ event_player:
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
      - acheivement_story07_unsuccessful
+     - full_mode_and_char_reset
    story_is_completed_successful:
     - global_timer_unpause
     - story_is_completed
@@ -87,6 +88,7 @@ event_player:
     - full_mode_and_char_reset
    story_is_about_to_fail:
     - full_mode_and_char_reset
+
 
 #  Base intro / outro shows
 show_player:

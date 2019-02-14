@@ -173,6 +173,7 @@ shots:
   shotScoopStory01:
     switch: s_ir_scoop_detect
     advance_events: cygnus_located
+    reset_events: story_outro_complete
     show_tokens:
       light: l_scoop
     profile: shotProfileScoopStory01
@@ -205,8 +206,8 @@ shots:
 shot_groups:
    shotGroupToplanesStory01:
        shots: shotLane0Story01, shotLane1Story01, shotLane2Story01, shotLane3Story01, shotLane4Story01
-       reset_events: story_is_completed_unsuccessful
-       enable_events: story_is_about_to_begin
+       reset_events: story_is_about_to_begin, story_is_completed_unsuccessful
+       enable_events: story_outro_complete
 
 variable_player:
    story_intro_complete:

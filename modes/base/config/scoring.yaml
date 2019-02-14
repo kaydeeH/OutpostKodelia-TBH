@@ -505,6 +505,28 @@ variable_player:
      status_untitled_mode_7:
         action: set
         int: 0
+  full_mode_and_char_reset:
+     status_untitled_mode_1:
+        action: set
+        int: 0
+     status_untitled_mode_2:
+        action: set
+        int: 0
+     status_untitled_mode_3:
+        action: set
+        int: 0
+     status_untitled_mode_4:
+        action: set
+        int: 0
+     status_untitled_mode_5:
+        action: set
+        int: 0
+     status_untitled_mode_6:
+        action: set
+        int: 0
+     status_untitled_mode_7:
+        action: set
+        int: 0
 
   acheivement_story01_successful:
      status_untitled_mode_1: 1
