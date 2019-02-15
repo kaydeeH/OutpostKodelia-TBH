@@ -1,0 +1,18 @@
+#show_version=5
+
+- duration: 1ms
+  lights:
+    gi:
+      color: FFFFFF
+      fade: 0ms
+- duration: 2500ms
+  lights:
+    gi:
+      color: 111111
+      fade: 2500ms
+- duration: 500ms
+  lights:
+    gi:
+      color: FFFFFF
+      fade: 500ms
+

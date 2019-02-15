@@ -79,7 +79,7 @@ sounds:
     charge_shot:
         file: charge_shot.wav
         track: sfx
-        volume: .2
+        volume: .9
 
     # Movie SFX
     gallerylaser:

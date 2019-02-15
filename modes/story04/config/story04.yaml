@@ -38,8 +38,9 @@ event_player:
      - information_board_start
      - start_explosions|3s
    story_intro_complete:
-     - scoop_eject
-     - global_timer_unpause
+#     - scoop_eject
+#     - global_timer_unpause
+     - scoop_eject_sequence
    story_has_passed:
      - story_is_about_to_end
      - information_board_end
@@ -174,6 +175,14 @@ shot_profiles:
         show: popgreen
 
 show_player:
+  scoop_eject_sequence:
+     scoop_eject_sound_show:
+       priority: 950
+       loops: 0
+       events_when_completed: scoop_eject, global_timer_unpause
+     scoop_eject_light_show:
+       priority: 950
+       loops: 0
   shotScoopMeteor_hit:
      pinwheel:
        speed: 40

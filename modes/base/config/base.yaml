@@ -290,6 +290,7 @@ sound_player:
     s_jet_lower_center_active: testFX3
     s_jet_upper_right_active: testFX3
     s_jet_upper_left_active: testFX3
+    s_dTargetL0_active: charge_shot
     start_base_music:
       overture:
           action: play
@@ -413,10 +414,13 @@ show_player:
           loops: 0
           events_when_completed: select_mode_start
   shotScoop_scoopNotReady_hit:
-      scoop_show_nr:
+      scoop_eject_sound_show:
           priority: 275
           loops: 0
           events_when_completed: scoop_eject
+      scoop_eject_light_show:
+          priority: 275
+          loops: 0
   extra_ball_is_lit:
       extra_lit:
           loops: -1
@@ -519,32 +523,6 @@ shows:
   scoop_show:
      - time: 0
        slides: scoop_slide
-       lights:
-         l_2x: red
-         l_3x: red
-         l_4x: red
-         l_5x: red
-     - time: +1
-       lights:
-         l_2x: blue
-         l_3x: blue
-         l_4x: blue
-         l_5x: blue
-     - time: +1
-       lights:
-         l_2x: green
-         l_3x: green
-         l_4x: green
-         l_5x: green
-  scoop_show_nr:
-     - time: 0
-       lights:
-         l_2x: red
-         l_3x: red
-         l_4x: red
-         l_5x: red
-       sounds:
-         - charge_shot
   extra_lit:
      - time: 0
        lights:
