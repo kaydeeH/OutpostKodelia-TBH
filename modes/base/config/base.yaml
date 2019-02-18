@@ -290,7 +290,6 @@ sound_player:
     s_jet_lower_center_active: testFX3
     s_jet_upper_right_active: testFX3
     s_jet_upper_left_active: testFX3
-    s_dTargetL0_active: charge_shot
     start_base_music:
       overture:
           action: play

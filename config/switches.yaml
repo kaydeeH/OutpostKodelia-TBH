@@ -52,6 +52,7 @@ switches:
   s_ir_scoop_detect:
     number: 0/1/4
     type: NC
+    ignore_window_ms: 1000
 # NOT YET IMPLEMENTED IN HARDWARE
 # PLAYFIELD ACTIVE is needed or a tilt before hitting a switch will pop the ball back out after a drain
 # TODO: see if there is a way to disable tilt detect prior to playfield validation
