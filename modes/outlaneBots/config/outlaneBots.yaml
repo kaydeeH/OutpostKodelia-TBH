@@ -355,7 +355,7 @@ widgets:
           - char_collect_style_top
         number_grouping: true
       - type: text
-        text: "(outlane_rescue_value)"
+        text: "(outlane_sacrifice_value)"
         style:
           - char_collect_style_bottom
 

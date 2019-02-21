@@ -142,3 +142,14 @@ images:
 # Experimental Assets
     mode_title_exit_box:
        file: mode-exit-display-box.jpg
+# Thank you slides
+    thank_you_proc:
+       file: ty01-p-roc-logo.png
+    belles_phx:
+       file: bandclogo_phoenix.jpg
+    firebird:
+       file: firebird-pinball.jpg
+    missionpinball:
+       file: mpf-logo-200.png
+    prusa:
+       file: prusaresearch-logo-final-2017.png

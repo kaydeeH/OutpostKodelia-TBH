@@ -175,9 +175,9 @@ random_event_player:
    force_all: true
 #   disable_random: true
    events:
-      - attract_01
-      - attract_02
-      - attract_03
+#      - attract_01
+#      - attract_02
+#      - attract_03
       - attract_04
 
   text_loop_finished:
@@ -204,7 +204,7 @@ random_event_player:
     - thank_you_06
     - thank_you_07
     - thank_you_08
-    - thank_you_09
+#    - thank_you_09
 
 event_player:
   attract_03: #All events have had +5s added to account for the title slide
@@ -627,92 +627,179 @@ widgets:
       min_digits: 2
       anchor_y: bottom
       anchor_x: right
+  thank_you_01_widget_nr:
+    - type: text
+      text: "Pinball hardware by"
+      y: 80%
+      style:
+        - thank_you_style
+    - type: image
+      image: thank_you_proc
+      z: 12
+    - type: rectangle
+      width: 800
+      height: 350
+      z: 11
+      color: red
+  thank_you_02_widget_nr:
+    - type: text
+      text: "Alpha Playtesting"
+      y: 80%
+      style:
+        - thank_you_style
+    - type: image
+      image: belles_phx
+      scale: 1.5
+      z: 12
+    - type: rectangle
+      width: 350
+      height: 350
+      z: 11
+      color: red
+  thank_you_03_widget_nr:
+    - type: text
+      text: "Cabinet Provided By"
+      y: 80%
+      style:
+        - thank_you_style
+    - type: image
+      image: firebird
+      scale: .65
+      z: 12
+  thank_you_04_widget_nr:
+    - type: text
+      text: "Additional Parts provided by"
+      y: 68%
+      style:
+        - thank_you_style
+    - type: text
+      text: "Chris Spaseff"
+      style:
+        - thank_you_style
+      y: 50%
+  thank_you_05_widget_nr:
+    - type: text
+      text: "Additional Audio Provided By"
+      y: 68%
+      style:
+        - thank_you_style
+    - type: text
+      text: "John G. Cross (ironspider)"
+      style:
+        - thank_you_style
+      y: 45%
+    - type: text
+      text: "'IMDBill' Thomas"
+      style:
+        - thank_you_style
+      y: 30%
+  thank_you_06_widget_nr:
+    - type: text
+      text: "Software Powered By:"
+      y: 80%
+      style:
+        - thank_you_style
+    - type: image
+      image: missionpinball
+      scale: 1
+      z: 12
+    - type: rectangle
+      width: 300
+      height: 300
+      z: 11
+      color: blue
+    - type: text
+      text: "missionpinball.org"
+      y: 20%
+      style:
+        - thank_you_style
+  thank_you_07_widget_nr:
+    - type: text
+      text: "Support & Sanity Provided By"
+      y: 68%
+      style:
+        - thank_you_style
+    - type: text
+      text: "Our Families"
+      style:
+        - thank_you_style
+      y: 45%
+    - type: text
+      text: "The Goonies"
+      style:
+        - thank_you_style
+      y: 30%
+  thank_you_08_widget_nr:
+    - type: text
+      text: "3D Prints Powered By"
+      y: 80%
+      style:
+        - thank_you_style
+    - type: image
+      image: prusa
+      scale: 3
+      z: 12
+    - type: rectangle
+      width: 800
+      height: 350
+      z: 11
+      color: red
+  thank_you_09_widget_nr:
+    - type: text
+      text: "Tips & Techniques"
+      y: 80%
+      style:
+        - thank_you_style
+    - type: image
+      image: prusa
+      scale: 3
+      z: 12
+    - type: rectangle
+      width: 800
+      height: 350
+      z: 11
+      color: red
   thank_you_01_widget:
     - type: text
       text: "THANK YOU SLIDE 01"
       style:
-        - thank_you_style
+        - thank_you_style2
   thank_you_02_widget:
     - type: text
       text: "THANK YOU SLIDE 02"
       style:
-        - thank_you_style
+        - thank_you_style2
   thank_you_03_widget:
     - type: text
       text: "THANK YOU SLIDE 03"
       style:
-        - thank_you_style
+        - thank_you_style2
   thank_you_04_widget:
     - type: text
       text: "THANK YOU SLIDE 04"
       style:
-        - thank_you_style
+        - thank_you_style2
   thank_you_05_widget:
     - type: text
       text: "THANK YOU SLIDE 05"
       style:
-        - thank_you_style
+        - thank_you_style2
   thank_you_06_widget:
     - type: text
       text: "THANK YOU SLIDE 06"
       style:
-        - thank_you_style
+        - thank_you_style2
   thank_you_07_widget:
     - type: text
       text: "THANK YOU SLIDE 07"
       style:
-        - thank_you_style
+        - thank_you_style2
   thank_you_08_widget:
     - type: text
       text: "THANK YOU SLIDE 08"
       style:
-        - thank_you_style
+        - thank_you_style2
   thank_you_09_widget:
-    - type: text
-      style:
-        - thank_you_style
-      text: "THANK YOU SLIDE 09"
-  thank_you_01_widget_nr:
-    - type: text
-      text: "THANK YOU SLIDE 01"
-      style:
-        - thank_you_style2
-  thank_you_02_widget_nr:
-    - type: text
-      text: "THANK YOU SLIDE 02"
-      style:
-        - thank_you_style2
-  thank_you_03_widget_nr:
-    - type: text
-      text: "THANK YOU SLIDE 03"
-      style:
-        - thank_you_style2
-  thank_you_04_widget_nr:
-    - type: text
-      text: "THANK YOU SLIDE 04"
-      style:
-        - thank_you_style2
-  thank_you_05_widget_nr:
-    - type: text
-      text: "THANK YOU SLIDE 05"
-      style:
-        - thank_you_style2
-  thank_you_06_widget_nr:
-    - type: text
-      text: "THANK YOU SLIDE 06"
-      style:
-        - thank_you_style2
-  thank_you_07_widget_nr:
-    - type: text
-      text: "THANK YOU SLIDE 07"
-      style:
-        - thank_you_style2
-  thank_you_08_widget_nr:
-    - type: text
-      text: "THANK YOU SLIDE 08"
-      style:
-        - thank_you_style2
-  thank_you_09_widget_nr:
     - type: text
       style:
         - thank_you_style2

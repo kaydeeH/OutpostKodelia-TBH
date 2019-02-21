@@ -36,7 +36,6 @@ state_machines:
          events: scoop_reset
        - source: doNotify
          target: start
-#         events: shotScoop_scoopReady_hit
          events: story_is_completed
 
 

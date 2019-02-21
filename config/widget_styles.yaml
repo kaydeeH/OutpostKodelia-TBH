@@ -98,7 +98,6 @@ widget_styles:
         opacity: .9
         z: 15
         x: center
-        y: center
    thank_you_style2:
         color: blue
         font_size: 90
