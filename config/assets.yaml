@@ -153,3 +153,9 @@ images:
        file: mpf-logo-200.png
     prusa:
        file: prusaresearch-logo-final-2017.png
+    marco:
+       file: marco-logo.gif
+    pblife:
+       file: pinball-life.png
+    pinside:
+       file: pinside.png

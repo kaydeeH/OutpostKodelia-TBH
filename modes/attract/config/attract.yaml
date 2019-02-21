@@ -175,9 +175,9 @@ random_event_player:
    force_all: true
 #   disable_random: true
    events:
-#      - attract_01
-#      - attract_02
-#      - attract_03
+      - attract_01
+      - attract_02
+      - attract_03
       - attract_04
 
   text_loop_finished:
@@ -204,7 +204,8 @@ random_event_player:
     - thank_you_06
     - thank_you_07
     - thank_you_08
-#    - thank_you_09
+    - thank_you_09
+    - thank_you_10
 
 event_player:
   attract_03: #All events have had +5s added to account for the title slide
@@ -277,6 +278,8 @@ event_player:
      - thank_you_08_not_random
   thank_you_09:
      - thank_you_09_not_random
+  thank_you_10:
+     - thank_you_10_not_random
 
 variable_player:
    attract_random_control_var_set:
@@ -406,6 +409,9 @@ widget_player:
   thank_you_09_not_random:
     thank_you_09_widget_nr:
       slide: thank_you_title
+  thank_you_10_not_random:
+    thank_you_10_widget_nr:
+      slide: thank_you_title
   slide_thank_you_title_removed:
     thank_you_01_widget:
       action: remove
@@ -461,6 +467,10 @@ widget_player:
     thank_you_09_widget_nr:
       action: remove
       slide: thank_you_title
+    thank_you_10_widget_nr:
+      action: remove
+      slide: thank_you_title
+
 
   #Add player scores to last game slide, as relevant
   lastgame_player2:
@@ -751,14 +761,30 @@ widgets:
       style:
         - thank_you_style
     - type: image
-      image: prusa
-      scale: 3
+      image: pinside
       z: 12
-    - type: rectangle
-      width: 800
-      height: 350
-      z: 11
-      color: red
+    - type: text
+      text: "pinside.com"
+      y: 30%
+      style:
+        - thank_you_style
+  thank_you_10_widget_nr:
+    - type: text
+      text: "Additional Parts provided by"
+      y: 68%
+      style:
+        - thank_you_style
+    - type: image
+      image: marco
+      scale: 1
+      z: 12
+      x: 30%
+    - type: image
+      image: pblife
+      scale: 1
+      z: 12
+      x: 70%
+
   thank_you_01_widget:
     - type: text
       text: "THANK YOU SLIDE 01"
