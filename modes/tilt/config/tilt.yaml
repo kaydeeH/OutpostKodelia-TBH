@@ -3,7 +3,7 @@
 tilt:
   tilt_warning_switch_tag: tilt_warning
   warnings_to_tilt: 3
-  reset_warnings_events: ball_ended
+  reset_warnings_events: ball_started
   settle_time: 5s
   multiple_hit_window: 1500ms
 
