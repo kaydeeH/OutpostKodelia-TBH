@@ -58,3 +58,7 @@ slides:
         font_size: 100
         font_name: ocr-a-tribute-bold
 
+sound_player:
+  tilt_warning_1: klaxon1
+  tilt_warning_2: klaxon2
+  tilt: drainout

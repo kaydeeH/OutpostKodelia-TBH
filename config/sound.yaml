@@ -10,7 +10,7 @@ sound_system:
        music:
           type: standard
           simultaneous_sounds: 1
-          volume: 0.5
+          volume: .5
        voice:
           type: standard
           simultaneous_sounds: 10
@@ -78,6 +78,22 @@ sounds:
         volume: .2
     charge_shot:
         file: charge_shot.wav
+        track: sfx
+        volume: .2
+    swoosh:
+        file: swoosh.wav
+        track: sfx
+        volume: .6
+    drainout:
+        file: machinefail.wav
+        track: sfx
+        volume: .2
+    klaxon1:
+        file: klaxon1.wav
+        track: sfx
+        volume: .2
+    klaxon2:
+        file: klaxon2.wav
         track: sfx
         volume: .2
 

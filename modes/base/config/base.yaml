@@ -302,6 +302,9 @@ sound_player:
           action: stop
     do_scoop_notify{current_player.score>0}: scene_ready
     s_spinner_active: laser_pistol
+    s_roInLaneRight_active: swoosh
+    s_roInLaneLeft_active: swoosh
+    ball_will_end: drainout
 
 show_player:
   mode_base_started:
