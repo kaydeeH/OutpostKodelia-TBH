@@ -62,25 +62,15 @@ widgets:
       - type: text
         text: "CYGNUS LOCATED"
         style:
-#           - mode_out_title_with_video
            - mode_outro_title
       - type: text
         text: "Time Taken: (cygnus_seconds) seconds"
         style:
-#           - mode_out_detail_1_with_video
            - mode_outro_data_line_1
       - type: text
         text: "Mode Scoring: (modestat_1_scoring)"
         style:
-#           - mode_out_detail_2_with_video
            - mode_outro_data_line_2
-#      - type: video
-#        video: test
-#        style:
-#           - mode_outro_video
-# width/height values don't seem to work in widget styles
-#        width: 400
-#        height: 300
    cygnus_failed_outro:
       - type: text
         text: "CYGNUS NOT LOCATED"
@@ -91,6 +81,15 @@ widgets:
         style:
            - mode_outro_data_line_1
 #  MODE 02 -- ESCAPE THE BLACK HOLE
+   story_02_outro_widget:
+      - type: text
+        text: BLACK HOLE ESCAPED
+        style:
+           - mode_outro_title
+      - type: text
+        text: "Mode Scoring: (modestat_2_scoring)"
+        style:
+           - mode_outro_data_line_1
    story_02_outro_fail_widget:
       - type: text
         text: ESCAPE THE BLACK HOLE FAILED
@@ -100,16 +99,21 @@ widgets:
         text: You are *NOT* super duper neat
         style:
            - mode_outro_data_line_1
-   story_02_outro_widget:
+
+#  MODE 03 -- SHOOTING GALLERY
+   story_03_outro_widget:
       - type: text
-        text: BLACK HOLE ESCAPED
+        text: SHOOTING GALLERY DONE
         style:
            - mode_outro_title
       - type: text
-        text: (mode2_final_score_display)
+        text: "Mode Scoring: (modestat_3_scoring)"
         style:
            - mode_outro_data_line_1
-#  MODE 03 -- SHOOTING GALLERY
+      - type: text
+        text: "Targets Hit: (gallery_targets_hit)"
+        style:
+           - mode_outro_data_line_2
    story_03_outro_fail_widget:
       - type: text
         text: SHOOTING GALLERY FAILED
@@ -120,20 +124,16 @@ widgets:
         y: 30%
         font_size: 50
         z: 50
-   story_03_outro_widget:
+#  MODE 04 -- METEOR STRIKE
+   story_04_outro_widget:
       - type: text
-        text: SHOOTING GALLERY DONE
+        text: METEOR STRIKE PASSED
         style:
            - mode_outro_title
       - type: text
-        text: "Meet me in parts storage..."
-        style:
-           - mode_outro_data_line_1
-      - type: text
-        text: "Targets Hit: (gallery_targets_hit)"
+        text: "Mode Scoring: (modestat_4_scoring)"
         style:
            - mode_outro_data_line_2
-#  MODE 04 -- METEOR STRIKE
    story_04_outro_fail_widget:
       - type: text
         text: METEOR STRIKE FAILED
@@ -143,15 +143,7 @@ widgets:
         text: You are sent home in a space box
         style:
            - mode_outro_data_line_1
-   story_04_outro_widget:
-      - type: text
-        text: METEOR STRIKE PASSED
-        style:
-           - mode_outro_title
-      - type: text
-        text: "Meteor Scoring: (meteor_accum)"
-        style:
-           - mode_outro_data_line_1
+
 #  MODE 05 -- CORRIDOR BATTLE
    story_05_outro_widget:
       - type: text
@@ -159,11 +151,11 @@ widgets:
         style:
            - mode_outro_title
       - type: text
-        text: "Remaining Time (corridor_seconds)s"
+        text: "Bonus for remaining time: (corridor_bonus)"
         style:
            - mode_outro_data_line_1
       - type: text
-        text: "Bonus for remaining time: (corridor_bonus)"
+        text: "Mode Scoring: (modestat_5_scoring)"
         style:
            - mode_outro_data_line_2
    story_05_outro_fail_widget:
@@ -194,3 +186,7 @@ widgets:
         text: "The bigger they are, the harder they fall. [Time taken:(battletime)s]"
         style:
            - mode_outro_data_line_1
+      - type: text
+        text: "Mode Scoring: (modestat_6_scoring)"
+        style:
+           - mode_outro_data_line_2
