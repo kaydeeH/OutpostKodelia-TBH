@@ -79,7 +79,7 @@ sounds:
     drainout:
         file: machinefail.wav
         track: sfx
-        volume: .5
+        volume: .4
     klaxon1:
         file: klaxon1.wav
         track: sfx
@@ -95,7 +95,7 @@ sounds:
     drop:
         file: pulserifle.wav
         track: sfx
-        volume: .05
+        volume: .1
 
     # Movie SFX
     gallerylaser:
