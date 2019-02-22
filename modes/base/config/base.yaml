@@ -287,11 +287,29 @@ shot_groups:
        disable_events: ball_ending, mode_using_targets_started
 
 sound_player:
-    s_slingshot_left_active: testFX1
-    s_slingshot_right_active: testFX1
-    s_jet_lower_center_active: testFX3
-    s_jet_upper_right_active: testFX3
-    s_jet_upper_left_active: testFX3
+    s_slingshot_left_active: laser_blast
+    s_slingshot_right_active: laser_blast
+    s_sTargetDropL_active: laser_blast
+    s_sTargetDropR_active: laser_blast
+    s_sTargetLowL_active: laser_blast
+    s_sTargetLowR_active: laser_blast
+    s_sTargetUpperL_active: laser_blast
+    s_sTargetUpperR_active: laser_blast
+    s_sTargetYellowL_active: soft_laser
+    s_sTargetYellowR_active: soft_laser
+    s_jet_lower_center_active: blaster
+    s_jet_upper_right_active: blaster
+    s_jet_upper_left_active: blaster
+    s_dTargetL0_active: drop
+    s_dTargetL1_active: drop
+    s_dTargetL2_active: drop
+    s_dTargetL3_active: drop
+    s_dTargetR0_active: drop
+    s_dTargetR1_active: drop
+    s_dTargetR2_active: drop
+    s_dTargetR3_active: drop
+    s_dtargetcl_active: drop
+    s_dtargetcr_active: drop
     start_base_music:
       overture:
           action: play
@@ -304,7 +322,14 @@ sound_player:
     s_spinner_active: laser_pistol
     s_roInLaneRight_active: swoosh
     s_roInLaneLeft_active: swoosh
-    ball_will_end: drainout
+    s_rooutlaneleft_active: drainout
+    s_rooutlaneright_active: drainout
+    s_lane0_active: swoosh
+    s_lane1_active: swoosh
+    s_lane2_active: swoosh
+    s_lane3_active: swoosh
+    s_lane4_active: swoosh
+    ball_will_end: ball_end_clips
 
 show_player:
   mode_base_started:
