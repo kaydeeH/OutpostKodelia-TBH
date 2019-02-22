@@ -68,7 +68,7 @@ event_player:
 #     - scoop_eject
 # Character Collect
    player_modestat_1_final_timing{value<75.0}:
-     - random_character_collect|3100ms
+     - random_character_collect|3s
 # Do we want to do something for each lane found?
    shotLane0Story01_unlit_hit:
      - cygnus_lane_0_event
@@ -260,6 +260,7 @@ sound_player:
           action: play
           loops: -1
           mode_end_action: stop
+
 
 
 

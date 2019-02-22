@@ -11,21 +11,68 @@ widgets:
         anchor_x: center
         anchor_y: center
         y: 52.5%
-        z: 49
+        z: 40
+
+# MODE EXIT WIDGETS
+#   mode_01_outro_video:
+#     - type: video
+#       video: ltc_success
+#       volume: 1
+#       width: 683
+#       height: 344
+#       z: 50
+#   mode_02_outro_video:
+#     - type: video
+#       video: etbh_success
+#       volume: 1
+#       width: 683
+#       height: 344
+#       z: 50
+#   mode_03_outro_video:
+#     - type: video
+#       video: sg_success
+#       volume: 1
+#       width: 683
+#       height: 344
+#       z: 50
+#   mode_04_outro_video:
+#     - type: video
+#       video: ms_success
+#       volume: 1
+#       width: 683
+#       height: 344
+#       z: 50
+#   mode_05_outro_video:
+#     - type: video
+#       video: cb_success
+#       volume: 1
+#       width: 683
+#       height: 344
+#       z: 50
+#   mode_06_outro_video:
+#     - type: video
+#       video: dg_success
+#       volume: 1
+#       width: 683
+#       height: 344
+#       z: 50
 
 #  MODE 01 -- LOCATE THE CYGNUS
    cygnus_located_outro:
       - type: text
         text: "CYGNUS LOCATED"
         style:
+#           - mode_out_title_with_video
            - mode_outro_title
       - type: text
         text: "Time Taken: (cygnus_seconds) seconds"
         style:
+#           - mode_out_detail_1_with_video
            - mode_outro_data_line_1
       - type: text
         text: "Mode Scoring: (modestat_1_scoring)"
         style:
+#           - mode_out_detail_2_with_video
            - mode_outro_data_line_2
 #      - type: video
 #        video: test
