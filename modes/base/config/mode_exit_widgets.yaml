@@ -121,6 +121,7 @@ widgets:
            - mode_outro_title
       - type: text
         text: "If one dances, one MUST pay the piper."
+        style:
            - mode_outro_data_line_1
 #  MODE 04 -- METEOR STRIKE
    story_04_outro_widget:
