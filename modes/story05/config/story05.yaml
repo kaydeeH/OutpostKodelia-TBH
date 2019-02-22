@@ -230,7 +230,14 @@ timers:
 
 sound_player:
     mode_story05_started:
+      overture:
+          action: stop
+          fade_out: 0
+    mode_05_end_video:
       zerogravity:
           action: play
           loops: -1
           mode_end_action: stop
+
+
+

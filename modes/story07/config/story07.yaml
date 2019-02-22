@@ -47,16 +47,38 @@ event_player:
      - full_mode_and_char_reset
      - information_board_end
    story_is_completed_successful:
-    - global_timer_unpause
-    - story_is_completed
+     - global_timer_unpause
+     - story_is_completed
    story_is_completed_unsuccessful:
-    - story_is_completed
+     - story_is_completed
    player_wiz_feature_collects{value>=4}:
-    - wiz_enable_discovery_collect
-    - wiz_enable_discovery_collect_infoboard|3s
+     - wiz_enable_discovery_collect
+     - wiz_enable_discovery_collect_infoboard|3s
    shotScoopCollect_shotProfileScoopCollect_scoopActive_hit:
-    - wizard_cashout
-    - global_timer_pause
+     - wizard_cashout
+     - global_timer_pause
+   slide_discovery_collect_slide_created:
+     set_text_to_cycle|1s:
+       text: "DISCOVERIES OF THE BEYOND"
+       delay: 90
+       varname: "s1"
+       intermed: "*"
+     set_text_to_cycle|6s:
+       text: "dbonus"
+       delay: 60
+       varname: "s2"
+       intermed: "*"
+   slide_story_07_outro_fail_slide_created:
+     set_text_to_cycle|1s:
+       text: "THERE IS JUSTICE IN THE WORLD"
+       delay: 20
+       varname: "s1"
+       intermed: "*"
+     set_text_to_cycle|3s:
+       text: "THE BLACK HOLE WILL BE YOUR GRAVE"
+       delay: 20
+       varname: "s2"
+       intermed: "*"
 # Initial Discovery Bonus Events
    char_alex_is_complete:
     - discovery_char_bonus
@@ -122,16 +144,18 @@ show_player:
 shows:
    story_07_intro:
      - time: 0
+       slides: story_07_intro_video_slide
+     - time: +7.2s
        slides: story_07_intro_slide
        duration: -1
    story_07_fail_outro:
      - time: 0
        slides: story_07_outro_fail_slide
-       duration: 3
+       duration: 6
    story_07_outro:
      - time: 0
        slides: story_07_outro_slide
-       duration: 3
+       duration: 5
    discovery_collect_show:
      - time: 0
        slides: discovery_collect_slide
@@ -139,9 +163,20 @@ shows:
    wizard_complete_show:
      - time: 0
        slides: discovery_collect_slide
-       duration: 5
+       duration: 13.6
 
 slides:
+   story_07_intro_video_slide:
+    widgets:
+      - type: video
+        video: itb start
+        volume: 1
+        width: 1366
+        height: 688
+        control_events:
+          - event: slide_story_07_intro_video_slide_active
+            action: position
+            value: 0.01
    story_07_intro_slide:
     widgets:
       - type: text
@@ -314,10 +349,32 @@ slides:
         x: 50%
    story_07_outro_fail_slide:
     widgets:
+      - type: video
+        video: itb_failed
+        volume: 0.5
+        width: 1366
+        height: 688
+        control_events:
+          - event: slide_story_07_outro_fail_slide_active
+            action: position
+            value: 0.01
       - type: text
-        text: NO BEYOND FOR YOU
+        text: (machine|s1)
         color: red
-        font_size: 100
+        anchor_x: left
+        y: 90%
+        x: 11%
+        z: 20
+        font_size: 70
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: (machine|s2)
+        color: red
+        anchor_x: left
+        x: 5%
+        y: 10%
+        z: 20
+        font_size: 70
         font_name: ocr-a-tribute-bold
    story_07_outro_slide:
     widgets:
@@ -328,10 +385,30 @@ slides:
         font_name: ocr-a-tribute-bold
    discovery_collect_slide:
     widgets:
+      - type: video
+        video: itb_success
+        volume: 0.4
+        width: 1366
+        height: 688
+        control_events:
+          - event: slide_discovery_collect_slide_active
+            action: position
+            value: 0.01
       - type: text
-        text: "--- Collect Discovery Bonus Placeholder ---"
+        text: (machine|s1)
         color: red
-        font_size: 50
+        anchor_x: left
+        y: 90%
+        x: 15%
+        z: 20
+        font_size: 70
+        font_name: ocr-a-tribute-bold
+      - type: text
+        text: (machine|s2)
+        color: red
+        y: 10%
+        z: 20
+        font_size: 70
         font_name: ocr-a-tribute-bold
 
 
@@ -584,12 +661,6 @@ shot_groups:
 #timers:
 
 widget_player:
-   mode_story07_started:
-      yt_remain_widget_07:
-         slide: scoring_slide
-   story07_ended:
-      yt_remain_widget_07:
-         action: remove
    status_untitled_mode_1_completed:
       ach_01_on:
          slide: story_07_intro_slide
@@ -634,11 +705,23 @@ widget_player:
          slide: story_07_intro_slide
 
 sound_player:
-    mode_story07_started:
+    slide_story_07_intro_video_slide_active:
+      overture:
+          action: stop
+          fade_out: 0
+    slide_story_07_intro_slide_active:
       intothehole:
           action: play
           loops: -1
           mode_end_action: stop
+    wizard_complete:
+      intothehole:
+          action: stop
+          fade_out: 0
+    story_is_about_to_fail:
+      intothehole:
+          action: stop
+          fade_out: 0
     status_untitled_mode_1_completed: bass_hit
     status_untitled_mode_2_completed: bass_hit
     status_untitled_mode_3_completed: bass_hit
@@ -657,10 +740,6 @@ sound_player:
 
 
 widgets:
-   yt_remain_widget_07:
-     - type: text
-       text: "spinner then lanes ya dolt"
-       y: 80%
    ach_01_on:
      - type: image
        image: badgeLocateTheCygnus

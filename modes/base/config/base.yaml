@@ -8,6 +8,8 @@ config:
   - centerdrops.yaml
   - mode_exit_widgets.yaml
   - mode_exit_shows.yaml
+  - mode_start_video_widgets.yaml
+
 #  - junkytest.yaml        # can remove this after
 
 # ---------------------------------------------------

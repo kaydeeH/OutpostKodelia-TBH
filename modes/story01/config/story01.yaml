@@ -220,6 +220,10 @@ variable_player:
      cygnus_completing_scoring_base: -30667
    timer_cygnusTimer_tick{current_player.cygnus_timer_ticks == 760}:
      cygnus_completing_scoring_base: -30417
+   player_cygnus_completing_scoring_base:
+     cygnus_completing_scoring_actual:
+       int: current_player.cygnus_completing_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
+       action: set
    cygnus_found:
      cygnus_seconds:
        float: current_player.cygnus_timer_ticks / 10
@@ -228,6 +232,7 @@ variable_player:
      modestat_1_final_timing:
        action: set
        float: current_player.cygnus_seconds
+
 
 timers:
    cygnusTimer:
@@ -247,7 +252,15 @@ timers:
 
 sound_player:
     mode_story01_started:
+      overture:
+          action: stop
+          fade_out: 0
+    mode_01_end_video:
       cygnusfloating:
           action: play
           loops: -1
           mode_end_action: stop
+
+
+
+

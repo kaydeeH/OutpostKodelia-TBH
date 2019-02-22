@@ -265,8 +265,13 @@ timers:
 
 sound_player:
     mode_story04_started:
+      overture:
+          action: stop
+          fade_out: 0
+    mode_04_end_video:
       hotandheavy:
           action: play
           loops: -1
           mode_end_action: stop
     play_explosion: explosions
+

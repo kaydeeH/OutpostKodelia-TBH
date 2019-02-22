@@ -341,7 +341,13 @@ sound_player:
     gallery_target_hit: gallerylaser_hit
     gallery_unlit_target_hit: gallerylaser
     mode_story03_started:
+      overture:
+          action: stop
+          fade_out: 0
+    mode_03_end_video:
       bobandvincent:
         action: play
         loops: -1
         mode_end_action: stop
+
+

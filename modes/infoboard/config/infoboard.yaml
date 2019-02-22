@@ -16,6 +16,18 @@ mode:
    stop_events: information_board_end
    priority: 3000
 
+variable_player:
+   mode_infoboard_started:
+      infoboard_line_1_text:
+         action: set
+         string: "------------------------------------"
+      infoboard_line_2_text:
+         action: set
+         string: "------------------------------------"
+      infoboard_line_3_text:
+         action: set
+         string: "------------------------------------"
+
 widget_player:
    mode_infoboard_started:
       mode_title_display_box:

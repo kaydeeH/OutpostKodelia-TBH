@@ -253,6 +253,10 @@ widgets:
 
 sound_player:
     mode_story06_started:
+      overture:
+          action: stop
+          fade_out: 0
+    mode_06_end_video:
       hotterandheavier:
           action: play
           loops: -1

@@ -1,12 +1,15 @@
 #config_version=5
 event_player:
    story_is_about_to_begin:
-     - mode_03_setintro_01
-     - mode_03_setintro_02
-     - mode_03_setintro_03
-     - story_intro_complete|6s
-     - mode_03_setintro2_02|3s
-     - mode_03_setintro3_02|3s
+     - mode_03_setintro_01|2s
+     - mode_03_setintro_02|2s
+     - mode_03_setintro_03|2s
+     - mode_03_setintro2_02|7s
+     - mode_03_setintro3_02|7s
+     - mode_03_start_video
+     # 14.708s
+     - mode_03_end_video|15.5s
+     - story_intro_complete|12.5s
    mode_03_setintro_01:
      set_infoboard_line_text:
         linenbr: 1

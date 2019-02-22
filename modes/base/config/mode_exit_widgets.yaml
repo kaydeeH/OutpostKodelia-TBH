@@ -23,6 +23,10 @@ widgets:
         text: "Time Taken: (cygnus_seconds) seconds"
         style:
            - mode_outro_data_line_1
+      - type: text
+        text: "Mode Scoring: (modestat_1_scoring)"
+        style:
+           - mode_outro_data_line_2
 #      - type: video
 #        video: test
 #        style:
@@ -51,7 +55,7 @@ widgets:
            - mode_outro_data_line_1
    story_02_outro_widget:
       - type: text
-        text: BLACK HOLE ESACPED
+        text: BLACK HOLE ESCAPED
         style:
            - mode_outro_title
       - type: text

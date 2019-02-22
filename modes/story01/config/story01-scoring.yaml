@@ -44,3 +44,4 @@ variable_player:
     bonuscount: 3
     modestat_1_scoring: current_player.cygnus_completing_scoring_base * current_player.temp_playfield_x * current_player.perm_playfield_x
     modestat_1_base_scoring: current_player.cygnus_completing_scoring_base
+

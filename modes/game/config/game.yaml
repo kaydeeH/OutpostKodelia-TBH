@@ -5,7 +5,7 @@ mode:
 
 event_player:
   player_added{num==1}:
-    - load_one_player_elements|200ms
+    - load_one_player_elements|500ms
   player_added{num==2}:
     - remove_one_player_elements|200ms
     - start_multiplayer_lights|500ms
@@ -29,37 +29,6 @@ event_player:
   player_turn_started_out_of{number==4}:
     - player_3_is_inactive
     - player_4_is_active
-
-#  single_player_ball_started:
-#    - revertBadge01
-#    - revertBadge02
-#    - revertBadge03
-#    - revertBadge04
-#    - revertBadge05
-#    - revertBadge06
-#    - revertBadge07
-#  player_turn_started_out_of:
-#    - revertBadge01
-#    - revertBadge02
-#    - revertBadge03
-#    - revertBadge04
-#    - revertBadge05
-#    - revertBadge06
-#    - revertBadge07
-#  acheivement_story01_successful:
-#    - applyBadge01
-#  acheivement_story02_successful:
-#    - applyBadge02
-#  acheivement_story03_successful:
-#    - applyBadge03
-#  acheivement_story04_successful:
-#    - applyBadge04
-#  acheivement_story05_successful:
-#    - applyBadge05
-#  acheivement_story06_successful:
-#    - applyBadge06
-#  acheivement_story07_successful:
-#    - applyBadge07
 
 slide_player:
   game_started: scoring_slide

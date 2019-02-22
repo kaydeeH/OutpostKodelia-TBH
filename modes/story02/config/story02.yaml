@@ -357,7 +357,15 @@ state_machines:
 
 sound_player:
     mode_story02_started:
+      overture:
+          action: stop
+          fade_out: 0
+    mode_02_end_video:
       durantisdead:
           action: play
           loops: -1
           mode_end_action: stop
+
+
+
+

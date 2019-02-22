@@ -21,6 +21,10 @@ class TextTypeIn(Scriptlet):
         self.machine.events.add_handler('set_text_to_cycle', self._set_text)
         self.machine.events.add_handler('slide_video_created', self._clear_mach)
         self.machine.events.add_handler('slide_video_removed', self._clear_mach)
+        self.machine.events.add_handler('slide_story_07_intro_video_slide_created', self._clear_mach)
+        self.machine.events.add_handler('slide_story_07_intro_video_slide_removed', self._clear_mach)
+        self.machine.events.add_handler('slide_discovery_collect_slide_created', self._clear_mach)
+        self.machine.events.add_handler('slide_discovery_collect_slide_removed', self._clear_mach)
 
     def _clear_mach(self, **kwargs):
         self.machine.set_machine_var(name="thePinExp", value="")
@@ -52,6 +56,9 @@ class TextTypeIn(Scriptlet):
 
         if TextTypeIn.textValue == "s1":
             TextTypeIn.textValue = str(self.machine.get_machine_var("score1_label")) + "-" + str(self.machine.get_machine_var("score1_name")) + " " + "{:,}".format(self.machine.get_machine_var("score1_value"))
+
+        if TextTypeIn.textValue == "dbonus":
+            TextTypeIn.textValue = '{:,}'.format(self.machine.game.player.vars.get("discovery_base_char_value")) + " AWARDED"
 
         TextTypeIn.delayMs = kwargs.get("delay")
         TextTypeIn.varName = kwargs.get("varname")

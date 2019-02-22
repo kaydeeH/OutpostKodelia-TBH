@@ -1,0 +1,97 @@
+#config_version=5
+
+widgets:
+    mode_01_intro_video:
+      - type: video
+        video: ltc_start
+        volume: 1
+        width: 683
+        height: 344
+        z: 50
+    mode_02_intro_video:
+      - type: video
+        video: etbh_start
+        volume: 1
+        width: 683
+        height: 344
+        z: 50
+    mode_03_intro_video:
+      - type: video
+        video: sg_start
+        volume: 1
+        width: 683
+        height: 344
+        z: 50
+    mode_04_intro_video:
+      - type: video
+        video: ms_start
+        volume: 1
+        width: 683
+        height: 344
+        z: 50
+    mode_05_intro_video:
+      - type: video
+        video: cb_start
+        volume: 1
+        width: 683
+        height: 344
+        z: 50
+    mode_06_intro_video:
+      - type: video
+        video: dg_start
+        volume: 1
+        width: 683
+        height: 344
+        z: 50
+
+
+
+widget_player:
+    mode_01_start_video:
+       mode_01_intro_video:
+         slide: scoring_slide
+         action: add
+    mode_01_end_video:
+       mode_01_intro_video:
+         slide: scoring_slide
+         action: remove
+    mode_02_start_video:
+       mode_02_intro_video:
+         slide: scoring_slide
+         action: add
+    mode_02_end_video:
+       mode_02_intro_video:
+         slide: scoring_slide
+         action: remove
+    mode_03_start_video:
+       mode_03_intro_video:
+         slide: scoring_slide
+         action: add
+    mode_03_end_video:
+       mode_03_intro_video:
+         slide: scoring_slide
+         action: remove
+    mode_04_start_video:
+       mode_04_intro_video:
+         slide: scoring_slide
+         action: add
+    mode_04_end_video:
+       mode_04_intro_video:
+         slide: scoring_slide
+         action: remove
+    mode_05_start_video:
+       mode_05_intro_video:
+         slide: scoring_slide
+         action: add
+    mode_05_end_video:
+       mode_05_intro_video:
+         slide: scoring_slide
+         action: remove
+    mode_06_start_video:
+       mode_06_intro_video:
+         slide: scoring_slide
+         action: add
+    mode_06_end_video:
+       mode_06_intro_video:
+         slide: scoring_slide
+         action: remove

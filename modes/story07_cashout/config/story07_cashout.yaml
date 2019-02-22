@@ -12,24 +12,84 @@ mode_settings:
   previous_item_events: s_flipper_left_active
 
 slide_player:
-  story07_cashout_wiz_cashout_highlighted: select_wiz_cashout
-  story07_cashout_wiz_cancel_highlighted: select_wiz_cancel
+  mode_story07_cashout_started: select_wiz_base
+
+widget_player:
+  story07_cashout_wiz_cashout_highlighted:
+     wizard_cashout_selected_widget:
+        slide: select_wiz_base
+        action: add
+     wizard_continue_selected_widget:
+        slide: select_wiz_base
+        action: remove
+  story07_cashout_wiz_cancel_highlighted:
+     wizard_cashout_selected_widget:
+        slide: select_wiz_base
+        action: remove
+     wizard_continue_selected_widget:
+        slide: select_wiz_base
+        action: add
 
 slides:
-  select_wiz_cashout:
-    widgets:
+  select_wiz_base:
+      - type: image
+        image: tbh-slide-template
+        z: 10
+      - type: text
+        text: "In, Through, and Beyond!"
+        y: 85%
+        x: 57%
+        font_size: 80
+        z: 11
+        font_name: ocr-a-tribute-bold
+        color: AC0000
+      - type: text
+        text: "DISCOVERY BONUS VALUE:"
+        font_size: 80
+        z: 11
+        font_name: ocr-a-tribute-bold
+        color: AC0000
+        y: 68%
+      - type: text
+        text: (discovery_base_char_value)
+        y: 58%
+        z: 11
+        font_size: 80
+        font_name: ocr-a-tribute-bold
+        color: white
+        number_grouping: true
+
+widgets:
+   wizard_cashout_selected_widget:
       - type: text
         text: COLLECT DISCOVERY BONUS
-        font_size: 100
-      - type: text
-        text: (discovery_base_char_value)
+        font_size: 80
+        z: 11
         y: 40%
-  select_wiz_cancel:
-    widgets:
+        font_name: ocr-a-tribute-bold
+        color: AC0000
       - type: text
         text: CONTINUE BUILDING BONUS
-        font_size: 100
+        font_size: 80
+        z: 11
+        y: 30%
+        opacity: .5
+        font_name: ocr-a-tribute-bold
+        color: AC0000
+   wizard_continue_selected_widget:
       - type: text
-        text: (discovery_base_char_value)
+        text: COLLECT DISCOVERY BONUS
+        font_size: 80
+        z: 11
         y: 40%
+        opacity: .5
+        font_name: ocr-a-tribute-bold
+        color: AC0000
+      - type: text
+        text: CONTINUE BUILDING BONUS
+        font_size: 80
+        z: 11
+        y: 30%
+        font_name: ocr-a-tribute-bold
+        color: AC0000
 

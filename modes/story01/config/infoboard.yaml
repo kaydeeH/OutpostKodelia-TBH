@@ -2,10 +2,13 @@
 
 event_player:
    story_is_about_to_begin:
-     - mode_01_setintro_01
-     - mode_01_setintro_02
-     - mode_01_setintro_03
-     - story_intro_complete|4s
+     - mode_01_setintro_01|2s
+     - mode_01_setintro_02|2s
+     - mode_01_setintro_03|2s
+     - mode_01_start_video
+     # 9.75s
+     - mode_01_end_video|10.75s
+     - story_intro_complete|7.75s
    mode_01_setintro_01:
      set_infoboard_line_text:
         linenbr: 1
@@ -63,7 +66,7 @@ event_player:
      set_infoboard_line_text:
         linenbr: 3
         text: "Docking Value:"
-        pts: cygnus_completing_scoring_base
+        pts: cygnus_completing_scoring_actual
         secs: none
         cycle: "instant"
         delayms: 0
@@ -71,7 +74,7 @@ event_player:
      set_infoboard_line_text:
         linenbr: 3
         text: "Docking Value:"
-        pts: cygnus_completing_scoring_base
+        pts: cygnus_completing_scoring_actual
         secs: none
         cycle: "instant"
         delayms: 0

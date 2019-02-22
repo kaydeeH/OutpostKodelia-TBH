@@ -2,10 +2,13 @@
 
 event_player:
    story_is_about_to_begin:
-     - mode_06_setintro_01
-     - mode_06_setintro_02
-     - mode_06_setintro_03
-     - story_intro_complete|4s
+     - mode_06_setintro_01|2s
+     - mode_06_setintro_02|2s
+     - mode_06_setintro_03|2s
+     - mode_06_start_video
+     # 18.167s
+     - mode_06_end_video|19s
+     - story_intro_complete|16s
    mode_06_setintro_01:
      set_infoboard_line_text:
         linenbr: 1
