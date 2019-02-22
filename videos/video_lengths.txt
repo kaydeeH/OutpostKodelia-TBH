@@ -1,0 +1,8 @@
+ltc_start - 9.750
+ltc_success - 10.417
+
+etbh_start - 10.542
+etbh_success - 13.625
+
+sg_start - 14.708
+sg_success - 15.292
