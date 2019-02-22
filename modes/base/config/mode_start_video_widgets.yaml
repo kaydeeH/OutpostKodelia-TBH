@@ -4,42 +4,42 @@ widgets:
     mode_01_intro_video:
       - type: video
         video: ltc_start
-        volume: 1
+        volume: .8
         width: 683
         height: 344
         z: 50
     mode_02_intro_video:
       - type: video
         video: etbh_start
-        volume: 1
+        volume: .8
         width: 683
         height: 344
         z: 50
     mode_03_intro_video:
       - type: video
         video: sg_start
-        volume: 1
+        volume: .8
         width: 683
         height: 344
         z: 50
     mode_04_intro_video:
       - type: video
         video: ms_start
-        volume: 1
+        volume: .8
         width: 683
         height: 344
         z: 50
     mode_05_intro_video:
       - type: video
         video: cb_start
-        volume: 1
+        volume: .8
         width: 683
         height: 344
         z: 50
     mode_06_intro_video:
       - type: video
         video: dg_start
-        volume: 1
+        volume: .8
         width: 683
         height: 344
         z: 50
