@@ -29,7 +29,7 @@ sounds:
     laser_blast:
         file: laserblast.wav
         track: sfx
-        volume: .5
+        volume: .3
     testFX7:
         file: 39457__the-bizniss__laser-3.wav
     testFX8:
@@ -79,7 +79,7 @@ sounds:
     drainout:
         file: machinefail.wav
         track: sfx
-        volume: .4
+        volume: .35
     klaxon1:
         file: klaxon1.wav
         track: sfx
@@ -95,7 +95,7 @@ sounds:
     drop:
         file: pulserifle.wav
         track: sfx
-        volume: .1
+        volume: .15
 
     # Movie SFX
     gallerylaser:
