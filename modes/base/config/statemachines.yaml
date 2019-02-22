@@ -30,6 +30,8 @@ state_machines:
        doNotify:
          label: do the notification
          events_when_started: do_scoop_notify
+       in_mode:
+         label: in mode
      transitions:
        - source: start
          target: doNotify
@@ -37,7 +39,15 @@ state_machines:
        - source: doNotify
          target: start
          events: story_is_completed
-
+       - source: start
+         target: in_mode
+         events: ready_to_start_mode_1, ready_to_start_mode_2, ready_to_start_mode_3, ready_to_start_mode_4, ready_to_start_mode_5, ready_to_start_mode_6, ready_to_start_mode_7
+       - source: doNotify
+         target: in_mode
+         events: ready_to_start_mode_1, ready_to_start_mode_2, ready_to_start_mode_3, ready_to_start_mode_4, ready_to_start_mode_5, ready_to_start_mode_6, ready_to_start_mode_7
+       - source: in_mode
+         target: start
+         events: story_is_completed
 
   lt0:
      states:
