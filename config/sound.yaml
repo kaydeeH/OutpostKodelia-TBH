@@ -22,22 +22,14 @@ sound_system:
 
 sounds:
     # Generic SFX
-    testFX1_old:
-        file: 18382infernohvylas.wav
-    testFX2:
-        file: 151022__bubaproducer__laser-shot-silenced.wav
-    testFX1:
-        file: 191594__fins__laser.wav
+    soft_laser:
+        file: silencedlaser.wav
         track: sfx
-    testFX3:
-        file: 191594__fins__laser2.wav
+        volume: .5
+    laser_blast:
+        file: laserblast.wav
         track: sfx
-    testFX4:
-        file: 234083__211redman112__lasgun-fire.ogg
-    testFX5:
-        file: 321102__nsstudios__laser1.wav
-    testFX6:
-        file: 344276__nsstudios__laser3.wav
+        volume: .5
     testFX7:
         file: 39457__the-bizniss__laser-3.wav
     testFX8:
@@ -83,11 +75,11 @@ sounds:
     swoosh:
         file: swoosh.wav
         track: sfx
-        volume: .6
+        volume: .8
     drainout:
         file: machinefail.wav
         track: sfx
-        volume: .2
+        volume: .4
     klaxon1:
         file: klaxon1.wav
         track: sfx
@@ -96,6 +88,14 @@ sounds:
         file: klaxon2.wav
         track: sfx
         volume: .2
+    blaster:
+        file: blaster.wav
+        track: sfx
+        volume: .7
+    drop:
+        file: pulserifle.wav
+        track: sfx
+        volume: .1
 
     # Movie SFX
     gallerylaser:
@@ -285,3 +285,13 @@ sound_pools:
       - explosion1
       - explosion2
       - explosion3
+  ball_end_clips:
+    type: random_force_all
+    track: voice
+    sounds:
+      - bob_02
+      - hans_02
+      - kate_01
+      - vincent_02
+      - hans_05
+
