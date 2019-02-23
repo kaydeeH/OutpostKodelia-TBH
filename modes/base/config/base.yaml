@@ -346,6 +346,9 @@ show_player:
       stars_on:
           priority: 5
           loops: -1
+      cygnus_on:
+          priority: 200
+          loops: -1
   s_slingshot_left_active:
       redHitShow:
           priority: 101
