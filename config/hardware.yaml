@@ -24,13 +24,13 @@ coils:
     default_pulse_ms: 12
   c_dropRight0:
     number: A0-B0-2
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_dropRight1:
     number: A0-B0-3
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_dropCenterR:
     number: A0-B0-4
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_jet_upper_right:
     number: A0-B0-5
     default_pulse_ms: 20
@@ -43,13 +43,13 @@ coils:
   c_dropLeft0:
     debug: true
     number: A0-B1-2
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_dropLeft1:
     number: A0-B1-3
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_dropCenterL:
     number: A0-B1-4
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_jet_lower_center:
     number: A0-B1-5
     default_pulse_ms: 30
