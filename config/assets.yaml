@@ -141,7 +141,7 @@ images:
        file: mode-title-display-box.png
 # Experimental Assets
     mode_title_exit_box:
-       file: mode-exit-display-box.jpg
+       file: mode-exit-display-box.png
 # Thank you slides
     thank_you_proc:
        file: ty01-p-roc-logo.png
