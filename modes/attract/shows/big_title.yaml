@@ -25,6 +25,14 @@
 #              duration: 1550ms
 #              repeat: true
       - type: Text
+        text: "CODE REVISION 0.8 (ALPHA)"
+        font_name: ocr-a-tribute-bold
+        y: 40
+        x: 1355
+        anchor_y: bottom
+        anchor_x: right
+        z: 20
+      - type: Text
         text: PRESS START
         font_name: ocr-a-tribute-bold
         y: 10
