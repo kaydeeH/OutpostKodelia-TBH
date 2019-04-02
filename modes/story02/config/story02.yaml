@@ -42,6 +42,8 @@ event_player:
      - global_timer_pause
      - story_is_about_to_end
      - story02_is_about_to_end
+   shotScoopEscape_shotProfileScoopEscape_scoopInactive_hit:
+     - global_timer_pause
    story_outro_complete:
      - global_timer_unpause
      - scoop_eject
@@ -119,10 +121,13 @@ show_player:
          events_when_completed: story_outro_complete
          loops: 0
    shotScoopEscape_shotProfileScoopEscape_scoopInactive_hit:
-      pinwheel:
-        speed: 40
-        loops: 1
-        events_when_completed: scoop_eject
+      scoop_eject_sound_show:
+         priority: 950
+         loops: 0
+         events_when_completed: scoop_eject, global_timer_unpause
+      scoop_eject_light_show:
+         priority: 950
+         loops: 0
    player_shot_lanetraj0{value==1}:
       lane1shot:
         priority: 950
@@ -285,7 +290,7 @@ shot_profiles:
    shotProfileScoopEscape:
      show_when_disabled: true
      advance_on_hit: false
-     block: false
+     block: true
      states:
        - name: scoopInactive
          show: off
