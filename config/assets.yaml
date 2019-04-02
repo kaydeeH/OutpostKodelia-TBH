@@ -161,3 +161,11 @@ images:
        file: pinside.png
     starfighters:
        file: starfighters.jpg
+    pf1:
+       file: phoenix-flyer-1.jpg
+    pf2:
+       file: phoenix-flyer-2.jpg
+    pf3:
+       file: phoenix-flyer.jpg
+    pf4:
+       file: phoenix-flyer-4.jpg
