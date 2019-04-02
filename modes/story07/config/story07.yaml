@@ -132,10 +132,13 @@ show_player:
          events_when_completed: story_outro_complete
          loops: 0
    shotScoopCollect_shotProfileScoopCollect_scoopInactive_hit:
-      pinwheel:
-        speed: 40
-        loops: 1
-        events_when_completed: scoop_eject
+      scoop_eject_sound_show:
+         priority: 950
+         loops: 0
+         events_when_completed: scoop_eject
+      scoop_eject_light_show:
+         priority: 950
+         loops: 0
    wizard_complete:
       wizard_complete_show:
         events_when_completed: story_outro_complete

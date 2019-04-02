@@ -65,6 +65,8 @@ event_player:
    story_is_completed_unsuccessful:
     - story_is_completed
 # Character Collect
+   shotScoopMeteor_hit:
+    - local_timer_pause
    player_meteor_hits{value==3}:
     - random_character_collect
    s_ir_scoop_detect_active{current_player.story04_meteortimer_tick==0}:
@@ -185,10 +187,13 @@ show_player:
        priority: 950
        loops: 0
   shotScoopMeteor_hit:
-     pinwheel:
-       speed: 40
-       loops: 1
-       events_when_completed: scoop_eject
+     scoop_eject_sound_show:
+       priority: 950
+       loops: 0
+       events_when_completed: scoop_eject, local_timer_unpause
+     scoop_eject_light_show:
+       priority: 950
+       loops: 0
   timer_meteortimer_started:
      meteor:
        manual_advance: true
@@ -259,9 +264,9 @@ timers:
         value: 0.9
       - event: story_intro_complete
         action: start
-      - event: global_timer_pause
+      - event: local_timer_pause
         action: pause
-      - event: global_timer_unpause
+      - event: local_timer_unpause
         action: start
 
 sound_player:
