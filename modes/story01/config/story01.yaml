@@ -60,6 +60,8 @@ event_player:
 # Mode Specific Event Handlers
    shotGroupToplanesStory01_lit_complete:
      - cygnus_located
+   shotScoopStory01_shotProfileScoopStory01_scoopInactive_hit:
+     - local_timer_pause
    shotScoopStory01_shotProfileScoopStory01_scoopActive_hit:
      - cygnus_found
      - global_timer_pause
@@ -100,10 +102,13 @@ show_player:
          events_when_completed: story_outro_complete
          loops: 0
    shotScoopStory01_shotProfileScoopStory01_scoopInactive_hit:
-      pinwheel:
-        speed: 40
-        loops: 1
-        events_when_completed: scoop_eject
+      scoop_eject_sound_show:
+        priority: 950
+        loops: 0
+        events_when_completed: scoop_eject, local_timer_unpause
+      scoop_eject_light_show:
+        priority: 950
+        loops: 0
    scoop_eject_sequence:
       scoop_eject_sound_show:
         priority: 950
@@ -253,9 +258,9 @@ timers:
        action: start
      - event: cygnus_found
        action: stop
-     - event: global_timer_pause
+     - event: local_timer_pause
        action: pause
-     - event: global_timer_unpause
+     - event: local_timer_unpause
        action: start
 
 sound_player:

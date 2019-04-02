@@ -231,9 +231,9 @@ timers:
        - event: shotGroupCorridorTargets_complete_complete
          action: pause
          value: 0
-       - event: global_timer_pause
+       - event: local_timer_pause
          action: pause
-       - event: global_timer_unpause
+       - event: local_timer_unpause
          action: start
 
 sound_player:

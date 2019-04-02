@@ -334,6 +334,10 @@ timers:
     control_events:
       - event: story_intro_complete
         action: start
+      - event: local_timer_pause
+        action: pause
+      - event: local_timer_unpause
+        action: start
   gallery_timer_display:
     max_value: 600
     start_value: 600
@@ -343,6 +347,10 @@ timers:
     start_running: no
     control_events:
       - event: story_intro_complete
+        action: start
+      - event: local_timer_pause
+        action: pause
+      - event: local_timer_unpause
         action: start
 
 sound_player:
