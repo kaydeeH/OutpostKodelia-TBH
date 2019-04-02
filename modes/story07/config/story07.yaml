@@ -31,15 +31,14 @@ event_player:
      - story_is_about_to_begin
      - global_timer_pause
    story_intro_complete:
-     - scoop_eject
+     - fanfare_scoop_eject
      - story07_intro_complete
-     - global_timer_unpause
    slide_story_07_intro_slide_removed:
      - information_board_start
    story_outro_complete:
      - story_is_completed_successful
      - acheivement_story07_successful
-     - scoop_eject
+     - fanfare_scoop_eject
      - information_board_end
    story_outro_fail_complete:
      - story_is_completed_unsuccessful
@@ -104,8 +103,7 @@ event_player:
    story07_cashout_wiz_cancel_selected:
     - wizard_continue
     - scoop_discovery_not_collected
-    - global_timer_unpause
-    - scoop_eject
+    - fanfare_scoop_eject
 
 # Trigger a reset event
    wizard_complete:
@@ -136,6 +134,14 @@ show_player:
          priority: 950
          loops: 0
          events_when_completed: scoop_eject
+      scoop_eject_light_show:
+         priority: 950
+         loops: 0
+   fanfare_scoop_eject:
+      scoop_eject_sound_show:
+         priority: 950
+         loops: 0
+         events_when_completed: scoop_eject, global_timer_unpause
       scoop_eject_light_show:
          priority: 950
          loops: 0
