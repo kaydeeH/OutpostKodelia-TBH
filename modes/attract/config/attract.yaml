@@ -206,6 +206,7 @@ random_event_player:
     - thank_you_08
     - thank_you_09
     - thank_you_10
+    - thank_you_11
 
 event_player:
   attract_03: #All events have had +5s added to account for the title slide
@@ -280,6 +281,9 @@ event_player:
      - thank_you_09_not_random
   thank_you_10:
      - thank_you_10_not_random
+  thank_you_11:
+     - thank_you_11_not_random
+
 
 variable_player:
    attract_random_control_var_set:
@@ -412,6 +416,9 @@ widget_player:
   thank_you_10_not_random:
     thank_you_10_widget_nr:
       slide: thank_you_title
+  thank_you_11_not_random:
+    thank_you_11_widget_nr:
+      slide: thank_you_title
   slide_thank_you_title_removed:
     thank_you_01_widget:
       action: remove
@@ -470,7 +477,9 @@ widget_player:
     thank_you_10_widget_nr:
       action: remove
       slide: thank_you_title
-
+    thank_you_11_widget_nr:
+      action: remove
+      slide: thank_you_title
 
   #Add player scores to last game slide, as relevant
   lastgame_player2:
@@ -784,6 +793,21 @@ widgets:
       scale: 1
       z: 12
       x: 70%
+  thank_you_11_widget_nr:
+    - type: text
+      text: "Beta Playtesting Site"
+      y: 80%
+      style:
+        - thank_you_style
+    - type: image
+      image: starfighters
+      scale: .3
+      z: 12
+#    - type: rectangle
+#      width: 350
+#      height: 350
+#      z: 11
+#      color: red
 
   thank_you_01_widget:
     - type: text

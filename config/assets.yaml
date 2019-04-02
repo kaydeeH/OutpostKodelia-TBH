@@ -159,3 +159,5 @@ images:
        file: pinball-life.png
     pinside:
        file: pinside.png
+    starfighters:
+       file: starfighters.jpg
