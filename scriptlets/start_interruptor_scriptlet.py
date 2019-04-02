@@ -9,7 +9,9 @@ class StartInterruptor(Scriptlet):
 
     def _check_score(self, **kwargs):
         del kwargs
-        if self.machine.game.player and self.machine.game.player.score > 0:
-            self.debug_log("Scores have been registered. Player add will be ignored.")
-            self.machine.events.post('start_interruptor_player_add_rejected')
-            return False
+        if self.machine.game.player_list:
+            for player in self.machine.game.player_list:
+                if player.score > 0:
+                    self.debug_log("Scores have been registered. Player add will be ignored.")
+                    self.machine.events.post('start_interruptor_player_add_rejected')
+                    return False

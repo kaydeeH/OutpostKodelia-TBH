@@ -527,6 +527,7 @@ slides:
         y: 84%
         z: 10
         opacity: .35
+
 widget_player:
   # Handle the creation of the single player display
   player_added{num==1}:

@@ -330,6 +330,10 @@ sound_player:
     s_lane3_active: swoosh
     s_lane4_active: swoosh
     ball_will_end: ball_end_clips
+    mode_base_started{player==1}: player_one_up
+    mode_base_started{player==2}: player_two_up
+    mode_base_started{player==3}: player_three_up
+    mode_base_started{player==4}: player_four_up
 
 show_player:
   mode_base_started:

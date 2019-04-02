@@ -250,6 +250,46 @@ sounds:
     scene_ready:
         file: scene_ready.wav
         track: voice
+    player_one_up:
+        file: first_player_up.wav
+        track: voice
+        ducking:
+          target: music
+          delay: 0ms
+          attack: 100ms
+          attenuation: .1
+          release_point: 1.7s
+          release: 500ms
+    player_two_up:
+        file: second_player_up.wav
+        track: voice
+        ducking:
+          target: music
+          delay: 0ms
+          attack: 100ms
+          attenuation: .1
+          release_point: 1.7s
+          release: 500ms
+    player_three_up:
+        file: third_player_up.wav
+        track: voice
+        ducking:
+          target: music
+          delay: 0ms
+          attack: 100ms
+          attenuation: .1
+          release_point: 1.7s
+          release: 500ms
+    player_four_up:
+        file: fourth_player_up.wav
+        track: voice
+        ducking:
+          target: music
+          delay: 0ms
+          attack: 100ms
+          attenuation: .1
+          release_point: 1.7s
+          release: 500ms
 
 sound_pools:
   atract_voice:
