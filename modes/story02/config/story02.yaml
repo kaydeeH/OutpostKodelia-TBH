@@ -43,7 +43,7 @@ event_player:
      - story_is_about_to_end
      - story02_is_about_to_end
    shotScoopEscape_shotProfileScoopEscape_scoopInactive_hit:
-     - global_timer_pause
+     - local_timer_pause
    story_outro_complete:
      - global_timer_unpause
      - scoop_eject
@@ -124,7 +124,7 @@ show_player:
       scoop_eject_sound_show:
          priority: 950
          loops: 0
-         events_when_completed: scoop_eject, global_timer_unpause
+         events_when_completed: scoop_eject, local_timer_unpause
       scoop_eject_light_show:
          priority: 950
          loops: 0
