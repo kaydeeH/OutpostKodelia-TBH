@@ -39,9 +39,9 @@ event_player:
      - story_is_about_to_begin
      - information_board_start
    story_intro_complete:
-     - scoop_eject
+#     - scoop_eject
      - start_cygnus_timer
-     - global_timer_unpause
+#     - global_timer_unpause
    cygnus_found:
      - story_is_about_to_end
      - story_01_is_about_to_end
@@ -104,6 +104,14 @@ show_player:
         speed: 40
         loops: 1
         events_when_completed: scoop_eject
+   scoop_eject_sequence:
+      scoop_eject_sound_show:
+        priority: 950
+        loops: 0
+        events_when_completed: scoop_eject, global_timer_unpause
+      scoop_eject_light_show:
+        priority: 950
+        loops: 0
    cygnus_lane_0_event:
       lane_hit:
         loops: 5

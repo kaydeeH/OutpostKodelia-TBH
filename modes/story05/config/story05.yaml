@@ -27,9 +27,9 @@ event_player:
      - information_board_start
      - the_one_event_to_reset_them_all
      - mode_using_targets_started # always add this if your mode makes use of the drop targets
-   story_intro_complete:
-     - scoop_eject
-     - global_timer_unpause
+#   story_intro_complete:
+#     - scoop_eject
+#     - global_timer_unpause
    in_mode_ball_save:
      - story_is_about_to_fail
    shotGroupCorridorTargets_complete_complete:
@@ -82,6 +82,14 @@ show_player:
    story_is_about_to_fail:
       story_05_outro_fail:
          events_when_completed: story_outro_failed_complete
+         loops: 0
+   scoop_eject_sequence:
+      scoop_eject_sound_show:
+         priority: 950
+         loops: 0
+         events_when_completed: scoop_eject, global_timer_unpause
+      scoop_eject_light_show:
+         priority: 950
          loops: 0
    story_is_about_to_end:
       story_05_outro:

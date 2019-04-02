@@ -26,6 +26,7 @@ event_player:
      - mode_02_start_video
      # 10.542s
      - mode_02_end_video|11.3s
+     - scoop_eject_sequence|5.3s
      - story_intro_complete|8.3s
    mode_02_setintro_01:
      set_infoboard_line_text:

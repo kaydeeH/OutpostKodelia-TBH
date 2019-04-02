@@ -37,9 +37,9 @@ event_player:
     - story_is_about_to_begin
     - information_board_start
   story_intro_complete:
-    - scoop_eject
+#    - scoop_eject
     - start_david_timer
-    - global_timer_unpause
+#   - global_timer_unpause
   story_is_about_to_fail:
      - information_board_end
   story_is_about_to_end:
@@ -67,6 +67,14 @@ show_player:
 #    story_06_intro:
 #      events_when_completed: story_intro_complete
 #      loops: 0
+  scoop_eject_sequence:
+    scoop_eject_sound_show:
+      priority: 950
+      loops: 0
+      events_when_completed: scoop_eject, global_timer_unpause
+    scoop_eject_light_show:
+      priority: 950
+      loops: 0
   story_is_about_to_fail:
     story_06_outro_fail:
       events_when_completed: story_outro_fail_complete

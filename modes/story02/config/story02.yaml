@@ -32,9 +32,9 @@ event_player:
      - information_board_start
    in_mode_ball_save:
      - story_is_about_to_fail
-   story_intro_complete:
-     - scoop_eject
-     - global_timer_unpause
+#   story_intro_complete:
+#     - scoop_eject
+#     - global_timer_unpause
 #   shotScoopEscape_shotProfileScoopEscape_inactive_hit:
 #     - scoop_eject
    shotScoopEscape_shotProfileScoopEscape_scoopActive_hit:
@@ -102,6 +102,14 @@ show_player:
 #      story_02_intro:
 #         events_when_completed: story_intro_complete
 #         loops: 0
+   scoop_eject_sequence:
+      scoop_eject_sound_show:
+         priority: 950
+         loops: 0
+         events_when_completed: scoop_eject, global_timer_unpause
+      scoop_eject_light_show:
+         priority: 950
+         loops: 0
    story_is_about_to_fail:
       story_02_fail_outro:
          events_when_completed: story_outro_fail_complete

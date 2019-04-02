@@ -8,6 +8,7 @@ event_player:
      - mode_06_start_video
      # 18.167s
      - mode_06_end_video|19s
+     - scoop_eject_sequence|13s
      - story_intro_complete|16s
    mode_06_setintro_01:
      set_infoboard_line_text:
