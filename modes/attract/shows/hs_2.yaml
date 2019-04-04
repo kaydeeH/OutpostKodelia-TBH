@@ -1,17 +1,13 @@
 #show_version=5
 - duration: 8
   slides:
-    praise1:
+    hs_2:
       transition:
         type: fade
         duration: 1s
       widgets:
-      - type: image
-        image: starfield
-        opacity: .7
-        z: 0
       - type: Text
-        text: "Escape The Black Hole -- High Scores"
+        text: "Escape The Black Hole"
         style:
             - high_score_mode_title_style
       - type: Text

@@ -1,17 +1,13 @@
 #show_version=5
 - duration: 8
   slides:
-    praise1:
+    hs_1:
       transition:
         type: fade
         duration: 1s
       widgets:
-      - type: image
-        image: starfield
-        opacity: .7
-        z: 0
       - type: Text
-        text: "Locate The Cygnus -- High Scores"
+        text: "Locate The Cygnus"
         style:
             - high_score_mode_title_style
       - type: Text
@@ -40,11 +36,6 @@
             - high_score_mode_style
             - hs_pos_5
       - type: Text
-        text: (machine|modestat_1_highest_scoring6_name)
-        style:
-            - high_score_mode_style
-            - hs_pos_6
-      - type: Text
         text: (machine|modestat_1_highest_scoring1_value)
         style:
             - high_score_mode_style
@@ -69,11 +60,6 @@
         style:
             - high_score_mode_style
             - hs_pos_5_score
-      - type: Text
-        text: (machine|modestat_1_highest_scoring6_value)
-        style:
-            - high_score_mode_style
-            - hs_pos_6_score
       - type: image
         image: badgeLocateTheCygnusBig
         style:

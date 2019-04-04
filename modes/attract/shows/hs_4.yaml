@@ -1,17 +1,13 @@
 #show_version=5
 - duration: 8
   slides:
-    praise1:
+    hs_4:
       transition:
         type: fade
         duration: 1s
       widgets:
-      - type: image
-        image: starfield
-        opacity: .7
-        z: 0
       - type: Text
-        text: "Meteor Strike -- High Scores"
+        text: "Meteor Strike"
         style:
             - high_score_mode_title_style
       - type: Text

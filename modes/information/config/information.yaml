@@ -9,6 +9,10 @@ event_player:
    flipper_cradle:
     - start_information
     - set_information_scoop_available
+    - set_bonus_type_1
+    - set_bonus_type_2
+    - set_bonus_type_3
+    - set_bonus_type_4
     - global_timer_pause
    flipper_cradle_release:
     - stop_information
@@ -22,7 +26,39 @@ variable_player:
    set_information_scoop_available:
       information_scoop_available_text:
          action: set
+         string: "READY"
+   set_bonus_type_1{current_player.bonustype1==0}:
+      bonustype1_text:
+         action: set
          string: "AVAILABLE"
+   set_bonus_type_1{current_player.bonustype1==1}:
+      bonustype1_text:
+         action: set
+         string: "COLLECTED"
+   set_bonus_type_2{current_player.bonustype2==0}:
+      bonustype2_text:
+         action: set
+         string: "AVAILABLE"
+   set_bonus_type_2{current_player.bonustype2==1}:
+      bonustype2_text:
+         action: set
+         string: "COLLECTED"
+   set_bonus_type_3{current_player.bonustype3==0}:
+      bonustype3_text:
+         action: set
+         string: "AVAILABLE"
+   set_bonus_type_3{current_player.bonustype3==1}:
+      bonustype3_text:
+         action: set
+         string: "COLLECTED"
+   set_bonus_type_4{current_player.bonustype4==0}:
+      bonustype4_text:
+         action: set
+         string: "AVAILABLE"
+   set_bonus_type_4{current_player.bonustype4==1}:
+      bonustype4_text:
+         action: set
+         string: "COLLECTED"
 
 show_player:
    start_information:
@@ -67,63 +103,133 @@ slides:
        color: FF2C1F
        z: 15
        font_size: 80
-       y: 82%
+       y: 85%
 #     - type: text
-#       text: "Scene Start at Scoop: (current_player.information_scoop_available_text)"
+#       text: "Scene Start at Scoop: (information_scoop_available_text)"
 #       font_name: ocr-a-tribute-bold
 #       color: FF2C1F
 #       z: 15
 #       font_size: 40
-#       y: 79%
-#     - type: image
-#       image: badgeLocateTheCygnus
-#       anchor_x: center
-#       anchor_y: center
-#       x: 12%
-#       y: 68%
-#       z: 20
-#     - type: image
-#       image: badgeEscape
-#       anchor_x: center
-#       anchor_y: center
-#       x: 12%
-#       y: 58%
-#       z: 20
-#     - type: image
-#       image: badgeShooting
-#       anchor_x: center
-#       anchor_y: center
-#       x: 12%
-#       y: 48%
-#       z: 20
-#     - type: image
-#       image: badgeMeteor
-#       anchor_x: center
-#       anchor_y: center
-#       x: 12%
-#       y: 38%
-#       z: 20
-#     - type: image
-#       image: badgeCorridor
-#       anchor_x: center
-#       anchor_y: center
-#       x: 12%
-#       y: 28%
-#       z: 20
-#     - type: image
-#       image: badgeDavid
-#       anchor_x: center
-#       anchor_y: center
-#       x: 12%
-#       y: 18%
-#       z: 20
-#     - type: image
-#       image: badgeBeyond
-#       anchor_x: center
-#       anchor_y: center
-#       x: 12%
-#       y: 8%
-#       z: 20
+#       y: 75%
+     - type: image
+       image: badgeLocateTheCygnus
+       anchor_x: center
+       anchor_y: center
+       x: 12%
+       y: 65%
+       z: 20
+     - type: text
+       text: (modestat_1_highest_scoring)
+       x: 35%
+       y: 64.5%
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       number_grouping: true
+       anchor_x: right
+     - type: image
+       image: badgeEscape
+       anchor_x: center
+       anchor_y: center
+       x: 12%
+       y: 50%
+       z: 20
+     - type: text
+       text: (modestat_2_highest_scoring)
+       x: 35%
+       y: 49.5%
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       number_grouping: true
+       anchor_x: right
+     - type: image
+       image: badgeShooting
+       anchor_x: center
+       anchor_y: center
+       x: 12%
+       y: 35%
+       z: 20
+     - type: text
+       text: (modestat_3_highest_scoring)
+       x: 35%
+       y: 34.5%
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       number_grouping: true
+       anchor_x: right
+     - type: image
+       image: badgeMeteor
+       anchor_x: center
+       anchor_y: center
+       x: 56%
+       y: 65%
+       z: 20
+     - type: text
+       text: (modestat_4_highest_scoring)
+       x: 81%
+       y: 64.5%
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       number_grouping: true
+       anchor_x: right
+     - type: image
+       image: badgeCorridor
+       anchor_x: center
+       anchor_y: center
+       x: 56%
+       y: 50%
+       z: 20
+     - type: text
+       text: (modestat_5_highest_scoring)
+       x: 81%
+       y: 49.5%
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       number_grouping: true
+       anchor_x: right
+     - type: image
+       image: badgeDavid
+       anchor_x: center
+       anchor_y: center
+       x: 56%
+       y: 35%
+       z: 20
+     - type: text
+       text: (modestat_6_highest_scoring)
+       x: 81%
+       y: 34.5%
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       number_grouping: true
+       anchor_x: right
+     - type: image
+       image: badgeBeyond
+       anchor_x: center
+       anchor_y: center
+       x: 32%
+       y: 20%
+       z: 20
+     - type: text
+       text: (modestat_7_highest_scoring)
+       x: 59%
+       y: 19.5%
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       number_grouping: true
+       anchor_x: right
    info_2:
      - type: image
        image: tbh-slide-template
@@ -135,6 +241,57 @@ slides:
        z: 15
        font_size: 80
        y: 85%
+     - type: text
+       text: LEFT DROPS
+       style:
+          - info_2_bonus_type
+          - info_2_bonus_line_1
+     - type: text
+       text: (bonustype1_text)
+       style:
+          - info_2_bonus_status
+          - info_2_bonus_line_1
+     - type: text
+       text: LANES
+       style:
+          - info_2_bonus_type
+          - info_2_bonus_line_2
+     - type: text
+       text: (bonustype2_text)
+       style:
+          - info_2_bonus_status
+          - info_2_bonus_line_2
+     - type: text
+       text: POPS/SPINS
+       style:
+          - info_2_bonus_type
+          - info_2_bonus_line_3
+     - type: text
+       text: (bonustype3_text)
+       style:
+          - info_2_bonus_status
+          - info_2_bonus_line_3
+     - type: text
+       text: RIGHT DROPS
+       style:
+          - info_2_bonus_type
+          - info_2_bonus_line_4
+     - type: text
+       text: (bonustype4_text)
+       style:
+          - info_2_bonus_status
+          - info_2_bonus_line_4
+     - type: text
+       text: TOTAL
+       style:
+          - info_2_bonus_type
+          - info_2_bonus_line_5
+     - type: text
+       text: (bonus_multiplier)X
+       style:
+          - info_2_bonus_status
+          - info_2_bonus_line_5
+
 
    info_3:
      - type: image
@@ -147,5 +304,11 @@ slides:
        z: 15
        font_size: 80
        y: 85%
-
+     - type: text
+       text: FUN
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 80
+       y: 50%
 

@@ -69,3 +69,191 @@ widgets:
        text: (infoboard_line_3_text)
        style:
           - infoboard_line_3_data
+
+   mode_high_score_display_add:
+     - type: Text
+       text: "8888888888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_6_score
+     - type: Text
+       text: " ,   ,   ,   "
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_6_score
+     - type: Text
+       text: "888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_6
+     - type: Text
+       text: "KKK"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_6
+     - type: Text
+       text: "NNN"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_6
+     - type: Text
+       text: "VVV"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_6
+
+   mode_high_score_display:
+     - type: image
+       image: tbh-slide-template
+       z: 0
+     - type: Text
+       text: "8888888888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_1_score
+     - type: Text
+       text: "8888888888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_2_score
+     - type: Text
+       text: "8888888888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_3_score
+     - type: Text
+       text: "8888888888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_4_score
+     - type: Text
+       text: "8888888888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_5_score
+     - type: Text
+       text: " ,   ,   ,   "
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_1_score
+     - type: Text
+       text: " ,   ,   ,   "
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_2_score
+     - type: Text
+       text: " ,   ,   ,   "
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_3_score
+     - type: Text
+       text: " ,   ,   ,   "
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_4_score
+     - type: Text
+       text: " ,   ,   ,   "
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_5_score
+
+     - type: Text
+       text: "888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_1
+     - type: Text
+       text: "888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_2
+     - type: Text
+       text: "888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_3
+     - type: Text
+       text: "888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_4
+     - type: Text
+       text: "888"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_5
+     - type: Text
+       text: "KKK"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_1
+     - type: Text
+       text: "KKK"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_2
+     - type: Text
+       text: "KKK"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_3
+     - type: Text
+       text: "KKK"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_4
+     - type: Text
+       text: "KKK"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_5
+     - type: Text
+       text: "NNN"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_1
+     - type: Text
+       text: "NNN"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_2
+     - type: Text
+       text: "NNN"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_3
+     - type: Text
+       text: "NNN"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_4
+     - type: Text
+       text: "NNN"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_5
+     - type: Text
+       text: "VVV"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_1
+     - type: Text
+       text: "VVV"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_2
+     - type: Text
+       text: "VVV"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_3
+     - type: Text
+       text: "VVV"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_4
+     - type: Text
+       text: "VVV"
+       style:
+           - high_score_mode_style_bak
+           - hs_pos_5

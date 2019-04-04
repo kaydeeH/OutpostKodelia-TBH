@@ -1,17 +1,13 @@
 #show_version=5
 - duration: 8
   slides:
-    praise1:
+    hs_6:
       transition:
         type: fade
         duration: 1s
       widgets:
-      - type: image
-        image: starfield
-        opacity: .7
-        z: 0
       - type: Text
-        text: "David Vs. Golliath -- High Scores"
+        text: "David Vs. Golliath"
         style:
             - high_score_mode_title_style
       - type: Text
@@ -77,4 +73,4 @@
       - type: image
         image: badgeDavidBig
         style:
-            - hs_badge
+            - hs_badge_dvg

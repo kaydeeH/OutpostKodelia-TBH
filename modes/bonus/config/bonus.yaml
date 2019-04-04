@@ -2,8 +2,8 @@
 
 mode_settings:
   keep_multiplier: True
-  display_delay_ms: 3500ms
-  hurry_up_delay_ms: 2000ms
+  display_delay_ms: 2500ms
+  hurry_up_delay_ms: 1000ms
   bonus_entries:
       - event: bonus_product
         score: (current_player.pds) * (current_player.bonuscount)
@@ -28,8 +28,8 @@ event_player:
   flipper_cancel:
     - bonus_countdown_speed_up
 
-sound_player:
-  bonus_countdown_decrement: bass_hit
+#sound_player:
+#  bonus_countdown_decrement_audio: bass_hit
 
 widget_player:
   bonus_product:

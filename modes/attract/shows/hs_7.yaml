@@ -1,17 +1,13 @@
 #show_version=5
 - duration: 8
   slides:
-    praise1:
+    hs_7:
       transition:
         type: fade
         duration: 1s
       widgets:
-      - type: image
-        image: starfield
-        opacity: .7
-        z: 0
       - type: Text
-        text: "In, Through, and Beyond! -- High Scores"
+        text: "In, Through, and Beyond!"
         style:
             - high_score_mode_title_style
       - type: Text

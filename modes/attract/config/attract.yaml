@@ -22,8 +22,7 @@ show_player:
       loops: -1
     dummy_show: #just to get us past the initial mode start and into our event loop
       loops: 0
-      events_when_completed: attract_slide_next
-#      events_when_completed: attract_01
+      events_when_completed: text_loop_finished
   attract_01:
     field_off:
       priority: 6
@@ -69,7 +68,6 @@ show_player:
       priority: 7
     text_loop:
       loops: 0
-#      events_when_completed: attract_02
       events_when_completed: text_loop_finished
   attract_02:
     purple_swirl:
@@ -81,8 +79,7 @@ show_player:
        priority: 10
     big_title:
        loops: 0
-       events_when_completed: attract_slide_next
-#       events_when_completed: attract_03
+       events_when_completed: text_loop_finished
   attract_03:
     giDim:
       priority: 9
@@ -93,8 +90,7 @@ show_player:
     video_play:
       loops: 0
       events_when_played: trigger_text
- #     events_when_completed: attract_01
-      events_when_completed: attract_slide_next, atrract_video_complete
+      events_when_completed: text_loop_finished, atrract_video_complete
   green_ttb:
     green_stripes_ttb:
       speed: 30
@@ -133,41 +129,38 @@ show_player:
     hs_1:
       loops: 0
       events_when_completed: attract_slide_next
-#      events_when_completed: attract_02
   hs_mode_2:
     hs_2:
       loops: 0
       events_when_completed: attract_slide_next
-#     events_when_completed: attract_02
   hs_mode_3:
     hs_3:
       loops: 0
       events_when_completed: attract_slide_next
-#      events_when_completed: attract_02
   hs_mode_4:
     hs_4:
       loops: 0
       events_when_completed: attract_slide_next
-#      events_when_completed: attract_02
   hs_mode_5:
     hs_5:
       loops: 0
       events_when_completed: attract_slide_next
-#      events_when_completed: attract_02
   hs_mode_6:
     hs_6:
       loops: 0
       events_when_completed: attract_slide_next
-#      events_when_completed: attract_02
   hs_mode_7:
     hs_7:
       loops: 0
-#      events_when_completed: attract_02
+      events_when_completed: attract_slide_next
+  hs_overall:
+    hs_main:
+      loops: 0
       events_when_completed: attract_slide_next
   attract_04:
     thank_yous:
       loops: 0
-      events_when_completed: attract_slide_next
+      events_when_completed: text_loop_finished
 
 random_event_player:
   attract_slide_next:
@@ -191,6 +184,7 @@ random_event_player:
     - hs_mode_5
     - hs_mode_6
     - hs_mode_7
+    - hs_overall
 
   slide_thank_you_title_active:
    scope: machine
@@ -355,9 +349,6 @@ widget_player:
   slide_praise2_created:
     freeplay_start_widget:
       slide: praise2
-  slide_high_scores_created:
-    freeplay_start_widget:
-      slide: high_scores
   slide_video_created:
     freeplay_start_widget:
       slide: video
@@ -424,6 +415,50 @@ widget_player:
   thank_you_12_not_random:
     thank_you_12_widget_nr:
       slide: thank_you_title
+  slide_hs_1_created:
+    mode_high_score_display:
+      slide: hs_1
+    freeplay_start_widget:
+      slide: hs_1
+  slide_hs_2_created:
+    mode_high_score_display:
+      slide: hs_2
+    freeplay_start_widget:
+      slide: hs_2
+  slide_hs_3_created:
+    mode_high_score_display:
+      slide: hs_3
+    freeplay_start_widget:
+      slide: hs_3
+  slide_hs_4_created:
+    mode_high_score_display:
+      slide: hs_4
+    freeplay_start_widget:
+      slide: hs_4
+  slide_hs_5_created:
+    mode_high_score_display:
+      slide: hs_5
+    freeplay_start_widget:
+      slide: hs_5
+  slide_hs_6_created:
+    mode_high_score_display:
+      slide: hs_6
+    freeplay_start_widget:
+      slide: hs_6
+  slide_hs_7_created:
+    mode_high_score_display:
+      slide: hs_7
+    freeplay_start_widget:
+      slide: hs_7
+  slide_high_scores_created:
+    mode_high_score_display:
+      slide: high_scores
+    mode_high_score_display_add:
+      slide: high_scores
+    freeplay_start_widget:
+      slide: high_scores
+
+
   slide_thank_you_title_removed:
     thank_you_01_widget:
       action: remove

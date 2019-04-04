@@ -24,22 +24,52 @@ widget_styles:
         anchor_y: top
         anchor_x: center
    high_score_mode_style:
-        font_name: ocr-a-tribute-bold
-        font_size: 50
+        font_size: 70
+        font_name: digital-7-mono
         color: FF2C1F
+        x: center
+        y: top - 40
         anchor_y: top
         anchor_x: right
+        opacity: 1
+        z: 15
         number_grouping: true
-   high_score_mode_title_style:
-        font_name: ocr-a-tribute-bold
-        font_size: 50
-        color: FF2C1F
-        y: top - 40
+   high_score_mode_style_bak:
+        font_size: 70
+        font_name: digital-7-mono
+        color: 380000
         x: center
+        y: top - 40
+        anchor_y: top
+        anchor_x: right
+        opacity: 1
+        z: 14
+        number_grouping: true
+#        font_name: ocr-a-tribute-bold
+#        font_size: 50
+#        color: FF2C1F
+#        anchor_y: top
+#        anchor_x: right
+#        number_grouping: true
+   high_score_mode_title_style:
+        font_size: 70
+        font_name: digital-7-mono
+        color: FF2C1F
+        x: center
+        y: top - 90
         anchor_y: top
         anchor_x: center
         opacity: 1
         z: 15
+#        font_name: ocr-a-tribute-bold
+#        font_size: 50
+#        color: FF2C1F
+#        y: top - 40
+#        x: center
+#        anchor_y: top
+#        anchor_x: center
+#        opacity: 1
+#        z: 15
    hs_pos_1:
         y: 540
         x: 500
@@ -89,11 +119,21 @@ widget_styles:
         x: 950
         z: 1
    hs_badge:
-        anchor_x: center
+        anchor_x: right
         anchor_y: center
+        y: 50%
+        x: 98%
         z: 1
-        opacity: .25
-        scale: 2
+        opacity: 1
+        scale: 1
+   hs_badge_dvg:
+        anchor_x: right
+        anchor_y: center
+        y: 50%
+        x: 98%
+        z: 1
+        opacity: 1
+        scale: .8
    thank_you_style:
         color: red
         font_size: 90
@@ -295,3 +335,30 @@ widget_styles:
         y: 43%
    eob_bonus_line_5:
         y: 34%
+
+
+# INFORMATION SCREENS
+   info_2_bonus_type:
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       x: 25%
+       anchor_x: left
+   info_2_bonus_status:
+       font_name: ocr-a-tribute-bold
+       color: FF2C1F
+       z: 15
+       font_size: 40
+       anchor_x: left
+       x: 55%
+   info_2_bonus_line_1:
+       y: 70%
+   info_2_bonus_line_2:
+       y: 60%
+   info_2_bonus_line_3:
+       y: 50%
+   info_2_bonus_line_4:
+       y: 40%
+   info_2_bonus_line_5:
+       y: 30%

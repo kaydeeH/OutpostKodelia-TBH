@@ -56,54 +56,54 @@ high_score:
       - In, Through, and Beyond! 5th Best
   defaults:
      score:
-       - KAYDEN: 600
-       - KAT: 500
-       - JOE: 400
-       - BOB: 300
-       - ATP: 200
-       - MAX: 10
+       - OLH: 100000000
+       - BOB: 80000000
+       - KAH: 60000000
+       - ECH: 40000000
+       - TLL: 20000000
+       - ANT: 10000000
      modestat_1_highest_scoring:
-       - KAT: 500
-       - JOE: 400
-       - BOB: 300
-       - ATP: 200
-       - MAX: 10
+       - OLH: 2000000
+       - BOB: 1000000
+       - KAH: 500000
+       - ECH: 250000
+       - ANT: 100000
      modestat_2_highest_scoring:
-       - KAT: 500
-       - JOE: 400
-       - BOB: 300
-       - ATP: 200
-       - MAX: 10
+       - OLH: 2000000
+       - BOB: 1000000
+       - KAH: 500000
+       - ECH: 250000
+       - ANT: 100000
      modestat_3_highest_scoring:
-       - KAT: 500
-       - JOE: 400
-       - BOB: 300
-       - ATP: 200
-       - MAX: 10
+       - OLH: 2000000
+       - BOB: 1000000
+       - KAH: 500000
+       - ECH: 250000
+       - ANT: 100000
      modestat_4_highest_scoring:
-       - KAT: 500
-       - JOE: 400
-       - BOB: 300
-       - ATP: 200
-       - MAX: 10
+       - OLH: 2000000
+       - BOB: 1000000
+       - KAH: 500000
+       - ECH: 250000
+       - ANT: 100000
      modestat_5_highest_scoring:
-       - KAT: 500
-       - JOE: 400
-       - BOB: 300
-       - ATP: 200
-       - MAX: 10
+       - OLH: 2000000
+       - BOB: 1000000
+       - KAH: 500000
+       - ECH: 250000
+       - ANT: 100000
      modestat_6_highest_scoring:
-       - KAT: 500
-       - JOE: 400
-       - BOB: 300
-       - ATP: 200
-       - MAX: 10
+       - OLH: 2000000
+       - BOB: 1000000
+       - KAH: 500000
+       - ECH: 250000
+       - ANT: 100000
      modestat_7_highest_scoring:
-       - KAT: 500
-       - JOE: 400
-       - BOB: 300
-       - ATP: 200
-       - MAX: 10
+       - TLL: 10000000
+       - TLL: 8000000
+       - TLL: 6000000
+       - TLL: 4000000
+       - TLL: 2000000
 
 
 widgets:
