@@ -323,7 +323,7 @@ widgets:
           - char_collect_style_bottom
    rescue_used:
       - type: text
-        text: "BALL RESCUED\nKEEP SHOOTING\n"
+        text: "BALL RESCUED - KEEP SHOOTING\n"
         style:
           - char_collect_style_top
       - type: text

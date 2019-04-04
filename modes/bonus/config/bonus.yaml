@@ -2,7 +2,7 @@
 
 mode_settings:
   keep_multiplier: True
-  display_delay_ms: 2000ms
+  display_delay_ms: 3500ms
   hurry_up_delay_ms: 2000ms
   bonus_entries:
       - event: bonus_product
@@ -12,10 +12,13 @@ slide_player:
   bonus_start: slide_6
 slides:
   slide_6:
+  - type: image
+    image: tbh-slide-template
+    z: 10
   - type: text
     text: END OF BALL BONUS
-    y: 85%
-    font_size: 100
+    style:
+       - eob_bonus_title
 
 event_player:
   bonus_product:
@@ -25,12 +28,12 @@ event_player:
   flipper_cancel:
     - bonus_countdown_speed_up
 
+sound_player:
+  bonus_countdown_decrement: bass_hit
+
 widget_player:
   bonus_product:
     bonus_pops:
-       action: add
-       slide: slide_6
-    bonus_drops:
        action: add
        slide: slide_6
     bonus_count:
@@ -53,37 +56,110 @@ widgets:
   bonus_title:
   - type: text
     text: END OF BALL BONUS
-    y: 85%
-    font_size: 100
+    style:
+       - eob_bonus_title
   bonus_pops:
   - type: text
-    text: 'Bonus Value: (pds) '
-    font_size: 40
-    y: 70%
-  bonus_drops:
+    text: 'Bonus Value:'
+    style:
+       - eob_bonus_text_title
+       - eob_bonus_line_1
   - type: text
-    text: ' X '
-    font_size: 40
-    y: 60%
+    text: '(pds)'
+    style:
+       - eob_bonus_values
+       - eob_bonus_line_1
+  - type: text
+    text: '888888888888'
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_1
+  - type: text
+    text: '   ,   ,   ,   '
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_1
   bonus_count:
   - type: text
-    text: 'Bonus Count: (bonuscountdisplay)  ='
-    font_size: 40
-    y: 50%
+    text: 'Bonus Count:'
+    style:
+       - eob_bonus_text_title
+       - eob_bonus_line_2
+  - type: text
+    text: '(bonuscountdisplay)'
+    style:
+       - eob_bonus_values
+       - eob_bonus_line_2
+  - type: text
+    text: '888888888888'
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_2
+  - type: text
+    text: '   ,   ,   ,   '
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_2
   bonus_sub:
   - type: text
-    text: 'SUBTOTAL: (score)'
-    number_grouping: true
-    font_size: 40
-    y: 40%
+    text: 'SUBTOTAL:'
+    style:
+       - eob_bonus_text_title
+       - eob_bonus_line_3
+  - type: text
+    text: '(score)'
+    style:
+       - eob_bonus_values
+       - eob_bonus_line_3
+  - type: text
+    text: '888888888888'
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_3
+  - type: text
+    text: '   ,   ,   ,   '
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_3
   bonus_multi:
   - type: text
-    text: (bonus_multiplier)X
-    font_size: 70
-    y: 25%
+    text: 'MULTIPLIER'
+    style:
+       - eob_bonus_text_title
+       - eob_bonus_line_4
+  - type: text
+    text: '(bonus_multiplier)'
+    style:
+       - eob_bonus_values
+       - eob_bonus_line_4
+  - type: text
+    text: '888888888888'
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_4
+  - type: text
+    text: '   ,   ,   ,   '
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_4
   bonus_final:
   - type: text
-    text: 'TOTAL BONUS: (score)'
-    number_grouping: true
-    font_size: 70
-    y: 10%
+    text: 'TOTAL BONUS'
+    style:
+       - eob_bonus_text_title
+       - eob_bonus_line_5
+  - type: text
+    text: '(score)'
+    style:
+       - eob_bonus_values
+       - eob_bonus_line_5
+  - type: text
+    text: '888888888888'
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_5
+  - type: text
+    text: '   ,   ,   ,   '
+    style:
+       - eob_bonus_value_background
+       - eob_bonus_line_5

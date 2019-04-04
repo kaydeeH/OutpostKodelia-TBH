@@ -6,20 +6,23 @@
 widget_styles:
    char_collect_style_top:
         color: red
-        font_size: 70
+        font_size: 68
         font_name: ocr-a-tribute-bold
         opacity: .9
         z: 15
-        y: 72%
-        number_grouping: true
+        y: 77%
+        anchor_y: top
+        anchor_x: center
    char_collect_style_bottom:
         color: red
         font_size: 70
         font_name: ocr-a-tribute-bold
         opacity: .9
         z: 15
-        y: 25%
+        y: 31%
         number_grouping: true
+        anchor_y: top
+        anchor_x: center
    high_score_mode_style:
         font_name: ocr-a-tribute-bold
         font_size: 50
@@ -247,3 +250,48 @@ widget_styles:
         y: 30%
         z: 51
         number_grouping: true
+
+# END OF BALL BONUS STYLES
+   eob_bonus_title:
+        font_size: 100
+        font_name: digital-7-mono
+        text: END OF BALL BONUS
+        color: AC0000
+        y: 85%
+        z: 20
+   eob_bonus_text_title:
+        font_size: 60
+        font_name: digital-7-mono
+        color: AC0000
+        anchor_x: left
+        anchor_y: top
+        x: 10%
+        z: 20
+   eob_bonus_values:
+        font_size: 60
+        font_name: digital-7-mono
+        color: AC0000
+        anchor_x: right
+        anchor_y: top
+        number_grouping: true
+        x: 88%
+        z: 20
+   eob_bonus_value_background:
+        font_size: 60
+        font_name: digital-7-mono
+        color: 380000
+        anchor_x: right
+        anchor_y: top
+        number_grouping: true
+        x: 88%
+        z: 19
+   eob_bonus_line_1:
+        y: 70%
+   eob_bonus_line_2:
+        y: 61%
+   eob_bonus_line_3:
+        y: 52%
+   eob_bonus_line_4:
+        y: 43%
+   eob_bonus_line_5:
+        y: 34%
