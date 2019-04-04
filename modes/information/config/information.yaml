@@ -26,9 +26,9 @@ variable_player:
 
 show_player:
    start_information:
-     pinwheel:
-       speed: 40
-       loops: -1
+#     pinwheel:
+#       speed: 40
+#       loops: -1
      information_show:
        loops: -1
    stop_information:
