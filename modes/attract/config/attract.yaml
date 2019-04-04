@@ -207,6 +207,7 @@ random_event_player:
     - thank_you_09
     - thank_you_10
     - thank_you_11
+    - thank_you_12
 
 event_player:
   attract_03: #All events have had +5s added to account for the title slide
@@ -283,7 +284,8 @@ event_player:
      - thank_you_10_not_random
   thank_you_11:
      - thank_you_11_not_random
-
+  thank_you_12:
+     - thank_you_12_not_random
 
 variable_player:
    attract_random_control_var_set:
@@ -419,6 +421,9 @@ widget_player:
   thank_you_11_not_random:
     thank_you_11_widget_nr:
       slide: thank_you_title
+  thank_you_12_not_random:
+    thank_you_12_widget_nr:
+      slide: thank_you_title
   slide_thank_you_title_removed:
     thank_you_01_widget:
       action: remove
@@ -478,6 +483,9 @@ widget_player:
       action: remove
       slide: thank_you_title
     thank_you_11_widget_nr:
+      action: remove
+      slide: thank_you_title
+    thank_you_12_widget_nr:
       action: remove
       slide: thank_you_title
 
@@ -808,6 +816,56 @@ widgets:
 #      height: 350
 #      z: 11
 #      color: red
+  thank_you_12_widget_nr:
+    - type: image
+      image: pf1
+      scale: .25
+      x: 28%
+      y: 70%
+      z: 12
+    - type: image
+      image: pf2
+      scale: .25
+      x: 48%
+      y: 70%
+      z: 12
+    - type: image
+      image: pf3
+      scale: .25
+      x: 28%
+      y: 30%
+      z: 12
+    - type: image
+      image: pf4
+      scale: .25
+      x: 48%
+      y: 30%
+      z: 12
+    - type: text
+      text: "Williams Electronics\nPHOENIX"
+      y: 80%
+      style:
+        - thank_you_style_alt
+    - type: text
+      text: "Barry Oursler"
+      y: 65%
+      style:
+        - thank_you_style_alt
+    - type: text
+      text: "Constantino Mitchell"
+      y: 55%
+      style:
+        - thank_you_style_alt
+    - type: text
+      text: "Jeanine Mitchell"
+      y: 45%
+      style:
+        - thank_you_style_alt
+    - type: text
+      text: "Paul Dussault"
+      y: 35%
+      style:
+        - thank_you_style_alt
 
   thank_you_01_widget:
     - type: text

@@ -98,6 +98,15 @@ widget_styles:
         opacity: .9
         z: 15
         x: center
+   thank_you_style_alt:
+        color: red
+        font_name: ocr-a-tribute-bold
+        opacity: .9
+        anchor_x: center
+        anchor_y: top
+        font_size: 40
+        x: 76%
+        z: 15
    thank_you_style2:
         color: blue
         font_size: 90
