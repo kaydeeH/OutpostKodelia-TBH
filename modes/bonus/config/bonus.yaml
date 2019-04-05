@@ -28,8 +28,8 @@ event_player:
   flipper_cancel:
     - bonus_countdown_speed_up
 
-#sound_player:
-#  bonus_countdown_decrement_audio: bass_hit
+sound_player:
+  bonus_countdown_decrement_audio: beep
 
 widget_player:
   bonus_product:
