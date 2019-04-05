@@ -5,7 +5,7 @@ class ShootingGalleryAchievement(Scriptlet):
 
     def on_load(self):
         self.debug_log("Shooting Gallery Achievement scriptlet loaded!")
-        self.machine.events.add_handler('timer_gallery_timer_complete', self._evaluate_achievement, 10000)
+        self.machine.events.add_handler('timer_gallery_timer_display_complete', self._evaluate_achievement, 10000)
 
     def _evaluate_achievement(self, **kwargs):
         del kwargs

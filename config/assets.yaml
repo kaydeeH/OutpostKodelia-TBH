@@ -26,7 +26,7 @@ images:
     starfield:
        file: starfield.jpg
     david_goliath:
-       file: MaxVsVincent.jpg
+       file: MaxVsVincent-sm.jpg
     singlePlayerScoreFrame:
        file: CurrentPlayerScoreForSingle.png
     scoreBlueLightLitSp:

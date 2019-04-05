@@ -5,6 +5,7 @@ import random
 
 lights = None                    # type: DeviceCollection[str, Light]
 previous_light_num = None        # type: int
+curr_count = None                # type: int
 
 
 class ShootingGalleryLightController(Scriptlet):
@@ -13,10 +14,18 @@ class ShootingGalleryLightController(Scriptlet):
         self.debug_log("Shooting Gallery Light Controller scriptlet loaded!")
         ShootingGalleryLightController.lights = self.machine.lights.items_tagged('gallery')
         ShootingGalleryLightController.previous_light_num = 0
-        self.machine.events.add_handler('timer_gallery_timer_tick', self._change_light, 10000)
+        ShootingGalleryLightController.curr_count = 99
+        self.machine.events.add_handler('timer_gallery_timer_display_tick', self._count_ticks, 10000)
 
-    def _change_light(self, **kwargs):
+    def _count_ticks(self, **kwargs):
         del kwargs
+
+        ShootingGalleryLightController.curr_count += 1
+        if ShootingGalleryLightController.curr_count == 100:
+            ShootingGalleryLightController.curr_count = 0
+            self._change_light()
+
+    def _change_light(self):
 
         colornum = random.randint(1, 3)
         lightnum = random.randint(0, ShootingGalleryLightController.lights.__len__()-1)
