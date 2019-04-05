@@ -275,7 +275,8 @@ sound_player:
           action: stop
           fade_out: 0
     mode_04_end_video:
-      hotandheavy:
+      #hotandheavy:
+      durantisdead:
           action: play
           loops: -1
           mode_end_action: stop

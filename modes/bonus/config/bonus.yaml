@@ -30,6 +30,11 @@ event_player:
 
 sound_player:
   bonus_countdown_decrement_audio: beep2
+  bonus_slide_is_displayed:
+      prettybusy:
+          action: play
+          loops: -1
+          mode_end_action: stop
 
 widget_player:
   bonus_product:

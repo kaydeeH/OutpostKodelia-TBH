@@ -318,6 +318,9 @@ sound_player:
     mode_selector_stopped:
       overture:
           action: stop
+    bonus_start:
+      overture:
+          action: stop
     do_scoop_notify{current_player.score>25000}: scene_ready
     s_spinner_active: laser_pistol
     s_roInLaneRight_active: swoosh
