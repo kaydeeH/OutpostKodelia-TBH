@@ -29,7 +29,7 @@ event_player:
     - bonus_countdown_speed_up
 
 sound_player:
-  bonus_countdown_decrement_audio: beep
+  bonus_countdown_decrement_audio: beep2
 
 widget_player:
   bonus_product:

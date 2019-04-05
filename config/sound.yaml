@@ -100,6 +100,10 @@ sounds:
         file: beep.wav
         track: sfx
         volume: .7
+    beep2:
+        file: beep2.wav
+        track: sfx
+        volume: .6
 
     # Movie SFX
     gallerylaser:
