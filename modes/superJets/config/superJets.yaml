@@ -35,11 +35,11 @@ timers:
 
 variable_player:
   s_jet_upper_left_active:
-    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x|block
+    score: 1000 * current_player.spins * current_player.temp_playfield_x * current_player.perm_playfield_x|block
   s_jet_upper_right_active:
-    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x|block
+    score: 1000 * current_player.spins *  current_player.temp_playfield_x * current_player.perm_playfield_x|block
   s_jet_lower_center_active:
-    score: 1000 * current_player.temp_playfield_x * current_player.perm_playfield_x|block
+    score: 1000 * current_player.spins *  current_player.temp_playfield_x * current_player.perm_playfield_x|block
 
 widget_player:
    mode_superJets_started:
