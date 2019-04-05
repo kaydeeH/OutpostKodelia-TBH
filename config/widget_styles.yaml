@@ -9,7 +9,7 @@ widget_styles:
         font_size: 68
         font_name: ocr-a-tribute-bold
         opacity: .9
-        z: 15
+        z: 55
         y: 77%
         anchor_y: top
         anchor_x: center
@@ -18,7 +18,7 @@ widget_styles:
         font_size: 70
         font_name: ocr-a-tribute-bold
         opacity: .9
-        z: 15
+        z: 55
         y: 31%
         number_grouping: true
         anchor_y: top
