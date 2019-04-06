@@ -75,7 +75,7 @@ sounds:
     swoosh:
         file: swoosh.wav
         track: sfx
-        volume: .8
+        volume: .6
     drainout:
         file: machinefail.wav
         track: sfx
@@ -91,7 +91,7 @@ sounds:
     blaster:
         file: blaster.wav
         track: sfx
-        volume: .7
+        volume: .4
     drop:
         file: pulserifle.wav
         track: sfx
@@ -103,7 +103,7 @@ sounds:
     beep2:
         file: beep2.wav
         track: sfx
-        volume: .6
+        volume: .5
 
     # Movie SFX
     gallerylaser:
