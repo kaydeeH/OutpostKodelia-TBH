@@ -210,6 +210,13 @@ event_player:
       - in_mode_ball_save
     ball_save_inmodesave7_saving_ball:
       - in_mode_ball_save
+###########################
+# Moved to BASE from story04 to prevent this getting missed
+###########################
+# move below to base
+    shotScoopMeteor_hit{current_player.story04_meteortimer_tick==0}:
+#      - scoop_eject
+      - generic_scoop_eject_trigger
 
 # shotgrouppopbumpers_popBumpBlue_complete
 # shotgrouppopbumpers_popBumpGreen_complete
@@ -456,11 +463,22 @@ show_player:
       scoop_eject_sound_show:
           priority: 275
           loops: 0
-          events_when_completed: scoop_eject
+          events_when_completed: scoop_eject, global_timer_unpause
       scoop_eject_light_show:
           priority: 275
           loops: 0
+##########################
+# Moved to BASE mode to avoid other mode exiting before handling
+##########################
   shotScoopOverride_hit:
+      scoop_eject_sound_show:
+          priority: 950
+          loops: 0
+          events_when_completed: scoop_eject, local_timer_unpause
+      scoop_eject_light_show:
+          priority: 950
+          loops: 0
+  generic_scoop_eject_trigger:
       scoop_eject_sound_show:
           priority: 950
           loops: 0

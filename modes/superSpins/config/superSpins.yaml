@@ -35,7 +35,7 @@ timers:
 
 variable_player:
   s_spinner_active:
-    score: 1000 * current_player.pops * current_player.temp_playfield_x * current_player.perm_playfield_x|block
+    score: 1000 * current_player.popsLevel * current_player.temp_playfield_x * current_player.perm_playfield_x|block
 
 widget_player:
    mode_superSpins_started:
