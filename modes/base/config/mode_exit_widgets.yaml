@@ -77,13 +77,13 @@ widgets:
         style:
            - mode_outro_title
       - type: text
-        text: "MISSION FAILURE"
+        text: "The story is over before it even began."
         style:
            - mode_outro_data_line_1
 #  MODE 02 -- ESCAPE THE BLACK HOLE
    story_02_outro_widget:
       - type: text
-        text: BLACK HOLE ESCAPED
+        text: "BLACK HOLE ESCAPED"
         style:
            - mode_outro_title
       - type: text
@@ -92,18 +92,18 @@ widgets:
            - mode_outro_data_line_1
    story_02_outro_fail_widget:
       - type: text
-        text: ESCAPE THE BLACK HOLE FAILED
+        text: "THE BLACK HOLE IS INESCAPABLE"
         style:
            - mode_outro_title
       - type: text
-        text: You are *NOT* super duper neat
+        text: "The black hole has destroyed the Palomino."
         style:
            - mode_outro_data_line_1
 
 #  MODE 03 -- SHOOTING GALLERY
    story_03_outro_widget:
       - type: text
-        text: SHOOTING GALLERY DONE
+        text: "CAPTAIN S.T.A.R. IS DEFEATED"
         style:
            - mode_outro_title
       - type: text
@@ -116,7 +116,7 @@ widgets:
            - mode_outro_data_line_2
    story_03_outro_fail_widget:
       - type: text
-        text: SHOOTING GALLERY FAILED
+        text: "CAPTAIN S.T.A.R. REMAINS UNDEFEATED"
         style:
            - mode_outro_title
       - type: text
@@ -126,7 +126,7 @@ widgets:
 #  MODE 04 -- METEOR STRIKE
    story_04_outro_widget:
       - type: text
-        text: METEOR STRIKE PASSED
+        text: "METEOR STRIKE EVADED"
         style:
            - mode_outro_title
       - type: text
@@ -135,18 +135,18 @@ widgets:
            - mode_outro_data_line_2
    story_04_outro_fail_widget:
       - type: text
-        text: METEOR STRIKE FAILED
+        text: "METEOR STRICKEN"
         style:
            - mode_outro_title
       - type: text
-        text: You are sent home in a space box
+        text: "The meteor ripped through the corridor... with you still in it."
         style:
            - mode_outro_data_line_1
 
 #  MODE 05 -- CORRIDOR BATTLE
    story_05_outro_widget:
       - type: text
-        text: CORRIDOR BATTLE ENDED
+        text: "CORRIDOR BATTLE WON"
         style:
            - mode_outro_title
       - type: text
@@ -159,26 +159,17 @@ widgets:
            - mode_outro_data_line_2
    story_05_outro_fail_widget:
       - type: text
-        text: CORRIDOR BATTLE LOST
+        text: "CORRIDOR BATTLE LOST"
         style:
            - mode_outro_title
       - type: text
-        text: "You are bad and should feel bad."
+        text: "The robots pinned you down and eliminated you."
         style:
            - mode_outro_data_line_1
 #  MODE 06 -- DAVID VS GOLIATH
-   story_06_outro_fail_widget:
-      - type: text
-        text: Goliath defeats David
-        style:
-           - mode_outro_title
-      - type: text
-        text: Only this time, David is overmatched...
-        style:
-           - mode_outro_data_line_1
    story_06_outro_widget:
       - type: text
-        text: David defeats Goliath!
+        text: "VINCENT PREVAILS"
         style:
            - mode_outro_title
       - type: text
@@ -189,3 +180,12 @@ widgets:
         text: "Mode Scoring: (modestat_6_scoring)"
         style:
            - mode_outro_data_line_2
+   story_06_outro_fail_widget:
+      - type: text
+        text: "MAXIMILIAN PREVAILS"
+        style:
+           - mode_outro_title
+      - type: text
+        text: "Only this time, David is overmatched..."
+        style:
+           - mode_outro_data_line_1
