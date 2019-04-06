@@ -460,6 +460,15 @@ show_player:
       scoop_eject_light_show:
           priority: 275
           loops: 0
+  shotScoopOverride_hit:
+      scoop_eject_sound_show:
+          priority: 950
+          loops: 0
+          events_when_completed: scoop_eject, local_timer_unpause
+      scoop_eject_light_show:
+          priority: 950
+          loops: 0
+
   extra_ball_is_lit:
       extra_lit:
           loops: -1

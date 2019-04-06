@@ -35,12 +35,3 @@ shot_profiles:
       - name: scoop_override
         show: off
 
-show_player:
-  shotScoopOverride_hit:
-    scoop_eject_sound_show:
-      priority: 950
-      loops: 0
-      events_when_completed: scoop_eject, local_timer_unpause
-    scoop_eject_light_show:
-      priority: 950
-      loops: 0
