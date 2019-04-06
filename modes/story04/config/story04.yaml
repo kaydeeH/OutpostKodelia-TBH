@@ -69,8 +69,10 @@ event_player:
     - local_timer_pause
    player_meteor_hits{value==3}:
     - random_character_collect
-   s_ir_scoop_detect_active{current_player.story04_meteortimer_tick==0}:
-    - scoop_eject
+# move below to base
+#   shotScoopMeteor_hit
+#   s_ir_scoop_detect_active{current_player.story04_meteortimer_tick==0}:
+#    - scoop_eject
 
 #  Base intro / outro shows
 
@@ -253,13 +255,13 @@ timers:
      direction: down
      start_running: no
      control_events:
-      - event: shotScoopMeteor_hit
+      - event: shotScoopMeteor_hit{current_player.story04_meteortimer_tick>0}
         action: add
         value: 30
-      - event: shotScoopMeteor_hit
+      - event: shotScoopMeteor_hit{current_player.story04_meteortimer_tick>0}
         action: pause
         value: 2
-      - event: shotScoopMeteor_hit
+      - event: shotScoopMeteor_hit{current_player.story04_meteortimer_tick>0}
         action: change_tick_interval
         value: 0.9
       - event: story_intro_complete

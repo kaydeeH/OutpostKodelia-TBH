@@ -540,7 +540,7 @@ widgets:
          selector2_mode1_highlighted: icon_small_right
   mode02_instr:
     - type: text
-      text: "- Stabalize the Palomino by \n hitting Pop Bumpers\n\n- When lit, hit the spinner \n to engage Thrusters\n\n- Then ESCAPE the black hole\n out the scoop!\n\n"
+      text: "- Stabilize the Palomino by \n hitting the spinner\n\n- Then lit lane - Three Times\n\n- Then ESCAPE the black hole\n out the scoop!\n\n"
       opacity: 0
       color: white
       anchor_x: center
