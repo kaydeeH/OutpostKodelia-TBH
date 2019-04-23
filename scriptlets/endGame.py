@@ -11,22 +11,22 @@ class EndGameEvents(Scriptlet):
         self.machine.events.add_handler('pre_a_winner_is_you', self._winners)
 
     def _p1score(self, **kwargs):
-        if not(self.machine.game.player_list is None):
+        if not(self.machine.game is None):
             if len(self.machine.game.player_list) > 0:
                 self.machine.events.post('final_score_p1')
 
     def _p2score(self, **kwargs):
-        if not(self.machine.game.player_list is None):
+        if not(self.machine.game is None):
             if len(self.machine.game.player_list) > 1:
                 self.machine.events.post('final_score_p2')
 
     def _p3score(self, **kwargs):
-        if not(self.machine.game.player_list is None):
+        if not(self.machine.game is None):
             if len(self.machine.game.player_list) > 2:
                 self.machine.events.post('final_score_p3')
 
     def _p4score(self, **kwargs):
-        if not(self.machine.game.player_list is None):
+        if not(self.machine.game is None):
             if len(self.machine.game.player_list) > 3:
                 self.machine.events.post('final_score_p4')
 
@@ -40,7 +40,7 @@ class EndGameEvents(Scriptlet):
         p3r = 0
         p4r = 0
 
-        if not(self.machine.game.player_list is None):
+        if not(self.machine.game is None):
             for py in range(len(self.machine.game.player_list)):
                 if py == 0:
                     p1 = self.machine.game.player_list[py].score
