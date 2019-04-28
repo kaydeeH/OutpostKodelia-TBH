@@ -13,12 +13,22 @@ queue_relay_player:
 #      pass_args: true
 
 event_player:
+#    BELOW is for the end of game score sort, which seems possibly buggy -- temp "safer" solution in place under that
+#    mode_endOfGame_started:
+#       pre_final_score_p1|500ms:
+#       pre_final_score_p2|1000ms:
+#       pre_final_score_p3|1500ms:
+#       pre_final_score_p4|2000ms:
+#       pre_a_winner_is_you|4000ms:
+
+#    The temporary "safe" solution
     mode_endOfGame_started:
-       pre_final_score_p1|500ms:
-       pre_final_score_p2|1000ms:
-       pre_final_score_p3|1500ms:
-       pre_final_score_p4|2000ms:
-       pre_a_winner_is_you|4000ms:
+       - pre_final_score_p1
+       - pre_final_score_p2
+       - pre_final_score_p3
+       - pre_final_score_p4
+
+
 
 # Handle the broken shit
     final_position_p1{pos==2}:
@@ -63,7 +73,7 @@ slides:
     widgets:
       - type: text
         font_size: 100
-        y: 75%
+        y: 80%
         color: red
         font_name: ocr-a-tribute-bold
         text: GAME OVER

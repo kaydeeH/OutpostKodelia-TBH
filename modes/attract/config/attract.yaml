@@ -2,6 +2,9 @@
 
 show_player:
   mode_attract_started:
+    field_off:
+      priority: 5
+      loops: 1
     giWhite: #Sets basic GI white lighting as the default, plays forever
       priority: 5
       loops: -1

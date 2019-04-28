@@ -32,6 +32,9 @@ event_player:
 
 slide_player:
   game_started: scoring_slide
+  game_ending:
+      scoring_slide:
+        action: remove
 
 slides:
    scoring_slide:

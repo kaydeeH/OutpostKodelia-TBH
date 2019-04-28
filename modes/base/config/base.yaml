@@ -196,20 +196,20 @@ event_player:
       - drops_right_reset
       - drop_left_center_reset
       - drop_right_center_reset
-    ball_save_inmodesave1_saving_ball:
-      - in_mode_ball_save
-    ball_save_inmodesave2_saving_ball:
-      - in_mode_ball_save
-    ball_save_inmodesave3_saving_ball:
-      - in_mode_ball_save
-    ball_save_inmodesave4_saving_ball:
-      - in_mode_ball_save
-    ball_save_inmodesave5_saving_ball:
-      - in_mode_ball_save
-    ball_save_inmodesave6_saving_ball:
-      - in_mode_ball_save
-    ball_save_inmodesave7_saving_ball:
-      - in_mode_ball_save
+#    ball_save_inmodesave1_saving_ball:
+#      - in_mode_ball_save
+#    ball_save_inmodesave2_saving_ball:
+#      - in_mode_ball_save
+#    ball_save_inmodesave3_saving_ball:
+#      - in_mode_ball_save
+#    ball_save_inmodesave4_saving_ball:
+#      - in_mode_ball_save
+#    ball_save_inmodesave5_saving_ball:
+#      - in_mode_ball_save
+#    ball_save_inmodesave6_saving_ball:
+#      - in_mode_ball_save
+#    ball_save_inmodesave7_saving_ball:
+#      - in_mode_ball_save
 ###########################
 # Moved to BASE from story04 to prevent this getting missed
 ###########################
@@ -351,9 +351,6 @@ show_player:
           loops: -1
       title_on:
           loops: -1
-      start_button:
-          loops: -1
-          priority: 5
       bh_on:
           priority: 5
           loops: -1
@@ -363,6 +360,10 @@ show_player:
       cygnus_on:
           priority: 200
           loops: -1
+  mode_base_started{player==1 and ball==1 and is_extra_ball==0}:
+      start_button:
+          loops: -1
+          priority: 5
   s_slingshot_left_active:
       redHitShow:
           priority: 101
@@ -496,6 +497,8 @@ show_player:
       extra_earned:
           loops: -1
   player_score{value>0 and prev_value==0 and change!=0}:
+      start_button:
+        action: stop
       start_off:
         loops: -1
         priority: 10

@@ -52,9 +52,9 @@ event_player:
        dmy: 0
      display_sac_enable{current_player.sacrifice_is_active==0}:
        dmy: 0
-   shotoutlanerescue_lit_hit{device.ball_saves.initial.state=="disabled"}:
+   shotoutlanerescue_lit_hit{device.ball_saves.initial.state=="disabled" and device.ball_saves.scoop_eject.state=="disabled"}:
      - rescue_lane_activated
-   shotoutlanesacrifice_lit_hit:
+   shotoutlanesacrifice_lit_hit{device.ball_saves.initial.state=="disabled" and device.ball_saves.scoop_eject.state=="disabled"}:
      - sacrifice_lane_activated
    ball_save_rescuesave_saving_ball:
      invoke_notify_by_event:
