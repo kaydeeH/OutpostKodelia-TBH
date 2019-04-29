@@ -22,7 +22,7 @@ ball_saves:
  initial:
    active_time: 3s
    grace_period: 2s
-#   enable_events: mode_base_started
+   enable_events: mode_base_started
 #   timer_start_events: playfield_active
    early_ball_save_events: s_rooutlaneright_active_delay, s_rooutlaneleft_active_delay
    auto_launch: false
