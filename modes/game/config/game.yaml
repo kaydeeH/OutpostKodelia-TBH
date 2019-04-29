@@ -601,36 +601,36 @@ widget_player:
     player_4_score:
       slide: scoring_slide
 
-  ball_starting:
-    player_score_single_player_prevalidation:
-      slide: scoring_slide
-  playfield_active:
-    player_score_single_player_prevalidation:
-      slide: scoring_slide
-      action: remove
+#  ball_starting:
+#    player_score_single_player_prevalidation:
+#      slide: scoring_slide
+#  playfield_active:
+#    player_score_single_player_prevalidation:
+#      slide: scoring_slide
+#      action: remove
 
 widgets:
    # Configuration and event handling for the single player display
-   player_score_single_player_prevalidation:
-      - type: text
-        text: 8888888888888
-        font_size: 86
-        font_name: digital-7-mono
-        color: 380000
-        anchor_x: right
-        anchor_y: top
-        x: center + 254
-        y: bottom + 115
-        z: 80
-        animations:
-          add_to_slide:
-            - property: opacity
-              value: 1
-              duration: .5
-            - property: opacity
-              value: 0
-              duration: .5
-              repeat: true
+#   player_score_single_player_prevalidation:
+#      - type: text
+#        text: 8888888888888
+#        font_size: 86
+#        font_name: digital-7-mono
+#        color: 380000
+#        anchor_x: right
+#        anchor_y: top
+#        x: center + 254
+#        y: bottom + 115
+#        z: 80
+#        animations:
+#          add_to_slide:
+#            - property: opacity
+#              value: 1
+#              duration: .5
+#            - property: opacity
+#              value: 0
+#              duration: .5
+#              repeat: true
    player_score_single_player:
       - type: text
         text: (score)
