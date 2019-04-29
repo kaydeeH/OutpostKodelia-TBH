@@ -15,15 +15,15 @@ event_player:
    - s_rooutlaneright_active_delay|10ms
  scoop_eject:
    - scoop_eject_timer_start|10ms
-# player_score{change>0}:
-#   - initial_ball_save_start
+ player_score{change>0}:
+   - initial_ball_save_start
 
 ball_saves:
  initial:
    active_time: 3s
    grace_period: 2s
    enable_events: mode_base_started
-#   timer_start_events: playfield_active
+   timer_start_events: initial_ball_save_start
    early_ball_save_events: s_rooutlaneright_active_delay, s_rooutlaneleft_active_delay
    auto_launch: false
    balls_to_save: 1
