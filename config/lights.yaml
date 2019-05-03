@@ -954,7 +954,7 @@ lights:
     subtype: led
     fade_ms: 50ms
 
-  l_top_vin_1:
+  l_top_vin_blaster1:
     channels:
       white:
         number: 4-78
@@ -964,7 +964,7 @@ lights:
     subtype: led
     fade_ms: 50ms
 
-  l_top_vin_2:
+  l_top_vin_blaster2:
     channels:
       white:
         number: 4-79
@@ -974,7 +974,7 @@ lights:
     subtype: led
     fade_ms: 50ms
 
-  l_top_vin_3:
+  l_top_vin_tv:
     channels:
       white:
         number: 4-80

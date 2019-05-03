@@ -26,6 +26,9 @@ show_player:
     cygnus_on:
       priority: 5
       loops: -1
+    robots_on:
+      priority: 200
+      loops: -1
     dummy_show: #just to get us past the initial mode start and into our event loop
       loops: 0
       events_when_completed: text_loop_finished

@@ -361,9 +361,9 @@ show_player:
       cygnus_on:
           priority: 200
           loops: -1
-#      robots_on:
-#          priority: 200
-#          loops: -1
+      robots_on:
+          priority: 200
+          loops: -1
   mode_base_started{player==1 and ball==1 and is_extra_ball==0}:
       start_button:
           loops: -1
