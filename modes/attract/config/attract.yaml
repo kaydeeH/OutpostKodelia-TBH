@@ -1,5 +1,8 @@
 #config_version=5
 
+config:
+  - bot_lighting_effects.yaml
+
 show_player:
   mode_attract_started:
     field_off:

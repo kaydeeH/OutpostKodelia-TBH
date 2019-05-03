@@ -1,0 +1,16 @@
+#config_version=5
+
+# ##############################################################
+# # USE THIS FILE FOR IN-GAME ROBOT EFFECTS ONLY               #
+# ##############################################################
+
+# *** LIST OF BOT LIGHTING EFFECTS THAT WILL BE THROWN
+# ***
+# *** Mode / Event / Event Description
+#
+#
+
+
+# *** HANDLE ALL BOT LIGHTING EFFECTS BELOW WITH SHOW_PLAYER OR OTHER PLAYERS / EVENT HANDLERS
+# ***
+# ***

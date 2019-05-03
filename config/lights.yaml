@@ -933,6 +933,59 @@ lights:
     type: w
     subtype: led
     fade_ms: 50ms
+
+  l_top_max_1:
+    channels:
+      white:
+        number: 4-75
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_max_2:
+    channels:
+      white:
+        number: 4-76
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_vin_1:
+    channels:
+      white:
+        number: 4-78
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_vin_2:
+    channels:
+      white:
+        number: 4-79
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+  l_top_vin_3:
+    channels:
+      white:
+        number: 4-80
+        platform_settings:
+          polarity: true
+    type: w
+    subtype: led
+    fade_ms: 50ms
+
+
+
   l_bb_star1:
     channels:
       white:
