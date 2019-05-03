@@ -107,19 +107,3 @@
     l_giRightLaneGuide1:
       color: 111111
       fade: 1s
-# robot lights
-    l_top_max_1:
-      color: 11
-      fade: 1s
-    l_top_max_2:
-      color: 11
-      fade: 1s
-    l_top_vin_1:
-      color: 11
-      fade: 1s
-    l_top_vin_2:
-      color: 11
-      fade: 1s
-    l_top_vin_3:
-      color: 11
-      fade: 1s

@@ -25,7 +25,7 @@
 #              duration: 1550ms
 #              repeat: true
       - type: Text
-        text: "CODE REVISION 0.92 (BETA)"
+        text: "CODE REVISION 0.93b (BETA)"
         font_name: ocr-a-tribute-bold
         y: 40
         x: 1355
