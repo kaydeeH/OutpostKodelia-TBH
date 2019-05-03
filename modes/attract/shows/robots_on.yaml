@@ -4,34 +4,34 @@
   lights:
     l_top_max_1:
       color: FF
-      fade: 1s
+      fade: 2s
     l_top_max_2:
       color: FF
-      fade: 1s
+      fade: 2s
     l_top_vin_blaster1:
       color: FF
-      fade: 1s
+      fade: 2s
     l_top_vin_blaster2:
       color: FF
-      fade: 1s
+      fade: 2s
     l_top_vin_tv:
       color: 66
-      fade: 1s
+      fade: 2s
 
 - duration: 2
   lights:
     l_top_max_1:
       color: 99
-      fade: 1s
+      fade: 2s
     l_top_max_2:
       color: BB
-      fade: 1s
+      fade: 2s
     l_top_vin_blaster1:
       color: FF
-      fade: 1s
+      fade: 2s
     l_top_vin_blaster2:
       color: FF
-      fade: 1s
+      fade: 2s
     l_top_vin_tv:
       color: 44
-      fade: 1s
+      fade: 2s
