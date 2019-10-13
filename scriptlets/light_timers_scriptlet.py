@@ -34,22 +34,24 @@ class LightTimers(Scriptlet):
         DelayManager(self.machine.delayRegistry).add(callback=self._blue_timer, ms=1000)
 
     def _green_timer(self):
-        self.machine.events.post('green_light_timer_' + str(LightTimers.green_id))
+        if not (self.machine.game is None):
+            self.machine.events.post('green_light_timer_' + str(LightTimers.green_id))
 
-        if LightTimers.green_id < LightTimers.green_count - 1:
-            LightTimers.green_id += 1
-            DelayManager(self.machine.delayRegistry).add(callback=self._green_timer, ms=LightTimers.green_delay)
-        else:
-            LightTimers.green_id = 0
-            DelayManager(self.machine.delayRegistry).add(callback=self._green_timer, ms=LightTimers.green_sleep)
+            if LightTimers.green_id < LightTimers.green_count - 1:
+                LightTimers.green_id += 1
+                DelayManager(self.machine.delayRegistry).add(callback=self._green_timer, ms=LightTimers.green_delay)
+            else:
+                LightTimers.green_id = 0
+                DelayManager(self.machine.delayRegistry).add(callback=self._green_timer, ms=LightTimers.green_sleep)
 
     def _blue_timer(self):
-        self.machine.events.post('blue_light_timer_' + str(LightTimers.blue_id))
+        if not (self.machine.game is None):
+            self.machine.events.post('blue_light_timer_' + str(LightTimers.blue_id))
 
-        if LightTimers.blue_id < LightTimers.blue_count - 1:
-            LightTimers.blue_id += 1
-            DelayManager(self.machine.delayRegistry).add(callback=self._blue_timer, ms=LightTimers.blue_delay)
-        else:
-            LightTimers.blue_id = 0
-            DelayManager(self.machine.delayRegistry).add(callback=self._blue_timer, ms=LightTimers.blue_sleep)
+            if LightTimers.blue_id < LightTimers.blue_count - 1:
+                LightTimers.blue_id += 1
+                DelayManager(self.machine.delayRegistry).add(callback=self._blue_timer, ms=LightTimers.blue_delay)
+            else:
+                LightTimers.blue_id = 0
+                DelayManager(self.machine.delayRegistry).add(callback=self._blue_timer, ms=LightTimers.blue_sleep)
 
