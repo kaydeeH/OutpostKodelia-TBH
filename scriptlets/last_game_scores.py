@@ -11,9 +11,9 @@ class LastGameScores(Scriptlet):
     def _generate_events(self, **kwargs):
         del kwargs
 
-        player2 = self.machine.get_machine_var("player2_score")
-        player3 = self.machine.get_machine_var("player3_score")
-        player4 = self.machine.get_machine_var("player4_score")
+        player2 = self.machine.variables.get_machine_var("player2_score")
+        player3 = self.machine.variables.get_machine_var("player3_score")
+        player4 = self.machine.variables.get_machine_var("player4_score")
 
         if player2:
             self.machine.events.post('lastgame_player2', score=player2)

@@ -30,8 +30,8 @@ class LightTimers(Scriptlet):
         LightTimers.blue_delay = 515
         LightTimers.blue_sleep = 6000
 
-        DelayManager(self.machine.delayRegistry).add(callback=self._green_timer, ms=1000)
-        DelayManager(self.machine.delayRegistry).add(callback=self._blue_timer, ms=1000)
+        self.machine.delay.add(callback=self._green_timer, ms=1000)
+        self.machine.delay.add(callback=self._blue_timer, ms=1000)
 
     def _green_timer(self):
         if not (self.machine.game is None):
@@ -39,10 +39,10 @@ class LightTimers(Scriptlet):
 
             if LightTimers.green_id < LightTimers.green_count - 1:
                 LightTimers.green_id += 1
-                DelayManager(self.machine.delayRegistry).add(callback=self._green_timer, ms=LightTimers.green_delay)
+                self.machine.delay.add(callback=self._green_timer, ms=LightTimers.green_delay)
             else:
                 LightTimers.green_id = 0
-                DelayManager(self.machine.delayRegistry).add(callback=self._green_timer, ms=LightTimers.green_sleep)
+                self.machine.delay.add(callback=self._green_timer, ms=LightTimers.green_sleep)
 
     def _blue_timer(self):
         if not (self.machine.game is None):
@@ -50,8 +50,8 @@ class LightTimers(Scriptlet):
 
             if LightTimers.blue_id < LightTimers.blue_count - 1:
                 LightTimers.blue_id += 1
-                DelayManager(self.machine.delayRegistry).add(callback=self._blue_timer, ms=LightTimers.blue_delay)
+                self.machine.delay.add(callback=self._blue_timer, ms=LightTimers.blue_delay)
             else:
                 LightTimers.blue_id = 0
-                DelayManager(self.machine.delayRegistry).add(callback=self._blue_timer, ms=LightTimers.blue_sleep)
+                self.machine.delay.add(callback=self._blue_timer, ms=LightTimers.blue_sleep)
 

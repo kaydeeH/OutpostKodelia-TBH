@@ -22,9 +22,9 @@ class BonusCountdown(Scriptlet):
             self.machine.events.post('bonus_countdown_decrement')
 
     def _decrement_bonus(self, **kwargs):
-            DelayManager(self.machine.delayRegistry).add(callback=self._do_decrement, ms=BonusCountdown.delay)
+            self.machine.delay.add(callback=self._do_decrement, ms=BonusCountdown.delay)
             if BonusCountdown.delay > 10:
-                DelayManager(self.machine.delayRegistry).add(callback=self._do_decrement_audio, ms=BonusCountdown.delay)
+                self.machine.delay.add(callback=self._do_decrement_audio, ms=BonusCountdown.delay)
 
     def _do_decrement_audio(self, **kwargs):
         self.machine.events.post('bonus_countdown_decrement_audio')

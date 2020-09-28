@@ -85,7 +85,7 @@ class infobox(Scriptlet):
 
             for x in range(0, 37):
                 eventtext = oldtext[x:36] + newtext[0:x]
-                DelayManager(self.machine.delayRegistry).add(callback=self._set_text_line,
+                self.machine.delay.add(callback=self._set_text_line,
                                                              ms=infobox.in_delayms * (x + 1),
                                                              eventname="update_info_box_line",
                                                              line=infobox.in_line_number,
@@ -108,13 +108,13 @@ class infobox(Scriptlet):
             eventtext = ""
             for x in range(0, 36):
                 eventtext = newtext[0:x] + "*" + oldtext[x+1:36]
-                DelayManager(self.machine.delayRegistry).add(callback=self._set_text_line,
+                self.machine.delay.add(callback=self._set_text_line,
                                                              ms=infobox.in_delayms * (1 + (x * 2)),
                                                              eventname="update_info_box_line",
                                                              line=infobox.in_line_number,
                                                              newtext=eventtext)
                 eventtext = newtext[0:x+1] + oldtext[x+1:36]
-                DelayManager(self.machine.delayRegistry).add(callback=self._set_text_line,
+                self.machine.delay.add(callback=self._set_text_line,
                                                              ms=infobox.in_delayms * (2 + (x * 2)),
                                                              eventname="update_info_box_line",
                                                              line=infobox.in_line_number,

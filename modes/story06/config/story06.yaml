@@ -11,7 +11,7 @@ config:
 mode:
   start_events: ready_to_start_mode_6
   stop_events: story_is_completed
-  stop_on_ball_end: false
+#  stop_on_ball_end: false
   priority: 900
   file_log: full
 

@@ -28,14 +28,14 @@ class wizardIntro(Scriptlet):
         for num, modeStat in enumerate(mode_statuses, 1):
             if modeStat == "completed":
                  scene_count += 1
-                 DelayManager(self.machine.delayRegistry).add(callback=self._throw_event, ms=wizardIntro.delay_time, eventname="status_untitled_mode_{}_completed".format(num))
+                 self.machine.delay.add(callback=self._throw_event, ms=wizardIntro.delay_time, eventname="status_untitled_mode_{}_completed".format(num))
 
                  if scene_count <= 3:
-                     DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+                     self.machine.delay.add(callback=self._throw_event,
                                                                   ms=wizardIntro.delay_time,
                                                                   eventname="wizard_bonus_increment")
                  else:
-                     DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+                     self.machine.delay.add(callback=self._throw_event,
                                                                   ms=wizardIntro.delay_time,
                                                                   eventname="wizard_bonus_multiply")
                  wizardIntro.delay_time += 500
@@ -52,55 +52,55 @@ class wizardIntro(Scriptlet):
         vincent_state = self.machine.achievements.char_vincent.state
 
         if alex_state == "completed":
-            DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+            self.machine.delay.add(callback=self._throw_event,
                                                          ms=wizardIntro.delay_time,
                                                          eventname="char_alex_is_complete")
             wizardIntro.delay_time += 500
 
         if charlie_state == "completed":
-            DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+            self.machine.delay.add(callback=self._throw_event,
                                                          ms=wizardIntro.delay_time,
                                                          eventname="char_charlie_is_complete")
             wizardIntro.delay_time += 500
 
         if dan_state == "completed":
-            DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+            self.machine.delay.add(callback=self._throw_event,
                                                          ms=wizardIntro.delay_time,
                                                          eventname="char_dan_is_complete")
             wizardIntro.delay_time += 500
 
         if kate_state == "completed":
-            DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+            self.machine.delay.add(callback=self._throw_event,
                                                          ms=wizardIntro.delay_time,
                                                          eventname="char_kate_is_complete")
             wizardIntro.delay_time += 500
 
         if harry_state == "completed":
-            DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+            self.machine.delay.add(callback=self._throw_event,
                                                          ms=wizardIntro.delay_time,
                                                          eventname="char_harry_is_complete")
             wizardIntro.delay_time += 500
 
         if hanz_state == "completed":
-            DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+            self.machine.delay.add(callback=self._throw_event,
                                                          ms=wizardIntro.delay_time,
                                                          eventname="char_hanz_is_complete")
             wizardIntro.delay_time += 500
 
         if vincent_state == "completed":
-            DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+            self.machine.delay.add(callback=self._throw_event,
                                                          ms=wizardIntro.delay_time,
                                                          eventname="char_vincent_is_complete")
             wizardIntro.delay_time += 500
 
         if bob_state == "completed":
-            DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+            self.machine.delay.add(callback=self._throw_event,
                                                          ms=wizardIntro.delay_time,
                                                          eventname="char_bob_is_complete")
             wizardIntro.delay_time += 500
 
         wizardIntro.delay_time += 3000
-        DelayManager(self.machine.delayRegistry).add(callback=self._throw_event,
+        self.machine.delay.add(callback=self._throw_event,
                                                      ms=wizardIntro.delay_time,
                                                      eventname="wizard_intro_slide_ready_to_remove")
 
