@@ -104,3 +104,4 @@ ENV/
 /data/high_scores.yaml
 /data/machine_vars.yaml
 /showcreator/output*.yaml
+/mpfenv
