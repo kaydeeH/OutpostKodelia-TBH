@@ -1,6 +1,6 @@
 # Outpost Kodelia - The Black Hole
 
-The Black Hole is a custom pinball game created by Outpost Kodelia. It is a retheme of Williams's Phoenix (1978) but has been modified to suit the needs of a modern game. It is based off of the P3Rock hardware system and Mission Pinball Framework.
+The Black Hole is a custom pinball game created by Outpost Kodelia. It is a retheme of Williams's Phoenix (1978) but has been modified to suit the needs of a modern game. It is based off of the P3-ROC hardware system and Mission Pinball Framework.
 
 ## Installation
 
@@ -21,8 +21,8 @@ Prior to running the game, ensure the virtual environment is activated  by runni
 
 **Windows:**
 
-* To start the game on a system that is not connected to the P3Rock system: **\<gamedir\>\mpf-NoHw.bat**
-* To start the game on a system that is connected to the P3Rock system: **\<gamedir\>\mpf-Hw.bat**
+* To start the game on a system that is not connected to the P3-ROC system: **\<gamedir\>\mpf-NoHw.bat**
+* To start the game on a system that is connected to the P3-ROC system: **\<gamedir\>\mpf-Hw.bat**
 * To start the MPF Monitor app (before starting the game): **\<gamedir\>\mpf-Monitor.bat**
 
 ## Contributing
