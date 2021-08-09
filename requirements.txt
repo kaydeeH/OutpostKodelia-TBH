@@ -27,7 +27,7 @@ Pygments==2.3.1
 pypiwin32==223
 pyserial==3.4
 pyserial-asyncio==0.4
-pywin32==300
+pywin32==301
 requests==2.25.0
 ruamel.yaml==0.15.100
 six==1.15.0
