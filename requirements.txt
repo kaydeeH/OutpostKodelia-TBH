@@ -18,7 +18,7 @@ Kivy-Garden==0.1.4
 mpf==0.53.4
 mpf-mc==0.53.6
 mpf-monitor==0.53.1
-Pillow==8.0.1
+Pillow==9.0.0
 prompt-toolkit==3.0.8
 protobuf==3.13.0
 psutil==5.7.0
